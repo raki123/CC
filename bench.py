@@ -31,9 +31,9 @@ from problog import get_evaluatable
 import clingo 
 
 TIMEOUT = 300
-LIMIT = 100
-EFFICIENCY_BENCH = True
-WIDTH_BENCH = False
+LIMIT = 10
+EFFICIENCY_BENCH = False
+WIDTH_BENCH = True
 
 config["knowledge_compiler"] = "c2d"
 config["decos"] = "flow-cutter"
@@ -347,13 +347,13 @@ import csv
 
 if EFFICIENCY_BENCH:
     # SMPROBLOG
-    #with open("results/smproblog/aspmc/results.csv", 'w') as results:
-    #    csv_writer = csv.writer(results)
-    #    smproblog_bench_aspmc(csv_writer)
+    with open("results/smproblog/aspmc/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        smproblog_bench_aspmc(csv_writer)
 
-    #with open("results/problog/clingo/results.csv", 'w') as results:
-    #    csv_writer = csv.writer(results)
-    #    smproblog_bench_clingo(csv_writer)
+    with open("results/problog/clingo/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        smproblog_bench_clingo(csv_writer)
 
     # PROBLOG
     with open("results/problog/aspmc_problog/results.csv", 'w') as results:
@@ -364,26 +364,26 @@ if EFFICIENCY_BENCH:
         csv_writer = csv.writer(results)
         problog_bench_aspmc(SMProblogProgram, csv_writer)
 
-    #with open("results/problog/clingo/results.csv", 'w') as results:
-    #    csv_writer = csv.writer(results)
-    #    problog_bench_clingo(csv_writer)
+    with open("results/problog/clingo/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        problog_bench_clingo(csv_writer)
 
     with open("results/problog/problog/results.csv", 'w') as results:
         csv_writer = csv.writer(results)
         problog_bench_problog(csv_writer)
 
     # MEU
-    #with open("results/meu/clingo/results.csv", 'w') as results:
-    #    csv_writer = csv.writer(results)
-    #    meu_bench_clingo(csv_writer)
+    with open("results/meu/clingo/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        meu_bench_clingo(csv_writer)
 
-    #with open("results/meu/aspmc/results.csv", 'w') as results:
-    #    csv_writer = csv.writer(results)
-    #    meu_bench_aspmc(csv_writer)
+    with open("results/meu/aspmc/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        meu_bench_aspmc(csv_writer)
 
-    #with open("results/meu/meup/results.csv", 'w') as results:
-    #    csv_writer = csv.writer(results)
-    #    meu_bench_meuproblog(csv_writer)
+    with open("results/meu/meup/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        meu_bench_meuproblog(csv_writer)
 
 from aspmc.compile.constrained_compile import compute_separator
 import aspmc.graph.treedecomposition as treedecomposition
@@ -398,6 +398,7 @@ def get_width(cnf, definedness):
     R = set(range(1,cnf.nr_vars + 1))
     R.difference_update(P)
     R.difference_update(D)
+    print(R)
     graph = cnf.primal_graph()
     # first split the whole graph into two graphs that only contain nodes from P U D or R U D 
     separator = compute_separator(graph, P, D, R)
@@ -484,11 +485,39 @@ def width_bench_smproblog(csv_writer):
             print(f"{x}.{y}", width, x_width, xd_width)
             ctr += 1
 
+def width_bench_problog(csv_writer):
+    csv_writer.writerow(["benchmark", "width", "Xwidth", "XDwidth"])
+    benchmark_path = "./benchmarks/problog/smokers"
+    base = join(benchmark_path, "smokers.pl")
+    string = ""
+    with open(base) as base_file:
+        string += base_file.read()
+    ctr = 0
+    for x in range(3, 51):
+        db = join(benchmark_path, f"pfacts/db{x}.pl")
+        for y in range(1, 2):
+            if ctr >= LIMIT:
+                return
+            network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
+            program = SMProblogProgram("", [base, db, network])
+            cb(program)
+            cnf = program.get_cnf()
+            width = treedecomposition.from_graph(cnf.primal_graph(), solver = config["decos"], timeout = config["decot"]).width
+            x_width = get_width(cnf, False)
+            xd_width = get_width(cnf, True)
+            csv_writer.writerow([f"{x}.{y}", width, x_width, xd_width])
+            print(f"{x}.{y}", width, x_width, xd_width)
+            ctr += 1
+
 if WIDTH_BENCH:
-    with open("results/widths/meu/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        width_bench_meu(csv_writer)
+    #with open("results/widths/meu/results.csv", 'w') as results:
+    #    csv_writer = csv.writer(results)
+    #    width_bench_meu(csv_writer)
 
     with open("results/widths/smproblog/results.csv", 'w') as results:
         csv_writer = csv.writer(results)
         width_bench_smproblog(csv_writer)
+
+    with open("results/widths/problog/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        width_bench_problog(csv_writer)

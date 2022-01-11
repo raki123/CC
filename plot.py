@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 import numpy as np
 
-TIMEOUT = 1
+TIMEOUT = 100
 
 def csv2rec(filename):
     return np.recfromtxt(filename, dtype=None, delimiter=',', names=True, encoding='utf-8')
@@ -62,6 +62,9 @@ plt.scatter(ava['Xwidth'], ava['XDwidth'], c="blue", label="meuproblog")
 m_width = max(max(ava['Xwidth']), max(ava['XDwidth']))
 ava = csv2rec(open("results/widths/smproblog/results.csv"))
 plt.scatter(ava['Xwidth'], ava['XDwidth'], c="red", label="smproblog")
+m_width = max(max(ava['Xwidth']), max(ava['XDwidth']), m_width)
+ava = csv2rec(open("results/widths/problog/results.csv"))
+plt.scatter(ava['Xwidth'], ava['XDwidth'], c="green", label="problog")
 m_width = max(max(ava['Xwidth']), max(ava['XDwidth']), m_width)
 plt.plot(range(0, m_width + 10),range(0, m_width + 10), "-k")
 plt.title('Scatter plot')
