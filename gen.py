@@ -13,8 +13,11 @@ import random
 
 random.seed(5)
 
-def gen_map_from_prob(nr_to_gen, base, file, folder):
+def gen_map_from_prob(nr_to_gen, file, folder):
     program = MAPProblogProgram("true.", [file])
+    base = basename(file)
+    idx = base.find(".")
+    base = base[:idx]
     nr_prob_atoms = len(program._guess)
     for i in range(nr_to_gen):
         nr_map = random.randrange(nr_prob_atoms + 1)
@@ -26,14 +29,14 @@ def gen_map_from_prob(nr_to_gen, base, file, folder):
             program.write_prog(problog_file)
         program.map_variables = []
 
-def do_dir(benchmark_path, nr_to_gen, base):
+def do_dir(benchmark_path, nr_to_gen):
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     for benchmark in onlyfiles:
-        gen_map_from_prob(nr_to_gen, base, benchmark, benchmark_path)
+        gen_map_from_prob(nr_to_gen, benchmark, benchmark_path)
 
-do_dir("./benchmarks/map/gh/", 10, "gh")
-do_dir("./benchmarks/map/gh/", 10, "gh")
-do_dir("./benchmarks/map/gh/", 10, "gh")
-do_dir("./benchmarks/map/gh/", 10, "gh")
+do_dir("./benchmarks/map/gh/", 10)
+do_dir("./benchmarks/map/gnb/", 10)
+do_dir("./benchmarks/map/blood/", 10)
+do_dir("./benchmarks/map/graphs/", 10)
         
 

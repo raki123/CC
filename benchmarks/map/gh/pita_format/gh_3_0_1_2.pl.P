@@ -1,0 +1,33 @@
+(:- dynamic query_rule / 4).
+(:- table ::(A,B,C,lattice(orc / 3))).
+(:- table algebraic_atom(A,B,C,D,E,F,G,lattice(orc / 3))).
+(:- table a2(A,lattice(orc / 3))).
+(:- table ev(A,lattice(orc / 3))).
+(:- table a0(A,lattice(orc / 3))).
+(:- table true(A,lattice(orc / 3))).
+(:- table a1(A,lattice(orc / 3))).
+
+(::(1.0,algebraic_atom(1,1,0,set(none),a1,[48,46,52,57,57,57,57,57,57,57,55,53]),A,B) :- onec(A,B)).
+query_rule(0,[algebraic_atom(0,0,0,set(none),a1,[48,46,53]) : 0.5,'' : 0.5],true,[]).
+rule_by_num(0,[algebraic_atom(0,0,0,set(none),a1,[48,46,53]) : 0.5,'' : 0.5],[],[]).
+(algebraic_atom(0,0,0,set(none),a1,[48,46,53],A,B) :- get_var_n(usermod,A,0,[],[0.5,0.5],C),equalityc(A,C,0,B)).
+query_rule(1,[algebraic_atom(1,0,0,set(none),a0,[48,46,52,57,57,57,57,57,57,57,55,53]) : 0.5,'' : 0.5],true,[]).
+rule_by_num(1,[algebraic_atom(1,0,0,set(none),a0,[48,46,52,57,57,57,57,57,57,57,55,53]) : 0.5,'' : 0.5],[],[]).
+(algebraic_atom(1,0,0,set(none),a0,[48,46,52,57,57,57,57,57,57,57,55,53],A,B) :- get_var_n(usermod,A,1,[],[0.5,0.5],C),equalityc(A,C,0,B)).
+rule_by_num(2,[a2 : 0.5,'' : 0.5],[],[]).
+(a2(A,B) :- get_var_n(usermod,A,2,[],[0.5,0.5],C),equalityc(A,C,0,B)).
+(ev(A,B) :- onec(A,C),a0(A,D),andc(A,C,D,B)).
+(a0(A,B) :- onec(A,C),algebraic_atom(1,0,0,set(none),a0,[48,46,52,57,57,57,57,57,57,57,55,53],A,D),andc(A,C,D,E),a2(A,F),andc(A,E,F,B)).
+(a0(A,B) :- onec(A,C),a1(A,D),andc(A,C,D,B)).
+(true(A,B) :- onec(A,B)).
+(a1(A,B) :- onec(A,C),algebraic_atom(0,0,0,set(none),a1,[48,46,53],A,D),andc(A,C,D,B)).
+(algebraic_atom(1,1,1,set(none),a1,[48,46,52,57,57,57,57,57,57,57,55,53],A,B) :- onec(A,C),algebraic_atom(1,1,0,set(none),a1,[48,46,52,57,57,57,57,57,57,57,55,53],A,D),andc(A,C,D,B)).
+(algebraic_atom(1,1,1,set(none),a1,[48,46,52,57,57,57,57,57,57,57,55,53],A,B) :- onec(A,C),algebraic_atom(1,0,0,set(none),a0,[48,46,52,57,57,57,57,57,57,57,55,53],A,D),andc(A,C,D,B)).
+(a1(A,B) :- onec(A,C),algebraic_atom(1,1,0,set(none),a1,[48,46,52,57,57,57,57,57,57,57,55,53],A,D),andc(A,C,D,E),(algebraic_atom(1,0,0,set(none),a0,[48,46,52,57,57,57,57,57,57,57,55,53],A,F),bdd_notc(A,F,G)),andc(A,E,G,H),a2(A,I),andc(A,H,I,B)).
+(::(A,B,C,D) :- nonvar_list([A,B]),zeroc(C,D)).
+(algebraic_atom(A,B,C,D,E,F,G,H) :- nonvar_list([A,B,C,D,E,F]),zeroc(G,H)).
+(a2(A,B) :- nonvar_list([]),zeroc(A,B)).
+(ev(A,B) :- nonvar_list([]),zeroc(A,B)).
+(a0(A,B) :- nonvar_list([]),zeroc(A,B)).
+(true(A,B) :- nonvar_list([]),zeroc(A,B)).
+(a1(A,B) :- nonvar_list([]),zeroc(A,B)).
