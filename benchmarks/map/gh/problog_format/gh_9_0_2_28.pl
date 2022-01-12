@@ -42,8 +42,10 @@
 0.5::algebraic_atom(13,6,0,set(none),a6,"0.124999999844").
 0.99999999::algebraic_atom(13,7,0,set(none),a7,"0.124999999844").
 evidence(a0).
+:-\+ a0.
+a0:-a1.
 a1:-algebraic_atom(0,0,0,set(none),a1,"0.5").
-algebraic_atom(7,4,1,set(none),a4,"0.1999999996"):-algebraic_atom(7,3,1,set(none),a3,"0.1999999996").
+true.
 a0:-algebraic_atom(1,0,0,set(none),a0,"0.4999999975"),a2.
 algebraic_atom(11,6,1,set(none),a6,"0.142857142653"):-algebraic_atom(11,6,0,set(none),a6,"0.142857142653").
 a4:-algebraic_atom(7,4,0,set(none),a4,"0.1999999996"),\+ algebraic_atom(7,3,1,set(none),a3,"0.1999999996"),a5.
@@ -71,6 +73,7 @@ algebraic_atom(9,2,1,set(none),a2,"0.166666666389"):-algebraic_atom(9,2,0,set(no
 a1:-algebraic_atom(3,1,0,set(none),a1,"0.333333332222"),\+ algebraic_atom(3,0,0,set(none),a0,"0.333333332222"),a3.
 algebraic_atom(13,2,1,set(none),a2,"0.124999999844"):-algebraic_atom(13,1,1,set(none),a1,"0.124999999844").
 a2:-algebraic_atom(9,2,0,set(none),a2,"0.166666666389"),\+ algebraic_atom(9,1,1,set(none),a1,"0.166666666389"),a6.
+algebraic_atom(7,4,1,set(none),a4,"0.1999999996"):-algebraic_atom(7,4,0,set(none),a4,"0.1999999996").
 algebraic_atom(13,2,1,set(none),a2,"0.124999999844"):-algebraic_atom(13,2,0,set(none),a2,"0.124999999844").
 algebraic_atom(3,2,1,set(none),a2,"0.333333332222"):-algebraic_atom(3,2,0,set(none),a2,"0.333333332222").
 algebraic_atom(9,3,1,set(none),a3,"0.166666666389"):-algebraic_atom(9,2,1,set(none),a2,"0.166666666389").
@@ -128,8 +131,6 @@ a1:-algebraic_atom(7,1,0,set(none),a1,"0.1999999996"),\+ algebraic_atom(7,0,0,se
 algebraic_atom(11,3,1,set(none),a3,"0.142857142653"):-algebraic_atom(11,3,0,set(none),a3,"0.142857142653").
 algebraic_atom(7,2,1,set(none),a2,"0.1999999996"):-algebraic_atom(7,1,1,set(none),a1,"0.1999999996").
 a3:-algebraic_atom(11,3,0,set(none),a3,"0.142857142653"),\+ algebraic_atom(11,2,1,set(none),a2,"0.142857142653"),a7.
-a0:-a1.
-:-\+ a0.
 algebraic_atom(7,2,1,set(none),a2,"0.1999999996"):-algebraic_atom(7,2,0,set(none),a2,"0.1999999996").
 algebraic_atom(11,4,1,set(none),a4,"0.142857142653"):-algebraic_atom(11,3,1,set(none),a3,"0.142857142653").
 a2:-algebraic_atom(7,2,0,set(none),a2,"0.1999999996"),\+ algebraic_atom(7,1,1,set(none),a1,"0.1999999996"),a5.
@@ -141,8 +142,7 @@ algebraic_atom(11,5,1,set(none),a5,"0.142857142653"):-algebraic_atom(11,4,1,set(
 a3:-algebraic_atom(7,3,0,set(none),a3,"0.1999999996"),\+ algebraic_atom(7,2,1,set(none),a2,"0.1999999996"),a5.
 algebraic_atom(11,5,1,set(none),a5,"0.142857142653"):-algebraic_atom(11,5,0,set(none),a5,"0.142857142653").
 a5:-algebraic_atom(11,5,0,set(none),a5,"0.142857142653"),\+ algebraic_atom(11,4,1,set(none),a4,"0.142857142653"),a7.
-algebraic_atom(7,4,1,set(none),a4,"0.1999999996"):-algebraic_atom(7,4,0,set(none),a4,"0.1999999996").
-true.
+algebraic_atom(7,4,1,set(none),a4,"0.1999999996"):-algebraic_atom(7,3,1,set(none),a3,"0.1999999996").
 query(algebraic_atom(6,0,0,set(none),a4,"0.5")).
 query(algebraic_atom(13,7,0,set(none),a7,"0.124999999844")).
 query(algebraic_atom(9,1,0,set(none),a1,"0.166666666389")).

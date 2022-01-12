@@ -1,5 +1,6 @@
 from aspmc.programs.mapprogram import MAPProblogProgram
 from aspmc.programs.algebraicprogram import AlgebraicProgram
+from aspmc.programs.meuprogram import MEUProblogProgram
 
 
 import aspmc.semirings.probabilistic as probabilistic
@@ -29,14 +30,30 @@ def gen_map_from_prob(nr_to_gen, file, folder):
             program.write_prog(problog_file)
         program.map_variables = []
 
-def do_dir(benchmark_path, nr_to_gen):
+def do_dir_map(benchmark_path, nr_to_gen):
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     for benchmark in onlyfiles:
         gen_map_from_prob(nr_to_gen, benchmark, benchmark_path)
 
-do_dir("./benchmarks/map/gh/", 10)
-do_dir("./benchmarks/map/gnb/", 10)
-do_dir("./benchmarks/map/blood/", 10)
-do_dir("./benchmarks/map/graphs/", 10)
+
+def gen_meu(file, folder):
+    program = MEUProblogProgram("true.", [file])
+    base = basename(file)
+    idx = base.find(".")
+    base = base[:idx]
+    with open(join(folder, f"pita_format/{base}.pl"), "w") as pita_file:
+        pita_file.write(program.to_pita())
+
+def do_dir_meu(benchmark_path):
+    onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
+    for benchmark in onlyfiles:
+        gen_meu(benchmark, benchmark_path)
+
+#do_dir_map("./benchmarks/map/gh/", 10)
+#do_dir_map("./benchmarks/map/gnb/", 10)
+#do_dir_map("./benchmarks/map/blood/", 10)
+#do_dir_map("./benchmarks/map/graphs/", 10)
+
+do_dir_meu("./benchmarks/meu/")
         
 
