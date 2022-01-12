@@ -1,11 +1,2 @@
 benchmark,width,Xwidth,XDwidth
 ./benchmarks/meu/earthquake_2_1400227407.pl,8,8,8
-./benchmarks/meu/asia_1_1400227407.pl,5,5,5
-./benchmarks/meu/child_1_1400227407.pl,18,19,19
-./benchmarks/meu/survey_2_1807131032.pl,17,17,17
-./benchmarks/meu/child_2_1588920084.pl,59,59,59
-./benchmarks/meu/asia_2_1807131032.pl,11,11,11
-./benchmarks/meu/win95pts_2_548563996.pl,94,106,106
-./benchmarks/meu/win95pts_1_1592975436.pl,15,36,36
-./benchmarks/meu/asia_1_1337671202.pl,5,5,5
-./benchmarks/meu/child_1_548563996.pl,20,19,20

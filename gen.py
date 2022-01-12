@@ -49,10 +49,10 @@ def do_dir_meu(benchmark_path):
     for benchmark in onlyfiles:
         gen_meu(benchmark, benchmark_path)
 
-#do_dir_map("./benchmarks/map/gh/", 10)
-#do_dir_map("./benchmarks/map/gnb/", 10)
-#do_dir_map("./benchmarks/map/blood/", 10)
-#do_dir_map("./benchmarks/map/graphs/", 10)
+do_dir_map("./benchmarks/map/gh/", 10)
+do_dir_map("./benchmarks/map/gnb/", 10)
+do_dir_map("./benchmarks/map/blood/", 10)
+do_dir_map("./benchmarks/map/graphs/", 10)
 
 do_dir_meu("./benchmarks/meu/")
         

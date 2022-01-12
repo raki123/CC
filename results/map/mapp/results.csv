@@ -1,0 +1,2 @@
+benchmark,total_time,solved
+./benchmarks/map/gh/problog_format/gh_9_0_6_31.pl,0.3495066340001358,True
