@@ -33,7 +33,7 @@ import clingo
 
 TIMEOUT = 300
 LIMIT = 1000
-EFFICIENCY_BENCH = True
+EFFICIENCY_BENCH = False
 WIDTH_BENCH = True
 
 config["knowledge_compiler"] = "c2d"
@@ -465,7 +465,7 @@ def smproblog_bench_aspmc(csv_writer):
     benchmark_path = "./benchmarks/smproblog/smokers"
     base = join(benchmark_path, "smokers.pl")
     ctr = 0
-    for x in range(3, 51):
+    for x in range(3, 15):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
         for y in range(1, 11):    
             if ctr >= LIMIT:
@@ -492,7 +492,7 @@ def smproblog_bench_clingo(csv_writer):
     benchmark_path = "./benchmarks/smproblog/smokers"
     base = join(benchmark_path, "smokers.pl")
     ctr = 0
-    for x in range(3, 51):
+    for x in range(3, 15):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
         for y in range(1, 11):    
             if ctr >= LIMIT:
@@ -586,6 +586,13 @@ import aspmc.graph.treedecomposition as treedecomposition
 import networkx as nx
 
 def get_width(cnf, definedness):
+    try:
+        return get_width_actual(cnf, definedness)
+    except Exception as e:
+        print(e)
+        return -1
+
+def get_width_actual(cnf, definedness):
     P = set(cnf.quantified[0])
     if definedness:
         D = set(cnf.get_defined(P))
@@ -658,7 +665,8 @@ def width_bench_meu(csv_writer):
 
 def width_bench_map(csv_writer):
     csv_writer.writerow(["benchmark", "width", "Xwidth", "XDwidth"])
-    benchmark_paths = [ "./benchmarks/map/gh/problog_format/",  "./benchmarks/map/gnb/problog_format/", "./benchmarks/map/blood/problog_format/", "./benchmarks/map/graphs/problog_format/"]
+    # benchmark_paths = [ "./benchmarks/map/gh/problog_format/",  "./benchmarks/map/gnb/problog_format/", "./benchmarks/map/blood/problog_format/", "./benchmarks/map/graphs/problog_format/"]
+    benchmark_paths = [ "./benchmarks/map/blood/problog_format/", "./benchmarks/map/graphs/problog_format/"]
     ctr = 0
     for benchmark_path in benchmark_paths:
         onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
@@ -684,7 +692,7 @@ def width_bench_smproblog(csv_writer):
     with open(base) as base_file:
         string += base_file.read()
     ctr = 0
-    for x in range(3, 51):
+    for x in range(3, 15):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
         for y in range(1, 2):
             if ctr >= LIMIT:
@@ -725,18 +733,22 @@ def width_bench_problog(csv_writer):
             ctr += 1
 
 if WIDTH_BENCH:
-    with open("results/widths/meu/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        width_bench_meu(csv_writer)
+    #with open("results/widths/meu/results.csv", 'w') as results:
+    #    csv_writer = csv.writer(results)
+    #    width_bench_meu(csv_writer)
+    #print("MEU WIDTH DONE")
 
-    with open("results/widths/map/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        width_bench_map(csv_writer)
+    #with open("results/widths/map/results.csv", 'w') as results:
+    #    csv_writer = csv.writer(results)
+    #    width_bench_map(csv_writer)
+    #print("MAP WIDTH DONE")
 
-    with open("results/widths/smproblog/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        width_bench_smproblog(csv_writer)
+    #with open("results/widths/smproblog/results.csv", 'w') as results:
+    #    csv_writer = csv.writer(results)
+    #    width_bench_smproblog(csv_writer)
+    #print("SM WIDTH DONE")
 
     with open("results/widths/problog/results.csv", 'w') as results:
         csv_writer = csv.writer(results)
         width_bench_problog(csv_writer)
+    print("PL WIDTH DONE")
