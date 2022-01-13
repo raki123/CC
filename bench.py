@@ -592,23 +592,10 @@ def get_width(cnf, definedness):
         print(e)
         return -1
 
-def get_get_defined(cnf, P, q):
-    q.put(cnf.get_defined(P))
-
 def get_width_actual(cnf, definedness):
     P = set(cnf.quantified[0])
     if definedness:
-        q = multiprocessing.Queue()
-        p = multiprocessing.Process(target=get_get_defined,args=(cnf,P,q))
-        p.start()
-        p.join(TIMEOUT)
-        if p.is_alive():
-            p.kill()
-            p.join()
-            print("Killed")
-            D = set()
-        else:
-            D = q.get()
+        D = cnf.get_defined(P, timeout = str(TIMEOUT))
     else:
         D = set()
     R = set(range(1,cnf.nr_vars + 1))
