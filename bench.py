@@ -592,10 +592,23 @@ def get_width(cnf, definedness):
         print(e)
         return -1
 
+def get_get_defined(cnf, P, q):
+    q.put(cnf.get_defined(P))
+
 def get_width_actual(cnf, definedness):
     P = set(cnf.quantified[0])
     if definedness:
-        D = set(cnf.get_defined(P))
+        q = multiprocessing.Queue()
+        p = multiprocessing.Process(target=get_get_defined,args=(cnf,P,q))
+        p.start()
+        p.join(TIMEOUT)
+        if p.is_alive():
+            p.kill()
+            p.join()
+            print("Killed")
+            D = set()
+        else:
+            D = q.get()
     else:
         D = set()
     R = set(range(1,cnf.nr_vars + 1))
@@ -694,7 +707,7 @@ def width_bench_smproblog(csv_writer):
     ctr = 0
     for x in range(3, 15):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
-        for y in range(1, 2):
+        for y in range(1, 11):
             if ctr >= LIMIT:
                 return
             network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
@@ -718,7 +731,7 @@ def width_bench_problog(csv_writer):
     ctr = 0
     for x in range(3, 51):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
-        for y in range(1, 2):
+        for y in range(1, 11):
             if ctr >= LIMIT:
                 return
             network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
@@ -743,12 +756,12 @@ if WIDTH_BENCH:
     #    width_bench_map(csv_writer)
     #print("MAP WIDTH DONE")
 
-    #with open("results/widths/smproblog/results.csv", 'w') as results:
-    #    csv_writer = csv.writer(results)
-    #    width_bench_smproblog(csv_writer)
-    #print("SM WIDTH DONE")
-
-    with open("results/widths/problog/results.csv", 'w') as results:
+    with open("results/widths/smproblog/results.csv", 'w') as results:
         csv_writer = csv.writer(results)
-        width_bench_problog(csv_writer)
-    print("PL WIDTH DONE")
+        width_bench_smproblog(csv_writer)
+    print("SM WIDTH DONE")
+
+    #with open("results/widths/problog/results.csv", 'w') as results:
+    #    csv_writer = csv.writer(results)
+    #    width_bench_problog(csv_writer)
+    #print("PL WIDTH DONE")
