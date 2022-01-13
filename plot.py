@@ -70,18 +70,19 @@ if WIDTHS:
     ava[ava['XDwidth'] != -1]
     plt.scatter(ava['Xwidth'], ava['XDwidth'], c="red", label="mapproblog")
     m_width = max(max(ava['Xwidth']), max(ava['XDwidth']))
-    #ava = csv2rec(open("results/widths/smproblog/results.csv"))
-    #ava[ava['XDwidth'] != -1]
-    #plt.scatter(ava['Xwidth'], ava['XDwidth'], c="red", label="smproblog")
-    #m_width = max(max(ava['Xwidth']), max(ava['XDwidth']), m_width)
+    ava = csv2rec(open("results/widths/smproblog/results.csv"))
+    ava[ava['XDwidth'] != -1]
+    plt.scatter(ava['Xwidth'], ava['XDwidth'], c="green", label="smproblog")
+    m_width = max(max(ava['Xwidth']), max(ava['XDwidth']), m_width)
     #ava = csv2rec(open("results/widths/problog/results.csv"))
     #ava[ava['XDwidth'] != -1]
     #plt.scatter(ava['Xwidth'], ava['XDwidth'], c="green", label="problog")
     #m_width = max(max(ava['Xwidth']), max(ava['XDwidth']), m_width)
     plt.yscale('log')
     plt.xscale('log')
+    plt.gca().set_aspect('equal', adjustable='box')
     plt.plot(range(0, m_width + 10),range(0, m_width + 10), "-k")
-    plt.title('Scatter plot')
+    #plt.title('Scatter plot')
     plt.xlabel('X-width')
     plt.ylabel('X/D-width')
     plt.legend(loc="upper left")
