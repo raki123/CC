@@ -51,9 +51,9 @@ if EFFICIENCY:
         ava['total_time'].sort()
         plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="meuproblog")
 
-        ava = csv2rec(open("results/meu/clingo/results.csv"))
-        ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="clingo")
+        #ava = csv2rec(open("results/meu/clingo/results.csv"))
+        #ava['total_time'].sort()
+        #plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="clingo")
 
         ava = csv2rec(open("results/meu/pita/results.csv"))
         ava['total_time'].sort()

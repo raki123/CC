@@ -75,9 +75,8 @@ def meu_instance_aspmc(benchmark):
     print(f"Evaluation:             {'%.2f' % (end - start)}")
     print()
 
-def meu_bench_aspmc(csv_writer):
+def meu_bench_aspmc(csv_writer, benchmark_path):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
-    benchmark_path = "./benchmarks/meu"
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     ctr = 0
     for benchmark in onlyfiles:
@@ -113,9 +112,8 @@ def instance_clingo(benchmark):
     ctl.solve(on_model=on_model)
     print(c)   
 
-def meu_bench_clingo(csv_writer):
+def meu_bench_clingo(csv_writer, benchmark_path):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
-    benchmark_path = "./benchmarks/meu"
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     ctr = 0
     for benchmark in onlyfiles:
@@ -147,9 +145,8 @@ def meu_instance_meuproblog(benchmark):
         db = engine.prepare(PrologFile(benchmark))
         decisions, eu, size, compile_time, runtime = maxeu.get_best_decision(db)
 
-def meu_bench_meuproblog(csv_writer):
+def meu_bench_meuproblog(csv_writer, benchmark_path):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
-    benchmark_path = "./benchmarks/meu/"
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     ctr = 0
     for benchmark in onlyfiles:
@@ -180,34 +177,8 @@ def meu_instance_pita(benchmark):
     p.communicate(f"[{base[:-3]}].\ndt_solve(Decision,Utility).\nhalt.\n".encode())
     p.wait()
 
-def meu_bench_pita(csv_writer):
+def meu_bench_pita(csv_writer, benchmark_path):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
-    benchmark_path = "./benchmarks/meu/pita_format/"
-    ctr = 0
-    onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
-    for benchmark in onlyfiles:
-        if ctr >= LIMIT:
-            break
-        print(benchmark)
-        p = multiprocessing.Process(target=meu_instance_pita,args=(benchmark,))
-        start = time.perf_counter()
-        p.start()
-        p.join(TIMEOUT)
-        end = time.perf_counter()
-        print(f"Evaluation:             {'%.2f' % (end - start)}")
-        print()
-        if p.is_alive():
-            killtree(p.pid)
-            p.join()
-            print("Killed")
-            csv_writer.writerow([benchmark, end - start, False])
-        else:
-            csv_writer.writerow([benchmark, end - start, True])
-        ctr += 1
-
-def meu_bench_pita_nz(csv_writer):
-    csv_writer.writerow(["benchmark", "total_time", "solved"])
-    benchmark_path = "./benchmarks/meu/pita_format_nz/"
     ctr = 0
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     for benchmark in onlyfiles:
@@ -589,23 +560,46 @@ if EFFICIENCY_BENCH:
         # MEU
         with open("results/meu/clingo/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            meu_bench_clingo(csv_writer)
+            meu_bench_clingo(csv_writer, "./benchmarks/meu")
 
         with open("results/meu/aspmc/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            meu_bench_aspmc(csv_writer)
+            meu_bench_aspmc(csv_writer, "./benchmarks/meu")
 
         with open("results/meu/meup/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            meu_bench_meuproblog(csv_writer)
+            meu_bench_meuproblog(csv_writer, "./benchmarks/meu")
 
         with open("results/meu/pita/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            meu_bench_pita(csv_writer)
+            meu_bench_pita(csv_writer, "./benchmarks/meu/pita_format/")
 
         with open("results/meu/pita_nz/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            meu_bench_pita_nz(csv_writer)
+            meu_bench_pita(csv_writer, "./benchmarks/meu/pita_format_nz/")
+
+        # viral benchmarks
+        with open("results/meu/clingo/results.csv", 'a') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_clingo(csv_writer, "./benchmarks/meu/viral")
+
+        with open("results/meu/meup/results.csv", 'a') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_meuproblog(csv_writer, "./benchmarks/meu/viral")
+
+    with open("results/meu/aspmc/results.csv", 'a') as results:
+        csv_writer = csv.writer(results)
+        meu_bench_aspmc(csv_writer, "./benchmarks/meu/viral")
+
+    with open("results/meu/pita/results.csv", 'a') as results:
+        csv_writer = csv.writer(results)
+        meu_bench_pita(csv_writer, "./benchmarks/meu/viral/pita_format/")
+
+    with open("results/meu/pita_nz/results.csv", 'a') as results:
+        csv_writer = csv.writer(results)
+        meu_bench_pita(csv_writer, "./benchmarks/meu/viral/pita_format/")
+
+        
 
     if MAP:
         # MAP

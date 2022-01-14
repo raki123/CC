@@ -41,7 +41,7 @@ def gen_meu(file, folder):
     base = basename(file)
     idx = base.find(".")
     base = base[:idx]
-    with open(join(folder, f"pita_format_nz/{base}.pl"), "w") as pita_file:
+    with open(join(folder, f"pita_format/{base}.pl"), "w") as pita_file:
         pita_file.write(program.to_pita())
 
 def do_dir_meu(benchmark_path):
@@ -49,11 +49,33 @@ def do_dir_meu(benchmark_path):
     for benchmark in onlyfiles:
         gen_meu(benchmark, benchmark_path)
 
+import networkx as nx
+
+def gen_meu_viral(sizes, nr):
+    for i in sizes:
+        for j in range(2, min(i,nr)):
+            with open(f"./benchmarks/meu/viral/viral_{i}_{j}.pl", "w") as out_file:
+                graph = nx.generators.random_graphs.barabasi_albert_graph(i, j)
+                for p in range(1, i+1):
+                    out_file.write(f"?::market({p}).\n")
+                    out_file.write(f"0.3::from_marketing({p}).\n")
+                    out_file.write(f"utility(market({p}),-2).\n")
+                    out_file.write(f"utility(buys({p}),5).\n")
+                    for q in range(1,i+1):
+                        if p != q:
+                            out_file.write(f"0.4::viral({p},{q}).\n")
+                        if graph.has_edge(p,q):
+                            out_file.write(f"trusts({p},{q}).\n")
+                out_file.write("buys(P) :- market(P), from_marketing(P).\nbuys(P) :- trusts(P, Q), buys(Q), viral(P, Q).\n")
+
 #do_dir_map("./benchmarks/map/gh/", 10)
 #do_dir_map("./benchmarks/map/gnb/", 10)
 #do_dir_map("./benchmarks/map/blood/", 10)
 #do_dir_map("./benchmarks/map/graphs/", 10)
 
-do_dir_meu("./benchmarks/meu/")
+#do_dir_meu("./benchmarks/meu/")
+
+gen_meu_viral([3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], 5)
+do_dir_meu("./benchmarks/meu/viral/")
         
 
