@@ -19,7 +19,6 @@ utility(util_node(2), -32).
 utility(util_node(3), 22).
 utility(util_node(4), -39).
 body_466(465,maryCalls) :- body_50(49,maryCalls).
-util_node(2) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(0) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_502(501,johnCalls) :- dec_2.
 alarm :- algebraic_atom(0,0,0,set(none),alarm,"0.95"),body_434(433,alarm).
@@ -30,12 +29,13 @@ util_node(0) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(3) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 alarm :- algebraic_atom(1,0,0,set(none),alarm,"0.94"),body_442(441,alarm).
 util_node(0) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-maryCalls :- algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_466(465,maryCalls).
+util_node(2) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 true.
 util_node(2) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(1) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(3) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_442(441,alarm) :- body_19(15,alarm).
+maryCalls :- algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_466(465,maryCalls).
 body_30(26,alarm) :- earthquake,\+burglary.
 util_node(3) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(0) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.

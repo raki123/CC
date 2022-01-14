@@ -35,6 +35,7 @@ body_198(197,xray) :- dec_2.
 body_105(104,tub) :- body_23(22,tub).
 body_153(152,xray) :- body_96(94,xray).
 body_186(185,dysp) :- body_141(136,dysp).
+true.
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_186(185,dysp).
 either :- \+tub,lung.
 body_136(135,either) :- body_78(73,either).
@@ -54,7 +55,6 @@ body_118(114,dysp) :- \+either,bronc.
 body_178(177,dysp) :- body_129(125,dysp).
 lung :- algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 body_51(49,bronc) :- \+smoke.
-true.
 body_129(128,bronc) :- body_51(49,bronc).
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_105(104,tub).
 bronc :- algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_129(128,bronc).

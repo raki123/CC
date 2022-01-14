@@ -52,9 +52,10 @@ util_node(3) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(1) :- \+smoke,xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_33(31,tub) :- \+asia.
 either :- tub,lung.
+util_node(3) :- smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(2) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
-util_node(0) :- \+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
 body_41(40,bronc) :- smoke.
+util_node(0) :- \+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
 body_86(85,xray) :- either.
 util_node(4) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 tub :- algebraic_atom(3,0,0,set(none),tub,"0.01"),body_692(691,tub).
@@ -72,8 +73,8 @@ util_node(0) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 dysp :- algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_748(747,dysp).
 body_764(763,dysp) :- body_141(136,dysp).
 body_776(775,xray) :- dec_2.
-true.
 either :- \+tub,lung.
+true.
 util_node(3) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_748(747,dysp) :- body_118(114,dysp).
 util_node(2) :- smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
@@ -85,7 +86,6 @@ util_node(4) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 dysp :- algebraic_atom(11,0,0,set(none),dysp,"0.7"),body_756(755,dysp).
 lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_668(667,lung).
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_684(683,tub).
-util_node(3) :- smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(2) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 body_5(4,lung) :- smoke.
 util_node(3) :- smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.

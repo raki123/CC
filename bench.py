@@ -33,8 +33,8 @@ import clingo
 
 TIMEOUT = 300
 LIMIT = 1000
-EFFICIENCY_BENCH = False
-WIDTH_BENCH = True
+EFFICIENCY_BENCH = True
+WIDTH_BENCH = False
 
 config["knowledge_compiler"] = "c2d"
 config["decos"] = "flow-cutter"
@@ -44,6 +44,13 @@ def cb(program):
     program.tpUnfold()
     program.td_guided_both_clark_completion()
 
+import psutil
+
+def killtree(pid):
+    parent = psutil.Process(pid)
+    for child in parent.children(recursive=True):
+        child.kill()
+    parent.kill()
 
 # MEUPROBLOG
 
@@ -77,7 +84,7 @@ def meu_bench_aspmc(csv_writer):
         print(f"Evaluation:             {'%.2f' % (end - start)}")
         print()
         if p.is_alive():
-            p.kill()
+            killtree(p.pid)
             p.join()
             print("Killed")
             csv_writer.writerow([benchmark, end - start, False])
@@ -117,7 +124,7 @@ def meu_bench_clingo(csv_writer):
         print(f"Evaluation:             {'%.2f' % (end - start)}")
         print()
         if p.is_alive():
-            p.kill()
+            killtree(p.pid)
             p.join()
             print("Killed")
             csv_writer.writerow([benchmark, end - start, False])
@@ -149,7 +156,7 @@ def meu_bench_meuproblog(csv_writer):
         print(f"Evaluation:             {'%.2f' % (end - start)}")
         print()
         if p.is_alive():
-            p.kill()
+            killtree(p.pid)
             p.join()
             print("Killed")
             csv_writer.writerow([benchmark, end - start, False])
@@ -162,20 +169,19 @@ def meu_instance_pita(benchmark):
     base = basename(benchmark)
     dir = dirname(benchmark)
     p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    p.communicate(f"[{base[:-3]}].\ndt_solve(Decision,Utility).\nchalt.\n".encode())
+    p.communicate(f"[{base[:-3]}].\ndt_solve(Decision,Utility).\nhalt.\n".encode())
     p.wait()
-    p.kill()
 
 def meu_bench_pita(csv_writer):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
-    benchmark_path = "./benchmarks/meu/"
+    benchmark_path = "./benchmarks/meu/pita_format/"
     ctr = 0
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     for benchmark in onlyfiles:
         if ctr >= LIMIT:
             break
         print(benchmark)
-        p = multiprocessing.Process(target=map_instance_pita,args=(benchmark,))
+        p = multiprocessing.Process(target=meu_instance_pita,args=(benchmark,))
         start = time.perf_counter()
         p.start()
         p.join(TIMEOUT)
@@ -183,7 +189,32 @@ def meu_bench_pita(csv_writer):
         print(f"Evaluation:             {'%.2f' % (end - start)}")
         print()
         if p.is_alive():
-            p.kill()
+            killtree(p.pid)
+            p.join()
+            print("Killed")
+            csv_writer.writerow([benchmark, end - start, False])
+        else:
+            csv_writer.writerow([benchmark, end - start, True])
+        ctr += 1
+
+def meu_bench_pita_nz(csv_writer):
+    csv_writer.writerow(["benchmark", "total_time", "solved"])
+    benchmark_path = "./benchmarks/meu/pita_format_nz/"
+    ctr = 0
+    onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
+    for benchmark in onlyfiles:
+        if ctr >= LIMIT:
+            break
+        print(benchmark)
+        p = multiprocessing.Process(target=meu_instance_pita,args=(benchmark,))
+        start = time.perf_counter()
+        p.start()
+        p.join(TIMEOUT)
+        end = time.perf_counter()
+        print(f"Evaluation:             {'%.2f' % (end - start)}")
+        print()
+        if p.is_alive():
+            killtree(p.pid)
             p.join()
             print("Killed")
             csv_writer.writerow([benchmark, end - start, False])
@@ -224,7 +255,7 @@ def map_bench_aspmc(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([benchmark, end - start, False])
@@ -252,7 +283,7 @@ def map_bench_clingo(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([benchmark, end - start, False])
@@ -284,7 +315,7 @@ def map_bench_mapproblog(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([benchmark, end - start, False])
@@ -299,7 +330,6 @@ def map_instance_pita(benchmark):
     p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     p.communicate(f"[{base[:-3]}].\nmap(ev,P,Exp).\nchalt.\n".encode())
     p.wait()
-    p.kill()
 
 def map_bench_pita(csv_writer):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
@@ -319,7 +349,7 @@ def map_bench_pita(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([benchmark, end - start, False])
@@ -367,7 +397,7 @@ def problog_bench_aspmc(p_type, csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([f"{x}.{y}", end - start, False])
@@ -396,7 +426,7 @@ def problog_bench_clingo(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([f"{x}.{y}", end - start, False])
@@ -435,7 +465,7 @@ def problog_bench_problog(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([f"{x}.{y}", end - start, False])
@@ -444,8 +474,6 @@ def problog_bench_problog(csv_writer):
             ctr += 1
 
 # SMPROBLOG
-
-# PROBLOG
 
 def smproblog_instance_aspmc(files):
     start = time.perf_counter()
@@ -465,7 +493,7 @@ def smproblog_bench_aspmc(csv_writer):
     benchmark_path = "./benchmarks/smproblog/smokers"
     base = join(benchmark_path, "smokers.pl")
     ctr = 0
-    for x in range(3, 15):
+    for x in range(3, 8):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
         for y in range(1, 11):    
             if ctr >= LIMIT:
@@ -479,7 +507,7 @@ def smproblog_bench_aspmc(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([f"{x}.{y}", end - start, False])
@@ -492,7 +520,7 @@ def smproblog_bench_clingo(csv_writer):
     benchmark_path = "./benchmarks/smproblog/smokers"
     base = join(benchmark_path, "smokers.pl")
     ctr = 0
-    for x in range(3, 15):
+    for x in range(3, 8):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
         for y in range(1, 11):    
             if ctr >= LIMIT:
@@ -508,7 +536,7 @@ def smproblog_bench_clingo(csv_writer):
             print(f"Evaluation:             {'%.2f' % (end - start)}")
             print()
             if p.is_alive():
-                p.kill()
+                killtree(p.pid)
                 p.join()
                 print("Killed")
                 csv_writer.writerow([f"{x}.{y}", end - start, False])
@@ -521,65 +549,71 @@ import csv
 
 
 if EFFICIENCY_BENCH:
-    # SMPROBLOG
-    with open("results/smproblog/aspmc/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        smproblog_bench_aspmc(csv_writer)
+    if False:
+        # SMPROBLOG
+        with open("results/smproblog/aspmc/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            smproblog_bench_aspmc(csv_writer)
 
-    with open("results/problog/clingo/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        smproblog_bench_clingo(csv_writer)
+        with open("results/problog/clingo/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            smproblog_bench_clingo(csv_writer)
 
-    # PROBLOG
-    with open("results/problog/aspmc_problog/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        problog_bench_aspmc(AlgebraicProgram, csv_writer)
+        # PROBLOG
+        with open("results/problog/aspmc_problog/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            problog_bench_aspmc(AlgebraicProgram, csv_writer)
 
-    with open("results/problog/aspmc_smproblog/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        problog_bench_aspmc(SMProblogProgram, csv_writer)
+        with open("results/problog/aspmc_smproblog/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            problog_bench_aspmc(SMProblogProgram, csv_writer)
 
-    with open("results/problog/clingo/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        problog_bench_clingo(csv_writer)
+        with open("results/problog/clingo/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            problog_bench_clingo(csv_writer)
 
-    with open("results/problog/problog/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        problog_bench_problog(csv_writer)
+        with open("results/problog/problog/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            problog_bench_problog(csv_writer)
 
-    # MEU
-    with open("results/meu/clingo/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_clingo(csv_writer)
+        # MEU
+        with open("results/meu/clingo/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_clingo(csv_writer)
 
-    with open("results/meu/aspmc/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_aspmc(csv_writer)
+        with open("results/meu/aspmc/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_aspmc(csv_writer)
 
-    with open("results/meu/meup/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_meuproblog(csv_writer)
+        with open("results/meu/meup/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_meuproblog(csv_writer)
 
-    with open("results/meu/pita/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_pita(csv_writer)
+        with open("results/meu/pita/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_pita(csv_writer)
 
-    # MAP
-    with open("results/map/clingo/results.csv", 'w') as results:
+    with open("results/meu/pita_nz/results.csv", 'w') as results:
         csv_writer = csv.writer(results)
-        map_bench_clingo(csv_writer)
+        meu_bench_pita_nz(csv_writer)
 
-    with open("results/map/aspmc/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        map_bench_aspmc(csv_writer)
+    if False:
+        # MAP
+        with open("results/map/clingo/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            map_bench_clingo(csv_writer)
 
-    with open("results/map/mapp/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        map_bench_mapproblog(csv_writer)
+        with open("results/map/aspmc/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            map_bench_aspmc(csv_writer)
 
-    with open("results/map/pita/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        map_bench_pita(csv_writer)
+        with open("results/map/mapp/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            map_bench_mapproblog(csv_writer)
+
+        with open("results/map/pita/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            map_bench_pita(csv_writer)
 
 from aspmc.compile.constrained_compile import compute_separator
 import aspmc.graph.treedecomposition as treedecomposition
