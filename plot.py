@@ -59,6 +59,10 @@ if EFFICIENCY:
         ava['total_time'].sort()
         plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-m", label="pita")
 
+        ava = csv2rec(open("results/meu/pita_nz/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="pita_nz")
+
         plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
         plt.ylabel('total time')
         plt.xlabel('solved instances')

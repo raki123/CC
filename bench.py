@@ -31,9 +31,17 @@ from problog import get_evaluatable
 
 import clingo 
 
+# adjust timeouts and number of instances run here
 TIMEOUT = 300
 LIMIT = 1000
+
+# turn on or off benchmarks here
 EFFICIENCY_BENCH = True
+MAP = False
+MEU = False
+SMPROBLOG = False
+PROBLOG = False
+
 WIDTH_BENCH = False
 
 config["knowledge_compiler"] = "c2d"
@@ -549,7 +557,7 @@ import csv
 
 
 if EFFICIENCY_BENCH:
-    if False:
+    if SMPROBLOG:
         # SMPROBLOG
         with open("results/smproblog/aspmc/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
@@ -559,6 +567,7 @@ if EFFICIENCY_BENCH:
             csv_writer = csv.writer(results)
             smproblog_bench_clingo(csv_writer)
 
+    if PROBLOG:
         # PROBLOG
         with open("results/problog/aspmc_problog/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
@@ -576,6 +585,7 @@ if EFFICIENCY_BENCH:
             csv_writer = csv.writer(results)
             problog_bench_problog(csv_writer)
 
+    if MEU:
         # MEU
         with open("results/meu/clingo/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
@@ -593,11 +603,11 @@ if EFFICIENCY_BENCH:
             csv_writer = csv.writer(results)
             meu_bench_pita(csv_writer)
 
-    with open("results/meu/pita_nz/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_pita_nz(csv_writer)
+        with open("results/meu/pita_nz/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_pita_nz(csv_writer)
 
-    if False:
+    if MAP:
         # MAP
         with open("results/map/clingo/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
