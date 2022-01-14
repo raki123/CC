@@ -119,7 +119,6 @@ benchmark,total_time,solved
 ./benchmarks/meu/sachs_2_2023896565.pl,17.69009542101412,True
 ./benchmarks/meu/asia_2_1592975436.pl,10.449243846000172,True
 ./benchmarks/meu/win95pts_1_2023896565.pl,300.106111881003,False
-benchmark,total_time,solved
 ./benchmarks/meu/viral/viral_8_7.pl,10.8039764080022,True
 ./benchmarks/meu/viral/viral_9_8.pl,10.83452794101322,True
 ./benchmarks/meu/viral/viral_17_4.pl,300.09886867998284,False

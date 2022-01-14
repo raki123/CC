@@ -119,13 +119,6 @@ benchmark,total_time,solved
 ./benchmarks/meu/sachs_2_2023896565.pl,300.02081743400777,False
 ./benchmarks/meu/asia_2_1592975436.pl,0.358237034000922,True
 ./benchmarks/meu/win95pts_1_2023896565.pl,300.0587603029853,False
-benchmark,total_time,solved
-./benchmarks/meu/viral/viral_8_7.pl,300.10662087099627,False
-./benchmarks/meu/viral/viral_9_8.pl,300.0978140810039,False
-./benchmarks/meu/viral/viral_17_4.pl,300.100582819985,False
-./benchmarks/meu/viral/viral_10_9.pl,300.1019932080235,False
-./benchmarks/meu/viral/viral_3_2.pl,0.01963820500532165,True
-benchmark,total_time,solved
 ./benchmarks/meu/viral/viral_8_7.pl,300.10537370698876,False
 ./benchmarks/meu/viral/viral_9_8.pl,300.09838636402856,False
 ./benchmarks/meu/viral/viral_17_4.pl,300.10189575498225,False
