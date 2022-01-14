@@ -68,14 +68,16 @@ def gen_meu_viral(sizes, nr):
                             out_file.write(f"trusts({p},{q}).\n")
                 out_file.write("buys(P) :- market(P), from_marketing(P).\nbuys(P) :- trusts(P, Q), buys(Q), viral(P, Q).\n")
 
+# MAP
 #do_dir_map("./benchmarks/map/gh/", 10)
 #do_dir_map("./benchmarks/map/gnb/", 10)
 #do_dir_map("./benchmarks/map/blood/", 10)
 #do_dir_map("./benchmarks/map/graphs/", 10)
 
+# MEU
 #do_dir_meu("./benchmarks/meu/")
-
 gen_meu_viral([3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], 5)
+gen_meu_viral([3,4,5,6,7,8,9,10], 10)
 do_dir_meu("./benchmarks/meu/viral/")
         
 

@@ -8,7 +8,9 @@ utility(buys(1),5).
 trusts(1,4).
 0.4::viral(1,5).
 0.4::viral(1,6).
+trusts(1,6).
 0.4::viral(1,7).
+trusts(1,7).
 0.4::viral(1,8).
 0.4::viral(1,9).
 ?::market(2).
@@ -25,7 +27,6 @@ trusts(2,5).
 trusts(2,6).
 0.4::viral(2,7).
 0.4::viral(2,8).
-trusts(2,8).
 0.4::viral(2,9).
 ?::market(3).
 0.3::from_marketing(3).
@@ -39,7 +40,6 @@ trusts(3,4).
 trusts(3,5).
 0.4::viral(3,6).
 0.4::viral(3,7).
-trusts(3,7).
 0.4::viral(3,8).
 0.4::viral(3,9).
 ?::market(4).
@@ -84,6 +84,7 @@ trusts(5,8).
 utility(market(6),-2).
 utility(buys(6),5).
 0.4::viral(6,1).
+trusts(6,1).
 0.4::viral(6,2).
 trusts(6,2).
 0.4::viral(6,3).
@@ -92,6 +93,7 @@ trusts(6,4).
 0.4::viral(6,5).
 trusts(6,5).
 0.4::viral(6,7).
+trusts(6,7).
 0.4::viral(6,8).
 trusts(6,8).
 0.4::viral(6,9).
@@ -100,15 +102,17 @@ trusts(6,8).
 utility(market(7),-2).
 utility(buys(7),5).
 0.4::viral(7,1).
+trusts(7,1).
 0.4::viral(7,2).
 0.4::viral(7,3).
-trusts(7,3).
 0.4::viral(7,4).
 trusts(7,4).
 0.4::viral(7,5).
 trusts(7,5).
 0.4::viral(7,6).
+trusts(7,6).
 0.4::viral(7,8).
+trusts(7,8).
 0.4::viral(7,9).
 ?::market(8).
 0.3::from_marketing(8).
@@ -116,7 +120,6 @@ utility(market(8),-2).
 utility(buys(8),5).
 0.4::viral(8,1).
 0.4::viral(8,2).
-trusts(8,2).
 0.4::viral(8,3).
 0.4::viral(8,4).
 trusts(8,4).
@@ -125,6 +128,7 @@ trusts(8,5).
 0.4::viral(8,6).
 trusts(8,6).
 0.4::viral(8,7).
+trusts(8,7).
 0.4::viral(8,9).
 ?::market(9).
 0.3::from_marketing(9).

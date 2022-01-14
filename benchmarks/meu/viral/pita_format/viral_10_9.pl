@@ -144,6 +144,7 @@ trusts(8,9).
 buys(5) :- from_marketing(5),market(5).
 trusts(9,5).
 buys(4) :- viral(4,9),buys(9).
+buys(9) :- viral(9,1),buys(1).
 buys(3) :- viral(3,9),buys(9).
 buys(9) :- viral(9,4),buys(4).
 buys(4) :- from_marketing(4),market(4).
@@ -165,7 +166,6 @@ trusts(1,9).
 buys(2) :- viral(2,9),buys(9).
 buys(7) :- from_marketing(7),market(7).
 buys(9) :- viral(9,5),buys(5).
-buys(9) :- viral(9,1),buys(1).
 buys(1) :- from_marketing(1),market(1).
 trusts(9,1).
 buys(9) :- viral(9,2),buys(2).

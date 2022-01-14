@@ -305,125 +305,125 @@ utility(market(15), -2).
 utility(buys(15), 5).
 utility(market(16), -2).
 utility(buys(16), 5).
-trusts(1,8).
-trusts(3,7).
-trusts(1,5).
-trusts(3,4).
-trusts(4,3).
-trusts(2,7).
-trusts(3,12).
-trusts(2,3).
-trusts(2,4).
-trusts(3,5).
-buys(11) :- viral(11,12),buys(12).
-trusts(4,2).
-true.
-trusts(1,3).
-trusts(2,15).
-trusts(2,1).
-trusts(2,9).
-trusts(2,11).
-trusts(3,2).
-trusts(3,13).
-trusts(3,9).
-trusts(1,2).
-trusts(1,11).
-trusts(2,6).
-trusts(1,14).
-trusts(3,1).
-trusts(9,3).
-buys(7) :- from_marketing(7),market(7).
-buys(3) :- viral(3,2),buys(2).
-buys(3) :- from_marketing(3),market(3).
-buys(9) :- viral(9,2),buys(2).
-buys(3) :- viral(3,5),buys(5).
-trusts(6,2).
-buys(5) :- viral(5,1),buys(1).
-trusts(11,13).
-buys(2) :- viral(2,11),buys(11).
-trusts(9,15).
-buys(11) :- from_marketing(11),market(11).
-buys(4) :- viral(4,6),buys(6).
-trusts(4,10).
-buys(9) :- viral(9,15),buys(15).
-buys(10) :- viral(10,4),buys(4).
-buys(1) :- viral(1,11),buys(11).
-buys(4) :- from_marketing(4),market(4).
-buys(9) :- viral(9,3),buys(3).
-trusts(13,14).
-buys(8) :- viral(8,10),buys(10).
-buys(6) :- viral(6,4),buys(4).
-trusts(9,2).
-buys(6) :- viral(6,2),buys(2).
-buys(1) :- viral(1,2),buys(2).
-buys(12) :- viral(12,3),buys(3).
-trusts(8,1).
-buys(10) :- from_marketing(10),market(10).
-buys(9) :- from_marketing(9),market(9).
-buys(3) :- viral(3,9),buys(9).
-buys(12) :- from_marketing(12),market(12).
-buys(2) :- viral(2,7),buys(7).
-buys(7) :- viral(7,3),buys(3).
-buys(10) :- viral(10,8),buys(8).
-buys(3) :- viral(3,7),buys(7).
-trusts(13,11).
-buys(4) :- viral(4,3),buys(3).
-trusts(15,2).
-buys(4) :- viral(4,2),buys(2).
-buys(8) :- from_marketing(8),market(8).
-buys(2) :- viral(2,15),buys(15).
-buys(14) :- from_marketing(14),market(14).
-buys(11) :- viral(11,1),buys(1).
-buys(14) :- viral(14,13),buys(13).
-buys(15) :- viral(15,2),buys(2).
-trusts(5,1).
-buys(3) :- viral(3,12),buys(12).
-buys(12) :- viral(12,11),buys(11).
-trusts(14,13).
-buys(1) :- viral(1,14),buys(14).
-buys(2) :- viral(2,6),buys(6).
-trusts(11,1).
-buys(13) :- from_marketing(13),market(13).
-buys(1) :- from_marketing(1),market(1).
+buys(2) :- viral(2,4),buys(4).
 buys(13) :- viral(13,14),buys(14).
 buys(2) :- viral(2,9),buys(9).
-buys(1) :- viral(1,3),buys(3).
-buys(1) :- viral(1,5),buys(5).
-buys(13) :- viral(13,3),buys(3).
-trusts(10,8).
-buys(2) :- from_marketing(2),market(2).
-buys(11) :- viral(11,2),buys(2).
-trusts(5,3).
-buys(6) :- from_marketing(6),market(6).
-buys(8) :- viral(8,1),buys(1).
-trusts(4,6).
-buys(2) :- viral(2,4),buys(4).
-trusts(7,2).
-buys(1) :- viral(1,8),buys(8).
-buys(2) :- viral(2,3),buys(3).
-trusts(8,10).
-buys(5) :- from_marketing(5),market(5).
-buys(3) :- viral(3,1),buys(1).
-buys(4) :- viral(4,10),buys(10).
 buys(7) :- viral(7,2),buys(2).
-buys(15) :- viral(15,9),buys(9).
-buys(16) :- from_marketing(16),market(16).
-buys(3) :- viral(3,4),buys(4).
-buys(2) :- viral(2,1),buys(1).
-trusts(11,12).
-trusts(11,2).
+buys(3) :- viral(3,9),buys(9).
+buys(2) :- viral(2,6),buys(6).
+buys(9) :- viral(9,2),buys(2).
 buys(13) :- viral(13,11),buys(11).
-trusts(15,9).
-trusts(13,3).
-trusts(7,3).
+buys(10) :- viral(10,4),buys(4).
+buys(12) :- viral(12,11),buys(11).
+buys(4) :- viral(4,3),buys(3).
+buys(2) :- viral(2,11),buys(11).
+buys(3) :- viral(3,2),buys(2).
+buys(4) :- viral(4,2),buys(2).
+buys(10) :- viral(10,8),buys(8).
+buys(9) :- viral(9,3),buys(3).
 buys(3) :- viral(3,13),buys(13).
-trusts(12,11).
-trusts(6,4).
-trusts(12,3).
-buys(15) :- from_marketing(15),market(15).
-trusts(10,4).
-trusts(14,1).
-buys(14) :- viral(14,1),buys(1).
-buys(5) :- viral(5,3),buys(3).
 buys(11) :- viral(11,13),buys(13).
+buys(1) :- viral(1,11),buys(11).
+buys(1) :- viral(1,3),buys(3).
+buys(3) :- viral(3,5),buys(5).
+trusts(1,5).
+buys(5) :- viral(5,3),buys(3).
+buys(6) :- viral(6,2),buys(2).
+buys(4) :- viral(4,6),buys(6).
+buys(15) :- viral(15,2),buys(2).
+buys(15) :- viral(15,9),buys(9).
+buys(4) :- viral(4,10),buys(10).
+buys(8) :- viral(8,10),buys(10).
+buys(1) :- viral(1,8),buys(8).
+buys(1) :- viral(1,2),buys(2).
+buys(2) :- viral(2,7),buys(7).
+buys(12) :- viral(12,3),buys(3).
+buys(14) :- viral(14,13),buys(13).
+buys(1) :- viral(1,14),buys(14).
+buys(2) :- viral(2,1),buys(1).
+buys(5) :- viral(5,1),buys(1).
+buys(1) :- viral(1,5),buys(5).
+buys(2) :- viral(2,3),buys(3).
+buys(3) :- viral(3,7),buys(7).
+buys(13) :- viral(13,3),buys(3).
+buys(11) :- viral(11,12),buys(12).
+buys(3) :- viral(3,4),buys(4).
+buys(3) :- viral(3,12),buys(12).
+buys(6) :- viral(6,4),buys(4).
+buys(7) :- viral(7,3),buys(3).
+buys(3) :- viral(3,1),buys(1).
+buys(11) :- viral(11,2),buys(2).
+trusts(1,3).
+buys(10) :- from_marketing(10),market(10).
+buys(5) :- from_marketing(5),market(5).
+true.
+buys(16) :- from_marketing(16),market(16).
+trusts(7,3).
+trusts(15,9).
+trusts(4,3).
+trusts(2,3).
+trusts(11,2).
+buys(8) :- viral(8,1),buys(1).
+trusts(14,13).
+buys(14) :- from_marketing(14),market(14).
+trusts(1,11).
+trusts(6,4).
+buys(9) :- from_marketing(9),market(9).
+trusts(6,2).
+buys(8) :- from_marketing(8),market(8).
+trusts(2,15).
+trusts(1,2).
+trusts(3,2).
+trusts(12,11).
+buys(3) :- from_marketing(3),market(3).
+trusts(11,12).
+trusts(4,2).
+trusts(1,14).
+trusts(8,1).
+trusts(5,1).
+buys(13) :- from_marketing(13),market(13).
+trusts(3,7).
+buys(9) :- viral(9,15),buys(15).
+trusts(5,3).
+buys(12) :- from_marketing(12),market(12).
+trusts(10,4).
+trusts(11,13).
+trusts(1,8).
+trusts(3,4).
+trusts(10,8).
+trusts(15,2).
+trusts(2,9).
+buys(11) :- viral(11,1),buys(1).
+trusts(9,2).
+buys(2) :- from_marketing(2),market(2).
+trusts(3,9).
+trusts(13,3).
+trusts(2,6).
+trusts(3,12).
+buys(4) :- from_marketing(4),market(4).
+trusts(8,10).
+trusts(2,4).
+trusts(3,13).
+buys(1) :- from_marketing(1),market(1).
+trusts(11,1).
+buys(6) :- from_marketing(6),market(6).
+trusts(7,2).
+trusts(13,11).
+trusts(13,14).
+trusts(9,3).
+trusts(2,1).
+buys(2) :- viral(2,15),buys(15).
+buys(14) :- viral(14,1),buys(1).
+trusts(2,7).
+trusts(4,10).
+trusts(12,3).
+trusts(3,5).
+buys(7) :- from_marketing(7),market(7).
+trusts(9,15).
+trusts(2,11).
+trusts(14,1).
+buys(15) :- from_marketing(15),market(15).
+trusts(3,1).
+buys(11) :- from_marketing(11),market(11).
+trusts(4,6).
 :- end_lpad.

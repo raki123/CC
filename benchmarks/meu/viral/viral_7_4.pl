@@ -9,7 +9,6 @@ trusts(1,4).
 0.4::viral(1,5).
 trusts(1,5).
 0.4::viral(1,6).
-trusts(1,6).
 0.4::viral(1,7).
 ?::market(2).
 0.3::from_marketing(2).
@@ -22,6 +21,7 @@ trusts(2,4).
 0.4::viral(2,5).
 trusts(2,5).
 0.4::viral(2,6).
+trusts(2,6).
 0.4::viral(2,7).
 ?::market(3).
 0.3::from_marketing(3).
@@ -68,8 +68,8 @@ trusts(5,6).
 utility(market(6),-2).
 utility(buys(6),5).
 0.4::viral(6,1).
-trusts(6,1).
 0.4::viral(6,2).
+trusts(6,2).
 0.4::viral(6,3).
 0.4::viral(6,4).
 trusts(6,4).

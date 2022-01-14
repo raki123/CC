@@ -351,7 +351,6 @@ trusts(4,2).
 buys(5) :- viral(5,6),buys(6).
 trusts(8,14).
 trusts(6,5).
-buys(10) :- viral(10,1),buys(1).
 trusts(3,11).
 buys(11) :- from_marketing(11),market(11).
 trusts(7,10).
@@ -374,9 +373,9 @@ trusts(12,10).
 trusts(2,11).
 trusts(1,5).
 trusts(10,5).
-trusts(10,12).
 trusts(2,14).
 trusts(7,5).
+trusts(10,12).
 trusts(7,8).
 trusts(8,5).
 buys(4) :- from_marketing(4),market(4).
@@ -461,7 +460,6 @@ trusts(4,6).
 trusts(10,2).
 trusts(16,7).
 buys(5) :- viral(5,8),buys(8).
-buys(9) :- viral(9,1),buys(1).
 trusts(8,12).
 trusts(2,8).
 trusts(8,16).
@@ -481,6 +479,7 @@ buys(16) :- viral(16,9),buys(9).
 buys(13) :- viral(13,4),buys(4).
 buys(8) :- viral(8,13),buys(13).
 buys(11) :- viral(11,2),buys(2).
+buys(10) :- viral(10,1),buys(1).
 buys(2) :- viral(2,4),buys(4).
 buys(1) :- viral(1,10),buys(10).
 buys(5) :- viral(5,16),buys(16).
@@ -546,6 +545,7 @@ buys(5) :- viral(5,2),buys(2).
 buys(7) :- viral(7,5),buys(5).
 buys(15) :- from_marketing(15),market(15).
 buys(7) :- viral(7,12),buys(12).
+buys(9) :- viral(9,1),buys(1).
 buys(17) :- from_marketing(17),market(17).
 buys(7) :- viral(7,2),buys(2).
 buys(12) :- from_marketing(12),market(12).

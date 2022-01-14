@@ -116,7 +116,6 @@ buys(8) :- viral(8,3),buys(3).
 trusts(3,8).
 buys(8) :- viral(8,4),buys(4).
 trusts(1,8).
-buys(4) :- viral(4,8),buys(8).
 trusts(8,6).
 buys(6) :- viral(6,8),buys(8).
 buys(2) :- from_marketing(2),market(2).
@@ -137,6 +136,7 @@ trusts(8,1).
 trusts(7,8).
 trusts(8,3).
 trusts(5,8).
+buys(4) :- viral(4,8),buys(8).
 buys(8) :- viral(8,5),buys(5).
 buys(4) :- from_marketing(4),market(4).
 buys(8) :- viral(8,7),buys(7).
