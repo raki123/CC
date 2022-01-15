@@ -45,7 +45,7 @@ evidence(a0).
 :-\+ a0.
 a0:-a1.
 a1:-algebraic_atom(0,0,0,set(none),a1,"0.5").
-true.
+
 a0:-algebraic_atom(1,0,0,set(none),a0,"0.4999999975"),a2.
 algebraic_atom(11,6,1,set(none),a6,"0.142857142653"):-algebraic_atom(11,6,0,set(none),a6,"0.142857142653").
 a4:-algebraic_atom(7,4,0,set(none),a4,"0.1999999996"),\+ algebraic_atom(7,3,1,set(none),a3,"0.1999999996"),a5.

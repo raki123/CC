@@ -155,7 +155,7 @@ path(16,16).
 path(1,8):-edge(3,8),path(1,3).
 path(3,22):-edge(20,22),path(3,20).
 path(17,17).
-true.
+
 path(2,22):-edge(3,22),path(2,3).
 path(2,35):-edge(3,35),path(2,3).
 path(26,26).

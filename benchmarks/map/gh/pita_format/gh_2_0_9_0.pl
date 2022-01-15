@@ -4,5 +4,5 @@
 0.5::a1.
 ev :- a0.
 a0:-a1.
-true.
+
 :- end_lpad.

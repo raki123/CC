@@ -184,6 +184,6 @@ a2:-algebraic_atom(34,0,0,set(none),a2,"0.5"),a12,\+ a11,\+ a10,\+ a9,\+ a8,\+ a
 a5:-algebraic_atom(58,0,0,set(none),a5,"0.5"),a9,\+ a8,\+ a7,\+ a6.
 a0:-algebraic_atom(0,0,0,set(none),a0,"0.5"),a1.
 a2:-algebraic_atom(35,0,0,set(none),a2,"0.5"),a13,\+ a12,\+ a11,\+ a10,\+ a9,\+ a8,\+ a7,\+ a6,\+ a5,\+ a4,\+ a3.
-true.
+
 a4:-algebraic_atom(46,0,0,set(none),a4,"0.5"),a5.
 :- end_lpad.

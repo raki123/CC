@@ -322,7 +322,7 @@ path(3,47):-edge(24,47),path(3,24).
 path(3,45):-edge(29,45),path(3,29).
 path(4,20):-edge(19,20),path(4,19).
 path(3,37):-edge(29,37),path(3,29).
-true.
+
 path(3,10):-edge(9,10),path(3,9).
 path(4,41):-edge(19,41),path(4,19).
 path(3,27):-edge(20,27),path(3,20).

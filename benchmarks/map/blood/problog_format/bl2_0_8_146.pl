@@ -815,7 +815,7 @@ algebraic_atom(25,3,1,set(p_m),bloodtype(p_m,null),"0.03"):-algebraic_atom(25,2,
 pchrom(p,a):-algebraic_atom(9,0,0,set(p,p_f),pchrom(p,a),"0.90"),mchrom(p_f,a),pchrom(p_f,a).
 bloodtype(p_m,null):-algebraic_atom(25,3,0,set(p_m),bloodtype(p_m,null),"0.03"),mchrom(p_m,null),pchrom(p_m,b),\+ algebraic_atom(25,2,1,set(p_m),bloodtype(p_m,ab),"0.04").
 algebraic_atom(9,1,1,set(p,p_f),pchrom(p,b),"0.05"):-algebraic_atom(9,0,0,set(p,p_f),pchrom(p,a),"0.90").
-true.
+
 bloodtype(p_f_f,a):-algebraic_atom(25,0,0,set(p_f_f),bloodtype(p_f_f,a),"0.03"),mchrom(p_f_f,null),pchrom(p_f_f,b).
 algebraic_atom(9,1,1,set(p,p_f),pchrom(p,b),"0.05"):-algebraic_atom(9,1,0,set(p,p_f),pchrom(p,b),"0.05").
 algebraic_atom(18,1,1,set(p_f),bloodtype(p_f,b),"0.03"):-algebraic_atom(18,0,0,set(p_f),bloodtype(p_f,a),"0.90").

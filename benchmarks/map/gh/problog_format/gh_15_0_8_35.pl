@@ -408,7 +408,7 @@ a4:-algebraic_atom(21,4,0,set(none),a4,"0.0833333332639"),\+ algebraic_atom(21,3
 a5:-algebraic_atom(13,5,0,set(none),a5,"0.124999999844"),\+ algebraic_atom(13,4,1,set(none),a4,"0.124999999844"),a8.
 algebraic_atom(23,5,1,set(none),a5,"0.0769230768639"):-algebraic_atom(23,4,1,set(none),a4,"0.0769230768639").
 algebraic_atom(25,4,1,set(none),a4,"0.0714285713776"):-algebraic_atom(25,4,0,set(none),a4,"0.0714285713776").
-true.
+
 a2:-algebraic_atom(5,2,0,set(none),a2,"0.249999999375"),\+ algebraic_atom(5,1,1,set(none),a1,"0.249999999375"),a4.
 algebraic_atom(17,1,1,set(none),a1,"0.0999999999"):-algebraic_atom(17,1,0,set(none),a1,"0.0999999999").
 algebraic_atom(21,5,1,set(none),a5,"0.0833333332639"):-algebraic_atom(21,4,1,set(none),a4,"0.0833333332639").

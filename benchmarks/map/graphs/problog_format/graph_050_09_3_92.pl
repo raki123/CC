@@ -998,7 +998,7 @@ path(0,5):-edge(3,5),path(0,3).
 path(463,463).
 path(7,35):-edge(11,35),path(7,11).
 path(0,41):-edge(7,41),path(0,7).
-true.
+
 path(461,461).
 path(0,29):-edge(22,29),path(0,22).
 path(449,449).

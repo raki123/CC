@@ -2,5 +2,5 @@
 evidence(a0).
 a0:-a1.
 :-\+ a0.
-true.
+
 query(a1).

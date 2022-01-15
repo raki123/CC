@@ -210,7 +210,7 @@ a12:-algebraic_atom(102,0,0,set(none),a12,"0.5"),a13.
 a8:-algebraic_atom(86,0,0,set(none),a8,"0.5"),a11,\+ a10,\+ a9.
 a13:-algebraic_atom(104,0,0,set(none),a13,"0.5"),a14.
 a9:-algebraic_atom(90,0,0,set(none),a9,"0.5"),a10.
-true.
+
 a8:-algebraic_atom(89,0,0,set(none),a8,"0.5"),a14,\+ a13,\+ a12,\+ a11,\+ a10,\+ a9.
 query(algebraic_atom(43,0,0,set(none),a3,"0.5")).
 query(algebraic_atom(42,0,0,set(none),a3,"0.5")).

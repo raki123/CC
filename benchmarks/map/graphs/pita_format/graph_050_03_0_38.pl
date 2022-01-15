@@ -1073,7 +1073,7 @@ path(3,25):-edge(24,25),path(3,24).
 path(3,27):-edge(25,27),path(3,25).
 path(109,109).
 path(4,30):-edge(23,30),path(4,23).
-true.
+
 path(113,113).
 path(1,13):-edge(9,13),path(1,9).
 path(14,33):-edge(24,33),path(14,24).

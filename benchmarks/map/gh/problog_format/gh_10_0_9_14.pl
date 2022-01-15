@@ -82,7 +82,7 @@ algebraic_atom(5,1,1,set(none),a1,"0.249999999375"):-algebraic_atom(5,1,0,set(no
 algebraic_atom(15,8,1,set(none),a8,"0.111111110988"):-algebraic_atom(15,8,0,set(none),a8,"0.111111110988").
 a1:-algebraic_atom(1,1,0,set(none),a1,"0.4999999975"),\+ algebraic_atom(1,0,0,set(none),a0,"0.4999999975"),a2.
 a0:-algebraic_atom(1,0,0,set(none),a0,"0.4999999975"),a2.
-true.
+
 algebraic_atom(15,5,1,set(none),a5,"0.111111110988"):-algebraic_atom(15,4,1,set(none),a4,"0.111111110988").
 a2:-algebraic_atom(15,2,0,set(none),a2,"0.111111110988"),\+ algebraic_atom(15,1,1,set(none),a1,"0.111111110988"),a9.
 a1:-algebraic_atom(0,0,0,set(none),a1,"0.5").

@@ -31,8 +31,9 @@ from problog import get_evaluatable
 
 import clingo 
 
-# adjust timeouts and number of instances run here
+# adjust timeout, memout and number of instances run here
 TIMEOUT = 300
+MEMOUT = 4 * 1024 * 1024 * 1024
 LIMIT = 1000
 
 # turn on or off benchmarks here
@@ -52,16 +53,29 @@ def cb(program):
     program.tpUnfold()
     program.td_guided_both_clark_completion()
 
+# we need to make sure that we really kill everything and do not have a lot of zombie processes
 import psutil
-
 def killtree(pid):
     parent = psutil.Process(pid)
     for child in parent.children(recursive=True):
         child.kill()
     parent.kill()
 
+# we need to make sure that we do not run out of memory
+import resource
+import sys
+def memory():
+    def decorator(function):
+        def wrapper(*args, **kwargs):
+            resource.setrlimit(resource.RLIMIT_AS, (MEMOUT, MEMOUT))
+            function(*args, **kwargs)
+        return wrapper
+    return decorator
+
+
 # MEUPROBLOG
 
+@memory()
 def meu_instance_aspmc(benchmark):
     start = time.perf_counter()
     program = MEUProblogProgram("true.", [benchmark])
@@ -83,22 +97,31 @@ def meu_bench_aspmc(csv_writer, benchmark_path):
         if ctr >= LIMIT:
             break
         print(benchmark)
-        p = multiprocessing.Process(target=meu_instance_aspmc,args=(benchmark,))
-        start = time.perf_counter()
-        p.start()
-        p.join(TIMEOUT)
-        end = time.perf_counter()
-        print(f"Evaluation:             {'%.2f' % (end - start)}")
-        print()
-        if p.is_alive():
-            killtree(p.pid)
-            p.join()
+        try:
+            p = multiprocessing.Process(target=meu_instance_aspmc,args=(benchmark,))
+            start = time.perf_counter()
+            p.start()
+            p.join(TIMEOUT)
+            end = time.perf_counter()
+            print(f"Evaluation:             {'%.2f' % (end - start)}")
+            print()
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
+                print("Killed")
+                csv_writer.writerow([benchmark, end - start, False])
+            else:
+                csv_writer.writerow([benchmark, end - start, True])
+        except MemoryError:
+            csv_writer.writerow([benchmark, TIMEOUT, False])
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
             print("Killed")
-            csv_writer.writerow([benchmark, end - start, False])
-        else:
-            csv_writer.writerow([benchmark, end - start, True])
         ctr += 1
 
+
+@memory()
 def instance_clingo(benchmark):
     global c
     c = 0
@@ -122,22 +145,31 @@ def meu_bench_clingo(csv_writer, benchmark_path):
         print(benchmark)
         program = MEUProblogProgram("true.", [benchmark])
         string = Program._prog_string(program, program._program)
-        p = multiprocessing.Process(target=instance_clingo,args=(string,))
-        start = time.perf_counter()
-        p.start()
-        p.join(TIMEOUT)
-        end = time.perf_counter()
-        print(f"Evaluation:             {'%.2f' % (end - start)}")
-        print()
-        if p.is_alive():
-            killtree(p.pid)
-            p.join()
+        try:
+            p = multiprocessing.Process(target=instance_clingo,args=(string,))
+            start = time.perf_counter()
+            p.start()
+            p.join(TIMEOUT)
+            end = time.perf_counter()
+            print(f"Evaluation:             {'%.2f' % (end - start)}")
+            print()
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
+                print("Killed")
+                csv_writer.writerow([benchmark, end - start, False])
+            else:
+                csv_writer.writerow([benchmark, end - start, True])
+        except MemoryError:
+            csv_writer.writerow([benchmark, TIMEOUT, False])
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
             print("Killed")
-            csv_writer.writerow([benchmark, end - start, False])
-        else:
-            csv_writer.writerow([benchmark, end - start, True])
         ctr += 1
 
+
+@memory()
 def meu_instance_meuproblog(benchmark):
     with open("/dev/null", 'w') as f:
         maxeu.printer = Printer(f)
@@ -153,27 +185,35 @@ def meu_bench_meuproblog(csv_writer, benchmark_path):
         if ctr >= LIMIT:
             break
         print(benchmark)
-        p = multiprocessing.Process(target=meu_instance_meuproblog,args=(benchmark,))
-        start = time.perf_counter()
-        p.start()
-        p.join(TIMEOUT)
-        end = time.perf_counter()
-        print(f"Evaluation:             {'%.2f' % (end - start)}")
-        print()
-        if p.is_alive():
-            killtree(p.pid)
-            p.join()
+        try:
+            p = multiprocessing.Process(target=meu_instance_meuproblog,args=(benchmark,))
+            start = time.perf_counter()
+            p.start()
+            p.join(TIMEOUT)
+            end = time.perf_counter()
+            print(f"Evaluation:             {'%.2f' % (end - start)}")
+            print()
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
+                print("Killed")
+                csv_writer.writerow([benchmark, end - start, False])
+            else:
+                csv_writer.writerow([benchmark, end - start, True])
+        except MemoryError:
+            csv_writer.writerow([benchmark, TIMEOUT, False])
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
             print("Killed")
-            csv_writer.writerow([benchmark, end - start, False])
-        else:
-            csv_writer.writerow([benchmark, end - start, True])
         ctr += 1
 
 
+@memory()
 def meu_instance_pita(benchmark):
     base = basename(benchmark)
     dir = dirname(benchmark)
-    p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE, stdout=subprocess.PIPE)# stderr=subprocess.PIPE)
     p.communicate(f"[{base[:-3]}].\ndt_solve(Decision,Utility).\nhalt.\n".encode())
     p.wait()
 
@@ -185,24 +225,32 @@ def meu_bench_pita(csv_writer, benchmark_path):
         if ctr >= LIMIT:
             break
         print(benchmark)
-        p = multiprocessing.Process(target=meu_instance_pita,args=(benchmark,))
-        start = time.perf_counter()
-        p.start()
-        p.join(TIMEOUT)
-        end = time.perf_counter()
-        print(f"Evaluation:             {'%.2f' % (end - start)}")
-        print()
-        if p.is_alive():
-            killtree(p.pid)
-            p.join()
+        try:
+            p = multiprocessing.Process(target=meu_instance_pita,args=(benchmark,))
+            start = time.perf_counter()
+            p.start()
+            p.join(TIMEOUT)
+            end = time.perf_counter()
+            print(f"Evaluation:             {'%.2f' % (end - start)}")
+            print()
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
+                print("Killed")
+                csv_writer.writerow([benchmark, end - start, False])
+            else:
+                csv_writer.writerow([benchmark, end - start, True])
+        except MemoryError:
+            csv_writer.writerow([benchmark, TIMEOUT, False])
+            if p.is_alive():
+                killtree(p.pid)
+                p.join()
             print("Killed")
-            csv_writer.writerow([benchmark, end - start, False])
-        else:
-            csv_writer.writerow([benchmark, end - start, True])
         ctr += 1
 
 # MAPPROBLOG
 
+@memory()
 def map_instance_aspmc(benchmark):
     start = time.perf_counter()
     program = MAPProblogProgram("true.", [benchmark])
@@ -226,22 +274,30 @@ def map_bench_aspmc(csv_writer):
             if ctr >= LIMIT:
                 break
             print(benchmark)
-            p = multiprocessing.Process(target=map_instance_aspmc,args=(benchmark,))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=map_instance_aspmc,args=(benchmark,))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([benchmark, end - start, False])
+                else:
+                    csv_writer.writerow([benchmark, end - start, True])
+            except MemoryError:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([benchmark, end - start, False])
-            else:
-                csv_writer.writerow([benchmark, end - start, True])
             ctr += 1
 
+@memory()
 def map_bench_clingo(csv_writer):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
     benchmark_paths = [ "./benchmarks/map/gh/problog_format/",  "./benchmarks/map/gnb/problog_format/", "./benchmarks/map/blood/problog_format/", "./benchmarks/map/graphs/problog_format/"]
@@ -254,26 +310,34 @@ def map_bench_clingo(csv_writer):
             print(benchmark)
             program = MEUProblogProgram("true.", [benchmark])
             string = Program._prog_string(program, program._program)
-            p = multiprocessing.Process(target=instance_clingo,args=(string,))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=instance_clingo,args=(string,))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([benchmark, end - start, False])
+                else:
+                    csv_writer.writerow([benchmark, end - start, True])
+            except MemoryError:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([benchmark, end - start, False])
-            else:
-                csv_writer.writerow([benchmark, end - start, True])
             ctr += 1
 
 import subprocess
 
+@memory()
 def map_instance_mapproblog(benchmark):
-    p = subprocess.Popen(["problog", "map", benchmark], stdout=subprocess.PIPE)
+    p = subprocess.Popen(["problog", "map", benchmark])#, stdout=subprocess.PIPE)
     p.wait()
 
 def map_bench_mapproblog(csv_writer):
@@ -286,28 +350,36 @@ def map_bench_mapproblog(csv_writer):
             if ctr >= LIMIT:
                 break
             print(benchmark)
-            p = multiprocessing.Process(target=map_instance_mapproblog,args=(benchmark,))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=map_instance_mapproblog,args=(benchmark,))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([benchmark, end - start, False])
+                else:
+                    csv_writer.writerow([benchmark, end - start, True])
+            except MemoryError:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([benchmark, end - start, False])
-            else:
-                csv_writer.writerow([benchmark, end - start, True])
             ctr += 1
 
 
+@memory()
 def map_instance_pita(benchmark):
     base = basename(benchmark)
     dir = dirname(benchmark)
-    p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    p.communicate(f"[{base[:-3]}].\nmap(ev,P,Exp).\nchalt.\n".encode())
+    p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE, stdout=subprocess.PIPE)#, stderr=subprocess.PIPE)
+    p.communicate(f"[{base[:-3]}].\nmap(ev,P,Exp).\n\nhalt.\n".encode())
     p.wait()
 
 def map_bench_pita(csv_writer):
@@ -320,20 +392,27 @@ def map_bench_pita(csv_writer):
             if ctr >= LIMIT:
                 break
             print(benchmark)
-            p = multiprocessing.Process(target=map_instance_pita,args=(benchmark,))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=map_instance_pita,args=(benchmark,))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([benchmark, end - start, False])
+                else:
+                    csv_writer.writerow([benchmark, end - start, True])
+            except MemoryError:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([benchmark, end - start, False])
-            else:
-                csv_writer.writerow([benchmark, end - start, True])
             ctr += 1
 
 
@@ -341,6 +420,7 @@ def map_bench_pita(csv_writer):
 
 # PROBLOG
 
+@memory()
 def problog_instance_aspmc(p_type, files):
     start = time.perf_counter()
     if p_type == SMProblogProgram:
@@ -368,20 +448,27 @@ def problog_bench_aspmc(p_type, csv_writer):
             if ctr >= LIMIT:
                 return
             network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
-            p = multiprocessing.Process(target=problog_instance_aspmc,args=(p_type, [base, db, network]))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=problog_instance_aspmc,args=(p_type, [base, db, network]))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([f"{x}.{y}", end - start, False])
+                else:
+                    csv_writer.writerow([f"{x}.{y}", end - start, True])
+            except MemoryError:
+                csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([f"{x}.{y}", end - start, False])
-            else:
-                csv_writer.writerow([f"{x}.{y}", end - start, True])
             ctr += 1
 
 def problog_bench_clingo(csv_writer):
@@ -397,22 +484,31 @@ def problog_bench_clingo(csv_writer):
             network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
             program = AlgebraicProgram("", [base, db, network], probabilistic)
             string = Program._prog_string(program, program._program)
-            p = multiprocessing.Process(target=instance_clingo,args=(string,))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=instance_clingo,args=(string,))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([f"{x}.{y}", end - start, False])
+                else:
+                    csv_writer.writerow([f"{x}.{y}", end - start, True])
+            except MemoryError:
+                csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([f"{x}.{y}", end - start, False])
-            else:
-                csv_writer.writerow([f"{x}.{y}", end - start, True])
             ctr += 1
 
+
+@memory()
 def problog_instance_problog(string):
     p_string = PrologString(string)
     get_evaluatable().create_from(p_string).evaluate()
@@ -435,25 +531,33 @@ def problog_bench_problog(csv_writer):
             with open(db) as db_file:
                 cur_string += db_file.read()
             with open(network) as network_file:
-                cur_string += network_file.read()            
-            p = multiprocessing.Process(target=problog_instance_problog,args=(cur_string,))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+                cur_string += network_file.read()  
+            try:          
+                p = multiprocessing.Process(target=problog_instance_problog,args=(cur_string,))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([f"{x}.{y}", end - start, False])
+                else:
+                    csv_writer.writerow([f"{x}.{y}", end - start, True])
+            except MemoryError:
+                csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([f"{x}.{y}", end - start, False])
-            else:
-                csv_writer.writerow([f"{x}.{y}", end - start, True])
             ctr += 1
 
 # SMPROBLOG
 
+@memory()
 def smproblog_instance_aspmc(files):
     start = time.perf_counter()
     program = SMProblogProgram("", files)
@@ -478,20 +582,27 @@ def smproblog_bench_aspmc(csv_writer):
             if ctr >= LIMIT:
                 return
             network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
-            p = multiprocessing.Process(target=smproblog_instance_aspmc,args=([base, db, network],))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=smproblog_instance_aspmc,args=([base, db, network],))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([f"{x}.{y}", end - start, False])
+                else:
+                    csv_writer.writerow([f"{x}.{y}", end - start, True])
+            except MemoryError:
+                csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([f"{x}.{y}", end - start, False])
-            else:
-                csv_writer.writerow([f"{x}.{y}", end - start, True])
             ctr += 1
 
 def smproblog_bench_clingo(csv_writer):
@@ -507,20 +618,27 @@ def smproblog_bench_clingo(csv_writer):
             network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
             program = SMProblogProgram("", [base, db, network])
             string = Program._prog_string(program, program._program)
-            p = multiprocessing.Process(target=instance_clingo,args=(string,))
-            start = time.perf_counter()
-            p.start()
-            p.join(TIMEOUT)
-            end = time.perf_counter()
-            print(f"Evaluation:             {'%.2f' % (end - start)}")
-            print()
-            if p.is_alive():
-                killtree(p.pid)
-                p.join()
+            try:
+                p = multiprocessing.Process(target=instance_clingo,args=(string,))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([f"{x}.{y}", end - start, False])
+                else:
+                    csv_writer.writerow([f"{x}.{y}", end - start, True])
+            except MemoryError:
+                csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
                 print("Killed")
-                csv_writer.writerow([f"{x}.{y}", end - start, False])
-            else:
-                csv_writer.writerow([f"{x}.{y}", end - start, True])
             ctr += 1
 
 import csv
@@ -583,21 +701,23 @@ if EFFICIENCY_BENCH:
             csv_writer = csv.writer(results)
             meu_bench_clingo(csv_writer, "./benchmarks/meu/viral")
 
+        with open("results/meu/aspmc/results.csv", 'a') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_aspmc(csv_writer, "./benchmarks/meu/viral")
+
         with open("results/meu/meup/results.csv", 'a') as results:
             csv_writer = csv.writer(results)
             meu_bench_meuproblog(csv_writer, "./benchmarks/meu/viral")
 
-    with open("results/meu/aspmc/results.csv", 'a') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_aspmc(csv_writer, "./benchmarks/meu/viral")
+        with open("results/meu/pita/results.csv", 'a') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_pita(csv_writer, "./benchmarks/meu/viral/pita_format/")
 
-    with open("results/meu/pita/results.csv", 'a') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_pita(csv_writer, "./benchmarks/meu/viral/pita_format/")
+        with open("results/meu/pita_nz/results.csv", 'a') as results:
+            csv_writer = csv.writer(results)
+            meu_bench_pita(csv_writer, "./benchmarks/meu/viral/pita_format/")
 
-    with open("results/meu/pita_nz/results.csv", 'a') as results:
-        csv_writer = csv.writer(results)
-        meu_bench_pita(csv_writer, "./benchmarks/meu/viral/pita_format/")
+
 
         
 
@@ -609,15 +729,20 @@ if EFFICIENCY_BENCH:
 
         with open("results/map/aspmc/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            map_bench_aspmc(csv_writer)
-
-        with open("results/map/mapp/results.csv", 'w') as results:
-            csv_writer = csv.writer(results)
-            map_bench_mapproblog(csv_writer)
-
+            map_bench_aspmc(csv_writer)    
+        
         with open("results/map/pita/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
             map_bench_pita(csv_writer)
+
+    with open("results/map/mapp/results.csv", 'w') as results:
+        csv_writer = csv.writer(results)
+        map_bench_mapproblog(csv_writer)
+
+    
+
+
+
 
 from aspmc.compile.constrained_compile import compute_separator
 import aspmc.graph.treedecomposition as treedecomposition

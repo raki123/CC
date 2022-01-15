@@ -798,7 +798,7 @@ path(340,340).
 path(3,32):-edge(10,32),path(3,10).
 path(12,27):-edge(22,27),path(12,22).
 path(6,42):-edge(35,42),path(6,35).
-true.
+
 path(326,326).
 path(6,28):-edge(26,28),path(6,26).
 path(3,28):-edge(26,28),path(3,26).

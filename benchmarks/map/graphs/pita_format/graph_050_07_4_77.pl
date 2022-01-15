@@ -536,7 +536,7 @@ path(0,4):-edge(3,4),path(0,3).
 path(16,16).
 path(1,27):-edge(15,27),path(1,15).
 path(0,41):-edge(6,41),path(0,6).
-true.
+
 path(17,17).
 path(3,18):-edge(3,18).
 path(1,24):-edge(3,24),path(1,3).
