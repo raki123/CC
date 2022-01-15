@@ -1,0 +1,433 @@
+(base) rafael@FBI:~/projects/benchmarking$ python bench.py 
+./benchmarks/meu/viral/viral_8_7.pl
+Compilation took 0.2133944034576416 seconds.
+start decisions: {1, 2, 41, 12, 17, 89, 29, 63}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: 0.4, 12: pos_neg_weight(p_weight=s(1.0,-2,{12}), n_weight=s(1.0,0,{-12})), 13: 0.3, 16: 0.4, 17: pos_neg_weight(p_weight=s(1.0,-2,{17}), n_weight=s(1.0,0,{-17})), 18: 0.3, 19: True, 25: 0.4, 28: 0.4, 29: pos_neg_weight(p_weight=s(1.0,-2,{29}), n_weight=s(1.0,0,{-29})), 30: 0.3, 31: True, 37: 0.4, 40: 0.4, 41: pos_neg_weight(p_weight=s(1.0,-2,{41}), n_weight=s(1.0,0,{-41})), 42: 0.3, 43: True, 49: 0.4, 52: 0.3, 53: True, 59: 0.4, 60: 0.4, 63: pos_neg_weight(p_weight=s(1.0,-2,{63}), n_weight=s(1.0,0,{-63})), 64: 0.3, 65: True, 71: 0.4, 72: 0.4, 75: True, 83: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 89: pos_neg_weight(p_weight=s(1.0,-2,{89}), n_weight=s(1.0,0,{-89})), 92: True, 100: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 106: True, 114: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 120: True, 128: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 134: True, 142: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 148: True, 156: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 162: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 168: 0.3, 169: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0011150836944580078 seconds
+Circuit evaluation took 1.0606517791748047 seconds.
+Best decisions {market(1): 1, market(3): 0, market(8): 0, market(7): 1, market(2): 1, market(4): 0, market(5): 0, market(6): 1}
+Expected utility 4.1759296000000115
+Compile time 0.2133944034576416
+Runtime 1.2751612663269043
+Evaluation:             1.36
+
+./benchmarks/meu/viral/viral_9_8.pl
+Compilation took 0.896028995513916 seconds.
+start decisions: {1, 2, 36, 70, 10, 48, 18, 82, 23}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5, market(9): -2, buys(9): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 10: pos_neg_weight(p_weight=s(1.0,-2,{10}), n_weight=s(1.0,0,{-10})), 11: 0.3, 12: True, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 19: 0.3, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 25: True, 31: 0.4, 32: 0.4, 35: 0.3, 36: pos_neg_weight(p_weight=s(1.0,-2,{36}), n_weight=s(1.0,0,{-36})), 37: True, 43: 0.4, 44: 0.4, 47: 0.3, 48: pos_neg_weight(p_weight=s(1.0,-2,{48}), n_weight=s(1.0,0,{-48})), 49: True, 55: 0.4, 56: 0.4, 59: 0.3, 60: True, 66: 0.4, 67: 0.4, 70: pos_neg_weight(p_weight=s(1.0,-2,{70}), n_weight=s(1.0,0,{-70})), 71: 0.3, 72: True, 78: 0.4, 79: 0.4, 82: pos_neg_weight(p_weight=s(1.0,-2,{82}), n_weight=s(1.0,0,{-82})), 83: 0.3, 84: True, 90: 0.4, 91: 0.4, 94: True, 100: 0.4, 103: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 111: True, 119: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 125: True, 133: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 139: True, 147: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 153: True, 161: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 167: True, 175: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 181: True, 189: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 195: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0017278194427490234 seconds
+Circuit evaluation took 3.6948068141937256 seconds.
+Best decisions {market(5): 1, market(6): 1, market(2): 0, market(1): 1, market(4): 0, market(8): 1, market(7): 1, market(3): 0, market(9): 0}
+Expected utility 5.310975488000016
+Compile time 0.896028995513916
+Runtime 4.592563629150391
+Evaluation:             4.80
+
+./benchmarks/meu/viral/viral_17_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_10_9.pl
+Compilation took 1.3647851943969727 seconds.
+start decisions: {1, 2, 66, 7, 42, 107, 78, 18, 90, 30}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5, market(9): -2, buys(9): 5, market(10): -2, buys(10): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 6: 0.4, 7: pos_neg_weight(p_weight=s(1.0,-2,{7}), n_weight=s(1.0,0,{-7})), 8: 0.3, 9: True, 15: 0.4, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 19: 0.3, 20: True, 26: 0.4, 27: 0.4, 30: pos_neg_weight(p_weight=s(1.0,-2,{30}), n_weight=s(1.0,0,{-30})), 31: 0.3, 32: True, 38: 0.4, 39: 0.4, 42: pos_neg_weight(p_weight=s(1.0,-2,{42}), n_weight=s(1.0,0,{-42})), 43: 0.3, 44: True, 50: 0.4, 51: 0.4, 54: 0.4, 55: 0.3, 56: True, 62: 0.4, 65: 0.4, 66: pos_neg_weight(p_weight=s(1.0,-2,{66}), n_weight=s(1.0,0,{-66})), 67: 0.3, 68: True, 74: 0.4, 77: 0.4, 78: pos_neg_weight(p_weight=s(1.0,-2,{78}), n_weight=s(1.0,0,{-78})), 79: 0.3, 80: True, 86: 0.4, 89: 0.4, 90: pos_neg_weight(p_weight=s(1.0,-2,{90}), n_weight=s(1.0,0,{-90})), 91: 0.3, 92: True, 98: 0.4, 101: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 107: pos_neg_weight(p_weight=s(1.0,-2,{107}), n_weight=s(1.0,0,{-107})), 108: True, 116: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 122: True, 130: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 136: True, 144: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 150: True, 158: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 164: True, 172: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 178: True, 186: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 192: True, 200: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 206: True, 214: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 220: 0.3, 221: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0012879371643066406 seconds
+Circuit evaluation took 16.442848443984985 seconds.
+Best decisions {market(9): 1, market(6): 1, market(8): 0, market(1): 1, market(4): 1, market(2): 1, market(7): 0, market(10): 0, market(5): 0, market(3): 1}
+Expected utility 6.497956976640065
+Compile time 1.3647851943969727
+Runtime 17.808921575546265
+Evaluation:             18.06
+
+./benchmarks/meu/viral/viral_3_2.pl
+Compilation took 0.00783681869506836 seconds.
+start decisions: {1, 10, 27}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: 0.3, 3: True, 9: 0.4, 10: pos_neg_weight(p_weight=s(1.0,-2,{10}), n_weight=s(1.0,0,{-10})), 11: 0.3, 12: True, 18: 0.4, 21: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 27: pos_neg_weight(p_weight=s(1.0,-2,{27}), n_weight=s(1.0,0,{-27})), 30: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 36: 0.3, 37: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0008745193481445312 seconds
+Circuit evaluation took 0.006907939910888672 seconds.
+Best decisions {market(2): 1, market(3): 0, market(1): 0}
+Expected utility 0.10000000000000009
+Compile time 0.00783681869506836
+Runtime 0.015619277954101562
+Evaluation:             0.04
+
+./benchmarks/meu/viral/viral_14_2.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_10_3.pl
+
+malloc failed in new_sdd_node
+Evaluation:             259.72
+
+./benchmarks/meu/viral/viral_19_2.pl
+
+malloc failed in new_sdd_node
+Evaluation:             125.03
+
+./benchmarks/meu/viral/viral_4_3.pl
+Compilation took 0.012438058853149414 seconds.
+start decisions: {1, 18, 9, 23}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: 0.3, 3: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 9: pos_neg_weight(p_weight=s(1.0,-2,{9}), n_weight=s(1.0,0,{-9})), 10: 0.3, 11: True, 17: 0.3, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 21: 0.4, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 25: True, 31: 0.4, 34: True, 40: 0.4, 43: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 51: True, 59: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 65: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0011827945709228516 seconds
+Circuit evaluation took 0.020788908004760742 seconds.
+Best decisions {market(2): 0, market(3): 1, market(4): 0, market(1): 0}
+Expected utility 0.7000000000000002
+Compile time 0.012438058853149414
+Runtime 0.03440976142883301
+Evaluation:             0.08
+
+./benchmarks/meu/viral/viral_15_2.pl
+
+calloc failed in new_element_array
+Evaluation:             129.09
+
+./benchmarks/meu/viral/viral_8_2.pl
+
+malloc failed in new_sdd_node
+Evaluation:             109.40
+
+./benchmarks/meu/viral/viral_17_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_18_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_5_2.pl
+Compilation took 1.1693031787872314 seconds.
+start decisions: {1, 2, 11, 15, 24}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 17: True, 23: 0.4, 24: pos_neg_weight(p_weight=s(1.0,-2,{24}), n_weight=s(1.0,0,{-24})), 25: 0.3, 26: True, 32: 0.4, 33: 0.4, 34: 0.4, 35: 0.4, 38: True, 44: 0.4, 49: True, 55: 0.4, 58: 0.4, 59: True, 69: True, 77: True, 85: True, 93: True, 99: 0.4, 102: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 108: 0.3, 109: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 117: True, 125: True, 133: True, 143: True, 151: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 161: True, 169: True, 179: True, 189: True, 197: True, 205: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 213: True, 223: True, 231: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.013899087905883789 seconds
+Circuit evaluation took 0.5010242462158203 seconds.
+Best decisions {market(2): 0, market(4): 1, market(3): 1, market(1): 1, market(5): 0}
+Expected utility 3.164735999999997
+Compile time 1.1693031787872314
+Runtime 1.6842265129089355
+Evaluation:             1.99
+
+./benchmarks/meu/viral/viral_6_4.pl
+Compilation took 2.9306488037109375 seconds.
+start decisions: {1, 2, 7, 74, 203, 24}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 6: 0.4, 7: pos_neg_weight(p_weight=s(1.0,-2,{7}), n_weight=s(1.0,0,{-7})), 8: 0.3, 9: True, 15: 0.4, 16: 0.3, 17: True, 23: 0.4, 24: pos_neg_weight(p_weight=s(1.0,-2,{24}), n_weight=s(1.0,0,{-24})), 25: 0.3, 26: True, 32: 0.4, 33: 0.4, 34: 0.4, 37: 0.4, 38: True, 46: True, 52: 0.4, 57: True, 65: True, 71: 0.4, 74: pos_neg_weight(p_weight=s(1.0,-2,{74}), n_weight=s(1.0,0,{-74})), 75: 0.3, 76: True, 82: 0.4, 83: 0.4, 86: 0.4, 87: True, 95: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 103: True, 111: True, 121: True, 129: True, 137: True, 145: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 153: True, 163: True, 171: True, 179: True, 189: True, 197: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 203: pos_neg_weight(p_weight=s(1.0,-2,{203}), n_weight=s(1.0,0,{-203})), 204: 0.3, 205: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 213: True, 223: True, 233: True, 241: True, 249: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 255: True, 263: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.014160871505737305 seconds
+Circuit evaluation took 1.2946035861968994 seconds.
+Best decisions {market(5): 1, market(4): 1, market(6): 0, market(3): 0, market(1): 1, market(2): 1}
+Expected utility 4.207479808000005
+Compile time 2.9306488037109375
+Runtime 4.239413261413574
+Evaluation:             4.70
+
+./benchmarks/meu/viral/viral_5_4.pl
+Compilation took 0.0286257266998291 seconds.
+start decisions: {1, 2, 7, 18, 30}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 6: 0.4, 7: pos_neg_weight(p_weight=s(1.0,-2,{7}), n_weight=s(1.0,0,{-7})), 8: 0.3, 9: True, 15: 0.4, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 19: 0.3, 20: True, 26: 0.4, 27: 0.4, 30: pos_neg_weight(p_weight=s(1.0,-2,{30}), n_weight=s(1.0,0,{-30})), 31: 0.3, 32: True, 38: 0.4, 39: 0.4, 42: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 48: 0.3, 49: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 55: True, 63: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 69: True, 77: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 83: True, 91: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.001630544662475586 seconds
+Circuit evaluation took 0.05879974365234375 seconds.
+Best decisions {market(4): 1, market(3): 0, market(2): 0, market(1): 1, market(5): 0}
+Expected utility 1.3759999999999994
+Compile time 0.0286257266998291
+Runtime 0.08905601501464844
+Evaluation:             0.17
+
+./benchmarks/meu/viral/viral_15_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_9_2.pl
+Compilation took 85.99878001213074 seconds.
+start decisions: {1, 2, 10, 46, 15, 20, 58, 123, 94}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5, market(9): -2, buys(9): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 10: pos_neg_weight(p_weight=s(1.0,-2,{10}), n_weight=s(1.0,0,{-10})), 11: 0.3, 14: 0.4, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 19: 0.4, 20: pos_neg_weight(p_weight=s(1.0,-2,{20}), n_weight=s(1.0,0,{-20})), 21: 0.3, 22: True, 28: 0.4, 29: 0.4, 30: 0.4, 33: 0.4, 34: 0.3, 35: True, 41: 0.4, 42: 0.4, 45: 0.4, 46: pos_neg_weight(p_weight=s(1.0,-2,{46}), n_weight=s(1.0,0,{-46})), 47: 0.3, 48: True, 54: 0.4, 57: 0.4, 58: pos_neg_weight(p_weight=s(1.0,-2,{58}), n_weight=s(1.0,0,{-58})), 59: 0.3, 60: True, 66: 0.4, 69: True, 77: 0.4, 78: True, 86: True, 94: pos_neg_weight(p_weight=s(1.0,-2,{94}), n_weight=s(1.0,0,{-94})), 95: 0.3, 96: True, 102: 0.4, 103: 0.4, 106: 0.4, 107: True, 115: True, 123: pos_neg_weight(p_weight=s(1.0,-2,{123}), n_weight=s(1.0,0,{-123})), 124: 0.3, 125: True, 131: 0.4, 132: 0.4, 135: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 145: True, 153: True, 161: True, 169: True, 177: True, 185: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 193: True, 201: True, 209: True, 217: True, 227: True, 235: True, 243: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 249: True, 257: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 267: True, 275: True, 285: True, 293: True, 301: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 309: True, 317: True, 325: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 331: True, 339: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 345: True, 353: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0022466182708740234 seconds
+Circuit evaluation took 116.17748379707336 seconds.
+Best decisions {market(5): 1, market(4): 0, market(7): 0, market(8): 0, market(1): 1, market(2): 1, market(6): 0, market(3): 1, market(9): 0}
+Expected utility 7.656212991999937
+Compile time 85.99878001213074
+Runtime 202.17851042747498
+Evaluation:             207.30
+
+./benchmarks/meu/viral/viral_5_3.pl
+Compilation took 0.5701329708099365 seconds.
+start decisions: {1, 2, 11, 19, 29}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 13: True, 19: pos_neg_weight(p_weight=s(1.0,-2,{19}), n_weight=s(1.0,0,{-19})), 20: 0.3, 21: True, 27: 0.4, 28: 0.4, 29: pos_neg_weight(p_weight=s(1.0,-2,{29}), n_weight=s(1.0,0,{-29})), 30: 0.3, 31: True, 37: 0.4, 38: 0.4, 41: 0.4, 42: True, 48: 0.4, 51: 0.4, 52: True, 60: 0.4, 63: True, 71: True, 79: True, 85: 0.4, 88: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 94: 0.3, 95: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 103: True, 113: True, 121: True, 131: True, 141: True, 149: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 157: True, 167: True, 175: True, 185: True, 195: True, 203: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 211: True, 221: True, 229: True, 237: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0018124580383300781 seconds
+Circuit evaluation took 0.2973639965057373 seconds.
+Best decisions {market(4): 1, market(3): 1, market(2): 0, market(1): 1, market(5): 0}
+Expected utility 3.1647360000000035
+Compile time 0.5701329708099365
+Runtime 0.8693094253540039
+Evaluation:             1.20
+
+./benchmarks/meu/viral/viral_9_6.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_11_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_11_4.pl
+
+calloc failed in new_element_array
+Evaluation:             163.55
+
+./benchmarks/meu/viral/viral_12_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_7_6.pl
+Compilation took 0.07365870475769043 seconds.
+start decisions: {1, 2, 39, 11, 15, 27, 127}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 17: True, 23: 0.4, 24: 0.4, 27: pos_neg_weight(p_weight=s(1.0,-2,{27}), n_weight=s(1.0,0,{-27})), 28: 0.3, 29: True, 35: 0.4, 36: 0.4, 39: pos_neg_weight(p_weight=s(1.0,-2,{39}), n_weight=s(1.0,0,{-39})), 40: 0.3, 41: True, 47: 0.4, 48: 0.4, 51: 0.4, 52: 0.3, 53: True, 59: 0.4, 60: 0.4, 63: True, 71: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 79: True, 87: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 93: True, 101: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 107: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 113: True, 121: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 127: pos_neg_weight(p_weight=s(1.0,-2,{127}), n_weight=s(1.0,0,{-127})), 128: 0.3, 129: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 135: True, 143: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0010268688201904297 seconds
+Circuit evaluation took 0.2599771022796631 seconds.
+Best decisions {market(7): 0, market(4): 1, market(2): 0, market(3): 1, market(6): 1, market(5): 0, market(1): 1}
+Expected utility 3.129990400000006
+Compile time 0.07365870475769043
+Runtime 0.33466267585754395
+Evaluation:             0.40
+
+./benchmarks/meu/viral/viral_7_4.pl
+
+calloc failed in new_element_array
+Evaluation:             109.82
+
+./benchmarks/meu/viral/viral_20_2.pl
+
+malloc failed in new_sdd_node
+Evaluation:             230.34
+
+./benchmarks/meu/viral/viral_9_4.pl
+
+calloc failed in new_element_array
+Evaluation:             153.07
+
+./benchmarks/meu/viral/viral_16_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_9_5.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_20_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_13_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_8_5.pl
+
+calloc failed in new_element_array
+Evaluation:             230.93
+
+./benchmarks/meu/viral/viral_8_6.pl
+
+malloc failed in new_sdd_node
+Evaluation:             90.13
+
+./benchmarks/meu/viral/viral_8_4.pl
+
+malloc failed in new_sdd_node
+Evaluation:             54.27
+
+./benchmarks/meu/viral/viral_15_3.pl
+
+calloc failed in new_element_array
+Evaluation:             160.34
+
+./benchmarks/meu/viral/viral_6_2.pl
+Compilation took 3.0104665756225586 seconds.
+start decisions: {1, 2, 291, 39, 11, 19}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 13: True, 19: pos_neg_weight(p_weight=s(1.0,-2,{19}), n_weight=s(1.0,0,{-19})), 20: 0.3, 21: True, 27: 0.4, 28: 0.4, 29: 0.4, 30: 0.3, 31: True, 37: 0.4, 38: 0.4, 39: pos_neg_weight(p_weight=s(1.0,-2,{39}), n_weight=s(1.0,0,{-39})), 40: 0.3, 41: True, 47: 0.4, 48: 0.4, 51: True, 59: True, 65: 0.4, 68: 0.4, 71: True, 79: True, 87: 0.4, 88: True, 96: 0.4, 99: True, 107: True, 117: True, 125: True, 133: True, 141: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 149: True, 159: True, 167: True, 175: True, 185: True, 193: True, 203: True, 211: True, 219: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 227: True, 235: True, 243: True, 251: True, 261: True, 269: True, 277: True, 285: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 291: pos_neg_weight(p_weight=s(1.0,-2,{291}), n_weight=s(1.0,0,{-291})), 292: 0.3, 293: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 301: True, 309: True, 317: True, 327: True, 335: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 343: True, 353: True, 361: True, 369: True, 377: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0009381771087646484 seconds
+Circuit evaluation took 1.1753501892089844 seconds.
+Best decisions {market(4): 1, market(1): 1, market(3): 1, market(2): 1, market(6): 0, market(5): 0}
+Expected utility 4.102461184000012
+Compile time 3.0104665756225586
+Runtime 4.186754941940308
+Evaluation:             4.69
+
+./benchmarks/meu/viral/viral_12_3.pl
+
+calloc failed in new_element_array
+Evaluation:             80.75
+
+./benchmarks/meu/viral/viral_18_2.pl
+
+calloc failed in resize_sdd_node_hash
+Evaluation:             263.77
+
+./benchmarks/meu/viral/viral_7_2.pl
+
+calloc failed in new_element_array
+Evaluation:             98.88
+
+./benchmarks/meu/viral/viral_4_2.pl
+Compilation took 0.015494585037231445 seconds.
+start decisions: {1, 18, 9, 23}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: 0.3, 3: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 9: pos_neg_weight(p_weight=s(1.0,-2,{9}), n_weight=s(1.0,0,{-9})), 10: 0.3, 11: True, 17: 0.3, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 21: 0.4, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 25: True, 31: 0.4, 34: True, 40: 0.4, 43: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 51: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 59: True, 67: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0012083053588867188 seconds
+Circuit evaluation took 0.01980113983154297 seconds.
+Best decisions {market(3): 0, market(2): 1, market(4): 0, market(1): 0}
+Expected utility 0.7000000000000002
+Compile time 0.015494585037231445
+Runtime 0.03650403022766113
+Evaluation:             0.09
+
+./benchmarks/meu/viral/viral_7_3.pl
+
+calloc failed in new_element_array
+Evaluation:             168.81
+
+./benchmarks/meu/viral/viral_8_3.pl
+
+malloc failed in new_sdd_node
+Evaluation:             148.01
+
+./benchmarks/meu/viral/viral_7_5.pl
+Compilation took 28.785791873931885 seconds.
+start decisions: {1, 2, 14, 23, 347, 28, 61}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.3, 13: 0.3, 14: pos_neg_weight(p_weight=s(1.0,-2,{14}), n_weight=s(1.0,0,{-14})), 15: True, 21: 0.4, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 27: 0.4, 28: pos_neg_weight(p_weight=s(1.0,-2,{28}), n_weight=s(1.0,0,{-28})), 29: 0.3, 30: True, 36: 0.4, 37: 0.4, 40: 0.4, 41: 0.4, 42: True, 48: 0.4, 51: True, 57: 0.4, 60: 0.3, 61: pos_neg_weight(p_weight=s(1.0,-2,{61}), n_weight=s(1.0,0,{-61})), 62: True, 68: 0.4, 69: 0.4, 74: True, 82: True, 88: 0.4, 91: 0.4, 92: True, 98: 0.4, 101: True, 107: 0.4, 112: True, 120: True, 130: True, 138: True, 146: True, 154: True, 160: 0.4, 163: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 171: True, 179: True, 187: True, 195: True, 205: True, 213: True, 221: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 227: True, 235: True, 245: True, 255: True, 265: True, 273: True, 283: True, 293: True, 301: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 309: True, 319: True, 327: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 333: True, 341: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 347: pos_neg_weight(p_weight=s(1.0,-2,{347}), n_weight=s(1.0,0,{-347})), 348: 0.3, 349: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 355: True, 365: True, 375: True, 385: True, 393: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0019218921661376953 seconds
+Circuit evaluation took 10.811163663864136 seconds.
+Best decisions {market(5): 1, market(4): 1, market(1): 0, market(2): 0, market(7): 0, market(6): 1, market(3): 1}
+Expected utility 6.396643717120037
+Compile time 28.785791873931885
+Runtime 39.59887742996216
+Evaluation:             41.88
+
+./benchmarks/meu/viral/viral_6_3.pl
+Compilation took 11.711851358413696 seconds.
+start decisions: {1, 2, 289, 11, 15, 20}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 19: 0.4, 20: pos_neg_weight(p_weight=s(1.0,-2,{20}), n_weight=s(1.0,0,{-20})), 21: 0.3, 22: True, 28: 0.4, 29: 0.4, 32: 0.4, 33: 0.4, 34: 0.3, 35: True, 41: 0.4, 42: 0.4, 43: 0.4, 46: True, 52: 0.4, 55: 0.4, 56: 0.4, 57: True, 65: True, 73: True, 83: True, 91: True, 99: True, 107: True, 113: 0.4, 118: True, 128: True, 136: True, 142: 0.4, 145: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 155: True, 163: True, 173: True, 183: True, 191: True, 201: True, 209: True, 217: True, 225: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 233: True, 243: True, 251: True, 263: True, 275: True, 283: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 289: pos_neg_weight(p_weight=s(1.0,-2,{289}), n_weight=s(1.0,0,{-289})), 290: 0.3, 291: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 301: True, 309: True, 319: True, 327: True, 337: True, 345: True, 353: True, 361: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 371: True, 379: True, 389: True, 397: True, 405: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0016770362854003906 seconds
+Circuit evaluation took 3.3317036628723145 seconds.
+Best decisions {market(5): 1, market(4): 1, market(1): 1, market(2): 0, market(3): 1, market(6): 0}
+Expected utility 5.16097361920003
+Compile time 11.711851358413696
+Runtime 15.045232057571411
+Evaluation:             16.31
+
+./benchmarks/meu/viral/viral_10_6.pl
+
+calloc failed in new_element_array
+Evaluation:             155.73
+
+./benchmarks/meu/viral/viral_13_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_14_4.pl
+Evaluation:             300.02
+
+Killed
+./benchmarks/meu/viral/viral_6_5.pl
+Compilation took 0.10943126678466797 seconds.
+start decisions: {89, 1, 2, 37, 14, 25}
+start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.3, 13: 0.3, 14: pos_neg_weight(p_weight=s(1.0,-2,{14}), n_weight=s(1.0,0,{-14})), 15: True, 21: 0.4, 22: 0.4, 25: pos_neg_weight(p_weight=s(1.0,-2,{25}), n_weight=s(1.0,0,{-25})), 26: 0.3, 27: True, 33: 0.4, 34: 0.4, 37: pos_neg_weight(p_weight=s(1.0,-2,{37}), n_weight=s(1.0,0,{-37})), 38: 0.3, 39: True, 45: 0.4, 46: 0.4, 49: 0.4, 50: True, 56: 0.4, 59: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 67: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 75: True, 83: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 89: pos_neg_weight(p_weight=s(1.0,-2,{89}), n_weight=s(1.0,0,{-89})), 90: 0.3, 91: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 97: True, 105: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 111: True, 119: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0018470287322998047 seconds
+Circuit evaluation took 0.18619394302368164 seconds.
+Best decisions {market(5): 1, market(4): 1, market(2): 0, market(6): 0, market(3): 0, market(1): 1}
+Expected utility 2.196480000000001
+Compile time 0.10943126678466797
+Runtime 0.2974722385406494
+Evaluation:             0.40
+
+./benchmarks/meu/viral/viral_10_5.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_10_7.pl
+
+malloc failed in new_sdd_node
+Evaluation:             275.90
+
+./benchmarks/meu/viral/viral_9_7.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_20_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_9_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_18_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_10_8.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_16_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_13_2.pl
+Evaluation:             300.11
+
+Killed
+./benchmarks/meu/viral/viral_19_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_10_2.pl
+
+malloc failed in new_sdd_node
+Evaluation:             116.08
+
+./benchmarks/meu/viral/viral_11_2.pl
+
+calloc failed in new_element_array
+Evaluation:             112.46
+
+./benchmarks/meu/viral/viral_14_3.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_10_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_16_2.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_19_4.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/viral/viral_17_2.pl
+
+calloc failed in new_element_array
+Evaluation:             269.82
+
+./benchmarks/meu/viral/viral_12_2.pl
+
+calloc failed in new_element_array
+Evaluation:             127.89
+
+
