@@ -1,0 +1,3005 @@
+./benchmarks/map/gh/problog_format/gh_9_0_6_31.pl
+Cycle breaking:         6.00
+Evaluation:             145.34
+
+Evaluation:             151.39
+
+./benchmarks/map/gh/problog_format/gh_13_0_7_4.pl
+Cycle breaking:         7.09
+Evaluation:             92.51
+
+Evaluation:             99.66
+
+./benchmarks/map/gh/problog_format/gh_8_0_0_32.pl
+Cycle breaking:         5.85
+Evaluation:             16.11
+
+Evaluation:             22.00
+
+./benchmarks/map/gh/problog_format/gh_10_0_9_14.pl
+Cycle breaking:         6.44
+Evaluation:             27.11
+
+Evaluation:             33.60
+
+./benchmarks/map/gh/problog_format/gh_6_0_3_15.pl
+Cycle breaking:         5.45
+Evaluation:             10.38
+
+Evaluation:             15.87
+
+./benchmarks/map/gh/problog_format/gh_11_0_1_52.pl
+Cycle breaking:         6.52
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_4_0_4_3.pl
+Cycle breaking:         5.18
+Evaluation:             10.21
+
+Evaluation:             15.45
+
+./benchmarks/map/gh/problog_format/gh_3_0_5_3.pl
+Cycle breaking:         5.12
+Evaluation:             5.17
+
+Evaluation:             10.33
+
+./benchmarks/map/gh/problog_format/gh_2_0_6_1.pl
+Cycle breaking:         5.06
+Evaluation:             5.16
+
+Evaluation:             10.26
+
+./benchmarks/map/gh/problog_format/gh_2_0_7_0.pl
+Cycle breaking:         5.07
+Evaluation:             5.16
+
+Evaluation:             10.28
+
+./benchmarks/map/gh/problog_format/gh_13_0_1_76.pl
+Cycle breaking:         7.39
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_9_0_5_27.pl
+Cycle breaking:         6.00
+Evaluation:             79.33
+
+Evaluation:             85.39
+
+./benchmarks/map/gh/problog_format/gh_7_0_5_6.pl
+Cycle breaking:         5.56
+Evaluation:             5.36
+
+Evaluation:             10.96
+
+./benchmarks/map/gh/problog_format/gh_8_0_9_17.pl
+Cycle breaking:         5.75
+Evaluation:             14.70
+
+Evaluation:             20.49
+
+./benchmarks/map/gh/problog_format/gh_6_0_0_18.pl
+Cycle breaking:         5.46
+Evaluation:             10.45
+
+Evaluation:             15.95
+
+./benchmarks/map/gh/problog_format/gh_10_0_5_41.pl
+Cycle breaking:         6.26
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_2_23.pl
+Cycle breaking:         6.46
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/gh/problog_format/gh_10_0_4_44.pl
+Cycle breaking:         6.29
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_6_51.pl
+Cycle breaking:         6.60
+Evaluation:             300.13
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_4_46.pl
+Cycle breaking:         6.47
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_6_0_6_18.pl
+Cycle breaking:         5.51
+Evaluation:             10.48
+
+Evaluation:             16.03
+
+./benchmarks/map/gh/problog_format/gh_9_0_4_20.pl
+Cycle breaking:         5.98
+Evaluation:             48.09
+
+Evaluation:             54.11
+
+./benchmarks/map/gh/problog_format/gh_12_0_8_55.pl
+Cycle breaking:         7.01
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_14_0_5_94.pl
+Cycle breaking:         7.81
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_9_0_3_31.pl
+Cycle breaking:         5.99
+Evaluation:             119.33
+
+Evaluation:             125.37
+
+./benchmarks/map/gh/problog_format/gh_5_0_2_2.pl
+Cycle breaking:         5.25
+Evaluation:             5.19
+
+Evaluation:             10.48
+
+./benchmarks/map/gh/problog_format/gh_14_0_2_12.pl
+Cycle breaking:         7.55
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_7_0_7_14.pl
+Cycle breaking:         5.62
+Evaluation:             10.93
+
+Evaluation:             16.58
+
+./benchmarks/map/gh/problog_format/gh_9_0_1_5.pl
+Cycle breaking:         5.94
+Evaluation:             5.99
+
+Evaluation:             11.97
+
+./benchmarks/map/gh/problog_format/gh_5_0_0_0.pl
+Cycle breaking:         5.24
+Evaluation:             5.18
+
+Evaluation:             10.46
+
+./benchmarks/map/gh/problog_format/gh_8_0_4_20.pl
+Cycle breaking:         5.79
+Evaluation:             17.29
+
+Evaluation:             23.11
+
+./benchmarks/map/gh/problog_format/gh_11_0_5_21.pl
+Cycle breaking:         6.47
+Evaluation:             300.02
+
+Killed
+./benchmarks/map/gh/problog_format/gh_15_0_8_35.pl
+Cycle breaking:         7.79
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/gh/problog_format/gh_2_0_0_1.pl
+Cycle breaking:         5.05
+Evaluation:             5.16
+
+Evaluation:             10.25
+
+./benchmarks/map/gh/problog_format/gh_12_0_1_56.pl
+Cycle breaking:         6.99
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_0_1.pl
+Cycle breaking:         6.42
+Evaluation:             10.24
+
+Evaluation:             16.71
+
+./benchmarks/map/gh/problog_format/gh_12_0_7_73.pl
+Cycle breaking:         7.21
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_5_0_7_11.pl
+Cycle breaking:         5.28
+Evaluation:             10.21
+
+Evaluation:             15.52
+
+./benchmarks/map/gh/problog_format/gh_15_0_9_3.pl
+Cycle breaking:         7.73
+Evaluation:             59.49
+
+Evaluation:             67.27
+
+./benchmarks/map/gh/problog_format/gh_10_0_7_0.pl
+Cycle breaking:         6.14
+Evaluation:             6.22
+
+Evaluation:             12.39
+
+./benchmarks/map/gh/problog_format/gh_9_0_9_22.pl
+Cycle breaking:         5.93
+Evaluation:             84.13
+
+Evaluation:             90.11
+
+./benchmarks/map/gh/problog_format/gh_5_0_9_13.pl
+Cycle breaking:         5.27
+Evaluation:             5.19
+
+Evaluation:             10.51
+
+./benchmarks/map/gh/problog_format/gh_12_0_2_55.pl
+Cycle breaking:         6.87
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_7_22.pl
+Cycle breaking:         6.43
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_15_0_5_4.pl
+Cycle breaking:         7.84
+Evaluation:             300.07
+
+Killed
+./benchmarks/map/gh/problog_format/gh_6_0_4_7.pl
+Cycle breaking:         5.42
+Evaluation:             5.20
+
+Evaluation:             10.64
+
+./benchmarks/map/gh/problog_format/gh_2_0_9_0.pl
+Cycle breaking:         5.05
+Evaluation:             5.17
+
+Evaluation:             10.27
+
+./benchmarks/map/gh/problog_format/gh_7_0_2_10.pl
+Cycle breaking:         5.62
+Evaluation:             5.71
+
+Evaluation:             11.36
+
+./benchmarks/map/gh/problog_format/gh_12_0_6_6.pl
+Cycle breaking:         6.66
+Evaluation:             42.66
+
+Evaluation:             49.37
+
+./benchmarks/map/gh/problog_format/gh_2_0_1_0.pl
+Cycle breaking:         5.05
+Evaluation:             5.14
+
+Evaluation:             10.23
+
+./benchmarks/map/gh/problog_format/gh_7_0_3_21.pl
+Cycle breaking:         5.65
+Evaluation:             12.30
+
+Evaluation:             17.99
+
+./benchmarks/map/gh/problog_format/gh_13_0_4_11.pl
+Cycle breaking:         7.20
+Evaluation:             102.74
+
+Evaluation:             109.99
+
+./benchmarks/map/gh/problog_format/gh_12_0_4_59.pl
+Cycle breaking:         6.87
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_8_53.pl
+Cycle breaking:         6.54
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_3_0_6_0.pl
+Cycle breaking:         5.20
+Evaluation:             5.24
+
+Evaluation:             10.51
+
+./benchmarks/map/gh/problog_format/gh_4_0_5_6.pl
+Cycle breaking:         5.17
+Evaluation:             10.20
+
+Evaluation:             15.40
+
+./benchmarks/map/gh/problog_format/gh_7_0_1_1.pl
+Cycle breaking:         5.57
+Evaluation:             5.24
+
+Evaluation:             10.85
+
+./benchmarks/map/gh/problog_format/gh_14_0_8_0.pl
+Cycle breaking:         7.45
+Evaluation:             91.80
+
+Evaluation:             99.29
+
+./benchmarks/map/gh/problog_format/gh_15_0_2_36.pl
+Cycle breaking:         9.22
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_6_0_9_17.pl
+Cycle breaking:         5.50
+Evaluation:             10.49
+
+Evaluation:             16.03
+
+./benchmarks/map/gh/problog_format/gh_4_0_8_7.pl
+Cycle breaking:         5.19
+Evaluation:             10.21
+
+Evaluation:             15.45
+
+./benchmarks/map/gh/problog_format/gh_15_0_7_25.pl
+Cycle breaking:         7.99
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_15_0_3_33.pl
+Cycle breaking:         8.59
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/gh/problog_format/gh_14_0_9_85.pl
+Cycle breaking:         7.66
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_7_0_9_20.pl
+Cycle breaking:         5.62
+Evaluation:             12.87
+
+Evaluation:             18.54
+
+./benchmarks/map/gh/problog_format/gh_4_0_3_2.pl
+Cycle breaking:         5.15
+Evaluation:             5.16
+
+Evaluation:             10.35
+
+./benchmarks/map/gh/problog_format/gh_7_0_8_21.pl
+Cycle breaking:         5.60
+Evaluation:             10.99
+
+Evaluation:             16.63
+
+./benchmarks/map/gh/problog_format/gh_8_0_6_19.pl
+Cycle breaking:         5.75
+Evaluation:             12.28
+
+Evaluation:             18.08
+
+./benchmarks/map/gh/problog_format/gh_10_0_3_7.pl
+Cycle breaking:         6.15
+Evaluation:             8.83
+
+Evaluation:             15.02
+
+./benchmarks/map/gh/problog_format/gh_15_0_4_99.pl
+Cycle breaking:         8.14
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_3_0_2_0.pl
+Cycle breaking:         5.12
+Evaluation:             5.16
+
+Evaluation:             10.33
+
+./benchmarks/map/gh/problog_format/gh_14_0_0_16.pl
+Cycle breaking:         7.63
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/gh/problog_format/gh_3_0_9_0.pl
+Cycle breaking:         5.10
+Evaluation:             5.17
+
+Evaluation:             10.30
+
+./benchmarks/map/gh/problog_format/gh_3_0_3_3.pl
+Cycle breaking:         5.10
+Evaluation:             10.21
+
+Evaluation:             15.36
+
+./benchmarks/map/gh/problog_format/gh_7_0_0_0.pl
+Cycle breaking:         5.59
+Evaluation:             5.24
+
+Evaluation:             10.86
+
+./benchmarks/map/gh/problog_format/gh_3_0_8_4.pl
+Cycle breaking:         5.12
+Evaluation:             5.18
+
+Evaluation:             10.35
+
+./benchmarks/map/gh/problog_format/gh_7_0_4_6.pl
+Cycle breaking:         5.59
+Evaluation:             5.35
+
+Evaluation:             10.97
+
+./benchmarks/map/gh/problog_format/gh_14_0_4_49.pl
+Cycle breaking:         7.69
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_5_0_3_2.pl
+Cycle breaking:         5.24
+Evaluation:             5.17
+
+Evaluation:             10.45
+
+./benchmarks/map/gh/problog_format/gh_4_0_0_7.pl
+Cycle breaking:         5.17
+Evaluation:             5.27
+
+Evaluation:             10.48
+
+./benchmarks/map/gh/problog_format/gh_8_0_3_0.pl
+Cycle breaking:         5.98
+Evaluation:             5.42
+
+Evaluation:             11.44
+
+./benchmarks/map/gh/problog_format/gh_2_0_5_0.pl
+Cycle breaking:         5.05
+Evaluation:             5.16
+
+Evaluation:             10.25
+
+./benchmarks/map/gh/problog_format/gh_2_0_2_1.pl
+Cycle breaking:         5.06
+Evaluation:             5.16
+
+Evaluation:             10.26
+
+./benchmarks/map/gh/problog_format/gh_8_0_1_19.pl
+Cycle breaking:         5.79
+Evaluation:             18.89
+
+Evaluation:             24.73
+
+./benchmarks/map/gh/problog_format/gh_3_0_7_3.pl
+Cycle breaking:         5.11
+Evaluation:             10.19
+
+Evaluation:             15.34
+
+./benchmarks/map/gh/problog_format/gh_10_0_6_23.pl
+Cycle breaking:         6.24
+Evaluation:             272.07
+
+Evaluation:             278.37
+
+./benchmarks/map/gh/problog_format/gh_6_0_8_9.pl
+Cycle breaking:         5.47
+Evaluation:             5.23
+
+Evaluation:             10.73
+
+./benchmarks/map/gh/problog_format/gh_5_0_4_1.pl
+Cycle breaking:         5.24
+Evaluation:             5.20
+
+Evaluation:             10.49
+
+./benchmarks/map/gh/problog_format/gh_14_0_1_25.pl
+Cycle breaking:         7.59
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_3_0_4_4.pl
+Cycle breaking:         5.10
+Evaluation:             5.15
+
+Evaluation:             10.30
+
+./benchmarks/map/gh/problog_format/gh_12_0_9_7.pl
+Cycle breaking:         6.73
+Evaluation:             22.76
+
+Evaluation:             29.55
+
+./benchmarks/map/gh/problog_format/gh_12_0_0_43.pl
+Cycle breaking:         6.99
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/gh/problog_format/gh_2_0_3_0.pl
+Cycle breaking:         5.05
+Evaluation:             5.15
+
+Evaluation:             10.24
+
+./benchmarks/map/gh/problog_format/gh_3_0_1_2.pl
+Cycle breaking:         5.09
+Evaluation:             5.17
+
+Evaluation:             10.30
+
+./benchmarks/map/gh/problog_format/gh_8_0_5_19.pl
+Cycle breaking:         5.76
+Evaluation:             16.50
+
+Evaluation:             22.28
+
+./benchmarks/map/gh/problog_format/gh_9_0_8_40.pl
+Cycle breaking:         6.02
+Evaluation:             122.03
+
+Evaluation:             128.10
+
+./benchmarks/map/gh/problog_format/gh_13_0_3_70.pl
+Cycle breaking:         7.19
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/gh/problog_format/gh_6_0_5_15.pl
+Cycle breaking:         5.49
+Evaluation:             10.41
+
+Evaluation:             15.94
+
+./benchmarks/map/gh/problog_format/gh_5_0_6_2.pl
+Cycle breaking:         5.25
+Evaluation:             5.19
+
+Evaluation:             10.49
+
+./benchmarks/map/gh/problog_format/gh_8_0_8_21.pl
+Cycle breaking:         5.81
+Evaluation:             16.28
+
+Evaluation:             22.13
+
+./benchmarks/map/gh/problog_format/gh_5_0_8_12.pl
+Cycle breaking:         5.28
+Evaluation:             10.27
+
+Evaluation:             15.60
+
+./benchmarks/map/gh/problog_format/gh_7_0_6_26.pl
+Cycle breaking:         5.69
+Evaluation:             5.32
+
+Evaluation:             11.05
+
+./benchmarks/map/gh/problog_format/gh_10_0_0_38.pl
+Cycle breaking:         6.31
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_6_0_7_12.pl
+Cycle breaking:         5.49
+Evaluation:             5.42
+
+Evaluation:             10.95
+
+./benchmarks/map/gh/problog_format/gh_5_0_1_10.pl
+Cycle breaking:         5.27
+Evaluation:             10.24
+
+Evaluation:             15.56
+
+./benchmarks/map/gh/problog_format/gh_4_0_1_3.pl
+Cycle breaking:         5.17
+Evaluation:             5.17
+
+Evaluation:             10.38
+
+./benchmarks/map/gh/problog_format/gh_6_0_1_19.pl
+Cycle breaking:         5.51
+Evaluation:             5.25
+
+Evaluation:             10.79
+
+./benchmarks/map/gh/problog_format/gh_9_0_2_28.pl
+Cycle breaking:         5.98
+Evaluation:             131.53
+
+Evaluation:             137.56
+
+./benchmarks/map/gh/problog_format/gh_10_0_8_43.pl
+Cycle breaking:         6.31
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_9_0_0_12.pl
+Cycle breaking:         5.96
+Evaluation:             12.19
+
+Evaluation:             18.21
+
+./benchmarks/map/gh/problog_format/gh_10_0_2_31.pl
+Cycle breaking:         6.31
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_10_0_1_20.pl
+Cycle breaking:         6.26
+Evaluation:             131.56
+
+Evaluation:             137.88
+
+./benchmarks/map/gh/problog_format/gh_13_0_9_45.pl
+Cycle breaking:         7.56
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_3_25.pl
+Cycle breaking:         6.64
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_8_0_2_31.pl
+Cycle breaking:         7.06
+Evaluation:             58.88
+
+Evaluation:             66.03
+
+./benchmarks/map/gh/problog_format/gh_6_0_2_12.pl
+Cycle breaking:         6.12
+Evaluation:             10.70
+
+Evaluation:             16.89
+
+./benchmarks/map/gh/problog_format/gh_14_0_7_49.pl
+Cycle breaking:         10.57
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/gh/problog_format/gh_11_0_9_4.pl
+Cycle breaking:         7.52
+Evaluation:             15.27
+
+Evaluation:             22.84
+
+./benchmarks/map/gh/problog_format/gh_13_0_6_61.pl
+Cycle breaking:         9.08
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_8_0_7_10.pl
+Cycle breaking:         6.44
+Evaluation:             6.28
+
+Evaluation:             12.78
+
+./benchmarks/map/gh/problog_format/gh_13_0_0_20.pl
+Cycle breaking:         7.47
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_12_0_5_32.pl
+Cycle breaking:         7.66
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_15_0_6_21.pl
+Cycle breaking:         10.19
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_4_0_6_7.pl
+Cycle breaking:         5.29
+Evaluation:             10.28
+
+Evaluation:             15.63
+
+./benchmarks/map/gh/problog_format/gh_15_0_0_5.pl
+Cycle breaking:         10.27
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_2_0_8_1.pl
+Cycle breaking:         5.07
+Evaluation:             5.20
+
+Evaluation:             10.32
+
+./benchmarks/map/gh/problog_format/gh_5_0_5_5.pl
+Cycle breaking:         5.44
+Evaluation:             5.24
+
+Evaluation:             10.72
+
+./benchmarks/map/gh/problog_format/gh_2_0_4_0.pl
+Cycle breaking:         5.07
+Evaluation:             5.20
+
+Evaluation:             10.31
+
+./benchmarks/map/gh/problog_format/gh_4_0_2_2.pl
+Cycle breaking:         5.26
+Evaluation:             5.21
+
+Evaluation:             10.51
+
+./benchmarks/map/gh/problog_format/gh_4_0_9_2.pl
+Cycle breaking:         5.27
+Evaluation:             5.18
+
+Evaluation:             10.49
+
+./benchmarks/map/gh/problog_format/gh_14_0_3_11.pl
+Cycle breaking:         7.58
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gh/problog_format/gh_4_0_7_2.pl
+Cycle breaking:         5.16
+Evaluation:             5.16
+
+Evaluation:             10.36
+
+./benchmarks/map/gh/problog_format/gh_12_0_3_8.pl
+Cycle breaking:         6.87
+Evaluation:             99.56
+
+Evaluation:             106.51
+
+./benchmarks/map/gh/problog_format/gh_9_0_7_19.pl
+Cycle breaking:         6.79
+Evaluation:             53.83
+
+Evaluation:             60.69
+
+./benchmarks/map/gh/problog_format/gh_14_0_6_102.pl
+Cycle breaking:         9.88
+Evaluation:             300.15
+
+Killed
+./benchmarks/map/gh/problog_format/gh_13_0_2_45.pl
+Cycle breaking:         12.20
+Evaluation:             300.13
+
+Killed
+./benchmarks/map/gh/problog_format/gh_15_0_1_56.pl
+Cycle breaking:         10.20
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gh/problog_format/gh_13_0_5_39.pl
+Cycle breaking:         7.30
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/gh/problog_format/gh_13_0_8_3.pl
+Cycle breaking:         9.24
+Evaluation:             64.45
+
+Evaluation:             73.77
+
+./benchmarks/map/gh/problog_format/gh_3_0_0_4.pl
+Cycle breaking:         5.19
+Evaluation:             5.20
+
+Evaluation:             10.44
+
+./benchmarks/map/gnb/problog_format/gnb_11_0_1_32.pl
+Cycle breaking:         6.38
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_2_0_3_1.pl
+Cycle breaking:         5.08
+Evaluation:             5.13
+
+Evaluation:             10.26
+
+./benchmarks/map/gnb/problog_format/gnb_3_0_9_1.pl
+Cycle breaking:         5.09
+Evaluation:             5.14
+
+Evaluation:             10.26
+
+./benchmarks/map/gnb/problog_format/gnb_10_0_4_28.pl
+Cycle breaking:         5.69
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_10_0_7_40.pl
+Cycle breaking:         6.31
+Evaluation:             300.13
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_6_0_7_4.pl
+Cycle breaking:         5.37
+Evaluation:             5.24
+
+Evaluation:             10.68
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_9_93.pl
+Cycle breaking:         7.84
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_11_0_6_44.pl
+Cycle breaking:         6.53
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_11_0_2_55.pl
+Cycle breaking:         6.13
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_10_0_1_15.pl
+Cycle breaking:         6.36
+Evaluation:             18.75
+
+Evaluation:             25.19
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_1_72.pl
+Cycle breaking:         8.34
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_8_0_5_19.pl
+Cycle breaking:         5.36
+Evaluation:             6.09
+
+Evaluation:             11.49
+
+./benchmarks/map/gnb/problog_format/gnb_11_0_7_39.pl
+Cycle breaking:         5.76
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_13_0_3_37.pl
+Cycle breaking:         7.45
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_11_0_8_15.pl
+Cycle breaking:         6.33
+Evaluation:             23.81
+
+Evaluation:             30.20
+
+./benchmarks/map/gnb/problog_format/gnb_7_0_4_15.pl
+Cycle breaking:         5.55
+Evaluation:             9.99
+
+Evaluation:             15.58
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_7_85.pl
+Cycle breaking:         7.97
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_2_0_9_2.pl
+Cycle breaking:         5.09
+Evaluation:             5.12
+
+Evaluation:             10.23
+
+./benchmarks/map/gnb/problog_format/gnb_7_0_8_2.pl
+Cycle breaking:         5.24
+Evaluation:             5.15
+
+Evaluation:             10.42
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_3_0.pl
+Cycle breaking:         5.10
+Evaluation:             5.12
+
+Evaluation:             10.25
+
+./benchmarks/map/gnb/problog_format/gnb_10_0_3_32.pl
+Cycle breaking:         5.64
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_3_0_6_0.pl
+Cycle breaking:         5.10
+Evaluation:             5.11
+
+Evaluation:             10.26
+
+./benchmarks/map/gnb/problog_format/gnb_9_0_6_37.pl
+Cycle breaking:         5.59
+Evaluation:             5.18
+
+Evaluation:             10.79
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_7_65.pl
+Cycle breaking:         6.29
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_13_0_4_47.pl
+Cycle breaking:         7.14
+Evaluation:             300.14
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_3_0_5_0.pl
+Cycle breaking:         5.12
+Evaluation:             5.12
+
+Evaluation:             10.27
+
+./benchmarks/map/gnb/problog_format/gnb_10_0_0_18.pl
+Cycle breaking:         5.63
+Evaluation:             8.24
+
+Evaluation:             13.90
+
+./benchmarks/map/gnb/problog_format/gnb_7_0_1_16.pl
+Cycle breaking:         5.29
+Evaluation:             5.49
+
+Evaluation:             10.80
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_5_25.pl
+Cycle breaking:         6.21
+Evaluation:             300.13
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_9_0_1_19.pl
+Cycle breaking:         6.42
+Evaluation:             58.49
+
+Evaluation:             64.99
+
+./benchmarks/map/gnb/problog_format/gnb_3_0_7_1.pl
+Cycle breaking:         5.12
+Evaluation:             5.18
+
+Evaluation:             10.34
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_4_1.pl
+Cycle breaking:         5.06
+<block>:10:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:11:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.50
+
+Evaluation:             10.62
+
+./benchmarks/map/gnb/problog_format/gnb_11_0_3_25.pl
+Cycle breaking:         6.62
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_9_0_3_27.pl
+Cycle breaking:         6.03
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_8_0_4_6.pl
+Cycle breaking:         5.60
+Evaluation:             5.32
+
+Evaluation:             10.96
+
+./benchmarks/map/gnb/problog_format/gnb_9_0_4_19.pl
+Cycle breaking:         5.89
+Evaluation:             19.10
+
+Evaluation:             25.03
+
+./benchmarks/map/gnb/problog_format/gnb_11_0_9_27.pl
+Cycle breaking:         5.73
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_12_0_2_30.pl
+Cycle breaking:         6.62
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_1_0_0_1.pl
+Cycle breaking:         5.11
+<block>:10:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:11:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.18
+
+Evaluation:             10.34
+
+./benchmarks/map/gnb/problog_format/gnb_8_0_2_10.pl
+Cycle breaking:         5.53
+Evaluation:             5.80
+
+Evaluation:             11.36
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_6_1.pl
+Cycle breaking:         5.07
+<block>:10:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:11:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.17
+
+Evaluation:             10.28
+
+./benchmarks/map/gnb/problog_format/gnb_7_0_9_12.pl
+Cycle breaking:         5.50
+Evaluation:             6.06
+
+Evaluation:             11.59
+
+./benchmarks/map/gnb/problog_format/gnb_12_0_7_48.pl
+Cycle breaking:         6.69
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_14_0_4_39.pl
+Cycle breaking:         7.41
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_8_0_9_11.pl
+Cycle breaking:         5.36
+Evaluation:             5.73
+
+Evaluation:             11.12
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_4_6.pl
+Cycle breaking:         5.27
+Evaluation:             5.20
+
+Evaluation:             10.51
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_1_68.pl
+Cycle breaking:         7.44
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_9_0_0_4.pl
+Cycle breaking:         5.49
+Evaluation:             5.18
+
+Evaluation:             10.69
+
+./benchmarks/map/gnb/problog_format/gnb_11_0_0_21.pl
+Cycle breaking:         5.71
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_6_0_6_14.pl
+Cycle breaking:         5.42
+Evaluation:             5.34
+
+Evaluation:             10.79
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_3_4.pl
+Cycle breaking:         5.27
+Evaluation:             5.21
+
+Evaluation:             10.51
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_7_0.pl
+Cycle breaking:         5.06
+<block>:9:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:10:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.18
+
+Evaluation:             10.28
+
+./benchmarks/map/gnb/problog_format/gnb_3_0_8_0.pl
+Cycle breaking:         5.12
+Evaluation:             5.17
+
+Evaluation:             10.33
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_6_12.pl
+Cycle breaking:         6.74
+Evaluation:             7.35
+
+Evaluation:             14.14
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_9_36.pl
+Cycle breaking:         6.88
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_4_0_1_7.pl
+Cycle breaking:         5.27
+Evaluation:             5.24
+
+Evaluation:             10.59
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_2_0.pl
+Cycle breaking:         5.09
+<block>:9:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:10:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.25
+
+Evaluation:             10.40
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_0_22.pl
+Cycle breaking:         7.23
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_8_0_6_10.pl
+Cycle breaking:         5.33
+Evaluation:             5.45
+
+Evaluation:             10.82
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_2_54.pl
+Cycle breaking:         6.28
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_10_0_9_21.pl
+Cycle breaking:         5.90
+Evaluation:             61.58
+
+Evaluation:             67.57
+
+./benchmarks/map/gnb/problog_format/gnb_9_0_8_37.pl
+Cycle breaking:         5.76
+Evaluation:             5.25
+
+Evaluation:             11.06
+
+./benchmarks/map/gnb/problog_format/gnb_7_0_2_12.pl
+Cycle breaking:         5.46
+Evaluation:             5.87
+
+Evaluation:             11.37
+
+./benchmarks/map/gnb/problog_format/gnb_12_0_4_53.pl
+Cycle breaking:         6.19
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_3_0_0_2.pl
+Cycle breaking:         5.11
+Evaluation:             5.11
+
+Evaluation:             10.25
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_8_0.pl
+Cycle breaking:         5.04
+<block>:9:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:10:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.13
+
+Evaluation:             10.19
+
+./benchmarks/map/gnb/problog_format/gnb_12_0_0_15.pl
+Cycle breaking:         5.83
+Evaluation:             12.41
+
+Evaluation:             18.27
+
+./benchmarks/map/gnb/problog_format/gnb_6_0_1_7.pl
+Cycle breaking:         5.21
+Evaluation:             5.15
+
+Evaluation:             10.38
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_7_48.pl
+Cycle breaking:         6.03
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_2_0_5_1.pl
+Cycle breaking:         5.10
+Evaluation:             5.11
+
+Evaluation:             10.24
+
+./benchmarks/map/gnb/problog_format/gnb_7_0_6_16.pl
+Cycle breaking:         5.30
+Evaluation:             18.25
+
+Evaluation:             23.60
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_8_0.pl
+Cycle breaking:         5.26
+Evaluation:             5.19
+
+Evaluation:             10.49
+
+./benchmarks/map/gnb/problog_format/gnb_9_0_5_9.pl
+Cycle breaking:         5.95
+Evaluation:             5.43
+
+Evaluation:             11.43
+
+./benchmarks/map/gnb/problog_format/gnb_10_0_2_44.pl
+Cycle breaking:         6.26
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_3_0_3_4.pl
+Cycle breaking:         5.17
+Evaluation:             5.37
+
+Evaluation:             10.58
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_9_3.pl
+Cycle breaking:         5.19
+Evaluation:             5.22
+
+Evaluation:             10.45
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_8_43.pl
+Cycle breaking:         6.67
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_9_0_7_0.pl
+Cycle breaking:         5.42
+Evaluation:             5.24
+
+Evaluation:             10.70
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_9_1.pl
+Cycle breaking:         5.07
+<block>:10:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:11:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.17
+
+Evaluation:             10.28
+
+./benchmarks/map/gnb/problog_format/gnb_9_0_2_9.pl
+Cycle breaking:         5.78
+Evaluation:             5.57
+
+Evaluation:             11.39
+
+./benchmarks/map/gnb/problog_format/gnb_3_0_4_1.pl
+Cycle breaking:         5.10
+Evaluation:             5.11
+
+Evaluation:             10.24
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_8_80.pl
+Cycle breaking:         6.49
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_14_0_3_5.pl
+Cycle breaking:         7.07
+Evaluation:             5.70
+
+Evaluation:             12.82
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_8_1.pl
+Cycle breaking:         5.16
+Evaluation:             5.19
+
+Evaluation:             10.38
+
+./benchmarks/map/gnb/problog_format/gnb_12_0_8_38.pl
+Cycle breaking:         6.69
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_5_0_5_5.pl
+Cycle breaking:         5.24
+Evaluation:             5.17
+
+Evaluation:             10.45
+
+./benchmarks/map/gnb/problog_format/gnb_12_0_3_51.pl
+Cycle breaking:         6.33
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_12_0_9_0.pl
+Cycle breaking:         6.27
+Evaluation:             5.35
+
+Evaluation:             11.66
+
+./benchmarks/map/gnb/problog_format/gnb_8_0_7_9.pl
+Cycle breaking:         5.51
+Evaluation:             5.48
+
+Evaluation:             11.03
+
+./benchmarks/map/gnb/problog_format/gnb_6_0_8_10.pl
+Cycle breaking:         5.36
+Evaluation:             10.28
+
+Evaluation:             15.68
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_6_51.pl
+Cycle breaking:         7.01
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_7_0_3_7.pl
+Cycle breaking:         5.50
+Evaluation:             5.32
+
+Evaluation:             10.85
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_9_18.pl
+Cycle breaking:         7.13
+Evaluation:             45.00
+
+Evaluation:             52.19
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_6_0.pl
+Cycle breaking:         5.18
+Evaluation:             5.18
+
+Evaluation:             10.39
+
+./benchmarks/map/gnb/problog_format/gnb_12_0_6_64.pl
+Cycle breaking:         6.81
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_8_0_0_3.pl
+Cycle breaking:         5.56
+Evaluation:             5.25
+
+Evaluation:             10.84
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_3_55.pl
+Cycle breaking:         7.39
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_10_0_6_38.pl
+Cycle breaking:         6.30
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_7_0_5_7.pl
+Cycle breaking:         5.55
+Evaluation:             5.34
+
+Evaluation:             10.94
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_5_36.pl
+Cycle breaking:         8.15
+Evaluation:             300.07
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_1_0_3_1.pl
+Cycle breaking:         5.07
+<block>:10:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:11:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.17
+
+Evaluation:             10.29
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_4_68.pl
+Cycle breaking:         7.59
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_10_0_5_8.pl
+Cycle breaking:         6.08
+Evaluation:             5.51
+
+Evaluation:             11.63
+
+./benchmarks/map/gnb/problog_format/gnb_2_0_4_0.pl
+Cycle breaking:         5.08
+Evaluation:             5.18
+
+Evaluation:             10.30
+
+./benchmarks/map/gnb/problog_format/gnb_10_0_8_38.pl
+Cycle breaking:         6.23
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_5_0_9_11.pl
+Cycle breaking:         5.28
+Evaluation:             5.20
+
+Evaluation:             10.52
+
+./benchmarks/map/gnb/problog_format/gnb_2_0_2_0.pl
+Cycle breaking:         5.08
+Evaluation:             5.17
+
+Evaluation:             10.29
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_1_13.pl
+Cycle breaking:         6.43
+Evaluation:             10.91
+
+Evaluation:             17.39
+
+./benchmarks/map/gnb/problog_format/gnb_6_0_0_11.pl
+Cycle breaking:         5.41
+Evaluation:             10.25
+
+Evaluation:             15.70
+
+./benchmarks/map/gnb/problog_format/gnb_8_0_1_18.pl
+Cycle breaking:         5.64
+Evaluation:             10.06
+
+Evaluation:             15.75
+
+./benchmarks/map/gnb/problog_format/gnb_2_0_1_2.pl
+Cycle breaking:         5.10
+Evaluation:             5.16
+
+Evaluation:             10.29
+
+./benchmarks/map/gnb/problog_format/gnb_6_0_4_16.pl
+Cycle breaking:         5.36
+Evaluation:             5.22
+
+Evaluation:             10.62
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_2_29.pl
+Cycle breaking:         6.99
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_3_0_1_4.pl
+Cycle breaking:         5.20
+Evaluation:             5.18
+
+Evaluation:             10.41
+
+./benchmarks/map/gnb/problog_format/gnb_11_0_4_50.pl
+Cycle breaking:         6.49
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_6_0_5_15.pl
+Cycle breaking:         5.26
+Evaluation:             5.19
+
+Evaluation:             10.47
+
+./benchmarks/map/gnb/problog_format/gnb_8_0_8_18.pl
+Cycle breaking:         5.36
+Evaluation:             6.97
+
+Evaluation:             12.36
+
+./benchmarks/map/gnb/problog_format/gnb_11_0_5_14.pl
+Cycle breaking:         5.70
+Evaluation:             7.16
+
+Evaluation:             12.88
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_0_29.pl
+Cycle breaking:         6.20
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_12_0_5_14.pl
+Cycle breaking:         5.80
+Evaluation:             9.25
+
+Evaluation:             15.08
+
+./benchmarks/map/gnb/problog_format/gnb_6_0_2_5.pl
+Cycle breaking:         5.20
+Evaluation:             5.13
+
+Evaluation:             10.36
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_2_10.pl
+Cycle breaking:         5.17
+Evaluation:             10.19
+
+Evaluation:             15.40
+
+./benchmarks/map/gnb/problog_format/gnb_14_0_8_46.pl
+Cycle breaking:         7.01
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_8_0_3_24.pl
+Cycle breaking:         5.57
+Evaluation:             169.25
+
+Evaluation:             174.88
+
+./benchmarks/map/gnb/problog_format/gnb_13_0_5_35.pl
+Cycle breaking:         7.00
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_9_0_9_27.pl
+Cycle breaking:         6.05
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_3_0_2_2.pl
+Cycle breaking:         5.13
+Evaluation:             5.16
+
+Evaluation:             10.32
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_7_7.pl
+Cycle breaking:         5.23
+Evaluation:             5.18
+
+Evaluation:             10.46
+
+./benchmarks/map/gnb/problog_format/gnb_6_0_9_4.pl
+Cycle breaking:         5.32
+Evaluation:             5.22
+
+Evaluation:             10.60
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_0_11.pl
+Cycle breaking:         5.35
+Evaluation:             5.17
+
+Evaluation:             10.56
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_6_8.pl
+Cycle breaking:         5.23
+Evaluation:             5.17
+
+Evaluation:             10.45
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_7_7.pl
+Cycle breaking:         5.18
+Evaluation:             5.17
+
+Evaluation:             10.39
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_0_7.pl
+Cycle breaking:         5.18
+Evaluation:             5.16
+
+Evaluation:             10.38
+
+./benchmarks/map/gnb/problog_format/gnb_12_0_1_9.pl
+Cycle breaking:         6.20
+Evaluation:             5.73
+
+Evaluation:             11.97
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_6_99.pl
+Cycle breaking:         7.58
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_7_0_7_12.pl
+Cycle breaking:         5.32
+Evaluation:             10.35
+
+Evaluation:             15.71
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_5_5.pl
+Cycle breaking:         5.18
+Evaluation:             10.20
+
+Evaluation:             15.42
+
+./benchmarks/map/gnb/problog_format/gnb_2_0_7_2.pl
+Cycle breaking:         5.09
+Evaluation:             5.16
+
+Evaluation:             10.29
+
+./benchmarks/map/gnb/problog_format/gnb_15_0_0_75.pl
+Cycle breaking:         7.75
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_15_0_2_33.pl
+Cycle breaking:         6.40
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/gnb/problog_format/gnb_2_0_0_2.pl
+Cycle breaking:         5.08
+Evaluation:             5.11
+
+Evaluation:             10.22
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_1_0.pl
+Cycle breaking:         5.05
+<block>:9:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:10:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.13
+
+Evaluation:             10.20
+
+./benchmarks/map/gnb/problog_format/gnb_6_0_3_6.pl
+Cycle breaking:         5.21
+Evaluation:             5.14
+
+Evaluation:             10.37
+
+./benchmarks/map/gnb/problog_format/gnb_7_0_0_13.pl
+Cycle breaking:         5.29
+Evaluation:             5.47
+
+Evaluation:             10.79
+
+./benchmarks/map/gnb/problog_format/gnb_5_0_1_6.pl
+Cycle breaking:         5.17
+Evaluation:             5.12
+
+Evaluation:             10.32
+
+./benchmarks/map/gnb/problog_format/gnb_2_0_6_0.pl
+Cycle breaking:         5.06
+Evaluation:             5.12
+
+Evaluation:             10.21
+
+./benchmarks/map/gnb/problog_format/gnb_2_0_8_2.pl
+Cycle breaking:         5.06
+Evaluation:             5.11
+
+Evaluation:             10.19
+
+./benchmarks/map/gnb/problog_format/gnb_1_0_5_0.pl
+Cycle breaking:         5.05
+<block>:9:12-21: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+<block>:10:13-22: info: atom does not occur in any rule head:
+  edge(X,Y)
+
+Evaluation:             5.12
+
+Evaluation:             10.20
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_2_6.pl
+Cycle breaking:         5.12
+Evaluation:             5.14
+
+Evaluation:             10.29
+
+./benchmarks/map/gnb/problog_format/gnb_4_0_4_2.pl
+Cycle breaking:         5.12
+Evaluation:             5.11
+
+Evaluation:             10.26
+
+./benchmarks/map/blood/problog_format/bl4_0_8_429.pl
+Cycle breaking:         26.10
+Evaluation:             300.13
+
+Killed
+./benchmarks/map/blood/problog_format/bl8_0_7_709.pl
+Cycle breaking:         59.70
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_3_863.pl
+Cycle breaking:         50.05
+Process Process-1273:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             145.64
+
+./benchmarks/map/blood/problog_format/bl8_0_1_25.pl
+Cycle breaking:         64.03
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_2_175.pl
+Cycle breaking:         25.03
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_9_25.pl
+Cycle breaking:         7.82
+Evaluation:             82.64
+
+Evaluation:             90.51
+
+./benchmarks/map/blood/problog_format/bl3_0_7_336.pl
+Cycle breaking:         29.09
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl8_0_0_266.pl
+Cycle breaking:         42.50
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl8_0_4_127.pl
+Cycle breaking:         42.97
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_7_858.pl
+Cycle breaking:         41.77
+Process Process-1280:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             130.76
+
+./benchmarks/map/blood/problog_format/bl9_0_6_430.pl
+Cycle breaking:         47.46
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_9_66.pl
+Cycle breaking:         14.82
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl6_0_0_201.pl
+Cycle breaking:         49.86
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_3_168.pl
+Cycle breaking:         16.40
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_9_167.pl
+Cycle breaking:         37.22
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_6_561.pl
+Cycle breaking:         40.69
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl5_0_9_258.pl
+Cycle breaking:         45.51
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_9_70.pl
+Cycle breaking:         37.17
+Evaluation:             300.07
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_0_112.pl
+Cycle breaking:         11.16
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_5_126.pl
+Cycle breaking:         31.32
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_6_168.pl
+Cycle breaking:         20.42
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_2_126.pl
+Cycle breaking:         15.37
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_6_20.pl
+Cycle breaking:         7.33
+Evaluation:             20.23
+
+Evaluation:             27.60
+
+./benchmarks/map/blood/problog_format/bl5_0_7_633.pl
+Cycle breaking:         48.45
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_5_73.pl
+Cycle breaking:         14.36
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_8_267.pl
+Cycle breaking:         54.62
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_7_16.pl
+Cycle breaking:         7.14
+Evaluation:             7.49
+
+Evaluation:             14.67
+
+./benchmarks/map/blood/problog_format/bl7_0_1_425.pl
+Cycle breaking:         59.67
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_9_282.pl
+Cycle breaking:         22.86
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl6_0_7_49.pl
+Cycle breaking:         49.72
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_2_122.pl
+Cycle breaking:         22.40
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_6_52.pl
+Cycle breaking:         14.96
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_4_843.pl
+Cycle breaking:         50.26
+Process Process-1303:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             137.45
+
+./benchmarks/map/blood/problog_format/bl9_0_5_409.pl
+Cycle breaking:         75.83
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl5_0_1_119.pl
+Cycle breaking:         44.90
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_2_855.pl
+Cycle breaking:         80.66
+Process Process-1306:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             187.62
+
+./benchmarks/map/blood/problog_format/bl1_0_6_77.pl
+Cycle breaking:         14.74
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_5_194.pl
+Cycle breaking:         22.65
+Evaluation:             300.12
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_7_464.pl
+Cycle breaking:         39.55
+Evaluation:             300.05
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_7_87.pl
+Cycle breaking:         21.03
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_8_685.pl
+Cycle breaking:         62.47
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_8_24.pl
+Cycle breaking:         7.96
+Evaluation:             25.92
+
+Evaluation:             33.93
+
+./benchmarks/map/blood/problog_format/bl4_0_1_228.pl
+Cycle breaking:         37.61
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_7_918.pl
+Cycle breaking:         78.63
+Process Process-1314:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             194.08
+
+./benchmarks/map/blood/problog_format/bl10_0_5_557.pl
+Cycle breaking:         85.69
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_5_504.pl
+Cycle breaking:         61.51
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_3_179.pl
+Cycle breaking:         24.31
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_9_154.pl
+Cycle breaking:         30.53
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_0_364.pl
+Cycle breaking:         24.12
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl5_0_3_0.pl
+Cycle breaking:         32.00
+Evaluation:             18.74
+
+Evaluation:             50.81
+
+./benchmarks/map/blood/problog_format/bl5_0_8_602.pl
+Cycle breaking:         29.78
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl5_0_6_559.pl
+Cycle breaking:         29.40
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_9_1027.pl
+Cycle breaking:         49.01
+Process Process-1323:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             157.43
+
+./benchmarks/map/blood/problog_format/bl10_0_3_817.pl
+Cycle breaking:         51.19
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl5_0_2_85.pl
+Cycle breaking:         27.44
+Evaluation:             300.05
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_1_3.pl
+Cycle breaking:         6.24
+Evaluation:             5.23
+
+Evaluation:             11.49
+
+./benchmarks/map/blood/problog_format/bl10_0_0_283.pl
+Cycle breaking:         49.47
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl10_0_6_615.pl
+Cycle breaking:         51.10
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_0_199.pl
+Cycle breaking:         15.12
+Evaluation:             300.07
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_4_545.pl
+Cycle breaking:         24.83
+Evaluation:             300.07
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_4_837.pl
+Cycle breaking:         39.60
+Evaluation:             300.03
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_2_16.pl
+Cycle breaking:         6.29
+Evaluation:             13.15
+
+Evaluation:             19.45
+
+./benchmarks/map/blood/problog_format/bl6_0_8_215.pl
+Cycle breaking:         32.30
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl8_0_2_788.pl
+Cycle breaking:         42.74
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl10_0_2_777.pl
+Cycle breaking:         52.37
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_0_1180.pl
+Cycle breaking:         49.30
+Process Process-1336:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             155.60
+
+./benchmarks/map/blood/problog_format/bl1_0_7_99.pl
+Cycle breaking:         10.72
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_8_146.pl
+Cycle breaking:         14.84
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_3_375.pl
+Cycle breaking:         20.04
+Evaluation:             300.07
+
+Killed
+./benchmarks/map/blood/problog_format/bl8_0_5_557.pl
+Cycle breaking:         41.57
+Evaluation:             300.01
+
+Killed
+./benchmarks/map/blood/problog_format/bl6_0_1_786.pl
+Cycle breaking:         34.41
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_4_384.pl
+Cycle breaking:         20.18
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_1_39.pl
+Cycle breaking:         14.49
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl10_0_8_1174.pl
+Cycle breaking:         53.20
+Process Process-1344:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             183.71
+
+./benchmarks/map/blood/problog_format/bl10_0_7_1345.pl
+Cycle breaking:         53.14
+Process Process-1345:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             135.52
+
+./benchmarks/map/blood/problog_format/bl3_0_8_161.pl
+Cycle breaking:         19.39
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl5_0_5_494.pl
+Cycle breaking:         29.09
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_2_553.pl
+Cycle breaking:         24.60
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl8_0_3_485.pl
+Cycle breaking:         41.50
+Evaluation:             300.03
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_4_99.pl
+Cycle breaking:         10.72
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_3_456.pl
+Cycle breaking:         44.82
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl2_0_3_236.pl
+Cycle breaking:         15.33
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_1_2.pl
+Cycle breaking:         10.23
+Evaluation:             6.19
+
+Evaluation:             16.46
+
+./benchmarks/map/blood/problog_format/bl10_0_9_432.pl
+Cycle breaking:         49.74
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_1_69.pl
+Cycle breaking:         18.96
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/blood/problog_format/bl10_0_4_786.pl
+Cycle breaking:         50.80
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl6_0_6_315.pl
+Cycle breaking:         32.99
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl6_0_9_45.pl
+Cycle breaking:         30.71
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl8_0_8_949.pl
+Cycle breaking:         43.26
+Process Process-1359:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             135.57
+
+./benchmarks/map/blood/problog_format/bl8_0_6_1061.pl
+Cycle breaking:         43.75
+Process Process-1360:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             124.41
+
+./benchmarks/map/blood/problog_format/bl0_0_3_17.pl
+Cycle breaking:         6.30
+Evaluation:             7.85
+
+Evaluation:             14.17
+
+./benchmarks/map/blood/problog_format/bl6_0_5_367.pl
+Cycle breaking:         32.92
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_0_24.pl
+Cycle breaking:         6.29
+Evaluation:             71.08
+
+Evaluation:             77.41
+
+./benchmarks/map/blood/problog_format/bl5_0_0_444.pl
+Cycle breaking:         28.69
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/blood/problog_format/bl9_0_1_1020.pl
+Cycle breaking:         48.58
+Process Process-1365:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             150.91
+
+./benchmarks/map/blood/problog_format/bl6_0_2_143.pl
+Cycle breaking:         32.33
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl4_0_5_5.pl
+Cycle breaking:         22.85
+Evaluation:             13.65
+
+Evaluation:             36.56
+
+./benchmarks/map/blood/problog_format/bl6_0_4_695.pl
+Cycle breaking:         33.96
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl1_0_8_115.pl
+Cycle breaking:         10.78
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl10_0_1_1132.pl
+Cycle breaking:         52.48
+Process Process-1370:
+Traceback (most recent call last):
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 211, in map_instance_aspmc
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 515, in compile
+    return results
+  File "/home/rafael/projects/benchmarking/aspmc/compile/cnf.py", line 451, in compile_two
+    """
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 93, in tree_from_cnf
+    return construct_tree(cnf, graph, P, D, R, tree_type = tree_type)
+  File "/home/rafael/projects/benchmarking/aspmc/compile/constrained_compile.py", line 146, in construct_tree
+    r_td = treedecomposition.from_graph(r_graph, solver = config.config["decos"], timeout = config.config["decot"])
+  File "/home/rafael/projects/benchmarking/aspmc/graph/treedecomposition.py", line 294, in from_graph
+    tree.add_edge(int(line[0]), int(line[1]))
+UnboundLocalError: local variable 'tree' referenced before assignment
+Evaluation:             183.50
+
+./benchmarks/map/blood/problog_format/bl2_0_4_180.pl
+Cycle breaking:         15.01
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_6_343.pl
+Cycle breaking:         36.29
+Evaluation:             300.03
+
+Killed
+./benchmarks/map/blood/problog_format/bl6_0_3_468.pl
+Cycle breaking:         34.32
+Evaluation:             300.05
+
+Killed
+./benchmarks/map/blood/problog_format/bl5_0_4_246.pl
+Cycle breaking:         28.93
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl3_0_0_184.pl
+Cycle breaking:         19.90
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_5_9.pl
+Cycle breaking:         6.25
+Evaluation:             5.35
+
+Evaluation:             11.62
+
+./benchmarks/map/blood/problog_format/bl7_0_0_19.pl
+Cycle breaking:         36.01
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/blood/problog_format/bl7_0_2_164.pl
+Cycle breaking:         36.51
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/blood/problog_format/bl0_0_4_5.pl
+Cycle breaking:         6.25
+Evaluation:             5.22
+
+Evaluation:             11.49
+
+./benchmarks/map/blood/problog_format/bl8_0_9_4.pl
+Cycle breaking:         41.13
+Evaluation:             35.20
+
+Evaluation:             76.42
+
+./benchmarks/map/graphs/problog_format/graph_050_08_8_26.pl
+Cycle breaking:         9.03
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_2_41.pl
+Cycle breaking:         8.21
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_9_41.pl
+Cycle breaking:         8.36
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_2_57.pl
+Cycle breaking:         8.68
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_6_62.pl
+Cycle breaking:         8.25
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_1_55.pl
+Cycle breaking:         9.02
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_6_3.pl
+Cycle breaking:         8.72
+Evaluation:             164.16
+
+Evaluation:             173.07
+
+./benchmarks/map/graphs/problog_format/graph_050_10_3_73.pl
+Cycle breaking:         8.72
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_1_21.pl
+Cycle breaking:         8.65
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_6_47.pl
+Cycle breaking:         8.72
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_8_89.pl
+Cycle breaking:         10.62
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_7_16.pl
+Cycle breaking:         9.24
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_08_6_77.pl
+Cycle breaking:         9.04
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_1_92.pl
+Cycle breaking:         8.97
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_0_56.pl
+Cycle breaking:         9.01
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_6_90.pl
+Cycle breaking:         8.39
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_08_2_31.pl
+Cycle breaking:         9.06
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_9_51.pl
+Cycle breaking:         8.22
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_3_92.pl
+Cycle breaking:         8.62
+Evaluation:             71.81
+
+Evaluation:             80.47
+
+./benchmarks/map/graphs/problog_format/graph_050_04_0_26.pl
+Cycle breaking:         8.26
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_3_31.pl
+Cycle breaking:         9.02
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_5_64.pl
+Cycle breaking:         8.51
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_9_94.pl
+Cycle breaking:         9.05
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_08_7_3.pl
+Cycle breaking:         8.99
+Evaluation:             23.91
+
+Evaluation:             32.93
+
+./benchmarks/map/graphs/problog_format/graph_050_06_0_38.pl
+Cycle breaking:         8.19
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_8_27.pl
+Cycle breaking:         8.30
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_5_45.pl
+Cycle breaking:         9.28
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_4_32.pl
+Cycle breaking:         8.70
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_8_64.pl
+Cycle breaking:         8.36
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_6_57.pl
+Cycle breaking:         9.33
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_4_62.pl
+Cycle breaking:         8.36
+Evaluation:             300.02
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_5_70.pl
+Cycle breaking:         8.70
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_0_11.pl
+Cycle breaking:         8.31
+Evaluation:             34.89
+
+Evaluation:             43.23
+
+./benchmarks/map/graphs/problog_format/graph_050_02_3_80.pl
+Cycle breaking:         9.09
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_4_55.pl
+Cycle breaking:         9.16
+Evaluation:             300.01
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_9_46.pl
+Cycle breaking:         8.68
+Evaluation:             300.01
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_9_72.pl
+Cycle breaking:         9.15
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_8_26.pl
+Cycle breaking:         8.66
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_0_69.pl
+Cycle breaking:         8.70
+Evaluation:             300.02
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_8_39.pl
+Cycle breaking:         9.08
+Evaluation:             300.03
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_3_47.pl
+Cycle breaking:         9.35
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_8_23.pl
+Cycle breaking:         8.21
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_7_64.pl
+Cycle breaking:         9.09
+Evaluation:             300.02
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_8_9.pl
+Cycle breaking:         8.98
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_5_18.pl
+Cycle breaking:         8.21
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_5_37.pl
+Cycle breaking:         8.68
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_9_31.pl
+Cycle breaking:         8.27
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_1_0.pl
+Cycle breaking:         8.24
+Evaluation:             10.71
+
+Evaluation:             18.97
+
+./benchmarks/map/graphs/problog_format/graph_050_09_8_93.pl
+Cycle breaking:         8.58
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_08_4_51.pl
+Cycle breaking:         9.06
+Evaluation:             300.03
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_08_9_48.pl
+Cycle breaking:         9.06
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_1_5.pl
+Cycle breaking:         9.29
+Evaluation:             64.18
+
+Evaluation:             73.51
+
+./benchmarks/map/graphs/problog_format/graph_050_03_3_52.pl
+Cycle breaking:         8.66
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_4_69.pl
+Cycle breaking:         8.74
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_2_82.pl
+Cycle breaking:         9.07
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_0_24.pl
+Cycle breaking:         8.51
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_08_5_54.pl
+Cycle breaking:         9.07
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_2_11.pl
+Cycle breaking:         8.64
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_4_90.pl
+Cycle breaking:         9.02
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_7_64.pl
+Cycle breaking:         8.67
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_08_3_63.pl
+Cycle breaking:         9.06
+Evaluation:             300.05
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_5_3.pl
+Cycle breaking:         8.73
+Evaluation:             118.25
+
+Evaluation:             127.03
+
+./benchmarks/map/graphs/problog_format/graph_050_04_4_87.pl
+Cycle breaking:         8.33
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_6_53.pl
+Cycle breaking:         8.55
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_5_38.pl
+Cycle breaking:         9.07
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_1_21.pl
+Cycle breaking:         8.45
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_9_86.pl
+Cycle breaking:         8.95
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_7_31.pl
+Cycle breaking:         8.49
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_3_43.pl
+Cycle breaking:         8.32
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_2_96.pl
+Cycle breaking:         8.60
+Evaluation:             17.15
+
+Evaluation:             25.78
+
+./benchmarks/map/graphs/problog_format/graph_050_07_2_65.pl
+Cycle breaking:         9.29
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_6_86.pl
+Cycle breaking:         8.36
+Evaluation:             300.09
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_4_95.pl
+Cycle breaking:         8.59
+Evaluation:             19.52
+
+Evaluation:             28.14
+
+./benchmarks/map/graphs/problog_format/graph_050_08_0_37.pl
+Cycle breaking:         9.04
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_2_36.pl
+Cycle breaking:         8.33
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_0_10.pl
+Cycle breaking:         9.25
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_4_77.pl
+Cycle breaking:         9.35
+Evaluation:             300.03
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_3_64.pl
+Cycle breaking:         8.23
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_6_90.pl
+Cycle breaking:         9.13
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_7_73.pl
+Cycle breaking:         9.36
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_3_57.pl
+Cycle breaking:         8.28
+Evaluation:             300.02
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_6_19.pl
+Cycle breaking:         8.67
+Evaluation:             300.06
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_1_40.pl
+Cycle breaking:         8.26
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_2_73.pl
+Cycle breaking:         8.34
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_04_5_41.pl
+Cycle breaking:         8.30
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_0_50.pl
+Cycle breaking:         9.07
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_7_49.pl
+Cycle breaking:         8.35
+Evaluation:             300.03
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_10_8_78.pl
+Cycle breaking:         8.69
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_06_4_46.pl
+Cycle breaking:         8.25
+Evaluation:             300.04
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_07_9_51.pl
+Cycle breaking:         9.29
+Evaluation:             300.02
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_1_22.pl
+Cycle breaking:         9.06
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_03_0_38.pl
+Cycle breaking:         8.64
+Evaluation:             300.05
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_02_2_3.pl
+Cycle breaking:         9.06
+Evaluation:             24.21
+
+Evaluation:             33.30
+
+./benchmarks/map/graphs/problog_format/graph_050_03_7_45.pl
+Cycle breaking:         8.62
+Evaluation:             300.08
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_5_1.pl
+Cycle breaking:         8.31
+Evaluation:             8.72
+
+Evaluation:             17.06
+
+./benchmarks/map/graphs/problog_format/graph_050_08_1_61.pl
+Cycle breaking:         9.04
+Evaluation:             300.10
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_05_7_10.pl
+Cycle breaking:         8.97
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_09_9_62.pl
+Cycle breaking:         8.50
+Evaluation:             300.11
+
+Killed
+./benchmarks/map/graphs/problog_format/graph_050_01_1_5.pl
+Cycle breaking:         8.30
+Evaluation:             33.26
+
+Evaluation:             41.59
+
+./benchmarks/map/graphs/problog_format/graph_050_06_7_72.pl
+Cycle breaking:         8.26
+Evaluation:             300.03
+
+Killed
+
