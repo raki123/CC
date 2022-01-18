@@ -1,0 +1,1237 @@
+./benchmarks/meu/pita_format/earthquake_2_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.44
+
+./benchmarks/meu/pita_format/asia_1_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.43
+
+./benchmarks/meu/pita_format/child_1_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             69.97
+
+./benchmarks/meu/pita_format/survey_2_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.43
+
+./benchmarks/meu/pita_format/child_2_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             249.56
+
+./benchmarks/meu/pita_format/asia_2_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.44
+
+./benchmarks/meu/pita_format/win95pts_2_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/win95pts_1_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/asia_1_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.89
+
+./benchmarks/meu/pita_format/child_1_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             13.13
+
+./benchmarks/meu/pita_format/survey_1_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.97
+
+./benchmarks/meu/pita_format/sachs_1_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             7.47
+
+./benchmarks/meu/pita_format/earthquake_2_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.88
+
+./benchmarks/meu/pita_format/survey_1_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.93
+
+./benchmarks/meu/pita_format/child_2_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_1_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.98
+
+./benchmarks/meu/pita_format/sachs_1_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             3.33
+
+./benchmarks/meu/pita_format/win95pts_2_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_2_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             9.26
+
+./benchmarks/meu/pita_format/child_1_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             5.24
+
+./benchmarks/meu/pita_format/asia_2_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.59
+
+./benchmarks/meu/pita_format/survey_2_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.63
+
+./benchmarks/meu/pita_format/child_1_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             284.36
+
+./benchmarks/meu/pita_format/child_2_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/earthquake_2_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             1.50
+
+./benchmarks/meu/pita_format/win95pts_1_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_2_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.47
+
+./benchmarks/meu/pita_format/earthquake_1_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.45
+
+./benchmarks/meu/pita_format/win95pts_1_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/child_1_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.09
+
+Killed
+./benchmarks/meu/pita_format/asia_2_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.42
+
+./benchmarks/meu/pita_format/asia_2_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.43
+
+./benchmarks/meu/pita_format/child_2_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.06
+
+Killed
+./benchmarks/meu/pita_format/child_2_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.01
+
+Killed
+./benchmarks/meu/pita_format/survey_1_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.76
+
+./benchmarks/meu/pita_format/sachs_1_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             103.53
+
+./benchmarks/meu/pita_format/sachs_2_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             5.68
+
+./benchmarks/meu/pita_format/asia_1_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.71
+
+./benchmarks/meu/pita_format/child_1_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             24.78
+
+./benchmarks/meu/pita_format/earthquake_1_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.69
+
+./benchmarks/meu/pita_format/survey_2_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.76
+
+./benchmarks/meu/pita_format/win95pts_1_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/asia_1_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.74
+
+./benchmarks/meu/pita_format/earthquake_1_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.71
+
+./benchmarks/meu/pita_format/asia_1_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.75
+
+./benchmarks/meu/pita_format/survey_1_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             1.06
+
+./benchmarks/meu/pita_format/win95pts_2_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/earthquake_2_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.72
+
+./benchmarks/meu/pita_format/win95pts_2_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_1_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_2_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.74
+
+./benchmarks/meu/pita_format/sachs_1_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             35.52
+
+./benchmarks/meu/pita_format/win95pts_2_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_1_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             79.06
+
+./benchmarks/meu/pita_format/win95pts_2_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_1_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_2_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.44
+
+./benchmarks/meu/pita_format/asia_2_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.40
+
+./benchmarks/meu/pita_format/sachs_2_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/earthquake_2_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.65
+
+./benchmarks/meu/pita_format/sachs_2_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             14.63
+
+./benchmarks/meu/pita_format/asia_2_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.79
+
+./benchmarks/meu/pita_format/earthquake_1_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.77
+
+./benchmarks/meu/pita_format/asia_1_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.77
+
+./benchmarks/meu/pita_format/win95pts_2_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/child_2_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_2_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.69
+
+./benchmarks/meu/pita_format/win95pts_2_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/child_1_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_1_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.42
+
+./benchmarks/meu/pita_format/survey_1_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.44
+
+./benchmarks/meu/pita_format/win95pts_1_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.08
+
+Killed
+./benchmarks/meu/pita_format/child_2_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_1_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.89
+
+./benchmarks/meu/pita_format/win95pts_2_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/asia_1_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.68
+
+./benchmarks/meu/pita_format/win95pts_1_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/survey_2_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.49
+
+./benchmarks/meu/pita_format/earthquake_2_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.46
+
+./benchmarks/meu/pita_format/child_1_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             16.09
+
+./benchmarks/meu/pita_format/sachs_2_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             29.89
+
+./benchmarks/meu/pita_format/earthquake_1_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.73
+
+./benchmarks/meu/pita_format/child_1_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_1_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_2_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             119.90
+
+./benchmarks/meu/pita_format/asia_2_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.75
+
+./benchmarks/meu/pita_format/survey_2_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.89
+
+./benchmarks/meu/pita_format/earthquake_1_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.72
+
+./benchmarks/meu/pita_format/earthquake_1_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.82
+
+./benchmarks/meu/pita_format/asia_2_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.76
+
+./benchmarks/meu/pita_format/survey_1_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.82
+
+./benchmarks/meu/pita_format/sachs_2_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             81.19
+
+./benchmarks/meu/pita_format/asia_1_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.73
+
+./benchmarks/meu/pita_format/sachs_2_1400227407.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             38.85
+
+./benchmarks/meu/pita_format/earthquake_2_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.81
+
+./benchmarks/meu/pita_format/survey_2_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.85
+
+./benchmarks/meu/pita_format/asia_2_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.86
+
+./benchmarks/meu/pita_format/earthquake_1_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.74
+
+./benchmarks/meu/pita_format/survey_1_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.79
+
+./benchmarks/meu/pita_format/child_2_1807131032.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             264.17
+
+./benchmarks/meu/pita_format/asia_1_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.41
+
+./benchmarks/meu/pita_format/earthquake_2_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.41
+
+./benchmarks/meu/pita_format/earthquake_1_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.39
+
+./benchmarks/meu/pita_format/win95pts_2_1707665179.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/win95pts_1_1337671202.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/win95pts_1_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_2_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.03
+
+Killed
+./benchmarks/meu/pita_format/asia_1_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.82
+
+./benchmarks/meu/pita_format/earthquake_2_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.74
+
+./benchmarks/meu/pita_format/win95pts_1_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/child_2_548563996.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/child_1_1588920084.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             168.56
+
+./benchmarks/meu/pita_format/child_2_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/sachs_1_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/pita_format/earthquake_1_769949150.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.76
+
+./benchmarks/meu/pita_format/sachs_1_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             3.06
+
+./benchmarks/meu/pita_format/earthquake_2_1482723311.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.39
+
+./benchmarks/meu/pita_format/sachs_2_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             12.68
+
+./benchmarks/meu/pita_format/asia_2_1592975436.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             0.40
+
+./benchmarks/meu/pita_format/win95pts_1_2023896565.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Evaluation:             300.02
+
+Killed

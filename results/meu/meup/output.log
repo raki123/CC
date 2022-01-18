@@ -1,433 +1,1040 @@
-(base) rafael@FBI:~/projects/benchmarking$ python bench.py 
-./benchmarks/meu/viral/viral_8_7.pl
-Compilation took 0.2133944034576416 seconds.
-start decisions: {1, 2, 41, 12, 17, 89, 29, 63}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: 0.4, 12: pos_neg_weight(p_weight=s(1.0,-2,{12}), n_weight=s(1.0,0,{-12})), 13: 0.3, 16: 0.4, 17: pos_neg_weight(p_weight=s(1.0,-2,{17}), n_weight=s(1.0,0,{-17})), 18: 0.3, 19: True, 25: 0.4, 28: 0.4, 29: pos_neg_weight(p_weight=s(1.0,-2,{29}), n_weight=s(1.0,0,{-29})), 30: 0.3, 31: True, 37: 0.4, 40: 0.4, 41: pos_neg_weight(p_weight=s(1.0,-2,{41}), n_weight=s(1.0,0,{-41})), 42: 0.3, 43: True, 49: 0.4, 52: 0.3, 53: True, 59: 0.4, 60: 0.4, 63: pos_neg_weight(p_weight=s(1.0,-2,{63}), n_weight=s(1.0,0,{-63})), 64: 0.3, 65: True, 71: 0.4, 72: 0.4, 75: True, 83: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 89: pos_neg_weight(p_weight=s(1.0,-2,{89}), n_weight=s(1.0,0,{-89})), 92: True, 100: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 106: True, 114: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 120: True, 128: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 134: True, 142: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 148: True, 156: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 162: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 168: 0.3, 169: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0011150836944580078 seconds
-Circuit evaluation took 1.0606517791748047 seconds.
-Best decisions {market(1): 1, market(3): 0, market(8): 0, market(7): 1, market(2): 1, market(4): 0, market(5): 0, market(6): 1}
-Expected utility 4.1759296000000115
-Compile time 0.2133944034576416
-Runtime 1.2751612663269043
-Evaluation:             1.36
-
-./benchmarks/meu/viral/viral_9_8.pl
-Compilation took 0.896028995513916 seconds.
-start decisions: {1, 2, 36, 70, 10, 48, 18, 82, 23}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5, market(9): -2, buys(9): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 10: pos_neg_weight(p_weight=s(1.0,-2,{10}), n_weight=s(1.0,0,{-10})), 11: 0.3, 12: True, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 19: 0.3, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 25: True, 31: 0.4, 32: 0.4, 35: 0.3, 36: pos_neg_weight(p_weight=s(1.0,-2,{36}), n_weight=s(1.0,0,{-36})), 37: True, 43: 0.4, 44: 0.4, 47: 0.3, 48: pos_neg_weight(p_weight=s(1.0,-2,{48}), n_weight=s(1.0,0,{-48})), 49: True, 55: 0.4, 56: 0.4, 59: 0.3, 60: True, 66: 0.4, 67: 0.4, 70: pos_neg_weight(p_weight=s(1.0,-2,{70}), n_weight=s(1.0,0,{-70})), 71: 0.3, 72: True, 78: 0.4, 79: 0.4, 82: pos_neg_weight(p_weight=s(1.0,-2,{82}), n_weight=s(1.0,0,{-82})), 83: 0.3, 84: True, 90: 0.4, 91: 0.4, 94: True, 100: 0.4, 103: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 111: True, 119: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 125: True, 133: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 139: True, 147: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 153: True, 161: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 167: True, 175: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 181: True, 189: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 195: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0017278194427490234 seconds
-Circuit evaluation took 3.6948068141937256 seconds.
-Best decisions {market(5): 1, market(6): 1, market(2): 0, market(1): 1, market(4): 0, market(8): 1, market(7): 1, market(3): 0, market(9): 0}
-Expected utility 5.310975488000016
-Compile time 0.896028995513916
-Runtime 4.592563629150391
-Evaluation:             4.80
-
-./benchmarks/meu/viral/viral_17_4.pl
-Evaluation:             300.10
-
-Killed
-./benchmarks/meu/viral/viral_10_9.pl
-Compilation took 1.3647851943969727 seconds.
-start decisions: {1, 2, 66, 7, 42, 107, 78, 18, 90, 30}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5, market(9): -2, buys(9): 5, market(10): -2, buys(10): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 6: 0.4, 7: pos_neg_weight(p_weight=s(1.0,-2,{7}), n_weight=s(1.0,0,{-7})), 8: 0.3, 9: True, 15: 0.4, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 19: 0.3, 20: True, 26: 0.4, 27: 0.4, 30: pos_neg_weight(p_weight=s(1.0,-2,{30}), n_weight=s(1.0,0,{-30})), 31: 0.3, 32: True, 38: 0.4, 39: 0.4, 42: pos_neg_weight(p_weight=s(1.0,-2,{42}), n_weight=s(1.0,0,{-42})), 43: 0.3, 44: True, 50: 0.4, 51: 0.4, 54: 0.4, 55: 0.3, 56: True, 62: 0.4, 65: 0.4, 66: pos_neg_weight(p_weight=s(1.0,-2,{66}), n_weight=s(1.0,0,{-66})), 67: 0.3, 68: True, 74: 0.4, 77: 0.4, 78: pos_neg_weight(p_weight=s(1.0,-2,{78}), n_weight=s(1.0,0,{-78})), 79: 0.3, 80: True, 86: 0.4, 89: 0.4, 90: pos_neg_weight(p_weight=s(1.0,-2,{90}), n_weight=s(1.0,0,{-90})), 91: 0.3, 92: True, 98: 0.4, 101: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 107: pos_neg_weight(p_weight=s(1.0,-2,{107}), n_weight=s(1.0,0,{-107})), 108: True, 116: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 122: True, 130: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 136: True, 144: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 150: True, 158: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 164: True, 172: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 178: True, 186: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 192: True, 200: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 206: True, 214: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 220: 0.3, 221: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0012879371643066406 seconds
-Circuit evaluation took 16.442848443984985 seconds.
-Best decisions {market(9): 1, market(6): 1, market(8): 0, market(1): 1, market(4): 1, market(2): 1, market(7): 0, market(10): 0, market(5): 0, market(3): 1}
-Expected utility 6.497956976640065
-Compile time 1.3647851943969727
-Runtime 17.808921575546265
-Evaluation:             18.06
-
-./benchmarks/meu/viral/viral_3_2.pl
-Compilation took 0.00783681869506836 seconds.
-start decisions: {1, 10, 27}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: 0.3, 3: True, 9: 0.4, 10: pos_neg_weight(p_weight=s(1.0,-2,{10}), n_weight=s(1.0,0,{-10})), 11: 0.3, 12: True, 18: 0.4, 21: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 27: pos_neg_weight(p_weight=s(1.0,-2,{27}), n_weight=s(1.0,0,{-27})), 30: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 36: 0.3, 37: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0008745193481445312 seconds
-Circuit evaluation took 0.006907939910888672 seconds.
-Best decisions {market(2): 1, market(3): 0, market(1): 0}
-Expected utility 0.10000000000000009
-Compile time 0.00783681869506836
-Runtime 0.015619277954101562
-Evaluation:             0.04
-
-./benchmarks/meu/viral/viral_14_2.pl
-Evaluation:             300.10
-
-Killed
-./benchmarks/meu/viral/viral_10_3.pl
-
-malloc failed in new_sdd_node
-Evaluation:             259.72
-
-./benchmarks/meu/viral/viral_19_2.pl
-
-malloc failed in new_sdd_node
-Evaluation:             125.03
-
-./benchmarks/meu/viral/viral_4_3.pl
-Compilation took 0.012438058853149414 seconds.
-start decisions: {1, 18, 9, 23}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: 0.3, 3: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 9: pos_neg_weight(p_weight=s(1.0,-2,{9}), n_weight=s(1.0,0,{-9})), 10: 0.3, 11: True, 17: 0.3, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 21: 0.4, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 25: True, 31: 0.4, 34: True, 40: 0.4, 43: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 51: True, 59: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 65: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0011827945709228516 seconds
-Circuit evaluation took 0.020788908004760742 seconds.
-Best decisions {market(2): 0, market(3): 1, market(4): 0, market(1): 0}
-Expected utility 0.7000000000000002
-Compile time 0.012438058853149414
-Runtime 0.03440976142883301
+./benchmarks/meu/problog_format/earthquake_2_1400227407.pl
+Compilation took 0.013069629669189453 seconds.
+start decisions: {3, 4, 45, 14}
+start utilities: {util_node(0): 40, \+util_node(0): 47, util_node(1): 16, \+util_node(1): -44, util_node(2): 38, \+util_node(2): -3, util_node(3): 19, \+util_node(3): -21, util_node(4): 31, \+util_node(4): 37}
+final current_weights {1: 0.2, 2: 0.8, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: pos_neg_weight(p_weight=s(1.0,0,{4}), n_weight=s(1.0,0,{-4})), 5: True, 13: 0.3, 14: pos_neg_weight(p_weight=s(1.0,0,{14}), n_weight=s(1.0,0,{-14})), 17: 0.2, 18: True, 26: 0.4, 27: True, 35: True, 41: 0.5, 44: 0.2, 45: pos_neg_weight(p_weight=s(1.0,0,{45}), n_weight=s(1.0,0,{-45})), 48: True, 56: 0.3, 59: True, 65: 0.7, 68: 0.8, 71: True, 83: pos_neg_weight(p_weight=s(1.0,88,set()), n_weight=s(1.0,13,set())), 97: pos_neg_weight(p_weight=s(1.0,56,set()), n_weight=s(1.0,3,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0008013248443603516 seconds
+Circuit evaluation took 0.007613658905029297 seconds.
+Best decisions {dec_3: 0, dec_2: 0, burglary: 0, earthquake: 0}
+Expected utility 32.879999999999995
+Compile time 0.013069629669189453
+Runtime 0.0214846134185791
 Evaluation:             0.08
 
-./benchmarks/meu/viral/viral_15_2.pl
+./benchmarks/meu/problog_format/asia_1_1400227407.pl
+Compilation took 0.01183772087097168 seconds.
+start decisions: {2, 14}
+start utilities: {\+tub: 15, lung: -47, \+lung: -33, dysp: 39, xray: 15, \+xray: -18, \+bronc: 16, asia: -43, \+asia: 46, smoke: -43, either: -5, \+either: 10}
+final current_weights {1: 0.1, 2: pos_neg_weight(p_weight=s(1.0,-43,{2}), n_weight=s(1.0,0,{-2})), 5: 0.1, 8: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,16,set())), 14: pos_neg_weight(p_weight=s(1.0,-43,{14}), n_weight=s(1.0,46,{-14})), 15: 0.5, 18: 0.6, 21: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,15,set())), 27: 0.3, 30: 0.2, 33: pos_neg_weight(p_weight=s(1.0,-47,set()), n_weight=s(1.0,-33,set())), 41: True, 47: 0.3, 54: pos_neg_weight(p_weight=s(1.0,-5,set()), n_weight=s(1.0,10,set())), 60: True, 66: 0.9, 69: True, 75: 0.7, 78: 0.6, 79: True, 87: 0.5, 88: True, 96: pos_neg_weight(p_weight=s(1.0,39,set()), n_weight=s(1.0,0,set())), 102: 0.7, 105: 0.3, 108: pos_neg_weight(p_weight=s(1.0,15,set()), n_weight=s(1.0,-18,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0006122589111328125 seconds
+Circuit evaluation took 0.006198406219482422 seconds.
+Best decisions {asia: 0, smoke: 0}
+Expected utility 54.10484
+Compile time 0.01183772087097168
+Runtime 0.018648386001586914
+Evaluation:             0.06
 
-calloc failed in new_element_array
-Evaluation:             129.09
-
-./benchmarks/meu/viral/viral_8_2.pl
+./benchmarks/meu/problog_format/child_1_1400227407.pl
 
 malloc failed in new_sdd_node
-Evaluation:             109.40
+Evaluation:             265.50
 
-./benchmarks/meu/viral/viral_17_3.pl
+./benchmarks/meu/problog_format/survey_2_1807131032.pl
+Compilation took 6.133298397064209 seconds.
+start decisions: {9, 306, 123}
+start utilities: {util_node(0): -42, \+util_node(0): 25, util_node(1): -44, \+util_node(1): -10, util_node(2): -47, \+util_node(2): 38, util_node(3): 25, \+util_node(3): 47, util_node(4): -34, \+util_node(4): -5}
+final current_weights {1: 0.9, 2: 0.1, 3: True, 9: pos_neg_weight(p_weight=s(1.0,0,{9}), n_weight=s(1.0,0,{-9})), 10: 0.6, 11: True, 17: 0.6, 18: 0.5, 19: 0.2, 20: 0.6, 21: True, 27: True, 33: 0.2, 34: True, 40: True, 50: 0.6, 51: 0.1, 52: True, 62: 0.5, 63: 0.4, 64: True, 74: 0.5, 75: True, 81: 0.4, 86: 0.6, 87: True, 93: 0.3, 98: True, 104: 0.9, 107: 0.7, 110: True, 118: 0.4, 121: 0.4, 122: 0.2, 123: pos_neg_weight(p_weight=s(1.0,0,{123}), n_weight=s(1.0,0,{-123})), 138: True, 144: 0.7, 149: True, 159: True, 165: 0.6, 166: 0.7, 169: 0.3, 172: True, 178: True, 186: 0.8, 191: 0.3, 196: True, 202: True, 208: 0.1, 211: 0.4, 212: True, 220: 0.6, 221: True, 229: True, 235: 0.7, 236: True, 244: 0.5, 247: 0.2, 248: 0.7, 249: True, 259: 0.9, 260: 0.3, 261: True, 271: 0.3, 272: True, 280: 0.1, 283: True, 305: 0.4, 306: pos_neg_weight(p_weight=s(1.0,0,{306}), n_weight=s(1.0,0,{-306})), 313: True, 417: pos_neg_weight(p_weight=s(1.0,25,set()), n_weight=s(1.0,47,set())), 483: pos_neg_weight(p_weight=s(1.0,-44,set()), n_weight=s(1.0,-10,set())), 547: pos_neg_weight(p_weight=s(1.0,-47,set()), n_weight=s(1.0,38,set())), 607: pos_neg_weight(p_weight=s(1.0,-34,set()), n_weight=s(1.0,-5,set())), 657: pos_neg_weight(p_weight=s(1.0,-42,set()), n_weight=s(1.0,25,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.001285552978515625 seconds
+Circuit evaluation took 0.14591097831726074 seconds.
+Best decisions {dec_2: 1, dec_1: 0, dec_0: 0}
+Expected utility 93.02560564294402
+Compile time 6.133298397064209
+Runtime 6.280494928359985
+Evaluation:             6.89
+
+./benchmarks/meu/problog_format/child_2_1588920084.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_18_3.pl
+./benchmarks/meu/problog_format/asia_2_1807131032.pl
+Compilation took 0.04502248764038086 seconds.
+start decisions: {16, 3}
+start utilities: {util_node(0): -42, \+util_node(0): 25, util_node(1): -3, \+util_node(1): 28, util_node(2): -11, \+util_node(2): -14, util_node(3): 39, \+util_node(3): -47, util_node(4): -27, \+util_node(4): -47}
+final current_weights {1: 0.8, 2: 0.8, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 6: 0.2, 9: True, 15: 0.4, 16: pos_neg_weight(p_weight=s(1.0,0,{16}), n_weight=s(1.0,0,{-16})), 19: 0.8, 22: True, 30: 0.7, 31: True, 43: True, 51: 0.7, 54: True, 60: 0.5, 63: 0.5, 66: True, 76: 0.3, 77: True, 85: True, 91: 0.5, 94: 0.4, 95: True, 103: 0.4, 104: True, 112: True, 148: pos_neg_weight(p_weight=s(1.0,39,set()), n_weight=s(1.0,-47,set())), 172: pos_neg_weight(p_weight=s(1.0,-3,set()), n_weight=s(1.0,28,set())), 178: pos_neg_weight(p_weight=s(1.0,-11,set()), n_weight=s(1.0,-14,set())), 184: pos_neg_weight(p_weight=s(1.0,-27,set()), n_weight=s(1.0,-47,set())), 214: pos_neg_weight(p_weight=s(1.0,-42,set()), n_weight=s(1.0,25,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0019161701202392578 seconds
+Circuit evaluation took 0.033539533615112305 seconds.
+Best decisions {smoke: 0, asia: 0}
+Expected utility -54.99136000000001
+Compile time 0.04502248764038086
+Runtime 0.08047819137573242
+Evaluation:             0.35
+
+./benchmarks/meu/problog_format/win95pts_2_548563996.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_5_2.pl
-Compilation took 1.1693031787872314 seconds.
-start decisions: {1, 2, 11, 15, 24}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 17: True, 23: 0.4, 24: pos_neg_weight(p_weight=s(1.0,-2,{24}), n_weight=s(1.0,0,{-24})), 25: 0.3, 26: True, 32: 0.4, 33: 0.4, 34: 0.4, 35: 0.4, 38: True, 44: 0.4, 49: True, 55: 0.4, 58: 0.4, 59: True, 69: True, 77: True, 85: True, 93: True, 99: 0.4, 102: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 108: 0.3, 109: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 117: True, 125: True, 133: True, 143: True, 151: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 161: True, 169: True, 179: True, 189: True, 197: True, 205: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 213: True, 223: True, 231: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.013899087905883789 seconds
-Circuit evaluation took 0.5010242462158203 seconds.
-Best decisions {market(2): 0, market(4): 1, market(3): 1, market(1): 1, market(5): 0}
-Expected utility 3.164735999999997
-Compile time 1.1693031787872314
-Runtime 1.6842265129089355
-Evaluation:             1.99
+./benchmarks/meu/problog_format/win95pts_1_1592975436.pl
 
-./benchmarks/meu/viral/viral_6_4.pl
-Compilation took 2.9306488037109375 seconds.
-start decisions: {1, 2, 7, 74, 203, 24}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 6: 0.4, 7: pos_neg_weight(p_weight=s(1.0,-2,{7}), n_weight=s(1.0,0,{-7})), 8: 0.3, 9: True, 15: 0.4, 16: 0.3, 17: True, 23: 0.4, 24: pos_neg_weight(p_weight=s(1.0,-2,{24}), n_weight=s(1.0,0,{-24})), 25: 0.3, 26: True, 32: 0.4, 33: 0.4, 34: 0.4, 37: 0.4, 38: True, 46: True, 52: 0.4, 57: True, 65: True, 71: 0.4, 74: pos_neg_weight(p_weight=s(1.0,-2,{74}), n_weight=s(1.0,0,{-74})), 75: 0.3, 76: True, 82: 0.4, 83: 0.4, 86: 0.4, 87: True, 95: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 103: True, 111: True, 121: True, 129: True, 137: True, 145: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 153: True, 163: True, 171: True, 179: True, 189: True, 197: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 203: pos_neg_weight(p_weight=s(1.0,-2,{203}), n_weight=s(1.0,0,{-203})), 204: 0.3, 205: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 213: True, 223: True, 233: True, 241: True, 249: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 255: True, 263: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.014160871505737305 seconds
-Circuit evaluation took 1.2946035861968994 seconds.
-Best decisions {market(5): 1, market(4): 1, market(6): 0, market(3): 0, market(1): 1, market(2): 1}
-Expected utility 4.207479808000005
-Compile time 2.9306488037109375
-Runtime 4.239413261413574
-Evaluation:             4.70
+calloc failed in new_element_array
+Evaluation:             186.35
 
-./benchmarks/meu/viral/viral_5_4.pl
-Compilation took 0.0286257266998291 seconds.
-start decisions: {1, 2, 7, 18, 30}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 6: 0.4, 7: pos_neg_weight(p_weight=s(1.0,-2,{7}), n_weight=s(1.0,0,{-7})), 8: 0.3, 9: True, 15: 0.4, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 19: 0.3, 20: True, 26: 0.4, 27: 0.4, 30: pos_neg_weight(p_weight=s(1.0,-2,{30}), n_weight=s(1.0,0,{-30})), 31: 0.3, 32: True, 38: 0.4, 39: 0.4, 42: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 48: 0.3, 49: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 55: True, 63: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 69: True, 77: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 83: True, 91: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.001630544662475586 seconds
-Circuit evaluation took 0.05879974365234375 seconds.
-Best decisions {market(4): 1, market(3): 0, market(2): 0, market(1): 1, market(5): 0}
-Expected utility 1.3759999999999994
-Compile time 0.0286257266998291
-Runtime 0.08905601501464844
+./benchmarks/meu/problog_format/asia_1_1337671202.pl
+Compilation took 0.026396512985229492 seconds.
+start decisions: {2, 15}
+start utilities: {tub: 31, \+lung: -45, dysp: 27, \+dysp: 15, bronc: 44, \+bronc: -6, asia: -21, \+asia: -2, either: 13}
+final current_weights {1: 0.5, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 5: 0.1, 8: pos_neg_weight(p_weight=s(1.0,44,set()), n_weight=s(1.0,-6,set())), 14: 0.5, 15: pos_neg_weight(p_weight=s(1.0,-21,{15}), n_weight=s(1.0,-2,{-15})), 18: 0.1, 21: pos_neg_weight(p_weight=s(1.0,31,set()), n_weight=s(1.0,0,set())), 27: 0.7, 30: 0.2, 33: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-45,set())), 43: 0.4, 44: True, 54: pos_neg_weight(p_weight=s(1.0,13,set()), n_weight=s(1.0,0,set())), 60: True, 66: 0.9, 69: True, 75: 0.4, 78: 0.6, 79: True, 87: 0.7, 88: True, 96: pos_neg_weight(p_weight=s(1.0,27,set()), n_weight=s(1.0,15,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0015289783477783203 seconds
+Circuit evaluation took 0.018872976303100586 seconds.
+Best decisions {asia: 0, smoke: 0}
+Expected utility 53.629999999999995
+Compile time 0.026396512985229492
+Runtime 0.0467984676361084
 Evaluation:             0.17
 
-./benchmarks/meu/viral/viral_15_4.pl
+./benchmarks/meu/problog_format/child_1_548563996.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_9_2.pl
-Compilation took 85.99878001213074 seconds.
-start decisions: {1, 2, 10, 46, 15, 20, 58, 123, 94}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5, market(8): -2, buys(8): 5, market(9): -2, buys(9): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 10: pos_neg_weight(p_weight=s(1.0,-2,{10}), n_weight=s(1.0,0,{-10})), 11: 0.3, 14: 0.4, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 19: 0.4, 20: pos_neg_weight(p_weight=s(1.0,-2,{20}), n_weight=s(1.0,0,{-20})), 21: 0.3, 22: True, 28: 0.4, 29: 0.4, 30: 0.4, 33: 0.4, 34: 0.3, 35: True, 41: 0.4, 42: 0.4, 45: 0.4, 46: pos_neg_weight(p_weight=s(1.0,-2,{46}), n_weight=s(1.0,0,{-46})), 47: 0.3, 48: True, 54: 0.4, 57: 0.4, 58: pos_neg_weight(p_weight=s(1.0,-2,{58}), n_weight=s(1.0,0,{-58})), 59: 0.3, 60: True, 66: 0.4, 69: True, 77: 0.4, 78: True, 86: True, 94: pos_neg_weight(p_weight=s(1.0,-2,{94}), n_weight=s(1.0,0,{-94})), 95: 0.3, 96: True, 102: 0.4, 103: 0.4, 106: 0.4, 107: True, 115: True, 123: pos_neg_weight(p_weight=s(1.0,-2,{123}), n_weight=s(1.0,0,{-123})), 124: 0.3, 125: True, 131: 0.4, 132: 0.4, 135: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 145: True, 153: True, 161: True, 169: True, 177: True, 185: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 193: True, 201: True, 209: True, 217: True, 227: True, 235: True, 243: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 249: True, 257: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 267: True, 275: True, 285: True, 293: True, 301: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 309: True, 317: True, 325: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 331: True, 339: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 345: True, 353: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0022466182708740234 seconds
-Circuit evaluation took 116.17748379707336 seconds.
-Best decisions {market(5): 1, market(4): 0, market(7): 0, market(8): 0, market(1): 1, market(2): 1, market(6): 0, market(3): 1, market(9): 0}
-Expected utility 7.656212991999937
-Compile time 85.99878001213074
-Runtime 202.17851042747498
-Evaluation:             207.30
+./benchmarks/meu/problog_format/survey_1_769949150.pl
+Compilation took 2.3661983013153076 seconds.
+start decisions: {104, 25, 186, 200}
+start utilities: {\+s("F"): -8, e("high"): -31, \+e("high"): 33, o("emp"): -37, \+o("emp"): -23, a("old"): -9, r("small"): -9, \+r("small"): -34, r("big"): 50, \+r("big"): -8, \+o("self"): -19, t("train"): -38, \+t("train"): -41, t("other"): -21, e("uni"): -9, t("car"): 35, s("M"): -5, \+a("young"): -38, a("adult"): -31}
+final current_weights {1: 0.4, 2: pos_neg_weight(p_weight=s(0.1,0,set()), n_weight=s(0.9,-38,set())), 3: pos_neg_weight(p_weight=s(1.0,-31,set()), n_weight=s(1.0,0,set())), 9: True, 15: 0.2, 16: pos_neg_weight(p_weight=s(1.0,-9,set()), n_weight=s(1.0,0,set())), 22: 0.6, 23: 0.3, 24: 0.5, 25: pos_neg_weight(p_weight=s(1.0,0,{25}), n_weight=s(1.0,0,{-25})), 26: pos_neg_weight(p_weight=s(1.0,-5,set()), n_weight=s(1.0,0,set())), 32: True, 40: 0.3, 41: 0.1, 42: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-8,set())), 48: True, 56: 0.6, 57: True, 65: True, 71: 0.9, 74: 0.7, 75: True, 83: 0.2, 84: True, 92: pos_neg_weight(p_weight=s(1.0,-31,set()), n_weight=s(1.0,33,set())), 100: 0.6, 103: 0.2, 104: pos_neg_weight(p_weight=s(1.0,0,{104}), n_weight=s(1.0,0,{-104})), 107: 0.3, 110: 0.3, 113: 0.4, 120: 0.8, 123: 0.6, 128: 0.9, 135: 0.7, 138: pos_neg_weight(p_weight=s(1.0,-9,set()), n_weight=s(1.0,0,set())), 146: 0.9, 149: pos_neg_weight(p_weight=s(1.0,50,set()), n_weight=s(1.0,-8,set())), 155: 0.1, 156: 0.3, 157: 0.4, 162: 0.4, 163: 0.6, 168: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-19,set())), 174: True, 182: 0.1, 185: 0.5, 186: pos_neg_weight(p_weight=s(1.0,0,{186}), n_weight=s(1.0,0,{-186})), 189: 0.7, 194: pos_neg_weight(p_weight=s(1.0,-9,set()), n_weight=s(1.0,-34,set())), 200: pos_neg_weight(p_weight=s(1.0,0,{200}), n_weight=s(1.0,0,{-200})), 201: 0.1, 208: pos_neg_weight(p_weight=s(1.0,-37,set()), n_weight=s(1.0,-23,set())), 214: True, 222: 0.9, 225: 0.4, 226: True, 234: 0.6, 237: 0.7, 238: True, 244: 0.7, 249: pos_neg_weight(p_weight=s(1.0,-38,set()), n_weight=s(1.0,-41,set())), 263: pos_neg_weight(p_weight=s(1.0,35,set()), n_weight=s(1.0,0,set())), 269: 0.7, 270: True, 280: 0.2, 281: True, 291: 0.9, 292: True, 302: 0.1, 303: True, 313: pos_neg_weight(p_weight=s(1.0,-21,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0027837753295898438 seconds
+Circuit evaluation took 0.1958925724029541 seconds.
+Best decisions {dec_2: 1, dec_3: 1, dec_1: 0, dec_0: 0}
+Expected utility -132.77498779060042
+Compile time 2.3661983013153076
+Runtime 2.5648746490478516
+Evaluation:             2.92
 
-./benchmarks/meu/viral/viral_5_3.pl
-Compilation took 0.5701329708099365 seconds.
-start decisions: {1, 2, 11, 19, 29}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 13: True, 19: pos_neg_weight(p_weight=s(1.0,-2,{19}), n_weight=s(1.0,0,{-19})), 20: 0.3, 21: True, 27: 0.4, 28: 0.4, 29: pos_neg_weight(p_weight=s(1.0,-2,{29}), n_weight=s(1.0,0,{-29})), 30: 0.3, 31: True, 37: 0.4, 38: 0.4, 41: 0.4, 42: True, 48: 0.4, 51: 0.4, 52: True, 60: 0.4, 63: True, 71: True, 79: True, 85: 0.4, 88: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 94: 0.3, 95: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 103: True, 113: True, 121: True, 131: True, 141: True, 149: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 157: True, 167: True, 175: True, 185: True, 195: True, 203: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 211: True, 221: True, 229: True, 237: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0018124580383300781 seconds
-Circuit evaluation took 0.2973639965057373 seconds.
-Best decisions {market(4): 1, market(3): 1, market(2): 0, market(1): 1, market(5): 0}
-Expected utility 3.1647360000000035
-Compile time 0.5701329708099365
-Runtime 0.8693094253540039
-Evaluation:             1.20
-
-./benchmarks/meu/viral/viral_9_6.pl
+./benchmarks/meu/problog_format/sachs_1_548563996.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_11_3.pl
+./benchmarks/meu/problog_format/earthquake_2_2023896565.pl
+Compilation took 0.016875743865966797 seconds.
+start decisions: {2, 3}
+start utilities: {util_node(0): 35, \+util_node(0): -17, util_node(1): 41, \+util_node(1): -44, util_node(2): 15, \+util_node(2): 27, util_node(3): 30, \+util_node(3): 14, util_node(4): -43, \+util_node(4): 36}
+final current_weights {1: 0.6, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.5, 13: True, 21: 0.4, 22: True, 30: 0.7, 31: True, 39: True, 45: 0.6, 48: 0.3, 51: True, 57: 0.1, 60: 0.9, 63: True, 83: pos_neg_weight(p_weight=s(1.0,56,set()), n_weight=s(1.0,-17,set())), 89: pos_neg_weight(p_weight=s(1.0,65,set()), n_weight=s(1.0,-3,set())), 101: pos_neg_weight(p_weight=s(1.0,-43,set()), n_weight=s(1.0,36,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0016236305236816406 seconds
+Circuit evaluation took 0.011194467544555664 seconds.
+Best decisions {burglary: 0, earthquake: 0}
+Expected utility 19.28
+Compile time 0.016875743865966797
+Runtime 0.0296938419342041
+Evaluation:             0.22
+
+./benchmarks/meu/problog_format/survey_1_1707665179.pl
+Compilation took 15.142477989196777 seconds.
+start decisions: {2}
+start utilities: {s("F"): -23, \+s("F"): 3, e("high"): -16, o("emp"): -13, \+o("emp"): 11, a("old"): -48, r("small"): 19, o("self"): -42, t("train"): -32, t("other"): -40, \+t("other"): -44, e("uni"): -41, \+e("uni"): 39, \+t("car"): 42, s("M"): 24, \+s("M"): -2, a("young"): 37, \+a("adult"): 35}
+final current_weights {1: 0.4, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,-23,set()), n_weight=s(1.0,3,set())), 9: 0.3, 10: pos_neg_weight(p_weight=s(0.6,37,set()), n_weight=s(0.4,0,set())), 11: True, 17: 0.5, 18: pos_neg_weight(p_weight=s(1.0,-48,set()), n_weight=s(1.0,0,set())), 24: 0.6, 25: 0.1, 26: 0.6, 27: 0.5, 28: 0.7, 29: pos_neg_weight(p_weight=s(1.0,24,set()), n_weight=s(1.0,-2,set())), 35: True, 41: 0.2, 44: 0.4, 45: True, 53: 0.1, 54: True, 62: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,35,set())), 68: True, 74: 0.3, 77: 0.5, 78: True, 86: 0.1, 87: True, 95: pos_neg_weight(p_weight=s(1.0,-16,set()), n_weight=s(1.0,0,set())), 105: 0.3, 106: 0.9, 109: 0.4, 112: 0.3, 117: 0.1, 124: 0.8, 127: 0.5, 132: 0.7, 137: pos_neg_weight(p_weight=s(1.0,-41,set()), n_weight=s(1.0,39,set())), 147: pos_neg_weight(p_weight=s(1.0,-42,set()), n_weight=s(1.0,0,set())), 153: 0.1, 154: 0.7, 159: 0.3, 160: 0.7, 165: True, 171: True, 185: pos_neg_weight(p_weight=s(1.0,19,set()), n_weight=s(1.0,0,set())), 191: True, 197: 0.7, 200: 0.5, 203: 0.3, 208: pos_neg_weight(p_weight=s(1.0,-13,set()), n_weight=s(1.0,11,set())), 214: True, 220: 0.8, 225: 0.3, 226: True, 232: 0.4, 237: pos_neg_weight(p_weight=s(1.0,-32,set()), n_weight=s(1.0,0,set())), 243: True, 251: 0.4, 254: 0.5, 255: True, 265: 0.9, 266: True, 276: True, 284: 0.3, 287: pos_neg_weight(p_weight=s(1.0,-40,set()), n_weight=s(1.0,-44,set())), 301: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,42,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.004090309143066406 seconds
+Circuit evaluation took 0.21243572235107422 seconds.
+Best decisions {dec_0: 1}
+Expected utility 72.53092577475198
+Compile time 15.142477989196777
+Runtime 15.359004020690918
+Evaluation:             16.20
+
+./benchmarks/meu/problog_format/child_2_1337671202.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_11_4.pl
+./benchmarks/meu/problog_format/survey_1_1337671202.pl
+Compilation took 8.347667932510376 seconds.
+start decisions: {2, 205}
+start utilities: {s("F"): 21, \+s("F"): -45, e("high"): 27, \+e("high"): 15, a("old"): 44, \+a("old"): -6, r("small"): -21, \+r("small"): -2, o("self"): 13, t("train"): 32, t("other"): 32, e("uni"): 41, t("car"): -20, \+s("M"): -32, a("adult"): 46}
+final current_weights {1: 0.8, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,21,set()), n_weight=s(1.0,-45,set())), 9: 0.9, 10: 0.5, 11: pos_neg_weight(p_weight=s(1.0,46,set()), n_weight=s(1.0,0,set())), 17: True, 23: 0.4, 24: pos_neg_weight(p_weight=s(1.0,44,set()), n_weight=s(1.0,-6,set())), 30: 0.9, 31: 0.2, 32: 0.2, 33: 0.4, 34: 0.9, 35: True, 43: 0.7, 44: 0.4, 45: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-32,set())), 51: True, 59: 0.3, 60: True, 68: 0.4, 69: True, 77: 0.1, 78: True, 86: True, 92: 0.3, 95: pos_neg_weight(p_weight=s(1.0,27,set()), n_weight=s(1.0,15,set())), 105: 0.5, 106: 0.5, 109: 0.7, 112: 0.3, 117: 0.1, 124: 0.6, 127: 0.2, 134: 0.3, 137: pos_neg_weight(p_weight=s(1.0,41,set()), n_weight=s(1.0,0,set())), 147: True, 153: 0.9, 154: 0.8, 159: 0.7, 160: 0.5, 165: pos_neg_weight(p_weight=s(1.0,13,set()), n_weight=s(1.0,0,set())), 171: True, 181: 0.5, 186: True, 192: True, 198: 0.8, 203: 0.3, 204: 0.8, 205: pos_neg_weight(p_weight=s(1.0,0,{205}), n_weight=s(1.0,0,{-205})), 212: pos_neg_weight(p_weight=s(1.0,-21,set()), n_weight=s(1.0,-2,set())), 218: True, 224: 0.2, 229: 0.6, 230: 0.8, 231: True, 241: pos_neg_weight(p_weight=s(1.0,32,set()), n_weight=s(1.0,0,set())), 255: pos_neg_weight(p_weight=s(1.0,-20,set()), n_weight=s(1.0,0,set())), 261: True, 269: 0.4, 272: 0.8, 273: True, 283: 0.6, 284: True, 294: True, 302: 0.7, 305: pos_neg_weight(p_weight=s(1.0,32,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.003135204315185547 seconds
+Circuit evaluation took 0.23338675498962402 seconds.
+Best decisions {dec_1: 0, dec_0: 0}
+Expected utility -10.021905996800003
+Compile time 8.347667932510376
+Runtime 8.584189891815186
+Evaluation:             9.18
 
-calloc failed in new_element_array
-Evaluation:             163.55
-
-./benchmarks/meu/viral/viral_12_4.pl
-Evaluation:             300.10
-
-Killed
-./benchmarks/meu/viral/viral_7_6.pl
-Compilation took 0.07365870475769043 seconds.
-start decisions: {1, 2, 39, 11, 15, 27, 127}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 17: True, 23: 0.4, 24: 0.4, 27: pos_neg_weight(p_weight=s(1.0,-2,{27}), n_weight=s(1.0,0,{-27})), 28: 0.3, 29: True, 35: 0.4, 36: 0.4, 39: pos_neg_weight(p_weight=s(1.0,-2,{39}), n_weight=s(1.0,0,{-39})), 40: 0.3, 41: True, 47: 0.4, 48: 0.4, 51: 0.4, 52: 0.3, 53: True, 59: 0.4, 60: 0.4, 63: True, 71: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 79: True, 87: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 93: True, 101: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 107: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 113: True, 121: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 127: pos_neg_weight(p_weight=s(1.0,-2,{127}), n_weight=s(1.0,0,{-127})), 128: 0.3, 129: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 135: True, 143: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0010268688201904297 seconds
-Circuit evaluation took 0.2599771022796631 seconds.
-Best decisions {market(7): 0, market(4): 1, market(2): 0, market(3): 1, market(6): 1, market(5): 0, market(1): 1}
-Expected utility 3.129990400000006
-Compile time 0.07365870475769043
-Runtime 0.33466267585754395
-Evaluation:             0.40
-
-./benchmarks/meu/viral/viral_7_4.pl
-
-calloc failed in new_element_array
-Evaluation:             109.82
-
-./benchmarks/meu/viral/viral_20_2.pl
+./benchmarks/meu/problog_format/sachs_1_1337671202.pl
 
 malloc failed in new_sdd_node
-Evaluation:             230.34
+Evaluation:             267.83
 
-./benchmarks/meu/viral/viral_9_4.pl
-
-calloc failed in new_element_array
-Evaluation:             153.07
-
-./benchmarks/meu/viral/viral_16_4.pl
-Evaluation:             300.10
+./benchmarks/meu/problog_format/win95pts_2_1588920084.pl
+Evaluation:             300.06
 
 Killed
-./benchmarks/meu/viral/viral_9_5.pl
-Evaluation:             300.10
-
-Killed
-./benchmarks/meu/viral/viral_20_4.pl
-Evaluation:             300.10
-
-Killed
-./benchmarks/meu/viral/viral_13_3.pl
-Evaluation:             300.10
-
-Killed
-./benchmarks/meu/viral/viral_8_5.pl
-
-calloc failed in new_element_array
-Evaluation:             230.93
-
-./benchmarks/meu/viral/viral_8_6.pl
+./benchmarks/meu/problog_format/sachs_2_1807131032.pl
 
 malloc failed in new_sdd_node
-Evaluation:             90.13
+Evaluation:             143.73
 
-./benchmarks/meu/viral/viral_8_4.pl
+./benchmarks/meu/problog_format/child_1_1482723311.pl
+Evaluation:             300.10
 
-malloc failed in new_sdd_node
-Evaluation:             54.27
+Killed
+./benchmarks/meu/problog_format/asia_2_548563996.pl
+Compilation took 0.05939769744873047 seconds.
+start decisions: {1, 19, 53, 15}
+start utilities: {util_node(0): -7, \+util_node(0): -30, util_node(1): 46, \+util_node(1): 9, util_node(2): 12, \+util_node(2): 34, util_node(3): -14, \+util_node(3): 7, util_node(4): 49, \+util_node(4): 6}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.4, 5: 0.9, 8: True, 14: 0.6, 15: pos_neg_weight(p_weight=s(1.0,0,{15}), n_weight=s(1.0,0,{-15})), 18: 0.6, 19: pos_neg_weight(p_weight=s(1.0,0,{19}), n_weight=s(1.0,0,{-19})), 22: 0.1, 25: True, 37: 0.2, 38: True, 46: True, 52: 0.4, 53: pos_neg_weight(p_weight=s(1.0,0,{53}), n_weight=s(1.0,0,{-53})), 56: 0.1, 59: 0.1, 62: True, 68: True, 74: 0.1, 77: 0.4, 78: True, 86: 0.7, 87: True, 95: 0.4, 96: True, 104: True, 120: 0.3, 123: 0.2, 126: True, 148: pos_neg_weight(p_weight=s(1.0,-14,set()), n_weight=s(1.0,7,set())), 174: pos_neg_weight(p_weight=s(1.0,46,set()), n_weight=s(1.0,9,set())), 182: pos_neg_weight(p_weight=s(1.0,12,set()), n_weight=s(1.0,34,set())), 206: pos_neg_weight(p_weight=s(1.0,49,set()), n_weight=s(1.0,6,set())), 212: pos_neg_weight(p_weight=s(1.0,-7,set()), n_weight=s(1.0,-30,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0014014244079589844 seconds
+Circuit evaluation took 0.03227877616882324 seconds.
+Best decisions {dec_2: 0, dec_3: 0, asia: 0, smoke: 0}
+Expected utility 27.527231999999998
+Compile time 0.05939769744873047
+Runtime 0.0930778980255127
+Evaluation:             0.25
 
-./benchmarks/meu/viral/viral_15_3.pl
+./benchmarks/meu/problog_format/survey_2_769949150.pl
+Compilation took 4.88993501663208 seconds.
+start decisions: {288, 1, 156, 57}
+start utilities: {util_node(0): 18, \+util_node(0): 7, util_node(1): -3, \+util_node(1): -27, util_node(2): 33, \+util_node(2): -48, util_node(3): 2, \+util_node(3): 20, util_node(4): -38, \+util_node(4): 11}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.1, 3: True, 9: 0.8, 10: 0.4, 11: 0.9, 12: 0.3, 13: 0.4, 14: True, 20: True, 26: 0.7, 27: True, 33: True, 41: 0.8, 44: 0.7, 45: True, 53: 0.6, 56: 0.7, 57: pos_neg_weight(p_weight=s(1.0,0,{57}), n_weight=s(1.0,0,{-57})), 60: 0.2, 61: 0.4, 62: True, 68: True, 78: 0.9, 79: True, 85: 0.3, 90: 0.9, 91: True, 99: 0.8, 102: 0.4, 103: True, 109: 0.8, 114: True, 122: 0.8, 125: 0.1, 138: True, 144: 0.9, 149: True, 155: 0.1, 156: pos_neg_weight(p_weight=s(1.0,0,{156}), n_weight=s(1.0,0,{-156})), 163: True, 169: 0.8, 170: 0.1, 171: 0.2, 172: True, 178: 0.1, 181: 0.3, 184: True, 190: True, 200: 0.5, 201: 0.9, 206: 0.4, 211: True, 217: True, 223: 0.5, 224: 0.5, 225: True, 235: 0.2, 236: True, 242: 0.4, 243: 0.8, 244: True, 254: 0.7, 255: 0.1, 256: 0.4, 257: True, 263: True, 273: True, 287: 0.9, 288: pos_neg_weight(p_weight=s(1.0,0,{288}), n_weight=s(1.0,0,{-288})), 303: True, 327: True, 433: pos_neg_weight(p_weight=s(1.0,2,set()), n_weight=s(1.0,20,set())), 541: pos_neg_weight(p_weight=s(1.0,-3,set()), n_weight=s(1.0,-27,set())), 625: pos_neg_weight(p_weight=s(1.0,33,set()), n_weight=s(1.0,-48,set())), 637: pos_neg_weight(p_weight=s(1.0,-38,set()), n_weight=s(1.0,11,set())), 681: pos_neg_weight(p_weight=s(1.0,18,set()), n_weight=s(1.0,7,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0015556812286376953 seconds
+Circuit evaluation took 0.1658458709716797 seconds.
+Best decisions {dec_3: 1, dec_2: 1, dec_0: 0, dec_1: 0}
+Expected utility -36.883422382312006
+Compile time 4.88993501663208
+Runtime 5.0573365688323975
+Evaluation:             5.63
 
-calloc failed in new_element_array
-Evaluation:             160.34
+./benchmarks/meu/problog_format/child_1_1592975436.pl
+Evaluation:             300.10
 
-./benchmarks/meu/viral/viral_6_2.pl
-Compilation took 3.0104665756225586 seconds.
-start decisions: {1, 2, 291, 39, 11, 19}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 13: True, 19: pos_neg_weight(p_weight=s(1.0,-2,{19}), n_weight=s(1.0,0,{-19})), 20: 0.3, 21: True, 27: 0.4, 28: 0.4, 29: 0.4, 30: 0.3, 31: True, 37: 0.4, 38: 0.4, 39: pos_neg_weight(p_weight=s(1.0,-2,{39}), n_weight=s(1.0,0,{-39})), 40: 0.3, 41: True, 47: 0.4, 48: 0.4, 51: True, 59: True, 65: 0.4, 68: 0.4, 71: True, 79: True, 87: 0.4, 88: True, 96: 0.4, 99: True, 107: True, 117: True, 125: True, 133: True, 141: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 149: True, 159: True, 167: True, 175: True, 185: True, 193: True, 203: True, 211: True, 219: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 227: True, 235: True, 243: True, 251: True, 261: True, 269: True, 277: True, 285: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 291: pos_neg_weight(p_weight=s(1.0,-2,{291}), n_weight=s(1.0,0,{-291})), 292: 0.3, 293: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 301: True, 309: True, 317: True, 327: True, 335: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 343: True, 353: True, 361: True, 369: True, 377: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0009381771087646484 seconds
-Circuit evaluation took 1.1753501892089844 seconds.
-Best decisions {market(4): 1, market(1): 1, market(3): 1, market(2): 1, market(6): 0, market(5): 0}
-Expected utility 4.102461184000012
-Compile time 3.0104665756225586
-Runtime 4.186754941940308
-Evaluation:             4.69
+Killed
+./benchmarks/meu/problog_format/child_2_1482723311.pl
+Evaluation:             300.10
 
-./benchmarks/meu/viral/viral_12_3.pl
+Killed
+./benchmarks/meu/problog_format/earthquake_2_1592975436.pl
+Compilation took 0.01644110679626465 seconds.
+start decisions: {1, 3, 46}
+start utilities: {util_node(0): -35, \+util_node(0): 15, util_node(1): 41, \+util_node(1): -41, util_node(2): 40, \+util_node(2): -2, util_node(3): 0, \+util_node(3): 8, util_node(4): 42, \+util_node(4): 18}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.4, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.4, 13: True, 21: 0.3, 22: True, 30: 0.2, 31: True, 39: True, 45: 0.8, 46: pos_neg_weight(p_weight=s(1.0,0,{46}), n_weight=s(1.0,0,{-46})), 49: 0.1, 52: 0.6, 55: True, 61: 0.5, 64: 0.6, 67: True, 79: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,13,set())), 93: pos_neg_weight(p_weight=s(1.0,42,set()), n_weight=s(1.0,26,set())), 103: pos_neg_weight(p_weight=s(1.0,41,set()), n_weight=s(1.0,-41,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0016818046569824219 seconds
+Circuit evaluation took 0.014898300170898438 seconds.
+Best decisions {dec_2: 0, earthquake: 0, burglary: 0}
+Expected utility 28.080000000000005
+Compile time 0.01644110679626465
+Runtime 0.03302121162414551
+Evaluation:             0.19
 
-calloc failed in new_element_array
-Evaluation:             80.75
+./benchmarks/meu/problog_format/win95pts_1_1400227407.pl
+Evaluation:             300.10
 
-./benchmarks/meu/viral/viral_18_2.pl
+Killed
+./benchmarks/meu/problog_format/survey_2_2023896565.pl
+Compilation took 2.875619649887085 seconds.
+start decisions: {1, 172}
+start utilities: {util_node(0): 35, \+util_node(0): -17, util_node(1): 15, \+util_node(1): 9, util_node(2): -24, \+util_node(2): -14, util_node(3): -18, \+util_node(3): -49, util_node(4): 4, \+util_node(4): 37}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.5, 3: True, 9: 0.5, 10: True, 16: 0.2, 17: 0.8, 18: True, 24: 0.3, 29: 0.5, 30: 0.5, 31: 0.7, 32: True, 38: 0.9, 39: True, 45: True, 55: 0.4, 56: 0.1, 57: True, 67: 0.9, 68: True, 74: True, 80: 0.6, 85: 0.4, 86: 0.5, 87: True, 97: 0.1, 98: True, 106: 0.6, 109: True, 115: 0.8, 130: True, 136: 0.7, 139: True, 145: 0.6, 146: 0.2, 151: 0.9, 152: 0.1, 157: True, 163: 0.3, 164: 0.3, 165: True, 171: 0.7, 172: pos_neg_weight(p_weight=s(1.0,0,{172}), n_weight=s(1.0,0,{-172})), 177: 0.4, 180: 0.1, 185: True, 195: True, 201: True, 209: 0.5, 212: 0.3, 213: 0.1, 214: 0.5, 215: True, 221: True, 231: 0.9, 232: 0.8, 233: 0.6, 234: True, 240: True, 250: 0.2, 251: 0.2, 252: True, 258: True, 266: 0.9, 269: True, 295: True, 319: True, 411: pos_neg_weight(p_weight=s(1.0,-18,set()), n_weight=s(1.0,-49,set())), 515: pos_neg_weight(p_weight=s(1.0,15,set()), n_weight=s(1.0,9,set())), 553: pos_neg_weight(p_weight=s(1.0,-24,set()), n_weight=s(1.0,-14,set())), 603: pos_neg_weight(p_weight=s(1.0,4,set()), n_weight=s(1.0,37,set())), 661: pos_neg_weight(p_weight=s(1.0,35,set()), n_weight=s(1.0,-17,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0011942386627197266 seconds
+Circuit evaluation took 0.0663290023803711 seconds.
+Best decisions {dec_0: 1, dec_1: 0}
+Expected utility -33.480328064000005
+Compile time 2.875619649887085
+Runtime 2.943142890930176
+Evaluation:             3.38
 
-calloc failed in resize_sdd_node_hash
-Evaluation:             263.77
-
-./benchmarks/meu/viral/viral_7_2.pl
-
-calloc failed in new_element_array
-Evaluation:             98.88
-
-./benchmarks/meu/viral/viral_4_2.pl
-Compilation took 0.015494585037231445 seconds.
-start decisions: {1, 18, 9, 23}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: 0.3, 3: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 9: pos_neg_weight(p_weight=s(1.0,-2,{9}), n_weight=s(1.0,0,{-9})), 10: 0.3, 11: True, 17: 0.3, 18: pos_neg_weight(p_weight=s(1.0,-2,{18}), n_weight=s(1.0,0,{-18})), 21: 0.4, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 25: True, 31: 0.4, 34: True, 40: 0.4, 43: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 51: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 59: True, 67: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0012083053588867188 seconds
-Circuit evaluation took 0.01980113983154297 seconds.
-Best decisions {market(3): 0, market(2): 1, market(4): 0, market(1): 0}
-Expected utility 0.7000000000000002
-Compile time 0.015494585037231445
-Runtime 0.03650403022766113
+./benchmarks/meu/problog_format/earthquake_1_1400227407.pl
+Compilation took 0.008570194244384766 seconds.
+start decisions: {1, 2}
+start utilities: {maryCalls: 25, \+maryCalls: -47, burglary: -28, earthquake: 1, alarm: -36, \+alarm: 45, johnCalls: 36, \+johnCalls: 36}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,1,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-28,{2}), n_weight=s(1.0,0,{-2})), 3: True, 9: 0.4, 12: 0.3, 13: True, 21: 0.2, 22: True, 30: 0.9, 31: True, 39: pos_neg_weight(p_weight=s(1.0,-36,set()), n_weight=s(1.0,45,set())), 45: 0.5, 48: 0.2, 51: pos_neg_weight(p_weight=s(1.0,25,set()), n_weight=s(1.0,-47,set())), 57: 0.4, 60: 0.2, 63: pos_neg_weight(p_weight=s(1.0,36,set()), n_weight=s(1.0,36,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0007228851318359375 seconds
+Circuit evaluation took 0.0050809383392333984 seconds.
+Best decisions {earthquake: 0, burglary: 0}
+Expected utility 30.579999999999988
+Compile time 0.008570194244384766
+Runtime 0.014374017715454102
 Evaluation:             0.09
 
-./benchmarks/meu/viral/viral_7_3.pl
+./benchmarks/meu/problog_format/win95pts_1_1707665179.pl
+Evaluation:             300.10
 
-calloc failed in new_element_array
-Evaluation:             168.81
+Killed
+./benchmarks/meu/problog_format/child_1_2023896565.pl
+Evaluation:             300.10
 
-./benchmarks/meu/viral/viral_8_3.pl
+Killed
+./benchmarks/meu/problog_format/asia_2_1337671202.pl
+Compilation took 0.038942813873291016 seconds.
+start decisions: {64, 17, 4}
+start utilities: {util_node(0): -20, \+util_node(0): 4, util_node(1): -43, \+util_node(1): -9, util_node(2): 10, \+util_node(2): -35, util_node(3): -30, \+util_node(3): 42, util_node(4): -15, \+util_node(4): -39}
+final current_weights {1: 0.3, 2: 0.3, 3: 0.7, 4: pos_neg_weight(p_weight=s(1.0,0,{4}), n_weight=s(1.0,0,{-4})), 7: 0.5, 10: True, 16: 0.2, 17: pos_neg_weight(p_weight=s(1.0,0,{17}), n_weight=s(1.0,0,{-17})), 20: 0.2, 23: True, 29: True, 43: True, 51: 0.6, 54: True, 60: 0.3, 63: 0.1, 64: pos_neg_weight(p_weight=s(1.0,0,{64}), n_weight=s(1.0,0,{-64})), 67: 0.2, 70: True, 76: True, 82: 0.5, 85: 0.1, 86: True, 94: 0.8, 95: True, 103: 0.6, 104: True, 112: True, 152: pos_neg_weight(p_weight=s(1.0,-30,set()), n_weight=s(1.0,42,set())), 164: pos_neg_weight(p_weight=s(1.0,-43,set()), n_weight=s(1.0,-9,set())), 180: pos_neg_weight(p_weight=s(1.0,10,set()), n_weight=s(1.0,-35,set())), 214: pos_neg_weight(p_weight=s(1.0,-15,set()), n_weight=s(1.0,-39,set())), 224: pos_neg_weight(p_weight=s(1.0,-20,set()), n_weight=s(1.0,4,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0009195804595947266 seconds
+Circuit evaluation took 0.01853466033935547 seconds.
+Best decisions {dec_2: 0, asia: 1, smoke: 0}
+Expected utility -35.1184
+Compile time 0.038942813873291016
+Runtime 0.05839705467224121
+Evaluation:             0.19
+
+./benchmarks/meu/problog_format/asia_2_1588920084.pl
+Compilation took 0.04802203178405762 seconds.
+start decisions: {8, 113, 2, 21}
+start utilities: {util_node(0): 20, \+util_node(0): -43, util_node(1): 9, \+util_node(1): 23, util_node(2): 25, \+util_node(2): 14, util_node(3): 22, \+util_node(3): -11, util_node(4): -9, \+util_node(4): 24}
+final current_weights {1: 0.2, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 5: 0.3, 6: 0.4, 7: 0.7, 8: pos_neg_weight(p_weight=s(1.0,0,{8}), n_weight=s(1.0,0,{-8})), 11: 0.8, 14: True, 20: 0.7, 21: pos_neg_weight(p_weight=s(1.0,0,{21}), n_weight=s(1.0,0,{-21})), 24: 0.7, 27: True, 33: True, 47: True, 55: 0.2, 58: True, 64: 0.5, 67: 0.3, 70: True, 76: 0.8, 77: True, 85: 0.3, 86: True, 94: True, 100: 0.6, 103: 0.4, 104: True, 112: 0.8, 113: pos_neg_weight(p_weight=s(1.0,0,{113}), n_weight=s(1.0,0,{-113})), 116: True, 156: pos_neg_weight(p_weight=s(1.0,22,set()), n_weight=s(1.0,-11,set())), 164: pos_neg_weight(p_weight=s(1.0,9,set()), n_weight=s(1.0,23,set())), 184: pos_neg_weight(p_weight=s(1.0,25,set()), n_weight=s(1.0,14,set())), 194: pos_neg_weight(p_weight=s(1.0,-9,set()), n_weight=s(1.0,24,set())), 200: pos_neg_weight(p_weight=s(1.0,20,set()), n_weight=s(1.0,-43,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0009808540344238281 seconds
+Circuit evaluation took 0.02597498893737793 seconds.
+Best decisions {asia: 0, dec_3: 1, dec_2: 1, smoke: 1}
+Expected utility 11.6089312
+Compile time 0.04802203178405762
+Runtime 0.07497787475585938
+Evaluation:             0.21
+
+./benchmarks/meu/problog_format/child_2_1707665179.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/child_2_1592975436.pl
 
 malloc failed in new_sdd_node
-Evaluation:             148.01
+Evaluation:             272.96
 
-./benchmarks/meu/viral/viral_7_5.pl
-Compilation took 28.785791873931885 seconds.
-start decisions: {1, 2, 14, 23, 347, 28, 61}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5, market(7): -2, buys(7): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.3, 13: 0.3, 14: pos_neg_weight(p_weight=s(1.0,-2,{14}), n_weight=s(1.0,0,{-14})), 15: True, 21: 0.4, 22: 0.4, 23: pos_neg_weight(p_weight=s(1.0,-2,{23}), n_weight=s(1.0,0,{-23})), 24: 0.3, 27: 0.4, 28: pos_neg_weight(p_weight=s(1.0,-2,{28}), n_weight=s(1.0,0,{-28})), 29: 0.3, 30: True, 36: 0.4, 37: 0.4, 40: 0.4, 41: 0.4, 42: True, 48: 0.4, 51: True, 57: 0.4, 60: 0.3, 61: pos_neg_weight(p_weight=s(1.0,-2,{61}), n_weight=s(1.0,0,{-61})), 62: True, 68: 0.4, 69: 0.4, 74: True, 82: True, 88: 0.4, 91: 0.4, 92: True, 98: 0.4, 101: True, 107: 0.4, 112: True, 120: True, 130: True, 138: True, 146: True, 154: True, 160: 0.4, 163: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 171: True, 179: True, 187: True, 195: True, 205: True, 213: True, 221: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 227: True, 235: True, 245: True, 255: True, 265: True, 273: True, 283: True, 293: True, 301: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 309: True, 319: True, 327: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 333: True, 341: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 347: pos_neg_weight(p_weight=s(1.0,-2,{347}), n_weight=s(1.0,0,{-347})), 348: 0.3, 349: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 355: True, 365: True, 375: True, 385: True, 393: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0019218921661376953 seconds
-Circuit evaluation took 10.811163663864136 seconds.
-Best decisions {market(5): 1, market(4): 1, market(1): 0, market(2): 0, market(7): 0, market(6): 1, market(3): 1}
-Expected utility 6.396643717120037
-Compile time 28.785791873931885
-Runtime 39.59887742996216
-Evaluation:             41.88
+./benchmarks/meu/problog_format/survey_1_1400227407.pl
+Compilation took 0.806220531463623 seconds.
+start decisions: {2}
+start utilities: {s("F"): 15, \+s("F"): -47, e("high"): -33, o("emp"): -36, a("old"): 30, \+a("old"): -32, r("small"): 16, \+r("small"): -43, r("big"): 46, \+r("big"): -43, o("self"): 31, t("train"): 10, \+t("train"): -3, t("other"): 44, e("uni"): 37, \+e("uni"): -3, t("car"): -10, \+t("car"): -31, s("M"): -10, a("young"): 14, \+a("young"): -21, a("adult"): 29}
+final current_weights {1: 0.9, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,15,set()), n_weight=s(1.0,-47,set())), 9: pos_neg_weight(p_weight=s(0.3,14,set()), n_weight=s(0.7,-21,set())), 10: 0.7, 11: pos_neg_weight(p_weight=s(1.0,29,set()), n_weight=s(1.0,0,set())), 17: True, 23: 0.9, 24: pos_neg_weight(p_weight=s(1.0,30,set()), n_weight=s(1.0,-32,set())), 30: 0.2, 31: 0.4, 32: pos_neg_weight(p_weight=s(1.0,-10,set()), n_weight=s(1.0,0,set())), 38: True, 44: 0.2, 47: 0.2, 48: True, 56: 0.3, 57: True, 65: 0.2, 66: True, 74: 0.3, 75: True, 83: 0.7, 84: True, 92: pos_neg_weight(p_weight=s(1.0,-33,set()), n_weight=s(1.0,0,set())), 100: 0.6, 103: 0.9, 106: 0.2, 109: 0.8, 116: 0.3, 121: 0.9, 124: 0.1, 129: 0.2, 134: pos_neg_weight(p_weight=s(1.0,37,set()), n_weight=s(1.0,-3,set())), 140: 0.6, 145: pos_neg_weight(p_weight=s(1.0,46,set()), n_weight=s(1.0,-43,set())), 151: 0.1, 152: 0.7, 153: 0.2, 156: 0.9, 159: 0.5, 160: 0.8, 165: pos_neg_weight(p_weight=s(1.0,31,set()), n_weight=s(1.0,0,set())), 175: pos_neg_weight(p_weight=s(1.0,16,set()), n_weight=s(1.0,-43,set())), 181: True, 191: 0.2, 196: pos_neg_weight(p_weight=s(1.0,-36,set()), n_weight=s(1.0,0,set())), 202: True, 208: 0.8, 213: 0.4, 214: True, 220: 0.6, 225: 0.1, 226: 0.3, 227: True, 237: pos_neg_weight(p_weight=s(1.0,10,set()), n_weight=s(1.0,-3,set())), 251: pos_neg_weight(p_weight=s(1.0,-10,set()), n_weight=s(1.0,-31,set())), 257: 0.1, 258: True, 268: 0.1, 269: True, 279: 0.2, 280: True, 290: 0.1, 291: True, 301: pos_neg_weight(p_weight=s(1.0,44,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0015196800231933594 seconds
+Circuit evaluation took 0.041316986083984375 seconds.
+Best decisions {dec_0: 0}
+Expected utility -115.37015780224638
+Compile time 0.806220531463623
+Runtime 0.8490571975708008
+Evaluation:             1.03
 
-./benchmarks/meu/viral/viral_6_3.pl
-Compilation took 11.711851358413696 seconds.
-start decisions: {1, 2, 289, 11, 15, 20}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.4, 11: pos_neg_weight(p_weight=s(1.0,-2,{11}), n_weight=s(1.0,0,{-11})), 12: 0.3, 15: pos_neg_weight(p_weight=s(1.0,-2,{15}), n_weight=s(1.0,0,{-15})), 16: 0.3, 19: 0.4, 20: pos_neg_weight(p_weight=s(1.0,-2,{20}), n_weight=s(1.0,0,{-20})), 21: 0.3, 22: True, 28: 0.4, 29: 0.4, 32: 0.4, 33: 0.4, 34: 0.3, 35: True, 41: 0.4, 42: 0.4, 43: 0.4, 46: True, 52: 0.4, 55: 0.4, 56: 0.4, 57: True, 65: True, 73: True, 83: True, 91: True, 99: True, 107: True, 113: 0.4, 118: True, 128: True, 136: True, 142: 0.4, 145: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 155: True, 163: True, 173: True, 183: True, 191: True, 201: True, 209: True, 217: True, 225: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 233: True, 243: True, 251: True, 263: True, 275: True, 283: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 289: pos_neg_weight(p_weight=s(1.0,-2,{289}), n_weight=s(1.0,0,{-289})), 290: 0.3, 291: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 301: True, 309: True, 319: True, 327: True, 337: True, 345: True, 353: True, 361: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 371: True, 379: True, 389: True, 397: True, 405: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0016770362854003906 seconds
-Circuit evaluation took 3.3317036628723145 seconds.
-Best decisions {market(5): 1, market(4): 1, market(1): 1, market(2): 0, market(3): 1, market(6): 0}
-Expected utility 5.16097361920003
-Compile time 11.711851358413696
-Runtime 15.045232057571411
-Evaluation:             16.31
-
-./benchmarks/meu/viral/viral_10_6.pl
-
-calloc failed in new_element_array
-Evaluation:             155.73
-
-./benchmarks/meu/viral/viral_13_4.pl
+./benchmarks/meu/problog_format/sachs_1_769949150.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_14_4.pl
-Evaluation:             300.02
-
-Killed
-./benchmarks/meu/viral/viral_6_5.pl
-Compilation took 0.10943126678466797 seconds.
-start decisions: {89, 1, 2, 37, 14, 25}
-start utilities: {market(1): -2, buys(1): 5, market(2): -2, buys(2): 5, market(3): -2, buys(3): 5, market(4): -2, buys(4): 5, market(5): -2, buys(5): 5, market(6): -2, buys(6): 5}
-final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-2,{2}), n_weight=s(1.0,0,{-2})), 3: 0.3, 4: True, 10: 0.3, 13: 0.3, 14: pos_neg_weight(p_weight=s(1.0,-2,{14}), n_weight=s(1.0,0,{-14})), 15: True, 21: 0.4, 22: 0.4, 25: pos_neg_weight(p_weight=s(1.0,-2,{25}), n_weight=s(1.0,0,{-25})), 26: 0.3, 27: True, 33: 0.4, 34: 0.4, 37: pos_neg_weight(p_weight=s(1.0,-2,{37}), n_weight=s(1.0,0,{-37})), 38: 0.3, 39: True, 45: 0.4, 46: 0.4, 49: 0.4, 50: True, 56: 0.4, 59: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 67: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 75: True, 83: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 89: pos_neg_weight(p_weight=s(1.0,-2,{89}), n_weight=s(1.0,0,{-89})), 90: 0.3, 91: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 97: True, 105: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 111: True, 119: pos_neg_weight(p_weight=s(1.0,5,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
-Fixing weights took 0.0018470287322998047 seconds
-Circuit evaluation took 0.18619394302368164 seconds.
-Best decisions {market(5): 1, market(4): 1, market(2): 0, market(6): 0, market(3): 0, market(1): 1}
-Expected utility 2.196480000000001
-Compile time 0.10943126678466797
-Runtime 0.2974722385406494
-Evaluation:             0.40
-
-./benchmarks/meu/viral/viral_10_5.pl
+./benchmarks/meu/problog_format/sachs_2_548563996.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_10_7.pl
+./benchmarks/meu/problog_format/asia_1_1592975436.pl
+Compilation took 0.012526273727416992 seconds.
+start decisions: {64, 1, 2}
+start utilities: {tub: 20, lung: -1, xray: -30, bronc: -48, asia: 25, \+asia: 10, smoke: -2, \+smoke: -28, either: -29, \+either: -49}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-2,{1}), n_weight=s(1.0,-28,{-1})), 2: pos_neg_weight(p_weight=s(1.0,25,{2}), n_weight=s(1.0,10,{-2})), 3: 0.9, 6: 0.9, 9: pos_neg_weight(p_weight=s(1.0,20,set()), n_weight=s(1.0,0,set())), 15: 0.5, 16: 0.6, 19: 0.1, 22: pos_neg_weight(p_weight=s(1.0,-1,set()), n_weight=s(1.0,0,set())), 28: True, 42: pos_neg_weight(p_weight=s(1.0,-29,set()), n_weight=s(1.0,-49,set())), 48: 0.9, 51: 0.3, 54: pos_neg_weight(p_weight=s(1.0,-30,set()), n_weight=s(1.0,0,set())), 60: 0.4, 63: 0.1, 64: pos_neg_weight(p_weight=s(1.0,0,{64}), n_weight=s(1.0,0,{-64})), 67: 0.9, 70: pos_neg_weight(p_weight=s(1.0,-48,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.001798868179321289 seconds
+Circuit evaluation took 0.011981964111328125 seconds.
+Best decisions {dec_2: 0, smoke: 1, asia: 1}
+Expected utility -41.56
+Compile time 0.012526273727416992
+Runtime 0.026307106018066406
+Evaluation:             0.15
 
-malloc failed in new_sdd_node
-Evaluation:             275.90
-
-./benchmarks/meu/viral/viral_9_7.pl
+./benchmarks/meu/problog_format/child_1_769949150.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_20_3.pl
+./benchmarks/meu/problog_format/earthquake_1_1337671202.pl
+Compilation took 0.010021209716796875 seconds.
+start decisions: {1, 2}
+start utilities: {maryCalls: 23, burglary: -46, earthquake: 22, \+earthquake: 5, alarm: 21, \+alarm: -45, johnCalls: 27, \+johnCalls: 15}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-46,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,22,{2}), n_weight=s(1.0,5,{-2})), 3: True, 9: 0.8, 12: 0.3, 13: True, 21: 0.4, 22: True, 30: 0.7, 31: True, 39: pos_neg_weight(p_weight=s(1.0,21,set()), n_weight=s(1.0,-45,set())), 45: 0.4, 48: 0.2, 51: pos_neg_weight(p_weight=s(1.0,27,set()), n_weight=s(1.0,15,set())), 57: 0.8, 60: 0.9, 63: pos_neg_weight(p_weight=s(1.0,23,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0010335445404052734 seconds
+Circuit evaluation took 0.006920337677001953 seconds.
+Best decisions {earthquake: 1, burglary: 0}
+Expected utility 62.290000000000006
+Compile time 0.010021209716796875
+Runtime 0.0179750919342041
+Evaluation:             0.10
+
+./benchmarks/meu/problog_format/survey_2_1400227407.pl
+Compilation took 33.28857398033142 seconds.
+start decisions: {1, 290}
+start utilities: {util_node(0): 40, \+util_node(0): 47, util_node(1): -21, \+util_node(1): -45, util_node(2): 31, \+util_node(2): 37, util_node(3): -41, \+util_node(3): -49, util_node(4): -8, \+util_node(4): 40}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.9, 3: True, 9: 0.2, 10: 0.1, 11: 0.2, 12: True, 18: 0.2, 19: 0.1, 20: True, 26: 0.5, 27: True, 33: True, 41: 0.2, 42: True, 50: True, 56: 0.2, 59: 0.4, 60: True, 66: True, 74: 0.7, 75: True, 83: 0.2, 84: True, 92: True, 100: 0.7, 103: 0.6, 106: 0.9, 113: 0.5, 118: 0.3, 121: 0.6, 126: 0.5, 131: True, 139: True, 145: 0.9, 148: 0.3, 151: 0.5, 156: True, 162: 0.5, 165: 0.9, 168: True, 174: True, 182: 0.9, 187: 0.4, 192: True, 198: True, 204: 0.6, 207: 0.8, 208: True, 216: True, 222: 0.1, 225: True, 231: 0.6, 232: True, 240: 0.4, 243: 0.5, 244: 0.8, 245: True, 255: 0.4, 256: 0.1, 257: True, 267: 0.5, 268: True, 276: 0.8, 279: True, 289: 0.4, 290: pos_neg_weight(p_weight=s(1.0,0,{290}), n_weight=s(1.0,0,{-290})), 309: True, 421: pos_neg_weight(p_weight=s(1.0,-41,set()), n_weight=s(1.0,-49,set())), 519: pos_neg_weight(p_weight=s(1.0,-21,set()), n_weight=s(1.0,-45,set())), 573: pos_neg_weight(p_weight=s(1.0,31,set()), n_weight=s(1.0,37,set())), 591: pos_neg_weight(p_weight=s(1.0,-8,set()), n_weight=s(1.0,40,set())), 641: pos_neg_weight(p_weight=s(1.0,40,set()), n_weight=s(1.0,47,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0017251968383789062 seconds
+Circuit evaluation took 0.1720597743988037 seconds.
+Best decisions {dec_1: 0, dec_0: 0}
+Expected utility 30.018988287999992
+Compile time 33.28857398033142
+Runtime 33.4623589515686
+Evaluation:             34.81
+
+./benchmarks/meu/problog_format/win95pts_1_1588920084.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_9_3.pl
-Evaluation:             300.10
+./benchmarks/meu/problog_format/asia_1_548563996.pl
+Compilation took 0.026360750198364258 seconds.
+start decisions: {70, 2, 14}
+start utilities: {tub: 49, \+tub: -30, lung: 35, \+lung: -11, dysp: -8, bronc: 37, asia: -33, smoke: 13, either: 23}
+final current_weights {1: 0.7, 2: pos_neg_weight(p_weight=s(1.0,-33,{2}), n_weight=s(1.0,0,{-2})), 5: 0.9, 8: pos_neg_weight(p_weight=s(1.0,49,set()), n_weight=s(1.0,-30,set())), 14: pos_neg_weight(p_weight=s(1.0,13,{14}), n_weight=s(1.0,0,{-14})), 15: 0.7, 18: 0.3, 21: pos_neg_weight(p_weight=s(1.0,37,set()), n_weight=s(1.0,0,set())), 27: 0.3, 28: 0.1, 31: 0.5, 34: pos_neg_weight(p_weight=s(1.0,35,set()), n_weight=s(1.0,-11,set())), 40: True, 54: pos_neg_weight(p_weight=s(1.0,23,set()), n_weight=s(1.0,0,set())), 60: True, 66: 0.3, 69: 0.1, 70: pos_neg_weight(p_weight=s(1.0,0,{70}), n_weight=s(1.0,0,{-70})), 73: 0.3, 74: True, 82: True, 88: 0.6, 91: 0.4, 92: True, 100: pos_neg_weight(p_weight=s(1.0,-8,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0016868114471435547 seconds
+Circuit evaluation took 0.026124238967895508 seconds.
+Best decisions {dec_2: 0, smoke: 0, asia: 0}
+Expected utility 80.8082
+Compile time 0.026360750198364258
+Runtime 0.05417180061340332
+Evaluation:             0.19
 
-Killed
-./benchmarks/meu/viral/viral_18_4.pl
-Evaluation:             300.10
+./benchmarks/meu/problog_format/earthquake_1_1592975436.pl
+Compilation took 0.01390528678894043 seconds.
+start decisions: {1, 2, 49}
+start utilities: {maryCalls: 31, \+maryCalls: 37, burglary: 50, \+burglary: 20, earthquake: -31, alarm: 15, johnCalls: -29, \+johnCalls: 50}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,50,{1}), n_weight=s(1.0,20,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-31,{2}), n_weight=s(1.0,0,{-2})), 3: True, 9: 0.2, 12: 0.3, 13: True, 21: 0.3, 22: True, 30: 0.8, 31: True, 39: pos_neg_weight(p_weight=s(1.0,15,set()), n_weight=s(1.0,0,set())), 45: 0.1, 48: 0.6, 49: pos_neg_weight(p_weight=s(1.0,0,{49}), n_weight=s(1.0,0,{-49})), 52: 0.3, 55: pos_neg_weight(p_weight=s(1.0,31,set()), n_weight=s(1.0,37,set())), 61: 0.8, 64: 0.1, 67: pos_neg_weight(p_weight=s(1.0,-29,set()), n_weight=s(1.0,50,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0017323493957519531 seconds
+Circuit evaluation took 0.013760566711425781 seconds.
+Best decisions {burglary: 1, earthquake: 0, dec_2: 0}
+Expected utility 116.05
+Compile time 0.01390528678894043
+Runtime 0.029398202896118164
+Evaluation:             0.13
 
-Killed
-./benchmarks/meu/viral/viral_10_8.pl
-Evaluation:             300.10
+./benchmarks/meu/problog_format/asia_1_1807131032.pl
+Compilation took 0.03960156440734863 seconds.
+start decisions: {1, 19, 6}
+start utilities: {tub: -35, \+tub: -46, dysp: -25, xray: -10, bronc: -28, asia: -38, \+asia: -10, smoke: 13, \+smoke: 17, either: -5, \+either: -13}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-38,{1}), n_weight=s(1.0,-10,{-1})), 2: 0.9, 5: 0.2, 6: pos_neg_weight(p_weight=s(1.0,0,{6}), n_weight=s(1.0,0,{-6})), 9: 0.3, 12: pos_neg_weight(p_weight=s(1.0,-35,set()), n_weight=s(1.0,-46,set())), 18: 0.8, 19: pos_neg_weight(p_weight=s(1.0,13,{19}), n_weight=s(1.0,17,{-19})), 22: 0.8, 25: pos_neg_weight(p_weight=s(1.0,-28,set()), n_weight=s(1.0,0,set())), 31: 0.9, 34: 0.1, 37: True, 49: 0.3, 50: True, 58: pos_neg_weight(p_weight=s(1.0,-5,set()), n_weight=s(1.0,-13,set())), 64: True, 70: 0.4, 73: 0.4, 74: True, 82: 0.1, 83: True, 91: 0.7, 92: True, 100: pos_neg_weight(p_weight=s(1.0,-25,set()), n_weight=s(1.0,0,set())), 106: 0.4, 109: 0.7, 112: pos_neg_weight(p_weight=s(1.0,-10,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0017521381378173828 seconds
+Circuit evaluation took 0.02711653709411621 seconds.
+Best decisions {smoke: 0, asia: 0, dec_2: 1}
+Expected utility -81.91159999999999
+Compile time 0.03960156440734863
+Runtime 0.06847023963928223
+Evaluation:             0.21
 
-Killed
-./benchmarks/meu/viral/viral_16_3.pl
-Evaluation:             300.10
+./benchmarks/meu/problog_format/survey_1_2023896565.pl
+Compilation took 5.641769170761108 seconds.
+start decisions: {256, 134, 40, 53, 24}
+start utilities: {e("high"): 0, \+e("high"): 42, \+o("emp"): -43, a("old"): 18, \+r("small"): -9, r("big"): 20, o("self"): 45, t("other"): 4, e("uni"): -11, \+e("uni"): 13, t("car"): -32, \+t("car"): 39, s("M"): -43, a("young"): -30, a("adult"): 22, \+a("adult"): 48}
+final current_weights {1: 0.2, 2: pos_neg_weight(p_weight=s(0.1,-30,set()), n_weight=s(0.9,0,set())), 3: pos_neg_weight(p_weight=s(1.0,22,set()), n_weight=s(1.0,48,set())), 9: True, 15: 0.6, 16: pos_neg_weight(p_weight=s(1.0,18,set()), n_weight=s(1.0,0,set())), 22: 0.5, 23: 0.6, 24: pos_neg_weight(p_weight=s(1.0,0,{24}), n_weight=s(1.0,0,{-24})), 25: pos_neg_weight(p_weight=s(1.0,-43,set()), n_weight=s(1.0,0,set())), 31: True, 39: 0.8, 40: pos_neg_weight(p_weight=s(1.0,0,{40}), n_weight=s(1.0,0,{-40})), 43: 0.3, 44: True, 52: 0.7, 53: pos_neg_weight(p_weight=s(1.0,0,{53}), n_weight=s(1.0,0,{-53})), 56: 0.5, 57: 0.5, 58: True, 64: True, 72: 0.5, 73: True, 81: True, 87: 0.9, 90: True, 96: 0.9, 99: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,42,set())), 105: 0.5, 108: 0.7, 113: 0.4, 120: 0.3, 123: 0.7, 130: 0.3, 133: 0.4, 134: pos_neg_weight(p_weight=s(1.0,0,{134}), n_weight=s(1.0,0,{-134})), 139: 0.2, 142: pos_neg_weight(p_weight=s(1.0,-11,set()), n_weight=s(1.0,13,set())), 148: 0.3, 151: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-43,set())), 157: 0.2, 160: 0.6, 163: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-9,set())), 169: True, 175: 0.9, 178: 0.4, 179: 0.9, 184: 0.8, 189: pos_neg_weight(p_weight=s(1.0,45,set()), n_weight=s(1.0,0,set())), 195: True, 203: 0.5, 204: 0.7, 211: 0.7, 214: pos_neg_weight(p_weight=s(1.0,20,set()), n_weight=s(1.0,0,set())), 220: True, 228: True, 234: 0.4, 237: pos_neg_weight(p_weight=s(1.0,-32,set()), n_weight=s(1.0,39,set())), 243: 0.3, 244: 0.6, 245: True, 255: 0.2, 256: pos_neg_weight(p_weight=s(1.0,0,{256}), n_weight=s(1.0,0,{-256})), 259: 0.8, 260: 0.3, 261: True, 271: 0.4, 272: True, 280: 0.5, 283: 0.8, 284: 0.1, 285: True, 295: pos_neg_weight(p_weight=s(1.0,4,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.004221916198730469 seconds
+Circuit evaluation took 0.33693647384643555 seconds.
+Best decisions {dec_4: 1, dec_1: 1, dec_3: 0, dec_0: 0, dec_2: 0}
+Expected utility 85.30726121183235
+Compile time 5.641769170761108
+Runtime 5.982927560806274
+Evaluation:             6.53
 
-Killed
-./benchmarks/meu/viral/viral_13_2.pl
+./benchmarks/meu/problog_format/win95pts_2_1337671202.pl
 Evaluation:             300.11
 
 Killed
-./benchmarks/meu/viral/viral_19_3.pl
-Evaluation:             300.10
+./benchmarks/meu/problog_format/earthquake_2_769949150.pl
+Compilation took 0.015358209609985352 seconds.
+start decisions: {1, 3, 57}
+start utilities: {util_node(0): 18, \+util_node(0): 7, util_node(1): 29, \+util_node(1): 0, util_node(2): -32, \+util_node(2): 31, util_node(3): 22, \+util_node(3): 49, util_node(4): -39, \+util_node(4): -26}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.1, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.9, 13: True, 21: 0.9, 22: True, 30: 0.2, 31: True, 39: True, 45: 0.5, 48: 0.3, 51: True, 57: pos_neg_weight(p_weight=s(1.0,0,{57}), n_weight=s(1.0,0,{-57})), 58: 0.7, 61: 0.1, 64: 0.1, 67: True, 79: pos_neg_weight(p_weight=s(1.0,37,set()), n_weight=s(1.0,87,set())), 107: pos_neg_weight(p_weight=s(1.0,-39,set()), n_weight=s(1.0,-26,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0014047622680664062 seconds
+Circuit evaluation took 0.011448383331298828 seconds.
+Best decisions {burglary: 1, earthquake: 0, dec_2: 0}
+Expected utility 61.0
+Compile time 0.015358209609985352
+Runtime 0.028211355209350586
+Evaluation:             0.19
 
-Killed
-./benchmarks/meu/viral/viral_10_2.pl
+./benchmarks/meu/problog_format/win95pts_2_1400227407.pl
+
+calloc failed in new_element_array
+Evaluation:             73.83
+
+./benchmarks/meu/problog_format/sachs_1_1807131032.pl
 
 malloc failed in new_sdd_node
-Evaluation:             116.08
+Evaluation:             288.60
 
-./benchmarks/meu/viral/viral_11_2.pl
+./benchmarks/meu/problog_format/survey_2_1337671202.pl
+Compilation took 8.526654243469238 seconds.
+start decisions: {1, 146}
+start utilities: {util_node(0): -20, \+util_node(0): 4, util_node(1): 50, \+util_node(1): -28, util_node(2): -3, \+util_node(2): -15, util_node(3): 18, \+util_node(3): 29, util_node(4): 20, \+util_node(4): -25}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.7, 3: True, 9: 0.2, 10: True, 16: 0.9, 17: 0.3, 18: 0.7, 19: True, 25: 0.5, 30: 0.9, 31: 0.1, 32: 0.3, 33: True, 39: True, 49: 0.9, 50: True, 56: 0.5, 57: True, 63: True, 69: 0.7, 74: 0.3, 75: 0.2, 76: True, 86: 0.2, 87: 0.5, 88: True, 98: 0.8, 99: True, 105: 0.1, 110: True, 118: 0.6, 121: 0.6, 134: True, 140: 0.9, 145: 0.1, 146: pos_neg_weight(p_weight=s(1.0,0,{146}), n_weight=s(1.0,0,{-146})), 149: True, 159: True, 165: 0.7, 166: 0.2, 171: 0.5, 172: 0.5, 177: True, 183: 0.7, 184: 0.6, 185: True, 195: True, 201: True, 209: 0.3, 212: 0.6, 213: True, 219: 0.7, 220: 0.2, 221: True, 231: 0.1, 232: 0.8, 233: 0.7, 234: True, 240: True, 250: 0.8, 251: 0.5, 252: True, 258: True, 266: 0.2, 269: True, 295: True, 319: True, 401: pos_neg_weight(p_weight=s(1.0,18,set()), n_weight=s(1.0,29,set())), 459: pos_neg_weight(p_weight=s(1.0,50,set()), n_weight=s(1.0,-28,set())), 555: pos_neg_weight(p_weight=s(1.0,-3,set()), n_weight=s(1.0,-15,set())), 639: pos_neg_weight(p_weight=s(1.0,20,set()), n_weight=s(1.0,-25,set())), 671: pos_neg_weight(p_weight=s(1.0,-20,set()), n_weight=s(1.0,4,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0023233890533447266 seconds
+Circuit evaluation took 0.1348097324371338 seconds.
+Best decisions {dec_1: 0, dec_0: 0}
+Expected utility -33.323665679360005
+Compile time 8.526654243469238
+Runtime 8.663787364959717
+Evaluation:             9.48
+
+./benchmarks/meu/problog_format/sachs_1_1707665179.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/win95pts_2_1807131032.pl
 
 calloc failed in new_element_array
-Evaluation:             112.46
+Evaluation:             97.15
 
-./benchmarks/meu/viral/viral_14_3.pl
+./benchmarks/meu/problog_format/sachs_1_1400227407.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_10_4.pl
+./benchmarks/meu/problog_format/win95pts_2_1592975436.pl
+Evaluation:             300.09
+
+Killed
+./benchmarks/meu/problog_format/sachs_1_1592975436.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_16_2.pl
+./benchmarks/meu/problog_format/survey_2_1588920084.pl
+Compilation took 13.56584095954895 seconds.
+start decisions: {1, 45, 127}
+start utilities: {util_node(0): 20, \+util_node(0): -43, util_node(1): 28, \+util_node(1): 15, util_node(2): -33, \+util_node(2): -24, util_node(3): -11, \+util_node(3): 42, util_node(4): -23, \+util_node(4): -34}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.6, 3: True, 9: 0.9, 10: True, 16: 0.1, 17: 0.5, 18: 0.6, 19: 0.3, 20: True, 26: 0.7, 27: True, 33: True, 41: 0.7, 44: 0.7, 45: pos_neg_weight(p_weight=s(1.0,0,{45}), n_weight=s(1.0,0,{-45})), 48: 0.3, 49: True, 57: 0.3, 60: 0.8, 61: True, 67: True, 73: 0.9, 78: 0.9, 79: 0.5, 80: True, 90: 0.7, 91: True, 97: 0.1, 102: 0.3, 103: True, 111: 0.2, 114: True, 122: 0.2, 125: 0.1, 126: 0.5, 127: pos_neg_weight(p_weight=s(1.0,0,{127}), n_weight=s(1.0,0,{-127})), 142: True, 148: 0.9, 153: True, 163: True, 169: 0.8, 172: 0.1, 175: True, 181: 0.2, 182: 0.5, 183: True, 189: True, 197: 0.1, 200: 0.6, 201: 0.8, 202: 0.8, 203: True, 209: 0.1, 214: 0.8, 219: True, 225: True, 235: 0.6, 236: 0.5, 237: 0.7, 238: True, 244: True, 254: 0.7, 255: 0.5, 256: True, 262: True, 270: 0.2, 273: True, 299: True, 323: True, 419: pos_neg_weight(p_weight=s(1.0,-11,set()), n_weight=s(1.0,42,set())), 513: pos_neg_weight(p_weight=s(1.0,28,set()), n_weight=s(1.0,15,set())), 583: pos_neg_weight(p_weight=s(1.0,-33,set()), n_weight=s(1.0,-24,set())), 645: pos_neg_weight(p_weight=s(1.0,-23,set()), n_weight=s(1.0,-34,set())), 667: pos_neg_weight(p_weight=s(1.0,20,set()), n_weight=s(1.0,-43,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.002343893051147461 seconds
+Circuit evaluation took 0.2242584228515625 seconds.
+Best decisions {dec_2: 0, dec_0: 0, dec_1: 1}
+Expected utility -43.222781729599994
+Compile time 13.56584095954895
+Runtime 13.79244327545166
+Evaluation:             14.84
+
+./benchmarks/meu/problog_format/asia_2_1482723311.pl
+Compilation took 0.04124283790588379 seconds.
+start decisions: {104, 1, 82, 4}
+start utilities: {util_node(0): -26, \+util_node(0): 20, util_node(1): -8, \+util_node(1): -16, util_node(2): 28, \+util_node(2): 44, util_node(3): -39, \+util_node(3): 9, util_node(4): 48, \+util_node(4): 27}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.9, 3: 0.6, 4: pos_neg_weight(p_weight=s(1.0,0,{4}), n_weight=s(1.0,0,{-4})), 7: 0.1, 10: True, 16: 0.1, 19: 0.4, 22: True, 30: 0.5, 31: True, 43: True, 51: 0.2, 54: True, 60: 0.3, 61: 0.6, 64: 0.9, 67: True, 73: True, 81: 0.6, 82: pos_neg_weight(p_weight=s(1.0,0,{82}), n_weight=s(1.0,0,{-82})), 85: 0.3, 86: True, 94: True, 100: 0.4, 103: 0.2, 104: pos_neg_weight(p_weight=s(1.0,0,{104}), n_weight=s(1.0,0,{-104})), 107: 0.9, 108: True, 116: True, 154: pos_neg_weight(p_weight=s(1.0,-39,set()), n_weight=s(1.0,9,set())), 162: pos_neg_weight(p_weight=s(1.0,-34,set()), n_weight=s(1.0,4,set())), 184: pos_neg_weight(p_weight=s(1.0,28,set()), n_weight=s(1.0,44,set())), 198: pos_neg_weight(p_weight=s(1.0,48,set()), n_weight=s(1.0,27,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0010280609130859375 seconds
+Circuit evaluation took 0.022668838500976562 seconds.
+Best decisions {dec_2: 1, smoke: 1, asia: 1, dec_3: 0}
+Expected utility 84.0
+Compile time 0.04124283790588379
+Runtime 0.06493973731994629
+Evaluation:             0.21
+
+./benchmarks/meu/problog_format/sachs_2_769949150.pl
 Evaluation:             300.10
 
 Killed
-./benchmarks/meu/viral/viral_19_4.pl
-Evaluation:             300.10
+./benchmarks/meu/problog_format/earthquake_2_1807131032.pl
+Compilation took 0.014412879943847656 seconds.
+start decisions: {1, 3, 49}
+start utilities: {util_node(0): -42, \+util_node(0): 25, util_node(1): 45, \+util_node(1): -28, util_node(2): -33, \+util_node(2): -1, util_node(3): -48, \+util_node(3): -16, util_node(4): 38, \+util_node(4): 42}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.5, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.4, 13: True, 21: 0.9, 22: True, 30: 0.4, 31: True, 39: True, 45: 0.5, 48: 0.1, 49: pos_neg_weight(p_weight=s(1.0,0,{49}), n_weight=s(1.0,0,{-49})), 52: 0.5, 55: True, 61: 0.2, 64: 0.4, 67: True, 79: pos_neg_weight(p_weight=s(1.0,-3,set()), n_weight=s(1.0,-44,set())), 93: pos_neg_weight(p_weight=s(1.0,-33,set()), n_weight=s(1.0,-1,set())), 107: pos_neg_weight(p_weight=s(1.0,38,set()), n_weight=s(1.0,42,set())), 119: pos_neg_weight(p_weight=s(1.0,-42,set()), n_weight=s(1.0,25,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0009636878967285156 seconds
+Circuit evaluation took 0.009731769561767578 seconds.
+Best decisions {burglary: 1, earthquake: 1, dec_2: 0}
+Expected utility 22.0
+Compile time 0.014412879943847656
+Runtime 0.02510833740234375
+Evaluation:             0.13
 
-Killed
-./benchmarks/meu/viral/viral_17_2.pl
+./benchmarks/meu/problog_format/sachs_2_1482723311.pl
 
 calloc failed in new_element_array
-Evaluation:             269.82
+Evaluation:             228.52
 
-./benchmarks/meu/viral/viral_12_2.pl
+./benchmarks/meu/problog_format/asia_2_1707665179.pl
+Compilation took 0.036055803298950195 seconds.
+start decisions: {1, 3, 108, 77, 22}
+start utilities: {util_node(0): 26, \+util_node(0): 15, util_node(1): -24, \+util_node(1): -21, util_node(2): -40, \+util_node(2): -44, util_node(3): 4, \+util_node(3): -50, util_node(4): -3, \+util_node(4): 28}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.5, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 6: 0.5, 9: True, 15: 0.5, 18: 0.7, 21: 0.7, 22: pos_neg_weight(p_weight=s(1.0,0,{22}), n_weight=s(1.0,0,{-22})), 25: True, 33: 0.9, 34: True, 46: True, 52: 0.7, 55: 0.3, 58: True, 64: 0.1, 67: 0.9, 70: True, 76: 0.6, 77: pos_neg_weight(p_weight=s(1.0,0,{77}), n_weight=s(1.0,0,{-77})), 80: 0.9, 81: True, 89: True, 95: 0.8, 98: 0.4, 99: True, 107: 0.2, 108: pos_neg_weight(p_weight=s(1.0,0,{108}), n_weight=s(1.0,0,{-108})), 111: 0.6, 112: True, 120: True, 152: pos_neg_weight(p_weight=s(1.0,4,set()), n_weight=s(1.0,-50,set())), 170: pos_neg_weight(p_weight=s(1.0,-24,set()), n_weight=s(1.0,-21,set())), 186: pos_neg_weight(p_weight=s(1.0,-40,set()), n_weight=s(1.0,-44,set())), 196: pos_neg_weight(p_weight=s(1.0,-3,set()), n_weight=s(1.0,28,set())), 204: pos_neg_weight(p_weight=s(1.0,26,set()), n_weight=s(1.0,15,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0008382797241210938 seconds
+Circuit evaluation took 0.023103713989257812 seconds.
+Best decisions {smoke: 1, asia: 1, dec_2: 1, dec_3: 1, dec_4: 1}
+Expected utility -72.0
+Compile time 0.036055803298950195
+Runtime 0.0599977970123291
+Evaluation:             0.18
+
+./benchmarks/meu/problog_format/earthquake_1_1482723311.pl
+Compilation took 0.006787538528442383 seconds.
+start decisions: {1, 2}
+start utilities: {maryCalls: 16, \+maryCalls: 1, burglary: 7, \+earthquake: 36, \+alarm: -6, johnCalls: -8, \+johnCalls: -27}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,7,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,36,{-2})), 3: True, 9: 0.2, 12: 0.5, 13: True, 21: 0.9, 22: True, 30: 0.3, 31: True, 39: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-6,set())), 45: 0.7, 48: 0.4, 51: pos_neg_weight(p_weight=s(1.0,16,set()), n_weight=s(1.0,1,set())), 57: 0.2, 60: 0.7, 63: pos_neg_weight(p_weight=s(1.0,-8,set()), n_weight=s(1.0,-27,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0006282329559326172 seconds
+Circuit evaluation took 0.004042387008666992 seconds.
+Best decisions {burglary: 1, earthquake: 0}
+Expected utility 33.2
+Compile time 0.006787538528442383
+Runtime 0.011458158493041992
+Evaluation:             0.06
+
+./benchmarks/meu/problog_format/asia_1_1482723311.pl
+Compilation took 0.02081584930419922 seconds.
+start decisions: {113, 2, 27, 14}
+start utilities: {tub: 3, \+tub: -6, lung: -8, \+lung: -27, dysp: 7, \+dysp: 44, \+xray: -27, \+bronc: 32, asia: 2, smoke: 39, \+either: -10}
+final current_weights {1: 0.4, 2: pos_neg_weight(p_weight=s(1.0,39,{2}), n_weight=s(1.0,0,{-2})), 5: 0.9, 8: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,32,set())), 14: pos_neg_weight(p_weight=s(1.0,2,{14}), n_weight=s(1.0,0,{-14})), 15: 0.6, 18: 0.7, 21: pos_neg_weight(p_weight=s(1.0,3,set()), n_weight=s(1.0,-6,set())), 27: pos_neg_weight(p_weight=s(1.0,0,{27}), n_weight=s(1.0,0,{-27})), 28: 0.5, 31: 0.3, 32: 0.5, 35: 0.6, 38: pos_neg_weight(p_weight=s(1.0,-8,set()), n_weight=s(1.0,-27,set())), 48: 0.2, 49: True, 59: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-10,set())), 65: True, 73: 0.6, 74: True, 82: True, 88: 0.4, 91: 0.2, 92: True, 100: pos_neg_weight(p_weight=s(1.0,7,set()), n_weight=s(1.0,44,set())), 106: 0.9, 109: 0.1, 112: 0.8, 113: pos_neg_weight(p_weight=s(1.0,0,{113}), n_weight=s(1.0,0,{-113})), 116: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-27,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0007770061492919922 seconds
+Circuit evaluation took 0.014341354370117188 seconds.
+Best decisions {dec_2: 1, smoke: 1, dec_3: 0, asia: 1}
+Expected utility 70.75008
+Compile time 0.02081584930419922
+Runtime 0.0359342098236084
+Evaluation:             0.11
+
+./benchmarks/meu/problog_format/win95pts_2_769949150.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/child_2_1400227407.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/survey_2_548563996.pl
+Compilation took 10.318028211593628 seconds.
+start decisions: {152, 9}
+start utilities: {util_node(0): -7, \+util_node(0): -30, util_node(1): -14, \+util_node(1): 17, util_node(2): -16, \+util_node(2): 12, util_node(3): -14, \+util_node(3): -28, util_node(4): 4, \+util_node(4): 50}
+final current_weights {1: 0.1, 2: 0.2, 3: True, 9: pos_neg_weight(p_weight=s(1.0,0,{9}), n_weight=s(1.0,0,{-9})), 10: 0.2, 11: True, 17: 0.4, 18: 0.6, 19: True, 25: True, 31: 0.1, 32: True, 38: True, 46: 0.2, 47: True, 55: 0.1, 56: True, 64: True, 70: 0.4, 73: 0.2, 74: True, 82: 0.5, 83: True, 91: True, 97: 0.2, 100: 0.8, 101: 0.9, 106: 0.4, 111: 0.7, 116: 0.4, 121: 0.4, 126: 0.7, 131: True, 139: True, 145: 0.4, 146: 0.7, 149: 0.6, 152: pos_neg_weight(p_weight=s(1.0,0,{152}), n_weight=s(1.0,0,{-152})), 153: 0.3, 156: 0.5, 157: 0.2, 162: True, 168: True, 180: True, 188: 0.9, 191: 0.4, 196: True, 202: True, 208: 0.5, 211: True, 217: 0.8, 220: 0.6, 221: True, 229: True, 235: 0.2, 236: True, 244: 0.4, 247: 0.5, 248: 0.6, 249: True, 259: 0.3, 260: 0.8, 261: True, 271: 0.1, 272: True, 280: 0.8, 283: True, 309: True, 363: pos_neg_weight(p_weight=s(1.0,-14,set()), n_weight=s(1.0,-28,set())), 437: pos_neg_weight(p_weight=s(1.0,-14,set()), n_weight=s(1.0,17,set())), 509: pos_neg_weight(p_weight=s(1.0,-16,set()), n_weight=s(1.0,12,set())), 571: pos_neg_weight(p_weight=s(1.0,4,set()), n_weight=s(1.0,50,set())), 599: pos_neg_weight(p_weight=s(1.0,-7,set()), n_weight=s(1.0,-30,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0013685226440429688 seconds
+Circuit evaluation took 0.23953986167907715 seconds.
+Best decisions {dec_1: 0, dec_0: 1}
+Expected utility 20.988627711999996
+Compile time 10.318028211593628
+Runtime 10.558936595916748
+Evaluation:             11.18
+
+./benchmarks/meu/problog_format/win95pts_2_1482723311.pl
 
 calloc failed in new_element_array
-Evaluation:             127.89
+Evaluation:             274.84
 
+./benchmarks/meu/problog_format/child_1_1707665179.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/survey_1_548563996.pl
+Compilation took 1.4126777648925781 seconds.
+start decisions: {25, 2}
+start utilities: {s("F"): -25, \+s("F"): -30, e("high"): 22, \+e("high"): -8, o("emp"): 48, a("old"): 40, \+a("old"): -33, r("small"): 40, r("big"): -38, o("self"): -42, \+o("self"): -13, t("train"): -19, t("other"): 9, \+t("other"): 14, e("uni"): -7, \+e("uni"): 28, t("car"): 34, s("M"): 33, \+s("M"): -25, \+a("adult"): -14}
+final current_weights {1: 0.1, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,-25,set()), n_weight=s(1.0,-30,set())), 9: 0.6, 10: 0.7, 11: True, 17: 0.9, 18: pos_neg_weight(p_weight=s(1.0,40,set()), n_weight=s(1.0,-33,set())), 24: 0.2, 25: pos_neg_weight(p_weight=s(1.0,0,{25}), n_weight=s(1.0,0,{-25})), 28: 0.2, 29: 0.2, 30: 0.7, 31: 0.5, 32: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-14,set())), 38: True, 46: 0.6, 49: 0.4, 50: 0.7, 51: 0.7, 52: pos_neg_weight(p_weight=s(1.0,33,set()), n_weight=s(1.0,-25,set())), 58: True, 68: 0.4, 69: True, 75: 0.6, 80: 0.5, 81: True, 89: 0.7, 92: 0.6, 93: True, 101: 0.8, 104: 0.5, 105: True, 111: 0.1, 116: pos_neg_weight(p_weight=s(1.0,-7,set()), n_weight=s(1.0,28,set())), 126: 0.7, 139: pos_neg_weight(p_weight=s(1.0,22,set()), n_weight=s(1.0,-8,set())), 145: 0.9, 150: pos_neg_weight(p_weight=s(1.0,-38,set()), n_weight=s(1.0,0,set())), 156: 0.2, 157: 0.6, 162: 0.2, 163: 0.2, 168: pos_neg_weight(p_weight=s(1.0,-42,set()), n_weight=s(1.0,-13,set())), 174: True, 180: 0.2, 185: 0.4, 190: pos_neg_weight(p_weight=s(1.0,40,set()), n_weight=s(1.0,0,set())), 196: True, 202: 0.9, 207: 0.9, 212: pos_neg_weight(p_weight=s(1.0,48,set()), n_weight=s(1.0,0,set())), 218: True, 224: 0.2, 229: 0.4, 230: True, 236: 0.7, 241: pos_neg_weight(p_weight=s(1.0,-19,set()), n_weight=s(1.0,0,set())), 255: pos_neg_weight(p_weight=s(1.0,34,set()), n_weight=s(1.0,0,set())), 261: True, 269: 0.1, 272: 0.1, 273: True, 283: 0.9, 284: True, 294: True, 302: 0.7, 305: pos_neg_weight(p_weight=s(1.0,9,set()), n_weight=s(1.0,14,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.003596067428588867 seconds
+Circuit evaluation took 0.2011880874633789 seconds.
+Best decisions {dec_0: 1, dec_1: 0}
+Expected utility -6.248001037312001
+Compile time 1.4126777648925781
+Runtime 1.617461919784546
+Evaluation:             2.06
+
+./benchmarks/meu/problog_format/survey_1_1482723311.pl
+Compilation took 1.4112436771392822 seconds.
+start decisions: {2, 295, 183}
+start utilities: {s("F"): 36, e("high"): -6, \+o("emp"): -27, a("old"): 7, \+a("old"): 44, \+r("small"): -27, \+r("big"): 32, o("self"): 2, t("train"): 39, \+t("other"): -10, e("uni"): 18, t("car"): 33, \+t("car"): 6, s("M"): -20, a("young"): 12, \+a("young"): 2, a("adult"): -28}
+final current_weights {1: 0.3, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,36,set()), n_weight=s(1.0,0,set())), 9: pos_neg_weight(p_weight=s(0.1,12,set()), n_weight=s(0.9,2,set())), 10: 0.6, 11: pos_neg_weight(p_weight=s(1.0,-28,set()), n_weight=s(1.0,0,set())), 17: True, 23: 0.4, 24: pos_neg_weight(p_weight=s(1.0,7,set()), n_weight=s(1.0,44,set())), 30: 0.1, 31: 0.3, 32: True, 40: 0.7, 41: 0.6, 42: pos_neg_weight(p_weight=s(1.0,-20,set()), n_weight=s(1.0,0,set())), 48: True, 56: True, 62: 0.4, 65: 0.6, 66: True, 74: 0.1, 75: True, 83: 0.1, 84: True, 92: pos_neg_weight(p_weight=s(1.0,-6,set()), n_weight=s(1.0,0,set())), 100: 0.6, 103: 0.5, 106: 0.6, 109: 0.4, 116: 0.2, 119: 0.2, 124: 0.9, 131: 0.8, 134: pos_neg_weight(p_weight=s(1.0,18,set()), n_weight=s(1.0,0,set())), 140: 0.9, 145: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,32,set())), 151: 0.1, 152: 0.1, 153: 0.5, 154: 0.1, 159: 0.6, 160: 0.6, 165: pos_neg_weight(p_weight=s(1.0,2,set()), n_weight=s(1.0,0,set())), 171: True, 181: 0.4, 182: 0.5, 183: pos_neg_weight(p_weight=s(1.0,0,{183}), n_weight=s(1.0,0,{-183})), 190: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-27,set())), 196: True, 204: 0.9, 207: 0.9, 208: 0.5, 213: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-27,set())), 219: True, 229: 0.7, 230: True, 236: 0.8, 241: pos_neg_weight(p_weight=s(1.0,39,set()), n_weight=s(1.0,0,set())), 255: pos_neg_weight(p_weight=s(1.0,33,set()), n_weight=s(1.0,6,set())), 261: True, 269: 0.9, 272: 0.9, 273: True, 283: True, 291: 0.5, 294: 0.8, 295: pos_neg_weight(p_weight=s(1.0,0,{295}), n_weight=s(1.0,0,{-295})), 298: True, 306: 0.3, 309: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-10,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0029664039611816406 seconds
+Circuit evaluation took 0.20139360427856445 seconds.
+Best decisions {dec_2: 1, dec_0: 0, dec_1: 1}
+Expected utility 42.468705205346865
+Compile time 1.4112436771392822
+Runtime 1.6156036853790283
+Evaluation:             2.02
+
+./benchmarks/meu/problog_format/win95pts_1_1482723311.pl
+
+calloc failed in new_element_array
+Evaluation:             174.55
+
+./benchmarks/meu/problog_format/child_2_2023896565.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/survey_1_1807131032.pl
+Compilation took 1.4801619052886963 seconds.
+start decisions: {2, 63}
+start utilities: {s("F"): -4, o("emp"): -25, a("old"): -10, r("small"): -28, r("big"): -38, \+r("big"): -10, o("self"): 13, \+o("self"): 17, t("train"): -5, \+t("train"): -13, t("other"): 28, e("uni"): 12, \+e("uni"): -9, t("car"): 38, s("M"): -44, a("young"): -33, a("adult"): 3, \+a("adult"): 46}
+final current_weights {1: 0.8, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,-4,set()), n_weight=s(1.0,0,set())), 9: pos_neg_weight(p_weight=s(0.1,-33,set()), n_weight=s(0.9,0,set())), 10: 0.1, 11: pos_neg_weight(p_weight=s(1.0,3,set()), n_weight=s(1.0,46,set())), 17: True, 23: 0.7, 24: pos_neg_weight(p_weight=s(1.0,-10,set()), n_weight=s(1.0,0,set())), 30: 0.3, 31: 0.4, 32: 0.6, 33: pos_neg_weight(p_weight=s(1.0,-44,set()), n_weight=s(1.0,0,set())), 39: True, 45: 0.6, 50: 0.9, 51: True, 59: 0.4, 62: 0.4, 63: pos_neg_weight(p_weight=s(1.0,0,{63}), n_weight=s(1.0,0,{-63})), 66: 0.3, 67: True, 73: 0.6, 78: 0.7, 79: True, 87: 0.8, 90: True, 96: 0.9, 99: 0.5, 102: 0.7, 103: 0.9, 104: True, 114: pos_neg_weight(p_weight=s(1.0,12,set()), n_weight=s(1.0,-9,set())), 122: 0.9, 125: 0.7, 138: True, 144: 0.2, 149: pos_neg_weight(p_weight=s(1.0,-38,set()), n_weight=s(1.0,-10,set())), 155: 0.1, 156: 0.7, 157: 0.8, 158: 0.7, 163: 0.9, 164: 0.7, 169: pos_neg_weight(p_weight=s(1.0,13,set()), n_weight=s(1.0,17,set())), 175: True, 185: 0.9, 190: pos_neg_weight(p_weight=s(1.0,-28,set()), n_weight=s(1.0,0,set())), 200: pos_neg_weight(p_weight=s(1.0,-25,set()), n_weight=s(1.0,0,set())), 206: True, 214: 0.4, 217: 0.8, 218: True, 224: 0.8, 229: 0.5, 230: True, 238: 0.2, 241: pos_neg_weight(p_weight=s(1.0,-5,set()), n_weight=s(1.0,-13,set())), 255: pos_neg_weight(p_weight=s(1.0,38,set()), n_weight=s(1.0,0,set())), 261: True, 269: 0.8, 272: 0.5, 273: True, 283: 0.6, 284: True, 294: True, 302: 0.7, 305: pos_neg_weight(p_weight=s(1.0,28,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.003480195999145508 seconds
+Circuit evaluation took 0.1828320026397705 seconds.
+Best decisions {dec_0: 0, dec_1: 1}
+Expected utility 11.28827366698223
+Compile time 1.4801619052886963
+Runtime 1.6664741039276123
+Evaluation:             2.11
+
+./benchmarks/meu/problog_format/win95pts_2_2023896565.pl
+
+calloc failed in new_element_array
+Evaluation:             220.11
+
+./benchmarks/meu/problog_format/asia_1_1707665179.pl
+Compilation took 0.012883424758911133 seconds.
+start decisions: {2, 15}
+start utilities: {tub: 0, \+tub: -29, lung: -49, \+lung: 30, \+dysp: -46, xray: 19, \+xray: -1, bronc: 19, smoke: -42, either: -32}
+final current_weights {1: 0.6, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 5: 0.8, 8: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-29,set())), 14: 0.7, 15: pos_neg_weight(p_weight=s(1.0,-42,{15}), n_weight=s(1.0,0,{-15})), 18: 0.1, 21: pos_neg_weight(p_weight=s(1.0,-49,set()), n_weight=s(1.0,30,set())), 27: True, 33: 0.9, 42: pos_neg_weight(p_weight=s(1.0,-32,set()), n_weight=s(1.0,0,set())), 48: 0.9, 51: 0.6, 54: pos_neg_weight(p_weight=s(1.0,19,set()), n_weight=s(1.0,-1,set())), 60: 0.2, 61: 0.8, 64: 0.2, 67: pos_neg_weight(p_weight=s(1.0,19,set()), n_weight=s(1.0,0,set())), 73: True, 81: True, 87: 0.9, 90: 0.8, 91: True, 99: 0.7, 100: True, 108: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-46,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0009145736694335938 seconds
+Circuit evaluation took 0.008137226104736328 seconds.
+Best decisions {asia: 0, smoke: 1}
+Expected utility -43.66288
+Compile time 0.012883424758911133
+Runtime 0.021935224533081055
+Evaluation:             0.11
+
+./benchmarks/meu/problog_format/win95pts_1_1807131032.pl
+
+calloc failed in new_element_array
+Evaluation:             186.64
+
+./benchmarks/meu/problog_format/survey_2_1592975436.pl
+Compilation took 4.331990718841553 seconds.
+start decisions: {9, 122}
+start utilities: {util_node(0): -35, \+util_node(0): 15, util_node(1): -41, \+util_node(1): -28, util_node(2): 44, \+util_node(2): -22, util_node(3): 37, \+util_node(3): -35, util_node(4): 36, \+util_node(4): 43}
+final current_weights {1: 0.7, 2: 0.5, 3: True, 9: pos_neg_weight(p_weight=s(1.0,0,{9}), n_weight=s(1.0,0,{-9})), 10: 0.3, 11: True, 17: 0.4, 18: 0.6, 19: True, 25: True, 31: 0.3, 32: True, 38: True, 44: 0.2, 49: 0.9, 50: 0.8, 51: True, 61: 0.8, 62: True, 68: 0.3, 73: 0.2, 74: 0.8, 75: True, 85: 0.2, 86: 0.8, 87: True, 97: True, 103: 0.1, 106: 0.9, 109: True, 115: 0.2, 118: 0.6, 121: 0.4, 122: pos_neg_weight(p_weight=s(1.0,0,{122}), n_weight=s(1.0,0,{-122})), 135: True, 143: True, 149: 0.2, 152: 0.2, 155: 0.4, 160: True, 166: 0.3, 169: 0.1, 172: True, 178: True, 186: 0.3, 191: 0.3, 196: True, 202: True, 208: 0.5, 211: 0.9, 212: True, 220: 0.6, 221: True, 229: True, 235: 0.2, 236: True, 244: 0.7, 247: 0.8, 248: 0.5, 249: True, 259: 0.7, 260: 0.6, 261: True, 271: 0.4, 272: True, 280: 0.4, 283: True, 309: True, 425: pos_neg_weight(p_weight=s(1.0,37,set()), n_weight=s(1.0,-35,set())), 509: pos_neg_weight(p_weight=s(1.0,-41,set()), n_weight=s(1.0,-28,set())), 565: pos_neg_weight(p_weight=s(1.0,44,set()), n_weight=s(1.0,-22,set())), 629: pos_neg_weight(p_weight=s(1.0,36,set()), n_weight=s(1.0,43,set())), 673: pos_neg_weight(p_weight=s(1.0,-35,set()), n_weight=s(1.0,15,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0013294219970703125 seconds
+Circuit evaluation took 0.22864985466003418 seconds.
+Best decisions {dec_1: 1, dec_0: 0}
+Expected utility -26.548680299903996
+Compile time 4.331990718841553
+Runtime 4.561969995498657
+Evaluation:             5.12
+
+./benchmarks/meu/problog_format/earthquake_2_1707665179.pl
+Compilation took 0.013349056243896484 seconds.
+start decisions: {1, 3, 7}
+start utilities: {util_node(0): 26, \+util_node(0): 15, util_node(1): 19, \+util_node(1): 25, util_node(2): 20, \+util_node(2): 33, util_node(3): 23, \+util_node(3): -42, util_node(4): 9, \+util_node(4): -28}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.1, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 6: 0.5, 7: pos_neg_weight(p_weight=s(1.0,0,{7}), n_weight=s(1.0,0,{-7})), 8: True, 16: 0.5, 17: True, 25: 0.4, 26: True, 34: True, 40: 0.4, 43: True, 49: 0.6, 52: 0.5, 55: True, 61: 0.7, 64: 0.7, 67: True, 87: pos_neg_weight(p_weight=s(1.0,29,set()), n_weight=s(1.0,5,set())), 93: pos_neg_weight(p_weight=s(1.0,42,set()), n_weight=s(1.0,-17,set())), 107: pos_neg_weight(p_weight=s(1.0,26,set()), n_weight=s(1.0,15,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0011239051818847656 seconds
+Circuit evaluation took 0.009706258773803711 seconds.
+Best decisions {earthquake: 0, dec_2: 0, burglary: 0}
+Expected utility 16.9
+Compile time 0.013349056243896484
+Runtime 0.02417922019958496
+Evaluation:             0.15
+
+./benchmarks/meu/problog_format/child_1_1337671202.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/sachs_2_1707665179.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/earthquake_1_548563996.pl
+Compilation took 0.012554645538330078 seconds.
+start decisions: {1, 2}
+start utilities: {maryCalls: -13, \+maryCalls: -47, burglary: 3, \+burglary: -29, earthquake: -44, \+earthquake: -44, alarm: -18, johnCalls: -8}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,3,{1}), n_weight=s(1.0,-29,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-44,{2}), n_weight=s(1.0,-44,{-2})), 3: True, 9: 0.9, 12: 0.9, 13: True, 21: 0.6, 22: True, 30: 0.3, 31: True, 39: pos_neg_weight(p_weight=s(1.0,-18,set()), n_weight=s(1.0,0,set())), 45: 0.9, 48: 0.7, 51: pos_neg_weight(p_weight=s(1.0,-13,set()), n_weight=s(1.0,-47,set())), 57: 0.9, 60: 0.2, 63: pos_neg_weight(p_weight=s(1.0,-8,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0013134479522705078 seconds
+Circuit evaluation took 0.009200334548950195 seconds.
+Best decisions {burglary: 1, earthquake: 0}
+Expected utility -73.08
+Compile time 0.012554645538330078
+Runtime 0.02306842803955078
+Evaluation:             0.11
+
+./benchmarks/meu/problog_format/child_1_1807131032.pl
+Evaluation:             300.03
+
+Killed
+./benchmarks/meu/problog_format/sachs_1_1588920084.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/sachs_2_1588920084.pl
+
+malloc failed in new_sdd_node
+Evaluation:             87.90
+
+./benchmarks/meu/problog_format/asia_2_2023896565.pl
+Compilation took 0.04323601722717285 seconds.
+start decisions: {16, 1, 67}
+start utilities: {util_node(0): 35, \+util_node(0): -17, util_node(1): 48, \+util_node(1): 4, util_node(2): -48, \+util_node(2): 42, util_node(3): -20, \+util_node(3): -1, util_node(4): -1, \+util_node(4): -32}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.4, 3: 0.5, 4: 0.9, 7: 0.8, 10: True, 16: pos_neg_weight(p_weight=s(1.0,0,{16}), n_weight=s(1.0,0,{-16})), 17: 0.7, 20: 0.4, 23: True, 29: True, 43: True, 51: 0.8, 54: True, 60: 0.9, 63: 0.9, 66: 0.1, 67: pos_neg_weight(p_weight=s(1.0,0,{67}), n_weight=s(1.0,0,{-67})), 70: True, 76: True, 82: 0.1, 85: 0.4, 86: True, 94: 0.2, 95: True, 103: 0.1, 104: True, 112: True, 144: pos_neg_weight(p_weight=s(1.0,-20,set()), n_weight=s(1.0,-1,set())), 168: pos_neg_weight(p_weight=s(1.0,48,set()), n_weight=s(1.0,4,set())), 188: pos_neg_weight(p_weight=s(1.0,-48,set()), n_weight=s(1.0,42,set())), 200: pos_neg_weight(p_weight=s(1.0,-1,set()), n_weight=s(1.0,-32,set())), 208: pos_neg_weight(p_weight=s(1.0,35,set()), n_weight=s(1.0,-17,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0010263919830322266 seconds
+Circuit evaluation took 0.023692607879638672 seconds.
+Best decisions {asia: 0, dec_2: 1, smoke: 0}
+Expected utility -3.748402
+Compile time 0.04323601722717285
+Runtime 0.06795501708984375
+Evaluation:             0.21
+
+./benchmarks/meu/problog_format/survey_2_1707665179.pl
+Compilation took 3.274430990219116 seconds.
+start decisions: {1, 68}
+start utilities: {util_node(0): 26, \+util_node(0): 15, util_node(1): -20, \+util_node(1): 9, util_node(2): -17, \+util_node(2): -21, util_node(3): -5, \+util_node(3): 40, util_node(4): 20, \+util_node(4): -20}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.2, 3: True, 9: 0.6, 10: True, 16: 0.2, 17: 0.4, 18: True, 24: 0.4, 29: 0.1, 30: 0.9, 31: 0.2, 32: True, 38: True, 44: True, 50: 0.9, 55: 0.4, 56: True, 62: 0.5, 67: 0.2, 68: pos_neg_weight(p_weight=s(1.0,0,{68}), n_weight=s(1.0,0,{-68})), 71: 0.1, 72: 0.8, 73: True, 79: True, 89: 0.6, 90: True, 96: 0.8, 101: 0.2, 102: True, 110: 0.9, 113: True, 119: 0.1, 134: True, 140: 0.6, 143: True, 149: 0.5, 150: 0.9, 155: 0.4, 156: 0.1, 161: True, 171: True, 177: 0.7, 178: 0.2, 179: True, 185: 0.4, 192: 0.4, 195: True, 201: True, 209: 0.2, 212: 0.1, 213: 0.4, 214: 0.4, 215: True, 221: True, 231: 0.6, 232: 0.4, 233: 0.9, 234: True, 240: True, 250: 0.6, 251: 0.3, 252: True, 258: True, 266: 0.4, 269: True, 295: True, 319: True, 431: pos_neg_weight(p_weight=s(1.0,-5,set()), n_weight=s(1.0,40,set())), 521: pos_neg_weight(p_weight=s(1.0,-20,set()), n_weight=s(1.0,9,set())), 609: pos_neg_weight(p_weight=s(1.0,-17,set()), n_weight=s(1.0,-21,set())), 653: pos_neg_weight(p_weight=s(1.0,20,set()), n_weight=s(1.0,-20,set())), 719: pos_neg_weight(p_weight=s(1.0,26,set()), n_weight=s(1.0,15,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0012917518615722656 seconds
+Circuit evaluation took 0.0943140983581543 seconds.
+Best decisions {dec_1: 1, dec_0: 0}
+Expected utility 22.809432588288
+Compile time 3.274430990219116
+Runtime 3.3700368404388428
+Evaluation:             3.84
+
+./benchmarks/meu/problog_format/earthquake_1_1588920084.pl
+Compilation took 0.012282609939575195 seconds.
+start decisions: {2, 6, 7}
+start utilities: {maryCalls: -41, \+maryCalls: -33, alarm: 25, \+alarm: 48, johnCalls: 33}
+final current_weights {1: 0.1, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 5: 0.1, 6: pos_neg_weight(p_weight=s(1.0,0,{6}), n_weight=s(1.0,0,{-6})), 7: pos_neg_weight(p_weight=s(1.0,0,{7}), n_weight=s(1.0,0,{-7})), 8: True, 14: 0.5, 17: 0.1, 18: True, 26: 0.9, 27: True, 35: 0.2, 36: True, 44: pos_neg_weight(p_weight=s(1.0,25,set()), n_weight=s(1.0,48,set())), 52: 0.3, 55: pos_neg_weight(p_weight=s(1.0,-41,set()), n_weight=s(1.0,-33,set())), 61: 0.1, 64: 0.6, 67: pos_neg_weight(p_weight=s(1.0,33,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0007555484771728516 seconds
+Circuit evaluation took 0.008736848831176758 seconds.
+Best decisions {earthquake: 0, burglary: 0, dec_2: 0}
+Expected utility 29.889999999999997
+Compile time 0.012282609939575195
+Runtime 0.021775007247924805
+Evaluation:             0.10
+
+./benchmarks/meu/problog_format/earthquake_1_1807131032.pl
+Compilation took 0.010058164596557617 seconds.
+start decisions: {3, 4, 13}
+start utilities: {burglary: -17, \+burglary: -16, earthquake: -35, \+earthquake: -46, johnCalls: -25}
+final current_weights {1: 0.2, 2: 0.3, 3: pos_neg_weight(p_weight=s(1.0,-17,{3}), n_weight=s(1.0,-16,{-3})), 4: pos_neg_weight(p_weight=s(1.0,-35,{4}), n_weight=s(1.0,-46,{-4})), 5: True, 13: pos_neg_weight(p_weight=s(1.0,0,{13}), n_weight=s(1.0,0,{-13})), 14: 0.6, 17: 0.3, 18: True, 26: 0.9, 27: True, 35: 0.5, 36: True, 44: True, 52: 0.7, 55: pos_neg_weight(p_weight=s(1.0,-25,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0006487369537353516 seconds
+Circuit evaluation took 0.006564140319824219 seconds.
+Best decisions {burglary: 1, earthquake: 1, dec_2: 1}
+Expected utility -57.5
+Compile time 0.010058164596557617
+Runtime 0.017271041870117188
+Evaluation:             0.08
+
+./benchmarks/meu/problog_format/asia_2_1400227407.pl
+Compilation took 0.04045987129211426 seconds.
+start decisions: {18, 2, 5}
+start utilities: {util_node(0): 40, \+util_node(0): 47, util_node(1): 29, \+util_node(1): -3, util_node(2): -21, \+util_node(2): 6, util_node(3): -21, \+util_node(3): 15, util_node(4): -29, \+util_node(4): 35}
+final current_weights {1: 0.6, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 5: pos_neg_weight(p_weight=s(1.0,0,{5}), n_weight=s(1.0,0,{-5})), 6: 0.9, 9: 0.3, 12: True, 18: pos_neg_weight(p_weight=s(1.0,0,{18}), n_weight=s(1.0,0,{-18})), 19: 0.2, 22: 0.6, 25: True, 31: True, 37: 0.9, 46: True, 52: 0.2, 55: 0.5, 58: True, 64: 0.3, 67: 0.9, 70: True, 76: True, 82: 0.2, 85: 0.8, 86: True, 94: 0.3, 95: True, 103: 0.8, 104: True, 112: True, 146: pos_neg_weight(p_weight=s(1.0,-21,set()), n_weight=s(1.0,15,set())), 182: pos_neg_weight(p_weight=s(1.0,29,set()), n_weight=s(1.0,-3,set())), 200: pos_neg_weight(p_weight=s(1.0,-21,set()), n_weight=s(1.0,6,set())), 208: pos_neg_weight(p_weight=s(1.0,-29,set()), n_weight=s(1.0,35,set())), 214: pos_neg_weight(p_weight=s(1.0,40,set()), n_weight=s(1.0,47,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0011091232299804688 seconds
+Circuit evaluation took 0.019552230834960938 seconds.
+Best decisions {asia: 1, dec_2: 1, smoke: 0}
+Expected utility 100.00000000000001
+Compile time 0.04045987129211426
+Runtime 0.061121225357055664
+Evaluation:             0.21
+
+./benchmarks/meu/problog_format/survey_1_1588920084.pl
+Compilation took 2.3807733058929443 seconds.
+start decisions: {2, 234, 108, 58}
+start utilities: {s("F"): 25, \+s("F"): 48, e("high"): 33, o("emp"): -1, a("old"): 45, r("small"): -14, r("big"): 22, \+r("big"): -10, \+t("train"): 26, t("other"): 35, \+t("other"): -30, t("car"): -4, \+t("car"): 25, s("M"): 39, a("young"): 29, \+a("young"): 28}
+final current_weights {1: 0.7, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,25,set()), n_weight=s(1.0,48,set())), 9: pos_neg_weight(p_weight=s(0.9,29,set()), n_weight=s(0.09999999999999998,28,set())), 10: 0.1, 11: True, 17: 0.9, 18: pos_neg_weight(p_weight=s(1.0,45,set()), n_weight=s(1.0,0,set())), 24: 0.4, 25: 0.2, 26: True, 32: True, 38: 0.4, 41: 0.3, 42: 0.3, 43: pos_neg_weight(p_weight=s(1.0,39,set()), n_weight=s(1.0,0,set())), 49: True, 57: 0.1, 58: pos_neg_weight(p_weight=s(1.0,0,{58}), n_weight=s(1.0,0,{-58})), 61: 0.9, 62: True, 70: 0.1, 71: True, 79: 0.7, 80: True, 88: 0.5, 89: True, 97: pos_neg_weight(p_weight=s(1.0,33,set()), n_weight=s(1.0,0,set())), 107: 0.8, 108: pos_neg_weight(p_weight=s(1.0,0,{108}), n_weight=s(1.0,0,{-108})), 111: 0.5, 112: 0.9, 117: 0.4, 122: 0.4, 127: 0.7, 134: 0.9, 137: 0.2, 142: True, 148: 0.2, 153: pos_neg_weight(p_weight=s(1.0,22,set()), n_weight=s(1.0,-10,set())), 159: 0.2, 164: pos_neg_weight(p_weight=s(1.0,-14,set()), n_weight=s(1.0,0,set())), 170: 0.2, 171: 0.1, 176: 0.5, 177: 0.9, 182: True, 188: True, 196: 0.2, 197: True, 205: 0.2, 210: pos_neg_weight(p_weight=s(1.0,-1,set()), n_weight=s(1.0,0,set())), 216: True, 224: 0.2, 225: True, 233: 0.2, 234: pos_neg_weight(p_weight=s(1.0,0,{234}), n_weight=s(1.0,0,{-234})), 237: pos_neg_weight(p_weight=s(1.0,-4,set()), n_weight=s(1.0,25,set())), 243: 0.3, 248: 0.8, 253: 0.2, 258: 0.5, 263: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,26,set())), 269: 0.2, 270: True, 280: 0.6, 281: True, 291: 0.4, 292: True, 302: 0.4, 303: True, 313: pos_neg_weight(p_weight=s(1.0,35,set()), n_weight=s(1.0,-30,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0020711421966552734 seconds
+Circuit evaluation took 0.2641916275024414 seconds.
+Best decisions {dec_2: 1, dec_0: 1, dec_1: 1, dec_3: 0}
+Expected utility 136.26075977329174
+Compile time 2.3807733058929443
+Runtime 2.647036075592041
+Evaluation:             2.99
+
+./benchmarks/meu/problog_format/sachs_2_1337671202.pl
+
+calloc failed in new_element_array
+Evaluation:             93.58
+
+./benchmarks/meu/problog_format/asia_1_2023896565.pl
+Compilation took 0.041321516036987305 seconds.
+start decisions: {1, 34, 9, 42, 22, 121}
+start utilities: {lung: 0, \+lung: 42, \+dysp: -43, xray: 18, \+bronc: -9, asia: 20, smoke: 45}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,45,{1}), n_weight=s(1.0,0,{-1})), 2: 0.1, 5: 0.4, 8: 0.6, 9: pos_neg_weight(p_weight=s(1.0,0,{9}), n_weight=s(1.0,0,{-9})), 12: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-9,set())), 18: 0.8, 21: 0.5, 22: pos_neg_weight(p_weight=s(1.0,0,{22}), n_weight=s(1.0,0,{-22})), 25: 0.8, 28: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,42,set())), 34: pos_neg_weight(p_weight=s(1.0,20,{34}), n_weight=s(1.0,0,{-34})), 35: 0.2, 38: 0.5, 41: 0.3, 42: pos_neg_weight(p_weight=s(1.0,0,{42}), n_weight=s(1.0,0,{-42})), 45: True, 55: 0.3, 56: True, 66: True, 72: 0.6, 75: 0.1, 78: pos_neg_weight(p_weight=s(1.0,18,set()), n_weight=s(1.0,0,set())), 84: True, 90: 0.1, 93: 0.9, 94: True, 102: 0.5, 103: True, 111: 0.3, 112: True, 120: 0.5, 121: pos_neg_weight(p_weight=s(1.0,0,{121}), n_weight=s(1.0,0,{-121})), 124: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-43,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0011911392211914062 seconds
+Circuit evaluation took 0.04507613182067871 seconds.
+Best decisions {smoke: 1, dec_5: 1, asia: 1, dec_3: 0, dec_4: 1, dec_2: 0}
+Expected utility 64.75752
+Compile time 0.041321516036987305
+Runtime 0.08758878707885742
+Evaluation:             0.19
+
+./benchmarks/meu/problog_format/sachs_2_1400227407.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/earthquake_2_1337671202.pl
+Compilation took 0.016834259033203125 seconds.
+start decisions: {2, 3}
+start utilities: {util_node(0): -20, \+util_node(0): 4, util_node(1): 15, \+util_node(1): 44, util_node(2): 47, \+util_node(2): 26, util_node(3): -45, \+util_node(3): 44, util_node(4): -13, \+util_node(4): -47}
+final current_weights {1: 0.3, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.2, 13: True, 21: 0.9, 22: True, 30: 0.5, 31: True, 39: True, 45: 0.2, 48: 0.6, 51: True, 57: 0.9, 60: 0.1, 63: True, 75: pos_neg_weight(p_weight=s(1.0,-78,set()), n_weight=s(1.0,1,set())), 87: pos_neg_weight(p_weight=s(1.0,15,set()), n_weight=s(1.0,44,set())), 101: pos_neg_weight(p_weight=s(1.0,47,set()), n_weight=s(1.0,26,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0016887187957763672 seconds
+Circuit evaluation took 0.012431621551513672 seconds.
+Best decisions {burglary: 1, earthquake: 0}
+Expected utility 71.378
+Compile time 0.016834259033203125
+Runtime 0.030954599380493164
+Evaluation:             0.19
+
+./benchmarks/meu/problog_format/survey_2_1482723311.pl
+Compilation took 121.14612627029419 seconds.
+start decisions: {1, 75, 276, 97}
+start utilities: {util_node(0): -26, \+util_node(0): 20, util_node(1): -28, \+util_node(1): 3, util_node(2): 3, \+util_node(2): -20, util_node(3): 2, \+util_node(3): 36, util_node(4): -41, \+util_node(4): 50}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.8, 3: True, 9: 0.4, 10: 0.8, 11: 0.5, 12: 0.8, 13: 0.9, 14: True, 20: True, 26: 0.3, 27: True, 33: True, 41: 0.2, 42: True, 48: True, 56: 0.4, 57: True, 65: 0.5, 66: True, 74: 0.7, 75: pos_neg_weight(p_weight=s(1.0,0,{75}), n_weight=s(1.0,0,{-75})), 78: 0.8, 79: True, 87: True, 93: 0.5, 96: 0.6, 97: pos_neg_weight(p_weight=s(1.0,0,{97}), n_weight=s(1.0,0,{-97})), 100: True, 106: 0.7, 111: 0.2, 112: 0.2, 117: 0.7, 122: 0.5, 127: 0.3, 134: 0.8, 137: 0.1, 142: True, 148: 0.3, 153: True, 163: True, 169: 0.7, 170: 0.7, 173: 0.6, 176: True, 182: True, 190: 0.5, 191: 0.2, 196: 0.3, 201: True, 207: True, 215: 0.4, 216: True, 224: 0.7, 225: True, 233: True, 239: 0.1, 240: 0.3, 241: True, 251: 0.5, 252: True, 260: 0.3, 263: 0.4, 264: 0.9, 265: True, 275: 0.9, 276: pos_neg_weight(p_weight=s(1.0,0,{276}), n_weight=s(1.0,0,{-276})), 279: 0.8, 280: 0.5, 281: True, 291: True, 317: True, 441: pos_neg_weight(p_weight=s(1.0,2,set()), n_weight=s(1.0,36,set())), 519: pos_neg_weight(p_weight=s(1.0,-28,set()), n_weight=s(1.0,3,set())), 583: pos_neg_weight(p_weight=s(1.0,3,set()), n_weight=s(1.0,-20,set())), 651: pos_neg_weight(p_weight=s(1.0,-41,set()), n_weight=s(1.0,50,set())), 691: pos_neg_weight(p_weight=s(1.0,-26,set()), n_weight=s(1.0,20,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0029594898223876953 seconds
+Circuit evaluation took 0.5176181793212891 seconds.
+Best decisions {dec_3: 1, dec_2: 0, dec_0: 0, dec_1: 0}
+Expected utility 88.98764989999998
+Compile time 121.14612627029419
+Runtime 121.66670393943787
+Evaluation:             123.42
+
+./benchmarks/meu/problog_format/asia_2_769949150.pl
+Compilation took 0.07687258720397949 seconds.
+start decisions: {1, 27, 113}
+start utilities: {util_node(0): 18, \+util_node(0): 7, util_node(1): 37, \+util_node(1): -38, util_node(2): 35, \+util_node(2): -19, util_node(3): 10, \+util_node(3): -38, util_node(4): 19, \+util_node(4): 17}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.2, 5: 0.3, 8: True, 14: 0.7, 15: 0.5, 18: 0.4, 21: True, 27: pos_neg_weight(p_weight=s(1.0,0,{27}), n_weight=s(1.0,0,{-27})), 28: 0.7, 31: 0.8, 34: True, 40: True, 54: True, 60: True, 66: 0.1, 69: 0.4, 70: True, 78: 0.1, 79: True, 87: 0.6, 88: True, 96: True, 112: 0.4, 113: pos_neg_weight(p_weight=s(1.0,0,{113}), n_weight=s(1.0,0,{-113})), 116: 0.6, 119: 0.8, 122: True, 154: pos_neg_weight(p_weight=s(1.0,10,set()), n_weight=s(1.0,-38,set())), 196: pos_neg_weight(p_weight=s(1.0,37,set()), n_weight=s(1.0,-38,set())), 202: pos_neg_weight(p_weight=s(1.0,35,set()), n_weight=s(1.0,-19,set())), 216: pos_neg_weight(p_weight=s(1.0,19,set()), n_weight=s(1.0,17,set())), 222: pos_neg_weight(p_weight=s(1.0,18,set()), n_weight=s(1.0,7,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.002344369888305664 seconds
+Circuit evaluation took 0.04503345489501953 seconds.
+Best decisions {smoke: 1, asia: 0, dec_2: 0}
+Expected utility -69.572528
+Compile time 0.07687258720397949
+Runtime 0.12425041198730469
+Evaluation:             0.38
+
+./benchmarks/meu/problog_format/earthquake_1_2023896565.pl
+Compilation took 0.01922774314880371 seconds.
+start decisions: {1, 2, 44, 57, 31}
+start utilities: {maryCalls: -9, \+maryCalls: 40, burglary: 34, \+burglary: 18, earthquake: 0, \+earthquake: 42, \+alarm: -43, johnCalls: 18}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,42,{-1})), 2: pos_neg_weight(p_weight=s(1.0,34,{2}), n_weight=s(1.0,18,{-2})), 3: True, 9: 0.5, 12: 0.4, 13: True, 21: 0.4, 22: True, 30: 0.7, 31: pos_neg_weight(p_weight=s(1.0,0,{31}), n_weight=s(1.0,0,{-31})), 34: 0.3, 35: True, 43: 0.9, 44: pos_neg_weight(p_weight=s(1.0,0,{44}), n_weight=s(1.0,0,{-44})), 47: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-43,set())), 53: 0.5, 56: 0.9, 57: pos_neg_weight(p_weight=s(1.0,0,{57}), n_weight=s(1.0,0,{-57})), 60: 0.4, 63: pos_neg_weight(p_weight=s(1.0,-9,set()), n_weight=s(1.0,40,set())), 69: 0.8, 72: 0.3, 75: pos_neg_weight(p_weight=s(1.0,18,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0018529891967773438 seconds
+Circuit evaluation took 0.023202180862426758 seconds.
+Best decisions {burglary: 1, dec_4: 0, dec_3: 1, earthquake: 0, dec_2: 1}
+Expected utility 96.4635
+Compile time 0.01922774314880371
+Runtime 0.04428291320800781
+Evaluation:             0.15
+
+./benchmarks/meu/problog_format/survey_1_1592975436.pl
+Compilation took 1.1950633525848389 seconds.
+start decisions: {2, 114}
+start utilities: {s("F"): -28, \+s("F"): -1, e("high"): -32, o("emp"): -30, a("old"): -48, r("small"): 25, \+r("small"): 10, r("big"): -2, \+r("big"): -28, o("self"): -29, \+o("self"): -49, \+t("train"): 6, t("other"): -29, \+t("other"): -15, e("uni"): 9, t("car"): 38, \+t("car"): 39, s("M"): 1, \+s("M"): 23, a("young"): -2, \+a("young"): 5, a("adult"): 46, \+a("adult"): -17}
+final current_weights {1: 0.4, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,-28,set()), n_weight=s(1.0,-1,set())), 9: pos_neg_weight(p_weight=s(0.2,-2,set()), n_weight=s(0.8,5,set())), 10: 0.8, 11: pos_neg_weight(p_weight=s(1.0,46,set()), n_weight=s(1.0,-17,set())), 17: True, 23: 0.8, 24: pos_neg_weight(p_weight=s(1.0,-48,set()), n_weight=s(1.0,0,set())), 30: 0.5, 31: 0.6, 32: pos_neg_weight(p_weight=s(1.0,1,set()), n_weight=s(1.0,23,set())), 38: True, 46: 0.8, 47: True, 55: 0.8, 56: True, 64: True, 70: 0.7, 73: 0.7, 74: True, 82: 0.7, 83: True, 91: pos_neg_weight(p_weight=s(1.0,-32,set()), n_weight=s(1.0,0,set())), 97: 0.5, 100: 0.3, 103: 0.1, 108: 0.5, 113: 0.9, 114: pos_neg_weight(p_weight=s(1.0,0,{114}), n_weight=s(1.0,0,{-114})), 117: 0.9, 122: 0.7, 127: 0.8, 134: 0.4, 137: pos_neg_weight(p_weight=s(1.0,9,set()), n_weight=s(1.0,0,set())), 143: 0.7, 146: 0.1, 149: pos_neg_weight(p_weight=s(1.0,-2,set()), n_weight=s(1.0,-28,set())), 155: 0.1, 160: pos_neg_weight(p_weight=s(1.0,25,set()), n_weight=s(1.0,10,set())), 166: 0.7, 169: 0.9, 172: 0.4, 173: 0.9, 178: pos_neg_weight(p_weight=s(1.0,-29,set()), n_weight=s(1.0,-49,set())), 184: True, 192: True, 198: 0.2, 205: pos_neg_weight(p_weight=s(1.0,-30,set()), n_weight=s(1.0,0,set())), 211: True, 217: 0.4, 220: 0.6, 221: True, 229: pos_neg_weight(p_weight=s(1.0,38,set()), n_weight=s(1.0,39,set())), 235: 0.9, 240: 0.4, 245: 0.6, 250: 0.3, 255: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,6,set())), 261: True, 269: 0.9, 272: 0.5, 273: True, 283: 0.3, 284: True, 294: True, 302: 0.6, 305: pos_neg_weight(p_weight=s(1.0,-29,set()), n_weight=s(1.0,-15,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.004593849182128906 seconds
+Circuit evaluation took 0.23379826545715332 seconds.
+Best decisions {dec_1: 1, dec_0: 0}
+Expected utility -14.371422635572763
+Compile time 1.1950633525848389
+Runtime 1.433455467224121
+Evaluation:             1.87
+
+./benchmarks/meu/problog_format/child_2_1807131032.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/asia_1_1588920084.pl
+Compilation took 0.02133774757385254 seconds.
+start decisions: {2, 101, 6, 105, 19}
+start utilities: {\+tub: 25, lung: 48, \+lung: 33, \+dysp: -1, bronc: -28, \+bronc: -14, smoke: 9, \+smoke: -43, either: -17}
+final current_weights {1: 0.8, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 5: 0.2, 6: pos_neg_weight(p_weight=s(1.0,9,{6}), n_weight=s(1.0,-43,{-6})), 9: 0.9, 12: pos_neg_weight(p_weight=s(1.0,-28,set()), n_weight=s(1.0,-14,set())), 18: 0.7, 19: pos_neg_weight(p_weight=s(1.0,0,{19}), n_weight=s(1.0,0,{-19})), 22: 0.1, 25: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,25,set())), 31: 0.8, 34: 0.2, 37: pos_neg_weight(p_weight=s(1.0,48,set()), n_weight=s(1.0,33,set())), 49: 0.6, 50: True, 58: pos_neg_weight(p_weight=s(1.0,-17,set()), n_weight=s(1.0,0,set())), 64: True, 70: 0.4, 73: 0.2, 74: True, 82: 0.7, 83: True, 91: 0.1, 92: True, 100: 0.7, 101: pos_neg_weight(p_weight=s(1.0,0,{101}), n_weight=s(1.0,0,{-101})), 104: 0.8, 105: pos_neg_weight(p_weight=s(1.0,0,{105}), n_weight=s(1.0,0,{-105})), 108: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(1.0,-1,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0009205341339111328 seconds
+Circuit evaluation took 0.014736175537109375 seconds.
+Best decisions {asia: 1, dec_4: 1, smoke: 1, dec_3: 1, dec_2: 0}
+Expected utility 43.8778048
+Compile time 0.02133774757385254
+Runtime 0.03699445724487305
+Evaluation:             0.12
+
+./benchmarks/meu/problog_format/earthquake_2_548563996.pl
+Compilation took 0.007213592529296875 seconds.
+start decisions: {1, 3, 61}
+start utilities: {util_node(0): -7, \+util_node(0): -30, util_node(1): 27, \+util_node(1): 40, util_node(2): 49, \+util_node(2): -25, util_node(3): -13, \+util_node(3): -42, util_node(4): -22, \+util_node(4): -2}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,0,{1}), n_weight=s(1.0,0,{-1})), 2: 0.8, 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.4, 13: True, 21: 0.6, 22: True, 30: 0.1, 31: True, 39: True, 45: 0.1, 48: 0.8, 51: True, 57: 0.2, 60: 0.3, 61: pos_neg_weight(p_weight=s(1.0,0,{61}), n_weight=s(1.0,0,{-61})), 64: 0.3, 67: True, 79: pos_neg_weight(p_weight=s(1.0,34,set()), n_weight=s(1.0,-59,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0007386207580566406 seconds
+Circuit evaluation took 0.0046498775482177734 seconds.
+Best decisions {dec_2: 0, earthquake: 0, burglary: 0}
+Expected utility -51.188
+Compile time 0.007213592529296875
+Runtime 0.012602090835571289
+Evaluation:             0.10
+
+./benchmarks/meu/problog_format/earthquake_1_1707665179.pl
+Compilation took 0.005882740020751953 seconds.
+start decisions: {1, 2}
+start utilities: {burglary: 26, earthquake: 4, \+earthquake: -23, alarm: 3, \+alarm: -16, johnCalls: 22, \+johnCalls: -46}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,26,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,4,{2}), n_weight=s(1.0,-23,{-2})), 3: True, 9: 0.7, 12: 0.4, 13: True, 21: 0.3, 22: True, 30: 0.1, 31: True, 39: pos_neg_weight(p_weight=s(1.0,3,set()), n_weight=s(1.0,-16,set())), 45: 0.5, 48: 0.6, 51: pos_neg_weight(p_weight=s(1.0,22,set()), n_weight=s(1.0,-46,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0006077289581298828 seconds
+Circuit evaluation took 0.003511190414428711 seconds.
+Best decisions {burglary: 1, earthquake: 1}
+Expected utility 13.68
+Compile time 0.005882740020751953
+Runtime 0.010001659393310547
+Evaluation:             0.06
+
+./benchmarks/meu/problog_format/win95pts_2_1707665179.pl
+
+malloc failed in new_sdd_node
+Evaluation:             166.20
+
+./benchmarks/meu/problog_format/win95pts_1_1337671202.pl
+
+calloc failed in new_element_array
+Evaluation:             87.59
+
+./benchmarks/meu/problog_format/win95pts_1_548563996.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/sachs_2_1592975436.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/asia_1_769949150.pl
+Compilation took 0.027605295181274414 seconds.
+start decisions: {2, 101, 14, 111, 29}
+start utilities: {tub: 30, \+tub: -8, lung: -31, \+lung: 33, dysp: -37, \+dysp: -23, xray: -9, bronc: -9, \+bronc: -34, asia: 50, \+asia: -8, \+smoke: -19, either: -38, \+either: -41}
+final current_weights {1: 0.8, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,-19,{-2})), 5: 0.9, 8: pos_neg_weight(p_weight=s(1.0,-9,set()), n_weight=s(1.0,-34,set())), 14: pos_neg_weight(p_weight=s(1.0,50,{14}), n_weight=s(1.0,-8,{-14})), 15: 0.1, 18: 0.1, 21: pos_neg_weight(p_weight=s(1.0,30,set()), n_weight=s(1.0,-8,set())), 27: 0.8, 28: 0.2, 29: pos_neg_weight(p_weight=s(1.0,0,{29}), n_weight=s(1.0,0,{-29})), 32: 0.6, 35: 0.6, 38: pos_neg_weight(p_weight=s(1.0,-31,set()), n_weight=s(1.0,33,set())), 48: 0.2, 49: True, 59: pos_neg_weight(p_weight=s(1.0,-38,set()), n_weight=s(1.0,-41,set())), 65: True, 73: 0.6, 74: True, 82: 0.5, 83: True, 91: 0.2, 92: True, 100: 0.4, 101: pos_neg_weight(p_weight=s(1.0,0,{101}), n_weight=s(1.0,0,{-101})), 104: pos_neg_weight(p_weight=s(1.0,-37,set()), n_weight=s(1.0,-23,set())), 110: 0.6, 111: pos_neg_weight(p_weight=s(1.0,0,{111}), n_weight=s(1.0,0,{-111})), 114: 0.6, 117: 0.9, 120: pos_neg_weight(p_weight=s(1.0,-9,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0010006427764892578 seconds
+Circuit evaluation took 0.01823282241821289 seconds.
+Best decisions {dec_3: 0, smoke: 1, dec_4: 0, dec_2: 1, asia: 1}
+Expected utility -48.91590399999998
+Compile time 0.027605295181274414
+Runtime 0.04683876037597656
+Evaluation:             0.12
+
+./benchmarks/meu/problog_format/earthquake_2_1588920084.pl
+Compilation took 0.008179187774658203 seconds.
+start decisions: {2, 3}
+start utilities: {util_node(0): 20, \+util_node(0): -43, util_node(1): 45, \+util_node(1): -28, util_node(2): 15, \+util_node(2): 22, util_node(3): 33, \+util_node(3): -25, util_node(4): -33, \+util_node(4): -24}
+final current_weights {1: 0.4, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.8, 13: True, 21: 0.2, 22: True, 30: 0.6, 31: True, 39: True, 45: 0.5, 48: 0.1, 51: True, 57: 0.3, 60: 0.9, 63: True, 83: pos_neg_weight(p_weight=s(1.0,47,set()), n_weight=s(1.0,-73,set())), 89: pos_neg_weight(p_weight=s(1.0,33,set()), n_weight=s(1.0,-25,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0007929801940917969 seconds
+Circuit evaluation took 0.004504203796386719 seconds.
+Best decisions {burglary: 0, earthquake: 0}
+Expected utility -28.28
+Compile time 0.008179187774658203
+Runtime 0.013476371765136719
+Evaluation:             0.10
+
+./benchmarks/meu/problog_format/win95pts_1_769949150.pl
+
+malloc failed in new_sdd_node
+Evaluation:             159.69
+
+./benchmarks/meu/problog_format/child_2_548563996.pl
+Evaluation:             300.07
+
+Killed
+./benchmarks/meu/problog_format/child_1_1588920084.pl
+Evaluation:             300.01
+
+Killed
+./benchmarks/meu/problog_format/child_2_769949150.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/sachs_1_2023896565.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/earthquake_1_769949150.pl
+Compilation took 0.005155324935913086 seconds.
+start decisions: {1, 2, 52}
+start utilities: {maryCalls: -6, burglary: -48, earthquake: -38, \+earthquake: 30, alarm: -8, \+alarm: -31, johnCalls: 33, \+johnCalls: -37}
+final current_weights {1: pos_neg_weight(p_weight=s(1.0,-48,{1}), n_weight=s(1.0,0,{-1})), 2: pos_neg_weight(p_weight=s(1.0,-38,{2}), n_weight=s(1.0,30,{-2})), 3: True, 9: 0.6, 12: 0.4, 13: True, 21: 0.4, 22: True, 30: 0.9, 31: True, 39: pos_neg_weight(p_weight=s(1.0,-8,set()), n_weight=s(1.0,-31,set())), 45: 0.6, 48: 0.4, 51: 0.6, 52: pos_neg_weight(p_weight=s(1.0,0,{52}), n_weight=s(1.0,0,{-52})), 55: pos_neg_weight(p_weight=s(1.0,33,set()), n_weight=s(1.0,-37,set())), 61: 0.3, 64: 0.7, 67: pos_neg_weight(p_weight=s(1.0,-6,set()), n_weight=s(1.0,0,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0005049705505371094 seconds
+Circuit evaluation took 0.0038967132568359375 seconds.
+Best decisions {dec_2: 1, burglary: 0, earthquake: 0}
+Expected utility 25.0
+Compile time 0.005155324935913086
+Runtime 0.009557008743286133
+Evaluation:             0.05
+
+./benchmarks/meu/problog_format/sachs_1_1482723311.pl
+Evaluation:             300.10
+
+Killed
+./benchmarks/meu/problog_format/earthquake_2_1482723311.pl
+Compilation took 0.006237506866455078 seconds.
+start decisions: {2, 3}
+start utilities: {util_node(0): -26, \+util_node(0): 20, util_node(1): -8, \+util_node(1): -47, util_node(2): 3, \+util_node(2): 49, util_node(3): -28, \+util_node(3): 35, util_node(4): 49, \+util_node(4): -40}
+final current_weights {1: 0.3, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 3: pos_neg_weight(p_weight=s(1.0,0,{3}), n_weight=s(1.0,0,{-3})), 4: True, 12: 0.4, 13: True, 21: 0.1, 22: True, 30: 0.9, 31: True, 39: True, 45: 0.3, 48: 0.2, 51: True, 57: 0.7, 60: 0.9, 63: True, 75: pos_neg_weight(p_weight=s(1.0,16,set()), n_weight=s(1.0,-3,set())), 89: pos_neg_weight(p_weight=s(1.0,-26,set()), n_weight=s(1.0,20,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0005812644958496094 seconds
+Circuit evaluation took 0.0033338069915771484 seconds.
+Best decisions {burglary: 1, earthquake: 0}
+Expected utility 17.0
+Compile time 0.006237506866455078
+Runtime 0.010152578353881836
+Evaluation:             0.09
+
+./benchmarks/meu/problog_format/sachs_2_2023896565.pl
+
+calloc failed in new_element_array
+Evaluation:             155.98
+
+./benchmarks/meu/problog_format/asia_2_1592975436.pl
+Compilation took 0.03494453430175781 seconds.
+start decisions: {16, 113, 2}
+start utilities: {util_node(0): -35, \+util_node(0): 15, util_node(1): -13, \+util_node(1): -29, util_node(2): 2, \+util_node(2): -37, util_node(3): 6, \+util_node(3): -27, util_node(4): 11, \+util_node(4): -12}
+final current_weights {1: 0.9, 2: pos_neg_weight(p_weight=s(1.0,0,{2}), n_weight=s(1.0,0,{-2})), 5: 0.4, 8: True, 14: 0.8, 15: 0.3, 16: pos_neg_weight(p_weight=s(1.0,0,{16}), n_weight=s(1.0,0,{-16})), 19: 0.5, 22: True, 28: 0.7, 31: 0.1, 34: True, 40: True, 54: True, 60: True, 66: 0.6, 69: 0.7, 70: True, 78: 0.1, 79: True, 87: 0.9, 88: True, 96: True, 112: 0.9, 113: pos_neg_weight(p_weight=s(1.0,0,{113}), n_weight=s(1.0,0,{-113})), 116: 0.3, 119: 0.6, 122: True, 138: pos_neg_weight(p_weight=s(1.0,6,set()), n_weight=s(1.0,-27,set())), 162: pos_neg_weight(p_weight=s(1.0,-13,set()), n_weight=s(1.0,-29,set())), 168: pos_neg_weight(p_weight=s(1.0,2,set()), n_weight=s(1.0,-37,set())), 188: pos_neg_weight(p_weight=s(1.0,11,set()), n_weight=s(1.0,-12,set())), 202: pos_neg_weight(p_weight=s(1.0,-35,set()), n_weight=s(1.0,15,set())), 0: pos_neg_weight(p_weight=s(1.0,0,set()), n_weight=s(0.0,0,set()))}
+Fixing weights took 0.0007836818695068359 seconds
+Circuit evaluation took 0.015616893768310547 seconds.
+Best decisions {asia: 0, dec_2: 1, smoke: 1}
+Expected utility -87.36764160000001
+Compile time 0.03494453430175781
+Runtime 0.051345109939575195
+Evaluation:             0.16
+
+./benchmarks/meu/problog_format/win95pts_1_2023896565.pl
+
+malloc failed in new_sdd_node
+Evaluation:             92.48
 
