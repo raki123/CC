@@ -86,7 +86,7 @@ dysp:-algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_766(765,dysp).
 either:-tub,lung.
 util_node(2):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_678(677,lung):-body_15(13,lung).
-true.
+
 util_node(4):-\+smoke,xray,\+lung,bronc,dysp,tub,\+asia,either.
 util_node(1):-\+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 util_node(0):-\+smoke,xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.

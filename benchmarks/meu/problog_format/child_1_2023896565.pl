@@ -1307,7 +1307,7 @@ lVH:-algebraic_atom(8,0,0,set(none),lVH,"0.1"),body_708(707,lVH).
 lVH:-algebraic_atom(12,0,0,set(none),lVH,"0.05"),body_740(739,lVH).
 lungFlow("Normal"):-algebraic_atom(31,0,0,set(none),lungFlow("Normal"),"0.7"),body_1031(1030,multi).
 algebraic_atom(108,2,1,set(none),lowerBodyO2("12+"),"0.1"):-algebraic_atom(108,2,0,set(none),lowerBodyO2("12+"),"0.1").
-true.
+
 body_2009(2006,multi):-hypoxiaInO2("Severe"),hypDistrib("Equal").
 body_1391(1390,multi):-body_900(899,multi).
 body_1654(1651,multi):-cardiacMixing("None"),ductFlow("Rt_to_Lt").

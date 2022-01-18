@@ -83,7 +83,7 @@ body_740(739,dysp) :- body_118(114,dysp).
 body_756(755,dysp) :- body_141(136,dysp).
 body_692(691,bronc) :- body_41(40,bronc).
 xray :- algebraic_atom(7,0,0,set(none),xray,"0.98"),body_716(715,xray).
-true.
+
 body_716(715,xray) :- body_86(85,xray).
 body_41(40,bronc) :- smoke.
 xray :- algebraic_atom(8,0,0,set(none),xray,"0.05"),body_724(723,xray).

@@ -620,7 +620,7 @@ algebraic_atom(52,1,1,set(none),mek("2"),"0.3333333") :- algebraic_atom(52,0,0,s
 algebraic_atom(25,2,1,set(none),raf("3"),"0.0") :- algebraic_atom(25,2,0,set(none),raf("3"),"0.0").
 mek("2") :- algebraic_atom(50,1,0,set(none),mek("2"),"0.1428571"),\+algebraic_atom(50,0,0,set(none),mek("1"),"0.8571429"),body_3641(3640,multi).
 body_393(390,multi) :- pKC("1"),pKA("2").
-true.
+
 body_353(350,multi) :- pKC("2"),pKA("1").
 mek("1") :- algebraic_atom(52,0,0,set(none),mek("1"),"0.3333333"),body_3677(3676,multi).
 raf("2") :- algebraic_atom(25,1,0,set(none),raf("2"),"0.1538462"),\+algebraic_atom(25,0,0,set(none),raf("1"),"0.8461538"),body_3191(3190,multi).

@@ -809,7 +809,7 @@ body_850(849,multi) :- body_353(350,multi).
 jnk("1") :- algebraic_atom(30,0,0,set(none),jnk("1"),"0.6129167"),body_1066(1065,multi).
 algebraic_atom(41,2,1,set(none),pIP2("3"),"0.007503411") :- algebraic_atom(41,2,0,set(none),pIP2("3"),"0.007503411").
 body_2178(2177,jnk("3")) :- dec_5.
-true.
+
 body_353(350,multi) :- pKC("2"),pKA("1").
 body_131(130,multi) :- pKC("3").
 jnk("2") :- algebraic_atom(28,1,0,set(none),jnk("2"),"1.0"),\+algebraic_atom(28,0,0,set(none),jnk("1"),"0.0"),body_1030(1029,multi).

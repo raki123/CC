@@ -807,7 +807,7 @@ algebraic_atom(95,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom
 ductFlow("None"):-algebraic_atom(32,1,0,set(none),ductFlow("None"),"0.05"),\+algebraic_atom(32,0,0,set(none),ductFlow("Lt_to_Rt"),"0.15"),body_4730(4729,multi).
 age("4-10_days"):-algebraic_atom(43,1,0,set(none),age("4-10_days"),"0.2"),\+algebraic_atom(43,0,0,set(none),age("0-3_days"),"0.7"),body_4908(4907,multi).
 algebraic_atom(95,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02").
-true.
+
 cardiacMixing("None"):-algebraic_atom(15,0,0,set(none),cardiacMixing("None"),"0.02"),body_4459(4458,multi).
 algebraic_atom(46,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(46,1,0,set(none),age("4-10_days"),"0.15").
 lVH:-algebraic_atom(9,0,0,set(none),lVH,"0.1"),body_4396(4395,lVH).

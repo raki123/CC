@@ -127,7 +127,7 @@ body_234(233,multi):-body_181(178,multi).
 body_1(0,multi).
 o("self"):-algebraic_atom(7,1,0,set(none),o("self"),"0.04"),\+algebraic_atom(7,0,0,set(none),o("emp"),"0.96"),body_182(181,multi).
 e("high"):-algebraic_atom(1,0,0,set(none),e("high"),"0.75"),body_104(103,multi).
-true.
+
 body_169(168,multi):-body_112(109,multi).
 algebraic_atom(13,1,1,set(none),t("train"),"0.36"):-algebraic_atom(13,0,0,set(none),t("car"),"0.56").
 body_318(316,s("F")):-\+dec_0.

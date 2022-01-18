@@ -1251,7 +1251,7 @@ algebraic_atom(46,1,1,set(none),age("4-10_days"),"0.15") :- algebraic_atom(46,1,
 body_205(204,lVH) :- disease("PAIVS").
 age("11-30_days") :- algebraic_atom(51,2,0,set(none),age("11-30_days"),"0.05"),\+algebraic_atom(51,1,1,set(none),age("4-10_days"),"0.15"),body_5057(5056,multi).
 hypoxiaInO2("Moderate") :- algebraic_atom(119,0,0,set(none),hypoxiaInO2("Moderate"),"0.18"),body_6221(6220,hypoxiaInO2("Moderate")).
-true.
+
 cO2Report("<7.5") :- algebraic_atom(103,0,0,set(none),cO2Report("<7.5"),"0.1"),body_5983(5982,multi).
 rUQO2("12+") :- algebraic_atom(105,2,0,set(none),rUQO2("12+"),"0.1"),\+algebraic_atom(105,1,1,set(none),rUQO2("5-12"),"0.6"),body_6014(6013,multi).
 lungParench("Normal") :- algebraic_atom(5,0,0,set(none),lungParench("Normal"),"0.8"),body_4339(4338,multi).

@@ -97,7 +97,7 @@ algebraic_atom(12,1,1,set(none),t("train"),"0.24"):-algebraic_atom(12,0,0,set(no
 r("big"):-algebraic_atom(9,1,0,set(none),r("big"),"0.75"),\+algebraic_atom(9,0,0,set(none),r("small"),"0.25"),body_1121(1120,multi).
 e("high"):-algebraic_atom(3,0,0,set(none),e("high"),"0.72"),body_1043(1042,multi).
 e("high"):-algebraic_atom(4,0,0,set(none),e("high"),"0.7"),body_1056(1055,multi).
-true.
+
 t("car"):-algebraic_atom(12,0,0,set(none),t("car"),"0.58"),body_1165(1164,multi).
 r("small"):-algebraic_atom(9,0,0,set(none),r("small"),"0.25"),body_1121(1120,multi).
 o("self"):-algebraic_atom(7,1,0,set(none),o("self"),"0.04"),\+algebraic_atom(7,0,0,set(none),o("emp"),"0.96"),body_1095(1094,multi).

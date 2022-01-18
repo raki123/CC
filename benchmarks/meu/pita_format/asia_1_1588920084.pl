@@ -35,7 +35,7 @@ body_129(128,bronc) :- body_51(49,bronc).
 body_23(22,tub) :- asia.
 xray :- algebraic_atom(7,0,0,set(none),xray,"0.98"),body_144(143,xray).
 dysp :- algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).
-true.
+
 either :- tub,\+lung.
 lung :- algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_186(185,dysp).

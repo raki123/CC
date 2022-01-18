@@ -834,7 +834,7 @@ algebraic_atom(18,1,1,set(none),cardiacMixing("Mild"),"0.03"):-algebraic_atom(18
 algebraic_atom(33,2,1,set(none),ductFlow("Rt_to_Lt"),"0.1"):-algebraic_atom(33,2,0,set(none),ductFlow("Rt_to_Lt"),"0.1").
 algebraic_atom(74,2,1,set(none),chestXray("Plethoric"),"0.02"):-algebraic_atom(74,2,0,set(none),chestXray("Plethoric"),"0.02").
 body_4274(4273,multi):-body_71(70,multi).
-true.
+
 body_126(125,multi):-disease("PAIVS").
 body_4328(4327,multi):-body_126(125,multi).
 lungParench("Abnormal"):-algebraic_atom(3,2,0,set(none),lungParench("Abnormal"),"0.15"),\+algebraic_atom(3,1,1,set(none),lungParench("Congested"),"0.05"),body_4292(4291,multi).

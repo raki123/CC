@@ -37,7 +37,7 @@ body_144(143,xray) :- body_86(85,xray).
 body_178(177,dysp) :- body_129(125,dysp).
 bronc :- algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_129(128,bronc).
 body_113(112,tub) :- body_33(31,tub).
-true.
+
 xray :- algebraic_atom(13,0,0,set(none),xray,"0.05"),body_198(197,xray).
 tub :- algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).
 body_96(94,xray) :- \+either.

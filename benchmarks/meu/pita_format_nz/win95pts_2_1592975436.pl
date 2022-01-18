@@ -2314,7 +2314,7 @@ dS_NTOK :- algebraic_atom(172,0,0,set(none),dS_NTOK,"0.5"),body_15415(15414,dS_N
 body_1214(1213,multi) :- prtSpool("Disabled").
 lclGrbld :- algebraic_atom(183,0,0,set(none),lclGrbld,"0.5"),body_15503(15502,lclGrbld).
 body_16073(16072,problem6) :- body_4035(4028,problem6).
-true.
+
 grbldPS :- avlblVrtlMmry("Adequate____1Mb_"),grbldOtpt.
 lclGrbld :- algebraic_atom(176,0,0,set(none),lclGrbld,"0.2"),body_15447(15446,lclGrbld).
 body_3515(3509,grbldOtpt) :- ntGrbld,\+lclGrbld,netPrint("Yes__Network_printer_").

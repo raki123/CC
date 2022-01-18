@@ -2165,7 +2165,7 @@ body_3495(3490,grbldOtpt):-ntGrbld,lclGrbld,netPrint("Yes__Network_printer_").
 body_3454(3449,grbldOtpt):-ntGrbld,lclGrbld,netPrint("No__Local_printer_").
 body_8544(8543,grbldOtpt):-body_3468(3462,grbldOtpt).
 algebraic_atom(65,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.0"):-algebraic_atom(65,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.0").
-true.
+
 grbldOtpt:-\+ntGrbld,lclGrbld,netPrint("Yes__Network_printer_").
 prtStatOff("OFFLINE__OFF"):-algebraic_atom(77,1,0,set(none),prtStatOff("OFFLINE__OFF"),"0.00999999"),\+algebraic_atom(77,0,0,set(none),prtStatOff("No_Error"),"0.99000001"),body_7350(7349,multi).
 algebraic_atom(77,1,1,set(none),prtStatOff("OFFLINE__OFF"),"0.00999999"):-algebraic_atom(77,0,0,set(none),prtStatOff("No_Error"),"0.99000001").

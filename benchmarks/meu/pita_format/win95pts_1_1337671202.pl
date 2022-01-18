@@ -2354,7 +2354,7 @@ body_2737(2728,dS_NTOK) :- pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPt
 body_5964(5947,pC2PRT) :- \+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
 body_975(969,lclOK) :- cblPrtHrdwrOK("Not_Operational"),\+prtPort,prtCbl("Loose").
 grbldOtpt :- algebraic_atom(210,0,0,set(none),grbldOtpt,"0.0"),body_8560(8559,grbldOtpt).
-true.
+
 ntSpd("Slow") :- algebraic_atom(201,1,0,set(none),ntSpd("Slow"),"0.5"),\+algebraic_atom(201,0,0,set(none),ntSpd("OK"),"0.5"),body_8479(8478,multi).
 body_7030(7029,lclOK) :- body_975(969,lclOK).
 body_814(809,netOK) :- pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtPath("Correct").

@@ -1039,7 +1039,7 @@ body_17037(17036,prtData) :- body_7314(7300,prtData).
 body_17045(17044,prtData) :- body_7335(7321,prtData).
 ntSpd("OK") :- algebraic_atom(199,0,0,set(none),ntSpd("OK"),"0.0"),body_15697(15696,multi).
 ntSpd("Slow") :- algebraic_atom(197,1,0,set(none),ntSpd("Slow"),"0.75"),\+algebraic_atom(197,0,0,set(none),ntSpd("OK"),"0.25"),body_15671(15670,multi).
-true.
+
 prtData :- algebraic_atom(400,0,0,set(none),prtData,"0.5"),body_17365(17364,prtData).
 gDIOUT :- algebraic_atom(224,0,0,set(none),gDIOUT,"0.5"),body_15917(15916,gDIOUT).
 gDIOUT :- algebraic_atom(219,0,0,set(none),gDIOUT,"0.99"),body_15877(15876,gDIOUT).

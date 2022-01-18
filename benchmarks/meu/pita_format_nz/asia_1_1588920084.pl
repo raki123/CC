@@ -72,7 +72,7 @@ body_23(22,tub) :- asia.
 body_198(197,bronc) :- dec_2.
 lung :- algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 body_105(104,tub) :- body_23(22,tub).
-true.
+
 bronc :- algebraic_atom(13,0,0,set(none),bronc,"0.6"),body_198(197,bronc).
 either :- tub,lung.
 :- end_lpad.

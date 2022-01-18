@@ -621,7 +621,7 @@ lclGrbld :- algebraic_atom(176,0,0,set(none),lclGrbld,"0.2"),body_15439(15438,lc
 body_17822(17821,multi) :- body_9474(9472,multi).
 deskPrntSpd("OK") :- algebraic_atom(133,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15065(15064,multi).
 body_9459(9458,multi) :- prtData.
-true.
+
 body_9429(9414,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
 algebraic_atom(131,1,1,set(none),deskPrntSpd("Too_Slow"),"0.75") :- algebraic_atom(131,0,0,set(none),deskPrntSpd("OK"),"0.25").
 body_6762(6760,prtFile) :- \+prtDataOut.

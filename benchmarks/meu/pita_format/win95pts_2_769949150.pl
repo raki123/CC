@@ -686,7 +686,7 @@ algebraic_atom(193,1,1,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.01") :- algeb
 ntSpd("OK") :- algebraic_atom(197,0,0,set(none),ntSpd("OK"),"0.25"),body_15627(15626,multi).
 ntSpd("OK") :- algebraic_atom(196,0,0,set(none),ntSpd("OK"),"0.25"),body_15614(15613,multi).
 algebraic_atom(195,1,1,set(none),ntSpd("Slow"),"0.00099999") :- algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001").
-true.
+
 ntSpd("OK") :- algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001"),body_15601(15600,multi).
 algebraic_atom(195,1,1,set(none),ntSpd("Slow"),"0.00099999") :- algebraic_atom(195,1,0,set(none),ntSpd("Slow"),"0.00099999").
 algebraic_atom(194,1,1,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.9") :- algebraic_atom(194,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.1").

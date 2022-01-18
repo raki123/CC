@@ -24,7 +24,7 @@ body_60(58,maryCalls) :- \+alarm.
 body_56(55,alarm) :- body_19(15,alarm).
 body_89(88,maryCalls) :- body_60(58,maryCalls).
 alarm :- algebraic_atom(0,0,0,set(none),alarm,"0.95"),body_48(47,alarm).
-true.
+
 maryCalls :- algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_80(79,maryCalls).
 alarm :- algebraic_atom(1,0,0,set(none),alarm,"0.94"),body_56(55,alarm).
 alarm :- algebraic_atom(2,0,0,set(none),alarm,"0.29"),body_64(63,alarm).

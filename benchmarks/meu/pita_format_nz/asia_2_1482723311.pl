@@ -73,7 +73,7 @@ util_node(2) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_700(699,bronc) :- body_51(49,bronc).
 util_node(3) :- \+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
 body_15(13,lung) :- \+smoke.
-true.
+
 body_708(707,either) :- body_78(73,either).
 util_node(2) :- smoke,xray,lung,\+bronc,dysp,\+tub,\+asia,either.
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_756(755,dysp).

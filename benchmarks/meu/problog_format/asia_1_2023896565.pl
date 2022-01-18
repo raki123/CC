@@ -60,7 +60,7 @@ body_153(152,xray):-body_96(94,xray).
 dysp:-algebraic_atom(11,0,0,set(none),dysp,"0.7"),body_178(177,dysp).
 body_228(227,dysp):-dec_5.
 body_33(31,tub):-\+asia.
-true.
+
 dysp:-algebraic_atom(16,0,0,set(none),dysp,"0.8"),body_228(227,dysp).
 body_23(22,tub):-asia.
 body_170(169,dysp):-body_118(114,dysp).

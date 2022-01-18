@@ -141,7 +141,7 @@ body_242(239,multi) :- r("big"),o("self").
 algebraic_atom(14,1,1,set(none),t("train"),"0.21") :- algebraic_atom(14,1,0,set(none),t("train"),"0.21").
 algebraic_atom(14,2,1,set(none),t("other"),"0.09") :- algebraic_atom(14,1,1,set(none),t("train"),"0.21").
 body_52(49,multi) :- s("F"),a("young").
-true.
+
 algebraic_atom(14,1,1,set(none),t("train"),"0.21") :- algebraic_atom(14,0,0,set(none),t("car"),"0.7").
 body_139(138,multi) :- e("uni").
 body_117(116,multi) :- body_52(49,multi).

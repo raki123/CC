@@ -504,7 +504,7 @@ algebraic_atom(26,2,1,set(none),lungFlow("High"),"0.05") :- algebraic_atom(26,2,
 body_1948(1947,multi) :- hypoxiaInO2("Severe").
 body_2202(2201,multi) :- body_1797(1796,multi).
 disease("Fallot") :- algebraic_atom(1,2,0,set(none),disease("Fallot"),"0.29591837"),\+algebraic_atom(1,1,1,set(none),disease("TGA"),"0.33673469"),body_567(566,multi).
-true.
+
 algebraic_atom(28,1,1,set(none),lungFlow("Low"),"0.8") :- algebraic_atom(28,1,0,set(none),lungFlow("Low"),"0.8").
 algebraic_atom(35,1,1,set(none),ductFlow("None"),"0.0") :- algebraic_atom(35,1,0,set(none),ductFlow("None"),"0.0").
 body_937(936,multi) :- lungParench("Abnormal").

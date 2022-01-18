@@ -61,7 +61,7 @@ maryCalls :- algebraic_atom(8,0,0,set(none),maryCalls,"0.01"),body_499(498,maryC
 body_7(4,alarm) :- earthquake,burglary.
 body_78(76,johnCalls) :- \+alarm.
 util_node(4) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,johnCalls.
-true.
+
 body_60(58,maryCalls) :- \+alarm.
 util_node(0) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_455(454,alarm) :- body_42(37,alarm).

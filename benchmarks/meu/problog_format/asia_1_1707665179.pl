@@ -61,7 +61,7 @@ dysp:-algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_170(169,dysp).
 either:-tub,lung.
 either:-\+tub,lung.
 body_15(13,lung):-\+smoke.
-true.
+
 body_129(125,dysp):-either,\+bronc.
 xray:-algebraic_atom(8,0,0,set(none),xray,"0.05"),body_153(152,xray).
 body_144(143,xray):-body_86(85,xray).

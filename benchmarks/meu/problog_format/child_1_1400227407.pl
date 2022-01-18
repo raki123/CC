@@ -1182,7 +1182,7 @@ hypDistrib("Equal"):-algebraic_atom(89,0,0,set(none),hypDistrib("Equal"),"0.95")
 body_2542(2541,hypoxiaInO2("Moderate")):-dec_7.
 algebraic_atom(90,1,1,set(none),hypDistrib("Unequal"),"0.95"):-algebraic_atom(90,1,0,set(none),hypDistrib("Unequal"),"0.95").
 lowerBodyO2("12+"):-algebraic_atom(111,2,0,set(none),lowerBodyO2("12+"),"0.05"),\+algebraic_atom(111,1,1,set(none),lowerBodyO2("5-12"),"0.45"),body_2443(2442,multi).
-true.
+
 cardiacMixing("Transp."):-algebraic_atom(113,0,0,set(none),cardiacMixing("Transp."),"0.02"),body_2482(2481,cardiacMixing("Transp.")).
 algebraic_atom(49,2,1,set(none),age("11-30_days"),"0.1"):-algebraic_atom(49,2,0,set(none),age("11-30_days"),"0.1").
 lowerBodyO2("5-12"):-algebraic_atom(109,1,0,set(none),lowerBodyO2("5-12"),"0.4"),\+algebraic_atom(109,0,0,set(none),lowerBodyO2("<5"),"0.5"),body_2407(2406,multi).

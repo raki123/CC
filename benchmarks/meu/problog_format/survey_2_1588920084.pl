@@ -62,7 +62,7 @@ body_1082(1081,multi):-body_112(109,multi).
 body_1250(1249,e("uni")):-dec_2.
 body_1017(1016,multi):-body_36(33,multi).
 t("car"):-algebraic_atom(12,0,0,set(none),t("car"),"0.58"),body_1165(1164,multi).
-true.
+
 algebraic_atom(11,2,1,set(none),t("other"),"0.1"):-algebraic_atom(11,1,1,set(none),t("train"),"0.42").
 t("other"):-algebraic_atom(11,2,0,set(none),t("other"),"0.1"),\+algebraic_atom(11,1,1,set(none),t("train"),"0.42"),body_1147(1146,multi).
 algebraic_atom(12,1,1,set(none),t("train"),"0.24"):-algebraic_atom(12,0,0,set(none),t("car"),"0.58").

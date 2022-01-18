@@ -606,7 +606,7 @@ body_832(831,multi):-body_332(329,multi).
 body_373(370,multi):-pKC("3"),pKA("1").
 algebraic_atom(65,2,1,set(none),mek("3"),"0.0"):-algebraic_atom(65,2,0,set(none),mek("3"),"0.0").
 mek("1"):-algebraic_atom(69,0,0,set(none),mek("1"),"0.0"),body_1765(1764,multi).
-true.
+
 body_850(849,multi):-body_353(350,multi).
 algebraic_atom(66,2,1,set(none),mek("3"),"0.0"):-algebraic_atom(66,2,0,set(none),mek("3"),"0.0").
 algebraic_atom(69,2,1,set(none),mek("3"),"0.0"):-algebraic_atom(69,1,1,set(none),mek("2"),"1.0").

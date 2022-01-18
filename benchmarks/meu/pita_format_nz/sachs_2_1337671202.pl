@@ -359,7 +359,7 @@ mek("3") :- algebraic_atom(58,2,0,set(none),mek("3"),"0.1333333"),\+algebraic_at
 algebraic_atom(88,1,1,set(none),akt("2"),"0.8297872") :- algebraic_atom(88,1,0,set(none),akt("2"),"0.8297872").
 algebraic_atom(16,2,1,set(none),p38("3"),"0.0") :- algebraic_atom(16,2,0,set(none),p38("3"),"0.0").
 mek("3") :- algebraic_atom(52,2,0,set(none),mek("3"),"0.3333333"),\+algebraic_atom(52,1,1,set(none),mek("2"),"0.3333333"),body_3677(3676,multi).
-true.
+
 util_node(4) :- \+pIP2("2"),\+jnk("3"),\+mek("3"),jnk("1"),\+raf("3"),\+raf("1"),\+plcg("2"),p38("1"),pIP3("2"),\+p38("3"),mek("1"),\+pKC("3"),\+pKA("3"),\+akt("2"),\+pKC("1"),\+pIP2("3"),pIP2("1"),\+jnk("2"),\+erk("3"),\+pKA("1"),\+plcg("3"),raf("2"),\+mek("2"),\+pIP3("3"),\+pIP3("1"),erk("1"),\+erk("2"),\+p38("2"),pKC("2"),\+akt("3"),plcg("1"),akt("1"),pKA("2").
 algebraic_atom(58,2,1,set(none),mek("3"),"0.1333333") :- algebraic_atom(58,1,1,set(none),mek("2"),"0.5851852").
 algebraic_atom(52,2,1,set(none),mek("3"),"0.3333333") :- algebraic_atom(52,1,1,set(none),mek("2"),"0.3333333").

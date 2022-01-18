@@ -69,7 +69,7 @@ body_690(689,tub) :- body_23(22,tub).
 body_722(721,either) :- body_78(73,either).
 body_23(22,tub) :- asia.
 bronc :- algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_714(713,bronc).
-true.
+
 lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_674(673,lung).
 util_node(2) :- smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(1) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.

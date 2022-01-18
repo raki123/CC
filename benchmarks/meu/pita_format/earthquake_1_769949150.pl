@@ -23,7 +23,7 @@ body_80(79,maryCalls) :- body_50(49,maryCalls).
 body_97(96,johnCalls) :- body_68(67,johnCalls).
 alarm :- algebraic_atom(1,0,0,set(none),alarm,"0.94"),body_56(55,alarm).
 body_68(67,johnCalls) :- alarm.
-true.
+
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_106(105,johnCalls).
 body_7(4,alarm) :- earthquake,burglary.
 body_50(49,maryCalls) :- alarm.

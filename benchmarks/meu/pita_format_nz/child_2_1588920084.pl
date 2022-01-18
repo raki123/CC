@@ -1044,7 +1044,7 @@ algebraic_atom(51,2,1,set(none),age("11-30_days"),"0.05") :- algebraic_atom(51,1
 body_5082(5081,multi) :- body_900(899,multi).
 chestXray("Plethoric") :- algebraic_atom(77,2,0,set(none),chestXray("Plethoric"),"0.08"),\+algebraic_atom(77,1,1,set(none),chestXray("Oligaemic"),"0.22"),body_5512(5511,multi).
 body_5274(5273,multi) :- body_1122(1119,multi).
-true.
+
 body_5118(5117,multi) :- body_937(936,multi).
 algebraic_atom(66,2,1,set(none),hypoxiaInO2("Severe"),"0.25") :- algebraic_atom(66,2,0,set(none),hypoxiaInO2("Severe"),"0.25").
 body_5990(5989,multi) :- body_1898(1897,multi).

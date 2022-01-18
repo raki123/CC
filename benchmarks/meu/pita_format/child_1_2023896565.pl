@@ -1113,7 +1113,7 @@ algebraic_atom(73,3,1,set(none),chestXray("Grd_Glass"),"0.01") :- algebraic_atom
 body_1968(1965,multi) :- hypoxiaInO2("Mild"),hypDistrib("Equal").
 body_1301(1300,multi) :- body_800(796,multi).
 algebraic_atom(62,2,1,set(none),hypoxiaInO2("Severe"),"0.05") :- algebraic_atom(62,1,1,set(none),hypoxiaInO2("Moderate"),"0.8").
-true.
+
 algebraic_atom(34,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0") :- algebraic_atom(34,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
 hypoxiaInO2("Mild") :- algebraic_atom(65,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_1565(1564,multi).
 body_1654(1651,multi) :- cardiacMixing("None"),ductFlow("Rt_to_Lt").

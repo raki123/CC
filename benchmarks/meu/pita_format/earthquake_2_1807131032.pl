@@ -68,6 +68,6 @@ body_438(437,alarm) :- body_19(15,alarm).
 util_node(1) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_454(453,alarm) :- body_42(37,alarm).
 util_node(0) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,johnCalls.
-true.
+
 util_node(0) :- \+burglary,\+alarm,earthquake,\+maryCalls,\+johnCalls.
 :- end_lpad.

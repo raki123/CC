@@ -1246,7 +1246,7 @@ problem2("OK") :- algebraic_atom(242,0,0,set(none),problem2("OK"),"0.0"),body_88
 problem2("Too_Long") :- algebraic_atom(240,1,0,set(none),problem2("Too_Long"),"1.0"),\+algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0"),body_8826(8825,multi).
 algebraic_atom(239,1,1,set(none),problem2("Too_Long"),"0.0") :- algebraic_atom(239,1,0,set(none),problem2("Too_Long"),"0.0").
 dS_NTOK :- algebraic_atom(145,0,0,set(none),dS_NTOK,"0.1"),body_7996(7995,dS_NTOK).
-true.
+
 body_1172(1169,multi) :- pTROFFLINE("Online"),ntwrkCnfg("Incorrect").
 dS_NTOK :- algebraic_atom(146,0,0,set(none),dS_NTOK,"0.5"),body_8004(8003,dS_NTOK).
 body_6863(6850,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.

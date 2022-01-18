@@ -950,7 +950,7 @@ ductFlow("Lt_to_Rt"):-algebraic_atom(34,0,0,set(none),ductFlow("Lt_to_Rt"),"0.8"
 algebraic_atom(18,1,1,set(none),cardiacMixing("Mild"),"0.03"):-algebraic_atom(18,1,0,set(none),cardiacMixing("Mild"),"0.03").
 algebraic_atom(37,2,1,set(none),ductFlow("Rt_to_Lt"),"0.4"):-algebraic_atom(37,1,1,set(none),ductFlow("None"),"0.4").
 hypoxiaInO2("Severe"):-algebraic_atom(62,2,0,set(none),hypoxiaInO2("Severe"),"0.05"),\+algebraic_atom(62,1,1,set(none),hypoxiaInO2("Moderate"),"0.8"),body_5183(5182,multi).
-true.
+
 algebraic_atom(81,3,1,set(none),chestXray("Grd_Glass"),"0.34"):-algebraic_atom(81,3,0,set(none),chestXray("Grd_Glass"),"0.34").
 algebraic_atom(62,2,1,set(none),hypoxiaInO2("Severe"),"0.05"):-algebraic_atom(62,1,1,set(none),hypoxiaInO2("Moderate"),"0.8").
 algebraic_atom(81,3,1,set(none),chestXray("Grd_Glass"),"0.34"):-algebraic_atom(81,2,1,set(none),chestXray("Plethoric"),"0.03").

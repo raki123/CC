@@ -430,7 +430,7 @@ algebraic_atom(62,2,1,set(none),hypoxiaInO2("Severe"),"0.05"):-algebraic_atom(62
 age("0-3_days"):-algebraic_atom(117,0,0,set(none),age("0-3_days"),"0.8"),body_6194(6193,age("0-3_days")).
 xrayReport("Plethoric"):-algebraic_atom(98,2,0,set(none),xrayReport("Plethoric"),"0.1"),\+algebraic_atom(98,1,1,set(none),xrayReport("Oligaemic"),"0.02"),body_5906(5905,multi).
 algebraic_atom(112,2,1,set(none),lowerBodyO2("12+"),"0.05"):-algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35").
-true.
+
 algebraic_atom(62,2,1,set(none),hypoxiaInO2("Severe"),"0.05"):-algebraic_atom(62,2,0,set(none),hypoxiaInO2("Severe"),"0.05").
 gruntingReport:-algebraic_atom(100,0,0,set(none),gruntingReport,"0.1"),body_5942(5941,gruntingReport).
 algebraic_atom(2,2,1,set(none),lungParench("Abnormal"),"0.3"):-algebraic_atom(2,1,1,set(none),lungParench("Congested"),"0.1").

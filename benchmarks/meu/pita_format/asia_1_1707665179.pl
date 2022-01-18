@@ -62,7 +62,7 @@ body_89(88,lung) :- body_5(4,lung).
 body_129(128,bronc) :- body_51(49,bronc).
 lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_89(88,lung).
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).
-true.
+
 lung :- algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 body_186(185,dysp) :- body_141(136,dysp).
 :- end_lpad.

@@ -48,7 +48,7 @@ dysp:-algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_170(169,dysp).
 body_33(31,tub):-\+asia.
 dysp:-algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).
 body_129(128,bronc):-body_51(49,bronc).
-true.
+
 body_136(135,either):-body_78(73,either).
 body_186(185,dysp):-body_141(136,dysp).
 bronc:-algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).

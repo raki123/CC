@@ -2428,7 +2428,7 @@ pC2PRT :- algebraic_atom(291,0,0,set(none),pC2PRT,"0.0"),body_9244(9243,pC2PRT).
 prtData :- algebraic_atom(413,0,0,set(none),prtData,"0.5"),body_10221(10220,prtData).
 prtData :- algebraic_atom(416,0,0,set(none),prtData,"0.5"),body_10245(10244,prtData).
 prtData :- algebraic_atom(429,0,0,set(none),prtData,"0.5"),body_10349(10348,prtData).
-true.
+
 pC2PRT :- algebraic_atom(290,0,0,set(none),pC2PRT,"0.0"),body_9236(9235,pC2PRT).
 prtData :- algebraic_atom(430,0,0,set(none),prtData,"0.5"),body_10357(10356,prtData).
 pC2PRT :- algebraic_atom(284,0,0,set(none),pC2PRT,"0.0"),body_9188(9187,pC2PRT).

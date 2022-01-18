@@ -1679,7 +1679,7 @@ body_14556(14555,cmpltPgPrntd) :- body_1353(1348,cmpltPgPrntd).
 problem2("OK") :- algebraic_atom(238,0,0,set(none),problem2("OK"),"0.0"),body_16033(16032,multi).
 problem2("OK") :- algebraic_atom(239,0,0,set(none),problem2("OK"),"1.0"),body_16046(16045,multi).
 problem6 :- algebraic_atom(246,0,0,set(none),problem6,"0.0"),body_16122(16121,problem6).
-true.
+
 gDIOUT :- algebraic_atom(231,0,0,set(none),gDIOUT,"0.5"),body_15962(15961,gDIOUT).
 problem2("OK") :- algebraic_atom(235,0,0,set(none),problem2("OK"),"1.0"),body_15994(15993,multi).
 body_3182(3178,incmpltPS) :- avlblVrtlMmry("Adequate____1Mb_"),\+cmpltPgPrntd.

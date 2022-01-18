@@ -405,7 +405,7 @@ algebraic_atom(60,2,1,set(none),mek("3"),"0.0") :- algebraic_atom(60,1,1,set(non
 body_1274(1269,multi) :- raf("1"),pKC("1"),pKA("3").
 algebraic_atom(10,1,1,set(none),p38("2"),"0.125") :- algebraic_atom(10,1,0,set(none),p38("2"),"0.125").
 algebraic_atom(38,1,1,set(none),pIP2("2"),"0.01325178") :- algebraic_atom(38,0,0,set(none),pIP2("1"),"0.98674822").
-true.
+
 body_1142(1137,multi) :- raf("1"),pKC("2"),pKA("2").
 raf("2") :- algebraic_atom(19,1,0,set(none),raf("2"),"0.125"),\+algebraic_atom(19,0,0,set(none),raf("1"),"0.875"),body_868(867,multi).
 raf("1") :- algebraic_atom(18,0,0,set(none),raf("1"),"0.3694268"),body_850(849,multi).

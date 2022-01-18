@@ -60,7 +60,7 @@ either :- tub,lung.
 either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_718(717,either).
 bronc :- algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_710(709,bronc).
 tub :- algebraic_atom(3,0,0,set(none),tub,"0.01"),body_694(693,tub).
-true.
+
 body_726(725,xray) :- body_86(85,xray).
 util_node(4) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,asia,\+either.
 bronc :- algebraic_atom(13,0,0,set(none),bronc,"0.3"),body_778(777,bronc).

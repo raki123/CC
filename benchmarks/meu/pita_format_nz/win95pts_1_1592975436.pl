@@ -728,7 +728,7 @@ algebraic_atom(127,1,1,set(none),deskPrntSpd("Too_Slow"),"0.00099999") :- algebr
 deskPrntSpd("OK") :- algebraic_atom(131,0,0,set(none),deskPrntSpd("OK"),"0.25"),body_7843(7842,multi).
 deskPrntSpd("OK") :- algebraic_atom(127,0,0,set(none),deskPrntSpd("OK"),"0.99900001"),body_7791(7790,multi).
 deskPrntSpd("Too_Slow") :- algebraic_atom(129,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001"),\+algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_7817(7816,multi).
-true.
+
 algebraic_atom(129,1,1,set(none),deskPrntSpd("Too_Slow"),"0.99900001") :- algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999").
 deskPrntSpd("Too_Slow") :- algebraic_atom(127,1,0,set(none),deskPrntSpd("Too_Slow"),"0.00099999"),\+algebraic_atom(127,0,0,set(none),deskPrntSpd("OK"),"0.99900001"),body_7791(7790,multi).
 body_1385(1384,multi) :- prtOn.

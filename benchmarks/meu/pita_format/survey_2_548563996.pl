@@ -87,7 +87,7 @@ algebraic_atom(3,1,1,set(none),e("uni"),"0.28") :- algebraic_atom(3,0,0,set(none
 r("big") :- algebraic_atom(17,0,0,set(none),r("big"),"0.8"),body_1240(1239,r("big")).
 util_node(1) :- a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
 algebraic_atom(0,2,1,set(none),a("old"),"0.2") :- algebraic_atom(0,1,1,set(none),a("adult"),"0.5").
-true.
+
 body_1030(1029,multi) :- body_52(49,multi).
 e("uni") :- algebraic_atom(2,1,0,set(none),e("uni"),"0.36"),\+algebraic_atom(2,0,0,set(none),e("high"),"0.64"),body_1030(1029,multi).
 body_1121(1120,multi) :- body_152(151,multi).

@@ -2280,7 +2280,7 @@ algebraic_atom(126,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0") :- alge
 dS_LCLOK :- algebraic_atom(108,0,0,set(none),dS_LCLOK,"0.1"),body_7618(7617,dS_LCLOK).
 eMFOK :- algebraic_atom(102,0,0,set(none),eMFOK,"0.5"),body_7570(7569,eMFOK).
 problem4 :- algebraic_atom(106,0,0,set(none),problem4,"0.0"),body_7602(7601,problem4).
-true.
+
 problem4 :- algebraic_atom(107,0,0,set(none),problem4,"0.0"),body_7610(7609,problem4).
 eMFOK :- algebraic_atom(101,0,0,set(none),eMFOK,"0.5"),body_7562(7561,eMFOK).
 eMFOK :- algebraic_atom(99,0,0,set(none),eMFOK,"0.5"),body_7546(7545,eMFOK).

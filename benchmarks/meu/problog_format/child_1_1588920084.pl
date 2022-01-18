@@ -1038,7 +1038,7 @@ body_1139(1138,multi):-body_617(616,multi).
 gruntingReport:-algebraic_atom(99,0,0,set(none),gruntingReport,"0.8"),body_2258(2257,gruntingReport).
 disease("PAIVS"):-algebraic_atom(1,3,0,set(none),disease("PAIVS"),"0.23469388"),\+algebraic_atom(1,2,1,set(none),disease("Fallot"),"0.29591837"),body_567(566,multi).
 xrayReport("Asy/Patchy"):-algebraic_atom(97,4,0,set(none),xrayReport("Asy/Patchy"),"0.2"),\+algebraic_atom(97,3,1,set(none),xrayReport("Grd_Glass"),"0.6"),body_2202(2201,multi).
-true.
+
 body_617(616,multi):-disease("Lung").
 body_1564(1561,multi):-cardiacMixing("Complete"),ductFlow("Lt_to_Rt").
 cardiacMixing("None"):-algebraic_atom(14,0,0,set(none),cardiacMixing("None"),"0.4"),body_756(755,multi).

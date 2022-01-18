@@ -1565,7 +1565,7 @@ body_10037(10036,prtData) :- body_7949(7935,prtData).
 body_7949(7935,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
 body_10597(10596,prtData) :- body_9451(9436,prtData).
 body_8033(8019,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
-true.
+
 pC2PRT :- algebraic_atom(284,0,0,set(none),pC2PRT,"0.0"),body_9188(9187,pC2PRT).
 pC2PRT :- algebraic_atom(279,0,0,set(none),pC2PRT,"0.0"),body_9149(9148,pC2PRT).
 body_9451(9436,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.

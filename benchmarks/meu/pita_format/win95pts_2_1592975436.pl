@@ -733,7 +733,7 @@ algebraic_atom(18,1,1,set(none),appData("Incorrect_or_corrupt"),"1.0") :- algebr
 tTOK :- algebraic_atom(23,0,0,set(none),tTOK,"0.1"),body_14043(14042,tTOK).
 body_3999(3994,multi) :- ntSpd("OK"),deskPrntSpd("Too_Slow"),netPrint("Yes__Network_printer_").
 ntSpd("OK") :- algebraic_atom(197,0,0,set(none),ntSpd("OK"),"0.25"),body_15635(15634,multi).
-true.
+
 body_9187(9172,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
 body_17681(17680,prtData) :- body_9099(9085,prtData).
 body_17673(17672,prtData) :- body_9078(9064,prtData).

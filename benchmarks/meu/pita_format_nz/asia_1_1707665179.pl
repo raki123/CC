@@ -51,7 +51,7 @@ body_41(40,bronc) :- smoke.
 body_153(152,xray) :- body_96(94,xray).
 tub :- algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).
 xray :- algebraic_atom(8,0,0,set(none),xray,"0.05"),body_153(152,xray).
-true.
+
 body_96(94,xray) :- \+either.
 body_129(125,dysp) :- either,\+bronc.
 dysp :- algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).

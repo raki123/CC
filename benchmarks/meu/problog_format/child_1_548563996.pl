@@ -1106,7 +1106,7 @@ body_2258(2257,gruntingReport):-body_1853(1852,gruntingReport).
 algebraic_atom(35,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0"):-algebraic_atom(35,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
 algebraic_atom(96,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(96,3,0,set(none),xrayReport("Grd_Glass"),"0.02").
 algebraic_atom(34,1,1,set(none),ductFlow("None"),"0.2"):-algebraic_atom(34,1,0,set(none),ductFlow("None"),"0.2").
-true.
+
 body_979(976,grunting):-sick,lungParench("Congested").
 algebraic_atom(95,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom(95,4,0,set(none),xrayReport("Asy/Patchy"),"0.06").
 xrayReport("Grd_Glass"):-algebraic_atom(96,3,0,set(none),xrayReport("Grd_Glass"),"0.02"),\+algebraic_atom(96,2,1,set(none),xrayReport("Plethoric"),"0.8"),body_2174(2173,multi).

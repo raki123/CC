@@ -433,7 +433,7 @@ cO2("High") :- algebraic_atom(54,2,0,set(none),cO2("High"),"0.5"),\+algebraic_at
 body_38(36,multi) :- \+birthAsphyxia.
 body_5984(5983,multi) :- body_1911(1910,multi).
 body_4397(4396,lVH) :- body_197(196,lVH).
-true.
+
 body_617(616,multi) :- disease("Lung").
 body_4575(4574,sick) :- body_377(376,sick).
 body_4599(4598,sick) :- body_401(400,sick).

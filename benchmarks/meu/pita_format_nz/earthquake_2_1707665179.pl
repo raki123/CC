@@ -28,7 +28,7 @@ alarm :- algebraic_atom(2,0,0,set(none),alarm,"0.29"),body_447(446,alarm).
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_487(486,johnCalls).
 body_463(462,maryCalls) :- body_50(49,maryCalls).
 util_node(1) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 util_node(2) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(3) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 johnCalls :- algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_479(478,johnCalls).

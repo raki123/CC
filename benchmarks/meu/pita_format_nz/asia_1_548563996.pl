@@ -28,7 +28,7 @@ utility(either, 23).
 either :- tub,\+lung.
 body_97(96,lung) :- body_15(13,lung).
 body_96(94,xray) :- \+either.
-true.
+
 body_78(73,either) :- \+tub,\+lung.
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_105(104,tub).
 dysp :- algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).

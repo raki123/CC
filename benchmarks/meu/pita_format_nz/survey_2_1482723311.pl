@@ -91,7 +91,7 @@ e("high") :- algebraic_atom(2,0,0,set(none),e("high"),"0.64"),body_1030(1029,mul
 body_1069(1068,multi) :- body_97(94,multi).
 algebraic_atom(0,2,1,set(none),a("old"),"0.2") :- algebraic_atom(0,2,0,set(none),a("old"),"0.2").
 body_1121(1120,multi) :- body_152(151,multi).
-true.
+
 body_166(165,multi) :- e("uni").
 e("uni") :- algebraic_atom(1,1,0,set(none),e("uni"),"0.25"),\+algebraic_atom(1,0,0,set(none),e("high"),"0.75"),body_1017(1016,multi).
 body_152(151,multi) :- e("high").

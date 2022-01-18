@@ -66,7 +66,7 @@ either:-\+tub,lung.
 tub:-algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).
 body_178(177,dysp):-body_129(125,dysp).
 body_218(217,dysp):-dec_4.
-true.
+
 body_23(22,tub):-asia.
 body_97(96,lung):-body_15(13,lung).
 bronc:-algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).

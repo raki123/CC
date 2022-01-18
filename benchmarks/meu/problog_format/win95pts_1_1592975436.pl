@@ -2351,7 +2351,7 @@ prtData:-algebraic_atom(395,0,0,set(none),prtData,"0.5"),body_10077(10076,prtDat
 body_10317(10316,prtData):-body_8697(8682,prtData).
 prtData:-algebraic_atom(400,0,0,set(none),prtData,"0.5"),body_10117(10116,prtData).
 prtData:-algebraic_atom(408,0,0,set(none),prtData,"0.5"),body_10181(10180,prtData).
-true.
+
 body_10357(10356,prtData):-body_8805(8791,prtData).
 prtData:-algebraic_atom(417,0,0,set(none),prtData,"0.5"),body_10253(10252,prtData).
 prtData:-algebraic_atom(419,0,0,set(none),prtData,"0.5"),body_10269(10268,prtData).

@@ -151,7 +151,7 @@ e("high"):-algebraic_atom(5,0,0,set(none),e("high"),"0.88"),body_1069(1068,multi
 t("train"):-algebraic_atom(13,1,0,set(none),t("train"),"0.36"),\+algebraic_atom(13,0,0,set(none),t("car"),"0.56"),body_1183(1182,multi).
 body_1183(1182,multi):-body_222(219,multi).
 util_node(4):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),\+r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),r("small").
-true.
+
 util_node(2):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),\+t("car"),e("uni"),\+e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),t("other"),\+r("small").
 e("high"):-algebraic_atom(6,0,0,set(none),e("high"),"0.9"),body_1082(1081,multi).
 body_1240(1239,o("self")):-dec_1.

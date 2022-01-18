@@ -2384,7 +2384,7 @@ prtData:-algebraic_atom(401,0,0,set(none),prtData,"0.5"),body_17373(17372,prtDat
 body_8306(8292,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
 problem4:-algebraic_atom(104,0,0,set(none),problem4,"0.0"),body_14827(14826,problem4).
 prtData:-algebraic_atom(390,0,0,set(none),prtData,"0.5"),body_17285(17284,prtData).
-true.
+
 prtData:-algebraic_atom(394,0,0,set(none),prtData,"0.5"),body_17317(17316,prtData).
 body_8285(8271,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
 body_17445(17444,prtData):-body_8369(8355,prtData).

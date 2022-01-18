@@ -2341,7 +2341,7 @@ prtData :- algebraic_atom(381,0,0,set(none),prtData,"0.5"),body_9965(9964,prtDat
 algebraic_atom(125,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0") :- algebraic_atom(125,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0").
 prtData :- algebraic_atom(407,0,0,set(none),prtData,"0.5"),body_10173(10172,prtData).
 prtData :- algebraic_atom(421,0,0,set(none),prtData,"0.5"),body_10285(10284,prtData).
-true.
+
 body_8880(8879,problem6) :- body_4072(4065,problem6).
 body_7208(7207,multi) :- body_1200(1199,multi).
 body_4085(4079,problem6) :- \+grbldPS,prtPScript,grbldOtpt.

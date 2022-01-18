@@ -18,7 +18,7 @@ body_56(55,alarm) :- body_19(15,alarm).
 alarm :- algebraic_atom(2,0,0,set(none),alarm,"0.29"),body_64(63,alarm).
 body_80(79,maryCalls) :- body_50(49,maryCalls).
 body_106(105,johnCalls) :- body_78(76,johnCalls).
-true.
+
 alarm :- algebraic_atom(0,0,0,set(none),alarm,"0.95"),body_48(47,alarm).
 body_64(63,alarm) :- body_30(26,alarm).
 johnCalls :- algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_97(96,johnCalls).

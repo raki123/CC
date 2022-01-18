@@ -733,7 +733,7 @@ body_14604(14603,multi) :- body_1427(1426,multi).
 body_17123(17122,prtData) :- body_7599(7586,prtData).
 body_470(465,nnPSGrphc) :- ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
 body_1427(1426,multi) :- prtPaper("No_Paper").
-true.
+
 body_14817(14816,problem4) :- body_1826(1819,problem4).
 body_17163(17162,prtData) :- body_7699(7686,prtData).
 body_14565(14564,multi) :- body_1385(1384,multi).

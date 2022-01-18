@@ -792,7 +792,7 @@ body_1262(1259,multi):-lungFlow("Normal"),lungParench("Normal").
 xrayReport("Asy/Patchy"):-algebraic_atom(94,4,0,set(none),xrayReport("Asy/Patchy"),"0.06"),\+algebraic_atom(94,3,1,set(none),xrayReport("Grd_Glass"),"0.02"),body_2117(2116,multi).
 lowerBodyO2("5-12"):-algebraic_atom(108,1,0,set(none),lowerBodyO2("5-12"),"0.6"),\+algebraic_atom(108,0,0,set(none),lowerBodyO2("<5"),"0.3"),body_2389(2388,multi).
 algebraic_atom(107,2,1,set(none),lowerBodyO2("12+"),"0.6"):-algebraic_atom(107,2,0,set(none),lowerBodyO2("12+"),"0.6").
-true.
+
 hypDistrib("Unequal"):-algebraic_atom(93,1,0,set(none),hypDistrib("Unequal"),"0.5"),\+algebraic_atom(93,0,0,set(none),hypDistrib("Equal"),"0.5"),body_2104(2103,multi).
 body_1709(1708,multi):-body_1262(1259,multi).
 hypDistrib("Unequal"):-algebraic_atom(85,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(85,0,0,set(none),hypDistrib("Equal"),"0.95"),body_2000(1999,multi).

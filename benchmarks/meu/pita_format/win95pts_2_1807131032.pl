@@ -817,7 +817,7 @@ grbldPS :- algebraic_atom(218,0,0,set(none),grbldPS,"0.5"),body_15824(15823,grbl
 gDIIN :- algebraic_atom(215,0,0,set(none),gDIIN,"0.0"),body_15800(15799,gDIIN).
 body_14262(14261,multi) :- body_1011(1010,multi).
 body_14352(14351,multi) :- body_1141(1138,multi).
-true.
+
 problem4 :- pSGRAPHIC,prtPScript,\+nnPSGrphc.
 gDIOUT :- algebraic_atom(229,0,0,set(none),gDIOUT,"0.5"),body_15912(15911,gDIOUT).
 problem6 :- grbldPS,prtPScript,\+grbldOtpt.

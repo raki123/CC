@@ -78,7 +78,7 @@ util_node(1) :- \+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 util_node(2) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(2) :- smoke,xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(3) :- smoke,\+xray,\+lung,bronc,\+dysp,\+tub,\+asia,\+either.
-true.
+
 body_15(13,lung) :- \+smoke.
 body_726(725,xray) :- body_86(85,xray).
 body_718(717,either) :- body_78(73,either).

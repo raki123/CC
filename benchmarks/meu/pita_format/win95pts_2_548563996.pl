@@ -2347,7 +2347,7 @@ body_17754(17753,prtData) :- body_9231(9216,prtData).
 body_9474(9472,multi) :- \+prtData.
 body_9429(9414,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
 body_9407(9392,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
-true.
+
 body_17786(17785,prtData) :- body_9319(9304,prtData).
 body_17794(17793,prtData) :- body_9341(9326,prtData).
 body_17762(17761,prtData) :- body_9253(9238,prtData).

@@ -681,7 +681,7 @@ pSERRMEM("No_Error"):-algebraic_atom(140,0,0,set(none),pSERRMEM("No_Error"),"0.0
 algebraic_atom(141,1,1,set(none),pSERRMEM("Low_Memory"),"0.0"):-algebraic_atom(141,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
 drvOK("Corrupt"):-algebraic_atom(492,0,0,set(none),drvOK("Corrupt"),"0.01"),body_18148(18146,drvOK("Corrupt")).
 pSERRMEM("No_Error"):-algebraic_atom(142,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15190(15189,multi).
-true.
+
 pgOrnttnOK("Correct"):-algebraic_atom(481,0,0,set(none),pgOrnttnOK("Correct"),"0.95"),body_18044(18043,pgOrnttnOK("Correct")).
 grphcsRltdDrvrSttngs("Incorrect"):-algebraic_atom(476,0,0,set(none),grphcsRltdDrvrSttngs("Incorrect"),"0.05"),body_17996(17994,grphcsRltdDrvrSttngs("Incorrect")).
 netPrint("Yes__Network_printer_"):-algebraic_atom(468,0,0,set(none),netPrint("Yes__Network_printer_"),"0.2"),body_17920(17918,netPrint("Yes__Network_printer_")).

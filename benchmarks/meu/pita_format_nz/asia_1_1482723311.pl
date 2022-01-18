@@ -35,7 +35,7 @@ body_15(13,lung) :- \+smoke.
 body_106(103,dysp) :- either,bronc.
 body_86(85,xray) :- either.
 body_121(120,bronc) :- body_41(40,bronc).
-true.
+
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_105(104,tub).
 either :- tub,\+lung.
 body_170(169,dysp) :- body_118(114,dysp).

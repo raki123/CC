@@ -446,7 +446,7 @@ lungFlow("High") :- algebraic_atom(30,2,0,set(none),lungFlow("High"),"0.6"),\+al
 xrayReport("Normal") :- algebraic_atom(94,0,0,set(none),xrayReport("Normal"),"0.8"),body_2117(2116,multi).
 body_1242(1239,multi) :- lungParench("Abnormal"),cardiacMixing("Transp.").
 hypoxiaInO2("Mild") :- algebraic_atom(63,0,0,set(none),hypoxiaInO2("Mild"),"0.7"),body_1529(1528,multi).
-true.
+
 body_1987(1986,multi) :- body_1564(1561,multi).
 body_1989(1986,multi) :- hypoxiaInO2("Moderate"),hypDistrib("Equal").
 body_1182(1179,multi) :- lungParench("Abnormal"),cardiacMixing("Complete").

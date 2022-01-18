@@ -41,6 +41,6 @@ body_89(88,maryCalls) :- body_60(58,maryCalls).
 maryCalls :- algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_80(79,maryCalls).
 alarm :- algebraic_atom(1,0,0,set(none),alarm,"0.94"),body_56(55,alarm).
 body_118(117,alarm) :- dec_2.
-true.
+
 body_64(63,alarm) :- body_30(26,alarm).
 :- end_lpad.

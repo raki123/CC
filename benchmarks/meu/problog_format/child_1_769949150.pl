@@ -508,7 +508,7 @@ age("11-30_days"):-algebraic_atom(46,2,0,set(none),age("11-30_days"),"0.05"),\+a
 age("0-3_days"):-algebraic_atom(49,0,0,set(none),age("0-3_days"),"0.7"),body_1337(1336,multi).
 body_1011(1007,grunting):-\+sick,lungParench("Abnormal").
 algebraic_atom(74,1,1,set(none),chestXray("Oligaemic"),"0.8"):-algebraic_atom(74,1,0,set(none),chestXray("Oligaemic"),"0.8").
-true.
+
 body_1477(1476,grunting):-body_1000(997,grunting).
 algebraic_atom(44,2,1,set(none),age("11-30_days"),"0.15"):-algebraic_atom(44,1,1,set(none),age("4-10_days"),"0.15").
 algebraic_atom(46,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(46,0,0,set(none),age("0-3_days"),"0.8").

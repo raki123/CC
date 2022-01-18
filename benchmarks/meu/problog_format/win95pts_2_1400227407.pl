@@ -870,7 +870,7 @@ ntSpd("Slow"):-algebraic_atom(200,1,0,set(none),ntSpd("Slow"),"0.5"),\+algebraic
 algebraic_atom(200,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(200,0,0,set(none),ntSpd("OK"),"0.5").
 algebraic_atom(200,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(200,1,0,set(none),ntSpd("Slow"),"0.5").
 ntSpd("Slow"):-algebraic_atom(201,1,0,set(none),ntSpd("Slow"),"0.5"),\+algebraic_atom(201,0,0,set(none),ntSpd("OK"),"0.5"),body_15697(15696,multi).
-true.
+
 body_14069(14068,tTOK):-body_712(707,tTOK).
 body_1118(1112,nnTTOK):-fntInstlltn("Verified"),\+scrnFntNtPrntrFnt,prtMem("Less_than_2Mb").
 body_725(719,tTOK):-\+prntrAccptsTrtyp,fntInstlltn("Verified"),prtMem("Less_than_2Mb").

@@ -532,7 +532,7 @@ algebraic_atom(107,2,1,set(none),lowerBodyO2("12+"),"0.6"):-algebraic_atom(107,1
 body_1049(1048,multi):-body_526(525,multi).
 algebraic_atom(110,1,1,set(none),lowerBodyO2("5-12"),"0.5"):-algebraic_atom(110,0,0,set(none),lowerBodyO2("<5"),"0.4").
 body_213(212,lVH):-disease("TAPVD").
-true.
+
 sick:-algebraic_atom(20,0,0,set(none),sick,"0.4"),body_893(892,sick).
 body_189(188,lVH):-disease("TGA").
 algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35"):-algebraic_atom(112,1,0,set(none),lowerBodyO2("5-12"),"0.35").

@@ -1080,7 +1080,7 @@ erk("2") :- algebraic_atom(71,1,0,set(none),erk("2"),"0.13866667"),\+algebraic_a
 pIP2("2") :- algebraic_atom(35,1,0,set(none),pIP2("2"),"0.003131524"),\+algebraic_atom(35,0,0,set(none),pIP2("1"),"0.996868476"),body_3371(3370,multi).
 body_4345(4344,pKA("3")) :- dec_0.
 body_473(470,multi) :- pKC("2"),pKA("3").
-true.
+
 body_922(917,multi) :- raf("3"),pKC("1"),pKA("1").
 body_493(490,multi) :- pKC("3"),pKA("3").
 body_3065(3064,multi) :- body_353(350,multi).

@@ -1497,7 +1497,7 @@ body_7146(7132,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),p
 body_9741(9740,prtData):-body_7188(7174,prtData).
 body_1260(1257,multi):-ntwrkCnfg("Correct"),cblPrtHrdwrOK("Not_Operational").
 body_7377(7376,multi):-body_1413(1412,multi).
-true.
+
 body_7251(7237,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
 body_7125(7111,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
 body_7274(7273,multi):-body_1275(1272,multi).

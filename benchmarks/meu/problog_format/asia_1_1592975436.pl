@@ -46,7 +46,7 @@ body_105(104,tub):-body_23(22,tub).
 body_96(94,xray):-\+either.
 body_129(128,bronc):-body_51(49,bronc).
 body_15(13,lung):-\+smoke.
-true.
+
 body_51(49,bronc):-\+smoke.
 lung:-algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 body_141(136,dysp):-\+either,\+bronc.

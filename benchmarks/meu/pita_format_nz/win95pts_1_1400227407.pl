@@ -2452,7 +2452,7 @@ body_6564(6547,pC2PRT) :- \+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netO
 body_9476(9475,pC2PRT) :- body_6472(6455,pC2PRT).
 body_6300(6283,pC2PRT) :- \+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
 body_6448(6432,pC2PRT) :- dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
-true.
+
 body_6220(6204,pC2PRT) :- \+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
 body_6540(6524,pC2PRT) :- dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
 body_6494(6479,pC2PRT) :- dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").

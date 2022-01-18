@@ -42,7 +42,7 @@ body_153(152,xray) :- body_96(94,xray).
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).
 body_106(103,dysp) :- either,bronc.
 body_186(185,dysp) :- body_141(136,dysp).
-true.
+
 body_78(73,either) :- \+tub,\+lung.
 body_96(94,xray) :- \+either.
 body_170(169,dysp) :- body_118(114,dysp).

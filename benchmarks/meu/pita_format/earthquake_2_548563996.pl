@@ -59,7 +59,7 @@ body_7(4,alarm) :- earthquake,burglary.
 util_node(0) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_493(492,johnCalls) :- body_78(76,johnCalls).
 util_node(4) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 util_node(3) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_493(492,johnCalls).
 body_437(436,alarm) :- body_7(4,alarm).

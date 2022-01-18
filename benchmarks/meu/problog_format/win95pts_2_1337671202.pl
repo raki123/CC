@@ -678,7 +678,7 @@ prtData:-algebraic_atom(451,0,0,set(none),prtData,"0.5"),body_17758(17757,prtDat
 prtData:-algebraic_atom(457,0,0,set(none),prtData,"0.5"),body_17806(17805,prtData).
 netPrint("No__Local_printer_"):-algebraic_atom(467,0,0,set(none),netPrint("No__Local_printer_"),"0.8"),body_17912(17911,netPrint("No__Local_printer_")).
 body_3454(3449,grbldOtpt):-ntGrbld,lclGrbld,netPrint("No__Local_printer_").
-true.
+
 body_3515(3509,grbldOtpt):-ntGrbld,\+lclGrbld,netPrint("Yes__Network_printer_").
 algebraic_atom(126,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0"):-algebraic_atom(126,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0").
 body_3617(3613,grbldPS):-avlblVrtlMmry("Adequate____1Mb_"),\+grbldOtpt.

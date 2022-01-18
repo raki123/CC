@@ -769,7 +769,7 @@ algebraic_atom(26,1,1,set(none),jnk("2"),"0.2457531"):-algebraic_atom(26,1,0,set
 mek("3"):-algebraic_atom(62,2,0,set(none),mek("3"),"0.0"),\+algebraic_atom(62,1,1,set(none),mek("2"),"0.002217295"),body_1640(1639,multi).
 algebraic_atom(72,2,1,set(none),erk("3"),"0.1903448"):-algebraic_atom(72,2,0,set(none),erk("3"),"0.1903448").
 erk("2"):-algebraic_atom(74,1,0,set(none),erk("2"),"0.483871"),\+algebraic_atom(74,0,0,set(none),erk("1"),"0.3870968"),body_1855(1854,multi).
-true.
+
 pIP2("3"):-algebraic_atom(41,2,0,set(none),pIP2("3"),"0.007503411"),\+algebraic_atom(41,1,1,set(none),pIP2("2"),"0.12005457"),body_1264(1263,multi).
 body_1(0,multi).
 jnk("2"):-algebraic_atom(26,1,0,set(none),jnk("2"),"0.2457531"),\+algebraic_atom(26,0,0,set(none),jnk("1"),"0.2899207"),body_993(992,multi).

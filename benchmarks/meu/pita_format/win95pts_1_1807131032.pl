@@ -1470,7 +1470,7 @@ problem6 :- algebraic_atom(245,0,0,set(none),problem6,"0.0"),body_8880(8879,prob
 algebraic_atom(242,1,1,set(none),problem2("Too_Long"),"1.0") :- algebraic_atom(242,1,0,set(none),problem2("Too_Long"),"1.0").
 problem6 :- algebraic_atom(246,0,0,set(none),problem6,"0.0"),body_8888(8887,problem6).
 pC2PRT :- algebraic_atom(251,0,0,set(none),pC2PRT,"0.0"),body_8928(8927,pC2PRT).
-true.
+
 body_1659(1651,ntGrbld) :- ntwrkCnfg("Incorrect"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
 body_2952(2945,lclGrbld) :- cblPrtHrdwrOK("Not_Operational"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Correct").
 body_7514(7513,ntGrbld) :- body_1659(1651,ntGrbld).

@@ -59,7 +59,7 @@ dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_186(185,dysp).
 body_170(169,dysp) :- body_118(114,dysp).
 body_41(40,bronc) :- smoke.
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).
-true.
+
 either :- tub,\+lung.
 either :- algebraic_atom(13,0,0,set(none),either,"0.0"),body_198(197,either).
 body_97(96,lung) :- body_15(13,lung).

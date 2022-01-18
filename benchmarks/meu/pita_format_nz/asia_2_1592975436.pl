@@ -66,7 +66,7 @@ body_724(723,xray) :- body_86(85,xray).
 body_716(715,either) :- body_78(73,either).
 util_node(4) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 util_node(0) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
-true.
+
 either :- tub,lung.
 dysp :- algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_740(739,dysp).
 body_676(675,lung) :- body_15(13,lung).

@@ -623,7 +623,7 @@ body_654(653,multi) :- body_126(125,multi).
 body_1082(1079,multi) :- lungParench("Normal"),cardiacMixing("Mild").
 algebraic_atom(111,2,1,set(none),lowerBodyO2("12+"),"0.05") :- algebraic_atom(111,2,0,set(none),lowerBodyO2("12+"),"0.05").
 body_1142(1139,multi) :- lungParench("Normal"),cardiacMixing("Complete").
-true.
+
 body_870(869,multi) :- body_345(344,multi).
 body_1601(1600,multi) :- body_1142(1139,multi).
 body_824(823,multi) :- body_299(298,multi).

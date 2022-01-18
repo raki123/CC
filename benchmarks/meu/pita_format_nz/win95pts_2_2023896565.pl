@@ -2184,7 +2184,7 @@ prtData :- algebraic_atom(417,0,0,set(none),prtData,"0.5"),body_17475(17474,prtD
 prtData :- algebraic_atom(413,0,0,set(none),prtData,"0.5"),body_17443(17442,prtData).
 prtIcon("Grayed_Out") :- algebraic_atom(62,1,0,set(none),prtIcon("Grayed_Out"),"0.5"),\+algebraic_atom(62,0,0,set(none),prtIcon("Normal"),"0.5"),body_14410(14409,multi).
 algebraic_atom(63,1,1,set(none),prntPrcssTm("Too_Long"),"0.00999999") :- algebraic_atom(63,1,0,set(none),prntPrcssTm("Too_Long"),"0.00999999").
-true.
+
 body_13871(13870,nnPSGrphc) :- body_434(429,nnPSGrphc).
 body_470(465,nnPSGrphc) :- ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
 prtData :- algebraic_atom(412,0,0,set(none),prtData,"0.5"),body_17435(17434,prtData).

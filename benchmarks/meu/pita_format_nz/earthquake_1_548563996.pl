@@ -32,7 +32,7 @@ body_64(63,alarm) :- body_30(26,alarm).
 body_97(96,johnCalls) :- body_68(67,johnCalls).
 body_56(55,alarm) :- body_19(15,alarm).
 maryCalls :- algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_80(79,maryCalls).
-true.
+
 body_68(67,johnCalls) :- alarm.
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_106(105,johnCalls).
 body_72(71,alarm) :- body_42(37,alarm).

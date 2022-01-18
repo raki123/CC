@@ -977,7 +977,7 @@ body_1631(1628,multi) :- pKA("3"),mek("3").
 body_4289(4288,multi) :- body_1772(1769,multi).
 body_2975(2974,multi) :- body_252(249,multi).
 algebraic_atom(22,2,1,set(none),raf("3"),"0.0") :- algebraic_atom(22,1,1,set(none),raf("2"),"0.1156187").
-true.
+
 raf("1") :- algebraic_atom(25,0,0,set(none),raf("1"),"0.8461538"),body_3191(3190,multi).
 body_3191(3190,multi) :- body_493(490,multi).
 algebraic_atom(23,1,1,set(none),raf("2"),"0.1271028") :- algebraic_atom(23,0,0,set(none),raf("1"),"0.84299065").

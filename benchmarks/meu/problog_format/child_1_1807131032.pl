@@ -864,7 +864,7 @@ body_322(321,multi):-disease("TAPVD").
 body_2334(2333,multi):-body_1930(1929,multi).
 body_2052(2051,multi):-body_1639(1636,multi).
 body_1911(1910,multi):-hypoxiaInO2("Mild").
-true.
+
 algebraic_atom(37,2,1,set(none),ductFlow("Rt_to_Lt"),"0.4"):-algebraic_atom(37,1,1,set(none),ductFlow("None"),"0.4").
 body_779(778,multi):-body_253(252,multi).
 algebraic_atom(35,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0"):-algebraic_atom(35,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").

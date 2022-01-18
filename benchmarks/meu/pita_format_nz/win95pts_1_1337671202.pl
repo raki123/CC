@@ -1201,7 +1201,7 @@ body_10317(10316,prtData) :- body_8697(8682,prtData).
 algebraic_atom(202,1,1,set(none),ntSpd("Slow"),"0.5") :- algebraic_atom(202,1,0,set(none),ntSpd("Slow"),"0.5").
 pC2PRT :- algebraic_atom(320,0,0,set(none),pC2PRT,"0.0"),body_9476(9475,pC2PRT).
 body_8741(8726,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
-true.
+
 problem2("Too_Long") :- algebraic_atom(235,1,0,set(none),problem2("Too_Long"),"0.0"),\+algebraic_atom(235,0,0,set(none),problem2("OK"),"1.0"),body_8760(8759,multi).
 algebraic_atom(237,1,1,set(none),problem2("Too_Long"),"1.0") :- algebraic_atom(237,0,0,set(none),problem2("OK"),"0.0").
 problem2("Too_Long") :- algebraic_atom(236,1,0,set(none),problem2("Too_Long"),"0.0"),\+algebraic_atom(236,0,0,set(none),problem2("OK"),"1.0"),body_8774(8773,multi).

@@ -58,7 +58,7 @@ util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(0):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,johnCalls.

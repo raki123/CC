@@ -646,7 +646,7 @@ body_482(477,pSGRAPHIC) :- ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttn
 body_2078(2075,multi) :- avlblVrtlMmry("Adequate____1Mb_"),prtPScript.
 body_14456(14455,multi) :- body_1260(1257,multi).
 body_13916(13915,pSGRAPHIC) :- body_537(532,pSGRAPHIC).
-true.
+
 body_14490(14489,cmpltPgPrntd) :- body_1305(1300,cmpltPgPrntd).
 body_13932(13931,pSGRAPHIC) :- body_561(556,pSGRAPHIC).
 body_1365(1360,cmpltPgPrntd) :- prntngArOK("Correct"),pgOrnttnOK("Incorrect"),prtMem("Less_than_2Mb").

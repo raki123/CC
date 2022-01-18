@@ -664,7 +664,7 @@ algebraic_atom(45,2,1,set(none),age("11-30_days"),"0.5"):-algebraic_atom(45,2,0,
 algebraic_atom(51,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(51,2,0,set(none),age("11-30_days"),"0.05").
 algebraic_atom(97,4,1,set(none),xrayReport("Asy/Patchy"),"0.2"):-algebraic_atom(97,4,0,set(none),xrayReport("Asy/Patchy"),"0.2").
 lowerBodyO2("<5"):-algebraic_atom(110,0,0,set(none),lowerBodyO2("<5"),"0.4"),body_6090(6089,multi).
-true.
+
 algebraic_atom(45,2,1,set(none),age("11-30_days"),"0.5"):-algebraic_atom(45,1,1,set(none),age("4-10_days"),"0.25").
 algebraic_atom(105,1,1,set(none),rUQO2("5-12"),"0.6"):-algebraic_atom(105,1,0,set(none),rUQO2("5-12"),"0.6").
 xrayReport("Grd_Glass"):-algebraic_atom(97,3,0,set(none),xrayReport("Grd_Glass"),"0.6"),\+algebraic_atom(97,2,1,set(none),xrayReport("Plethoric"),"0.1"),body_5871(5870,multi).

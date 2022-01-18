@@ -1019,7 +1019,7 @@ mek("1") :- algebraic_atom(50,0,0,set(none),mek("1"),"0.8571429"),body_3641(3640
 body_1591(1588,multi) :- pKA("1"),mek("3").
 mek("3") :- algebraic_atom(47,2,0,set(none),mek("3"),"0.0"),\+algebraic_atom(47,1,1,set(none),mek("2"),"0.2931034"),body_3587(3586,multi).
 mek("1") :- algebraic_atom(56,0,0,set(none),mek("1"),"0.714826"),body_3749(3748,multi).
-true.
+
 body_755(752,multi) :- plcg("1"),pIP3("2").
 body_795(792,multi) :- plcg("3"),pIP3("2").
 akt("3") :- algebraic_atom(88,2,0,set(none),akt("3"),"0.0"),\+algebraic_atom(88,1,1,set(none),akt("2"),"0.8297872"),body_4325(4324,multi).

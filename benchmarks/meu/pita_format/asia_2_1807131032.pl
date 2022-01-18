@@ -64,7 +64,7 @@ lung :- algebraic_atom(1,0,0,set(none),lung,"0.01"),body_682(681,lung).
 either :- tub,\+lung.
 util_node(2) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_738(737,xray) :- body_96(94,xray).
-true.
+
 util_node(1) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_706(705,bronc).
 util_node(2) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.

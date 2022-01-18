@@ -1384,7 +1384,7 @@ problem2("Too_Long") :- algebraic_atom(239,1,0,set(none),problem2("Too_Long"),"0
 algebraic_atom(241,1,1,set(none),problem2("Too_Long"),"0.0") :- algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0").
 rEPEAT("Yes__Always_the_Same_") :- algebraic_atom(68,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5"),body_7274(7273,multi).
 problem6 :- algebraic_atom(246,0,0,set(none),problem6,"0.0"),body_8888(8887,problem6).
-true.
+
 algebraic_atom(65,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.0") :- algebraic_atom(65,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.0").
 problem2("OK") :- algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0"),body_8838(8837,multi).
 problem6 :- algebraic_atom(244,0,0,set(none),problem6,"0.0"),body_8872(8871,problem6).

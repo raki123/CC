@@ -30,7 +30,7 @@ body_97(96,lung) :- body_15(13,lung).
 bronc :- algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_129(128,bronc).
 tub :- algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).
 body_121(120,bronc) :- body_41(40,bronc).
-true.
+
 lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_89(88,lung).
 body_41(40,bronc) :- smoke.
 body_186(185,dysp) :- body_141(136,dysp).

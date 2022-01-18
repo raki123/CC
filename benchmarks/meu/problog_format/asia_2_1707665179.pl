@@ -102,4 +102,4 @@ body_775(774,lung):-dec_2.
 body_86(85,xray):-either.
 util_node(0):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 tub:-algebraic_atom(3,0,0,set(none),tub,"0.01"),body_691(690,tub).
-true.
+

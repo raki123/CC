@@ -411,7 +411,7 @@ body_1747(1746,multi) :- body_1406(1401,multi).
 body_2158(2157,mek("1")) :- dec_3.
 erk("3") :- algebraic_atom(79,2,0,set(none),erk("3"),"1.0"),\+algebraic_atom(79,1,1,set(none),erk("2"),"0.0"),body_1945(1944,multi).
 body_94(93,multi) :- pKC("1").
-true.
+
 algebraic_atom(32,1,1,set(none),jnk("2"),"0.003738318") :- algebraic_atom(32,1,0,set(none),jnk("2"),"0.003738318").
 body_131(130,multi) :- pKC("3").
 algebraic_atom(31,1,1,set(none),jnk("2"),"0.93509128") :- algebraic_atom(31,1,0,set(none),jnk("2"),"0.93509128").

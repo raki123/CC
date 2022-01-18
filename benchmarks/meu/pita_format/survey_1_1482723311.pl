@@ -132,7 +132,7 @@ e("high") :- algebraic_atom(4,0,0,set(none),e("high"),"0.7"),body_143(142,multi)
 algebraic_atom(2,1,1,set(none),e("uni"),"0.36") :- algebraic_atom(2,1,0,set(none),e("uni"),"0.36").
 r("small") :- algebraic_atom(17,0,0,set(none),r("small"),"0.25"),body_328(327,r("small")).
 body_52(49,multi) :- s("F"),a("young").
-true.
+
 body_1(0,multi).
 algebraic_atom(0,1,1,set(none),a("adult"),"0.5") :- algebraic_atom(0,1,0,set(none),a("adult"),"0.5").
 algebraic_atom(12,1,1,set(none),t("train"),"0.24") :- algebraic_atom(12,1,0,set(none),t("train"),"0.24").

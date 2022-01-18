@@ -66,7 +66,7 @@ dysp :- algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_170(169,dysp).
 body_218(217,bronc) :- dec_4.
 body_153(152,xray) :- body_96(94,xray).
 body_23(22,tub) :- asia.
-true.
+
 body_96(94,xray) :- \+either.
 lung :- algebraic_atom(13,0,0,set(none),lung,"0.01"),body_198(197,lung).
 body_15(13,lung) :- \+smoke.

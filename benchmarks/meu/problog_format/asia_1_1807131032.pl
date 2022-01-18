@@ -30,7 +30,7 @@ body_105(104,tub):-body_23(22,tub).
 body_86(85,xray):-either.
 dysp:-algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_170(169,dysp).
 body_33(31,tub):-\+asia.
-true.
+
 body_118(114,dysp):-\+either,bronc.
 tub:-algebraic_atom(13,0,0,set(none),tub,"0.01"),body_198(197,tub).
 tub:-algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).

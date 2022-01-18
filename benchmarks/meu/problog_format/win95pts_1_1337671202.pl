@@ -2311,7 +2311,7 @@ body_7519(7506,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt
 body_9877(9876,prtData):-body_7539(7526,prtData).
 body_7579(7566,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
 body_7539(7526,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
-true.
+
 body_9869(9868,prtData):-body_7519(7506,prtData).
 body_9861(9860,prtData):-body_7499(7486,prtData).
 body_9837(9836,prtData):-body_7439(7426,prtData).

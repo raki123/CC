@@ -969,7 +969,7 @@ body_8826(8825,multi) :- body_3982(3977,multi).
 body_6695(6678,pC2PRT) :- \+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
 body_3965(3960,multi) :- ntSpd("OK"),deskPrntSpd("OK"),netPrint("Yes__Network_printer_").
 nnPSGrphc :- algebraic_atom(4,0,0,set(none),nnPSGrphc,"0.25"),body_6655(6654,nnPSGrphc).
-true.
+
 body_9629(9628,prtData) :- body_6903(6890,prtData).
 pSGRAPHIC :- algebraic_atom(11,0,0,set(none),pSGRAPHIC,"0.25"),body_6710(6709,pSGRAPHIC).
 body_6923(6910,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.

@@ -1685,7 +1685,7 @@ gDIOUT :- algebraic_atom(226,0,0,set(none),gDIOUT,"0.5"),body_15933(15932,gDIOUT
 gDIOUT :- algebraic_atom(223,0,0,set(none),gDIOUT,"0.1"),body_15909(15908,gDIOUT).
 gDIOUT :- algebraic_atom(224,0,0,set(none),gDIOUT,"0.5"),body_15917(15916,gDIOUT).
 gDIIN :- algebraic_atom(211,0,0,set(none),gDIIN,"0.0"),body_15813(15812,gDIIN).
-true.
+
 gDIOUT :- algebraic_atom(227,0,0,set(none),gDIOUT,"0.1"),body_15941(15940,gDIOUT).
 grbldOtpt :- algebraic_atom(210,0,0,set(none),grbldOtpt,"0.0"),body_15805(15804,grbldOtpt).
 gDIIN :- algebraic_atom(214,0,0,set(none),gDIIN,"0.0"),body_15837(15836,gDIIN).

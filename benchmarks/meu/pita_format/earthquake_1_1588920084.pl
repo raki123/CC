@@ -42,5 +42,5 @@ body_118(117,maryCalls) :- dec_2.
 body_48(47,alarm) :- body_7(4,alarm).
 alarm :- algebraic_atom(3,0,0,set(none),alarm,"0.001"),body_72(71,alarm).
 body_19(15,alarm) :- \+earthquake,burglary.
-true.
+
 :- end_lpad.

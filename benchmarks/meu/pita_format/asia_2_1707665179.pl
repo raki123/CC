@@ -82,7 +82,7 @@ util_node(2) :- \+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 either :- tub,\+lung.
 either :- \+tub,lung.
 body_33(31,tub) :- \+asia.
-true.
+
 body_755(754,dysp) :- body_129(125,dysp).
 bronc :- algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_707(706,bronc).
 dysp :- algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_747(746,dysp).

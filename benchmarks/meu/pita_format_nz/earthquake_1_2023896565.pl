@@ -32,7 +32,7 @@ body_56(55,alarm) :- body_19(15,alarm).
 body_7(4,alarm) :- earthquake,burglary.
 body_138(137,maryCalls) :- dec_4.
 body_97(96,johnCalls) :- body_68(67,johnCalls).
-true.
+
 body_80(79,maryCalls) :- body_50(49,maryCalls).
 alarm :- algebraic_atom(9,0,0,set(none),alarm,"0.29"),body_128(127,alarm).
 body_89(88,maryCalls) :- body_60(58,maryCalls).

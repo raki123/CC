@@ -746,7 +746,7 @@ body_4410(4409,lVH) :- body_205(204,lVH).
 algebraic_atom(67,2,1,set(none),hypoxiaInO2("Severe"),"0.2") :- algebraic_atom(67,1,1,set(none),hypoxiaInO2("Moderate"),"0.7").
 body_213(212,lVH) :- disease("TAPVD").
 lVH :- algebraic_atom(9,0,0,set(none),lVH,"0.1"),body_4394(4393,lVH).
-true.
+
 lVH :- algebraic_atom(13,0,0,set(none),lVH,"0.1"),body_4426(4425,lVH).
 body_4418(4417,lVH) :- body_213(212,lVH).
 lungParench("Congested") :- algebraic_atom(7,1,0,set(none),lungParench("Congested"),"0.25"),\+algebraic_atom(7,0,0,set(none),lungParench("Normal"),"0.03"),body_4368(4367,multi).

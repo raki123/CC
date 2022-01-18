@@ -680,7 +680,7 @@ algebraic_atom(61,1,1,set(none),prtIcon("Grayed_Out"),"0.75"):-algebraic_atom(61
 prtIcon("Normal"):-algebraic_atom(61,0,0,set(none),prtIcon("Normal"),"0.25"),body_14397(14396,multi).
 algebraic_atom(61,1,1,set(none),prtIcon("Grayed_Out"),"0.75"):-algebraic_atom(61,0,0,set(none),prtIcon("Normal"),"0.25").
 algebraic_atom(60,1,1,set(none),prtIcon("Grayed_Out"),"0.3"):-algebraic_atom(60,0,0,set(none),prtIcon("Normal"),"0.7").
-true.
+
 body_1353(1348,cmpltPgPrntd):-prntngArOK("Incorrect"),pgOrnttnOK("Correct"),prtMem("Less_than_2Mb").
 body_16018(16017,multi):-body_3948(3943,multi).
 prtData:-algebraic_atom(384,0,0,set(none),prtData,"0.5"),body_17211(17210,prtData).

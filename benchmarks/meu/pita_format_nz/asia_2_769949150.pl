@@ -25,7 +25,7 @@ utility(util_node(3), 10).
 utility(util_node(4), 19).
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_660(659,tub).
 body_716(715,dysp) :- body_106(103,dysp).
-true.
+
 body_78(73,either) :- \+tub,\+lung.
 util_node(1) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,asia,\+either.
 body_752(751,xray) :- dec_2.

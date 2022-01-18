@@ -2283,7 +2283,7 @@ body_14488(14487,multi) :- body_1275(1272,multi).
 body_16939(16938,prtData) :- body_7125(7111,prtData).
 body_7125(7111,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
 body_7063(7050,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
-true.
+
 body_16915(16914,prtData) :- body_7063(7050,prtData).
 body_6883(6870,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
 body_6903(6890,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.

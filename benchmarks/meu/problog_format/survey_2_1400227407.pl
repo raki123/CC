@@ -174,7 +174,7 @@ algebraic_atom(0,2,1,set(none),a("old"),"0.2"):-algebraic_atom(0,2,0,set(none),a
 body_82(79,multi):-s("F"),a("adult").
 body_181(178,multi):-r("small"),o("emp").
 e("high"):-algebraic_atom(3,0,0,set(none),e("high"),"0.72"),body_1043(1042,multi).
-true.
+
 algebraic_atom(1,1,1,set(none),e("uni"),"0.25"):-algebraic_atom(1,0,0,set(none),e("high"),"0.75").
 body_1165(1164,multi):-body_202(199,multi).
 util_node(2):-a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),\+r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),r("small").

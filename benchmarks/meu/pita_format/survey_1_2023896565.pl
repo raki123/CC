@@ -156,7 +156,7 @@ r("small") :- algebraic_atom(9,0,0,set(none),r("small"),"0.25"),body_208(207,mul
 t("train") :- algebraic_atom(14,1,0,set(none),t("train"),"0.21"),\+algebraic_atom(14,0,0,set(none),t("car"),"0.7"),body_289(288,multi).
 t("other") :- algebraic_atom(20,0,0,set(none),t("other"),"0.1"),body_358(357,t("other")).
 r("big") :- algebraic_atom(10,1,0,set(none),r("big"),"0.8"),\+algebraic_atom(10,0,0,set(none),r("small"),"0.2"),body_221(220,multi).
-true.
+
 body_156(155,multi) :- body_97(94,multi).
 t("car") :- algebraic_atom(11,0,0,set(none),t("car"),"0.48"),body_234(233,multi).
 t("other") :- algebraic_atom(14,2,0,set(none),t("other"),"0.09"),\+algebraic_atom(14,1,1,set(none),t("train"),"0.21"),body_289(288,multi).

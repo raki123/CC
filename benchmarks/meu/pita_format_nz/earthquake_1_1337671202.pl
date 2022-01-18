@@ -38,7 +38,7 @@ body_106(105,johnCalls) :- body_78(76,johnCalls).
 alarm :- algebraic_atom(2,0,0,set(none),alarm,"0.29"),body_64(63,alarm).
 body_68(67,johnCalls) :- alarm.
 body_19(15,alarm) :- \+earthquake,burglary.
-true.
+
 maryCalls :- algebraic_atom(5,0,0,set(none),maryCalls,"0.01"),body_89(88,maryCalls).
 body_89(88,maryCalls) :- body_60(58,maryCalls).
 :- end_lpad.

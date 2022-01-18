@@ -73,7 +73,7 @@ body_15(13,lung):-\+smoke.
 util_node(1):-smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
 body_96(94,xray):-\+either.
 lung:-algebraic_atom(0,0,0,set(none),lung,"0.1"),body_665(664,lung).
-true.
+
 util_node(1):-smoke,\+xray,\+lung,bronc,\+dysp,\+tub,\+asia,\+either.
 either:-tub,lung.
 util_node(1):-\+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.

@@ -1273,7 +1273,7 @@ body_2302(2301,multi) :- body_1898(1897,multi).
 grunting :- algebraic_atom(55,0,0,set(none),grunting,"0.2"),body_1445(1444,grunting).
 ductFlow("None") :- algebraic_atom(32,1,0,set(none),ductFlow("None"),"0.05"),\+algebraic_atom(32,0,0,set(none),ductFlow("Lt_to_Rt"),"0.15"),body_1049(1048,multi).
 algebraic_atom(61,1,1,set(none),hypoxiaInO2("Moderate"),"0.05") :- algebraic_atom(61,1,0,set(none),hypoxiaInO2("Moderate"),"0.05").
-true.
+
 body_1885(1884,multi) :- cO2("Low").
 algebraic_atom(18,2,1,set(none),cardiacMixing("Complete"),"0.95") :- algebraic_atom(18,1,1,set(none),cardiacMixing("Mild"),"0.03").
 body_1898(1897,multi) :- cO2("High").

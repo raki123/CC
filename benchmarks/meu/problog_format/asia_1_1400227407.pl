@@ -47,7 +47,7 @@ lung:-algebraic_atom(0,0,0,set(none),lung,"0.1"),body_89(88,lung).
 dysp:-algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_170(169,dysp).
 either:-\+tub,lung.
 tub:-algebraic_atom(2,0,0,set(none),tub,"0.05"),body_105(104,tub).
-true.
+
 body_106(103,dysp):-either,bronc.
 dysp:-algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_186(185,dysp).
 body_105(104,tub):-body_23(22,tub).

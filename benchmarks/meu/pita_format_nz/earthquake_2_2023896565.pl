@@ -40,7 +40,7 @@ body_474(473,maryCalls) :- body_60(58,maryCalls).
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_490(489,johnCalls).
 body_50(49,maryCalls) :- alarm.
 body_450(449,alarm) :- body_30(26,alarm).
-true.
+
 body_466(465,maryCalls) :- body_50(49,maryCalls).
 util_node(1) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 maryCalls :- algebraic_atom(5,0,0,set(none),maryCalls,"0.01"),body_474(473,maryCalls).

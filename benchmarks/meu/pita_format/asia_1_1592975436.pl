@@ -25,7 +25,7 @@ utility(bronc, -48).
 utility(asia, 25).
 utility(smoke, -2).
 utility(either, -29).
-true.
+
 body_198(197,bronc) :- dec_2.
 body_5(4,lung) :- smoke.
 body_178(177,dysp) :- body_129(125,dysp).

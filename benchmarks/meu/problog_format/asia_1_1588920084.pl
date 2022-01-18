@@ -62,7 +62,7 @@ either:-\+tub,lung.
 body_86(85,xray):-either.
 body_208(207,dysp):-dec_3.
 bronc:-algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_129(128,bronc).
-true.
+
 body_129(125,dysp):-either,\+bronc.
 bronc:-algebraic_atom(13,0,0,set(none),bronc,"0.6"),body_198(197,bronc).
 dysp:-algebraic_atom(14,0,0,set(none),dysp,"0.9"),body_208(207,dysp).

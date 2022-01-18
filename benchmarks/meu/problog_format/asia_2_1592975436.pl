@@ -44,7 +44,7 @@ body_668(667,lung):-body_5(4,lung).
 body_23(22,tub):-asia.
 body_776(775,xray):-dec_2.
 body_756(755,dysp):-body_129(125,dysp).
-true.
+
 body_724(723,xray):-body_86(85,xray).
 body_764(763,dysp):-body_141(136,dysp).
 util_node(2):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.

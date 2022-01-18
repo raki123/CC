@@ -834,7 +834,7 @@ body_1329(1324,cmpltPgPrntd):-prntngArOK("Incorrect"),pgOrnttnOK("Incorrect"),pr
 body_1292(1287,cmpltPgPrntd):-prntngArOK("Correct"),pgOrnttnOK("Correct"),prtMem("Greater_than_2_Mb").
 body_15969(15968,multi):-body_3896(3891,multi).
 body_3965(3960,multi):-ntSpd("OK"),deskPrntSpd("OK"),netPrint("Yes__Network_printer_").
-true.
+
 body_3931(3926,multi):-ntSpd("OK"),deskPrntSpd("Too_Slow"),netPrint("No__Local_printer_").
 body_16047(16046,multi):-body_3999(3994,multi).
 body_16060(16059,multi):-body_4016(4011,multi).

@@ -81,7 +81,7 @@ t("train") :- algebraic_atom(13,1,0,set(none),t("train"),"0.36"),\+algebraic_ato
 t("train") :- algebraic_atom(19,0,0,set(none),t("train"),"0.24"),body_348(347,t("train")).
 algebraic_atom(8,1,1,set(none),o("self"),"0.08") :- algebraic_atom(8,0,0,set(none),o("emp"),"0.92").
 body_309(308,s("M")) :- dec_0.
-true.
+
 e("high") :- algebraic_atom(6,0,0,set(none),e("high"),"0.9"),body_169(168,multi).
 algebraic_atom(10,1,1,set(none),r("big"),"0.8") :- algebraic_atom(10,1,0,set(none),r("big"),"0.8").
 t("car") :- algebraic_atom(11,0,0,set(none),t("car"),"0.48"),body_234(233,multi).

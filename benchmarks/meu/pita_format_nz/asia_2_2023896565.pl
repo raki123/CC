@@ -91,6 +91,6 @@ util_node(1) :- smoke,\+xray,\+lung,bronc,\+dysp,\+tub,\+asia,\+either.
 body_129(125,dysp) :- either,\+bronc.
 xray :- algebraic_atom(8,0,0,set(none),xray,"0.05"),body_731(730,xray).
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_683(682,tub).
-true.
+
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_763(762,dysp).
 :- end_lpad.

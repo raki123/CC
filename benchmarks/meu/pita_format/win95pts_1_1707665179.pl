@@ -1178,7 +1178,7 @@ deskPrntSpd("Too_Slow") :- algebraic_atom(134,1,0,set(none),deskPrntSpd("Too_Slo
 algebraic_atom(133,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5") :- algebraic_atom(133,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
 algebraic_atom(139,1,1,set(none),pSERRMEM("Low_Memory"),"0.0") :- algebraic_atom(139,0,0,set(none),pSERRMEM("No_Error"),"1.0").
 prtData :- algebraic_atom(386,0,0,set(none),prtData,"0.5"),body_10005(10004,prtData).
-true.
+
 prtData :- algebraic_atom(382,0,0,set(none),prtData,"0.5"),body_9973(9972,prtData).
 algebraic_atom(131,1,1,set(none),deskPrntSpd("Too_Slow"),"0.75") :- algebraic_atom(131,1,0,set(none),deskPrntSpd("Too_Slow"),"0.75").
 algebraic_atom(139,1,1,set(none),pSERRMEM("Low_Memory"),"0.0") :- algebraic_atom(139,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").

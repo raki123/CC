@@ -621,7 +621,7 @@ body_1737(1736,multi):-body_1293(1290,multi).
 age("11-30_days"):-algebraic_atom(43,2,0,set(none),age("11-30_days"),"0.1"),\+algebraic_atom(43,1,1,set(none),age("4-10_days"),"0.2"),body_1229(1228,multi).
 algebraic_atom(101,1,1,set(none),cO2Report(">=7.5"),"0.1"):-algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9").
 algebraic_atom(103,1,1,set(none),cO2Report(">=7.5"),"0.9"):-algebraic_atom(103,1,0,set(none),cO2Report(">=7.5"),"0.9").
-true.
+
 hypDistrib("Equal"):-algebraic_atom(90,0,0,set(none),hypDistrib("Equal"),"0.05"),body_2065(2064,multi).
 algebraic_atom(89,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(89,1,0,set(none),hypDistrib("Unequal"),"0.05").
 algebraic_atom(87,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(87,0,0,set(none),hypDistrib("Equal"),"0.95").

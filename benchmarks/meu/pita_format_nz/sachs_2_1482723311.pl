@@ -679,7 +679,7 @@ body_3011(3010,multi) :- body_292(289,multi).
 algebraic_atom(81,1,1,set(none),akt("2"),"0.3795181") :- algebraic_atom(81,1,0,set(none),akt("2"),"0.3795181").
 body_373(370,multi) :- pKC("3"),pKA("1").
 algebraic_atom(81,1,1,set(none),akt("2"),"0.3795181") :- algebraic_atom(81,0,0,set(none),akt("1"),"0.6204819").
-true.
+
 body_4385(4384,mek("3")) :- dec_4.
 body_3029(3028,multi) :- body_312(309,multi).
 algebraic_atom(80,2,1,set(none),akt("3"),"0.0") :- algebraic_atom(80,2,0,set(none),akt("3"),"0.0").

@@ -830,7 +830,7 @@ algebraic_atom(68,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5") :- alg
 nnPSGrphc :- algebraic_atom(2,0,0,set(none),nnPSGrphc,"0.1"),body_6640(6639,nnPSGrphc).
 incmpltPS :- avlblVrtlMmry("Adequate____1Mb_"),cmpltPgPrntd.
 body_8350(8349,incmpltPS) :- body_3171(3168,incmpltPS).
-true.
+
 algebraic_atom(66,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5") :- algebraic_atom(66,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5").
 algebraic_atom(15,1,1,set(none),prtStatToner("Low__None"),"0.00099999") :- algebraic_atom(15,1,0,set(none),prtStatToner("Low__None"),"0.00099999").
 body_1305(1300,cmpltPgPrntd) :- prntngArOK("Incorrect"),pgOrnttnOK("Correct"),prtMem("Greater_than_2_Mb").

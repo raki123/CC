@@ -771,7 +771,7 @@ utility(gDIOUT, -33).
 utility(\+gDIOUT, -46).
 utility(appOK("Incorrect_Corrupt"), 36).
 utility(\+appOK("Incorrect_Corrupt"), 13).
-true.
+
 algebraic_atom(123,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.00099999"):-algebraic_atom(123,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.00099999").
 tstpsTxt("x_1_Mb_Available_VM"):-algebraic_atom(124,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.00099999"),body_7752(7751,multi).
 algebraic_atom(124,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.99900001"):-algebraic_atom(124,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.00099999").

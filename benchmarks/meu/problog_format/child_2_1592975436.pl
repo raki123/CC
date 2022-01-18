@@ -1329,7 +1329,7 @@ body_581(580,multi):-disease("PAIVS").
 body_4619(4618,sick):-body_409(408,sick).
 body_189(188,lVH):-disease("TGA").
 algebraic_atom(17,1,1,set(none),cardiacMixing("Mild"),"0.02"):-algebraic_atom(17,0,0,set(none),cardiacMixing("None"),"0.01").
-true.
+
 xrayReport("Normal"):-algebraic_atom(96,0,0,set(none),xrayReport("Normal"),"0.1"),body_5857(5856,multi).
 body_4789(4788,multi):-body_581(580,multi).
 body_377(376,sick):-disease("TGA").

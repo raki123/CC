@@ -2232,7 +2232,7 @@ ntSpd("OK") :- algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001"),body_8
 algebraic_atom(60,1,1,set(none),prtIcon("Grayed_Out"),"0.3") :- algebraic_atom(60,1,0,set(none),prtIcon("Grayed_Out"),"0.3").
 algebraic_atom(195,1,1,set(none),ntSpd("Slow"),"0.00099999") :- algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001").
 algebraic_atom(62,1,1,set(none),prtIcon("Grayed_Out"),"0.5") :- algebraic_atom(62,0,0,set(none),prtIcon("Normal"),"0.5").
-true.
+
 pC2PRT :- \+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
 pC2PRT :- dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
 pC2PRT :- dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").

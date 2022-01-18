@@ -61,7 +61,7 @@ body_289(288,multi):-body_242(239,multi).
 body_143(142,multi):-body_82(79,multi).
 e("high"):-algebraic_atom(5,0,0,set(none),e("high"),"0.88"),body_156(155,multi).
 algebraic_atom(5,1,1,set(none),e("uni"),"0.12"):-algebraic_atom(5,1,0,set(none),e("uni"),"0.12").
-true.
+
 body_222(219,multi):-r("small"),o("self").
 algebraic_atom(6,1,1,set(none),e("uni"),"0.1"):-algebraic_atom(6,0,0,set(none),e("high"),"0.9").
 body_112(109,multi):-s("F"),a("old").

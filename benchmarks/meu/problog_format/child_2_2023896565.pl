@@ -465,7 +465,7 @@ disease("Lung"):-algebraic_atom(1,5,0,set(none),disease("Lung"),"0.05102041"),\+
 lVH:-algebraic_atom(8,0,0,set(none),lVH,"0.1"),body_4396(4395,lVH).
 chestXray("Grd_Glass"):-algebraic_atom(76,3,0,set(none),chestXray("Grd_Glass"),"0.7"),\+algebraic_atom(76,2,1,set(none),chestXray("Plethoric"),"0.15"),body_5480(5479,multi).
 algebraic_atom(97,3,1,set(none),xrayReport("Grd_Glass"),"0.6"):-algebraic_atom(97,2,1,set(none),xrayReport("Plethoric"),"0.1").
-true.
+
 body_6089(6088,multi):-body_2009(2006,multi).
 algebraic_atom(76,3,1,set(none),chestXray("Grd_Glass"),"0.7"):-algebraic_atom(76,3,0,set(none),chestXray("Grd_Glass"),"0.7").
 lungParench("Normal"):-algebraic_atom(7,0,0,set(none),lungParench("Normal"),"0.03"),body_4378(4377,multi).

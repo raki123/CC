@@ -51,7 +51,7 @@ either :- tub,\+lung.
 body_33(31,tub) :- \+asia.
 body_153(152,xray) :- body_96(94,xray).
 body_129(125,dysp) :- either,\+bronc.
-true.
+
 body_106(103,dysp) :- either,bronc.
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_105(104,tub).
 body_97(96,lung) :- body_15(13,lung).

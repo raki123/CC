@@ -18,7 +18,7 @@ utility(burglary, -48).
 utility(earthquake, -38).
 utility(alarm, -8).
 utility(johnCalls, 33).
-true.
+
 body_106(105,johnCalls) :- body_78(76,johnCalls).
 body_56(55,alarm) :- body_19(15,alarm).
 body_89(88,maryCalls) :- body_60(58,maryCalls).

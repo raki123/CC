@@ -2034,7 +2034,7 @@ body_2411(2407,multi) :- avlblVrtlMmry("Inadequate____1_Mb_"),\+prtPScript.
 body_1908(1901,dS_LCLOK) :- cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Loose"),appData("Correct").
 body_8374(8373,multi) :- body_3201(3200,multi).
 pC2PRT :- algebraic_atom(307,0,0,set(none),pC2PRT,"0.0"),body_9372(9371,pC2PRT).
-true.
+
 body_7634(7633,dS_LCLOK) :- body_1894(1886,dS_LCLOK).
 body_1922(1915,dS_LCLOK) :- cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Loose"),appData("Correct").
 pC2PRT :- algebraic_atom(311,0,0,set(none),pC2PRT,"0.0"),body_9404(9403,pC2PRT).

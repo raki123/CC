@@ -35,7 +35,7 @@ body_198(197,xray) :- dec_2.
 body_105(104,tub) :- body_23(22,tub).
 body_153(152,xray) :- body_96(94,xray).
 body_186(185,dysp) :- body_141(136,dysp).
-true.
+
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_186(185,dysp).
 either :- \+tub,lung.
 body_136(135,either) :- body_78(73,either).

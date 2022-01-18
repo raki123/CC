@@ -323,7 +323,7 @@ algebraic_atom(51,2,1,set(none),mek("3"),"0.0") :- algebraic_atom(51,1,1,set(non
 body_1098(1093,multi) :- raf("2"),pKC("1"),pKA("2").
 body_1389(1388,multi) :- body_966(961,multi).
 algebraic_atom(86,1,1,set(none),akt("2"),"0.1182573") :- algebraic_atom(86,1,0,set(none),akt("2"),"0.1182573").
-true.
+
 jnk("1") :- algebraic_atom(27,0,0,set(none),jnk("1"),"0.5796178"),body_1012(1011,multi).
 algebraic_atom(25,2,1,set(none),raf("3"),"0.0") :- algebraic_atom(25,1,1,set(none),raf("2"),"0.1538462").
 algebraic_atom(88,1,1,set(none),akt("2"),"0.8297872") :- algebraic_atom(88,0,0,set(none),akt("1"),"0.1702128").

@@ -41,7 +41,7 @@ bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_692(691,bronc).
 either :- tub,\+lung.
 util_node(1) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_676(675,tub).
-true.
+
 body_684(683,tub) :- body_33(31,tub).
 lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_660(659,lung).
 body_78(73,either) :- \+tub,\+lung.

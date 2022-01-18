@@ -1261,7 +1261,7 @@ body_10870(10869,ntwrkCnfg("Correct")):-dec_20.
 body_11003(11002,prtThread("OK")):-dec_27.
 body_10841(10839,dskLocal("Less_than_2_Mb")):-\+dec_18.
 body_10813(10812,pgOrnttnOK("Correct")):-dec_17.
-true.
+
 body_10775(10774,prtCbl("Connected")):-dec_15.
 body_10794(10793,dSApplctn("DOS")):-dec_16.
 body_10784(10782,prtCbl("Loose")):-\+dec_15.

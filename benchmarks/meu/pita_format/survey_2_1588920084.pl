@@ -92,7 +92,7 @@ e("high") :- algebraic_atom(5,0,0,set(none),e("high"),"0.88"),body_1069(1068,mul
 t("car") :- algebraic_atom(13,0,0,set(none),t("car"),"0.56"),body_1183(1182,multi).
 algebraic_atom(4,1,1,set(none),e("uni"),"0.3") :- algebraic_atom(4,0,0,set(none),e("high"),"0.7").
 body_52(49,multi) :- s("F"),a("young").
-true.
+
 util_node(3) :- \+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),\+t("car"),\+e("uni"),e("high"),r("big"),a("young"),\+t("train"),\+a("old"),t("other"),\+r("small").
 body_152(151,multi) :- e("high").
 body_1069(1068,multi) :- body_97(94,multi).

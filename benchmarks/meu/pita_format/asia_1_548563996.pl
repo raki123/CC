@@ -46,7 +46,7 @@ either :- tub,\+lung.
 body_161(160,dysp) :- body_106(103,dysp).
 tub :- algebraic_atom(2,0,0,set(none),tub,"0.05"),body_105(104,tub).
 body_198(197,dysp) :- dec_2.
-true.
+
 lung :- algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 body_15(13,lung) :- \+smoke.
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).

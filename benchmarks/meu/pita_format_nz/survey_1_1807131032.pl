@@ -73,7 +73,7 @@ body_222(219,multi) :- r("small"),o("self").
 algebraic_atom(3,1,1,set(none),e("uni"),"0.28") :- algebraic_atom(3,1,0,set(none),e("uni"),"0.28").
 body_328(327,e("uni")) :- dec_1.
 algebraic_atom(0,2,1,set(none),a("old"),"0.2") :- algebraic_atom(0,2,0,set(none),a("old"),"0.2").
-true.
+
 body_125(124,multi) :- e("high").
 body_202(199,multi) :- r("big"),o("emp").
 algebraic_atom(0,2,1,set(none),a("old"),"0.2") :- algebraic_atom(0,1,1,set(none),a("adult"),"0.5").

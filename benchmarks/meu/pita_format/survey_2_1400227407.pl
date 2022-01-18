@@ -46,7 +46,7 @@ utility(util_node(1), -21).
 utility(util_node(2), 31).
 utility(util_node(3), -41).
 utility(util_node(4), -8).
-true.
+
 algebraic_atom(7,1,1,set(none),o("self"),"0.04") :- algebraic_atom(7,1,0,set(none),o("self"),"0.04").
 o("emp") :- algebraic_atom(8,0,0,set(none),o("emp"),"0.92"),body_1108(1107,multi).
 t("car") :- algebraic_atom(11,0,0,set(none),t("car"),"0.48"),body_1147(1146,multi).

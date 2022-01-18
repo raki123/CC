@@ -51,7 +51,7 @@ body_438(437,alarm):-body_19(15,alarm).
 body_30(26,alarm):-earthquake,\+burglary.
 util_node(0):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_19(15,alarm):-\+earthquake,burglary.
 body_454(453,alarm):-body_42(37,alarm).

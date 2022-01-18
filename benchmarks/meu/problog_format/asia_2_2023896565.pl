@@ -58,7 +58,7 @@ util_node(2):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(3):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(2):-smoke,xray,lung,\+bronc,\+dysp,\+tub,\+asia,either.
 body_707(706,bronc):-body_51(49,bronc).
-true.
+
 util_node(3):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_41(40,bronc):-smoke.
 either:-tub,lung.

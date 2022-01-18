@@ -1719,7 +1719,7 @@ dataFile("Incorrect_Corrupt") :- algebraic_atom(496,0,0,set(none),dataFile("Inco
 pSERRMEM("Low_Memory") :- algebraic_atom(139,1,0,set(none),pSERRMEM("Low_Memory"),"0.0"),\+algebraic_atom(139,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15151(15150,multi).
 prtCbl("Loose") :- algebraic_atom(478,0,0,set(none),prtCbl("Loose"),"0.02"),body_18015(18013,prtCbl("Loose")).
 ntwrkCnfg("Incorrect") :- algebraic_atom(488,0,0,set(none),ntwrkCnfg("Incorrect"),"0.02"),body_18110(18108,ntwrkCnfg("Incorrect")).
-true.
+
 dskLocal("Less_than_2_Mb") :- algebraic_atom(484,0,0,set(none),dskLocal("Less_than_2_Mb"),"0.03"),body_18072(18070,dskLocal("Less_than_2_Mb")).
 algebraic_atom(141,1,1,set(none),pSERRMEM("Low_Memory"),"0.0") :- algebraic_atom(141,0,0,set(none),pSERRMEM("No_Error"),"1.0").
 pSERRMEM("No_Error") :- algebraic_atom(140,0,0,set(none),pSERRMEM("No_Error"),"0.05"),body_15164(15163,multi).

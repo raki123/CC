@@ -34,7 +34,7 @@ util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 johnCalls:-algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_484(483,johnCalls).
 util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 body_444(443,alarm):-body_19(15,alarm).
 maryCalls:-algebraic_atom(5,0,0,set(none),maryCalls,"0.01"),body_476(475,maryCalls).
 util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.

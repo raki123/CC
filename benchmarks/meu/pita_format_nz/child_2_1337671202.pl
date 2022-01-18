@@ -1276,7 +1276,7 @@ algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02") :- algebraic_ato
 disease("PFC") :- algebraic_atom(1,0,0,set(none),disease("PFC"),"0.03061224"),body_4256(4255,multi).
 algebraic_atom(96,3,1,set(none),xrayReport("Grd_Glass"),"0.02") :- algebraic_atom(96,2,1,set(none),xrayReport("Plethoric"),"0.8").
 body_1162(1159,multi) :- lungParench("Congested"),cardiacMixing("Complete").
-true.
+
 algebraic_atom(92,1,1,set(none),hypDistrib("Unequal"),"0.05") :- algebraic_atom(92,1,0,set(none),hypDistrib("Unequal"),"0.05").
 cO2("High") :- algebraic_atom(52,2,0,set(none),cO2("High"),"0.1"),\+algebraic_atom(52,1,1,set(none),cO2("Low"),"0.1"),body_5079(5078,multi).
 hypDistrib("Equal") :- algebraic_atom(91,0,0,set(none),hypDistrib("Equal"),"0.5"),body_5766(5765,multi).

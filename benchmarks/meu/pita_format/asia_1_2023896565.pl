@@ -62,7 +62,7 @@ either :- \+tub,lung.
 body_129(125,dysp) :- either,\+bronc.
 body_78(73,either) :- \+tub,\+lung.
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_186(185,dysp).
-true.
+
 body_198(197,lung) :- dec_2.
 body_15(13,lung) :- \+smoke.
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).

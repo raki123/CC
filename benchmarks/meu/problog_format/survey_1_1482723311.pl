@@ -122,7 +122,7 @@ body_1(0,multi).
 t("car"):-algebraic_atom(12,0,0,set(none),t("car"),"0.58"),body_253(252,multi).
 body_309(308,s("M")):-dec_0.
 body_143(142,multi):-body_82(79,multi).
-true.
+
 body_234(233,multi):-body_181(178,multi).
 e("high"):-algebraic_atom(4,0,0,set(none),e("high"),"0.7"),body_143(142,multi).
 body_202(199,multi):-r("big"),o("emp").

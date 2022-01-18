@@ -64,7 +64,7 @@ body_675(674,lung) :- body_15(13,lung).
 xray :- algebraic_atom(7,0,0,set(none),xray,"0.98"),body_723(722,xray).
 body_667(666,lung) :- body_5(4,lung).
 util_node(2) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
-true.
+
 either :- tub,\+lung.
 either :- tub,lung.
 body_683(682,tub) :- body_23(22,tub).

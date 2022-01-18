@@ -1307,7 +1307,7 @@ body_2302(2301,multi):-body_1898(1897,multi).
 age("4-10_days"):-algebraic_atom(48,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(48,0,0,set(none),age("0-3_days"),"0.8"),body_1319(1318,multi).
 algebraic_atom(48,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(48,1,1,set(none),age("4-10_days"),"0.15").
 algebraic_atom(15,1,1,set(none),cardiacMixing("Mild"),"0.09"):-algebraic_atom(15,0,0,set(none),cardiacMixing("None"),"0.02").
-true.
+
 algebraic_atom(7,1,1,set(none),lungParench("Congested"),"0.25"):-algebraic_atom(7,0,0,set(none),lungParench("Normal"),"0.03").
 body_1911(1910,multi):-hypoxiaInO2("Mild").
 algebraic_atom(49,2,1,set(none),age("11-30_days"),"0.1"):-algebraic_atom(49,2,0,set(none),age("11-30_days"),"0.1").

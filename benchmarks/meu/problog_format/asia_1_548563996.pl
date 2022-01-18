@@ -39,7 +39,7 @@ body_118(114,dysp):-\+either,bronc.
 dysp:-algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_170(169,dysp).
 body_129(125,dysp):-either,\+bronc.
 body_136(135,either):-body_78(73,either).
-true.
+
 body_15(13,lung):-\+smoke.
 xray:-algebraic_atom(7,0,0,set(none),xray,"0.98"),body_144(143,xray).
 either:-\+tub,lung.

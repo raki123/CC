@@ -2234,7 +2234,7 @@ dS_LCLOK:-algebraic_atom(112,0,0,set(none),dS_LCLOK,"0.5"),body_7650(7649,dS_LCL
 problem4:-algebraic_atom(106,0,0,set(none),problem4,"0.0"),body_7602(7601,problem4).
 ntGrbld:-algebraic_atom(95,0,0,set(none),ntGrbld,"0.5"),body_7514(7513,ntGrbld).
 dS_LCLOK:-algebraic_atom(110,0,0,set(none),dS_LCLOK,"0.5"),body_7634(7633,dS_LCLOK).
-true.
+
 ntGrbld:-algebraic_atom(94,0,0,set(none),ntGrbld,"0.5"),body_7506(7505,ntGrbld).
 eMFOK:-algebraic_atom(96,0,0,set(none),eMFOK,"0.99"),body_7522(7521,eMFOK).
 dS_LCLOK:-algebraic_atom(111,0,0,set(none),dS_LCLOK,"0.0"),body_7642(7641,dS_LCLOK).

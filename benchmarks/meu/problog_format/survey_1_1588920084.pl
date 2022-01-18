@@ -60,7 +60,7 @@ utility(a("young"), 29).
 utility(\+a("young"), 28).
 t("car"):-algebraic_atom(13,0,0,set(none),t("car"),"0.56"),body_271(270,multi).
 algebraic_atom(14,2,1,set(none),t("other"),"0.09"):-algebraic_atom(14,1,1,set(none),t("train"),"0.21").
-true.
+
 body_97(94,multi):-s("M"),a("old").
 body_348(347,t("car")):-dec_3.
 algebraic_atom(12,1,1,set(none),t("train"),"0.24"):-algebraic_atom(12,1,0,set(none),t("train"),"0.24").

@@ -51,7 +51,7 @@ body_118(114,dysp) :- \+either,bronc.
 body_23(22,tub) :- asia.
 body_129(128,bronc) :- body_51(49,bronc).
 body_86(85,xray) :- either.
-true.
+
 xray :- algebraic_atom(8,0,0,set(none),xray,"0.05"),body_153(152,xray).
 body_33(31,tub) :- \+asia.
 dysp :- algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).

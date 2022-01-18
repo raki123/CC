@@ -109,7 +109,7 @@ algebraic_atom(0,2,1,set(none),a("old"),"0.2"):-algebraic_atom(0,2,0,set(none),a
 body_112(109,multi):-s("F"),a("old").
 body_143(142,multi):-body_82(79,multi).
 algebraic_atom(12,1,1,set(none),t("train"),"0.24"):-algebraic_atom(12,1,0,set(none),t("train"),"0.24").
-true.
+
 body_182(181,multi):-body_125(124,multi).
 body_166(165,multi):-e("uni").
 body_82(79,multi):-s("F"),a("adult").

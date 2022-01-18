@@ -68,7 +68,7 @@ johnCalls:-algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_479(478,johnCall
 body_19(15,alarm):-\+earthquake,burglary.
 body_447(446,alarm):-body_30(26,alarm).
 body_42(37,alarm):-\+earthquake,\+burglary.
-true.
+
 body_50(49,maryCalls):-alarm.
 body_455(454,alarm):-body_42(37,alarm).
 body_68(67,johnCalls):-alarm.

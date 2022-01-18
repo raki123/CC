@@ -18,7 +18,7 @@ utility(alarm, 21).
 utility(johnCalls, 27).
 body_78(76,johnCalls) :- \+alarm.
 body_42(37,alarm) :- \+earthquake,\+burglary.
-true.
+
 body_64(63,alarm) :- body_30(26,alarm).
 body_50(49,maryCalls) :- alarm.
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_106(105,johnCalls).

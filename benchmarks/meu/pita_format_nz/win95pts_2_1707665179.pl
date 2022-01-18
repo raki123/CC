@@ -1267,7 +1267,7 @@ prtData :- algebraic_atom(394,0,0,set(none),prtData,"0.5"),body_17308(17307,prtD
 prtData :- algebraic_atom(398,0,0,set(none),prtData,"0.5"),body_17340(17339,prtData).
 prtData :- algebraic_atom(401,0,0,set(none),prtData,"0.5"),body_17364(17363,prtData).
 problem2("OK") :- algebraic_atom(238,0,0,set(none),problem2("OK"),"0.0"),body_16035(16034,multi).
-true.
+
 algebraic_atom(236,1,1,set(none),problem2("Too_Long"),"0.0") :- algebraic_atom(236,1,0,set(none),problem2("Too_Long"),"0.0").
 ntSpd("OK") :- algebraic_atom(202,0,0,set(none),ntSpd("OK"),"0.5"),body_15727(15726,multi).
 algebraic_atom(238,1,1,set(none),problem2("Too_Long"),"1.0") :- algebraic_atom(238,1,0,set(none),problem2("Too_Long"),"1.0").

@@ -1697,7 +1697,7 @@ pSERRMEM("No_Error") :- algebraic_atom(142,0,0,set(none),pSERRMEM("No_Error"),"1
 netPrint("No__Local_printer_") :- algebraic_atom(467,0,0,set(none),netPrint("No__Local_printer_"),"0.8"),body_17912(17911,netPrint("No__Local_printer_")).
 prtData :- algebraic_atom(459,0,0,set(none),prtData,"0.5"),body_17822(17821,prtData).
 prtCbl("Loose") :- algebraic_atom(478,0,0,set(none),prtCbl("Loose"),"0.02"),body_18016(18014,prtCbl("Loose")).
-true.
+
 body_17334(17333,prtData) :- body_8117(8103,prtData).
 body_8117(8103,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
 body_8075(8061,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.

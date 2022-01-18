@@ -1310,7 +1310,7 @@ body_6244(6243,hypoxiaInO2("Moderate")) :- dec_9.
 lungFlow("Normal") :- algebraic_atom(119,0,0,set(none),lungFlow("Normal"),"0.3"),body_6224(6223,lungFlow("Normal")).
 lungFlow("High") :- algebraic_atom(28,2,0,set(none),lungFlow("High"),"0.05"),\+algebraic_atom(28,1,1,set(none),lungFlow("Low"),"0.8"),body_4666(4665,multi).
 age("4-10_days") :- algebraic_atom(50,1,0,set(none),age("4-10_days"),"0.08"),\+algebraic_atom(50,0,0,set(none),age("0-3_days"),"0.9"),body_5042(5041,multi).
-true.
+
 algebraic_atom(86,1,1,set(none),hypDistrib("Unequal"),"0.05") :- algebraic_atom(86,1,0,set(none),hypDistrib("Unequal"),"0.05").
 lowerBodyO2("5-12") :- algebraic_atom(112,1,0,set(none),lowerBodyO2("5-12"),"0.35"),\+algebraic_atom(112,0,0,set(none),lowerBodyO2("<5"),"0.6"),body_6143(6142,multi).
 lVH :- algebraic_atom(115,0,0,set(none),lVH,"0.1"),body_6184(6183,lVH).

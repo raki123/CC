@@ -46,7 +46,7 @@ utility(util_node(1), -21).
 utility(util_node(2), 31).
 utility(util_node(3), -41).
 utility(util_node(4), -8).
-true.
+
 body_1183(1182,multi) :- body_222(219,multi).
 algebraic_atom(7,1,1,set(none),o("self"),"0.04") :- algebraic_atom(7,1,0,set(none),o("self"),"0.04").
 body_36(33,multi) :- s("M"),a("young").

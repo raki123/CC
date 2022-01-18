@@ -2096,7 +2096,7 @@ pC2PRT:-algebraic_atom(266,0,0,set(none),pC2PRT,"0.0"),body_16284(16283,pC2PRT).
 pC2PRT:-algebraic_atom(270,0,0,set(none),pC2PRT,"0.0"),body_16316(16315,pC2PRT).
 pC2PRT:-algebraic_atom(269,0,0,set(none),pC2PRT,"0.0"),body_16308(16307,pC2PRT).
 pC2PRT:-algebraic_atom(263,0,0,set(none),pC2PRT,"0.0"),body_16260(16259,pC2PRT).
-true.
+
 pC2PRT:-algebraic_atom(264,0,0,set(none),pC2PRT,"0.0"),body_16268(16267,pC2PRT).
 problem6:-grbldPS,prtPScript,grbldOtpt.
 pC2PRT:-algebraic_atom(253,0,0,set(none),pC2PRT,"0.0"),body_16180(16179,pC2PRT).

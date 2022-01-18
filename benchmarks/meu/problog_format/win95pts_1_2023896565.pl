@@ -1774,7 +1774,7 @@ eMFOK:-algebraic_atom(103,0,0,set(none),eMFOK,"0.5"),body_7578(7577,eMFOK).
 eMFOK:-algebraic_atom(101,0,0,set(none),eMFOK,"0.5"),body_7562(7561,eMFOK).
 problem4:-algebraic_atom(105,0,0,set(none),problem4,"0.0"),body_7594(7593,problem4).
 eMFOK:-algebraic_atom(102,0,0,set(none),eMFOK,"0.5"),body_7570(7569,eMFOK).
-true.
+
 eMFOK:-algebraic_atom(100,0,0,set(none),eMFOK,"0.1"),body_7554(7553,eMFOK).
 eMFOK:-algebraic_atom(96,0,0,set(none),eMFOK,"0.99"),body_7522(7521,eMFOK).
 ntGrbld:-algebraic_atom(87,0,0,set(none),ntGrbld,"0.5"),body_7450(7449,ntGrbld).

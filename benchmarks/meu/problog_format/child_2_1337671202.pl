@@ -568,7 +568,7 @@ body_4971(4970,multi):-body_779(776,multi).
 algebraic_atom(111,1,1,set(none),lowerBodyO2("5-12"),"0.45"):-algebraic_atom(111,1,0,set(none),lowerBodyO2("5-12"),"0.45").
 algebraic_atom(80,1,1,set(none),chestXray("Oligaemic"),"0.15"):-algebraic_atom(80,0,0,set(none),chestXray("Normal"),"0.05").
 algebraic_atom(111,1,1,set(none),lowerBodyO2("5-12"),"0.45"):-algebraic_atom(111,0,0,set(none),lowerBodyO2("<5"),"0.5").
-true.
+
 body_5889(5888,multi):-body_1797(1796,multi).
 ductFlow("Rt_to_Lt"):-algebraic_atom(34,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0"),\+algebraic_atom(34,1,1,set(none),ductFlow("None"),"0.2"),body_4775(4774,multi).
 ductFlow("None"):-algebraic_atom(34,1,0,set(none),ductFlow("None"),"0.2"),\+algebraic_atom(34,0,0,set(none),ductFlow("Lt_to_Rt"),"0.8"),body_4775(4774,multi).

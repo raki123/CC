@@ -74,7 +74,7 @@ dysp :- algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_748(747,dysp).
 body_764(763,dysp) :- body_141(136,dysp).
 body_776(775,xray) :- dec_2.
 either :- \+tub,lung.
-true.
+
 util_node(3) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_748(747,dysp) :- body_118(114,dysp).
 util_node(2) :- smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.

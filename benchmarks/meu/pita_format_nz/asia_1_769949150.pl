@@ -67,7 +67,7 @@ either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_136(135,either).
 dysp :- algebraic_atom(15,0,0,set(none),dysp,"0.7"),body_218(217,dysp).
 body_23(22,tub) :- asia.
 body_41(40,bronc) :- smoke.
-true.
+
 body_144(143,xray) :- body_86(85,xray).
 lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_89(88,lung).
 body_78(73,either) :- \+tub,\+lung.

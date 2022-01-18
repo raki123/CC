@@ -1133,7 +1133,7 @@ body_2230(2229,multi) :- body_1825(1824,multi).
 body_2174(2173,multi) :- body_1769(1768,multi).
 body_189(188,lVH) :- disease("TGA").
 lungFlow("Low") :- algebraic_atom(31,1,0,set(none),lungFlow("Low"),"0.1"),\+algebraic_atom(31,0,0,set(none),lungFlow("Normal"),"0.7"),body_1031(1030,multi).
-true.
+
 algebraic_atom(96,1,1,set(none),xrayReport("Oligaemic"),"0.02") :- algebraic_atom(96,1,0,set(none),xrayReport("Oligaemic"),"0.02").
 body_841(837,multi) :- \+sick,disease("TAPVD").
 xrayReport("Grd_Glass") :- algebraic_atom(95,3,0,set(none),xrayReport("Grd_Glass"),"0.02"),\+algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02"),body_2146(2145,multi).

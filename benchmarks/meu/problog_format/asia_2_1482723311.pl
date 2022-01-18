@@ -28,7 +28,7 @@ utility(\+util_node(3), 9).
 utility(util_node(4), 48).
 utility(\+util_node(4), 27).
 dysp:-algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_756(755,dysp).
-true.
+
 body_756(755,dysp):-body_141(136,dysp).
 body_724(723,xray):-body_96(94,xray).
 xray:-algebraic_atom(8,0,0,set(none),xray,"0.05"),body_724(723,xray).

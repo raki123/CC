@@ -34,7 +34,7 @@ dysp :- algebraic_atom(11,0,0,set(none),dysp,"0.7"),body_753(752,dysp).
 body_96(94,xray) :- \+either.
 body_129(125,dysp) :- either,\+bronc.
 tub :- algebraic_atom(3,0,0,set(none),tub,"0.01"),body_689(688,tub).
-true.
+
 body_141(136,dysp) :- \+either,\+bronc.
 util_node(1) :- \+smoke,\+xray,\+lung,bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(2) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.

@@ -1557,7 +1557,7 @@ body_7169(7168,multi) :- body_1157(1154,multi).
 body_7610(7609,problem4) :- body_1841(1833,problem4).
 body_1141(1138,multi) :- pTROFFLINE("Online"),ntwrkCnfg("Correct").
 body_458(453,nnPSGrphc) :- ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
-true.
+
 body_470(465,nnPSGrphc) :- ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
 body_1157(1154,multi) :- pTROFFLINE("Offline"),ntwrkCnfg("Correct").
 body_1385(1384,multi) :- prtOn.

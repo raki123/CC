@@ -41,7 +41,7 @@ lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_89(88,lung).
 body_121(120,bronc) :- body_41(40,bronc).
 body_129(128,bronc) :- body_51(49,bronc).
 body_89(88,lung) :- body_5(4,lung).
-true.
+
 either :- \+tub,lung.
 body_106(103,dysp) :- either,bronc.
 body_51(49,bronc) :- \+smoke.

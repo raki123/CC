@@ -74,7 +74,7 @@ body_152(151,multi) :- e("high").
 algebraic_atom(0,1,1,set(none),a("adult"),"0.5") :- algebraic_atom(0,0,0,set(none),a("young"),"0.3").
 algebraic_atom(1,1,1,set(none),e("uni"),"0.25") :- algebraic_atom(1,1,0,set(none),e("uni"),"0.25").
 body_1(0,multi).
-true.
+
 body_1082(1081,multi) :- body_112(109,multi).
 body_1069(1068,multi) :- body_97(94,multi).
 e("uni") :- algebraic_atom(2,1,0,set(none),e("uni"),"0.36"),\+algebraic_atom(2,0,0,set(none),e("high"),"0.64"),body_1030(1029,multi).

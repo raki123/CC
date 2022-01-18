@@ -29,7 +29,7 @@ body_56(55,alarm) :- body_19(15,alarm).
 johnCalls :- algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_97(96,johnCalls).
 alarm :- algebraic_atom(0,0,0,set(none),alarm,"0.95"),body_48(47,alarm).
 body_97(96,johnCalls) :- body_68(67,johnCalls).
-true.
+
 body_42(37,alarm) :- \+earthquake,\+burglary.
 body_80(79,maryCalls) :- body_50(49,maryCalls).
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_106(105,johnCalls).

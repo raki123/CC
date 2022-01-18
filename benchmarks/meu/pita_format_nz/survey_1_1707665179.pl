@@ -89,7 +89,7 @@ t("train") :- algebraic_atom(13,1,0,set(none),t("train"),"0.36"),\+algebraic_ato
 algebraic_atom(3,1,1,set(none),e("uni"),"0.28") :- algebraic_atom(3,0,0,set(none),e("high"),"0.72").
 t("other") :- algebraic_atom(14,2,0,set(none),t("other"),"0.09"),\+algebraic_atom(14,1,1,set(none),t("train"),"0.21"),body_289(288,multi).
 body_289(288,multi) :- body_242(239,multi).
-true.
+
 body_139(138,multi) :- e("uni").
 algebraic_atom(0,2,1,set(none),a("old"),"0.2") :- algebraic_atom(0,1,1,set(none),a("adult"),"0.5").
 algebraic_atom(10,1,1,set(none),r("big"),"0.8") :- algebraic_atom(10,0,0,set(none),r("small"),"0.2").

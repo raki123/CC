@@ -56,7 +56,7 @@ xray:-algebraic_atom(7,0,0,set(none),xray,"0.98"),body_144(143,xray).
 tub:-algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).
 lung:-algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 dysp:-algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).
-true.
+
 body_33(31,tub):-\+asia.
 xray:-algebraic_atom(13,0,0,set(none),xray,"0.05"),body_198(197,xray).
 either:-algebraic_atom(6,0,0,set(none),either,"0.0"),body_136(135,either).

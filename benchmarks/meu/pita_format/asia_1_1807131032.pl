@@ -65,7 +65,7 @@ tub :- algebraic_atom(13,0,0,set(none),tub,"0.01"),body_198(197,tub).
 body_33(31,tub) :- \+asia.
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).
 either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_136(135,either).
-true.
+
 body_5(4,lung) :- smoke.
 body_153(152,xray) :- body_96(94,xray).
 dysp :- algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).

@@ -1175,7 +1175,7 @@ body_5029(5028,multi):-body_861(858,multi).
 body_5791(5790,multi):-body_1712(1711,multi).
 hypoxiaInO2("Moderate"):-algebraic_atom(63,1,0,set(none),hypoxiaInO2("Moderate"),"0.2"),\+algebraic_atom(63,0,0,set(none),hypoxiaInO2("Mild"),"0.7"),body_5203(5202,multi).
 cO2Report(">=7.5"):-algebraic_atom(101,1,0,set(none),cO2Report(">=7.5"),"0.1"),\+algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9"),body_5947(5946,multi).
-true.
+
 algebraic_atom(111,2,1,set(none),lowerBodyO2("12+"),"0.05"):-algebraic_atom(111,2,0,set(none),lowerBodyO2("12+"),"0.05").
 algebraic_atom(108,1,1,set(none),lowerBodyO2("5-12"),"0.6"):-algebraic_atom(108,1,0,set(none),lowerBodyO2("5-12"),"0.6").
 body_738(735,multi):-sick,disease("Fallot").

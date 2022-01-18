@@ -74,7 +74,7 @@ body_738(737,xray):-body_96(94,xray).
 body_714(713,bronc):-body_51(49,bronc).
 util_node(0):-smoke,xray,lung,\+bronc,\+dysp,\+tub,\+asia,either.
 body_730(729,xray):-body_86(85,xray).
-true.
+
 util_node(0):-smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 tub:-algebraic_atom(2,0,0,set(none),tub,"0.05"),body_690(689,tub).
 util_node(2):-smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.

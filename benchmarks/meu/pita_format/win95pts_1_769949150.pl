@@ -2059,7 +2059,7 @@ body_9308(9307,pC2PRT) :- body_5861(5846,pC2PRT).
 fntInstlltn("Verified") :- algebraic_atom(489,0,0,set(none),fntInstlltn("Verified"),"0.98"),body_10889(10888,fntInstlltn("Verified")).
 algebraic_atom(65,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.0") :- algebraic_atom(65,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.0").
 body_9412(9411,pC2PRT) :- body_6220(6204,pC2PRT).
-true.
+
 body_9324(9323,pC2PRT) :- body_5940(5924,pC2PRT).
 body_5884(5868,pC2PRT) :- \+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
 algebraic_atom(67,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5") :- algebraic_atom(67,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5").

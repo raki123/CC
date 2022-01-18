@@ -810,7 +810,7 @@ algebraic_atom(5,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(5
 chestXray("Normal"):-algebraic_atom(79,0,0,set(none),chestXray("Normal"),"0.05"),body_5568(5567,multi).
 algebraic_atom(35,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0"):-algebraic_atom(35,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
 algebraic_atom(98,1,1,set(none),xrayReport("Oligaemic"),"0.02"):-algebraic_atom(98,1,0,set(none),xrayReport("Oligaemic"),"0.02").
-true.
+
 ductFlow("None"):-algebraic_atom(36,1,0,set(none),ductFlow("None"),"0.33"),\+algebraic_atom(36,0,0,set(none),ductFlow("Lt_to_Rt"),"0.33"),body_4814(4813,multi).
 algebraic_atom(78,2,1,set(none),chestXray("Plethoric"),"0.4"):-algebraic_atom(78,2,0,set(none),chestXray("Plethoric"),"0.4").
 chestXray("Grd_Glass"):-algebraic_atom(81,3,0,set(none),chestXray("Grd_Glass"),"0.34"),\+algebraic_atom(81,2,1,set(none),chestXray("Plethoric"),"0.03"),body_5624(5623,multi).

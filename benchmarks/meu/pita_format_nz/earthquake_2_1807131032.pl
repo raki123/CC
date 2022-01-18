@@ -67,7 +67,7 @@ util_node(3) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 johnCalls :- algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_478(477,johnCalls).
 body_486(485,johnCalls) :- body_78(76,johnCalls).
 util_node(3) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 body_60(58,maryCalls) :- \+alarm.
 util_node(2) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 :- end_lpad.

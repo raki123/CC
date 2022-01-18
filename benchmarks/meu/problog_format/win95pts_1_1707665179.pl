@@ -1535,7 +1535,7 @@ algebraic_atom(198,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(198,0,0,se
 prtData:-algebraic_atom(402,0,0,set(none),prtData,"0.5"),body_10133(10132,prtData).
 hrglssDrtnAftrPrnt("Fast_Enough"):-algebraic_atom(193,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.99"),body_8374(8373,multi).
 prtData:-algebraic_atom(406,0,0,set(none),prtData,"0.5"),body_10165(10164,prtData).
-true.
+
 prtData:-algebraic_atom(365,0,0,set(none),prtData,"0.0"),body_9837(9836,prtData).
 problem5:-\+nnTTOK,tTOK,trTypFnts.
 prtData:-algebraic_atom(358,0,0,set(none),prtData,"0.5"),body_9781(9780,prtData).

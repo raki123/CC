@@ -700,7 +700,7 @@ body_2117(2116,multi) :- body_1712(1711,multi).
 algebraic_atom(29,2,1,set(none),lungFlow("High"),"0.05") :- algebraic_atom(29,1,1,set(none),lungFlow("Low"),"0.85").
 body_1139(1138,multi) :- body_617(616,multi).
 body_870(869,multi) :- body_345(344,multi).
-true.
+
 body_2389(2388,multi) :- body_1989(1986,multi).
 body_1391(1390,multi) :- body_900(899,multi).
 lungParench("Congested") :- algebraic_atom(2,1,0,set(none),lungParench("Congested"),"0.1"),\+algebraic_atom(2,0,0,set(none),lungParench("Normal"),"0.6"),body_600(599,multi).

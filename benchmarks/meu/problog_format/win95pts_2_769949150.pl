@@ -853,7 +853,7 @@ body_3126(3118,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Greater_than_
 grbldPS:-algebraic_atom(216,0,0,set(none),grbldPS,"0.0"),body_15809(15808,grbldPS).
 body_3111(3103,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
 body_15527(15526,lclGrbld):-body_3126(3118,lclGrbld).
-true.
+
 grbldOtpt:-\+ntGrbld,lclGrbld,netPrint("Yes__Network_printer_").
 grbldOtpt:-\+ntGrbld,\+lclGrbld,netPrint("Yes__Network_printer_").
 gDIIN:-algebraic_atom(212,0,0,set(none),gDIIN,"0.0"),body_15777(15776,gDIIN).
