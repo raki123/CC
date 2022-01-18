@@ -3,6 +3,6 @@
 :- begin_lpad.
 0.5::a1.
 ev :- a0.
+true.
 a0:-a1.
-
 :- end_lpad.
