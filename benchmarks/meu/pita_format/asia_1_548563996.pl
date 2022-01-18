@@ -31,7 +31,7 @@ either :- tub,\+lung.
 body_33(31,tub) :- \+asia.
 body_141(136,dysp) :- \+either,\+bronc.
 lung :- algebraic_atom(0,0,0,set(none),lung,"0.1"),body_89(88,lung).
-true.
+
 body_178(177,dysp) :- body_129(125,dysp).
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_186(185,dysp).
 body_23(22,tub) :- asia.

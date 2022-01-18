@@ -2427,7 +2427,7 @@ body_1684(1679,eMFOK):-prtThread("Corrupt_Buggy"),dskLocal("Greater_than_2_Mb"),
 body_2038(2031,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Loose"),appData("Incorrect_or_corrupt").
 problem2("OK"):-algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0"),body_8826(8825,multi).
 problem2("Too_Long"):-algebraic_atom(240,1,0,set(none),problem2("Too_Long"),"1.0"),\+algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0"),body_8826(8825,multi).
-true.
+
 body_6926(6925,netOK):-body_814(809,netOK).
 body_7778(7777,multi):-body_2126(2122,multi).
 body_2024(2017,dS_LCLOK):-cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Loose"),appData("Incorrect_or_corrupt").

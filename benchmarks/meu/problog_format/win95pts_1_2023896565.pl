@@ -1251,7 +1251,7 @@ pC2PRT:-algebraic_atom(321,0,0,set(none),pC2PRT,"0.0"),body_9484(9483,pC2PRT).
 prtData:-algebraic_atom(412,0,0,set(none),prtData,"0.5"),body_10213(10212,prtData).
 pC2PRT:-algebraic_atom(316,0,0,set(none),pC2PRT,"0.0"),body_9444(9443,pC2PRT).
 prtData:-algebraic_atom(420,0,0,set(none),prtData,"0.5"),body_10277(10276,prtData).
-true.
+
 pC2PRT:-algebraic_atom(307,0,0,set(none),pC2PRT,"0.0"),body_9372(9371,pC2PRT).
 prtData:-algebraic_atom(417,0,0,set(none),prtData,"0.5"),body_10253(10252,prtData).
 prtData:-algebraic_atom(421,0,0,set(none),prtData,"0.5"),body_10285(10284,prtData).

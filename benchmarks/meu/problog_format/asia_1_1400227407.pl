@@ -33,7 +33,7 @@ body_144(143,xray):-body_86(85,xray).
 xray:-algebraic_atom(7,0,0,set(none),xray,"0.98"),body_144(143,xray).
 body_106(103,dysp):-either,bronc.
 body_178(177,dysp):-body_129(125,dysp).
-true.
+
 body_121(120,bronc):-body_41(40,bronc).
 either:-algebraic_atom(6,0,0,set(none),either,"0.0"),body_136(135,either).
 body_96(94,xray):-\+either.

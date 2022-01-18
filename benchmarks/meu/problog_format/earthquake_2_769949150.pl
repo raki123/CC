@@ -49,7 +49,7 @@ alarm:-algebraic_atom(3,0,0,set(none),alarm,"0.001"),body_458(457,alarm).
 util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_78(76,johnCalls):-\+alarm.
 util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_474(473,maryCalls):-body_60(58,maryCalls).
 util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.

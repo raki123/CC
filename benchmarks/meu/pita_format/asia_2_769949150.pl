@@ -31,7 +31,7 @@ util_node(1) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,asia,\+either.
 util_node(0) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 body_51(49,bronc) :- \+smoke.
 either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_692(691,either).
-true.
+
 body_684(683,bronc) :- body_51(49,bronc).
 body_96(94,xray) :- \+either.
 body_33(31,tub) :- \+asia.

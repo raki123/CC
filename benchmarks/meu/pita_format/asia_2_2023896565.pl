@@ -54,7 +54,7 @@ xray :- algebraic_atom(7,0,0,set(none),xray,"0.98"),body_723(722,xray).
 util_node(2) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 dysp :- algebraic_atom(11,0,0,set(none),dysp,"0.7"),body_755(754,dysp).
 body_723(722,xray) :- body_86(85,xray).
-true.
+
 either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_715(714,either).
 body_715(714,either) :- body_78(73,either).
 body_739(738,dysp) :- body_106(103,dysp).

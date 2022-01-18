@@ -1454,7 +1454,7 @@ problem6 :- algebraic_atom(243,0,0,set(none),problem6,"0.0"),body_8864(8863,prob
 body_8864(8863,problem6) :- body_4035(4028,problem6).
 body_3515(3509,grbldOtpt) :- ntGrbld,\+lclGrbld,netPrint("Yes__Network_printer_").
 cmpltPgPrntd :- algebraic_atom(74,0,0,set(none),cmpltPgPrntd,"0.5"),body_7327(7326,cmpltPgPrntd).
-true.
+
 body_7221(7220,multi) :- body_1214(1213,multi).
 cmpltPgPrntd :- algebraic_atom(75,0,0,set(none),cmpltPgPrntd,"0.5"),body_7335(7334,cmpltPgPrntd).
 problem2("Too_Long") :- algebraic_atom(240,1,0,set(none),problem2("Too_Long"),"1.0"),\+algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0"),body_8826(8825,multi).

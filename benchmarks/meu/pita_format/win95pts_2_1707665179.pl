@@ -2196,7 +2196,7 @@ gDIOUT :- algebraic_atom(225,0,0,set(none),gDIOUT,"0.5"),body_15916(15915,gDIOUT
 gDIIN :- algebraic_atom(212,0,0,set(none),gDIIN,"0.0"),body_15812(15811,gDIIN).
 algebraic_atom(241,1,1,set(none),problem2("Too_Long"),"0.0") :- algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0").
 problem2("OK") :- algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0"),body_16074(16073,multi).
-true.
+
 body_2309(2302,problem5) :- \+nnTTOK,\+tTOK,trTypFnts.
 grbldPS :- algebraic_atom(218,0,0,set(none),grbldPS,"0.5"),body_15860(15859,grbldPS).
 body_2295(2289,problem5) :- nnTTOK,\+tTOK,trTypFnts.

@@ -57,7 +57,7 @@ tub :- algebraic_atom(3,0,0,set(none),tub,"0.01"),body_698(697,tub).
 body_23(22,tub) :- asia.
 either :- tub,lung.
 body_722(721,either) :- body_78(73,either).
-true.
+
 body_762(761,dysp) :- body_129(125,dysp).
 util_node(1) :- \+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
 util_node(3) :- \+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.

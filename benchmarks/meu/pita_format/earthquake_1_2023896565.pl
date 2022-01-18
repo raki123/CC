@@ -47,7 +47,7 @@ johnCalls :- algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_97(96,johnCall
 maryCalls :- algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_80(79,maryCalls).
 body_50(49,maryCalls) :- alarm.
 body_64(63,alarm) :- body_30(26,alarm).
-true.
+
 maryCalls :- algebraic_atom(5,0,0,set(none),maryCalls,"0.01"),body_89(88,maryCalls).
 johnCalls :- algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_106(105,johnCalls).
 body_30(26,alarm) :- earthquake,\+burglary.

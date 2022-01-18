@@ -59,7 +59,7 @@ body_684(683,tub) :- body_33(31,tub).
 body_660(659,lung) :- body_5(4,lung).
 dysp :- algebraic_atom(11,0,0,set(none),dysp,"0.7"),body_748(747,dysp).
 body_768(767,lung) :- dec_2.
-true.
+
 body_724(723,xray) :- body_96(94,xray).
 xray :- algebraic_atom(8,0,0,set(none),xray,"0.05"),body_724(723,xray).
 lung :- algebraic_atom(13,0,0,set(none),lung,"0.1"),body_768(767,lung).

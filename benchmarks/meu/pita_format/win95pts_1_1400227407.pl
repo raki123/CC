@@ -919,7 +919,7 @@ algebraic_atom(16,1,1,set(none),prtStatToner("Low__None"),"0.99900001") :- algeb
 nnPSGrphc :- algebraic_atom(6,0,0,set(none),nnPSGrphc,"0.5"),body_6671(6670,nnPSGrphc).
 prtStatToner("Low__None") :- algebraic_atom(15,1,0,set(none),prtStatToner("Low__None"),"0.00099999"),\+algebraic_atom(15,0,0,set(none),prtStatToner("No_Error"),"0.99900001"),body_6742(6741,multi).
 appData("Correct") :- algebraic_atom(17,0,0,set(none),appData("Correct"),"0.9999"),body_6769(6768,multi).
-true.
+
 prtStatToner("No_Error") :- algebraic_atom(15,0,0,set(none),prtStatToner("No_Error"),"0.99900001"),body_6742(6741,multi).
 nnPSGrphc :- algebraic_atom(7,0,0,set(none),nnPSGrphc,"0.5"),body_6678(6677,nnPSGrphc).
 pSGRAPHIC :- algebraic_atom(14,0,0,set(none),pSGRAPHIC,"0.5"),body_6734(6733,pSGRAPHIC).

@@ -1100,7 +1100,7 @@ algebraic_atom(44,2,1,set(none),age("11-30_days"),"0.15"):-algebraic_atom(44,1,1
 hypoxiaInO2("Mild"):-algebraic_atom(68,0,0,set(none),hypoxiaInO2("Mild"),"0.05"),body_1619(1618,multi).
 chestXray("Grd_Glass"):-algebraic_atom(79,3,0,set(none),chestXray("Grd_Glass"),"0.05"),\+algebraic_atom(79,2,1,set(none),chestXray("Plethoric"),"0.05"),body_1877(1876,multi).
 algebraic_atom(78,3,1,set(none),chestXray("Grd_Glass"),"0.4"):-algebraic_atom(78,2,1,set(none),chestXray("Plethoric"),"0.4").
-true.
+
 algebraic_atom(5,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(5,2,0,set(none),lungParench("Abnormal"),"0.15").
 algebraic_atom(17,2,1,set(none),cardiacMixing("Complete"),"0.95"):-algebraic_atom(17,1,1,set(none),cardiacMixing("Mild"),"0.02").
 algebraic_atom(45,1,1,set(none),age("4-10_days"),"0.25"):-algebraic_atom(45,1,0,set(none),age("4-10_days"),"0.25").

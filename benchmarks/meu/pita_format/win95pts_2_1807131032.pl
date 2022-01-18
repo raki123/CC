@@ -1242,7 +1242,7 @@ body_998(996,multi) :- \+prtPScript.
 dS_NTOK :- algebraic_atom(146,0,0,set(none),dS_NTOK,"0.5"),body_15198(15197,dS_NTOK).
 grbldPS :- algebraic_atom(216,0,0,set(none),grbldPS,"0.0"),body_15808(15807,grbldPS).
 algebraic_atom(140,1,1,set(none),pSERRMEM("Low_Memory"),"0.95") :- algebraic_atom(140,1,0,set(none),pSERRMEM("Low_Memory"),"0.95").
-true.
+
 body_1469(1462,ntGrbld) :- ntwrkCnfg("Correct"),prtMem("Less_than_2Mb"),prtDriver,appData("Correct").
 gDIIN :- algebraic_atom(212,0,0,set(none),gDIIN,"0.0"),body_15776(15775,gDIIN).
 gDIIN :- algebraic_atom(211,0,0,set(none),gDIIN,"0.0"),body_15768(15767,gDIIN).

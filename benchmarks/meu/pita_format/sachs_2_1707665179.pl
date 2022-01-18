@@ -941,7 +941,7 @@ body_4365(4364,raf("3")) :- dec_2.
 pIP2("2") :- algebraic_atom(35,1,0,set(none),pIP2("2"),"0.003131524"),\+algebraic_atom(35,0,0,set(none),pIP2("1"),"0.996868476"),body_3371(3370,multi).
 util_node(4) :- \+pIP2("2"),\+jnk("3"),\+mek("3"),jnk("1"),\+raf("3"),raf("1"),\+plcg("2"),\+p38("1"),\+pIP3("2"),p38("3"),mek("1"),\+pKC("3"),pKA("3"),\+akt("2"),pKC("1"),\+pIP2("3"),pIP2("1"),\+jnk("2"),\+erk("3"),\+pKA("1"),\+plcg("3"),\+raf("2"),\+mek("2"),\+pIP3("3"),pIP3("1"),erk("1"),\+erk("2"),\+p38("2"),\+pKC("2"),\+akt("3"),plcg("1"),akt("1"),\+pKA("2").
 p38("2") :- algebraic_atom(11,1,0,set(none),p38("2"),"0.078431373"),\+algebraic_atom(11,0,0,set(none),p38("1"),"0.919261822"),body_2939(2938,multi).
-true.
+
 algebraic_atom(35,1,1,set(none),pIP2("2"),"0.003131524") :- algebraic_atom(35,1,0,set(none),pIP2("2"),"0.003131524").
 util_node(1) :- \+pIP2("2"),\+jnk("3"),\+mek("3"),\+jnk("1"),\+raf("3"),raf("1"),\+plcg("2"),p38("1"),pIP3("2"),\+p38("3"),mek("1"),\+pKC("3"),\+pKA("3"),akt("2"),\+pKC("1"),\+pIP2("3"),pIP2("1"),jnk("2"),erk("3"),\+pKA("1"),\+plcg("3"),\+raf("2"),\+mek("2"),\+pIP3("3"),\+pIP3("1"),\+erk("1"),\+erk("2"),\+p38("2"),pKC("2"),\+akt("3"),plcg("1"),\+akt("1"),pKA("2").
 body_131(130,multi) :- pKC("3").

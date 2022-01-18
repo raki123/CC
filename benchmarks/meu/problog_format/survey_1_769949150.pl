@@ -131,7 +131,7 @@ algebraic_atom(13,2,1,set(none),t("other"),"0.08"):-algebraic_atom(13,2,0,set(no
 r("small"):-algebraic_atom(9,0,0,set(none),r("small"),"0.25"),body_208(207,multi).
 body_182(181,multi):-body_125(124,multi).
 t("other"):-algebraic_atom(11,2,0,set(none),t("other"),"0.1"),\+algebraic_atom(11,1,1,set(none),t("train"),"0.42"),body_234(233,multi).
-true.
+
 algebraic_atom(6,1,1,set(none),e("uni"),"0.1"):-algebraic_atom(6,1,0,set(none),e("uni"),"0.1").
 algebraic_atom(2,1,1,set(none),e("uni"),"0.36"):-algebraic_atom(2,0,0,set(none),e("high"),"0.64").
 r("big"):-algebraic_atom(18,0,0,set(none),r("big"),"0.75"),body_338(337,r("big")).

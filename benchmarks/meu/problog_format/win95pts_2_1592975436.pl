@@ -943,7 +943,7 @@ algebraic_atom(30,1,1,set(none),appDtGnTm("Too_Long"),"0.00999999"):-algebraic_a
 body_3215(3214,multi):-appDtGnTm("Too_Long").
 tTOK:-algebraic_atom(21,0,0,set(none),tTOK,"0.99000001"),body_14027(14026,tTOK).
 body_15170(15169,multi):-body_2411(2407,multi).
-true.
+
 body_2395(2391,multi):-avlblVrtlMmry("Adequate____1Mb_"),\+prtPScript.
 netOK:-algebraic_atom(33,0,0,set(none),netOK,"0.1"),body_14133(14132,netOK).
 body_2363(2360,multi):-avlblVrtlMmry("Adequate____1Mb_"),prtPScript.

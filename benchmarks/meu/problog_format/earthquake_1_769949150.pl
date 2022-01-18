@@ -24,7 +24,7 @@ body_106(105,johnCalls):-body_78(76,johnCalls).
 alarm:-algebraic_atom(3,0,0,set(none),alarm,"0.001"),body_72(71,alarm).
 body_97(96,johnCalls):-body_68(67,johnCalls).
 body_68(67,johnCalls):-alarm.
-true.
+
 body_118(117,johnCalls):-dec_2.
 body_72(71,alarm):-body_42(37,alarm).
 maryCalls:-algebraic_atom(5,0,0,set(none),maryCalls,"0.01"),body_89(88,maryCalls).

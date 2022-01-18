@@ -937,7 +937,7 @@ body_2980(2973,lclGrbld) :- cblPrtHrdwrOK("Not_Operational"),prtMem("Less_than_2
 body_8248(8247,lclGrbld) :- body_2980(2973,lclGrbld).
 algebraic_atom(235,1,1,set(none),problem2("Too_Long"),"0.0") :- algebraic_atom(235,1,0,set(none),problem2("Too_Long"),"0.0").
 prtMpTPth("Correct") :- algebraic_atom(509,0,0,set(none),prtMpTPth("Correct"),"0.8"),body_11079(11078,prtMpTPth("Correct")).
-true.
+
 algebraic_atom(236,1,1,set(none),problem2("Too_Long"),"0.0") :- algebraic_atom(236,1,0,set(none),problem2("Too_Long"),"0.0").
 problem2("OK") :- algebraic_atom(237,0,0,set(none),problem2("OK"),"0.0"),body_8787(8786,multi).
 tTOK :- algebraic_atom(22,0,0,set(none),tTOK,"0.0"),body_6828(6827,tTOK).

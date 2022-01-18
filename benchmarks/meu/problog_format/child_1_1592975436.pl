@@ -676,7 +676,7 @@ lowerBodyO2("12+"):-algebraic_atom(107,2,0,set(none),lowerBodyO2("12+"),"0.6"),\
 body_1247(1246,multi):-body_738(735,multi).
 body_1174(1173,multi):-body_655(652,multi).
 chestXray("Normal"):-algebraic_atom(77,0,0,set(none),chestXray("Normal"),"0.05"),body_1821(1820,multi).
-true.
+
 algebraic_atom(77,3,1,set(none),chestXray("Grd_Glass"),"0.5"):-algebraic_atom(77,3,0,set(none),chestXray("Grd_Glass"),"0.5").
 body_2146(2145,multi):-body_1741(1740,multi).
 algebraic_atom(76,4,1,set(none),chestXray("Asy/Patch"),"0.08"):-algebraic_atom(76,3,1,set(none),chestXray("Grd_Glass"),"0.7").

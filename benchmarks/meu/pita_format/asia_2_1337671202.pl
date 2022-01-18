@@ -47,7 +47,7 @@ bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_702(701,bronc).
 util_node(3) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_686(685,tub) :- body_23(22,tub).
 body_766(765,dysp) :- body_141(136,dysp).
-true.
+
 util_node(4) :- \+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(0) :- \+smoke,xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_766(765,dysp).

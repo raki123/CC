@@ -784,7 +784,7 @@ algebraic_atom(69,2,1,set(none),mek("3"),"0.0") :- algebraic_atom(69,1,1,set(non
 body_1425(1424,multi) :- body_1010(1005,multi).
 erk("1") :- algebraic_atom(72,0,0,set(none),erk("1"),"0.1177011"),body_1819(1818,multi).
 algebraic_atom(78,2,1,set(none),erk("3"),"0.25") :- algebraic_atom(78,2,0,set(none),erk("3"),"0.25").
-true.
+
 algebraic_atom(61,2,1,set(none),mek("3"),"0.3333333") :- algebraic_atom(61,2,0,set(none),mek("3"),"0.3333333").
 body_1142(1137,multi) :- raf("1"),pKC("2"),pKA("2").
 body_1(0,multi).

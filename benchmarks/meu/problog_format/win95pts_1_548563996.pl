@@ -802,7 +802,7 @@ prtData:-algebraic_atom(363,0,0,set(none),prtData,"0.5"),body_9821(9820,prtData)
 pC2PRT:-algebraic_atom(328,0,0,set(none),pC2PRT,"0.0"),body_9540(9539,pC2PRT).
 pC2PRT:-algebraic_atom(327,0,0,set(none),pC2PRT,"0.0"),body_9532(9531,pC2PRT).
 prtFile:-algebraic_atom(332,0,0,set(none),prtFile,"0.2"),body_9573(9572,prtFile).
-true.
+
 pC2PRT:-algebraic_atom(323,0,0,set(none),pC2PRT,"0.0"),body_9500(9499,pC2PRT).
 prtFile:-algebraic_atom(331,0,0,set(none),prtFile,"0.8"),body_9564(9563,prtFile).
 pC2PRT:-algebraic_atom(322,0,0,set(none),pC2PRT,"0.0"),body_9492(9491,pC2PRT).

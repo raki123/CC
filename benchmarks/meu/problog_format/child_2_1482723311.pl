@@ -868,7 +868,7 @@ algebraic_atom(107,2,1,set(none),lowerBodyO2("12+"),"0.6"):-algebraic_atom(107,2
 body_5238(5237,multi):-body_1102(1099,multi).
 body_299(298,multi):-disease("PAIVS").
 algebraic_atom(48,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(48,1,1,set(none),age("4-10_days"),"0.15").
-true.
+
 body_345(344,multi):-disease("Lung").
 algebraic_atom(19,2,1,set(none),cardiacMixing("Complete"),"0.05"):-algebraic_atom(19,1,1,set(none),cardiacMixing("Mild"),"0.53").
 ductFlow("Lt_to_Rt"):-algebraic_atom(34,0,0,set(none),ductFlow("Lt_to_Rt"),"0.8"),body_4760(4759,multi).

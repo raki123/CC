@@ -29,7 +29,7 @@ maryCalls:-algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_80(79,maryCalls)
 body_56(55,alarm):-body_19(15,alarm).
 alarm:-algebraic_atom(0,0,0,set(none),alarm,"0.95"),body_48(47,alarm).
 johnCalls:-algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_106(105,johnCalls).
-true.
+
 maryCalls:-algebraic_atom(5,0,0,set(none),maryCalls,"0.01"),body_89(88,maryCalls).
 body_68(67,johnCalls):-alarm.
 body_7(4,alarm):-earthquake,burglary.

@@ -988,7 +988,7 @@ body_232(229,multi) :- pKC("2"),pKA("2").
 mek("3") :- algebraic_atom(52,2,0,set(none),mek("3"),"0.3333333"),\+algebraic_atom(52,1,1,set(none),mek("2"),"0.3333333"),body_1461(1460,multi).
 body_1651(1648,multi) :- pKA("1"),erk("1").
 body_172(169,multi) :- pKC("2"),pKA("1").
-true.
+
 body_1282(1281,multi) :- body_835(832,multi).
 pIP3("2") :- algebraic_atom(2,1,0,set(none),pIP3("2"),"0.4473324"),\+algebraic_atom(2,0,0,set(none),pIP3("1"),"0.2184223"),body_561(560,multi).
 mek("2") :- algebraic_atom(51,1,0,set(none),mek("2"),"1.0"),\+algebraic_atom(51,0,0,set(none),mek("1"),"0.0"),body_1443(1442,multi).

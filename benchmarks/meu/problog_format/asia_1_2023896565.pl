@@ -68,7 +68,7 @@ body_23(22,tub):-asia.
 body_41(40,bronc):-smoke.
 tub:-algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).
 body_51(49,bronc):-\+smoke.
-true.
+
 body_161(160,dysp):-body_106(103,dysp).
 dysp:-algebraic_atom(16,0,0,set(none),dysp,"0.8"),body_228(227,dysp).
 body_129(125,dysp):-either,\+bronc.

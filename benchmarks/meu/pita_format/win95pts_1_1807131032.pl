@@ -897,7 +897,7 @@ body_8319(8318,lclGrbld) :- body_3111(3103,lclGrbld).
 body_3301(3296,multi) :- prtQueue("Short"),ntwrkCnfg("Correct"),deskPrntSpd("Too_Slow").
 ePSGrphc("No____TIF___WMF___BMP_") :- algebraic_atom(471,0,0,set(none),ePSGrphc("No____TIF___WMF___BMP_"),"0.99"),body_10718(10717,ePSGrphc("No____TIF___WMF___BMP_")).
 drvOK("Reinstalled") :- algebraic_atom(491,0,0,set(none),drvOK("Reinstalled"),"0.99"),body_10908(10907,drvOK("Reinstalled")).
-true.
+
 body_2195(2190,multi) :- prntPrcssTm("Too_Long"),appDtGnTm("Too_Long"),prtMem("Greater_than_2_Mb").
 prtPaper("Has_Paper") :- algebraic_atom(463,0,0,set(none),prtPaper("Has_Paper"),"0.98"),body_10642(10641,prtPaper("Has_Paper")).
 ntwrkCnfg("Incorrect") :- algebraic_atom(488,0,0,set(none),ntwrkCnfg("Incorrect"),"0.02"),body_10879(10877,ntwrkCnfg("Incorrect")).

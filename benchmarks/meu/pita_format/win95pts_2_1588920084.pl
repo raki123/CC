@@ -2167,7 +2167,7 @@ body_7125(7111,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_")
 body_14095(14094,tTOK) :- body_737(732,tTOK).
 body_15595(15594,incmpltPS) :- body_3193(3189,incmpltPS).
 body_14317(14316,nnTTOK) :- body_1042(1037,nnTTOK).
-true.
+
 body_15741(15740,problem3) :- body_3413(3406,problem3).
 body_1068(1062,nnTTOK) :- fntInstlltn("Verified"),\+scrnFntNtPrntrFnt,prtMem("Greater_than_2_Mb").
 body_14325(14324,nnTTOK) :- body_1055(1050,nnTTOK).

@@ -1018,7 +1018,7 @@ algebraic_atom(5,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(
 body_1849(1848,multi):-body_1413(1410,multi).
 lungParench("Normal"):-algebraic_atom(5,0,0,set(none),lungParench("Normal"),"0.8"),body_654(653,multi).
 algebraic_atom(5,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(5,2,0,set(none),lungParench("Abnormal"),"0.15").
-true.
+
 lungParench("Congested"):-algebraic_atom(4,1,0,set(none),lungParench("Congested"),"0.05"),\+algebraic_atom(4,0,0,set(none),lungParench("Normal"),"0.8"),body_636(635,multi).
 algebraic_atom(4,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(4,1,0,set(none),lungParench("Congested"),"0.05").
 algebraic_atom(5,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(5,1,1,set(none),lungParench("Congested"),"0.05").

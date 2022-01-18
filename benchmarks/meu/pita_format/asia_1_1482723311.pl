@@ -71,5 +71,5 @@ body_86(85,xray) :- either.
 body_161(160,dysp) :- body_106(103,dysp).
 body_129(125,dysp) :- either,\+bronc.
 body_118(114,dysp) :- \+either,bronc.
-true.
+
 :- end_lpad.

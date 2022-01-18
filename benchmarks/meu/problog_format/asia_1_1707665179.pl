@@ -59,7 +59,7 @@ tub:-algebraic_atom(3,0,0,set(none),tub,"0.01"),body_113(112,tub).
 either:-tub,lung.
 either:-tub,\+lung.
 dysp:-algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).
-true.
+
 body_170(169,dysp):-body_118(114,dysp).
 body_51(49,bronc):-\+smoke.
 body_78(73,either):-\+tub,\+lung.

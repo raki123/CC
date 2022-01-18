@@ -600,7 +600,7 @@ xrayReport("Grd_Glass"):-algebraic_atom(95,3,0,set(none),xrayReport("Grd_Glass")
 algebraic_atom(52,1,1,set(none),cO2("Low"),"0.1"):-algebraic_atom(52,0,0,set(none),cO2("Normal"),"0.8").
 lowerBodyO2("<5"):-algebraic_atom(108,0,0,set(none),lowerBodyO2("<5"),"0.3"),body_2389(2388,multi).
 hypoxiaInO2("Mild"):-algebraic_atom(67,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_1601(1600,multi).
-true.
+
 algebraic_atom(53,1,1,set(none),cO2("Low"),"0.05"):-algebraic_atom(53,1,0,set(none),cO2("Low"),"0.05").
 chestXray("Plethoric"):-algebraic_atom(80,2,0,set(none),chestXray("Plethoric"),"0.05"),\+algebraic_atom(80,1,1,set(none),chestXray("Oligaemic"),"0.15"),body_1905(1904,multi).
 grunting:-algebraic_atom(56,0,0,set(none),grunting,"0.05"),body_1453(1452,grunting).

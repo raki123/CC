@@ -180,7 +180,7 @@ util_node(0):-\+a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("un
 body_999(998,multi).
 util_node(1):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),\+t("car"),e("uni"),\+e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),t("other"),\+r("small").
 body_67(64,multi):-s("M"),a("adult").
-true.
+
 body_1056(1055,multi):-body_82(79,multi).
 body_52(49,multi):-s("F"),a("young").
 body_1043(1042,multi):-body_67(64,multi).

@@ -1852,7 +1852,7 @@ body_8264(8250,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corru
 incmpltPS :- algebraic_atom(191,0,0,set(none),incmpltPS,"0.0"),body_15603(15602,incmpltPS).
 body_6197(6182,pC2PRT) :- dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
 body_16645(16644,pC2PRT) :- body_6175(6160,pC2PRT).
-true.
+
 body_8369(8355,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
 body_17709(17708,prtData) :- body_9078(9064,prtData).
 body_9036(9022,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.

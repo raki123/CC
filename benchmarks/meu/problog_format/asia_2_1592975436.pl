@@ -86,7 +86,7 @@ body_106(103,dysp):-either,bronc.
 body_764(763,dysp):-body_141(136,dysp).
 util_node(0):-\+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
 either:-algebraic_atom(6,0,0,set(none),either,"0.0"),body_716(715,either).
-true.
+
 either:-\+tub,lung.
 util_node(0):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 tub:-algebraic_atom(2,0,0,set(none),tub,"0.05"),body_684(683,tub).

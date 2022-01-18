@@ -707,7 +707,7 @@ drvSet("Correct") :- algebraic_atom(511,0,0,set(none),drvSet("Correct"),"0.99"),
 prtTimeOut("Too_Short") :- algebraic_atom(514,0,0,set(none),prtTimeOut("Too_Short"),"0.06"),body_18329(18327,prtTimeOut("Too_Short")).
 pSERRMEM("Low_Memory") :- algebraic_atom(142,1,0,set(none),pSERRMEM("Low_Memory"),"0.0"),\+algebraic_atom(142,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15162(15161,multi).
 dS_NTOK :- algebraic_atom(145,0,0,set(none),dS_NTOK,"0.1"),body_15191(15190,dS_NTOK).
-true.
+
 algebraic_atom(142,1,1,set(none),pSERRMEM("Low_Memory"),"0.0") :- algebraic_atom(142,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
 prntngArOK("Correct") :- algebraic_atom(505,0,0,set(none),prntngArOK("Correct"),"0.98"),body_18244(18243,prntngArOK("Correct")).
 pSERRMEM("No_Error") :- algebraic_atom(141,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15149(15148,multi).

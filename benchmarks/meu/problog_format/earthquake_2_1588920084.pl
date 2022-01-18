@@ -59,7 +59,7 @@ util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_78(76,johnCalls):-\+alarm.
 util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
-true.
+
 util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.

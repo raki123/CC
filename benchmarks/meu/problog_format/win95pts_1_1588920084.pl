@@ -2121,7 +2121,7 @@ prtIcon("Grayed_Out"):-algebraic_atom(60,1,0,set(none),prtIcon("Grayed_Out"),"0.
 deskPrntSpd("OK"):-algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_7817(7816,multi).
 algebraic_atom(129,1,1,set(none),deskPrntSpd("Too_Slow"),"0.99900001"):-algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999").
 deskPrntSpd("OK"):-algebraic_atom(130,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_7830(7829,multi).
-true.
+
 deskPrntSpd("OK"):-algebraic_atom(128,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_7804(7803,multi).
 algebraic_atom(127,1,1,set(none),deskPrntSpd("Too_Slow"),"0.00099999"):-algebraic_atom(127,0,0,set(none),deskPrntSpd("OK"),"0.99900001").
 deskPrntSpd("Too_Slow"):-algebraic_atom(128,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001"),\+algebraic_atom(128,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_7804(7803,multi).

@@ -677,7 +677,7 @@ pKA("2") :- algebraic_atom(5,1,0,set(none),pKA("2"),"0.3794311"),\+algebraic_ato
 algebraic_atom(53,2,1,set(none),mek("3"),"0.0") :- algebraic_atom(53,1,1,set(none),mek("2"),"0.242268").
 body_4425(4424,erk("3")) :- dec_8.
 erk("1") :- algebraic_atom(79,0,0,set(none),erk("1"),"0.0"),body_4163(4162,multi).
-true.
+
 raf("2") :- algebraic_atom(25,1,0,set(none),raf("2"),"0.1538462"),\+algebraic_atom(25,0,0,set(none),raf("1"),"0.8461538"),body_3191(3190,multi).
 mek("3") :- algebraic_atom(54,2,0,set(none),mek("3"),"0.007380074"),\+algebraic_atom(54,1,1,set(none),mek("2"),"0.649446494"),body_3713(3712,multi).
 akt("1") :- algebraic_atom(83,0,0,set(none),akt("1"),"0.3349515"),body_4235(4234,multi).

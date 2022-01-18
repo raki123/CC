@@ -1074,7 +1074,7 @@ body_322(321,multi):-disease("TAPVD").
 body_941(940,multi):-body_417(416,multi).
 cardiacMixing("Complete"):-algebraic_atom(16,2,0,set(none),cardiacMixing("Complete"),"0.8"),\+algebraic_atom(16,1,1,set(none),cardiacMixing("Mild"),"0.16"),body_801(800,multi).
 cardiacMixing("Complete"):-algebraic_atom(14,2,0,set(none),cardiacMixing("Complete"),"0.15"),\+algebraic_atom(14,1,1,set(none),cardiacMixing("Mild"),"0.43"),body_756(755,multi).
-true.
+
 body_1863(1861,gruntingReport):-\+grunting.
 body_1469(1468,grunting):-body_990(986,grunting).
 age("4-10_days"):-algebraic_atom(42,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(42,0,0,set(none),age("0-3_days"),"0.8"),body_1211(1210,multi).

@@ -1291,7 +1291,7 @@ algebraic_atom(59,1,1,set(none),prtIcon("Grayed_Out"),"0.0001"):-algebraic_atom(
 body_7051(7050,multi):-body_998(996,multi).
 body_983(982,multi):-prtPScript.
 body_7038(7037,multi):-body_983(982,multi).
-true.
+
 body_1455(1448,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Correct").
 nnTTOK:-algebraic_atom(58,0,0,set(none),nnTTOK,"0.5"),body_7147(7146,nnTTOK).
 nnTTOK:-algebraic_atom(56,0,0,set(none),nnTTOK,"0.5"),body_7131(7130,nnTTOK).

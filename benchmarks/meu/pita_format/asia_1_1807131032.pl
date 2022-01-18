@@ -58,7 +58,7 @@ dysp :- algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_161(160,dysp).
 dysp :- algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_170(169,dysp).
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).
 body_97(96,lung) :- body_15(13,lung).
-true.
+
 body_23(22,tub) :- asia.
 either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_136(135,either).
 body_96(94,xray) :- \+either.

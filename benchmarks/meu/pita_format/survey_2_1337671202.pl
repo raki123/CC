@@ -145,7 +145,7 @@ algebraic_atom(11,2,1,set(none),t("other"),"0.1") :- algebraic_atom(11,1,1,set(n
 body_1043(1042,multi) :- body_67(64,multi).
 algebraic_atom(0,1,1,set(none),a("adult"),"0.5") :- algebraic_atom(0,1,0,set(none),a("adult"),"0.5").
 a("young") :- algebraic_atom(0,0,0,set(none),a("young"),"0.3").
-true.
+
 util_node(1) :- a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),\+t("car"),\+e("uni"),e("high"),\+r("big"),\+a("young"),t("train"),\+a("old"),\+t("other"),r("small").
 e("high") :- algebraic_atom(1,0,0,set(none),e("high"),"0.75"),body_1017(1016,multi).
 o("self") :- algebraic_atom(17,0,0,set(none),o("self"),"0.08"),body_1240(1239,o("self")).

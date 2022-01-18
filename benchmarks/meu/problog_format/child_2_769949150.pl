@@ -450,7 +450,7 @@ algebraic_atom(93,1,1,set(none),hypDistrib("Unequal"),"0.5"):-algebraic_atom(93,
 hypDistrib("Unequal"):-algebraic_atom(91,1,0,set(none),hypDistrib("Unequal"),"0.5"),\+algebraic_atom(91,0,0,set(none),hypDistrib("Equal"),"0.5"),body_5757(5756,multi).
 body_5262(5261,multi):-body_1122(1119,multi).
 xrayReport("Grd_Glass"):-algebraic_atom(94,3,0,set(none),xrayReport("Grd_Glass"),"0.02"),\+algebraic_atom(94,2,1,set(none),xrayReport("Plethoric"),"0.06"),body_5796(5795,multi).
-true.
+
 body_4528(4527,multi):-body_322(321,multi).
 body_4676(4675,multi):-body_472(471,multi).
 body_5936(5935,gruntingReport):-body_1853(1852,gruntingReport).

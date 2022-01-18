@@ -69,7 +69,7 @@ body_86(85,xray) :- either.
 either :- tub,\+lung.
 either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_136(135,either).
 body_198(197,either) :- dec_2.
-true.
+
 body_106(103,dysp) :- either,bronc.
 body_5(4,lung) :- smoke.
 bronc :- algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_121(120,bronc).

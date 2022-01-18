@@ -22,7 +22,7 @@ util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 body_436(435,alarm):-body_7(4,alarm).
 body_444(443,alarm):-body_19(15,alarm).
 body_468(467,maryCalls):-body_50(49,maryCalls).
-true.
+
 body_7(4,alarm):-earthquake,burglary.
 util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.

@@ -357,7 +357,7 @@ algebraic_atom(18,2,1,set(none),cardiacMixing("Complete"),"0.95"):-algebraic_ato
 chestXray("Plethoric"):-algebraic_atom(75,2,0,set(none),chestXray("Plethoric"),"0.79"),\+algebraic_atom(75,1,1,set(none),chestXray("Oligaemic"),"0.01"),body_5437(5436,multi).
 body_4291(4290,multi):-body_90(89,multi).
 cardiacMixing("Transp."):-algebraic_atom(19,3,0,set(none),cardiacMixing("Transp."),"0.02"),\+algebraic_atom(19,2,1,set(none),cardiacMixing("Complete"),"0.05"),body_4544(4543,multi).
-true.
+
 body_6159(6158,cardiacMixing("Mild")):-dec_2.
 body_253(252,multi):-disease("TGA").
 body_5201(5200,multi):-body_1062(1059,multi).

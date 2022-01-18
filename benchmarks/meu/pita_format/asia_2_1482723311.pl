@@ -40,7 +40,7 @@ dysp :- algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_756(755,dysp).
 dysp :- algebraic_atom(11,0,0,set(none),dysp,"0.7"),body_748(747,dysp).
 body_118(114,dysp) :- \+either,bronc.
 util_node(3) :- \+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
-true.
+
 body_756(755,dysp) :- body_141(136,dysp).
 util_node(0) :- smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
 body_78(73,either) :- \+tub,\+lung.

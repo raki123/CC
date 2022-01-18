@@ -1380,7 +1380,7 @@ body_6863(6850,prtData) :- tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corru
 algebraic_atom(30,1,1,set(none),appDtGnTm("Too_Long"),"0.00999999") :- algebraic_atom(30,1,0,set(none),appDtGnTm("Too_Long"),"0.00999999").
 body_9637(9636,prtData) :- body_6923(6910,prtData).
 body_8033(8019,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
-true.
+
 body_10061(10060,prtData) :- body_8012(7998,prtData).
 body_7991(7977,prtData) :- tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
 ntGrbld :- algebraic_atom(90,0,0,set(none),ntGrbld,"0.5"),body_7474(7473,ntGrbld).

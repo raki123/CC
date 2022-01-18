@@ -83,7 +83,7 @@ util_node(3):-smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_141(136,dysp):-\+either,\+bronc.
 util_node(4):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 xray:-algebraic_atom(7,0,0,set(none),xray,"0.98"),body_716(715,xray).
-true.
+
 body_724(723,xray):-body_96(94,xray).
 util_node(2):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 tub:-algebraic_atom(2,0,0,set(none),tub,"0.05"),body_676(675,tub).

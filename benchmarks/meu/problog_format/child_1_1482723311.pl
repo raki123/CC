@@ -812,7 +812,7 @@ grunting:-algebraic_atom(56,0,0,set(none),grunting,"0.05"),body_1453(1452,grunti
 body_1262(1259,multi):-lungFlow("Normal"),lungParench("Normal").
 algebraic_atom(79,2,1,set(none),chestXray("Plethoric"),"0.05"):-algebraic_atom(79,2,0,set(none),chestXray("Plethoric"),"0.05").
 algebraic_atom(80,4,1,set(none),chestXray("Asy/Patch"),"0.7"):-algebraic_atom(80,4,0,set(none),chestXray("Asy/Patch"),"0.7").
-true.
+
 sick:-algebraic_atom(25,0,0,set(none),sick,"0.7"),body_933(932,sick).
 lungFlow("Low"):-algebraic_atom(26,1,0,set(none),lungFlow("Low"),"0.65"),\+algebraic_atom(26,0,0,set(none),lungFlow("Normal"),"0.3"),body_941(940,multi).
 lungFlow("Normal"):-algebraic_atom(29,0,0,set(none),lungFlow("Normal"),"0.1"),body_995(994,multi).

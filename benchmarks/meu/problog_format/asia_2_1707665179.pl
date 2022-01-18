@@ -51,7 +51,7 @@ body_129(125,dysp):-either,\+bronc.
 util_node(1):-smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 util_node(1):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 body_723(722,xray):-body_86(85,xray).
-true.
+
 util_node(0):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
 xray:-algebraic_atom(8,0,0,set(none),xray,"0.05"),body_731(730,xray).
 either:-tub,lung.

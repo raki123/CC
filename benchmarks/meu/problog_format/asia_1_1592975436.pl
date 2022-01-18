@@ -64,7 +64,7 @@ either:-tub,lung.
 body_121(120,bronc):-body_41(40,bronc).
 xray:-algebraic_atom(7,0,0,set(none),xray,"0.98"),body_144(143,xray).
 body_106(103,dysp):-either,bronc.
-true.
+
 body_113(112,tub):-body_33(31,tub).
 lung:-algebraic_atom(1,0,0,set(none),lung,"0.01"),body_97(96,lung).
 either:-tub,\+lung.

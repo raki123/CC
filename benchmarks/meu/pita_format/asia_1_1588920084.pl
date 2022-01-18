@@ -30,7 +30,7 @@ body_113(112,tub) :- body_33(31,tub).
 either :- algebraic_atom(6,0,0,set(none),either,"0.0"),body_136(135,either).
 body_144(143,xray) :- body_86(85,xray).
 body_141(136,dysp) :- \+either,\+bronc.
-true.
+
 body_170(169,dysp) :- body_118(114,dysp).
 dysp :- algebraic_atom(14,0,0,set(none),dysp,"0.9"),body_208(207,dysp).
 body_178(177,dysp) :- body_129(125,dysp).

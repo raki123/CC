@@ -45,7 +45,7 @@ body_170(169,dysp) :- body_118(114,dysp).
 body_136(135,either) :- body_78(73,either).
 body_161(160,dysp) :- body_106(103,dysp).
 body_121(120,bronc) :- body_41(40,bronc).
-true.
+
 body_89(88,lung) :- body_5(4,lung).
 body_23(22,tub) :- asia.
 body_129(125,dysp) :- either,\+bronc.

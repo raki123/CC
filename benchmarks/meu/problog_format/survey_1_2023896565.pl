@@ -103,7 +103,7 @@ t("train"):-algebraic_atom(13,1,0,set(none),t("train"),"0.36"),\+algebraic_atom(
 body_169(168,multi):-body_112(109,multi).
 t("other"):-algebraic_atom(14,2,0,set(none),t("other"),"0.09"),\+algebraic_atom(14,1,1,set(none),t("train"),"0.21"),body_289(288,multi).
 body_242(239,multi):-r("big"),o("self").
-true.
+
 body_156(155,multi):-body_97(94,multi).
 body_86(85,multi).
 e("high"):-algebraic_atom(18,0,0,set(none),e("high"),"0.72"),body_338(337,e("high")).

@@ -921,7 +921,7 @@ algebraic_atom(80,1,1,set(none),chestXray("Oligaemic"),"0.15"):-algebraic_atom(8
 cO2Report("<7.5"):-algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9"),body_2275(2274,multi).
 algebraic_atom(101,1,1,set(none),cO2Report(">=7.5"),"0.1"):-algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9").
 body_2052(2051,multi):-body_1639(1636,multi).
-true.
+
 body_2026(2025,multi):-body_1609(1606,multi).
 body_2275(2274,multi):-body_1871(1870,multi).
 lungParench("Normal"):-algebraic_atom(6,0,0,set(none),lungParench("Normal"),"0.1"),body_672(671,multi).

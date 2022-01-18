@@ -16,7 +16,7 @@ utility(util_node(1), 15).
 utility(util_node(2), 47).
 utility(util_node(3), -45).
 utility(util_node(4), -13).
-true.
+
 body_78(76,johnCalls) :- \+alarm.
 util_node(4) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
 util_node(1) :- \+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.

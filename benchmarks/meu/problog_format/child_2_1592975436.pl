@@ -1108,7 +1108,7 @@ body_4825(4824,multi):-body_617(616,multi).
 algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02"):-algebraic_atom(95,1,1,set(none),xrayReport("Oligaemic"),"0.8").
 body_4807(4806,multi):-body_599(598,multi).
 algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35"):-algebraic_atom(112,1,0,set(none),lowerBodyO2("5-12"),"0.35").
-true.
+
 xrayReport("Asy/Patchy"):-algebraic_atom(94,4,0,set(none),xrayReport("Asy/Patchy"),"0.06"),\+algebraic_atom(94,3,1,set(none),xrayReport("Grd_Glass"),"0.02"),body_5801(5800,multi).
 lowerBodyO2("12+"):-algebraic_atom(112,2,0,set(none),lowerBodyO2("12+"),"0.05"),\+algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35"),body_6140(6139,multi).
 body_617(616,multi):-disease("Lung").

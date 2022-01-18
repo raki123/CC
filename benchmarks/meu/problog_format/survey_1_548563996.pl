@@ -135,7 +135,7 @@ e("high"):-algebraic_atom(1,0,0,set(none),e("high"),"0.75"),body_104(103,multi).
 body_208(207,multi):-body_152(151,multi).
 e("high"):-algebraic_atom(4,0,0,set(none),e("high"),"0.7"),body_143(142,multi).
 body_152(151,multi):-e("high").
-true.
+
 body_86(85,multi).
 body_117(116,multi):-body_52(49,multi).
 algebraic_atom(0,1,1,set(none),a("adult"),"0.5"):-algebraic_atom(0,0,0,set(none),a("young"),"0.3").

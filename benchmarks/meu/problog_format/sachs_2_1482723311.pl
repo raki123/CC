@@ -866,7 +866,7 @@ body_1692(1689,multi):-pKA("3"),erk("1").
 body_3497(3496,multi):-body_835(832,multi).
 body_58(57,multi):-plcg("2").
 p38("1"):-algebraic_atom(10,0,0,set(none),p38("1"),"0.875"),body_2921(2920,multi).
-true.
+
 body_39(38,multi):-plcg("1").
 algebraic_atom(10,2,1,set(none),p38("3"),"0.0"):-algebraic_atom(10,2,0,set(none),p38("3"),"0.0").
 algebraic_atom(10,2,1,set(none),p38("3"),"0.0"):-algebraic_atom(10,1,1,set(none),p38("2"),"0.125").

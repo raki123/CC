@@ -146,7 +146,7 @@ algebraic_atom(0,1,1,set(none),a("adult"),"0.5"):-algebraic_atom(0,0,0,set(none)
 body_182(181,multi):-body_125(124,multi).
 e("uni"):-algebraic_atom(4,1,0,set(none),e("uni"),"0.3"),\+algebraic_atom(4,0,0,set(none),e("high"),"0.7"),body_143(142,multi).
 o("emp"):-algebraic_atom(8,0,0,set(none),o("emp"),"0.92"),body_195(194,multi).
-true.
+
 r("big"):-algebraic_atom(9,1,0,set(none),r("big"),"0.75"),\+algebraic_atom(9,0,0,set(none),r("small"),"0.25"),body_208(207,multi).
 algebraic_atom(1,1,1,set(none),e("uni"),"0.25"):-algebraic_atom(1,1,0,set(none),e("uni"),"0.25").
 body_234(233,multi):-body_181(178,multi).

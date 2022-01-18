@@ -17,7 +17,7 @@ utility(\+alarm, 45).
 utility(johnCalls, 36).
 utility(\+johnCalls, 36).
 johnCalls:-algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_97(96,johnCalls).
-true.
+
 body_48(47,alarm):-body_7(4,alarm).
 body_60(58,maryCalls):-\+alarm.
 body_78(76,johnCalls):-\+alarm.

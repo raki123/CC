@@ -969,7 +969,7 @@ body_1066(1065,multi):-body_594(591,multi).
 algebraic_atom(27,2,1,set(none),jnk("3"),"0.0"):-algebraic_atom(27,2,0,set(none),jnk("3"),"0.0").
 algebraic_atom(44,1,1,set(none),mek("2"),"0.2545455"):-algebraic_atom(44,1,0,set(none),mek("2"),"0.2545455").
 body_1192(1191,multi):-body_735(732,multi).
-true.
+
 body_534(531,multi):-pKC("2"),pKA("1").
 algebraic_atom(21,1,1,set(none),raf("2"),"0.3929167"):-algebraic_atom(21,1,0,set(none),raf("2"),"0.3929167").
 algebraic_atom(43,2,1,set(none),pIP2("3"),"0.92207792"):-algebraic_atom(43,1,1,set(none),pIP2("2"),"0.05194805").
