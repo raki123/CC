@@ -1,1758 +1,2403 @@
-body_385(380,nnPSGrphc) :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("No____TIF___WMF___BMP_").
-body_398(393,nnPSGrphc) :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("Yes____EPS_").
-body_410(405,nnPSGrphc) :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("No____TIF___WMF___BMP_").
-body_422(417,nnPSGrphc) :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("Yes____EPS_").
-body_434(429,nnPSGrphc) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("No____TIF___WMF___BMP_").
-body_446(441,nnPSGrphc) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("Yes____EPS_").
-body_458(453,nnPSGrphc) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("No____TIF___WMF___BMP_").
-body_470(465,nnPSGrphc) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("Yes____EPS_").
-body_482(477,pSGRAPHIC) :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("No____TIF___WMF___BMP_").
-pSGRAPHIC :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("Yes____EPS_").
-body_501(496,pSGRAPHIC) :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("No____TIF___WMF___BMP_").
-body_513(508,pSGRAPHIC) :- prtMem("Greater_than_2_Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("Yes____EPS_").
-body_525(520,pSGRAPHIC) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("No____TIF___WMF___BMP_").
-body_537(532,pSGRAPHIC) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Correct"), ePSGrphc("Yes____EPS_").
-body_549(544,pSGRAPHIC) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("No____TIF___WMF___BMP_").
-body_561(556,pSGRAPHIC) :- prtMem("Less_than_2Mb"), grphcsRltdDrvrSttngs("Incorrect"), ePSGrphc("Yes____EPS_").
-body_569(568,multi) :- tnrSpply("Adequate").
-body_583(582,multi) :- tnrSpply("Low").
-body_598(595,multi) :- appOK("Correct"), dataFile("Correct").
-body_614(611,multi) :- appOK("Correct"), dataFile("Incorrect_Corrupt").
-body_629(626,multi) :- appOK("Incorrect_Corrupt"), dataFile("Correct").
-body_644(641,multi) :- appOK("Incorrect_Corrupt"), dataFile("Incorrect_Corrupt").
-body_661(656,tTOK) :- prtMem("Greater_than_2_Mb"), fntInstlltn("Verified"), prntrAccptsTrtyp.
-body_675(669,tTOK) :- prtMem("Greater_than_2_Mb"), fntInstlltn("Verified"), \+prntrAccptsTrtyp.
-body_687(682,tTOK) :- prtMem("Greater_than_2_Mb"), fntInstlltn("Faulty"), prntrAccptsTrtyp.
-body_700(694,tTOK) :- prtMem("Greater_than_2_Mb"), fntInstlltn("Faulty"), \+prntrAccptsTrtyp.
-body_712(707,tTOK) :- prtMem("Less_than_2Mb"), fntInstlltn("Verified"), prntrAccptsTrtyp.
-body_725(719,tTOK) :- prtMem("Less_than_2Mb"), fntInstlltn("Verified"), \+prntrAccptsTrtyp.
-body_737(732,tTOK) :- prtMem("Less_than_2Mb"), fntInstlltn("Faulty"), prntrAccptsTrtyp.
-body_750(744,tTOK) :- prtMem("Less_than_2Mb"), fntInstlltn("Faulty"), \+prntrAccptsTrtyp.
-body_758(757,multi) :- prtSpool("Enabled").
-body_772(771,multi) :- prtSpool("Disabled").
-body_789(784,netOK) :- prtPath("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_802(797,netOK) :- prtPath("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_814(809,netOK) :- prtPath("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_826(821,netOK) :- prtPath("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_838(833,netOK) :- prtPath("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_850(845,netOK) :- prtPath("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_862(857,netOK) :- prtPath("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_874(869,netOK) :- prtPath("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_886(881,lclOK) :- prtCbl("Connected"), prtPort, cblPrtHrdwrOK("Operational").
-body_899(894,lclOK) :- prtCbl("Connected"), prtPort, cblPrtHrdwrOK("Not_Operational").
-body_912(906,lclOK) :- prtCbl("Connected"), \+prtPort, cblPrtHrdwrOK("Operational").
-body_925(919,lclOK) :- prtCbl("Connected"), \+prtPort, cblPrtHrdwrOK("Not_Operational").
-body_937(932,lclOK) :- prtCbl("Loose"), prtPort, cblPrtHrdwrOK("Operational").
-body_949(944,lclOK) :- prtCbl("Loose"), prtPort, cblPrtHrdwrOK("Not_Operational").
-body_962(956,lclOK) :- prtCbl("Loose"), \+prtPort, cblPrtHrdwrOK("Operational").
-body_975(969,lclOK) :- prtCbl("Loose"), \+prtPort, cblPrtHrdwrOK("Not_Operational").
-body_983(982,multi) :- prtPScript.
-body_998(996,multi) :- \+prtPScript.
-body_1011(1010,multi) :- prtMem("Greater_than_2_Mb").
-body_1025(1024,multi) :- prtMem("Less_than_2Mb").
-body_1042(1037,nnTTOK) :- prtMem("Greater_than_2_Mb"), scrnFntNtPrntrFnt, fntInstlltn("Verified").
-body_1055(1050,nnTTOK) :- prtMem("Greater_than_2_Mb"), scrnFntNtPrntrFnt, fntInstlltn("Faulty").
-body_1068(1062,nnTTOK) :- prtMem("Greater_than_2_Mb"), \+scrnFntNtPrntrFnt, fntInstlltn("Verified").
-body_1081(1075,nnTTOK) :- prtMem("Greater_than_2_Mb"), \+scrnFntNtPrntrFnt, fntInstlltn("Faulty").
-body_1093(1088,nnTTOK) :- prtMem("Less_than_2Mb"), scrnFntNtPrntrFnt, fntInstlltn("Verified").
-body_1105(1100,nnTTOK) :- prtMem("Less_than_2Mb"), scrnFntNtPrntrFnt, fntInstlltn("Faulty").
-body_1118(1112,nnTTOK) :- prtMem("Less_than_2Mb"), \+scrnFntNtPrntrFnt, fntInstlltn("Verified").
-body_1131(1125,nnTTOK) :- prtMem("Less_than_2Mb"), \+scrnFntNtPrntrFnt, fntInstlltn("Faulty").
-body_1141(1138,multi) :- ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_1157(1154,multi) :- ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_1172(1169,multi) :- ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_1187(1184,multi) :- ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_1200(1199,multi) :- prtSpool("Enabled").
-body_1214(1213,multi) :- prtSpool("Disabled").
-body_1229(1226,multi) :- cblPrtHrdwrOK("Operational"), ntwrkCnfg("Correct").
-body_1245(1242,multi) :- cblPrtHrdwrOK("Operational"), ntwrkCnfg("Incorrect").
-body_1260(1257,multi) :- cblPrtHrdwrOK("Not_Operational"), ntwrkCnfg("Correct").
-body_1275(1272,multi) :- cblPrtHrdwrOK("Not_Operational"), ntwrkCnfg("Incorrect").
-body_1292(1287,cmpltPgPrntd) :- prtMem("Greater_than_2_Mb"), pgOrnttnOK("Correct"), prntngArOK("Correct").
-body_1305(1300,cmpltPgPrntd) :- prtMem("Greater_than_2_Mb"), pgOrnttnOK("Correct"), prntngArOK("Incorrect").
-body_1317(1312,cmpltPgPrntd) :- prtMem("Greater_than_2_Mb"), pgOrnttnOK("Incorrect"), prntngArOK("Correct").
-body_1329(1324,cmpltPgPrntd) :- prtMem("Greater_than_2_Mb"), pgOrnttnOK("Incorrect"), prntngArOK("Incorrect").
-body_1341(1336,cmpltPgPrntd) :- prtMem("Less_than_2Mb"), pgOrnttnOK("Correct"), prntngArOK("Correct").
-body_1353(1348,cmpltPgPrntd) :- prtMem("Less_than_2Mb"), pgOrnttnOK("Correct"), prntngArOK("Incorrect").
-body_1365(1360,cmpltPgPrntd) :- prtMem("Less_than_2Mb"), pgOrnttnOK("Incorrect"), prntngArOK("Correct").
-body_1377(1372,cmpltPgPrntd) :- prtMem("Less_than_2Mb"), pgOrnttnOK("Incorrect"), prntngArOK("Incorrect").
-body_1385(1384,multi) :- prtOn.
-body_1400(1398,multi) :- \+prtOn.
-body_1413(1412,multi) :- prtPaper("Has_Paper").
-body_1427(1426,multi) :- prtPaper("No_Paper").
-ntGrbld :- appData("Correct"), prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct").
-body_1455(1448,ntGrbld) :- appData("Correct"), prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Incorrect").
-body_1469(1462,ntGrbld) :- appData("Correct"), prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Correct").
-body_1483(1476,ntGrbld) :- appData("Correct"), prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Incorrect").
-body_1498(1490,ntGrbld) :- appData("Correct"), \+prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct").
-body_1513(1505,ntGrbld) :- appData("Correct"), \+prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Incorrect").
-body_1528(1520,ntGrbld) :- appData("Correct"), \+prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Correct").
-body_1543(1535,ntGrbld) :- appData("Correct"), \+prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Incorrect").
-body_1557(1550,ntGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct").
-body_1571(1564,ntGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Incorrect").
-body_1585(1578,ntGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Correct").
-body_1599(1592,ntGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Incorrect").
-body_1614(1606,ntGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct").
-body_1629(1621,ntGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Incorrect").
-body_1644(1636,ntGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Correct").
-body_1659(1651,ntGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Less_than_2Mb"), ntwrkCnfg("Incorrect").
-body_1671(1666,eMFOK) :- appData("Correct"), dskLocal("Greater_than_2_Mb"), prtThread("OK").
-body_1684(1679,eMFOK) :- appData("Correct"), dskLocal("Greater_than_2_Mb"), prtThread("Corrupt_Buggy").
-body_1696(1691,eMFOK) :- appData("Correct"), dskLocal("Less_than_2_Mb"), prtThread("OK").
-body_1708(1703,eMFOK) :- appData("Correct"), dskLocal("Less_than_2_Mb"), prtThread("Corrupt_Buggy").
-body_1720(1715,eMFOK) :- appData("Incorrect_or_corrupt"), dskLocal("Greater_than_2_Mb"), prtThread("OK").
-body_1732(1727,eMFOK) :- appData("Incorrect_or_corrupt"), dskLocal("Greater_than_2_Mb"), prtThread("Corrupt_Buggy").
-body_1744(1739,eMFOK) :- appData("Incorrect_or_corrupt"), dskLocal("Less_than_2_Mb"), prtThread("OK").
-body_1756(1751,eMFOK) :- appData("Incorrect_or_corrupt"), dskLocal("Less_than_2_Mb"), prtThread("Corrupt_Buggy").
-problem4 :- nnPSGrphc, prtPScript, pSGRAPHIC.
-body_1776(1770,problem4) :- nnPSGrphc, prtPScript, \+pSGRAPHIC.
-problem4 :- nnPSGrphc, \+prtPScript, pSGRAPHIC.
-problem4 :- nnPSGrphc, \+prtPScript, \+pSGRAPHIC.
-problem4 :- \+nnPSGrphc, prtPScript, pSGRAPHIC.
-body_1812(1805,problem4) :- \+nnPSGrphc, prtPScript, \+pSGRAPHIC.
-body_1826(1819,problem4) :- \+nnPSGrphc, \+prtPScript, pSGRAPHIC.
-body_1841(1833,problem4) :- \+nnPSGrphc, \+prtPScript, \+pSGRAPHIC.
-dS_LCLOK :- appData("Correct"), prtCbl("Connected"), prtPort, cblPrtHrdwrOK("Operational").
-body_1864(1857,dS_LCLOK) :- appData("Correct"), prtCbl("Connected"), prtPort, cblPrtHrdwrOK("Not_Operational").
-body_1879(1871,dS_LCLOK) :- appData("Correct"), prtCbl("Connected"), \+prtPort, cblPrtHrdwrOK("Operational").
-body_1894(1886,dS_LCLOK) :- appData("Correct"), prtCbl("Connected"), \+prtPort, cblPrtHrdwrOK("Not_Operational").
-body_1908(1901,dS_LCLOK) :- appData("Correct"), prtCbl("Loose"), prtPort, cblPrtHrdwrOK("Operational").
-body_1922(1915,dS_LCLOK) :- appData("Correct"), prtCbl("Loose"), prtPort, cblPrtHrdwrOK("Not_Operational").
-body_1937(1929,dS_LCLOK) :- appData("Correct"), prtCbl("Loose"), \+prtPort, cblPrtHrdwrOK("Operational").
-body_1952(1944,dS_LCLOK) :- appData("Correct"), prtCbl("Loose"), \+prtPort, cblPrtHrdwrOK("Not_Operational").
-body_1966(1959,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Connected"), prtPort, cblPrtHrdwrOK("Operational").
-body_1980(1973,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Connected"), prtPort, cblPrtHrdwrOK("Not_Operational").
-body_1995(1987,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Connected"), \+prtPort, cblPrtHrdwrOK("Operational").
-body_2010(2002,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Connected"), \+prtPort, cblPrtHrdwrOK("Not_Operational").
-body_2024(2017,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Loose"), prtPort, cblPrtHrdwrOK("Operational").
-body_2038(2031,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Loose"), prtPort, cblPrtHrdwrOK("Not_Operational").
-body_2053(2045,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Loose"), \+prtPort, cblPrtHrdwrOK("Operational").
-body_2068(2060,dS_LCLOK) :- appData("Incorrect_or_corrupt"), prtCbl("Loose"), \+prtPort, cblPrtHrdwrOK("Not_Operational").
-body_2078(2075,multi) :- prtPScript, avlblVrtlMmry("Adequate____1Mb_").
-body_2094(2091,multi) :- prtPScript, avlblVrtlMmry("Inadequate____1_Mb_").
-body_2110(2106,multi) :- \+prtPScript, avlblVrtlMmry("Adequate____1Mb_").
-body_2126(2122,multi) :- \+prtPScript, avlblVrtlMmry("Inadequate____1_Mb_").
-body_2143(2138,multi) :- prtMem("Greater_than_2_Mb"), appDtGnTm("Fast_Enough"), prntPrcssTm("Fast_Enough").
-body_2161(2156,multi) :- prtMem("Greater_than_2_Mb"), appDtGnTm("Fast_Enough"), prntPrcssTm("Too_Long").
-body_2178(2173,multi) :- prtMem("Greater_than_2_Mb"), appDtGnTm("Too_Long"), prntPrcssTm("Fast_Enough").
-body_2195(2190,multi) :- prtMem("Greater_than_2_Mb"), appDtGnTm("Too_Long"), prntPrcssTm("Too_Long").
-body_2212(2207,multi) :- prtMem("Less_than_2Mb"), appDtGnTm("Fast_Enough"), prntPrcssTm("Fast_Enough").
-body_2229(2224,multi) :- prtMem("Less_than_2Mb"), appDtGnTm("Fast_Enough"), prntPrcssTm("Too_Long").
-body_2246(2241,multi) :- prtMem("Less_than_2Mb"), appDtGnTm("Too_Long"), prntPrcssTm("Fast_Enough").
-body_2263(2258,multi) :- prtMem("Less_than_2Mb"), appDtGnTm("Too_Long"), prntPrcssTm("Too_Long").
-problem5 :- trTypFnts, tTOK, nnTTOK.
-problem5 :- trTypFnts, tTOK, \+nnTTOK.
-body_2295(2289,problem5) :- trTypFnts, \+tTOK, nnTTOK.
-body_2309(2302,problem5) :- trTypFnts, \+tTOK, \+nnTTOK.
-problem5 :- \+trTypFnts, tTOK, nnTTOK.
-body_2330(2323,problem5) :- \+trTypFnts, tTOK, \+nnTTOK.
-problem5 :- \+trTypFnts, \+tTOK, nnTTOK.
-body_2353(2345,problem5) :- \+trTypFnts, \+tTOK, \+nnTTOK.
-body_2363(2360,multi) :- prtPScript, avlblVrtlMmry("Adequate____1Mb_").
-body_2379(2376,multi) :- prtPScript, avlblVrtlMmry("Inadequate____1_Mb_").
-body_2395(2391,multi) :- \+prtPScript, avlblVrtlMmry("Adequate____1Mb_").
-body_2411(2407,multi) :- \+prtPScript, avlblVrtlMmry("Inadequate____1_Mb_").
-body_2432(2423,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2449(2440,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2465(2456,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2481(2472,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_2497(2488,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2513(2504,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2529(2520,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2545(2536,dS_NTOK) :- appData("Correct"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_2561(2552,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2577(2568,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2593(2584,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2609(2600,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_2625(2616,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2641(2632,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2657(2648,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2673(2664,dS_NTOK) :- appData("Correct"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_2689(2680,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2705(2696,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2721(2712,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2737(2728,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_2753(2744,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2769(2760,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2785(2776,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2801(2792,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Correct"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_2817(2808,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2833(2824,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2849(2840,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2865(2856,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Correct"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-body_2881(2872,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Online").
-body_2897(2888,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Correct"), pTROFFLINE("Offline").
-body_2913(2904,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Online").
-body_2929(2920,dS_NTOK) :- appData("Incorrect_or_corrupt"), prtPath("Incorrect"), prtMpTPth("Incorrect"), ntwrkCnfg("Incorrect"), pTROFFLINE("Offline").
-lclGrbld :- appData("Correct"), prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Operational").
-body_2952(2945,lclGrbld) :- appData("Correct"), prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Not_Operational").
-body_2966(2959,lclGrbld) :- appData("Correct"), prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Operational").
-body_2980(2973,lclGrbld) :- appData("Correct"), prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Not_Operational").
-body_2995(2987,lclGrbld) :- appData("Correct"), \+prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Operational").
-body_3010(3002,lclGrbld) :- appData("Correct"), \+prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Not_Operational").
-body_3025(3017,lclGrbld) :- appData("Correct"), \+prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Operational").
-body_3040(3032,lclGrbld) :- appData("Correct"), \+prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Not_Operational").
-body_3054(3047,lclGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Operational").
-body_3068(3061,lclGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Not_Operational").
-body_3082(3075,lclGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Operational").
-body_3096(3089,lclGrbld) :- appData("Incorrect_or_corrupt"), prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Not_Operational").
-body_3111(3103,lclGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Operational").
-body_3126(3118,lclGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Greater_than_2_Mb"), cblPrtHrdwrOK("Not_Operational").
-body_3141(3133,lclGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Operational").
-body_3156(3148,lclGrbld) :- appData("Incorrect_or_corrupt"), \+prtDriver, prtMem("Less_than_2Mb"), cblPrtHrdwrOK("Not_Operational").
-incmpltPS :- cmpltPgPrntd, avlblVrtlMmry("Adequate____1Mb_").
-body_3171(3168,incmpltPS) :- cmpltPgPrntd, avlblVrtlMmry("Inadequate____1_Mb_").
-body_3182(3178,incmpltPS) :- \+cmpltPgPrntd, avlblVrtlMmry("Adequate____1Mb_").
-body_3193(3189,incmpltPS) :- \+cmpltPgPrntd, avlblVrtlMmry("Inadequate____1_Mb_").
-body_3201(3200,multi) :- appDtGnTm("Fast_Enough").
-body_3215(3214,multi) :- appDtGnTm("Too_Long").
-body_3232(3227,multi) :- deskPrntSpd("OK"), ntwrkCnfg("Correct"), prtQueue("Short").
-body_3250(3245,multi) :- deskPrntSpd("OK"), ntwrkCnfg("Correct"), prtQueue("Long").
-body_3267(3262,multi) :- deskPrntSpd("OK"), ntwrkCnfg("Incorrect"), prtQueue("Short").
-body_3284(3279,multi) :- deskPrntSpd("OK"), ntwrkCnfg("Incorrect"), prtQueue("Long").
-body_3301(3296,multi) :- deskPrntSpd("Too_Slow"), ntwrkCnfg("Correct"), prtQueue("Short").
-body_3318(3313,multi) :- deskPrntSpd("Too_Slow"), ntwrkCnfg("Correct"), prtQueue("Long").
-body_3335(3330,multi) :- deskPrntSpd("Too_Slow"), ntwrkCnfg("Incorrect"), prtQueue("Short").
-body_3352(3347,multi) :- deskPrntSpd("Too_Slow"), ntwrkCnfg("Incorrect"), prtQueue("Long").
-problem3 :- cmpltPgPrntd, prtPScript, incmpltPS.
-body_3377(3371,problem3) :- cmpltPgPrntd, prtPScript, \+incmpltPS.
-problem3 :- cmpltPgPrntd, \+prtPScript, incmpltPS.
-problem3 :- cmpltPgPrntd, \+prtPScript, \+incmpltPS.
-problem3 :- \+cmpltPgPrntd, prtPScript, incmpltPS.
-body_3413(3406,problem3) :- \+cmpltPgPrntd, prtPScript, \+incmpltPS.
-body_3427(3420,problem3) :- \+cmpltPgPrntd, \+prtPScript, incmpltPS.
-body_3442(3434,problem3) :- \+cmpltPgPrntd, \+prtPScript, \+incmpltPS.
-body_3454(3449,grbldOtpt) :- netPrint("No__Local_printer_"), lclGrbld, ntGrbld.
-body_3468(3462,grbldOtpt) :- netPrint("No__Local_printer_"), lclGrbld, \+ntGrbld.
-grbldOtpt :- netPrint("No__Local_printer_"), \+lclGrbld, ntGrbld.
-grbldOtpt :- netPrint("No__Local_printer_"), \+lclGrbld, \+ntGrbld.
-body_3495(3490,grbldOtpt) :- netPrint("Yes__Network_printer_"), lclGrbld, ntGrbld.
-grbldOtpt :- netPrint("Yes__Network_printer_"), lclGrbld, \+ntGrbld.
-body_3515(3509,grbldOtpt) :- netPrint("Yes__Network_printer_"), \+lclGrbld, ntGrbld.
-grbldOtpt :- netPrint("Yes__Network_printer_"), \+lclGrbld, \+ntGrbld.
-gDIIN :- appData("Correct"), prtSpool("Enabled"), eMFOK.
-body_3543(3537,gDIIN) :- appData("Correct"), prtSpool("Enabled"), \+eMFOK.
-gDIIN :- appData("Correct"), prtSpool("Disabled"), eMFOK.
-gDIIN :- appData("Correct"), prtSpool("Disabled"), \+eMFOK.
-body_3568(3563,gDIIN) :- appData("Incorrect_or_corrupt"), prtSpool("Enabled"), eMFOK.
-body_3581(3575,gDIIN) :- appData("Incorrect_or_corrupt"), prtSpool("Enabled"), \+eMFOK.
-body_3593(3588,gDIIN) :- appData("Incorrect_or_corrupt"), prtSpool("Disabled"), eMFOK.
-body_3606(3600,gDIIN) :- appData("Incorrect_or_corrupt"), prtSpool("Disabled"), \+eMFOK.
-body_3617(3613,grbldPS) :- \+grbldOtpt, avlblVrtlMmry("Adequate____1Mb_").
-body_3629(3625,grbldPS) :- \+grbldOtpt, avlblVrtlMmry("Inadequate____1_Mb_").
-grbldPS :- grbldOtpt, avlblVrtlMmry("Adequate____1Mb_").
-body_3643(3640,grbldPS) :- grbldOtpt, avlblVrtlMmry("Inadequate____1_Mb_").
-body_3657(3650,gDIOUT) :- prtDriver, gDIIN, drvSet("Correct"), drvOK("Reinstalled").
-body_3672(3665,gDIOUT) :- prtDriver, gDIIN, drvSet("Correct"), drvOK("Corrupt").
-body_3686(3679,gDIOUT) :- prtDriver, gDIIN, drvSet("Incorrect"), drvOK("Reinstalled").
-body_3700(3693,gDIOUT) :- prtDriver, gDIIN, drvSet("Incorrect"), drvOK("Corrupt").
-body_3715(3707,gDIOUT) :- prtDriver, \+gDIIN, drvSet("Correct"), drvOK("Reinstalled").
-body_3730(3722,gDIOUT) :- prtDriver, \+gDIIN, drvSet("Correct"), drvOK("Corrupt").
-body_3745(3737,gDIOUT) :- prtDriver, \+gDIIN, drvSet("Incorrect"), drvOK("Reinstalled").
-body_3760(3752,gDIOUT) :- prtDriver, \+gDIIN, drvSet("Incorrect"), drvOK("Corrupt").
-body_3775(3767,gDIOUT) :- \+prtDriver, gDIIN, drvSet("Correct"), drvOK("Reinstalled").
-body_3790(3782,gDIOUT) :- \+prtDriver, gDIIN, drvSet("Correct"), drvOK("Corrupt").
-body_3805(3797,gDIOUT) :- \+prtDriver, gDIIN, drvSet("Incorrect"), drvOK("Reinstalled").
-body_3820(3812,gDIOUT) :- \+prtDriver, gDIIN, drvSet("Incorrect"), drvOK("Corrupt").
-body_3836(3827,gDIOUT) :- \+prtDriver, \+gDIIN, drvSet("Correct"), drvOK("Reinstalled").
-body_3852(3843,gDIOUT) :- \+prtDriver, \+gDIIN, drvSet("Correct"), drvOK("Corrupt").
-body_3868(3859,gDIOUT) :- \+prtDriver, \+gDIIN, drvSet("Incorrect"), drvOK("Reinstalled").
-body_3884(3875,gDIOUT) :- \+prtDriver, \+gDIIN, drvSet("Incorrect"), drvOK("Corrupt").
-body_3896(3891,multi) :- netPrint("No__Local_printer_"), deskPrntSpd("OK"), ntSpd("OK").
-body_3914(3909,multi) :- netPrint("No__Local_printer_"), deskPrntSpd("OK"), ntSpd("Slow").
-body_3931(3926,multi) :- netPrint("No__Local_printer_"), deskPrntSpd("Too_Slow"), ntSpd("OK").
-body_3948(3943,multi) :- netPrint("No__Local_printer_"), deskPrntSpd("Too_Slow"), ntSpd("Slow").
-body_3965(3960,multi) :- netPrint("Yes__Network_printer_"), deskPrntSpd("OK"), ntSpd("OK").
-body_3982(3977,multi) :- netPrint("Yes__Network_printer_"), deskPrntSpd("OK"), ntSpd("Slow").
-body_3999(3994,multi) :- netPrint("Yes__Network_printer_"), deskPrntSpd("Too_Slow"), ntSpd("OK").
-body_4016(4011,multi) :- netPrint("Yes__Network_printer_"), deskPrntSpd("Too_Slow"), ntSpd("Slow").
-body_4035(4028,problem6) :- \+grbldOtpt, prtPScript, \+grbldPS.
-problem6 :- \+grbldOtpt, prtPScript, grbldPS.
-body_4058(4050,problem6) :- \+grbldOtpt, \+prtPScript, \+grbldPS.
-body_4072(4065,problem6) :- \+grbldOtpt, \+prtPScript, grbldPS.
-body_4085(4079,problem6) :- grbldOtpt, prtPScript, \+grbldPS.
-problem6 :- grbldOtpt, prtPScript, grbldPS.
-problem6 :- grbldOtpt, \+prtPScript, \+grbldPS.
-problem6 :- grbldOtpt, \+prtPScript, grbldPS.
-body_4116(4113,prtDataOut) :- gDIOUT, prtSel.
-body_4128(4124,prtDataOut) :- gDIOUT, \+prtSel.
-body_4139(4135,prtDataOut) :- \+gDIOUT, prtSel.
-body_4151(4146,prtDataOut) :- \+gDIOUT, \+prtSel.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_4187(4173,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_4224(4209,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_4321(4306,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_4360(4344,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_4381(4367,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_4403(4388,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_4425(4410,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_4448(4432,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_4485(4470,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_4524(4508,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_4627(4611,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_4668(4651,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_4690(4675,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_4713(4697,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_4736(4720,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_4760(4743,pC2PRT) :- netPrint("No__Local_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_4797(4782,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_4836(4820,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_4857(4843,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_4879(4864,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_4901(4886,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_4924(4908,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_4963(4947,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_5004(4987,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_5026(5011,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_5049(5033,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_5072(5056,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_5096(5079,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_5135(5119,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_5176(5159,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_5198(5183,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_5221(5205,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_5244(5228,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_5268(5251,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-body_5309(5292,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_5352(5334,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_5375(5359,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_5399(5382,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_5423(5406,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_5448(5430,pC2PRT) :- netPrint("No__Local_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_5498(5484,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_5520(5505,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_5633(5618,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_5656(5640,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_5773(5758,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_5796(5780,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_5817(5803,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_5839(5824,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_5861(5846,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_5884(5868,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_5940(5924,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_5964(5947,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_5986(5971,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_6009(5993,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_6032(6016,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_6056(6039,pC2PRT) :- netPrint("Yes__Network_printer_"), prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_6109(6094,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_6132(6116,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_6153(6139,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_6175(6160,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_6197(6182,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_6220(6204,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_6276(6260,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_6300(6283,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_6322(6307,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_6345(6329,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_6368(6352,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_6392(6375,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_6448(6432,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_6472(6455,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_6494(6479,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_6517(6501,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_6540(6524,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_6564(6547,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, dS_LCLOK.
-pC2PRT :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), dS_NTOK, \+dS_LCLOK.
-body_6623(6606,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, dS_LCLOK.
-body_6648(6630,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("DOS"), \+dS_NTOK, \+dS_LCLOK.
-body_6671(6655,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, dS_LCLOK.
-body_6695(6678,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), dS_NTOK, \+dS_LCLOK.
-body_6719(6702,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, dS_LCLOK.
-body_6744(6726,pC2PRT) :- netPrint("Yes__Network_printer_"), \+prtDataOut, \+netOK, \+lclOK, dSApplctn("Windows"), \+dS_NTOK, \+dS_LCLOK.
-body_6752(6751,prtFile) :- prtDataOut.
-body_6762(6760,prtFile) :- \+prtDataOut.
-body_6782(6769,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_6803(6790,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_6823(6810,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_6843(6830,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_6863(6850,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_6883(6870,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_6903(6890,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_6923(6910,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_6943(6930,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_6963(6950,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_6983(6970,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7003(6990,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7023(7010,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7043(7030,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7063(7050,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7083(7070,prtData) :- prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7104(7090,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7125(7111,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7146(7132,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7167(7153,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7188(7174,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7209(7195,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7230(7216,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7251(7237,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7272(7258,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7293(7279,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7314(7300,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7335(7321,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7356(7342,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7377(7363,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7398(7384,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7419(7405,prtData) :- prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7439(7426,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7459(7446,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7479(7466,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7499(7486,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7519(7506,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7539(7526,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7559(7546,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7579(7566,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7599(7586,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7619(7606,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7639(7626,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7659(7646,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7679(7666,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7699(7686,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7719(7706,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7739(7726,prtData) :- prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7760(7746,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7781(7767,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7802(7788,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7823(7809,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7844(7830,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7865(7851,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7886(7872,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7907(7893,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_7928(7914,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_7949(7935,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_7970(7956,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_7991(7977,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8012(7998,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8033(8019,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8054(8040,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8075(8061,prtData) :- prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8096(8082,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8117(8103,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8138(8124,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8159(8145,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8180(8166,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8201(8187,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8222(8208,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8243(8229,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8264(8250,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8285(8271,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8306(8292,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8327(8313,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8348(8334,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8369(8355,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8390(8376,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8411(8397,prtData) :- \+prtOn, prtPaper("Has_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8433(8418,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8455(8440,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8477(8462,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8499(8484,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8521(8506,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8543(8528,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8565(8550,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8587(8572,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8609(8594,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8631(8616,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8653(8638,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8675(8660,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8697(8682,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8719(8704,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8741(8726,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8763(8748,prtData) :- \+prtOn, prtPaper("Has_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8784(8770,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8805(8791,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8826(8812,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8847(8833,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8868(8854,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8889(8875,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8910(8896,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_8931(8917,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_8952(8938,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_8973(8959,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_8994(8980,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_9015(9001,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_9036(9022,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_9057(9043,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_9078(9064,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_9099(9085,prtData) :- \+prtOn, prtPaper("No_Paper"), pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_9121(9106,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_9143(9128,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_9165(9150,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_9187(9172,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_9209(9194,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_9231(9216,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_9253(9238,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_9275(9260,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Greater_than_2_Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_9297(9282,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_9319(9304,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_9341(9326,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_9363(9348,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Long_Enough"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_9385(9370,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Adequate").
-body_9407(9392,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Intact__not_Corrupt_"), tnrSpply("Low").
-body_9429(9414,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Adequate").
-body_9451(9436,prtData) :- \+prtOn, prtPaper("No_Paper"), \+pC2PRT, prtMem("Less_than_2Mb"), prtTimeOut("Too_Short"), fllCrrptdBffr("Full_or_Corrupt"), tnrSpply("Low").
-body_9459(9458,multi) :- prtData.
-body_9474(9472,multi) :- \+prtData.
-query(prtStatMem("Out_of_Memory")).
-query(cblPrtHrdwrOK("Not_Operational")).
-query(problem2("OK")).
-query(dataFile("Correct")).
-query(nnTTOK).
-query(problem5).
-query(problem6).
-query(pSERRMEM("No_Error")).
-query(fllCrrptdBffr("Full_or_Corrupt")).
-query(prtTimeOut("Too_Short")).
-query(drvOK("Reinstalled")).
-query(lclOK).
-query(prtStatToner("Low__None")).
-query(prtStatPaper("Jam__Out__Bin_Full")).
-query(appDtGnTm("Too_Long")).
-query(appData("Correct")).
-query(prtStatOff("No_Error")).
-query(incmpltPS).
-query(grphcsRltdDrvrSttngs("Correct")).
-query(lclGrbld).
-query(prtMem("Greater_than_2_Mb")).
-query(ntwrkCnfg("Correct")).
-query(fllCrrptdBffr("Intact__not_Corrupt_")).
-query(cmpltPgPrntd).
-query(prtStatToner("No_Error")).
-query(grbldOtpt).
-query(dS_LCLOK).
-query(appOK("Incorrect_Corrupt")).
-query(prtSpool("Disabled")).
-query(prtPath("Incorrect")).
-query(prtSel).
-query(prtSpool("Enabled")).
-query(dskLocal("Less_than_2_Mb")).
-query(tnrSpply("Adequate")).
-query(problem1("No_Output")).
-query(pSERRMEM("Low_Memory")).
-query(tTOK).
-query(ePSGrphc("Yes____EPS_")).
-query(appDtGnTm("Fast_Enough")).
-query(ePSGrphc("No____TIF___WMF___BMP_")).
-query(prtMem("Less_than_2Mb")).
-query(tnrSpply("Low")).
-query(prtFile).
-query(dSApplctn("Windows")).
-query(prtStatOff("OFFLINE__OFF")).
-query(prntngArOK("Correct")).
-query(drvSet("Incorrect")).
-query(prntngArOK("Incorrect")).
-query(prtQueue("Long")).
-query(prtOn).
-query(prtQueue("Short")).
-query(deskPrntSpd("Too_Slow")).
-query(nnPSGrphc).
-query(rEPEAT("No__Different_Each_Time_")).
-query(pC2PRT).
-query(rEPEAT("Yes__Always_the_Same_")).
-query(prtIcon("Normal")).
-query(prntPrcssTm("Fast_Enough")).
-query(fntInstlltn("Verified")).
-query(problem3).
-query(problem1("Normal_Output")).
-query(prtThread("OK")).
-query(prtThread("Corrupt_Buggy")).
-query(cblPrtHrdwrOK("Operational")).
-query(pgOrnttnOK("Incorrect")).
-query(prntrAccptsTrtyp).
-query(avlblVrtlMmry("Adequate____1Mb_")).
-query(prntPrcssTm("Too_Long")).
-query(prtMpTPth("Incorrect")).
-query(dSApplctn("DOS")).
-query(prtDataOut).
-query(prtPaper("No_Paper")).
-query(prtStatPaper("No_Error")).
-query(dS_NTOK).
-query(deskPrntSpd("OK")).
-query(pTROFFLINE("Online")).
-query(problem2("Too_Long")).
-query(tstpsTxt("x_1_Mb_Available_VM")).
-query(ntSpd("OK")).
-query(grphcsRltdDrvrSttngs("Incorrect")).
-query(prtCbl("Loose")).
-query(pTROFFLINE("Offline")).
-query(ntwrkCnfg("Incorrect")).
-query(hrglssDrtnAftrPrnt("Too_Long")).
-query(drvOK("Corrupt")).
-query(prtPScript).
-query(grbldPS).
-query(prtPort).
-query(netPrint("Yes__Network_printer_")).
-query(prtIcon("Grayed_Out")).
-query(dskLocal("Greater_than_2_Mb")).
-query(prtPath("Correct")).
-query(scrnFntNtPrntrFnt).
-query(gDIIN).
-query(pgOrnttnOK("Correct")).
-query(appData("Incorrect_or_corrupt")).
-query(ntSpd("Slow")).
-query(trTypFnts).
-query(netOK).
-query(prtPaper("Has_Paper")).
-query(prtMpTPth("Correct")).
-query(gDIOUT).
-query(hrglssDrtnAftrPrnt("Fast_Enough")).
-query(dataFile("Incorrect_Corrupt")).
-query(problem4).
-query(fntInstlltn("Faulty")).
-query(appOK("Correct")).
-query(ntGrbld).
-query(drvSet("Correct")).
-query(tstpsTxt("x_1_Mb_Available_VM2")).
-query(prtCbl("Connected")).
-query(pSGRAPHIC).
-query(prtData).
-query(prtTimeOut("Long_Enough")).
-query(prtDriver).
-query(eMFOK).
-query(avlblVrtlMmry("Inadequate____1_Mb_")).
-query(prtStatMem("No_Error")).
-query(netPrint("No__Local_printer_")).
-utility(util_node(0),-42).
-utility(\+(util_node(0)),25).
-util_node(0) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, problem6, pSERRMEM("No_Error"), fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), \+lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), \+fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), \+prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), \+pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), prtMpTPth("Incorrect"), \+dSApplctn("DOS"), \+prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), \+prtMpTPth("Correct"), \+gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), \+ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, prtTimeOut("Long_Enough"), \+prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(0) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), \+fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), \+prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), prtQueue("Long"), prtOn, \+prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(0) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(0) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(0) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), \+prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-utility(util_node(1),33).
-utility(\+(util_node(1)),25).
-util_node(1) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), \+prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), \+ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), \+prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, rEPEAT("No__Different_Each_Time_"), pC2PRT, \+rEPEAT("Yes__Always_the_Same_"), \+prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), \+ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), \+prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), \+ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(1) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), \+tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), \+prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), \+trTypFnts, netOK, prtPaper("Has_Paper"), \+prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, \+prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), \+netPrint("No__Local_printer_").
-util_node(1) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), \+prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, \+dSApplctn("Windows"), prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), \+prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(1) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), \+problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), prtQueue("Long"), prtOn, \+prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), \+ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), \+netPrint("No__Local_printer_").
-util_node(1) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), \+prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-utility(util_node(2),-23).
-utility(\+(util_node(2)),-29).
-util_node(2) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), \+prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), \+pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), \+prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), \+dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, \+gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), \+gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, prtTimeOut("Long_Enough"), prtDriver, \+eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(2) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), \+prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, \+prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(2) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), \+drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), hrglssDrtnAftrPrnt("Too_Long"), drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, \+hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(2) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), \+prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, \+drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(2) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), \+prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-utility(util_node(3),10).
-utility(\+(util_node(3)),38).
-util_node(3) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), \+trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(3) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(3) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), \+scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(3) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(3) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), \+prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-utility(util_node(4),-32).
-utility(\+(util_node(4)),33).
-util_node(4) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, \+prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), \+prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, \+problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, \+prtData, \+prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(4) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), \+incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), \+cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), \+prtFile, \+dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), \+problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, \+pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(4) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, \+grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), \+nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), \+prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), \+problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), \+pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(4) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, \+problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), \+grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, \+prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), dS_NTOK, deskPrntSpd("OK"), pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), \+pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), prtPScript, \+grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), \+prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-util_node(4) :- \+prtStatMem("Out_of_Memory"), \+cblPrtHrdwrOK("Not_Operational"), problem2("OK"), dataFile("Correct"), nnTTOK, problem5, problem6, pSERRMEM("No_Error"), \+fllCrrptdBffr("Full_or_Corrupt"), \+prtTimeOut("Too_Short"), drvOK("Reinstalled"), lclOK, \+prtStatToner("Low__None"), \+prtStatPaper("Jam__Out__Bin_Full"), \+appDtGnTm("Too_Long"), appData("Correct"), prtStatOff("No_Error"), incmpltPS, grphcsRltdDrvrSttngs("Correct"), \+lclGrbld, prtMem("Greater_than_2_Mb"), ntwrkCnfg("Correct"), fllCrrptdBffr("Intact__not_Corrupt_"), cmpltPgPrntd, prtStatToner("No_Error"), grbldOtpt, dS_LCLOK, \+appOK("Incorrect_Corrupt"), \+prtSpool("Disabled"), \+prtPath("Incorrect"), prtSel, prtSpool("Enabled"), \+dskLocal("Less_than_2_Mb"), tnrSpply("Adequate"), \+problem1("No_Output"), \+pSERRMEM("Low_Memory"), tTOK, \+ePSGrphc("Yes____EPS_"), appDtGnTm("Fast_Enough"), ePSGrphc("No____TIF___WMF___BMP_"), \+prtMem("Less_than_2Mb"), \+tnrSpply("Low"), prtFile, dSApplctn("Windows"), \+prtStatOff("OFFLINE__OFF"), prntngArOK("Correct"), \+drvSet("Incorrect"), \+prntngArOK("Incorrect"), \+prtQueue("Long"), prtOn, prtQueue("Short"), \+deskPrntSpd("Too_Slow"), nnPSGrphc, \+rEPEAT("No__Different_Each_Time_"), pC2PRT, rEPEAT("Yes__Always_the_Same_"), \+prtIcon("Normal"), prntPrcssTm("Fast_Enough"), fntInstlltn("Verified"), problem3, problem1("Normal_Output"), prtThread("OK"), \+prtThread("Corrupt_Buggy"), cblPrtHrdwrOK("Operational"), \+pgOrnttnOK("Incorrect"), prntrAccptsTrtyp, avlblVrtlMmry("Adequate____1Mb_"), \+prntPrcssTm("Too_Long"), \+prtMpTPth("Incorrect"), \+dSApplctn("DOS"), prtDataOut, \+prtPaper("No_Paper"), prtStatPaper("No_Error"), \+dS_NTOK, deskPrntSpd("OK"), \+pTROFFLINE("Online"), \+problem2("Too_Long"), tstpsTxt("x_1_Mb_Available_VM"), ntSpd("OK"), \+grphcsRltdDrvrSttngs("Incorrect"), \+prtCbl("Loose"), pTROFFLINE("Offline"), \+ntwrkCnfg("Incorrect"), \+hrglssDrtnAftrPrnt("Too_Long"), \+drvOK("Corrupt"), \+prtPScript, grbldPS, prtPort, \+netPrint("Yes__Network_printer_"), prtIcon("Grayed_Out"), dskLocal("Greater_than_2_Mb"), prtPath("Correct"), scrnFntNtPrntrFnt, gDIIN, pgOrnttnOK("Correct"), \+appData("Incorrect_or_corrupt"), \+ntSpd("Slow"), trTypFnts, \+netOK, prtPaper("Has_Paper"), prtMpTPth("Correct"), gDIOUT, hrglssDrtnAftrPrnt("Fast_Enough"), \+dataFile("Incorrect_Corrupt"), problem4, \+fntInstlltn("Faulty"), appOK("Correct"), ntGrbld, drvSet("Correct"), \+tstpsTxt("x_1_Mb_Available_VM2"), prtCbl("Connected"), pSGRAPHIC, prtData, prtTimeOut("Long_Enough"), \+prtDriver, eMFOK, \+avlblVrtlMmry("Inadequate____1_Mb_"), prtStatMem("No_Error"), netPrint("No__Local_printer_").
-body_13820(13819,nnPSGrphc) :- body_385(380,nnPSGrphc).
-body_13828(13827,nnPSGrphc) :- body_398(393,nnPSGrphc).
-body_13836(13835,nnPSGrphc) :- body_410(405,nnPSGrphc).
-body_13844(13843,nnPSGrphc) :- body_422(417,nnPSGrphc).
-body_13852(13851,nnPSGrphc) :- body_434(429,nnPSGrphc).
-body_13860(13859,nnPSGrphc) :- body_446(441,nnPSGrphc).
-body_13868(13867,nnPSGrphc) :- body_458(453,nnPSGrphc).
-body_13876(13875,nnPSGrphc) :- body_470(465,nnPSGrphc).
-body_13884(13883,pSGRAPHIC) :- body_482(477,pSGRAPHIC).
-body_13892(13891,pSGRAPHIC) :- body_501(496,pSGRAPHIC).
-body_13900(13899,pSGRAPHIC) :- body_513(508,pSGRAPHIC).
-body_13908(13907,pSGRAPHIC) :- body_525(520,pSGRAPHIC).
-body_13916(13915,pSGRAPHIC) :- body_537(532,pSGRAPHIC).
-body_13924(13923,pSGRAPHIC) :- body_549(544,pSGRAPHIC).
-body_13932(13931,pSGRAPHIC) :- body_561(556,pSGRAPHIC).
-body_13940(13939,multi) :- body_569(568,multi).
-body_13953(13952,multi) :- body_583(582,multi).
-body_13966(13965,multi) :- body_598(595,multi).
-body_13979(13978,multi) :- body_614(611,multi).
-body_13992(13991,multi) :- body_629(626,multi).
-body_14005(14004,multi) :- body_644(641,multi).
-body_14018(14017,tTOK) :- body_661(656,tTOK).
-body_14026(14025,tTOK) :- body_675(669,tTOK).
-body_14034(14033,tTOK) :- body_687(682,tTOK).
-body_14042(14041,tTOK) :- body_700(694,tTOK).
-body_14050(14049,tTOK) :- body_712(707,tTOK).
-body_14058(14057,tTOK) :- body_725(719,tTOK).
-body_14066(14065,tTOK) :- body_737(732,tTOK).
-body_14074(14073,tTOK) :- body_750(744,tTOK).
-body_14082(14081,multi) :- body_758(757,multi).
-body_14095(14094,multi) :- body_772(771,multi).
-body_14108(14107,netOK) :- body_789(784,netOK).
-body_14116(14115,netOK) :- body_802(797,netOK).
-body_14124(14123,netOK) :- body_814(809,netOK).
-body_14132(14131,netOK) :- body_826(821,netOK).
-body_14140(14139,netOK) :- body_838(833,netOK).
-body_14148(14147,netOK) :- body_850(845,netOK).
-body_14156(14155,netOK) :- body_862(857,netOK).
-body_14164(14163,netOK) :- body_874(869,netOK).
-body_14172(14171,lclOK) :- body_886(881,lclOK).
-body_14180(14179,lclOK) :- body_899(894,lclOK).
-body_14188(14187,lclOK) :- body_912(906,lclOK).
-body_14196(14195,lclOK) :- body_925(919,lclOK).
-body_14204(14203,lclOK) :- body_937(932,lclOK).
-body_14212(14211,lclOK) :- body_949(944,lclOK).
-body_14220(14219,lclOK) :- body_962(956,lclOK).
-body_14228(14227,lclOK) :- body_975(969,lclOK).
-body_14236(14235,multi) :- body_983(982,multi).
-body_14249(14248,multi) :- body_998(996,multi).
-body_14262(14261,multi) :- body_1011(1010,multi).
-body_14275(14274,multi) :- body_1025(1024,multi).
-body_14288(14287,nnTTOK) :- body_1042(1037,nnTTOK).
-body_14296(14295,nnTTOK) :- body_1055(1050,nnTTOK).
-body_14304(14303,nnTTOK) :- body_1068(1062,nnTTOK).
-body_14312(14311,nnTTOK) :- body_1081(1075,nnTTOK).
-body_14320(14319,nnTTOK) :- body_1093(1088,nnTTOK).
-body_14328(14327,nnTTOK) :- body_1105(1100,nnTTOK).
-body_14336(14335,nnTTOK) :- body_1118(1112,nnTTOK).
-body_14344(14343,nnTTOK) :- body_1131(1125,nnTTOK).
-body_14352(14351,multi) :- body_1141(1138,multi).
-body_14365(14364,multi) :- body_1157(1154,multi).
-body_14378(14377,multi) :- body_1172(1169,multi).
-body_14391(14390,multi) :- body_1187(1184,multi).
-body_14404(14403,multi) :- body_1200(1199,multi).
-body_14417(14416,multi) :- body_1214(1213,multi).
-body_14430(14429,multi) :- body_1229(1226,multi).
-body_14443(14442,multi) :- body_1245(1242,multi).
-body_14456(14455,multi) :- body_1260(1257,multi).
-body_14469(14468,multi) :- body_1275(1272,multi).
-body_14482(14481,cmpltPgPrntd) :- body_1292(1287,cmpltPgPrntd).
-body_14490(14489,cmpltPgPrntd) :- body_1305(1300,cmpltPgPrntd).
-body_14498(14497,cmpltPgPrntd) :- body_1317(1312,cmpltPgPrntd).
-body_14506(14505,cmpltPgPrntd) :- body_1329(1324,cmpltPgPrntd).
-body_14514(14513,cmpltPgPrntd) :- body_1341(1336,cmpltPgPrntd).
-body_14522(14521,cmpltPgPrntd) :- body_1353(1348,cmpltPgPrntd).
-body_14530(14529,cmpltPgPrntd) :- body_1365(1360,cmpltPgPrntd).
-body_14538(14537,cmpltPgPrntd) :- body_1377(1372,cmpltPgPrntd).
-body_14546(14545,multi) :- body_1385(1384,multi).
-body_14559(14558,multi) :- body_1400(1398,multi).
-body_14572(14571,multi) :- body_1413(1412,multi).
-body_14585(14584,multi) :- body_1427(1426,multi).
-body_14598(14597,ntGrbld) :- body_1455(1448,ntGrbld).
-body_14606(14605,ntGrbld) :- body_1469(1462,ntGrbld).
-body_14614(14613,ntGrbld) :- body_1483(1476,ntGrbld).
-body_14622(14621,ntGrbld) :- body_1498(1490,ntGrbld).
-body_14630(14629,ntGrbld) :- body_1513(1505,ntGrbld).
-body_14638(14637,ntGrbld) :- body_1528(1520,ntGrbld).
-body_14646(14645,ntGrbld) :- body_1543(1535,ntGrbld).
-body_14654(14653,ntGrbld) :- body_1557(1550,ntGrbld).
-body_14662(14661,ntGrbld) :- body_1571(1564,ntGrbld).
-body_14670(14669,ntGrbld) :- body_1585(1578,ntGrbld).
-body_14678(14677,ntGrbld) :- body_1599(1592,ntGrbld).
-body_14686(14685,ntGrbld) :- body_1614(1606,ntGrbld).
-body_14694(14693,ntGrbld) :- body_1629(1621,ntGrbld).
-body_14702(14701,ntGrbld) :- body_1644(1636,ntGrbld).
-body_14710(14709,ntGrbld) :- body_1659(1651,ntGrbld).
-body_14718(14717,eMFOK) :- body_1671(1666,eMFOK).
-body_14726(14725,eMFOK) :- body_1684(1679,eMFOK).
-body_14734(14733,eMFOK) :- body_1696(1691,eMFOK).
-body_14742(14741,eMFOK) :- body_1708(1703,eMFOK).
-body_14750(14749,eMFOK) :- body_1720(1715,eMFOK).
-body_14758(14757,eMFOK) :- body_1732(1727,eMFOK).
-body_14766(14765,eMFOK) :- body_1744(1739,eMFOK).
-body_14774(14773,eMFOK) :- body_1756(1751,eMFOK).
-body_14782(14781,problem4) :- body_1776(1770,problem4).
-body_14790(14789,problem4) :- body_1812(1805,problem4).
-body_14798(14797,problem4) :- body_1826(1819,problem4).
-body_14806(14805,problem4) :- body_1841(1833,problem4).
-body_14814(14813,dS_LCLOK) :- body_1864(1857,dS_LCLOK).
-body_14822(14821,dS_LCLOK) :- body_1879(1871,dS_LCLOK).
-body_14830(14829,dS_LCLOK) :- body_1894(1886,dS_LCLOK).
-body_14838(14837,dS_LCLOK) :- body_1908(1901,dS_LCLOK).
-body_14846(14845,dS_LCLOK) :- body_1922(1915,dS_LCLOK).
-body_14854(14853,dS_LCLOK) :- body_1937(1929,dS_LCLOK).
-body_14862(14861,dS_LCLOK) :- body_1952(1944,dS_LCLOK).
-body_14870(14869,dS_LCLOK) :- body_1966(1959,dS_LCLOK).
-body_14878(14877,dS_LCLOK) :- body_1980(1973,dS_LCLOK).
-body_14886(14885,dS_LCLOK) :- body_1995(1987,dS_LCLOK).
-body_14894(14893,dS_LCLOK) :- body_2010(2002,dS_LCLOK).
-body_14902(14901,dS_LCLOK) :- body_2024(2017,dS_LCLOK).
-body_14910(14909,dS_LCLOK) :- body_2038(2031,dS_LCLOK).
-body_14918(14917,dS_LCLOK) :- body_2053(2045,dS_LCLOK).
-body_14926(14925,dS_LCLOK) :- body_2068(2060,dS_LCLOK).
-body_14934(14933,multi) :- body_2078(2075,multi).
-body_14947(14946,multi) :- body_2094(2091,multi).
-body_14960(14959,multi) :- body_2110(2106,multi).
-body_14973(14972,multi) :- body_2126(2122,multi).
-body_14986(14985,multi) :- body_2143(2138,multi).
-body_14999(14998,multi) :- body_2161(2156,multi).
-body_15012(15011,multi) :- body_2178(2173,multi).
-body_15025(15024,multi) :- body_2195(2190,multi).
-body_15038(15037,multi) :- body_2212(2207,multi).
-body_15051(15050,multi) :- body_2229(2224,multi).
-body_15064(15063,multi) :- body_2246(2241,multi).
-body_15077(15076,multi) :- body_2263(2258,multi).
-body_15090(15089,problem5) :- body_2295(2289,problem5).
-body_15098(15097,problem5) :- body_2309(2302,problem5).
-body_15106(15105,problem5) :- body_2330(2323,problem5).
-body_15114(15113,problem5) :- body_2353(2345,problem5).
-body_15122(15121,multi) :- body_2363(2360,multi).
-body_15135(15134,multi) :- body_2379(2376,multi).
-body_15148(15147,multi) :- body_2395(2391,multi).
-body_15161(15160,multi) :- body_2411(2407,multi).
-body_15174(15173,dS_NTOK) :- body_2432(2423,dS_NTOK).
-body_15182(15181,dS_NTOK) :- body_2449(2440,dS_NTOK).
-body_15190(15189,dS_NTOK) :- body_2465(2456,dS_NTOK).
-body_15198(15197,dS_NTOK) :- body_2481(2472,dS_NTOK).
-body_15206(15205,dS_NTOK) :- body_2497(2488,dS_NTOK).
-body_15214(15213,dS_NTOK) :- body_2513(2504,dS_NTOK).
-body_15222(15221,dS_NTOK) :- body_2529(2520,dS_NTOK).
-body_15230(15229,dS_NTOK) :- body_2545(2536,dS_NTOK).
-body_15238(15237,dS_NTOK) :- body_2561(2552,dS_NTOK).
-body_15246(15245,dS_NTOK) :- body_2577(2568,dS_NTOK).
-body_15254(15253,dS_NTOK) :- body_2593(2584,dS_NTOK).
-body_15262(15261,dS_NTOK) :- body_2609(2600,dS_NTOK).
-body_15270(15269,dS_NTOK) :- body_2625(2616,dS_NTOK).
-body_15278(15277,dS_NTOK) :- body_2641(2632,dS_NTOK).
-body_15286(15285,dS_NTOK) :- body_2657(2648,dS_NTOK).
-body_15294(15293,dS_NTOK) :- body_2673(2664,dS_NTOK).
-body_15302(15301,dS_NTOK) :- body_2689(2680,dS_NTOK).
-body_15310(15309,dS_NTOK) :- body_2705(2696,dS_NTOK).
-body_15318(15317,dS_NTOK) :- body_2721(2712,dS_NTOK).
-body_15326(15325,dS_NTOK) :- body_2737(2728,dS_NTOK).
-body_15334(15333,dS_NTOK) :- body_2753(2744,dS_NTOK).
-body_15342(15341,dS_NTOK) :- body_2769(2760,dS_NTOK).
-body_15350(15349,dS_NTOK) :- body_2785(2776,dS_NTOK).
-body_15358(15357,dS_NTOK) :- body_2801(2792,dS_NTOK).
-body_15366(15365,dS_NTOK) :- body_2817(2808,dS_NTOK).
-body_15374(15373,dS_NTOK) :- body_2833(2824,dS_NTOK).
-body_15382(15381,dS_NTOK) :- body_2849(2840,dS_NTOK).
-body_15390(15389,dS_NTOK) :- body_2865(2856,dS_NTOK).
-body_15398(15397,dS_NTOK) :- body_2881(2872,dS_NTOK).
-body_15406(15405,dS_NTOK) :- body_2897(2888,dS_NTOK).
-body_15414(15413,dS_NTOK) :- body_2913(2904,dS_NTOK).
-body_15422(15421,dS_NTOK) :- body_2929(2920,dS_NTOK).
-body_15430(15429,lclGrbld) :- body_2952(2945,lclGrbld).
-body_15438(15437,lclGrbld) :- body_2966(2959,lclGrbld).
-body_15446(15445,lclGrbld) :- body_2980(2973,lclGrbld).
-body_15454(15453,lclGrbld) :- body_2995(2987,lclGrbld).
-body_15462(15461,lclGrbld) :- body_3010(3002,lclGrbld).
-body_15470(15469,lclGrbld) :- body_3025(3017,lclGrbld).
-body_15478(15477,lclGrbld) :- body_3040(3032,lclGrbld).
-body_15486(15485,lclGrbld) :- body_3054(3047,lclGrbld).
-body_15494(15493,lclGrbld) :- body_3068(3061,lclGrbld).
-body_15502(15501,lclGrbld) :- body_3082(3075,lclGrbld).
-body_15510(15509,lclGrbld) :- body_3096(3089,lclGrbld).
-body_15518(15517,lclGrbld) :- body_3111(3103,lclGrbld).
-body_15526(15525,lclGrbld) :- body_3126(3118,lclGrbld).
-body_15534(15533,lclGrbld) :- body_3141(3133,lclGrbld).
-body_15542(15541,lclGrbld) :- body_3156(3148,lclGrbld).
-body_15550(15549,incmpltPS) :- body_3171(3168,incmpltPS).
-body_15558(15557,incmpltPS) :- body_3182(3178,incmpltPS).
-body_15566(15565,incmpltPS) :- body_3193(3189,incmpltPS).
-body_15574(15573,multi) :- body_3201(3200,multi).
-body_15587(15586,multi) :- body_3215(3214,multi).
-body_15600(15599,multi) :- body_3232(3227,multi).
-body_15613(15612,multi) :- body_3250(3245,multi).
-body_15626(15625,multi) :- body_3267(3262,multi).
-body_15639(15638,multi) :- body_3284(3279,multi).
-body_15652(15651,multi) :- body_3301(3296,multi).
-body_15665(15664,multi) :- body_3318(3313,multi).
-body_15678(15677,multi) :- body_3335(3330,multi).
-body_15691(15690,multi) :- body_3352(3347,multi).
-body_15704(15703,problem3) :- body_3377(3371,problem3).
-body_15712(15711,problem3) :- body_3413(3406,problem3).
-body_15720(15719,problem3) :- body_3427(3420,problem3).
-body_15728(15727,problem3) :- body_3442(3434,problem3).
-body_15736(15735,grbldOtpt) :- body_3454(3449,grbldOtpt).
-body_15744(15743,grbldOtpt) :- body_3468(3462,grbldOtpt).
-body_15752(15751,grbldOtpt) :- body_3495(3490,grbldOtpt).
-body_15760(15759,grbldOtpt) :- body_3515(3509,grbldOtpt).
-body_15768(15767,gDIIN) :- body_3543(3537,gDIIN).
-body_15776(15775,gDIIN) :- body_3568(3563,gDIIN).
-body_15784(15783,gDIIN) :- body_3581(3575,gDIIN).
-body_15792(15791,gDIIN) :- body_3593(3588,gDIIN).
-body_15800(15799,gDIIN) :- body_3606(3600,gDIIN).
-body_15808(15807,grbldPS) :- body_3617(3613,grbldPS).
-body_15816(15815,grbldPS) :- body_3629(3625,grbldPS).
-body_15824(15823,grbldPS) :- body_3643(3640,grbldPS).
-body_15832(15831,gDIOUT) :- body_3657(3650,gDIOUT).
-body_15840(15839,gDIOUT) :- body_3672(3665,gDIOUT).
-body_15848(15847,gDIOUT) :- body_3686(3679,gDIOUT).
-body_15856(15855,gDIOUT) :- body_3700(3693,gDIOUT).
-body_15864(15863,gDIOUT) :- body_3715(3707,gDIOUT).
-body_15872(15871,gDIOUT) :- body_3730(3722,gDIOUT).
-body_15880(15879,gDIOUT) :- body_3745(3737,gDIOUT).
-body_15888(15887,gDIOUT) :- body_3760(3752,gDIOUT).
-body_15896(15895,gDIOUT) :- body_3775(3767,gDIOUT).
-body_15904(15903,gDIOUT) :- body_3790(3782,gDIOUT).
-body_15912(15911,gDIOUT) :- body_3805(3797,gDIOUT).
-body_15920(15919,gDIOUT) :- body_3820(3812,gDIOUT).
-body_15928(15927,gDIOUT) :- body_3836(3827,gDIOUT).
-body_15936(15935,gDIOUT) :- body_3852(3843,gDIOUT).
-body_15944(15943,gDIOUT) :- body_3868(3859,gDIOUT).
-body_15952(15951,gDIOUT) :- body_3884(3875,gDIOUT).
-body_15960(15959,multi) :- body_3896(3891,multi).
-body_15973(15972,multi) :- body_3914(3909,multi).
-body_15986(15985,multi) :- body_3931(3926,multi).
-body_15999(15998,multi) :- body_3948(3943,multi).
-body_16012(16011,multi) :- body_3965(3960,multi).
-body_16025(16024,multi) :- body_3982(3977,multi).
-body_16038(16037,multi) :- body_3999(3994,multi).
-body_16051(16050,multi) :- body_4016(4011,multi).
-body_16064(16063,problem6) :- body_4035(4028,problem6).
-body_16072(16071,problem6) :- body_4058(4050,problem6).
-body_16080(16079,problem6) :- body_4072(4065,problem6).
-body_16088(16087,problem6) :- body_4085(4079,problem6).
-body_16096(16095,prtDataOut) :- body_4116(4113,prtDataOut).
-body_16104(16103,prtDataOut) :- body_4128(4124,prtDataOut).
-body_16112(16111,prtDataOut) :- body_4139(4135,prtDataOut).
-body_16120(16119,prtDataOut) :- body_4151(4146,prtDataOut).
-body_16128(16127,pC2PRT) :- body_4187(4173,pC2PRT).
-body_16136(16135,pC2PRT) :- body_4224(4209,pC2PRT).
-body_16144(16143,pC2PRT) :- body_4321(4306,pC2PRT).
-body_16152(16151,pC2PRT) :- body_4360(4344,pC2PRT).
-body_16160(16159,pC2PRT) :- body_4381(4367,pC2PRT).
-body_16168(16167,pC2PRT) :- body_4403(4388,pC2PRT).
-body_16176(16175,pC2PRT) :- body_4425(4410,pC2PRT).
-body_16184(16183,pC2PRT) :- body_4448(4432,pC2PRT).
-body_16192(16191,pC2PRT) :- body_4485(4470,pC2PRT).
-body_16200(16199,pC2PRT) :- body_4524(4508,pC2PRT).
-body_16208(16207,pC2PRT) :- body_4627(4611,pC2PRT).
-body_16216(16215,pC2PRT) :- body_4668(4651,pC2PRT).
-body_16224(16223,pC2PRT) :- body_4690(4675,pC2PRT).
-body_16232(16231,pC2PRT) :- body_4713(4697,pC2PRT).
-body_16240(16239,pC2PRT) :- body_4736(4720,pC2PRT).
-body_16248(16247,pC2PRT) :- body_4760(4743,pC2PRT).
-body_16256(16255,pC2PRT) :- body_4797(4782,pC2PRT).
-body_16264(16263,pC2PRT) :- body_4836(4820,pC2PRT).
-body_16272(16271,pC2PRT) :- body_4857(4843,pC2PRT).
-body_16280(16279,pC2PRT) :- body_4879(4864,pC2PRT).
-body_16288(16287,pC2PRT) :- body_4901(4886,pC2PRT).
-body_16296(16295,pC2PRT) :- body_4924(4908,pC2PRT).
-body_16304(16303,pC2PRT) :- body_4963(4947,pC2PRT).
-body_16312(16311,pC2PRT) :- body_5004(4987,pC2PRT).
-body_16320(16319,pC2PRT) :- body_5026(5011,pC2PRT).
-body_16328(16327,pC2PRT) :- body_5049(5033,pC2PRT).
-body_16336(16335,pC2PRT) :- body_5072(5056,pC2PRT).
-body_16344(16343,pC2PRT) :- body_5096(5079,pC2PRT).
-body_16352(16351,pC2PRT) :- body_5135(5119,pC2PRT).
-body_16360(16359,pC2PRT) :- body_5176(5159,pC2PRT).
-body_16368(16367,pC2PRT) :- body_5198(5183,pC2PRT).
-body_16376(16375,pC2PRT) :- body_5221(5205,pC2PRT).
-body_16384(16383,pC2PRT) :- body_5244(5228,pC2PRT).
-body_16392(16391,pC2PRT) :- body_5268(5251,pC2PRT).
-body_16400(16399,pC2PRT) :- body_5309(5292,pC2PRT).
-body_16408(16407,pC2PRT) :- body_5352(5334,pC2PRT).
-body_16416(16415,pC2PRT) :- body_5375(5359,pC2PRT).
-body_16424(16423,pC2PRT) :- body_5399(5382,pC2PRT).
-body_16432(16431,pC2PRT) :- body_5423(5406,pC2PRT).
-body_16440(16439,pC2PRT) :- body_5448(5430,pC2PRT).
-body_16448(16447,pC2PRT) :- body_5498(5484,pC2PRT).
-body_16456(16455,pC2PRT) :- body_5520(5505,pC2PRT).
-body_16464(16463,pC2PRT) :- body_5633(5618,pC2PRT).
-body_16472(16471,pC2PRT) :- body_5656(5640,pC2PRT).
-body_16480(16479,pC2PRT) :- body_5773(5758,pC2PRT).
-body_16488(16487,pC2PRT) :- body_5796(5780,pC2PRT).
-body_16496(16495,pC2PRT) :- body_5817(5803,pC2PRT).
-body_16504(16503,pC2PRT) :- body_5839(5824,pC2PRT).
-body_16512(16511,pC2PRT) :- body_5861(5846,pC2PRT).
-body_16520(16519,pC2PRT) :- body_5884(5868,pC2PRT).
-body_16528(16527,pC2PRT) :- body_5940(5924,pC2PRT).
-body_16536(16535,pC2PRT) :- body_5964(5947,pC2PRT).
-body_16544(16543,pC2PRT) :- body_5986(5971,pC2PRT).
-body_16552(16551,pC2PRT) :- body_6009(5993,pC2PRT).
-body_16560(16559,pC2PRT) :- body_6032(6016,pC2PRT).
-body_16568(16567,pC2PRT) :- body_6056(6039,pC2PRT).
-body_16576(16575,pC2PRT) :- body_6109(6094,pC2PRT).
-body_16584(16583,pC2PRT) :- body_6132(6116,pC2PRT).
-body_16592(16591,pC2PRT) :- body_6153(6139,pC2PRT).
-body_16600(16599,pC2PRT) :- body_6175(6160,pC2PRT).
-body_16608(16607,pC2PRT) :- body_6197(6182,pC2PRT).
-body_16616(16615,pC2PRT) :- body_6220(6204,pC2PRT).
-body_16624(16623,pC2PRT) :- body_6276(6260,pC2PRT).
-body_16632(16631,pC2PRT) :- body_6300(6283,pC2PRT).
-body_16640(16639,pC2PRT) :- body_6322(6307,pC2PRT).
-body_16648(16647,pC2PRT) :- body_6345(6329,pC2PRT).
-body_16656(16655,pC2PRT) :- body_6368(6352,pC2PRT).
-body_16664(16663,pC2PRT) :- body_6392(6375,pC2PRT).
-body_16672(16671,pC2PRT) :- body_6448(6432,pC2PRT).
-body_16680(16679,pC2PRT) :- body_6472(6455,pC2PRT).
-body_16688(16687,pC2PRT) :- body_6494(6479,pC2PRT).
-body_16696(16695,pC2PRT) :- body_6517(6501,pC2PRT).
-body_16704(16703,pC2PRT) :- body_6540(6524,pC2PRT).
-body_16712(16711,pC2PRT) :- body_6564(6547,pC2PRT).
-body_16720(16719,pC2PRT) :- body_6623(6606,pC2PRT).
-body_16728(16727,pC2PRT) :- body_6648(6630,pC2PRT).
-body_16736(16735,pC2PRT) :- body_6671(6655,pC2PRT).
-body_16744(16743,pC2PRT) :- body_6695(6678,pC2PRT).
-body_16752(16751,pC2PRT) :- body_6719(6702,pC2PRT).
-body_16760(16759,pC2PRT) :- body_6744(6726,pC2PRT).
-body_16768(16767,prtFile) :- body_6752(6751,prtFile).
-body_16776(16775,prtFile) :- body_6762(6760,prtFile).
-body_16784(16783,prtData) :- body_6782(6769,prtData).
-body_16792(16791,prtData) :- body_6803(6790,prtData).
-body_16800(16799,prtData) :- body_6823(6810,prtData).
-body_16808(16807,prtData) :- body_6843(6830,prtData).
-body_16816(16815,prtData) :- body_6863(6850,prtData).
-body_16824(16823,prtData) :- body_6883(6870,prtData).
-body_16832(16831,prtData) :- body_6903(6890,prtData).
-body_16840(16839,prtData) :- body_6923(6910,prtData).
-body_16848(16847,prtData) :- body_6943(6930,prtData).
-body_16856(16855,prtData) :- body_6963(6950,prtData).
-body_16864(16863,prtData) :- body_6983(6970,prtData).
-body_16872(16871,prtData) :- body_7003(6990,prtData).
-body_16880(16879,prtData) :- body_7023(7010,prtData).
-body_16888(16887,prtData) :- body_7043(7030,prtData).
-body_16896(16895,prtData) :- body_7063(7050,prtData).
-body_16904(16903,prtData) :- body_7083(7070,prtData).
-body_16912(16911,prtData) :- body_7104(7090,prtData).
-body_16920(16919,prtData) :- body_7125(7111,prtData).
-body_16928(16927,prtData) :- body_7146(7132,prtData).
-body_16936(16935,prtData) :- body_7167(7153,prtData).
-body_16944(16943,prtData) :- body_7188(7174,prtData).
-body_16952(16951,prtData) :- body_7209(7195,prtData).
-body_16960(16959,prtData) :- body_7230(7216,prtData).
-body_16968(16967,prtData) :- body_7251(7237,prtData).
-body_16976(16975,prtData) :- body_7272(7258,prtData).
-body_16984(16983,prtData) :- body_7293(7279,prtData).
-body_16992(16991,prtData) :- body_7314(7300,prtData).
-body_17000(16999,prtData) :- body_7335(7321,prtData).
-body_17008(17007,prtData) :- body_7356(7342,prtData).
-body_17016(17015,prtData) :- body_7377(7363,prtData).
-body_17024(17023,prtData) :- body_7398(7384,prtData).
-body_17032(17031,prtData) :- body_7419(7405,prtData).
-body_17040(17039,prtData) :- body_7439(7426,prtData).
-body_17048(17047,prtData) :- body_7459(7446,prtData).
-body_17056(17055,prtData) :- body_7479(7466,prtData).
-body_17064(17063,prtData) :- body_7499(7486,prtData).
-body_17072(17071,prtData) :- body_7519(7506,prtData).
-body_17080(17079,prtData) :- body_7539(7526,prtData).
-body_17088(17087,prtData) :- body_7559(7546,prtData).
-body_17096(17095,prtData) :- body_7579(7566,prtData).
-body_17104(17103,prtData) :- body_7599(7586,prtData).
-body_17112(17111,prtData) :- body_7619(7606,prtData).
-body_17120(17119,prtData) :- body_7639(7626,prtData).
-body_17128(17127,prtData) :- body_7659(7646,prtData).
-body_17136(17135,prtData) :- body_7679(7666,prtData).
-body_17144(17143,prtData) :- body_7699(7686,prtData).
-body_17152(17151,prtData) :- body_7719(7706,prtData).
-body_17160(17159,prtData) :- body_7739(7726,prtData).
-body_17168(17167,prtData) :- body_7760(7746,prtData).
-body_17176(17175,prtData) :- body_7781(7767,prtData).
-body_17184(17183,prtData) :- body_7802(7788,prtData).
-body_17192(17191,prtData) :- body_7823(7809,prtData).
-body_17200(17199,prtData) :- body_7844(7830,prtData).
-body_17208(17207,prtData) :- body_7865(7851,prtData).
-body_17216(17215,prtData) :- body_7886(7872,prtData).
-body_17224(17223,prtData) :- body_7907(7893,prtData).
-body_17232(17231,prtData) :- body_7928(7914,prtData).
-body_17240(17239,prtData) :- body_7949(7935,prtData).
-body_17248(17247,prtData) :- body_7970(7956,prtData).
-body_17256(17255,prtData) :- body_7991(7977,prtData).
-body_17264(17263,prtData) :- body_8012(7998,prtData).
-body_17272(17271,prtData) :- body_8033(8019,prtData).
-body_17280(17279,prtData) :- body_8054(8040,prtData).
-body_17288(17287,prtData) :- body_8075(8061,prtData).
-body_17296(17295,prtData) :- body_8096(8082,prtData).
-body_17304(17303,prtData) :- body_8117(8103,prtData).
-body_17312(17311,prtData) :- body_8138(8124,prtData).
-body_17320(17319,prtData) :- body_8159(8145,prtData).
-body_17328(17327,prtData) :- body_8180(8166,prtData).
-body_17336(17335,prtData) :- body_8201(8187,prtData).
-body_17344(17343,prtData) :- body_8222(8208,prtData).
-body_17352(17351,prtData) :- body_8243(8229,prtData).
-body_17360(17359,prtData) :- body_8264(8250,prtData).
-body_17368(17367,prtData) :- body_8285(8271,prtData).
-body_17376(17375,prtData) :- body_8306(8292,prtData).
-body_17384(17383,prtData) :- body_8327(8313,prtData).
-body_17392(17391,prtData) :- body_8348(8334,prtData).
-body_17400(17399,prtData) :- body_8369(8355,prtData).
-body_17408(17407,prtData) :- body_8390(8376,prtData).
-body_17416(17415,prtData) :- body_8411(8397,prtData).
-body_17424(17423,prtData) :- body_8433(8418,prtData).
-body_17432(17431,prtData) :- body_8455(8440,prtData).
-body_17440(17439,prtData) :- body_8477(8462,prtData).
-body_17448(17447,prtData) :- body_8499(8484,prtData).
-body_17456(17455,prtData) :- body_8521(8506,prtData).
-body_17464(17463,prtData) :- body_8543(8528,prtData).
-body_17472(17471,prtData) :- body_8565(8550,prtData).
-body_17480(17479,prtData) :- body_8587(8572,prtData).
-body_17488(17487,prtData) :- body_8609(8594,prtData).
-body_17496(17495,prtData) :- body_8631(8616,prtData).
-body_17504(17503,prtData) :- body_8653(8638,prtData).
-body_17512(17511,prtData) :- body_8675(8660,prtData).
-body_17520(17519,prtData) :- body_8697(8682,prtData).
-body_17528(17527,prtData) :- body_8719(8704,prtData).
-body_17536(17535,prtData) :- body_8741(8726,prtData).
-body_17544(17543,prtData) :- body_8763(8748,prtData).
-body_17552(17551,prtData) :- body_8784(8770,prtData).
-body_17560(17559,prtData) :- body_8805(8791,prtData).
-body_17568(17567,prtData) :- body_8826(8812,prtData).
-body_17576(17575,prtData) :- body_8847(8833,prtData).
-body_17584(17583,prtData) :- body_8868(8854,prtData).
-body_17592(17591,prtData) :- body_8889(8875,prtData).
-body_17600(17599,prtData) :- body_8910(8896,prtData).
-body_17608(17607,prtData) :- body_8931(8917,prtData).
-body_17616(17615,prtData) :- body_8952(8938,prtData).
-body_17624(17623,prtData) :- body_8973(8959,prtData).
-body_17632(17631,prtData) :- body_8994(8980,prtData).
-body_17640(17639,prtData) :- body_9015(9001,prtData).
-body_17648(17647,prtData) :- body_9036(9022,prtData).
-body_17656(17655,prtData) :- body_9057(9043,prtData).
-body_17664(17663,prtData) :- body_9078(9064,prtData).
-body_17672(17671,prtData) :- body_9099(9085,prtData).
-body_17680(17679,prtData) :- body_9121(9106,prtData).
-body_17688(17687,prtData) :- body_9143(9128,prtData).
-body_17696(17695,prtData) :- body_9165(9150,prtData).
-body_17704(17703,prtData) :- body_9187(9172,prtData).
-body_17712(17711,prtData) :- body_9209(9194,prtData).
-body_17720(17719,prtData) :- body_9231(9216,prtData).
-body_17728(17727,prtData) :- body_9253(9238,prtData).
-body_17736(17735,prtData) :- body_9275(9260,prtData).
-body_17744(17743,prtData) :- body_9297(9282,prtData).
-body_17752(17751,prtData) :- body_9319(9304,prtData).
-body_17760(17759,prtData) :- body_9341(9326,prtData).
-body_17768(17767,prtData) :- body_9363(9348,prtData).
-body_17776(17775,prtData) :- body_9385(9370,prtData).
-body_17784(17783,prtData) :- body_9407(9392,prtData).
-body_17792(17791,prtData) :- body_9429(9414,prtData).
-body_17800(17799,prtData) :- body_9451(9436,prtData).
-body_17808(17807,multi) :- body_9459(9458,multi).
-body_17821(17820,multi) :- body_9474(9472,multi).
-?::prtSel.
-?::prtPScript.
-?::prtOn.
-?::scrnFntNtPrntrFnt.
-?::prtDriver.
-?::trTypFnts.
-?::prntrAccptsTrtyp.
-?::prtPort.
-?::dec_8.
-body_17844(17843,prtPaper("Has_Paper")) :- dec_8.
-body_17853(17851,prtPaper("No_Paper")) :- \+dec_8.
-?::dec_9.
-body_17863(17862,cblPrtHrdwrOK("Operational")) :- dec_9.
-body_17872(17870,cblPrtHrdwrOK("Not_Operational")) :- \+dec_9.
-?::dec_10.
-body_17882(17881,netPrint("No__Local_printer_")) :- dec_10.
-body_17891(17889,netPrint("Yes__Network_printer_")) :- \+dec_10.
-?::dec_11.
-body_17901(17900,prtMem("Greater_than_2_Mb")) :- dec_11.
-body_17910(17908,prtMem("Less_than_2Mb")) :- \+dec_11.
-?::dec_12.
-body_17920(17919,ePSGrphc("No____TIF___WMF___BMP_")) :- dec_12.
-body_17929(17927,ePSGrphc("Yes____EPS_")) :- \+dec_12.
-?::dec_13.
-body_17939(17938,pTROFFLINE("Online")) :- dec_13.
-body_17948(17946,pTROFFLINE("Offline")) :- \+dec_13.
-?::dec_14.
-body_17958(17957,grphcsRltdDrvrSttngs("Correct")) :- dec_14.
-body_17967(17965,grphcsRltdDrvrSttngs("Incorrect")) :- \+dec_14.
-?::dec_15.
-body_17977(17976,prtCbl("Connected")) :- dec_15.
-body_17986(17984,prtCbl("Loose")) :- \+dec_15.
-?::dec_16.
-body_17996(17995,dSApplctn("DOS")) :- dec_16.
-body_18005(18003,dSApplctn("Windows")) :- \+dec_16.
-?::dec_17.
-body_18015(18014,pgOrnttnOK("Correct")) :- dec_17.
-body_18024(18022,pgOrnttnOK("Incorrect")) :- \+dec_17.
-?::dec_18.
-body_18034(18033,dskLocal("Greater_than_2_Mb")) :- dec_18.
-body_18043(18041,dskLocal("Less_than_2_Mb")) :- \+dec_18.
-?::dec_19.
-body_18053(18052,appOK("Correct")) :- dec_19.
-body_18062(18060,appOK("Incorrect_Corrupt")) :- \+dec_19.
-?::dec_20.
-body_18072(18071,ntwrkCnfg("Correct")) :- dec_20.
-body_18081(18079,ntwrkCnfg("Incorrect")) :- \+dec_20.
-?::dec_21.
-body_18091(18090,fntInstlltn("Verified")) :- dec_21.
-body_18100(18098,fntInstlltn("Faulty")) :- \+dec_21.
-?::dec_22.
-body_18110(18109,drvOK("Reinstalled")) :- dec_22.
-body_18119(18117,drvOK("Corrupt")) :- \+dec_22.
-?::dec_23.
-body_18129(18128,prtQueue("Short")) :- dec_23.
-body_18138(18136,prtQueue("Long")) :- \+dec_23.
-?::dec_24.
-body_18148(18147,dataFile("Correct")) :- dec_24.
-body_18157(18155,dataFile("Incorrect_Corrupt")) :- \+dec_24.
-?::dec_25.
-body_18167(18166,prtPath("Correct")) :- dec_25.
-body_18176(18174,prtPath("Incorrect")) :- \+dec_25.
-?::dec_26.
-body_18186(18185,prtSpool("Enabled")) :- dec_26.
-body_18195(18193,prtSpool("Disabled")) :- \+dec_26.
-?::dec_27.
-body_18205(18204,prtThread("OK")) :- dec_27.
-body_18214(18212,prtThread("Corrupt_Buggy")) :- \+dec_27.
-?::dec_28.
-body_18224(18223,tnrSpply("Adequate")) :- dec_28.
-body_18233(18231,tnrSpply("Low")) :- \+dec_28.
-?::dec_29.
-body_18243(18242,prntngArOK("Correct")) :- dec_29.
-body_18252(18250,prntngArOK("Incorrect")) :- \+dec_29.
-?::dec_30.
-body_18262(18261,fllCrrptdBffr("Intact__not_Corrupt_")) :- dec_30.
-body_18271(18269,fllCrrptdBffr("Full_or_Corrupt")) :- \+dec_30.
-?::dec_31.
-body_18281(18280,prtMpTPth("Correct")) :- dec_31.
-body_18290(18288,prtMpTPth("Incorrect")) :- \+dec_31.
-?::dec_32.
-body_18300(18299,drvSet("Correct")) :- dec_32.
-body_18309(18307,drvSet("Incorrect")) :- \+dec_32.
 ?::dec_33.
-body_18319(18318,prtTimeOut("Long_Enough")) :- dec_33.
-body_18328(18326,prtTimeOut("Too_Short")) :- \+dec_33.
-0.999::nnPSGrphc :- body_13820(13819,nnPSGrphc).
-0.0::nnPSGrphc :- body_13828(13827,nnPSGrphc).
-0.1::nnPSGrphc :- body_13836(13835,nnPSGrphc).
-0.5::nnPSGrphc :- body_13844(13843,nnPSGrphc).
-0.25::nnPSGrphc :- body_13852(13851,nnPSGrphc).
-0.5::nnPSGrphc :- body_13860(13859,nnPSGrphc).
-0.5::nnPSGrphc :- body_13868(13867,nnPSGrphc).
-0.5::nnPSGrphc :- body_13876(13875,nnPSGrphc).
-0.999::pSGRAPHIC :- body_13884(13883,pSGRAPHIC).
-0.1::pSGRAPHIC :- body_13892(13891,pSGRAPHIC).
-0.5::pSGRAPHIC :- body_13900(13899,pSGRAPHIC).
-0.25::pSGRAPHIC :- body_13908(13907,pSGRAPHIC).
-0.5::pSGRAPHIC :- body_13916(13915,pSGRAPHIC).
-0.5::pSGRAPHIC :- body_13924(13923,pSGRAPHIC).
-0.5::pSGRAPHIC :- body_13932(13931,pSGRAPHIC).
-0.99900001::prtStatToner("No_Error"); 0.00099999::prtStatToner("Low__None") :- body_13940(13939,multi).
-0.00099999::prtStatToner("No_Error"); 0.99900001::prtStatToner("Low__None") :- body_13953(13952,multi).
-0.9999::appData("Correct"); 0.0001::appData("Incorrect_or_corrupt") :- body_13966(13965,multi).
-0.0::appData("Correct"); 1.0::appData("Incorrect_or_corrupt") :- body_13979(13978,multi).
-0.0::appData("Correct"); 1.0::appData("Incorrect_or_corrupt") :- body_13992(13991,multi).
-0.5::appData("Correct"); 0.5::appData("Incorrect_or_corrupt") :- body_14005(14004,multi).
-0.99000001::tTOK :- body_14018(14017,tTOK).
-0.0::tTOK :- body_14026(14025,tTOK).
-0.1::tTOK :- body_14034(14033,tTOK).
-0.5::tTOK :- body_14042(14041,tTOK).
-0.5::tTOK :- body_14050(14049,tTOK).
-0.5::tTOK :- body_14058(14057,tTOK).
-0.5::tTOK :- body_14066(14065,tTOK).
-0.5::tTOK :- body_14074(14073,tTOK).
-1.0::appDtGnTm("Fast_Enough"); 0.0::appDtGnTm("Too_Long") :- body_14082(14081,multi).
-0.99000001::appDtGnTm("Fast_Enough"); 0.00999999::appDtGnTm("Too_Long") :- body_14095(14094,multi).
-0.99::netOK :- body_14108(14107,netOK).
-0.0::netOK :- body_14116(14115,netOK).
-0.1::netOK :- body_14124(14123,netOK).
-0.5::netOK :- body_14132(14131,netOK).
-0.0::netOK :- body_14140(14139,netOK).
-0.5::netOK :- body_14148(14147,netOK).
-0.5::netOK :- body_14156(14155,netOK).
-0.5::netOK :- body_14164(14163,netOK).
-0.999::lclOK :- body_14172(14171,lclOK).
-0.01::lclOK :- body_14180(14179,lclOK).
-0.0::lclOK :- body_14188(14187,lclOK).
-0.5::lclOK :- body_14196(14195,lclOK).
-0.0::lclOK :- body_14204(14203,lclOK).
-0.5::lclOK :- body_14212(14211,lclOK).
-0.5::lclOK :- body_14220(14219,lclOK).
-0.5::lclOK :- body_14228(14227,lclOK).
-0.98::avlblVrtlMmry("Adequate____1Mb_"); 0.02::avlblVrtlMmry("Inadequate____1_Mb_") :- body_14236(14235,multi).
-1.0::avlblVrtlMmry("Adequate____1Mb_"); 0.0::avlblVrtlMmry("Inadequate____1_Mb_") :- body_14249(14248,multi).
-0.99900001::prtStatMem("No_Error"); 0.00099999::prtStatMem("Out_of_Memory") :- body_14262(14261,multi).
-0.2::prtStatMem("No_Error"); 0.8::prtStatMem("Out_of_Memory") :- body_14275(14274,multi).
-0.99000001::nnTTOK :- body_14288(14287,nnTTOK).
-0.1::nnTTOK :- body_14296(14295,nnTTOK).
-0.1::nnTTOK :- body_14304(14303,nnTTOK).
-0.5::nnTTOK :- body_14312(14311,nnTTOK).
-0.5::nnTTOK :- body_14320(14319,nnTTOK).
-0.5::nnTTOK :- body_14328(14327,nnTTOK).
-0.5::nnTTOK :- body_14336(14335,nnTTOK).
-0.5::nnTTOK :- body_14344(14343,nnTTOK).
-0.9999::prtIcon("Normal"); 0.0001::prtIcon("Grayed_Out") :- body_14352(14351,multi).
-0.7::prtIcon("Normal"); 0.3::prtIcon("Grayed_Out") :- body_14365(14364,multi).
-0.25::prtIcon("Normal"); 0.75::prtIcon("Grayed_Out") :- body_14378(14377,multi).
-0.5::prtIcon("Normal"); 0.5::prtIcon("Grayed_Out") :- body_14391(14390,multi).
-0.99000001::prntPrcssTm("Fast_Enough"); 0.00999999::prntPrcssTm("Too_Long") :- body_14404(14403,multi).
-1.0::prntPrcssTm("Fast_Enough"); 0.0::prntPrcssTm("Too_Long") :- body_14417(14416,multi).
-1.0::rEPEAT("Yes__Always_the_Same_"); 0.0::rEPEAT("No__Different_Each_Time_") :- body_14430(14429,multi).
-0.5::rEPEAT("Yes__Always_the_Same_"); 0.5::rEPEAT("No__Different_Each_Time_") :- body_14443(14442,multi).
-0.5::rEPEAT("Yes__Always_the_Same_"); 0.5::rEPEAT("No__Different_Each_Time_") :- body_14456(14455,multi).
-0.5::rEPEAT("Yes__Always_the_Same_"); 0.5::rEPEAT("No__Different_Each_Time_") :- body_14469(14468,multi).
-0.99::cmpltPgPrntd :- body_14482(14481,cmpltPgPrntd).
-0.1::cmpltPgPrntd :- body_14490(14489,cmpltPgPrntd).
-0.00999999::cmpltPgPrntd :- body_14498(14497,cmpltPgPrntd).
-0.5::cmpltPgPrntd :- body_14506(14505,cmpltPgPrntd).
-0.3::cmpltPgPrntd :- body_14514(14513,cmpltPgPrntd).
-0.5::cmpltPgPrntd :- body_14522(14521,cmpltPgPrntd).
-0.5::cmpltPgPrntd :- body_14530(14529,cmpltPgPrntd).
-0.5::cmpltPgPrntd :- body_14538(14537,cmpltPgPrntd).
-0.99000001::prtStatOff("No_Error"); 0.00999999::prtStatOff("OFFLINE__OFF") :- body_14546(14545,multi).
-0.00999999::prtStatOff("No_Error"); 0.99000001::prtStatOff("OFFLINE__OFF") :- body_14559(14558,multi).
-0.99900001::prtStatPaper("No_Error"); 0.00099999::prtStatPaper("Jam__Out__Bin_Full") :- body_14572(14571,multi).
-0.00099999::prtStatPaper("No_Error"); 0.99900001::prtStatPaper("Jam__Out__Bin_Full") :- body_14585(14584,multi).
-0.4::ntGrbld :- body_14598(14597,ntGrbld).
-0.2::ntGrbld :- body_14606(14605,ntGrbld).
-0.5::ntGrbld :- body_14614(14613,ntGrbld).
-0.4::ntGrbld :- body_14622(14621,ntGrbld).
-0.5::ntGrbld :- body_14630(14629,ntGrbld).
-0.5::ntGrbld :- body_14638(14637,ntGrbld).
-0.5::ntGrbld :- body_14646(14645,ntGrbld).
-0.3::ntGrbld :- body_14654(14653,ntGrbld).
-0.5::ntGrbld :- body_14662(14661,ntGrbld).
-0.5::ntGrbld :- body_14670(14669,ntGrbld).
-0.5::ntGrbld :- body_14678(14677,ntGrbld).
-0.5::ntGrbld :- body_14686(14685,ntGrbld).
-0.5::ntGrbld :- body_14694(14693,ntGrbld).
-0.5::ntGrbld :- body_14702(14701,ntGrbld).
-0.5::ntGrbld :- body_14710(14709,ntGrbld).
-0.99::eMFOK :- body_14718(14717,eMFOK).
-0.05::eMFOK :- body_14726(14725,eMFOK).
-0.0::eMFOK :- body_14734(14733,eMFOK).
-0.5::eMFOK :- body_14742(14741,eMFOK).
-0.1::eMFOK :- body_14750(14749,eMFOK).
-0.5::eMFOK :- body_14758(14757,eMFOK).
-0.5::eMFOK :- body_14766(14765,eMFOK).
-0.5::eMFOK :- body_14774(14773,eMFOK).
-0.0::problem4 :- body_14782(14781,problem4).
-0.0::problem4 :- body_14790(14789,problem4).
-0.0::problem4 :- body_14798(14797,problem4).
-0.0::problem4 :- body_14806(14805,problem4).
-0.1::dS_LCLOK :- body_14814(14813,dS_LCLOK).
-0.0::dS_LCLOK :- body_14822(14821,dS_LCLOK).
-0.5::dS_LCLOK :- body_14830(14829,dS_LCLOK).
-0.0::dS_LCLOK :- body_14838(14837,dS_LCLOK).
-0.5::dS_LCLOK :- body_14846(14845,dS_LCLOK).
-0.5::dS_LCLOK :- body_14854(14853,dS_LCLOK).
-0.5::dS_LCLOK :- body_14862(14861,dS_LCLOK).
-0.1::dS_LCLOK :- body_14870(14869,dS_LCLOK).
-0.5::dS_LCLOK :- body_14878(14877,dS_LCLOK).
-0.5::dS_LCLOK :- body_14886(14885,dS_LCLOK).
-0.5::dS_LCLOK :- body_14894(14893,dS_LCLOK).
-0.5::dS_LCLOK :- body_14902(14901,dS_LCLOK).
-0.5::dS_LCLOK :- body_14910(14909,dS_LCLOK).
-0.5::dS_LCLOK :- body_14918(14917,dS_LCLOK).
-0.5::dS_LCLOK :- body_14926(14925,dS_LCLOK).
-0.99900001::tstpsTxt("x_1_Mb_Available_VM"); 0.00099999::tstpsTxt("x_1_Mb_Available_VM2") :- body_14934(14933,multi).
-0.00099999::tstpsTxt("x_1_Mb_Available_VM"); 0.99900001::tstpsTxt("x_1_Mb_Available_VM2") :- body_14947(14946,multi).
-1.0::tstpsTxt("x_1_Mb_Available_VM"); 0.0::tstpsTxt("x_1_Mb_Available_VM2") :- body_14960(14959,multi).
-1.0::tstpsTxt("x_1_Mb_Available_VM"); 0.0::tstpsTxt("x_1_Mb_Available_VM2") :- body_14973(14972,multi).
-0.99900001::deskPrntSpd("OK"); 0.00099999::deskPrntSpd("Too_Slow") :- body_14986(14985,multi).
-0.00099999::deskPrntSpd("OK"); 0.99900001::deskPrntSpd("Too_Slow") :- body_14999(14998,multi).
-0.00099999::deskPrntSpd("OK"); 0.99900001::deskPrntSpd("Too_Slow") :- body_15012(15011,multi).
-0.5::deskPrntSpd("OK"); 0.5::deskPrntSpd("Too_Slow") :- body_15025(15024,multi).
-0.25::deskPrntSpd("OK"); 0.75::deskPrntSpd("Too_Slow") :- body_15038(15037,multi).
-0.5::deskPrntSpd("OK"); 0.5::deskPrntSpd("Too_Slow") :- body_15051(15050,multi).
-0.5::deskPrntSpd("OK"); 0.5::deskPrntSpd("Too_Slow") :- body_15064(15063,multi).
-0.5::deskPrntSpd("OK"); 0.5::deskPrntSpd("Too_Slow") :- body_15077(15076,multi).
-0.0::problem5 :- body_15090(15089,problem5).
-0.0::problem5 :- body_15098(15097,problem5).
-0.0::problem5 :- body_15106(15105,problem5).
-0.0::problem5 :- body_15114(15113,problem5).
-1.0::pSERRMEM("No_Error"); 0.0::pSERRMEM("Low_Memory") :- body_15122(15121,multi).
-0.05::pSERRMEM("No_Error"); 0.95::pSERRMEM("Low_Memory") :- body_15135(15134,multi).
-1.0::pSERRMEM("No_Error"); 0.0::pSERRMEM("Low_Memory") :- body_15148(15147,multi).
-1.0::pSERRMEM("No_Error"); 0.0::pSERRMEM("Low_Memory") :- body_15161(15160,multi).
-0.99::dS_NTOK :- body_15174(15173,dS_NTOK).
-0.0::dS_NTOK :- body_15182(15181,dS_NTOK).
-0.1::dS_NTOK :- body_15190(15189,dS_NTOK).
-0.5::dS_NTOK :- body_15198(15197,dS_NTOK).
-0.0::dS_NTOK :- body_15206(15205,dS_NTOK).
-0.5::dS_NTOK :- body_15214(15213,dS_NTOK).
-0.5::dS_NTOK :- body_15222(15221,dS_NTOK).
-0.5::dS_NTOK :- body_15230(15229,dS_NTOK).
-0.0::dS_NTOK :- body_15238(15237,dS_NTOK).
-0.5::dS_NTOK :- body_15246(15245,dS_NTOK).
-0.5::dS_NTOK :- body_15254(15253,dS_NTOK).
-0.5::dS_NTOK :- body_15262(15261,dS_NTOK).
-0.5::dS_NTOK :- body_15270(15269,dS_NTOK).
-0.5::dS_NTOK :- body_15278(15277,dS_NTOK).
-0.5::dS_NTOK :- body_15286(15285,dS_NTOK).
-0.5::dS_NTOK :- body_15294(15293,dS_NTOK).
-0.2::dS_NTOK :- body_15302(15301,dS_NTOK).
-0.5::dS_NTOK :- body_15310(15309,dS_NTOK).
-0.5::dS_NTOK :- body_15318(15317,dS_NTOK).
-0.5::dS_NTOK :- body_15326(15325,dS_NTOK).
-0.5::dS_NTOK :- body_15334(15333,dS_NTOK).
-0.5::dS_NTOK :- body_15342(15341,dS_NTOK).
-0.5::dS_NTOK :- body_15350(15349,dS_NTOK).
-0.5::dS_NTOK :- body_15358(15357,dS_NTOK).
-0.5::dS_NTOK :- body_15366(15365,dS_NTOK).
-0.5::dS_NTOK :- body_15374(15373,dS_NTOK).
-0.5::dS_NTOK :- body_15382(15381,dS_NTOK).
-0.5::dS_NTOK :- body_15390(15389,dS_NTOK).
-0.5::dS_NTOK :- body_15398(15397,dS_NTOK).
-0.5::dS_NTOK :- body_15406(15405,dS_NTOK).
-0.5::dS_NTOK :- body_15414(15413,dS_NTOK).
-0.5::dS_NTOK :- body_15422(15421,dS_NTOK).
-0.1::lclGrbld :- body_15430(15429,lclGrbld).
-0.2::lclGrbld :- body_15438(15437,lclGrbld).
-0.5::lclGrbld :- body_15446(15445,lclGrbld).
-0.4::lclGrbld :- body_15454(15453,lclGrbld).
-0.5::lclGrbld :- body_15462(15461,lclGrbld).
-0.5::lclGrbld :- body_15470(15469,lclGrbld).
-0.5::lclGrbld :- body_15478(15477,lclGrbld).
-0.2::lclGrbld :- body_15486(15485,lclGrbld).
-0.5::lclGrbld :- body_15494(15493,lclGrbld).
-0.5::lclGrbld :- body_15502(15501,lclGrbld).
-0.5::lclGrbld :- body_15510(15509,lclGrbld).
-0.5::lclGrbld :- body_15518(15517,lclGrbld).
-0.5::lclGrbld :- body_15526(15525,lclGrbld).
-0.5::lclGrbld :- body_15534(15533,lclGrbld).
-0.5::lclGrbld :- body_15542(15541,lclGrbld).
-0.3::incmpltPS :- body_15550(15549,incmpltPS).
-0.0::incmpltPS :- body_15558(15557,incmpltPS).
-0.5::incmpltPS :- body_15566(15565,incmpltPS).
-0.99::hrglssDrtnAftrPrnt("Fast_Enough"); 0.01::hrglssDrtnAftrPrnt("Too_Long") :- body_15574(15573,multi).
-0.1::hrglssDrtnAftrPrnt("Fast_Enough"); 0.9::hrglssDrtnAftrPrnt("Too_Long") :- body_15587(15586,multi).
-0.99900001::ntSpd("OK"); 0.00099999::ntSpd("Slow") :- body_15600(15599,multi).
-0.25::ntSpd("OK"); 0.75::ntSpd("Slow") :- body_15613(15612,multi).
-0.25::ntSpd("OK"); 0.75::ntSpd("Slow") :- body_15626(15625,multi).
-0.5::ntSpd("OK"); 0.5::ntSpd("Slow") :- body_15639(15638,multi).
-0.0::ntSpd("OK"); 1.0::ntSpd("Slow") :- body_15652(15651,multi).
-0.5::ntSpd("OK"); 0.5::ntSpd("Slow") :- body_15665(15664,multi).
-0.5::ntSpd("OK"); 0.5::ntSpd("Slow") :- body_15678(15677,multi).
-0.5::ntSpd("OK"); 0.5::ntSpd("Slow") :- body_15691(15690,multi).
-0.0::problem3 :- body_15704(15703,problem3).
-0.0::problem3 :- body_15712(15711,problem3).
-0.0::problem3 :- body_15720(15719,problem3).
-0.0::problem3 :- body_15728(15727,problem3).
-0.0::grbldOtpt :- body_15736(15735,grbldOtpt).
-0.0::grbldOtpt :- body_15744(15743,grbldOtpt).
-0.0::grbldOtpt :- body_15752(15751,grbldOtpt).
-0.0::grbldOtpt :- body_15760(15759,grbldOtpt).
-0.0::gDIIN :- body_15768(15767,gDIIN).
-0.0::gDIIN :- body_15776(15775,gDIIN).
-0.0::gDIIN :- body_15784(15783,gDIIN).
-0.0::gDIIN :- body_15792(15791,gDIIN).
-0.0::gDIIN :- body_15800(15799,gDIIN).
-0.0::grbldPS :- body_15808(15807,grbldPS).
-0.9::grbldPS :- body_15816(15815,grbldPS).
-0.5::grbldPS :- body_15824(15823,grbldPS).
-0.99::gDIOUT :- body_15832(15831,gDIOUT).
-0.2::gDIOUT :- body_15840(15839,gDIOUT).
-0.9::gDIOUT :- body_15848(15847,gDIOUT).
-0.5::gDIOUT :- body_15856(15855,gDIOUT).
-0.1::gDIOUT :- body_15864(15863,gDIOUT).
-0.5::gDIOUT :- body_15872(15871,gDIOUT).
-0.5::gDIOUT :- body_15880(15879,gDIOUT).
-0.5::gDIOUT :- body_15888(15887,gDIOUT).
-0.1::gDIOUT :- body_15896(15895,gDIOUT).
-0.5::gDIOUT :- body_15904(15903,gDIOUT).
-0.5::gDIOUT :- body_15912(15911,gDIOUT).
-0.5::gDIOUT :- body_15920(15919,gDIOUT).
-0.5::gDIOUT :- body_15928(15927,gDIOUT).
-0.5::gDIOUT :- body_15936(15935,gDIOUT).
-0.5::gDIOUT :- body_15944(15943,gDIOUT).
-0.5::gDIOUT :- body_15952(15951,gDIOUT).
-1.0::problem2("OK"); 0.0::problem2("Too_Long") :- body_15960(15959,multi).
-1.0::problem2("OK"); 0.0::problem2("Too_Long") :- body_15973(15972,multi).
-0.0::problem2("OK"); 1.0::problem2("Too_Long") :- body_15986(15985,multi).
-0.0::problem2("OK"); 1.0::problem2("Too_Long") :- body_15999(15998,multi).
-1.0::problem2("OK"); 0.0::problem2("Too_Long") :- body_16012(16011,multi).
-0.0::problem2("OK"); 1.0::problem2("Too_Long") :- body_16025(16024,multi).
-1.0::problem2("OK"); 0.0::problem2("Too_Long") :- body_16038(16037,multi).
-0.0::problem2("OK"); 1.0::problem2("Too_Long") :- body_16051(16050,multi).
-0.0::problem6 :- body_16064(16063,problem6).
-0.0::problem6 :- body_16072(16071,problem6).
-0.0::problem6 :- body_16080(16079,problem6).
-0.0::problem6 :- body_16088(16087,problem6).
-0.99::prtDataOut :- body_16096(16095,prtDataOut).
-0.0::prtDataOut :- body_16104(16103,prtDataOut).
-0.0::prtDataOut :- body_16112(16111,prtDataOut).
-0.5::prtDataOut :- body_16120(16119,prtDataOut).
-0.0::pC2PRT :- body_16128(16127,pC2PRT).
-0.0::pC2PRT :- body_16136(16135,pC2PRT).
-0.0::pC2PRT :- body_16144(16143,pC2PRT).
-0.0::pC2PRT :- body_16152(16151,pC2PRT).
-0.0::pC2PRT :- body_16160(16159,pC2PRT).
-0.0::pC2PRT :- body_16168(16167,pC2PRT).
-0.0::pC2PRT :- body_16176(16175,pC2PRT).
-0.0::pC2PRT :- body_16184(16183,pC2PRT).
-0.0::pC2PRT :- body_16192(16191,pC2PRT).
-0.0::pC2PRT :- body_16200(16199,pC2PRT).
-0.0::pC2PRT :- body_16208(16207,pC2PRT).
-0.0::pC2PRT :- body_16216(16215,pC2PRT).
-0.0::pC2PRT :- body_16224(16223,pC2PRT).
-0.0::pC2PRT :- body_16232(16231,pC2PRT).
-0.0::pC2PRT :- body_16240(16239,pC2PRT).
-0.0::pC2PRT :- body_16248(16247,pC2PRT).
-0.0::pC2PRT :- body_16256(16255,pC2PRT).
-0.0::pC2PRT :- body_16264(16263,pC2PRT).
-0.0::pC2PRT :- body_16272(16271,pC2PRT).
-0.0::pC2PRT :- body_16280(16279,pC2PRT).
-0.0::pC2PRT :- body_16288(16287,pC2PRT).
-0.0::pC2PRT :- body_16296(16295,pC2PRT).
-0.0::pC2PRT :- body_16304(16303,pC2PRT).
-0.0::pC2PRT :- body_16312(16311,pC2PRT).
-0.0::pC2PRT :- body_16320(16319,pC2PRT).
-0.0::pC2PRT :- body_16328(16327,pC2PRT).
-0.0::pC2PRT :- body_16336(16335,pC2PRT).
-0.0::pC2PRT :- body_16344(16343,pC2PRT).
-0.0::pC2PRT :- body_16352(16351,pC2PRT).
-0.0::pC2PRT :- body_16360(16359,pC2PRT).
-0.0::pC2PRT :- body_16368(16367,pC2PRT).
-0.0::pC2PRT :- body_16376(16375,pC2PRT).
-0.0::pC2PRT :- body_16384(16383,pC2PRT).
-0.0::pC2PRT :- body_16392(16391,pC2PRT).
-0.0::pC2PRT :- body_16400(16399,pC2PRT).
-0.0::pC2PRT :- body_16408(16407,pC2PRT).
-0.0::pC2PRT :- body_16416(16415,pC2PRT).
-0.0::pC2PRT :- body_16424(16423,pC2PRT).
-0.0::pC2PRT :- body_16432(16431,pC2PRT).
-0.0::pC2PRT :- body_16440(16439,pC2PRT).
-0.0::pC2PRT :- body_16448(16447,pC2PRT).
-0.0::pC2PRT :- body_16456(16455,pC2PRT).
-0.0::pC2PRT :- body_16464(16463,pC2PRT).
-0.0::pC2PRT :- body_16472(16471,pC2PRT).
-0.0::pC2PRT :- body_16480(16479,pC2PRT).
-0.0::pC2PRT :- body_16488(16487,pC2PRT).
-0.0::pC2PRT :- body_16496(16495,pC2PRT).
-0.0::pC2PRT :- body_16504(16503,pC2PRT).
-0.0::pC2PRT :- body_16512(16511,pC2PRT).
-0.0::pC2PRT :- body_16520(16519,pC2PRT).
-0.0::pC2PRT :- body_16528(16527,pC2PRT).
-0.0::pC2PRT :- body_16536(16535,pC2PRT).
-0.0::pC2PRT :- body_16544(16543,pC2PRT).
-0.0::pC2PRT :- body_16552(16551,pC2PRT).
-0.0::pC2PRT :- body_16560(16559,pC2PRT).
-0.0::pC2PRT :- body_16568(16567,pC2PRT).
-0.0::pC2PRT :- body_16576(16575,pC2PRT).
-0.0::pC2PRT :- body_16584(16583,pC2PRT).
-0.0::pC2PRT :- body_16592(16591,pC2PRT).
-0.0::pC2PRT :- body_16600(16599,pC2PRT).
-0.0::pC2PRT :- body_16608(16607,pC2PRT).
-0.0::pC2PRT :- body_16616(16615,pC2PRT).
-0.0::pC2PRT :- body_16624(16623,pC2PRT).
-0.0::pC2PRT :- body_16632(16631,pC2PRT).
-0.0::pC2PRT :- body_16640(16639,pC2PRT).
-0.0::pC2PRT :- body_16648(16647,pC2PRT).
-0.0::pC2PRT :- body_16656(16655,pC2PRT).
-0.0::pC2PRT :- body_16664(16663,pC2PRT).
-0.0::pC2PRT :- body_16672(16671,pC2PRT).
-0.0::pC2PRT :- body_16680(16679,pC2PRT).
-0.0::pC2PRT :- body_16688(16687,pC2PRT).
-0.0::pC2PRT :- body_16696(16695,pC2PRT).
-0.0::pC2PRT :- body_16704(16703,pC2PRT).
-0.0::pC2PRT :- body_16712(16711,pC2PRT).
-0.0::pC2PRT :- body_16720(16719,pC2PRT).
-0.0::pC2PRT :- body_16728(16727,pC2PRT).
-0.0::pC2PRT :- body_16736(16735,pC2PRT).
-0.0::pC2PRT :- body_16744(16743,pC2PRT).
-0.0::pC2PRT :- body_16752(16751,pC2PRT).
-0.0::pC2PRT :- body_16760(16759,pC2PRT).
-0.8::prtFile :- body_16768(16767,prtFile).
-0.2::prtFile :- body_16776(16775,prtFile).
-0.99::prtData :- body_16784(16783,prtData).
-0.01::prtData :- body_16792(16791,prtData).
-0.02::prtData :- body_16800(16799,prtData).
-0.5::prtData :- body_16808(16807,prtData).
-0.0::prtData :- body_16816(16815,prtData).
-0.5::prtData :- body_16824(16823,prtData).
-0.5::prtData :- body_16832(16831,prtData).
-0.5::prtData :- body_16840(16839,prtData).
-0.1::prtData :- body_16848(16847,prtData).
-0.5::prtData :- body_16856(16855,prtData).
-0.5::prtData :- body_16864(16863,prtData).
-0.5::prtData :- body_16872(16871,prtData).
-0.5::prtData :- body_16880(16879,prtData).
-0.5::prtData :- body_16888(16887,prtData).
-0.5::prtData :- body_16896(16895,prtData).
-0.5::prtData :- body_16904(16903,prtData).
-0.0::prtData :- body_16912(16911,prtData).
-0.5::prtData :- body_16920(16919,prtData).
-0.5::prtData :- body_16928(16927,prtData).
-0.5::prtData :- body_16936(16935,prtData).
-0.5::prtData :- body_16944(16943,prtData).
-0.5::prtData :- body_16952(16951,prtData).
-0.5::prtData :- body_16960(16959,prtData).
-0.5::prtData :- body_16968(16967,prtData).
-0.5::prtData :- body_16976(16975,prtData).
-0.5::prtData :- body_16984(16983,prtData).
-0.5::prtData :- body_16992(16991,prtData).
-0.5::prtData :- body_17000(16999,prtData).
-0.5::prtData :- body_17008(17007,prtData).
-0.5::prtData :- body_17016(17015,prtData).
-0.5::prtData :- body_17024(17023,prtData).
-0.5::prtData :- body_17032(17031,prtData).
-0.0::prtData :- body_17040(17039,prtData).
-0.5::prtData :- body_17048(17047,prtData).
-0.5::prtData :- body_17056(17055,prtData).
-0.5::prtData :- body_17064(17063,prtData).
-0.5::prtData :- body_17072(17071,prtData).
-0.5::prtData :- body_17080(17079,prtData).
-0.5::prtData :- body_17088(17087,prtData).
-0.5::prtData :- body_17096(17095,prtData).
-0.5::prtData :- body_17104(17103,prtData).
-0.5::prtData :- body_17112(17111,prtData).
-0.5::prtData :- body_17120(17119,prtData).
-0.5::prtData :- body_17128(17127,prtData).
-0.5::prtData :- body_17136(17135,prtData).
-0.5::prtData :- body_17144(17143,prtData).
-0.5::prtData :- body_17152(17151,prtData).
-0.5::prtData :- body_17160(17159,prtData).
-0.5::prtData :- body_17168(17167,prtData).
-0.5::prtData :- body_17176(17175,prtData).
-0.5::prtData :- body_17184(17183,prtData).
-0.5::prtData :- body_17192(17191,prtData).
-0.5::prtData :- body_17200(17199,prtData).
-0.5::prtData :- body_17208(17207,prtData).
-0.5::prtData :- body_17216(17215,prtData).
-0.5::prtData :- body_17224(17223,prtData).
-0.5::prtData :- body_17232(17231,prtData).
-0.5::prtData :- body_17240(17239,prtData).
-0.5::prtData :- body_17248(17247,prtData).
-0.5::prtData :- body_17256(17255,prtData).
-0.5::prtData :- body_17264(17263,prtData).
-0.5::prtData :- body_17272(17271,prtData).
-0.5::prtData :- body_17280(17279,prtData).
-0.5::prtData :- body_17288(17287,prtData).
-0.0::prtData :- body_17296(17295,prtData).
-0.5::prtData :- body_17304(17303,prtData).
-0.5::prtData :- body_17312(17311,prtData).
-0.5::prtData :- body_17320(17319,prtData).
-0.5::prtData :- body_17328(17327,prtData).
-0.5::prtData :- body_17336(17335,prtData).
-0.5::prtData :- body_17344(17343,prtData).
-0.5::prtData :- body_17352(17351,prtData).
-0.5::prtData :- body_17360(17359,prtData).
-0.5::prtData :- body_17368(17367,prtData).
-0.5::prtData :- body_17376(17375,prtData).
-0.5::prtData :- body_17384(17383,prtData).
-0.5::prtData :- body_17392(17391,prtData).
-0.5::prtData :- body_17400(17399,prtData).
-0.5::prtData :- body_17408(17407,prtData).
-0.5::prtData :- body_17416(17415,prtData).
-0.5::prtData :- body_17424(17423,prtData).
-0.5::prtData :- body_17432(17431,prtData).
-0.5::prtData :- body_17440(17439,prtData).
-0.5::prtData :- body_17448(17447,prtData).
-0.5::prtData :- body_17456(17455,prtData).
-0.5::prtData :- body_17464(17463,prtData).
-0.5::prtData :- body_17472(17471,prtData).
-0.5::prtData :- body_17480(17479,prtData).
-0.5::prtData :- body_17488(17487,prtData).
-0.5::prtData :- body_17496(17495,prtData).
-0.5::prtData :- body_17504(17503,prtData).
-0.5::prtData :- body_17512(17511,prtData).
-0.5::prtData :- body_17520(17519,prtData).
-0.5::prtData :- body_17528(17527,prtData).
-0.5::prtData :- body_17536(17535,prtData).
-0.5::prtData :- body_17544(17543,prtData).
-0.5::prtData :- body_17552(17551,prtData).
-0.5::prtData :- body_17560(17559,prtData).
-0.5::prtData :- body_17568(17567,prtData).
-0.5::prtData :- body_17576(17575,prtData).
-0.5::prtData :- body_17584(17583,prtData).
-0.5::prtData :- body_17592(17591,prtData).
-0.5::prtData :- body_17600(17599,prtData).
-0.5::prtData :- body_17608(17607,prtData).
-0.5::prtData :- body_17616(17615,prtData).
-0.5::prtData :- body_17624(17623,prtData).
-0.5::prtData :- body_17632(17631,prtData).
-0.5::prtData :- body_17640(17639,prtData).
-0.5::prtData :- body_17648(17647,prtData).
-0.5::prtData :- body_17656(17655,prtData).
-0.5::prtData :- body_17664(17663,prtData).
-0.5::prtData :- body_17672(17671,prtData).
-0.5::prtData :- body_17680(17679,prtData).
-0.5::prtData :- body_17688(17687,prtData).
-0.5::prtData :- body_17696(17695,prtData).
-0.5::prtData :- body_17704(17703,prtData).
-0.5::prtData :- body_17712(17711,prtData).
-0.5::prtData :- body_17720(17719,prtData).
-0.5::prtData :- body_17728(17727,prtData).
-0.5::prtData :- body_17736(17735,prtData).
-0.5::prtData :- body_17744(17743,prtData).
-0.5::prtData :- body_17752(17751,prtData).
-0.5::prtData :- body_17760(17759,prtData).
-0.5::prtData :- body_17768(17767,prtData).
-0.5::prtData :- body_17776(17775,prtData).
-0.5::prtData :- body_17784(17783,prtData).
-0.5::prtData :- body_17792(17791,prtData).
-0.5::prtData :- body_17800(17799,prtData).
-1.0::problem1("Normal_Output"); 0.0::problem1("No_Output") :- body_17808(17807,multi).
-0.0::problem1("Normal_Output"); 1.0::problem1("No_Output") :- body_17821(17820,multi).
-0.98::prtPaper("Has_Paper") :- body_17844(17843,prtPaper("Has_Paper")).
-0.02::prtPaper("No_Paper") :- body_17853(17851,prtPaper("No_Paper")).
-0.99::cblPrtHrdwrOK("Operational") :- body_17863(17862,cblPrtHrdwrOK("Operational")).
-0.01::cblPrtHrdwrOK("Not_Operational") :- body_17872(17870,cblPrtHrdwrOK("Not_Operational")).
-0.8::netPrint("No__Local_printer_") :- body_17882(17881,netPrint("No__Local_printer_")).
-0.2::netPrint("Yes__Network_printer_") :- body_17891(17889,netPrint("Yes__Network_printer_")).
-0.95::prtMem("Greater_than_2_Mb") :- body_17901(17900,prtMem("Greater_than_2_Mb")).
-0.05::prtMem("Less_than_2Mb") :- body_17910(17908,prtMem("Less_than_2Mb")).
-0.99::ePSGrphc("No____TIF___WMF___BMP_") :- body_17920(17919,ePSGrphc("No____TIF___WMF___BMP_")).
-0.01::ePSGrphc("Yes____EPS_") :- body_17929(17927,ePSGrphc("Yes____EPS_")).
-0.7::pTROFFLINE("Online") :- body_17939(17938,pTROFFLINE("Online")).
-0.3::pTROFFLINE("Offline") :- body_17948(17946,pTROFFLINE("Offline")).
-0.95::grphcsRltdDrvrSttngs("Correct") :- body_17958(17957,grphcsRltdDrvrSttngs("Correct")).
-0.05::grphcsRltdDrvrSttngs("Incorrect") :- body_17967(17965,grphcsRltdDrvrSttngs("Incorrect")).
-0.98::prtCbl("Connected") :- body_17977(17976,prtCbl("Connected")).
-0.02::prtCbl("Loose") :- body_17986(17984,prtCbl("Loose")).
-0.15::dSApplctn("DOS") :- body_17996(17995,dSApplctn("DOS")).
-0.85::dSApplctn("Windows") :- body_18005(18003,dSApplctn("Windows")).
-0.95::pgOrnttnOK("Correct") :- body_18015(18014,pgOrnttnOK("Correct")).
-0.05::pgOrnttnOK("Incorrect") :- body_18024(18022,pgOrnttnOK("Incorrect")).
-0.97::dskLocal("Greater_than_2_Mb") :- body_18034(18033,dskLocal("Greater_than_2_Mb")).
-0.03::dskLocal("Less_than_2_Mb") :- body_18043(18041,dskLocal("Less_than_2_Mb")).
-0.995::appOK("Correct") :- body_18053(18052,appOK("Correct")).
-0.005::appOK("Incorrect_Corrupt") :- body_18062(18060,appOK("Incorrect_Corrupt")).
-0.98::ntwrkCnfg("Correct") :- body_18072(18071,ntwrkCnfg("Correct")).
-0.02::ntwrkCnfg("Incorrect") :- body_18081(18079,ntwrkCnfg("Incorrect")).
-0.98::fntInstlltn("Verified") :- body_18091(18090,fntInstlltn("Verified")).
-0.02::fntInstlltn("Faulty") :- body_18100(18098,fntInstlltn("Faulty")).
-0.99::drvOK("Reinstalled") :- body_18110(18109,drvOK("Reinstalled")).
-0.01::drvOK("Corrupt") :- body_18119(18117,drvOK("Corrupt")).
-0.99::prtQueue("Short") :- body_18129(18128,prtQueue("Short")).
-0.01::prtQueue("Long") :- body_18138(18136,prtQueue("Long")).
-0.995::dataFile("Correct") :- body_18148(18147,dataFile("Correct")).
-0.005::dataFile("Incorrect_Corrupt") :- body_18157(18155,dataFile("Incorrect_Corrupt")).
-0.97::prtPath("Correct") :- body_18167(18166,prtPath("Correct")).
-0.03::prtPath("Incorrect") :- body_18176(18174,prtPath("Incorrect")).
-0.95::prtSpool("Enabled") :- body_18186(18185,prtSpool("Enabled")).
-0.05::prtSpool("Disabled") :- body_18195(18193,prtSpool("Disabled")).
-0.9999::prtThread("OK") :- body_18205(18204,prtThread("OK")).
-0.0001::prtThread("Corrupt_Buggy") :- body_18214(18212,prtThread("Corrupt_Buggy")).
-0.995::tnrSpply("Adequate") :- body_18224(18223,tnrSpply("Adequate")).
-0.005::tnrSpply("Low") :- body_18233(18231,tnrSpply("Low")).
-0.98::prntngArOK("Correct") :- body_18243(18242,prntngArOK("Correct")).
-0.02::prntngArOK("Incorrect") :- body_18252(18250,prntngArOK("Incorrect")).
-0.85::fllCrrptdBffr("Intact__not_Corrupt_") :- body_18262(18261,fllCrrptdBffr("Intact__not_Corrupt_")).
-0.15::fllCrrptdBffr("Full_or_Corrupt") :- body_18271(18269,fllCrrptdBffr("Full_or_Corrupt")).
-0.8::prtMpTPth("Correct") :- body_18281(18280,prtMpTPth("Correct")).
-0.2::prtMpTPth("Incorrect") :- body_18290(18288,prtMpTPth("Incorrect")).
-0.99::drvSet("Correct") :- body_18300(18299,drvSet("Correct")).
-0.01::drvSet("Incorrect") :- body_18309(18307,drvSet("Incorrect")).
-0.94::prtTimeOut("Long_Enough") :- body_18319(18318,prtTimeOut("Long_Enough")).
-0.06::prtTimeOut("Too_Short") :- body_18328(18326,prtTimeOut("Too_Short")).
+?::dec_32.
+?::dec_31.
+?::dec_30.
+?::dec_29.
+?::dec_28.
+?::dec_27.
+?::dec_26.
+?::dec_25.
+?::dec_24.
+?::dec_23.
+?::dec_22.
+?::dec_21.
+?::dec_20.
+?::dec_19.
+?::dec_18.
+?::dec_17.
+?::dec_16.
+?::dec_15.
+?::dec_14.
+?::dec_13.
+?::dec_12.
+?::dec_11.
+?::dec_10.
+?::dec_9.
+?::dec_8.
+?::prtPort.
+?::prtSel.
+?::prtDriver.
+?::prtOn.
+?::prtPScript.
+?::scrnFntNtPrntrFnt.
+?::prntrAccptsTrtyp.
+?::trTypFnts.
+0.4::algebraic_atom(0,0,0,set(none),nnPSGrphc,"0.999").
+0.4::algebraic_atom(1,0,0,set(none),nnPSGrphc,"0.0").
+0.4::algebraic_atom(2,0,0,set(none),nnPSGrphc,"0.1").
+0.4::algebraic_atom(3,0,0,set(none),nnPSGrphc,"0.5").
+0.4::algebraic_atom(4,0,0,set(none),nnPSGrphc,"0.25").
+0.4::algebraic_atom(5,0,0,set(none),nnPSGrphc,"0.5").
+0.4::algebraic_atom(6,0,0,set(none),nnPSGrphc,"0.5").
+0.4::algebraic_atom(7,0,0,set(none),nnPSGrphc,"0.5").
+0.4::algebraic_atom(8,0,0,set(none),pSGRAPHIC,"0.999").
+0.4::algebraic_atom(9,0,0,set(none),pSGRAPHIC,"0.1").
+0.4::algebraic_atom(10,0,0,set(none),pSGRAPHIC,"0.5").
+0.4::algebraic_atom(11,0,0,set(none),pSGRAPHIC,"0.25").
+0.4::algebraic_atom(12,0,0,set(none),pSGRAPHIC,"0.5").
+0.4::algebraic_atom(13,0,0,set(none),pSGRAPHIC,"0.5").
+0.4::algebraic_atom(14,0,0,set(none),pSGRAPHIC,"0.5").
+0.4::algebraic_atom(15,0,0,set(none),prtStatToner("No_Error"),"0.99900001").
+0.4::algebraic_atom(15,1,0,set(none),prtStatToner("Low__None"),"0.00099999").
+0.4::algebraic_atom(16,0,0,set(none),prtStatToner("No_Error"),"0.00099999").
+0.4::algebraic_atom(16,1,0,set(none),prtStatToner("Low__None"),"0.99900001").
+0.4::algebraic_atom(17,0,0,set(none),appData("Correct"),"0.9999").
+0.4::algebraic_atom(17,1,0,set(none),appData("Incorrect_or_corrupt"),"0.0001").
+0.4::algebraic_atom(18,0,0,set(none),appData("Correct"),"0.0").
+0.4::algebraic_atom(18,1,0,set(none),appData("Incorrect_or_corrupt"),"1.0").
+0.4::algebraic_atom(19,0,0,set(none),appData("Correct"),"0.0").
+0.4::algebraic_atom(19,1,0,set(none),appData("Incorrect_or_corrupt"),"1.0").
+0.4::algebraic_atom(20,0,0,set(none),appData("Correct"),"0.5").
+0.4::algebraic_atom(20,1,0,set(none),appData("Incorrect_or_corrupt"),"0.5").
+0.4::algebraic_atom(21,0,0,set(none),tTOK,"0.99000001").
+0.4::algebraic_atom(22,0,0,set(none),tTOK,"0.0").
+0.4::algebraic_atom(23,0,0,set(none),tTOK,"0.1").
+0.4::algebraic_atom(24,0,0,set(none),tTOK,"0.5").
+0.4::algebraic_atom(25,0,0,set(none),tTOK,"0.5").
+0.4::algebraic_atom(26,0,0,set(none),tTOK,"0.5").
+0.4::algebraic_atom(27,0,0,set(none),tTOK,"0.5").
+0.4::algebraic_atom(28,0,0,set(none),tTOK,"0.5").
+0.4::algebraic_atom(29,0,0,set(none),appDtGnTm("Fast_Enough"),"1.0").
+0.4::algebraic_atom(29,1,0,set(none),appDtGnTm("Too_Long"),"0.0").
+0.4::algebraic_atom(30,0,0,set(none),appDtGnTm("Fast_Enough"),"0.99000001").
+0.4::algebraic_atom(30,1,0,set(none),appDtGnTm("Too_Long"),"0.00999999").
+0.4::algebraic_atom(31,0,0,set(none),netOK,"0.99").
+0.4::algebraic_atom(32,0,0,set(none),netOK,"0.0").
+0.4::algebraic_atom(33,0,0,set(none),netOK,"0.1").
+0.4::algebraic_atom(34,0,0,set(none),netOK,"0.5").
+0.4::algebraic_atom(35,0,0,set(none),netOK,"0.0").
+0.4::algebraic_atom(36,0,0,set(none),netOK,"0.5").
+0.4::algebraic_atom(37,0,0,set(none),netOK,"0.5").
+0.4::algebraic_atom(38,0,0,set(none),netOK,"0.5").
+0.4::algebraic_atom(39,0,0,set(none),lclOK,"0.999").
+0.4::algebraic_atom(40,0,0,set(none),lclOK,"0.01").
+0.4::algebraic_atom(41,0,0,set(none),lclOK,"0.0").
+0.4::algebraic_atom(42,0,0,set(none),lclOK,"0.5").
+0.4::algebraic_atom(43,0,0,set(none),lclOK,"0.0").
+0.4::algebraic_atom(44,0,0,set(none),lclOK,"0.5").
+0.4::algebraic_atom(45,0,0,set(none),lclOK,"0.5").
+0.4::algebraic_atom(46,0,0,set(none),lclOK,"0.5").
+0.4::algebraic_atom(47,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"0.98").
+0.4::algebraic_atom(47,1,0,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.02").
+0.4::algebraic_atom(48,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"1.0").
+0.4::algebraic_atom(48,1,0,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.0").
+0.4::algebraic_atom(49,0,0,set(none),prtStatMem("No_Error"),"0.99900001").
+0.4::algebraic_atom(49,1,0,set(none),prtStatMem("Out_of_Memory"),"0.00099999").
+0.4::algebraic_atom(50,0,0,set(none),prtStatMem("No_Error"),"0.2").
+0.4::algebraic_atom(50,1,0,set(none),prtStatMem("Out_of_Memory"),"0.8").
+0.4::algebraic_atom(51,0,0,set(none),nnTTOK,"0.99000001").
+0.4::algebraic_atom(52,0,0,set(none),nnTTOK,"0.1").
+0.4::algebraic_atom(53,0,0,set(none),nnTTOK,"0.1").
+0.4::algebraic_atom(54,0,0,set(none),nnTTOK,"0.5").
+0.4::algebraic_atom(55,0,0,set(none),nnTTOK,"0.5").
+0.4::algebraic_atom(56,0,0,set(none),nnTTOK,"0.5").
+0.4::algebraic_atom(57,0,0,set(none),nnTTOK,"0.5").
+0.4::algebraic_atom(58,0,0,set(none),nnTTOK,"0.5").
+0.4::algebraic_atom(59,0,0,set(none),prtIcon("Normal"),"0.9999").
+0.4::algebraic_atom(59,1,0,set(none),prtIcon("Grayed_Out"),"0.0001").
+0.4::algebraic_atom(60,0,0,set(none),prtIcon("Normal"),"0.7").
+0.4::algebraic_atom(60,1,0,set(none),prtIcon("Grayed_Out"),"0.3").
+0.4::algebraic_atom(61,0,0,set(none),prtIcon("Normal"),"0.25").
+0.4::algebraic_atom(61,1,0,set(none),prtIcon("Grayed_Out"),"0.75").
+0.4::algebraic_atom(62,0,0,set(none),prtIcon("Normal"),"0.5").
+0.4::algebraic_atom(62,1,0,set(none),prtIcon("Grayed_Out"),"0.5").
+0.4::algebraic_atom(63,0,0,set(none),prntPrcssTm("Fast_Enough"),"0.99000001").
+0.4::algebraic_atom(63,1,0,set(none),prntPrcssTm("Too_Long"),"0.00999999").
+0.4::algebraic_atom(64,0,0,set(none),prntPrcssTm("Fast_Enough"),"1.0").
+0.4::algebraic_atom(64,1,0,set(none),prntPrcssTm("Too_Long"),"0.0").
+0.4::algebraic_atom(65,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"1.0").
+0.4::algebraic_atom(65,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.0").
+0.4::algebraic_atom(66,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5").
+0.4::algebraic_atom(66,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5").
+0.4::algebraic_atom(67,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5").
+0.4::algebraic_atom(67,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5").
+0.4::algebraic_atom(68,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5").
+0.4::algebraic_atom(68,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5").
+0.4::algebraic_atom(69,0,0,set(none),cmpltPgPrntd,"0.99").
+0.4::algebraic_atom(70,0,0,set(none),cmpltPgPrntd,"0.1").
+0.4::algebraic_atom(71,0,0,set(none),cmpltPgPrntd,"0.00999999").
+0.4::algebraic_atom(72,0,0,set(none),cmpltPgPrntd,"0.5").
+0.4::algebraic_atom(73,0,0,set(none),cmpltPgPrntd,"0.3").
+0.4::algebraic_atom(74,0,0,set(none),cmpltPgPrntd,"0.5").
+0.4::algebraic_atom(75,0,0,set(none),cmpltPgPrntd,"0.5").
+0.4::algebraic_atom(76,0,0,set(none),cmpltPgPrntd,"0.5").
+0.4::algebraic_atom(77,0,0,set(none),prtStatOff("No_Error"),"0.99000001").
+0.4::algebraic_atom(77,1,0,set(none),prtStatOff("OFFLINE__OFF"),"0.00999999").
+0.4::algebraic_atom(78,0,0,set(none),prtStatOff("No_Error"),"0.00999999").
+0.4::algebraic_atom(78,1,0,set(none),prtStatOff("OFFLINE__OFF"),"0.99000001").
+0.4::algebraic_atom(79,0,0,set(none),prtStatPaper("No_Error"),"0.99900001").
+0.4::algebraic_atom(79,1,0,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.00099999").
+0.4::algebraic_atom(80,0,0,set(none),prtStatPaper("No_Error"),"0.00099999").
+0.4::algebraic_atom(80,1,0,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.99900001").
+0.4::algebraic_atom(81,0,0,set(none),ntGrbld,"0.4").
+0.4::algebraic_atom(82,0,0,set(none),ntGrbld,"0.2").
+0.4::algebraic_atom(83,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(84,0,0,set(none),ntGrbld,"0.4").
+0.4::algebraic_atom(85,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(86,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(87,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(88,0,0,set(none),ntGrbld,"0.3").
+0.4::algebraic_atom(89,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(90,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(91,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(92,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(93,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(94,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(95,0,0,set(none),ntGrbld,"0.5").
+0.4::algebraic_atom(96,0,0,set(none),eMFOK,"0.99").
+0.4::algebraic_atom(97,0,0,set(none),eMFOK,"0.05").
+0.4::algebraic_atom(98,0,0,set(none),eMFOK,"0.0").
+0.4::algebraic_atom(99,0,0,set(none),eMFOK,"0.5").
+0.4::algebraic_atom(100,0,0,set(none),eMFOK,"0.1").
+0.4::algebraic_atom(101,0,0,set(none),eMFOK,"0.5").
+0.4::algebraic_atom(102,0,0,set(none),eMFOK,"0.5").
+0.4::algebraic_atom(103,0,0,set(none),eMFOK,"0.5").
+0.4::algebraic_atom(104,0,0,set(none),problem4,"0.0").
+0.4::algebraic_atom(105,0,0,set(none),problem4,"0.0").
+0.4::algebraic_atom(106,0,0,set(none),problem4,"0.0").
+0.4::algebraic_atom(107,0,0,set(none),problem4,"0.0").
+0.4::algebraic_atom(108,0,0,set(none),dS_LCLOK,"0.1").
+0.4::algebraic_atom(109,0,0,set(none),dS_LCLOK,"0.0").
+0.4::algebraic_atom(110,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(111,0,0,set(none),dS_LCLOK,"0.0").
+0.4::algebraic_atom(112,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(113,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(114,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(115,0,0,set(none),dS_LCLOK,"0.1").
+0.4::algebraic_atom(116,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(117,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(118,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(119,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(120,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(121,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(122,0,0,set(none),dS_LCLOK,"0.5").
+0.4::algebraic_atom(123,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.99900001").
+0.4::algebraic_atom(123,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.00099999").
+0.4::algebraic_atom(124,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.00099999").
+0.4::algebraic_atom(124,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.99900001").
+0.4::algebraic_atom(125,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0").
+0.4::algebraic_atom(125,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0").
+0.4::algebraic_atom(126,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0").
+0.4::algebraic_atom(126,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0").
+0.4::algebraic_atom(127,0,0,set(none),deskPrntSpd("OK"),"0.99900001").
+0.4::algebraic_atom(127,1,0,set(none),deskPrntSpd("Too_Slow"),"0.00099999").
+0.4::algebraic_atom(128,0,0,set(none),deskPrntSpd("OK"),"0.00099999").
+0.4::algebraic_atom(128,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001").
+0.4::algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999").
+0.4::algebraic_atom(129,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001").
+0.4::algebraic_atom(130,0,0,set(none),deskPrntSpd("OK"),"0.5").
+0.4::algebraic_atom(130,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+0.4::algebraic_atom(131,0,0,set(none),deskPrntSpd("OK"),"0.25").
+0.4::algebraic_atom(131,1,0,set(none),deskPrntSpd("Too_Slow"),"0.75").
+0.4::algebraic_atom(132,0,0,set(none),deskPrntSpd("OK"),"0.5").
+0.4::algebraic_atom(132,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+0.4::algebraic_atom(133,0,0,set(none),deskPrntSpd("OK"),"0.5").
+0.4::algebraic_atom(133,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+0.4::algebraic_atom(134,0,0,set(none),deskPrntSpd("OK"),"0.5").
+0.4::algebraic_atom(134,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+0.4::algebraic_atom(135,0,0,set(none),problem5,"0.0").
+0.4::algebraic_atom(136,0,0,set(none),problem5,"0.0").
+0.4::algebraic_atom(137,0,0,set(none),problem5,"0.0").
+0.4::algebraic_atom(138,0,0,set(none),problem5,"0.0").
+0.4::algebraic_atom(139,0,0,set(none),pSERRMEM("No_Error"),"1.0").
+0.4::algebraic_atom(139,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
+0.4::algebraic_atom(140,0,0,set(none),pSERRMEM("No_Error"),"0.05").
+0.4::algebraic_atom(140,1,0,set(none),pSERRMEM("Low_Memory"),"0.95").
+0.4::algebraic_atom(141,0,0,set(none),pSERRMEM("No_Error"),"1.0").
+0.4::algebraic_atom(141,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
+0.4::algebraic_atom(142,0,0,set(none),pSERRMEM("No_Error"),"1.0").
+0.4::algebraic_atom(142,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
+0.4::algebraic_atom(143,0,0,set(none),dS_NTOK,"0.99").
+0.4::algebraic_atom(144,0,0,set(none),dS_NTOK,"0.0").
+0.4::algebraic_atom(145,0,0,set(none),dS_NTOK,"0.1").
+0.4::algebraic_atom(146,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(147,0,0,set(none),dS_NTOK,"0.0").
+0.4::algebraic_atom(148,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(149,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(150,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(151,0,0,set(none),dS_NTOK,"0.0").
+0.4::algebraic_atom(152,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(153,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(154,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(155,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(156,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(157,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(158,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(159,0,0,set(none),dS_NTOK,"0.2").
+0.4::algebraic_atom(160,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(161,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(162,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(163,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(164,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(165,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(166,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(167,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(168,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(169,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(170,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(171,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(172,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(173,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(174,0,0,set(none),dS_NTOK,"0.5").
+0.4::algebraic_atom(175,0,0,set(none),lclGrbld,"0.1").
+0.4::algebraic_atom(176,0,0,set(none),lclGrbld,"0.2").
+0.4::algebraic_atom(177,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(178,0,0,set(none),lclGrbld,"0.4").
+0.4::algebraic_atom(179,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(180,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(181,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(182,0,0,set(none),lclGrbld,"0.2").
+0.4::algebraic_atom(183,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(184,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(185,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(186,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(187,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(188,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(189,0,0,set(none),lclGrbld,"0.5").
+0.4::algebraic_atom(190,0,0,set(none),incmpltPS,"0.3").
+0.4::algebraic_atom(191,0,0,set(none),incmpltPS,"0.0").
+0.4::algebraic_atom(192,0,0,set(none),incmpltPS,"0.5").
+0.4::algebraic_atom(193,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.99").
+0.4::algebraic_atom(193,1,0,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.01").
+0.4::algebraic_atom(194,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.1").
+0.4::algebraic_atom(194,1,0,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.9").
+0.4::algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001").
+0.4::algebraic_atom(195,1,0,set(none),ntSpd("Slow"),"0.00099999").
+0.4::algebraic_atom(196,0,0,set(none),ntSpd("OK"),"0.25").
+0.4::algebraic_atom(196,1,0,set(none),ntSpd("Slow"),"0.75").
+0.4::algebraic_atom(197,0,0,set(none),ntSpd("OK"),"0.25").
+0.4::algebraic_atom(197,1,0,set(none),ntSpd("Slow"),"0.75").
+0.4::algebraic_atom(198,0,0,set(none),ntSpd("OK"),"0.5").
+0.4::algebraic_atom(198,1,0,set(none),ntSpd("Slow"),"0.5").
+0.4::algebraic_atom(199,0,0,set(none),ntSpd("OK"),"0.0").
+0.4::algebraic_atom(199,1,0,set(none),ntSpd("Slow"),"1.0").
+0.4::algebraic_atom(200,0,0,set(none),ntSpd("OK"),"0.5").
+0.4::algebraic_atom(200,1,0,set(none),ntSpd("Slow"),"0.5").
+0.4::algebraic_atom(201,0,0,set(none),ntSpd("OK"),"0.5").
+0.4::algebraic_atom(201,1,0,set(none),ntSpd("Slow"),"0.5").
+0.4::algebraic_atom(202,0,0,set(none),ntSpd("OK"),"0.5").
+0.4::algebraic_atom(202,1,0,set(none),ntSpd("Slow"),"0.5").
+0.4::algebraic_atom(203,0,0,set(none),problem3,"0.0").
+0.4::algebraic_atom(204,0,0,set(none),problem3,"0.0").
+0.4::algebraic_atom(205,0,0,set(none),problem3,"0.0").
+0.4::algebraic_atom(206,0,0,set(none),problem3,"0.0").
+0.4::algebraic_atom(207,0,0,set(none),grbldOtpt,"0.0").
+0.4::algebraic_atom(208,0,0,set(none),grbldOtpt,"0.0").
+0.4::algebraic_atom(209,0,0,set(none),grbldOtpt,"0.0").
+0.4::algebraic_atom(210,0,0,set(none),grbldOtpt,"0.0").
+0.4::algebraic_atom(211,0,0,set(none),gDIIN,"0.0").
+0.4::algebraic_atom(212,0,0,set(none),gDIIN,"0.0").
+0.4::algebraic_atom(213,0,0,set(none),gDIIN,"0.0").
+0.4::algebraic_atom(214,0,0,set(none),gDIIN,"0.0").
+0.4::algebraic_atom(215,0,0,set(none),gDIIN,"0.0").
+0.4::algebraic_atom(216,0,0,set(none),grbldPS,"0.0").
+0.4::algebraic_atom(217,0,0,set(none),grbldPS,"0.9").
+0.4::algebraic_atom(218,0,0,set(none),grbldPS,"0.5").
+0.4::algebraic_atom(219,0,0,set(none),gDIOUT,"0.99").
+0.4::algebraic_atom(220,0,0,set(none),gDIOUT,"0.2").
+0.4::algebraic_atom(221,0,0,set(none),gDIOUT,"0.9").
+0.4::algebraic_atom(222,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(223,0,0,set(none),gDIOUT,"0.1").
+0.4::algebraic_atom(224,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(225,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(226,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(227,0,0,set(none),gDIOUT,"0.1").
+0.4::algebraic_atom(228,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(229,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(230,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(231,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(232,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(233,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(234,0,0,set(none),gDIOUT,"0.5").
+0.4::algebraic_atom(235,0,0,set(none),problem2("OK"),"1.0").
+0.4::algebraic_atom(235,1,0,set(none),problem2("Too_Long"),"0.0").
+0.4::algebraic_atom(236,0,0,set(none),problem2("OK"),"1.0").
+0.4::algebraic_atom(236,1,0,set(none),problem2("Too_Long"),"0.0").
+0.4::algebraic_atom(237,0,0,set(none),problem2("OK"),"0.0").
+0.4::algebraic_atom(237,1,0,set(none),problem2("Too_Long"),"1.0").
+0.4::algebraic_atom(238,0,0,set(none),problem2("OK"),"0.0").
+0.4::algebraic_atom(238,1,0,set(none),problem2("Too_Long"),"1.0").
+0.4::algebraic_atom(239,0,0,set(none),problem2("OK"),"1.0").
+0.4::algebraic_atom(239,1,0,set(none),problem2("Too_Long"),"0.0").
+0.4::algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0").
+0.4::algebraic_atom(240,1,0,set(none),problem2("Too_Long"),"1.0").
+0.4::algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0").
+0.4::algebraic_atom(241,1,0,set(none),problem2("Too_Long"),"0.0").
+0.4::algebraic_atom(242,0,0,set(none),problem2("OK"),"0.0").
+0.4::algebraic_atom(242,1,0,set(none),problem2("Too_Long"),"1.0").
+0.4::algebraic_atom(243,0,0,set(none),problem6,"0.0").
+0.4::algebraic_atom(244,0,0,set(none),problem6,"0.0").
+0.4::algebraic_atom(245,0,0,set(none),problem6,"0.0").
+0.4::algebraic_atom(246,0,0,set(none),problem6,"0.0").
+0.4::algebraic_atom(247,0,0,set(none),prtDataOut,"0.99").
+0.4::algebraic_atom(248,0,0,set(none),prtDataOut,"0.0").
+0.4::algebraic_atom(249,0,0,set(none),prtDataOut,"0.0").
+0.4::algebraic_atom(250,0,0,set(none),prtDataOut,"0.5").
+0.4::algebraic_atom(251,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(252,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(253,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(254,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(255,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(256,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(257,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(258,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(259,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(260,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(261,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(262,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(263,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(264,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(265,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(266,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(267,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(268,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(269,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(270,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(271,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(272,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(273,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(274,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(275,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(276,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(277,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(278,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(279,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(280,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(281,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(282,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(283,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(284,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(285,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(286,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(287,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(288,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(289,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(290,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(291,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(292,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(293,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(294,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(295,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(296,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(297,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(298,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(299,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(300,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(301,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(302,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(303,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(304,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(305,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(306,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(307,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(308,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(309,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(310,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(311,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(312,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(313,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(314,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(315,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(316,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(317,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(318,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(319,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(320,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(321,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(322,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(323,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(324,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(325,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(326,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(327,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(328,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(329,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(330,0,0,set(none),pC2PRT,"0.0").
+0.4::algebraic_atom(331,0,0,set(none),prtFile,"0.8").
+0.4::algebraic_atom(332,0,0,set(none),prtFile,"0.2").
+0.4::algebraic_atom(333,0,0,set(none),prtData,"0.99").
+0.4::algebraic_atom(334,0,0,set(none),prtData,"0.01").
+0.4::algebraic_atom(335,0,0,set(none),prtData,"0.02").
+0.4::algebraic_atom(336,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(337,0,0,set(none),prtData,"0.0").
+0.4::algebraic_atom(338,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(339,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(340,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(341,0,0,set(none),prtData,"0.1").
+0.4::algebraic_atom(342,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(343,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(344,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(345,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(346,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(347,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(348,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(349,0,0,set(none),prtData,"0.0").
+0.4::algebraic_atom(350,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(351,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(352,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(353,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(354,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(355,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(356,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(357,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(358,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(359,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(360,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(361,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(362,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(363,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(364,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(365,0,0,set(none),prtData,"0.0").
+0.4::algebraic_atom(366,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(367,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(368,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(369,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(370,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(371,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(372,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(373,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(374,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(375,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(376,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(377,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(378,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(379,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(380,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(381,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(382,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(383,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(384,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(385,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(386,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(387,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(388,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(389,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(390,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(391,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(392,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(393,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(394,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(395,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(396,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(397,0,0,set(none),prtData,"0.0").
+0.4::algebraic_atom(398,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(399,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(400,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(401,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(402,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(403,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(404,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(405,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(406,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(407,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(408,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(409,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(410,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(411,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(412,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(413,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(414,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(415,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(416,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(417,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(418,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(419,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(420,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(421,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(422,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(423,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(424,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(425,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(426,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(427,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(428,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(429,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(430,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(431,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(432,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(433,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(434,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(435,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(436,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(437,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(438,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(439,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(440,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(441,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(442,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(443,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(444,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(445,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(446,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(447,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(448,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(449,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(450,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(451,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(452,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(453,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(454,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(455,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(456,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(457,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(458,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(459,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(460,0,0,set(none),prtData,"0.5").
+0.4::algebraic_atom(461,0,0,set(none),problem1("Normal_Output"),"1.0").
+0.4::algebraic_atom(461,1,0,set(none),problem1("No_Output"),"0.0").
+0.4::algebraic_atom(462,0,0,set(none),problem1("Normal_Output"),"0.0").
+0.4::algebraic_atom(462,1,0,set(none),problem1("No_Output"),"1.0").
+0.4::algebraic_atom(463,0,0,set(none),prtPaper("Has_Paper"),"0.98").
+0.4::algebraic_atom(464,0,0,set(none),prtPaper("No_Paper"),"0.02").
+0.4::algebraic_atom(465,0,0,set(none),cblPrtHrdwrOK("Operational"),"0.99").
+0.4::algebraic_atom(466,0,0,set(none),cblPrtHrdwrOK("Not_Operational"),"0.01").
+0.4::algebraic_atom(467,0,0,set(none),netPrint("No__Local_printer_"),"0.8").
+0.4::algebraic_atom(468,0,0,set(none),netPrint("Yes__Network_printer_"),"0.2").
+0.4::algebraic_atom(469,0,0,set(none),prtMem("Greater_than_2_Mb"),"0.95").
+0.4::algebraic_atom(470,0,0,set(none),prtMem("Less_than_2Mb"),"0.05").
+0.4::algebraic_atom(471,0,0,set(none),ePSGrphc("No____TIF___WMF___BMP_"),"0.99").
+0.4::algebraic_atom(472,0,0,set(none),ePSGrphc("Yes____EPS_"),"0.01").
+0.4::algebraic_atom(473,0,0,set(none),pTROFFLINE("Online"),"0.7").
+0.4::algebraic_atom(474,0,0,set(none),pTROFFLINE("Offline"),"0.3").
+0.4::algebraic_atom(475,0,0,set(none),grphcsRltdDrvrSttngs("Correct"),"0.95").
+0.4::algebraic_atom(476,0,0,set(none),grphcsRltdDrvrSttngs("Incorrect"),"0.05").
+0.4::algebraic_atom(477,0,0,set(none),prtCbl("Connected"),"0.98").
+0.4::algebraic_atom(478,0,0,set(none),prtCbl("Loose"),"0.02").
+0.4::algebraic_atom(479,0,0,set(none),dSApplctn("DOS"),"0.15").
+0.4::algebraic_atom(480,0,0,set(none),dSApplctn("Windows"),"0.85").
+0.4::algebraic_atom(481,0,0,set(none),pgOrnttnOK("Correct"),"0.95").
+0.4::algebraic_atom(482,0,0,set(none),pgOrnttnOK("Incorrect"),"0.05").
+0.4::algebraic_atom(483,0,0,set(none),dskLocal("Greater_than_2_Mb"),"0.97").
+0.4::algebraic_atom(484,0,0,set(none),dskLocal("Less_than_2_Mb"),"0.03").
+0.4::algebraic_atom(485,0,0,set(none),appOK("Correct"),"0.995").
+0.4::algebraic_atom(486,0,0,set(none),appOK("Incorrect_Corrupt"),"0.005").
+0.4::algebraic_atom(487,0,0,set(none),ntwrkCnfg("Correct"),"0.98").
+0.4::algebraic_atom(488,0,0,set(none),ntwrkCnfg("Incorrect"),"0.02").
+0.4::algebraic_atom(489,0,0,set(none),fntInstlltn("Verified"),"0.98").
+0.4::algebraic_atom(490,0,0,set(none),fntInstlltn("Faulty"),"0.02").
+0.4::algebraic_atom(491,0,0,set(none),drvOK("Reinstalled"),"0.99").
+0.4::algebraic_atom(492,0,0,set(none),drvOK("Corrupt"),"0.01").
+0.4::algebraic_atom(493,0,0,set(none),prtQueue("Short"),"0.99").
+0.4::algebraic_atom(494,0,0,set(none),prtQueue("Long"),"0.01").
+0.4::algebraic_atom(495,0,0,set(none),dataFile("Correct"),"0.995").
+0.4::algebraic_atom(496,0,0,set(none),dataFile("Incorrect_Corrupt"),"0.005").
+0.4::algebraic_atom(497,0,0,set(none),prtPath("Correct"),"0.97").
+0.4::algebraic_atom(498,0,0,set(none),prtPath("Incorrect"),"0.03").
+0.4::algebraic_atom(499,0,0,set(none),prtSpool("Enabled"),"0.95").
+0.4::algebraic_atom(500,0,0,set(none),prtSpool("Disabled"),"0.05").
+0.4::algebraic_atom(501,0,0,set(none),prtThread("OK"),"0.9999").
+0.4::algebraic_atom(502,0,0,set(none),prtThread("Corrupt_Buggy"),"0.0001").
+0.4::algebraic_atom(503,0,0,set(none),tnrSpply("Adequate"),"0.995").
+0.4::algebraic_atom(504,0,0,set(none),tnrSpply("Low"),"0.005").
+0.4::algebraic_atom(505,0,0,set(none),prntngArOK("Correct"),"0.98").
+0.4::algebraic_atom(506,0,0,set(none),prntngArOK("Incorrect"),"0.02").
+0.4::algebraic_atom(507,0,0,set(none),fllCrrptdBffr("Intact__not_Corrupt_"),"0.85").
+0.4::algebraic_atom(508,0,0,set(none),fllCrrptdBffr("Full_or_Corrupt"),"0.15").
+0.4::algebraic_atom(509,0,0,set(none),prtMpTPth("Correct"),"0.8").
+0.4::algebraic_atom(510,0,0,set(none),prtMpTPth("Incorrect"),"0.2").
+0.4::algebraic_atom(511,0,0,set(none),drvSet("Correct"),"0.99").
+0.4::algebraic_atom(512,0,0,set(none),drvSet("Incorrect"),"0.01").
+0.4::algebraic_atom(513,0,0,set(none),prtTimeOut("Long_Enough"),"0.94").
+0.4::algebraic_atom(514,0,0,set(none),prtTimeOut("Too_Short"),"0.06").
+utility(util_node(0), -42).
+utility(\+util_node(0), 25).
+utility(util_node(1), 33).
+utility(\+util_node(1), 25).
+utility(util_node(2), -23).
+utility(\+util_node(2), -29).
+utility(util_node(3), 10).
+utility(\+util_node(3), 38).
+utility(util_node(4), -32).
+utility(\+util_node(4), 33).
+algebraic_atom(48,1,1,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.0"):-algebraic_atom(48,1,0,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.0").
+body_5135(5119,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+lclOK:-algebraic_atom(46,0,0,set(none),lclOK,"0.5"),body_14228(14227,lclOK).
+dS_LCLOK:-algebraic_atom(109,0,0,set(none),dS_LCLOK,"0.0"),body_14822(14821,dS_LCLOK).
+body_5498(5484,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_5423(5406,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+dS_LCLOK:-algebraic_atom(108,0,0,set(none),dS_LCLOK,"0.1"),body_14814(14813,dS_LCLOK).
+ntGrbld:-algebraic_atom(92,0,0,set(none),ntGrbld,"0.5"),body_14686(14685,ntGrbld).
+avlblVrtlMmry("Adequate____1Mb_"):-algebraic_atom(47,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"0.98"),body_14236(14235,multi).
+netOK:-algebraic_atom(34,0,0,set(none),netOK,"0.5"),body_14132(14131,netOK).
+eMFOK:-algebraic_atom(103,0,0,set(none),eMFOK,"0.5"),body_14774(14773,eMFOK).
+body_16352(16351,pC2PRT):-body_5135(5119,pC2PRT).
+body_16408(16407,pC2PRT):-body_5352(5334,pC2PRT).
+body_16440(16439,pC2PRT):-body_5448(5430,pC2PRT).
+eMFOK:-algebraic_atom(102,0,0,set(none),eMFOK,"0.5"),body_14766(14765,eMFOK).
+problem4:-algebraic_atom(105,0,0,set(none),problem4,"0.0"),body_14790(14789,problem4).
+avlblVrtlMmry("Adequate____1Mb_"):-algebraic_atom(48,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"1.0"),body_14249(14248,multi).
+body_16376(16375,pC2PRT):-body_5221(5205,pC2PRT).
+netOK:-algebraic_atom(33,0,0,set(none),netOK,"0.1"),body_14124(14123,netOK).
+problem4:-algebraic_atom(107,0,0,set(none),problem4,"0.0"),body_14806(14805,problem4).
+netOK:-algebraic_atom(37,0,0,set(none),netOK,"0.5"),body_14156(14155,netOK).
+algebraic_atom(47,1,1,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.02"):-algebraic_atom(47,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"0.98").
+body_16432(16431,pC2PRT):-body_5423(5406,pC2PRT).
+ntGrbld:-algebraic_atom(94,0,0,set(none),ntGrbld,"0.5"),body_14702(14701,ntGrbld).
+body_5375(5359,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+lclOK:-algebraic_atom(42,0,0,set(none),lclOK,"0.5"),body_14196(14195,lclOK).
+algebraic_atom(47,1,1,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.02"):-algebraic_atom(47,1,0,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.02").
+lclOK:-algebraic_atom(40,0,0,set(none),lclOK,"0.01"),body_14180(14179,lclOK).
+avlblVrtlMmry("Inadequate____1_Mb_"):-algebraic_atom(47,1,0,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.02"),\+algebraic_atom(47,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"0.98"),body_14236(14235,multi).
+problem4:-algebraic_atom(106,0,0,set(none),problem4,"0.0"),body_14798(14797,problem4).
+ntGrbld:-algebraic_atom(93,0,0,set(none),ntGrbld,"0.5"),body_14694(14693,ntGrbld).
+body_5268(5251,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_5448(5430,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+lclOK:-algebraic_atom(41,0,0,set(none),lclOK,"0.0"),body_14188(14187,lclOK).
+eMFOK:-algebraic_atom(99,0,0,set(none),eMFOK,"0.5"),body_14742(14741,eMFOK).
+lclOK:-algebraic_atom(44,0,0,set(none),lclOK,"0.5"),body_14212(14211,lclOK).
+ntGrbld:-algebraic_atom(91,0,0,set(none),ntGrbld,"0.5"),body_14678(14677,ntGrbld).
+problem4:-algebraic_atom(104,0,0,set(none),problem4,"0.0"),body_14782(14781,problem4).
+body_5352(5334,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_5096(5079,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_5399(5382,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_16424(16423,pC2PRT):-body_5399(5382,pC2PRT).
+netOK:-algebraic_atom(36,0,0,set(none),netOK,"0.5"),body_14148(14147,netOK).
+body_16416(16415,pC2PRT):-body_5375(5359,pC2PRT).
+eMFOK:-algebraic_atom(97,0,0,set(none),eMFOK,"0.05"),body_14726(14725,eMFOK).
+body_5198(5183,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_16384(16383,pC2PRT):-body_5244(5228,pC2PRT).
+lclOK:-algebraic_atom(45,0,0,set(none),lclOK,"0.5"),body_14220(14219,lclOK).
+ntGrbld:-algebraic_atom(95,0,0,set(none),ntGrbld,"0.5"),body_14710(14709,ntGrbld).
+body_16360(16359,pC2PRT):-body_5176(5159,pC2PRT).
+body_16344(16343,pC2PRT):-body_5096(5079,pC2PRT).
+lclOK:-algebraic_atom(39,0,0,set(none),lclOK,"0.999"),body_14172(14171,lclOK).
+body_5221(5205,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+lclOK:-algebraic_atom(43,0,0,set(none),lclOK,"0.0"),body_14204(14203,lclOK).
+eMFOK:-algebraic_atom(96,0,0,set(none),eMFOK,"0.99"),body_14718(14717,eMFOK).
+eMFOK:-algebraic_atom(101,0,0,set(none),eMFOK,"0.5"),body_14758(14757,eMFOK).
+body_5176(5159,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+ntGrbld:-algebraic_atom(90,0,0,set(none),ntGrbld,"0.5"),body_14670(14669,ntGrbld).
+body_16368(16367,pC2PRT):-body_5198(5183,pC2PRT).
+ntGrbld:-algebraic_atom(89,0,0,set(none),ntGrbld,"0.5"),body_14662(14661,ntGrbld).
+body_5309(5292,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+netOK:-algebraic_atom(38,0,0,set(none),netOK,"0.5"),body_14164(14163,netOK).
+body_16400(16399,pC2PRT):-body_5309(5292,pC2PRT).
+netOK:-algebraic_atom(35,0,0,set(none),netOK,"0.0"),body_14140(14139,netOK).
+eMFOK:-algebraic_atom(98,0,0,set(none),eMFOK,"0.0"),body_14734(14733,eMFOK).
+body_16392(16391,pC2PRT):-body_5268(5251,pC2PRT).
+body_5244(5228,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+eMFOK:-algebraic_atom(100,0,0,set(none),eMFOK,"0.1"),body_14750(14749,eMFOK).
+body_15064(15063,multi):-body_2246(2241,multi).
+prtData:-algebraic_atom(405,0,0,set(none),prtData,"0.5"),body_17360(17359,prtData).
+body_2263(2258,multi):-prntPrcssTm("Too_Long"),appDtGnTm("Too_Long"),prtMem("Less_than_2Mb").
+body_15038(15037,multi):-body_2212(2207,multi).
+prtData:-algebraic_atom(404,0,0,set(none),prtData,"0.5"),body_17352(17351,prtData).
+body_15600(15599,multi):-body_3232(3227,multi).
+body_3232(3227,multi):-prtQueue("Short"),ntwrkCnfg("Correct"),deskPrntSpd("OK").
+prtData:-algebraic_atom(398,0,0,set(none),prtData,"0.5"),body_17304(17303,prtData).
+prtData:-algebraic_atom(399,0,0,set(none),prtData,"0.5"),body_17312(17311,prtData).
+body_2212(2207,multi):-prntPrcssTm("Fast_Enough"),appDtGnTm("Fast_Enough"),prtMem("Less_than_2Mb").
+body_2195(2190,multi):-prntPrcssTm("Too_Long"),appDtGnTm("Too_Long"),prtMem("Greater_than_2_Mb").
+body_15025(15024,multi):-body_2195(2190,multi).
+prtData:-algebraic_atom(388,0,0,set(none),prtData,"0.5"),body_17224(17223,prtData).
+body_2143(2138,multi):-prntPrcssTm("Fast_Enough"),appDtGnTm("Fast_Enough"),prtMem("Greater_than_2_Mb").
+prtData:-algebraic_atom(403,0,0,set(none),prtData,"0.5"),body_17344(17343,prtData).
+body_772(771,multi):-prtSpool("Disabled").
+body_16064(16063,problem6):-body_4035(4028,problem6).
+prtData:-algebraic_atom(401,0,0,set(none),prtData,"0.5"),body_17328(17327,prtData).
+body_15077(15076,multi):-body_2263(2258,multi).
+body_1200(1199,multi):-prtSpool("Enabled").
+body_14999(14998,multi):-body_2161(2156,multi).
+prtData:-algebraic_atom(394,0,0,set(none),prtData,"0.5"),body_17272(17271,prtData).
+body_2246(2241,multi):-prntPrcssTm("Fast_Enough"),appDtGnTm("Too_Long"),prtMem("Less_than_2Mb").
+body_15051(15050,multi):-body_2229(2224,multi).
+prtData:-algebraic_atom(392,0,0,set(none),prtData,"0.5"),body_17256(17255,prtData).
+prtData:-algebraic_atom(402,0,0,set(none),prtData,"0.5"),body_17336(17335,prtData).
+body_2178(2173,multi):-prntPrcssTm("Fast_Enough"),appDtGnTm("Too_Long"),prtMem("Greater_than_2_Mb").
+body_2161(2156,multi):-prntPrcssTm("Too_Long"),appDtGnTm("Fast_Enough"),prtMem("Greater_than_2_Mb").
+prtData:-algebraic_atom(393,0,0,set(none),prtData,"0.5"),body_17264(17263,prtData).
+body_14082(14081,multi):-body_758(757,multi).
+prtData:-algebraic_atom(396,0,0,set(none),prtData,"0.5"),body_17288(17287,prtData).
+body_14404(14403,multi):-body_1200(1199,multi).
+body_14417(14416,multi):-body_1214(1213,multi).
+prtData:-algebraic_atom(400,0,0,set(none),prtData,"0.5"),body_17320(17319,prtData).
+body_14095(14094,multi):-body_772(771,multi).
+prtData:-algebraic_atom(389,0,0,set(none),prtData,"0.5"),body_17232(17231,prtData).
+body_1214(1213,multi):-prtSpool("Disabled").
+prtData:-algebraic_atom(390,0,0,set(none),prtData,"0.5"),body_17240(17239,prtData).
+prtData:-algebraic_atom(397,0,0,set(none),prtData,"0.0"),body_17296(17295,prtData).
+body_758(757,multi):-prtSpool("Enabled").
+prtData:-algebraic_atom(387,0,0,set(none),prtData,"0.5"),body_17216(17215,prtData).
+body_14986(14985,multi):-body_2143(2138,multi).
+prtData:-algebraic_atom(395,0,0,set(none),prtData,"0.5"),body_17280(17279,prtData).
+body_15012(15011,multi):-body_2178(2173,multi).
+prtData:-algebraic_atom(391,0,0,set(none),prtData,"0.5"),body_17248(17247,prtData).
+prtData:-algebraic_atom(386,0,0,set(none),prtData,"0.5"),body_17208(17207,prtData).
+body_2229(2224,multi):-prntPrcssTm("Too_Long"),appDtGnTm("Fast_Enough"),prtMem("Less_than_2Mb").
+rEPEAT("Yes__Always_the_Same_"):-algebraic_atom(67,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5"),body_14456(14455,multi).
+pC2PRT:-algebraic_atom(277,0,0,set(none),pC2PRT,"0.0"),body_16336(16335,pC2PRT).
+appData("Correct"):-algebraic_atom(20,0,0,set(none),appData("Correct"),"0.5"),body_14005(14004,multi).
+pC2PRT:-algebraic_atom(269,0,0,set(none),pC2PRT,"0.0"),body_16272(16271,pC2PRT).
+algebraic_atom(77,1,1,set(none),prtStatOff("OFFLINE__OFF"),"0.00999999"):-algebraic_atom(77,0,0,set(none),prtStatOff("No_Error"),"0.99000001").
+algebraic_atom(77,1,1,set(none),prtStatOff("OFFLINE__OFF"),"0.00999999"):-algebraic_atom(77,1,0,set(none),prtStatOff("OFFLINE__OFF"),"0.00999999").
+pC2PRT:-algebraic_atom(287,0,0,set(none),pC2PRT,"0.0"),body_16416(16415,pC2PRT).
+netOK:-algebraic_atom(32,0,0,set(none),netOK,"0.0"),body_14116(14115,netOK).
+pC2PRT:-algebraic_atom(270,0,0,set(none),pC2PRT,"0.0"),body_16280(16279,pC2PRT).
+pC2PRT:-algebraic_atom(289,0,0,set(none),pC2PRT,"0.0"),body_16432(16431,pC2PRT).
+cmpltPgPrntd:-algebraic_atom(74,0,0,set(none),cmpltPgPrntd,"0.5"),body_14522(14521,cmpltPgPrntd).
+algebraic_atom(20,1,1,set(none),appData("Incorrect_or_corrupt"),"0.5"):-algebraic_atom(20,0,0,set(none),appData("Correct"),"0.5").
+algebraic_atom(66,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"):-algebraic_atom(66,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5").
+pC2PRT:-algebraic_atom(286,0,0,set(none),pC2PRT,"0.0"),body_16408(16407,pC2PRT).
+tTOK:-algebraic_atom(24,0,0,set(none),tTOK,"0.5"),body_14042(14041,tTOK).
+pC2PRT:-algebraic_atom(302,0,0,set(none),pC2PRT,"0.0"),body_16536(16535,pC2PRT).
+netOK:-algebraic_atom(31,0,0,set(none),netOK,"0.99"),body_14108(14107,netOK).
+prtStatOff("No_Error"):-algebraic_atom(77,0,0,set(none),prtStatOff("No_Error"),"0.99000001"),body_14546(14545,multi).
+pC2PRT:-algebraic_atom(306,0,0,set(none),pC2PRT,"0.0"),body_16568(16567,pC2PRT).
+pC2PRT:-algebraic_atom(281,0,0,set(none),pC2PRT,"0.0"),body_16368(16367,pC2PRT).
+pC2PRT:-algebraic_atom(294,0,0,set(none),pC2PRT,"0.0"),body_16472(16471,pC2PRT).
+cmpltPgPrntd:-algebraic_atom(72,0,0,set(none),cmpltPgPrntd,"0.5"),body_14506(14505,cmpltPgPrntd).
+pC2PRT:-algebraic_atom(280,0,0,set(none),pC2PRT,"0.0"),body_16360(16359,pC2PRT).
+pC2PRT:-algebraic_atom(305,0,0,set(none),pC2PRT,"0.0"),body_16560(16559,pC2PRT).
+rEPEAT("Yes__Always_the_Same_"):-algebraic_atom(66,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5"),body_14443(14442,multi).
+pC2PRT:-algebraic_atom(283,0,0,set(none),pC2PRT,"0.0"),body_16384(16383,pC2PRT).
+pC2PRT:-algebraic_atom(292,0,0,set(none),pC2PRT,"0.0"),body_16456(16455,pC2PRT).
+appDtGnTm("Fast_Enough"):-algebraic_atom(30,0,0,set(none),appDtGnTm("Fast_Enough"),"0.99000001"),body_14095(14094,multi).
+pC2PRT:-algebraic_atom(268,0,0,set(none),pC2PRT,"0.0"),body_16264(16263,pC2PRT).
+pC2PRT:-algebraic_atom(304,0,0,set(none),pC2PRT,"0.0"),body_16552(16551,pC2PRT).
+algebraic_atom(29,1,1,set(none),appDtGnTm("Too_Long"),"0.0"):-algebraic_atom(29,1,0,set(none),appDtGnTm("Too_Long"),"0.0").
+pC2PRT:-algebraic_atom(299,0,0,set(none),pC2PRT,"0.0"),body_16512(16511,pC2PRT).
+pC2PRT:-algebraic_atom(278,0,0,set(none),pC2PRT,"0.0"),body_16344(16343,pC2PRT).
+pC2PRT:-algebraic_atom(285,0,0,set(none),pC2PRT,"0.0"),body_16400(16399,pC2PRT).
+appDtGnTm("Too_Long"):-algebraic_atom(30,1,0,set(none),appDtGnTm("Too_Long"),"0.00999999"),\+algebraic_atom(30,0,0,set(none),appDtGnTm("Fast_Enough"),"0.99000001"),body_14095(14094,multi).
+algebraic_atom(67,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"):-algebraic_atom(67,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5").
+body_14546(14545,multi):-body_1385(1384,multi).
+rEPEAT("No__Different_Each_Time_"):-algebraic_atom(66,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"),\+algebraic_atom(66,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5"),body_14443(14442,multi).
+pC2PRT:-algebraic_atom(273,0,0,set(none),pC2PRT,"0.0"),body_16304(16303,pC2PRT).
+tTOK:-algebraic_atom(23,0,0,set(none),tTOK,"0.1"),body_14034(14033,tTOK).
+cmpltPgPrntd:-algebraic_atom(71,0,0,set(none),cmpltPgPrntd,"0.00999999"),body_14498(14497,cmpltPgPrntd).
+cmpltPgPrntd:-algebraic_atom(76,0,0,set(none),cmpltPgPrntd,"0.5"),body_14538(14537,cmpltPgPrntd).
+appData("Incorrect_or_corrupt"):-algebraic_atom(20,1,0,set(none),appData("Incorrect_or_corrupt"),"0.5"),\+algebraic_atom(20,0,0,set(none),appData("Correct"),"0.5"),body_14005(14004,multi).
+algebraic_atom(20,1,1,set(none),appData("Incorrect_or_corrupt"),"0.5"):-algebraic_atom(20,1,0,set(none),appData("Incorrect_or_corrupt"),"0.5").
+appDtGnTm("Fast_Enough"):-algebraic_atom(29,0,0,set(none),appDtGnTm("Fast_Enough"),"1.0"),body_14082(14081,multi).
+algebraic_atom(66,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"):-algebraic_atom(66,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5").
+algebraic_atom(30,1,1,set(none),appDtGnTm("Too_Long"),"0.00999999"):-algebraic_atom(30,0,0,set(none),appDtGnTm("Fast_Enough"),"0.99000001").
+pC2PRT:-algebraic_atom(284,0,0,set(none),pC2PRT,"0.0"),body_16392(16391,pC2PRT).
+pC2PRT:-algebraic_atom(297,0,0,set(none),pC2PRT,"0.0"),body_16496(16495,pC2PRT).
+algebraic_atom(30,1,1,set(none),appDtGnTm("Too_Long"),"0.00999999"):-algebraic_atom(30,1,0,set(none),appDtGnTm("Too_Long"),"0.00999999").
+pC2PRT:-algebraic_atom(295,0,0,set(none),pC2PRT,"0.0"),body_16480(16479,pC2PRT).
+pC2PRT:-algebraic_atom(303,0,0,set(none),pC2PRT,"0.0"),body_16544(16543,pC2PRT).
+cmpltPgPrntd:-algebraic_atom(73,0,0,set(none),cmpltPgPrntd,"0.3"),body_14514(14513,cmpltPgPrntd).
+pC2PRT:-algebraic_atom(282,0,0,set(none),pC2PRT,"0.0"),body_16376(16375,pC2PRT).
+appDtGnTm("Too_Long"):-algebraic_atom(29,1,0,set(none),appDtGnTm("Too_Long"),"0.0"),\+algebraic_atom(29,0,0,set(none),appDtGnTm("Fast_Enough"),"1.0"),body_14082(14081,multi).
+cmpltPgPrntd:-algebraic_atom(75,0,0,set(none),cmpltPgPrntd,"0.5"),body_14530(14529,cmpltPgPrntd).
+pC2PRT:-algebraic_atom(291,0,0,set(none),pC2PRT,"0.0"),body_16448(16447,pC2PRT).
+body_1275(1272,multi):-ntwrkCnfg("Incorrect"),cblPrtHrdwrOK("Not_Operational").
+pC2PRT:-algebraic_atom(296,0,0,set(none),pC2PRT,"0.0"),body_16488(16487,pC2PRT).
+pC2PRT:-algebraic_atom(301,0,0,set(none),pC2PRT,"0.0"),body_16528(16527,pC2PRT).
+cmpltPgPrntd:-algebraic_atom(69,0,0,set(none),cmpltPgPrntd,"0.99"),body_14482(14481,cmpltPgPrntd).
+algebraic_atom(68,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"):-algebraic_atom(68,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5").
+pC2PRT:-algebraic_atom(276,0,0,set(none),pC2PRT,"0.0"),body_16328(16327,pC2PRT).
+tTOK:-algebraic_atom(27,0,0,set(none),tTOK,"0.5"),body_14066(14065,tTOK).
+rEPEAT("No__Different_Each_Time_"):-algebraic_atom(67,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"),\+algebraic_atom(67,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5"),body_14456(14455,multi).
+pC2PRT:-algebraic_atom(288,0,0,set(none),pC2PRT,"0.0"),body_16424(16423,pC2PRT).
+body_14469(14468,multi):-body_1275(1272,multi).
+pC2PRT:-algebraic_atom(274,0,0,set(none),pC2PRT,"0.0"),body_16312(16311,pC2PRT).
+tTOK:-algebraic_atom(25,0,0,set(none),tTOK,"0.5"),body_14050(14049,tTOK).
+algebraic_atom(29,1,1,set(none),appDtGnTm("Too_Long"),"0.0"):-algebraic_atom(29,0,0,set(none),appDtGnTm("Fast_Enough"),"1.0").
+pC2PRT:-algebraic_atom(298,0,0,set(none),pC2PRT,"0.0"),body_16504(16503,pC2PRT).
+pC2PRT:-algebraic_atom(272,0,0,set(none),pC2PRT,"0.0"),body_16296(16295,pC2PRT).
+algebraic_atom(67,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"):-algebraic_atom(67,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5").
+pC2PRT:-algebraic_atom(300,0,0,set(none),pC2PRT,"0.0"),body_16520(16519,pC2PRT).
+rEPEAT("Yes__Always_the_Same_"):-algebraic_atom(68,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5"),body_14469(14468,multi).
+tTOK:-algebraic_atom(21,0,0,set(none),tTOK,"0.99000001"),body_14018(14017,tTOK).
+tTOK:-algebraic_atom(22,0,0,set(none),tTOK,"0.0"),body_14026(14025,tTOK).
+cmpltPgPrntd:-algebraic_atom(70,0,0,set(none),cmpltPgPrntd,"0.1"),body_14490(14489,cmpltPgPrntd).
+pC2PRT:-algebraic_atom(275,0,0,set(none),pC2PRT,"0.0"),body_16320(16319,pC2PRT).
+pC2PRT:-algebraic_atom(279,0,0,set(none),pC2PRT,"0.0"),body_16352(16351,pC2PRT).
+tTOK:-algebraic_atom(28,0,0,set(none),tTOK,"0.5"),body_14074(14073,tTOK).
+rEPEAT("No__Different_Each_Time_"):-algebraic_atom(68,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"),\+algebraic_atom(68,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5"),body_14469(14468,multi).
+pC2PRT:-algebraic_atom(290,0,0,set(none),pC2PRT,"0.0"),body_16440(16439,pC2PRT).
+pC2PRT:-algebraic_atom(271,0,0,set(none),pC2PRT,"0.0"),body_16288(16287,pC2PRT).
+pC2PRT:-algebraic_atom(293,0,0,set(none),pC2PRT,"0.0"),body_16464(16463,pC2PRT).
+tTOK:-algebraic_atom(26,0,0,set(none),tTOK,"0.5"),body_14058(14057,tTOK).
+algebraic_atom(68,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.5"):-algebraic_atom(68,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"0.5").
+body_7760(7746,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7539(7526,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17104(17103,prtData):-body_7599(7586,prtData).
+body_7679(7666,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17080(17079,prtData):-body_7539(7526,prtData).
+body_17152(17151,prtData):-body_7719(7706,prtData).
+body_17136(17135,prtData):-body_7679(7666,prtData).
+body_17128(17127,prtData):-body_7659(7646,prtData).
+body_7579(7566,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17112(17111,prtData):-body_7619(7606,prtData).
+body_7739(7726,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17160(17159,prtData):-body_7739(7726,prtData).
+body_17096(17095,prtData):-body_7579(7566,prtData).
+body_17072(17071,prtData):-body_7519(7506,prtData).
+body_17056(17055,prtData):-body_7479(7466,prtData).
+body_17064(17063,prtData):-body_7499(7486,prtData).
+body_7619(7606,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17088(17087,prtData):-body_7559(7546,prtData).
+body_7499(7486,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7519(7506,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17120(17119,prtData):-body_7639(7626,prtData).
+body_7659(7646,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17144(17143,prtData):-body_7699(7686,prtData).
+body_7719(7706,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7699(7686,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7479(7466,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7599(7586,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7559(7546,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7639(7626,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_16928(16927,prtData):-body_7146(7132,prtData).
+body_7146(7132,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_17656(17655,prtData):-body_9057(9043,prtData).
+body_7063(7050,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_9341(9326,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+util_node(2):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,\+prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,\+prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_17752(17751,prtData):-body_9319(9304,prtData).
+pSGRAPHIC:-algebraic_atom(11,0,0,set(none),pSGRAPHIC,"0.25"),body_13908(13907,pSGRAPHIC).
+body_7003(6990,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_17696(17695,prtData):-body_9165(9150,prtData).
+body_17664(17663,prtData):-body_9078(9064,prtData).
+body_16888(16887,prtData):-body_7043(7030,prtData).
+util_node(0):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_16896(16895,prtData):-body_7063(7050,prtData).
+nnPSGrphc:-algebraic_atom(6,0,0,set(none),nnPSGrphc,"0.5"),body_13868(13867,nnPSGrphc).
+body_9319(9304,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+util_node(2):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),\+eMFOK,prtDriver,prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),\+gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),\+gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),\+dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),\+prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),\+pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),\+prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_17720(17719,prtData):-body_9231(9216,prtData).
+body_9231(9216,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_16912(16911,prtData):-body_7104(7090,prtData).
+pSGRAPHIC:-algebraic_atom(9,0,0,set(none),pSGRAPHIC,"0.1"),body_13892(13891,pSGRAPHIC).
+body_9253(9238,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+pSGRAPHIC:-algebraic_atom(10,0,0,set(none),pSGRAPHIC,"0.5"),body_13900(13899,pSGRAPHIC).
+body_16816(16815,prtData):-body_6863(6850,prtData).
+body_9143(9128,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_6923(6910,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+nnPSGrphc:-algebraic_atom(4,0,0,set(none),nnPSGrphc,"0.25"),body_13852(13851,nnPSGrphc).
+body_16872(16871,prtData):-body_7003(6990,prtData).
+body_9078(9064,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17744(17743,prtData):-body_9297(9282,prtData).
+body_17640(17639,prtData):-body_9015(9001,prtData).
+body_7125(7111,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_9187(9172,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+util_node(1):-\+netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),\+ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),\+prtQueue("Short"),prtOn,prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),\+problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_16920(16919,prtData):-body_7125(7111,prtData).
+body_9297(9282,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+util_node(0):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),\+prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_6943(6930,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_6963(6950,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+nnPSGrphc:-algebraic_atom(3,0,0,set(none),nnPSGrphc,"0.5"),body_13844(13843,nnPSGrphc).
+pSGRAPHIC:-algebraic_atom(8,0,0,set(none),pSGRAPHIC,"0.999"),body_13884(13883,pSGRAPHIC).
+body_16848(16847,prtData):-body_6943(6930,prtData).
+body_17704(17703,prtData):-body_9187(9172,prtData).
+util_node(1):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),\+prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_6863(6850,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_17648(17647,prtData):-body_9036(9022,prtData).
+body_6983(6970,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+nnPSGrphc:-algebraic_atom(5,0,0,set(none),nnPSGrphc,"0.5"),body_13860(13859,nnPSGrphc).
+body_16864(16863,prtData):-body_6983(6970,prtData).
+body_17728(17727,prtData):-body_9253(9238,prtData).
+body_9165(9150,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_9121(9106,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+nnPSGrphc:-algebraic_atom(7,0,0,set(none),nnPSGrphc,"0.5"),body_13876(13875,nnPSGrphc).
+body_7023(7010,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_16824(16823,prtData):-body_6883(6870,prtData).
+body_16880(16879,prtData):-body_7023(7010,prtData).
+body_9099(9085,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+util_node(0):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),\+prtQueue("Short"),prtOn,prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),\+prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,\+fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_16856(16855,prtData):-body_6963(6950,prtData).
+body_17680(17679,prtData):-body_9121(9106,prtData).
+nnPSGrphc:-algebraic_atom(1,0,0,set(none),nnPSGrphc,"0.0"),body_13828(13827,nnPSGrphc).
+body_17712(17711,prtData):-body_9209(9194,prtData).
+util_node(0):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,\+prtDriver,prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),\+ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),\+gDIOUT,\+prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),\+prtDataOut,\+dSApplctn("DOS"),prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),\+pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),\+prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,\+fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),\+lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_7043(7030,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_16904(16903,prtData):-body_7083(7070,prtData).
+body_7104(7090,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+util_node(0):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_7083(7070,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_9036(9022,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_6883(6870,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_9209(9194,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_16832(16831,prtData):-body_6903(6890,prtData).
+util_node(1):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),\+prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),prtStatOff("OFFLINE__OFF"),\+dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,\+prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_9275(9260,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+util_node(1):-\+netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,\+prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,\+prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,\+trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),\+prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),\+tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+true.
+body_6903(6890,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_17736(17735,prtData):-body_9275(9260,prtData).
+body_16840(16839,prtData):-body_6923(6910,prtData).
+util_node(2):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),\+hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,drvOK("Corrupt"),hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,\+drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_17672(17671,prtData):-body_9099(9085,prtData).
+body_17688(17687,prtData):-body_9143(9128,prtData).
+nnPSGrphc:-algebraic_atom(2,0,0,set(none),nnPSGrphc,"0.1"),body_13836(13835,nnPSGrphc).
+body_9057(9043,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+util_node(1):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),\+ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,\+prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),\+ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),\+prtIcon("Normal"),\+rEPEAT("Yes__Always_the_Same_"),pC2PRT,rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),\+prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),\+ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,\+prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+nnPSGrphc:-algebraic_atom(0,0,0,set(none),nnPSGrphc,"0.999"),body_13820(13819,nnPSGrphc).
+algebraic_atom(16,1,1,set(none),prtStatToner("Low__None"),"0.99900001"):-algebraic_atom(16,1,0,set(none),prtStatToner("Low__None"),"0.99900001").
+problem6:-algebraic_atom(245,0,0,set(none),problem6,"0.0"),body_16080(16079,problem6).
+prtData:-algebraic_atom(356,0,0,set(none),prtData,"0.5"),body_16968(16967,prtData).
+body_15106(15105,problem5):-body_2330(2323,problem5).
+prtData:-algebraic_atom(347,0,0,set(none),prtData,"0.5"),body_16896(16895,prtData).
+algebraic_atom(18,1,1,set(none),appData("Incorrect_or_corrupt"),"1.0"):-algebraic_atom(18,1,0,set(none),appData("Incorrect_or_corrupt"),"1.0").
+algebraic_atom(19,1,1,set(none),appData("Incorrect_or_corrupt"),"1.0"):-algebraic_atom(19,0,0,set(none),appData("Correct"),"0.0").
+body_14034(14033,tTOK):-body_687(682,tTOK).
+algebraic_atom(239,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(239,0,0,set(none),problem2("OK"),"1.0").
+prtData:-algebraic_atom(366,0,0,set(none),prtData,"0.5"),body_17048(17047,prtData).
+body_2353(2345,problem5):-\+nnTTOK,\+tTOK,\+trTypFnts.
+problem2("OK"):-algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0"),body_16025(16024,multi).
+body_2309(2302,problem5):-\+nnTTOK,\+tTOK,trTypFnts.
+appData("Incorrect_or_corrupt"):-algebraic_atom(19,1,0,set(none),appData("Incorrect_or_corrupt"),"1.0"),\+algebraic_atom(19,0,0,set(none),appData("Correct"),"0.0"),body_13992(13991,multi).
+prtData:-algebraic_atom(353,0,0,set(none),prtData,"0.5"),body_16944(16943,prtData).
+prtData:-algebraic_atom(362,0,0,set(none),prtData,"0.5"),body_17016(17015,prtData).
+body_14973(14972,multi):-body_2126(2122,multi).
+prtDataOut:-algebraic_atom(247,0,0,set(none),prtDataOut,"0.99"),body_16096(16095,prtDataOut).
+body_14960(14959,multi):-body_2110(2106,multi).
+prtData:-algebraic_atom(365,0,0,set(none),prtData,"0.0"),body_17040(17039,prtData).
+algebraic_atom(240,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0").
+body_700(694,tTOK):-\+prntrAccptsTrtyp,fntInstlltn("Faulty"),prtMem("Greater_than_2_Mb").
+pSGRAPHIC:-algebraic_atom(13,0,0,set(none),pSGRAPHIC,"0.5"),body_13924(13923,pSGRAPHIC).
+body_725(719,tTOK):-\+prntrAccptsTrtyp,fntInstlltn("Verified"),prtMem("Less_than_2Mb").
+body_14947(14946,multi):-body_2094(2091,multi).
+problem6:-algebraic_atom(246,0,0,set(none),problem6,"0.0"),body_16088(16087,problem6).
+body_2094(2091,multi):-avlblVrtlMmry("Inadequate____1_Mb_"),prtPScript.
+prtData:-algebraic_atom(360,0,0,set(none),prtData,"0.5"),body_17000(16999,prtData).
+appData("Correct"):-algebraic_atom(18,0,0,set(none),appData("Correct"),"0.0"),body_13979(13978,multi).
+algebraic_atom(19,1,1,set(none),appData("Incorrect_or_corrupt"),"1.0"):-algebraic_atom(19,1,0,set(none),appData("Incorrect_or_corrupt"),"1.0").
+prtData:-algebraic_atom(357,0,0,set(none),prtData,"0.5"),body_16976(16975,prtData).
+problem6:-algebraic_atom(243,0,0,set(none),problem6,"0.0"),body_16064(16063,problem6).
+algebraic_atom(242,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(242,1,0,set(none),problem2("Too_Long"),"1.0").
+pSGRAPHIC:-algebraic_atom(12,0,0,set(none),pSGRAPHIC,"0.5"),body_13916(13915,pSGRAPHIC).
+algebraic_atom(238,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(238,0,0,set(none),problem2("OK"),"0.0").
+algebraic_atom(15,1,1,set(none),prtStatToner("Low__None"),"0.00099999"):-algebraic_atom(15,1,0,set(none),prtStatToner("Low__None"),"0.00099999").
+appData("Incorrect_or_corrupt"):-algebraic_atom(18,1,0,set(none),appData("Incorrect_or_corrupt"),"1.0"),\+algebraic_atom(18,0,0,set(none),appData("Correct"),"0.0"),body_13979(13978,multi).
+algebraic_atom(241,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0").
+prtData:-algebraic_atom(351,0,0,set(none),prtData,"0.5"),body_16928(16927,prtData).
+prtData:-algebraic_atom(348,0,0,set(none),prtData,"0.5"),body_16904(16903,prtData).
+prtData:-algebraic_atom(359,0,0,set(none),prtData,"0.5"),body_16992(16991,prtData).
+prtData:-algebraic_atom(364,0,0,set(none),prtData,"0.5"),body_17032(17031,prtData).
+body_15098(15097,problem5):-body_2309(2302,problem5).
+algebraic_atom(18,1,1,set(none),appData("Incorrect_or_corrupt"),"1.0"):-algebraic_atom(18,0,0,set(none),appData("Correct"),"0.0").
+body_14058(14057,tTOK):-body_725(719,tTOK).
+algebraic_atom(239,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(239,1,0,set(none),problem2("Too_Long"),"0.0").
+body_750(744,tTOK):-\+prntrAccptsTrtyp,fntInstlltn("Faulty"),prtMem("Less_than_2Mb").
+appData("Correct"):-algebraic_atom(19,0,0,set(none),appData("Correct"),"0.0"),body_13992(13991,multi).
+problem2("OK"):-algebraic_atom(242,0,0,set(none),problem2("OK"),"0.0"),body_16051(16050,multi).
+algebraic_atom(16,1,1,set(none),prtStatToner("Low__None"),"0.99900001"):-algebraic_atom(16,0,0,set(none),prtStatToner("No_Error"),"0.00099999").
+problem6:-algebraic_atom(244,0,0,set(none),problem6,"0.0"),body_16072(16071,problem6).
+body_14042(14041,tTOK):-body_700(694,tTOK).
+algebraic_atom(17,1,1,set(none),appData("Incorrect_or_corrupt"),"0.0001"):-algebraic_atom(17,1,0,set(none),appData("Incorrect_or_corrupt"),"0.0001").
+problem2("OK"):-algebraic_atom(239,0,0,set(none),problem2("OK"),"1.0"),body_16012(16011,multi).
+prtStatToner("Low__None"):-algebraic_atom(16,1,0,set(none),prtStatToner("Low__None"),"0.99900001"),\+algebraic_atom(16,0,0,set(none),prtStatToner("No_Error"),"0.00099999"),body_13953(13952,multi).
+body_2110(2106,multi):-avlblVrtlMmry("Adequate____1Mb_"),\+prtPScript.
+prtData:-algebraic_atom(361,0,0,set(none),prtData,"0.5"),body_17008(17007,prtData).
+algebraic_atom(241,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(241,1,0,set(none),problem2("Too_Long"),"0.0").
+prtData:-algebraic_atom(363,0,0,set(none),prtData,"0.5"),body_17024(17023,prtData).
+body_15090(15089,problem5):-body_2295(2289,problem5).
+problem2("Too_Long"):-algebraic_atom(242,1,0,set(none),problem2("Too_Long"),"1.0"),\+algebraic_atom(242,0,0,set(none),problem2("OK"),"0.0"),body_16051(16050,multi).
+body_2126(2122,multi):-avlblVrtlMmry("Inadequate____1_Mb_"),\+prtPScript.
+problem2("OK"):-algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0"),body_16038(16037,multi).
+prtStatToner("No_Error"):-algebraic_atom(15,0,0,set(none),prtStatToner("No_Error"),"0.99900001"),body_13940(13939,multi).
+body_14074(14073,tTOK):-body_750(744,tTOK).
+body_14066(14065,tTOK):-body_737(732,tTOK).
+prtData:-algebraic_atom(354,0,0,set(none),prtData,"0.5"),body_16952(16951,prtData).
+problem2("Too_Long"):-algebraic_atom(240,1,0,set(none),problem2("Too_Long"),"1.0"),\+algebraic_atom(240,0,0,set(none),problem2("OK"),"0.0"),body_16025(16024,multi).
+appData("Incorrect_or_corrupt"):-algebraic_atom(17,1,0,set(none),appData("Incorrect_or_corrupt"),"0.0001"),\+algebraic_atom(17,0,0,set(none),appData("Correct"),"0.9999"),body_13966(13965,multi).
+prtData:-algebraic_atom(346,0,0,set(none),prtData,"0.5"),body_16888(16887,prtData).
+prtData:-algebraic_atom(350,0,0,set(none),prtData,"0.5"),body_16920(16919,prtData).
+algebraic_atom(240,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(240,1,0,set(none),problem2("Too_Long"),"1.0").
+algebraic_atom(242,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(242,0,0,set(none),problem2("OK"),"0.0").
+prtData:-algebraic_atom(349,0,0,set(none),prtData,"0.0"),body_16912(16911,prtData).
+appData("Correct"):-algebraic_atom(17,0,0,set(none),appData("Correct"),"0.9999"),body_13966(13965,multi).
+prtStatToner("Low__None"):-algebraic_atom(15,1,0,set(none),prtStatToner("Low__None"),"0.00099999"),\+algebraic_atom(15,0,0,set(none),prtStatToner("No_Error"),"0.99900001"),body_13940(13939,multi).
+prtData:-algebraic_atom(358,0,0,set(none),prtData,"0.5"),body_16984(16983,prtData).
+body_14050(14049,tTOK):-body_712(707,tTOK).
+algebraic_atom(17,1,1,set(none),appData("Incorrect_or_corrupt"),"0.0001"):-algebraic_atom(17,0,0,set(none),appData("Correct"),"0.9999").
+body_737(732,tTOK):-prntrAccptsTrtyp,fntInstlltn("Faulty"),prtMem("Less_than_2Mb").
+problem2("Too_Long"):-algebraic_atom(238,1,0,set(none),problem2("Too_Long"),"1.0"),\+algebraic_atom(238,0,0,set(none),problem2("OK"),"0.0"),body_15999(15998,multi).
+prtData:-algebraic_atom(352,0,0,set(none),prtData,"0.5"),body_16936(16935,prtData).
+body_712(707,tTOK):-prntrAccptsTrtyp,fntInstlltn("Verified"),prtMem("Less_than_2Mb").
+algebraic_atom(15,1,1,set(none),prtStatToner("Low__None"),"0.00099999"):-algebraic_atom(15,0,0,set(none),prtStatToner("No_Error"),"0.99900001").
+problem2("Too_Long"):-algebraic_atom(241,1,0,set(none),problem2("Too_Long"),"0.0"),\+algebraic_atom(241,0,0,set(none),problem2("OK"),"1.0"),body_16038(16037,multi).
+prtStatToner("No_Error"):-algebraic_atom(16,0,0,set(none),prtStatToner("No_Error"),"0.00099999"),body_13953(13952,multi).
+body_15114(15113,problem5):-body_2353(2345,problem5).
+problem2("Too_Long"):-algebraic_atom(239,1,0,set(none),problem2("Too_Long"),"0.0"),\+algebraic_atom(239,0,0,set(none),problem2("OK"),"1.0"),body_16012(16011,multi).
+body_2330(2323,problem5):-\+nnTTOK,tTOK,\+trTypFnts.
+body_2295(2289,problem5):-nnTTOK,\+tTOK,trTypFnts.
+pSGRAPHIC:-algebraic_atom(14,0,0,set(none),pSGRAPHIC,"0.5"),body_13932(13931,pSGRAPHIC).
+prtData:-algebraic_atom(355,0,0,set(none),prtData,"0.5"),body_16960(16959,prtData).
+pC2PRT:-algebraic_atom(267,0,0,set(none),pC2PRT,"0.0"),body_16256(16255,pC2PRT).
+prtDataOut:-algebraic_atom(250,0,0,set(none),prtDataOut,"0.5"),body_16120(16119,prtDataOut).
+pC2PRT:-algebraic_atom(262,0,0,set(none),pC2PRT,"0.0"),body_16216(16215,pC2PRT).
+pC2PRT:-algebraic_atom(266,0,0,set(none),pC2PRT,"0.0"),body_16248(16247,pC2PRT).
+pC2PRT:-algebraic_atom(254,0,0,set(none),pC2PRT,"0.0"),body_16152(16151,pC2PRT).
+pC2PRT:-algebraic_atom(251,0,0,set(none),pC2PRT,"0.0"),body_16128(16127,pC2PRT).
+pC2PRT:-algebraic_atom(265,0,0,set(none),pC2PRT,"0.0"),body_16240(16239,pC2PRT).
+pC2PRT:-algebraic_atom(264,0,0,set(none),pC2PRT,"0.0"),body_16232(16231,pC2PRT).
+pC2PRT:-algebraic_atom(259,0,0,set(none),pC2PRT,"0.0"),body_16192(16191,pC2PRT).
+pC2PRT:-algebraic_atom(257,0,0,set(none),pC2PRT,"0.0"),body_16176(16175,pC2PRT).
+pC2PRT:-algebraic_atom(255,0,0,set(none),pC2PRT,"0.0"),body_16160(16159,pC2PRT).
+pC2PRT:-algebraic_atom(263,0,0,set(none),pC2PRT,"0.0"),body_16224(16223,pC2PRT).
+prtDataOut:-algebraic_atom(248,0,0,set(none),prtDataOut,"0.0"),body_16104(16103,prtDataOut).
+pC2PRT:-algebraic_atom(256,0,0,set(none),pC2PRT,"0.0"),body_16168(16167,pC2PRT).
+pC2PRT:-algebraic_atom(261,0,0,set(none),pC2PRT,"0.0"),body_16208(16207,pC2PRT).
+prtDataOut:-algebraic_atom(249,0,0,set(none),prtDataOut,"0.0"),body_16112(16111,prtDataOut).
+pC2PRT:-algebraic_atom(258,0,0,set(none),pC2PRT,"0.0"),body_16184(16183,pC2PRT).
+pC2PRT:-algebraic_atom(260,0,0,set(none),pC2PRT,"0.0"),body_16200(16199,pC2PRT).
+pC2PRT:-algebraic_atom(253,0,0,set(none),pC2PRT,"0.0"),body_16144(16143,pC2PRT).
+pC2PRT:-algebraic_atom(252,0,0,set(none),pC2PRT,"0.0"),body_16136(16135,pC2PRT).
+body_2980(2973,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Less_than_2Mb"),prtDriver,appData("Correct").
+body_8477(8462,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17480(17479,prtData):-body_8587(8572,prtData).
+body_3040(3032,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Correct").
+body_3111(3103,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+body_8697(8682,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17520(17519,prtData):-body_8697(8682,prtData).
+body_8411(8397,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17512(17511,prtData):-body_8675(8660,prtData).
+grbldOtpt:-\+ntGrbld,\+lclGrbld,netPrint("Yes__Network_printer_").
+grbldOtpt:-\+ntGrbld,lclGrbld,netPrint("Yes__Network_printer_").
+body_3068(3061,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Incorrect_or_corrupt").
+body_17432(17431,prtData):-body_8455(8440,prtData).
+grbldOtpt:-\+ntGrbld,\+lclGrbld,netPrint("No__Local_printer_").
+body_17416(17415,prtData):-body_8411(8397,prtData).
+body_3126(3118,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+body_8609(8594,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_3054(3047,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Incorrect_or_corrupt").
+body_8521(8506,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_8653(8638,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_2995(2987,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Correct").
+body_8587(8572,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_8499(8484,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17408(17407,prtData):-body_8390(8376,prtData).
+body_17440(17439,prtData):-body_8477(8462,prtData).
+body_17456(17455,prtData):-body_8521(8506,prtData).
+body_15518(15517,lclGrbld):-body_3111(3103,lclGrbld).
+body_8455(8440,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_3141(3133,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+body_17424(17423,prtData):-body_8433(8418,prtData).
+body_15510(15509,lclGrbld):-body_3096(3089,lclGrbld).
+body_3156(3148,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+body_17504(17503,prtData):-body_8653(8638,prtData).
+body_15542(15541,lclGrbld):-body_3156(3148,lclGrbld).
+body_8675(8660,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_15462(15461,lclGrbld):-body_3010(3002,lclGrbld).
+body_15534(15533,lclGrbld):-body_3141(3133,lclGrbld).
+body_8433(8418,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+grbldOtpt:-ntGrbld,\+lclGrbld,netPrint("No__Local_printer_").
+body_8390(8376,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_3010(3002,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Correct").
+body_3082(3075,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Less_than_2Mb"),prtDriver,appData("Incorrect_or_corrupt").
+body_15470(15469,lclGrbld):-body_3025(3017,lclGrbld).
+body_8543(8528,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_15454(15453,lclGrbld):-body_2995(2987,lclGrbld).
+body_17448(17447,prtData):-body_8499(8484,prtData).
+body_15526(15525,lclGrbld):-body_3126(3118,lclGrbld).
+body_15486(15485,lclGrbld):-body_3054(3047,lclGrbld).
+body_15494(15493,lclGrbld):-body_3068(3061,lclGrbld).
+body_15502(15501,lclGrbld):-body_3082(3075,lclGrbld).
+body_3096(3089,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Less_than_2Mb"),prtDriver,appData("Incorrect_or_corrupt").
+body_8631(8616,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_15478(15477,lclGrbld):-body_3040(3032,lclGrbld).
+body_17496(17495,prtData):-body_8631(8616,prtData).
+body_17488(17487,prtData):-body_8609(8594,prtData).
+body_15446(15445,lclGrbld):-body_2980(2973,lclGrbld).
+body_8565(8550,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_3025(3017,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Correct").
+body_17472(17471,prtData):-body_8565(8550,prtData).
+body_17464(17463,prtData):-body_8543(8528,prtData).
+body_17400(17399,prtData):-body_8369(8355,prtData).
+pC2PRT:-algebraic_atom(310,0,0,set(none),pC2PRT,"0.0"),body_16600(16599,pC2PRT).
+pC2PRT:-algebraic_atom(326,0,0,set(none),pC2PRT,"0.0"),body_16728(16727,pC2PRT).
+pC2PRT:-algebraic_atom(322,0,0,set(none),pC2PRT,"0.0"),body_16696(16695,pC2PRT).
+pC2PRT:-algebraic_atom(308,0,0,set(none),pC2PRT,"0.0"),body_16584(16583,pC2PRT).
+pC2PRT:-algebraic_atom(325,0,0,set(none),pC2PRT,"0.0"),body_16720(16719,pC2PRT).
+pC2PRT:-algebraic_atom(320,0,0,set(none),pC2PRT,"0.0"),body_16680(16679,pC2PRT).
+pC2PRT:-algebraic_atom(307,0,0,set(none),pC2PRT,"0.0"),body_16576(16575,pC2PRT).
+pC2PRT:-algebraic_atom(309,0,0,set(none),pC2PRT,"0.0"),body_16592(16591,pC2PRT).
+pC2PRT:-algebraic_atom(312,0,0,set(none),pC2PRT,"0.0"),body_16616(16615,pC2PRT).
+pC2PRT:-algebraic_atom(319,0,0,set(none),pC2PRT,"0.0"),body_16672(16671,pC2PRT).
+pC2PRT:-algebraic_atom(324,0,0,set(none),pC2PRT,"0.0"),body_16712(16711,pC2PRT).
+pC2PRT:-algebraic_atom(311,0,0,set(none),pC2PRT,"0.0"),body_16608(16607,pC2PRT).
+pC2PRT:-algebraic_atom(315,0,0,set(none),pC2PRT,"0.0"),body_16640(16639,pC2PRT).
+pC2PRT:-algebraic_atom(321,0,0,set(none),pC2PRT,"0.0"),body_16688(16687,pC2PRT).
+pC2PRT:-algebraic_atom(313,0,0,set(none),pC2PRT,"0.0"),body_16624(16623,pC2PRT).
+pC2PRT:-algebraic_atom(323,0,0,set(none),pC2PRT,"0.0"),body_16704(16703,pC2PRT).
+pC2PRT:-algebraic_atom(314,0,0,set(none),pC2PRT,"0.0"),body_16632(16631,pC2PRT).
+pC2PRT:-algebraic_atom(317,0,0,set(none),pC2PRT,"0.0"),body_16656(16655,pC2PRT).
+pC2PRT:-algebraic_atom(318,0,0,set(none),pC2PRT,"0.0"),body_16664(16663,pC2PRT).
+pC2PRT:-algebraic_atom(316,0,0,set(none),pC2PRT,"0.0"),body_16648(16647,pC2PRT).
+problem5:-nnTTOK,\+tTOK,\+trTypFnts.
+problem4:-pSGRAPHIC,\+prtPScript,nnPSGrphc.
+util_node(3):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,\+scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_3377(3371,problem3):-\+incmpltPS,prtPScript,cmpltPgPrntd.
+body_13940(13939,multi):-body_569(568,multi).
+problem5:-nnTTOK,tTOK,trTypFnts.
+body_15574(15573,multi):-body_3201(3200,multi).
+util_node(2):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),\+drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,\+prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_1141(1138,multi):-pTROFFLINE("Online"),ntwrkCnfg("Correct").
+body_15161(15160,multi):-body_2411(2407,multi).
+body_1187(1184,multi):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect").
+problem3:-incmpltPS,prtPScript,cmpltPgPrntd.
+body_15704(15703,problem3):-body_3377(3371,problem3).
+util_node(4):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,\+prtTimeOut("Long_Enough"),\+prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),\+problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),\+prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),\+prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+problem3:-\+incmpltPS,\+prtPScript,cmpltPgPrntd.
+body_2379(2376,multi):-avlblVrtlMmry("Inadequate____1_Mb_"),prtPScript.
+body_569(568,multi):-tnrSpply("Adequate").
+util_node(4):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,\+prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),\+prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),\+lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+util_node(2):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),\+prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_15148(15147,multi):-body_2395(2391,multi).
+problem4:-\+pSGRAPHIC,\+prtPScript,nnPSGrphc.
+body_14275(14274,multi):-body_1025(1024,multi).
+problem4:-pSGRAPHIC,prtPScript,\+nnPSGrphc.
+body_15587(15586,multi):-body_3215(3214,multi).
+util_node(4):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),\+pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),\+problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),\+dSApplctn("Windows"),\+prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),\+cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),\+incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+util_node(3):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,\+trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_1011(1010,multi):-prtMem("Greater_than_2_Mb").
+problem3:-incmpltPS,\+prtPScript,cmpltPgPrntd.
+body_14262(14261,multi):-body_1011(1010,multi).
+problem6:-grbldPS,prtPScript,grbldOtpt.
+body_14352(14351,multi):-body_1141(1138,multi).
+body_3427(3420,problem3):-incmpltPS,\+prtPScript,\+cmpltPgPrntd.
+util_node(3):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_14430(14429,multi):-body_1229(1226,multi).
+body_3182(3178,incmpltPS):-avlblVrtlMmry("Adequate____1Mb_"),\+cmpltPgPrntd.
+body_15550(15549,incmpltPS):-body_3171(3168,incmpltPS).
+body_1172(1169,multi):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect").
+util_node(3):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_1229(1226,multi):-ntwrkCnfg("Correct"),cblPrtHrdwrOK("Operational").
+body_3413(3406,problem3):-\+incmpltPS,prtPScript,\+cmpltPgPrntd.
+body_3215(3214,multi):-appDtGnTm("Too_Long").
+body_15566(15565,incmpltPS):-body_3193(3189,incmpltPS).
+problem4:-pSGRAPHIC,prtPScript,nnPSGrphc.
+body_2411(2407,multi):-avlblVrtlMmry("Inadequate____1_Mb_"),\+prtPScript.
+body_3201(3200,multi):-appDtGnTm("Fast_Enough").
+problem5:-\+nnTTOK,tTOK,trTypFnts.
+util_node(3):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,\+prtMpTPth("Correct"),prtPaper("Has_Paper"),\+netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),\+pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_2395(2391,multi):-avlblVrtlMmry("Adequate____1Mb_"),\+prtPScript.
+body_13953(13952,multi):-body_583(582,multi).
+body_3171(3168,incmpltPS):-avlblVrtlMmry("Inadequate____1_Mb_"),cmpltPgPrntd.
+problem6:-grbldPS,prtPScript,\+grbldOtpt.
+body_15558(15557,incmpltPS):-body_3182(3178,incmpltPS).
+body_14378(14377,multi):-body_1172(1169,multi).
+body_15720(15719,problem3):-body_3427(3420,problem3).
+util_node(4):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,\+pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),\+problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,\+prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,\+prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),\+dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),\+nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),\+prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,\+grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+util_node(4):-netPrint("No__Local_printer_"),prtStatMem("No_Error"),\+avlblVrtlMmry("Inadequate____1_Mb_"),eMFOK,prtDriver,prtTimeOut("Long_Enough"),prtData,pSGRAPHIC,prtCbl("Connected"),\+tstpsTxt("x_1_Mb_Available_VM2"),drvSet("Correct"),ntGrbld,appOK("Correct"),\+fntInstlltn("Faulty"),problem4,\+dataFile("Incorrect_Corrupt"),hrglssDrtnAftrPrnt("Fast_Enough"),gDIOUT,prtMpTPth("Correct"),prtPaper("Has_Paper"),netOK,trTypFnts,\+ntSpd("Slow"),\+appData("Incorrect_or_corrupt"),pgOrnttnOK("Correct"),gDIIN,scrnFntNtPrntrFnt,prtPath("Correct"),dskLocal("Greater_than_2_Mb"),\+prtIcon("Grayed_Out"),\+netPrint("Yes__Network_printer_"),prtPort,\+grbldPS,prtPScript,\+drvOK("Corrupt"),\+hrglssDrtnAftrPrnt("Too_Long"),\+ntwrkCnfg("Incorrect"),\+pTROFFLINE("Offline"),\+prtCbl("Loose"),\+grphcsRltdDrvrSttngs("Incorrect"),ntSpd("OK"),tstpsTxt("x_1_Mb_Available_VM"),\+problem2("Too_Long"),pTROFFLINE("Online"),deskPrntSpd("OK"),dS_NTOK,prtStatPaper("No_Error"),\+prtPaper("No_Paper"),prtDataOut,\+dSApplctn("DOS"),\+prtMpTPth("Incorrect"),\+prntPrcssTm("Too_Long"),avlblVrtlMmry("Adequate____1Mb_"),prntrAccptsTrtyp,\+pgOrnttnOK("Incorrect"),cblPrtHrdwrOK("Operational"),\+prtThread("Corrupt_Buggy"),prtThread("OK"),problem1("Normal_Output"),problem3,fntInstlltn("Verified"),prntPrcssTm("Fast_Enough"),prtIcon("Normal"),rEPEAT("Yes__Always_the_Same_"),pC2PRT,\+rEPEAT("No__Different_Each_Time_"),nnPSGrphc,\+deskPrntSpd("Too_Slow"),prtQueue("Short"),prtOn,\+prtQueue("Long"),\+prntngArOK("Incorrect"),\+drvSet("Incorrect"),prntngArOK("Correct"),\+prtStatOff("OFFLINE__OFF"),dSApplctn("Windows"),prtFile,\+tnrSpply("Low"),\+prtMem("Less_than_2Mb"),ePSGrphc("No____TIF___WMF___BMP_"),appDtGnTm("Fast_Enough"),\+ePSGrphc("Yes____EPS_"),tTOK,\+pSERRMEM("Low_Memory"),\+problem1("No_Output"),tnrSpply("Adequate"),\+dskLocal("Less_than_2_Mb"),\+prtSpool("Enabled"),prtSel,\+prtPath("Incorrect"),prtSpool("Disabled"),\+appOK("Incorrect_Corrupt"),dS_LCLOK,\+grbldOtpt,prtStatToner("No_Error"),cmpltPgPrntd,fllCrrptdBffr("Intact__not_Corrupt_"),ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),lclGrbld,grphcsRltdDrvrSttngs("Correct"),incmpltPS,prtStatOff("No_Error"),appData("Correct"),\+appDtGnTm("Too_Long"),\+prtStatPaper("Jam__Out__Bin_Full"),\+prtStatToner("Low__None"),lclOK,drvOK("Reinstalled"),\+prtTimeOut("Too_Short"),\+fllCrrptdBffr("Full_or_Corrupt"),pSERRMEM("No_Error"),\+problem6,problem5,nnTTOK,dataFile("Correct"),problem2("OK"),\+cblPrtHrdwrOK("Not_Operational"),\+prtStatMem("Out_of_Memory").
+body_14365(14364,multi):-body_1157(1154,multi).
+body_3193(3189,incmpltPS):-avlblVrtlMmry("Inadequate____1_Mb_"),\+cmpltPgPrntd.
+body_583(582,multi):-tnrSpply("Low").
+body_3442(3434,problem3):-\+incmpltPS,\+prtPScript,\+cmpltPgPrntd.
+problem6:-\+grbldPS,\+prtPScript,grbldOtpt.
+problem5:-nnTTOK,tTOK,\+trTypFnts.
+body_15728(15727,problem3):-body_3442(3434,problem3).
+body_14443(14442,multi):-body_1245(1242,multi).
+problem3:-incmpltPS,prtPScript,\+cmpltPgPrntd.
+body_15712(15711,problem3):-body_3413(3406,problem3).
+body_1245(1242,multi):-ntwrkCnfg("Incorrect"),cblPrtHrdwrOK("Operational").
+body_14391(14390,multi):-body_1187(1184,multi).
+body_1157(1154,multi):-pTROFFLINE("Offline"),ntwrkCnfg("Correct").
+body_1025(1024,multi):-prtMem("Less_than_2Mb").
+problem6:-grbldPS,\+prtPScript,grbldOtpt.
+body_17184(17183,prtData):-body_7802(7788,prtData).
+body_17224(17223,prtData):-body_7907(7893,prtData).
+gDIOUT:-algebraic_atom(222,0,0,set(none),gDIOUT,"0.5"),body_15856(15855,gDIOUT).
+body_17264(17263,prtData):-body_8012(7998,prtData).
+body_7802(7788,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_8033(8019,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_8054(8040,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+gDIOUT:-algebraic_atom(226,0,0,set(none),gDIOUT,"0.5"),body_15888(15887,gDIOUT).
+body_17280(17279,prtData):-body_8054(8040,prtData).
+body_8075(8061,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+grbldOtpt:-algebraic_atom(209,0,0,set(none),grbldOtpt,"0.0"),body_15752(15751,grbldOtpt).
+gDIOUT:-algebraic_atom(225,0,0,set(none),gDIOUT,"0.5"),body_15880(15879,gDIOUT).
+grbldOtpt:-algebraic_atom(208,0,0,set(none),grbldOtpt,"0.0"),body_15744(15743,grbldOtpt).
+body_8012(7998,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7886(7872,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+grbldPS:-algebraic_atom(218,0,0,set(none),grbldPS,"0.5"),body_15824(15823,grbldPS).
+body_17240(17239,prtData):-body_7949(7935,prtData).
+body_7949(7935,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+grbldOtpt:-algebraic_atom(207,0,0,set(none),grbldOtpt,"0.0"),body_15736(15735,grbldOtpt).
+body_7970(7956,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+gDIOUT:-algebraic_atom(219,0,0,set(none),gDIOUT,"0.99"),body_15832(15831,gDIOUT).
+body_17248(17247,prtData):-body_7970(7956,prtData).
+gDIOUT:-algebraic_atom(224,0,0,set(none),gDIOUT,"0.5"),body_15872(15871,gDIOUT).
+body_17200(17199,prtData):-body_7844(7830,prtData).
+body_7907(7893,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+gDIIN:-algebraic_atom(212,0,0,set(none),gDIIN,"0.0"),body_15776(15775,gDIIN).
+body_17272(17271,prtData):-body_8033(8019,prtData).
+gDIOUT:-algebraic_atom(223,0,0,set(none),gDIOUT,"0.1"),body_15864(15863,gDIOUT).
+gDIIN:-algebraic_atom(211,0,0,set(none),gDIIN,"0.0"),body_15768(15767,gDIIN).
+gDIOUT:-algebraic_atom(221,0,0,set(none),gDIOUT,"0.9"),body_15848(15847,gDIOUT).
+grbldPS:-algebraic_atom(216,0,0,set(none),grbldPS,"0.0"),body_15808(15807,grbldPS).
+body_17176(17175,prtData):-body_7781(7767,prtData).
+gDIIN:-algebraic_atom(215,0,0,set(none),gDIIN,"0.0"),body_15800(15799,gDIIN).
+body_7865(7851,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7823(7809,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+gDIIN:-algebraic_atom(213,0,0,set(none),gDIIN,"0.0"),body_15784(15783,gDIIN).
+body_17216(17215,prtData):-body_7886(7872,prtData).
+gDIIN:-algebraic_atom(214,0,0,set(none),gDIIN,"0.0"),body_15792(15791,gDIIN).
+body_17256(17255,prtData):-body_7991(7977,prtData).
+body_17208(17207,prtData):-body_7865(7851,prtData).
+body_17168(17167,prtData):-body_7760(7746,prtData).
+gDIOUT:-algebraic_atom(220,0,0,set(none),gDIOUT,"0.2"),body_15840(15839,gDIOUT).
+body_7844(7830,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_17192(17191,prtData):-body_7823(7809,prtData).
+grbldOtpt:-algebraic_atom(210,0,0,set(none),grbldOtpt,"0.0"),body_15760(15759,grbldOtpt).
+body_7928(7914,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7781(7767,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+grbldPS:-algebraic_atom(217,0,0,set(none),grbldPS,"0.9"),body_15816(15815,grbldPS).
+body_17232(17231,prtData):-body_7928(7914,prtData).
+body_7991(7977,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),prtOn.
+body_3250(3245,multi):-prtQueue("Long"),ntwrkCnfg("Correct"),deskPrntSpd("OK").
+body_1483(1476,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Less_than_2Mb"),prtDriver,appData("Correct").
+body_16776(16775,prtFile):-body_6762(6760,prtFile).
+body_16038(16037,multi):-body_3999(3994,multi).
+body_17784(17783,prtData):-body_9407(9392,prtData).
+algebraic_atom(236,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(236,0,0,set(none),problem2("OK"),"1.0").
+algebraic_atom(238,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(238,1,0,set(none),problem2("Too_Long"),"1.0").
+body_4016(4011,multi):-ntSpd("Slow"),deskPrntSpd("Too_Slow"),netPrint("Yes__Network_printer_").
+body_17808(17807,multi):-body_9459(9458,multi).
+body_3982(3977,multi):-ntSpd("Slow"),deskPrntSpd("OK"),netPrint("Yes__Network_printer_").
+gDIOUT:-algebraic_atom(229,0,0,set(none),gDIOUT,"0.5"),body_15912(15911,gDIOUT).
+body_9474(9472,multi):-\+prtData.
+algebraic_atom(237,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(237,0,0,set(none),problem2("OK"),"0.0").
+ntGrbld:-ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Correct").
+body_15665(15664,multi):-body_3318(3313,multi).
+body_15626(15625,multi):-body_3267(3262,multi).
+problem2("Too_Long"):-algebraic_atom(236,1,0,set(none),problem2("Too_Long"),"0.0"),\+algebraic_atom(236,0,0,set(none),problem2("OK"),"1.0"),body_15973(15972,multi).
+problem2("OK"):-algebraic_atom(236,0,0,set(none),problem2("OK"),"1.0"),body_15973(15972,multi).
+body_15652(15651,multi):-body_3301(3296,multi).
+problem2("OK"):-algebraic_atom(238,0,0,set(none),problem2("OK"),"0.0"),body_15999(15998,multi).
+body_14614(14613,ntGrbld):-body_1483(1476,ntGrbld).
+body_1498(1490,ntGrbld):-ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Correct").
+gDIOUT:-algebraic_atom(233,0,0,set(none),gDIOUT,"0.5"),body_15944(15943,gDIOUT).
+gDIOUT:-algebraic_atom(230,0,0,set(none),gDIOUT,"0.5"),body_15920(15919,gDIOUT).
+body_1455(1448,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Correct").
+body_983(982,multi):-prtPScript.
+body_15999(15998,multi):-body_3948(3943,multi).
+body_3948(3943,multi):-ntSpd("Slow"),deskPrntSpd("Too_Slow"),netPrint("No__Local_printer_").
+problem2("Too_Long"):-algebraic_atom(237,1,0,set(none),problem2("Too_Long"),"1.0"),\+algebraic_atom(237,0,0,set(none),problem2("OK"),"0.0"),body_15986(15985,multi).
+body_16051(16050,multi):-body_4016(4011,multi).
+algebraic_atom(237,1,1,set(none),problem2("Too_Long"),"1.0"):-algebraic_atom(237,1,0,set(none),problem2("Too_Long"),"1.0").
+body_16768(16767,prtFile):-body_6752(6751,prtFile).
+body_6752(6751,prtFile):-prtDataOut.
+body_3965(3960,multi):-ntSpd("OK"),deskPrntSpd("OK"),netPrint("Yes__Network_printer_").
+body_15691(15690,multi):-body_3352(3347,multi).
+body_14236(14235,multi):-body_983(982,multi).
+body_3352(3347,multi):-prtQueue("Long"),ntwrkCnfg("Incorrect"),deskPrntSpd("Too_Slow").
+body_998(996,multi):-\+prtPScript.
+body_17792(17791,prtData):-body_9429(9414,prtData).
+body_15678(15677,multi):-body_3335(3330,multi).
+body_17776(17775,prtData):-body_9385(9370,prtData).
+algebraic_atom(235,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(235,1,0,set(none),problem2("Too_Long"),"0.0").
+body_17760(17759,prtData):-body_9341(9326,prtData).
+body_1469(1462,ntGrbld):-ntwrkCnfg("Correct"),prtMem("Less_than_2Mb"),prtDriver,appData("Correct").
+body_14606(14605,ntGrbld):-body_1469(1462,ntGrbld).
+gDIOUT:-algebraic_atom(234,0,0,set(none),gDIOUT,"0.5"),body_15952(15951,gDIOUT).
+body_14598(14597,ntGrbld):-body_1455(1448,ntGrbld).
+problem2("OK"):-algebraic_atom(237,0,0,set(none),problem2("OK"),"0.0"),body_15986(15985,multi).
+body_9385(9370,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17821(17820,multi):-body_9474(9472,multi).
+body_14249(14248,multi):-body_998(996,multi).
+body_16012(16011,multi):-body_3965(3960,multi).
+body_16025(16024,multi):-body_3982(3977,multi).
+body_17768(17767,prtData):-body_9363(9348,prtData).
+gDIOUT:-algebraic_atom(227,0,0,set(none),gDIOUT,"0.1"),body_15896(15895,gDIOUT).
+body_3267(3262,multi):-prtQueue("Short"),ntwrkCnfg("Incorrect"),deskPrntSpd("OK").
+body_3318(3313,multi):-prtQueue("Long"),ntwrkCnfg("Correct"),deskPrntSpd("Too_Slow").
+problem2("OK"):-algebraic_atom(235,0,0,set(none),problem2("OK"),"1.0"),body_15960(15959,multi).
+body_9459(9458,multi):-prtData.
+body_3999(3994,multi):-ntSpd("OK"),deskPrntSpd("Too_Slow"),netPrint("Yes__Network_printer_").
+algebraic_atom(236,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(236,1,0,set(none),problem2("Too_Long"),"0.0").
+body_9407(9392,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_15613(15612,multi):-body_3250(3245,multi).
+gDIOUT:-algebraic_atom(228,0,0,set(none),gDIOUT,"0.5"),body_15904(15903,gDIOUT).
+body_9451(9436,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+problem2("Too_Long"):-algebraic_atom(235,1,0,set(none),problem2("Too_Long"),"0.0"),\+algebraic_atom(235,0,0,set(none),problem2("OK"),"1.0"),body_15960(15959,multi).
+body_3335(3330,multi):-prtQueue("Short"),ntwrkCnfg("Incorrect"),deskPrntSpd("Too_Slow").
+body_9363(9348,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_3301(3296,multi):-prtQueue("Short"),ntwrkCnfg("Correct"),deskPrntSpd("Too_Slow").
+body_3284(3279,multi):-prtQueue("Long"),ntwrkCnfg("Incorrect"),deskPrntSpd("OK").
+body_9429(9414,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("No_Paper"),\+prtOn.
+algebraic_atom(235,1,1,set(none),problem2("Too_Long"),"0.0"):-algebraic_atom(235,0,0,set(none),problem2("OK"),"1.0").
+body_17800(17799,prtData):-body_9451(9436,prtData).
+body_15639(15638,multi):-body_3284(3279,multi).
+gDIOUT:-algebraic_atom(232,0,0,set(none),gDIOUT,"0.5"),body_15936(15935,gDIOUT).
+gDIOUT:-algebraic_atom(231,0,0,set(none),gDIOUT,"0.5"),body_15928(15927,gDIOUT).
+body_6762(6760,prtFile):-\+prtDataOut.
+body_7209(7195,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_7419(7405,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_13892(13891,pSGRAPHIC):-body_501(496,pSGRAPHIC).
+body_17000(16999,prtData):-body_7335(7321,prtData).
+body_17024(17023,prtData):-body_7398(7384,prtData).
+body_13932(13931,pSGRAPHIC):-body_561(556,pSGRAPHIC).
+body_17048(17047,prtData):-body_7459(7446,prtData).
+body_13908(13907,pSGRAPHIC):-body_525(520,pSGRAPHIC).
+body_7459(7446,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_7230(7216,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_525(520,pSGRAPHIC):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Less_than_2Mb").
+body_16976(16975,prtData):-body_7272(7258,prtData).
+body_513(508,pSGRAPHIC):-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Greater_than_2_Mb").
+body_7439(7426,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),prtOn.
+body_537(532,pSGRAPHIC):-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Less_than_2Mb").
+body_501(496,pSGRAPHIC):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Greater_than_2_Mb").
+body_17008(17007,prtData):-body_7356(7342,prtData).
+body_561(556,pSGRAPHIC):-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
+body_16968(16967,prtData):-body_7251(7237,prtData).
+body_13828(13827,nnPSGrphc):-body_398(393,nnPSGrphc).
+body_2078(2075,multi):-avlblVrtlMmry("Adequate____1Mb_"),prtPScript.
+body_410(405,nnPSGrphc):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Greater_than_2_Mb").
+body_7356(7342,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_7188(7174,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_17016(17015,prtData):-body_7377(7363,prtData).
+body_16936(16935,prtData):-body_7167(7153,prtData).
+body_385(380,nnPSGrphc):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Greater_than_2_Mb").
+body_7335(7321,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_7398(7384,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_16944(16943,prtData):-body_7188(7174,prtData).
+body_17040(17039,prtData):-body_7439(7426,prtData).
+body_13916(13915,pSGRAPHIC):-body_537(532,pSGRAPHIC).
+body_17032(17031,prtData):-body_7419(7405,prtData).
+body_549(544,pSGRAPHIC):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
+body_16960(16959,prtData):-body_7230(7216,prtData).
+body_16984(16983,prtData):-body_7293(7279,prtData).
+body_7167(7153,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_14934(14933,multi):-body_2078(2075,multi).
+body_13820(13819,nnPSGrphc):-body_385(380,nnPSGrphc).
+body_398(393,nnPSGrphc):-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Greater_than_2_Mb").
+body_7377(7363,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_7272(7258,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_13924(13923,pSGRAPHIC):-body_549(544,pSGRAPHIC).
+body_7293(7279,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_13884(13883,pSGRAPHIC):-body_482(477,pSGRAPHIC).
+body_7314(7300,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_16992(16991,prtData):-body_7314(7300,prtData).
+body_482(477,pSGRAPHIC):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Greater_than_2_Mb").
+body_7251(7237,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),\+pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_1812(1805,problem4):-\+pSGRAPHIC,prtPScript,\+nnPSGrphc.
+body_13900(13899,pSGRAPHIC):-body_513(508,pSGRAPHIC).
+body_16952(16951,prtData):-body_7209(7195,prtData).
+pSGRAPHIC:-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Greater_than_2_Mb").
+body_17616(17615,prtData):-body_8952(8938,prtData).
+body_8826(8812,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17608(17607,prtData):-body_8931(8917,prtData).
+body_8952(8938,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_8784(8770,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_18328(18326,prtTimeOut("Too_Short")):-\+dec_33.
+body_9015(9001,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17632(17631,prtData):-body_8994(8980,prtData).
+body_8889(8875,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17624(17623,prtData):-body_8973(8959,prtData).
+body_8910(8896,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_8805(8791,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17592(17591,prtData):-body_8889(8875,prtData).
+body_17536(17535,prtData):-body_8741(8726,prtData).
+body_8931(8917,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17584(17583,prtData):-body_8868(8854,prtData).
+body_8741(8726,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17544(17543,prtData):-body_8763(8748,prtData).
+body_8994(8980,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_8973(8959,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_8847(8833,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_8719(8704,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17600(17599,prtData):-body_8910(8896,prtData).
+body_17560(17559,prtData):-body_8805(8791,prtData).
+body_8763(8748,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),\+pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17568(17567,prtData):-body_8826(8812,prtData).
+body_17576(17575,prtData):-body_8847(8833,prtData).
+body_8868(8854,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("No_Paper"),\+prtOn.
+body_17528(17527,prtData):-body_8719(8704,prtData).
+body_17552(17551,prtData):-body_8784(8770,prtData).
+body_14846(14845,dS_LCLOK):-body_1922(1915,dS_LCLOK).
+body_14456(14455,multi):-body_1260(1257,multi).
+body_16088(16087,problem6):-body_4085(4079,problem6).
+body_3515(3509,grbldOtpt):-ntGrbld,\+lclGrbld,netPrint("Yes__Network_printer_").
+body_1922(1915,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Loose"),appData("Correct").
+body_2038(2031,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Loose"),appData("Incorrect_or_corrupt").
+body_1908(1901,dS_LCLOK):-cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Loose"),appData("Correct").
+hrglssDrtnAftrPrnt("Too_Long"):-algebraic_atom(194,1,0,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.9"),\+algebraic_atom(194,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.1"),body_15587(15586,multi).
+body_14894(14893,dS_LCLOK):-body_2010(2002,dS_LCLOK).
+body_16072(16071,problem6):-body_4058(4050,problem6).
+body_4072(4065,problem6):-grbldPS,\+prtPScript,\+grbldOtpt.
+body_4085(4079,problem6):-\+grbldPS,prtPScript,grbldOtpt.
+body_2053(2045,dS_LCLOK):-cblPrtHrdwrOK("Operational"),\+prtPort,prtCbl("Loose"),appData("Incorrect_or_corrupt").
+body_14910(14909,dS_LCLOK):-body_2038(2031,dS_LCLOK).
+ntSpd("OK"):-algebraic_atom(198,0,0,set(none),ntSpd("OK"),"0.5"),body_15639(15638,multi).
+body_1966(1959,dS_LCLOK):-cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Connected"),appData("Incorrect_or_corrupt").
+body_16080(16079,problem6):-body_4072(4065,problem6).
+body_14878(14877,dS_LCLOK):-body_1980(1973,dS_LCLOK).
+body_2010(2002,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),\+prtPort,prtCbl("Connected"),appData("Incorrect_or_corrupt").
+body_15816(15815,grbldPS):-body_3629(3625,grbldPS).
+incmpltPS:-algebraic_atom(191,0,0,set(none),incmpltPS,"0.0"),body_15558(15557,incmpltPS).
+body_14814(14813,dS_LCLOK):-body_1864(1857,dS_LCLOK).
+body_1260(1257,multi):-ntwrkCnfg("Correct"),cblPrtHrdwrOK("Not_Operational").
+algebraic_atom(197,1,1,set(none),ntSpd("Slow"),"0.75"):-algebraic_atom(197,0,0,set(none),ntSpd("OK"),"0.25").
+body_3495(3490,grbldOtpt):-ntGrbld,lclGrbld,netPrint("Yes__Network_printer_").
+body_4035(4028,problem6):-\+grbldPS,prtPScript,\+grbldOtpt.
+ntSpd("Slow"):-algebraic_atom(197,1,0,set(none),ntSpd("Slow"),"0.75"),\+algebraic_atom(197,0,0,set(none),ntSpd("OK"),"0.25"),body_15626(15625,multi).
+body_2024(2017,dS_LCLOK):-cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Loose"),appData("Incorrect_or_corrupt").
+body_15808(15807,grbldPS):-body_3617(3613,grbldPS).
+body_14902(14901,dS_LCLOK):-body_2024(2017,dS_LCLOK).
+algebraic_atom(196,1,1,set(none),ntSpd("Slow"),"0.75"):-algebraic_atom(196,0,0,set(none),ntSpd("OK"),"0.25").
+body_644(641,multi):-dataFile("Incorrect_Corrupt"),appOK("Incorrect_Corrupt").
+body_4058(4050,problem6):-\+grbldPS,\+prtPScript,\+grbldOtpt.
+body_1995(1987,dS_LCLOK):-cblPrtHrdwrOK("Operational"),\+prtPort,prtCbl("Connected"),appData("Incorrect_or_corrupt").
+body_14854(14853,dS_LCLOK):-body_1937(1929,dS_LCLOK).
+body_1864(1857,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Connected"),appData("Correct").
+ntSpd("Slow"):-algebraic_atom(195,1,0,set(none),ntSpd("Slow"),"0.00099999"),\+algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001"),body_15600(15599,multi).
+ntSpd("OK"):-algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001"),body_15600(15599,multi).
+body_1952(1944,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),\+prtPort,prtCbl("Loose"),appData("Correct").
+body_3617(3613,grbldPS):-avlblVrtlMmry("Adequate____1Mb_"),\+grbldOtpt.
+algebraic_atom(197,1,1,set(none),ntSpd("Slow"),"0.75"):-algebraic_atom(197,1,0,set(none),ntSpd("Slow"),"0.75").
+body_1894(1886,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),\+prtPort,prtCbl("Connected"),appData("Correct").
+body_15752(15751,grbldOtpt):-body_3495(3490,grbldOtpt).
+hrglssDrtnAftrPrnt("Fast_Enough"):-algebraic_atom(193,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.99"),body_15574(15573,multi).
+body_15736(15735,grbldOtpt):-body_3454(3449,grbldOtpt).
+hrglssDrtnAftrPrnt("Too_Long"):-algebraic_atom(193,1,0,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.01"),\+algebraic_atom(193,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.99"),body_15574(15573,multi).
+incmpltPS:-algebraic_atom(192,0,0,set(none),incmpltPS,"0.5"),body_15566(15565,incmpltPS).
+algebraic_atom(195,1,1,set(none),ntSpd("Slow"),"0.00099999"):-algebraic_atom(195,0,0,set(none),ntSpd("OK"),"0.99900001").
+ntSpd("OK"):-algebraic_atom(197,0,0,set(none),ntSpd("OK"),"0.25"),body_15626(15625,multi).
+body_3629(3625,grbldPS):-avlblVrtlMmry("Inadequate____1_Mb_"),\+grbldOtpt.
+body_14886(14885,dS_LCLOK):-body_1995(1987,dS_LCLOK).
+algebraic_atom(196,1,1,set(none),ntSpd("Slow"),"0.75"):-algebraic_atom(196,1,0,set(none),ntSpd("Slow"),"0.75").
+body_14830(14829,dS_LCLOK):-body_1894(1886,dS_LCLOK).
+body_15760(15759,grbldOtpt):-body_3515(3509,grbldOtpt).
+body_15744(15743,grbldOtpt):-body_3468(3462,grbldOtpt).
+body_15824(15823,grbldPS):-body_3643(3640,grbldPS).
+body_1937(1929,dS_LCLOK):-cblPrtHrdwrOK("Operational"),\+prtPort,prtCbl("Loose"),appData("Correct").
+hrglssDrtnAftrPrnt("Fast_Enough"):-algebraic_atom(194,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.1"),body_15587(15586,multi).
+dS_LCLOK:-cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Connected"),appData("Correct").
+ntSpd("Slow"):-algebraic_atom(196,1,0,set(none),ntSpd("Slow"),"0.75"),\+algebraic_atom(196,0,0,set(none),ntSpd("OK"),"0.25"),body_15613(15612,multi).
+body_14862(14861,dS_LCLOK):-body_1952(1944,dS_LCLOK).
+body_3454(3449,grbldOtpt):-ntGrbld,lclGrbld,netPrint("No__Local_printer_").
+body_1879(1871,dS_LCLOK):-cblPrtHrdwrOK("Operational"),\+prtPort,prtCbl("Connected"),appData("Correct").
+body_3468(3462,grbldOtpt):-\+ntGrbld,lclGrbld,netPrint("No__Local_printer_").
+algebraic_atom(194,1,1,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.9"):-algebraic_atom(194,1,0,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.9").
+body_14838(14837,dS_LCLOK):-body_1908(1901,dS_LCLOK).
+algebraic_atom(194,1,1,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.9"):-algebraic_atom(194,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.1").
+body_14870(14869,dS_LCLOK):-body_1966(1959,dS_LCLOK).
+body_1980(1973,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Connected"),appData("Incorrect_or_corrupt").
+body_14005(14004,multi):-body_644(641,multi).
+ntSpd("OK"):-algebraic_atom(196,0,0,set(none),ntSpd("OK"),"0.25"),body_15613(15612,multi).
+body_14822(14821,dS_LCLOK):-body_1879(1871,dS_LCLOK).
+algebraic_atom(193,1,1,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.01"):-algebraic_atom(193,1,0,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.01").
+body_3643(3640,grbldPS):-avlblVrtlMmry("Inadequate____1_Mb_"),grbldOtpt.
+grbldPS:-avlblVrtlMmry("Adequate____1Mb_"),grbldOtpt.
+algebraic_atom(193,1,1,set(none),hrglssDrtnAftrPrnt("Too_Long"),"0.01"):-algebraic_atom(193,0,0,set(none),hrglssDrtnAftrPrnt("Fast_Enough"),"0.99").
+algebraic_atom(195,1,1,set(none),ntSpd("Slow"),"0.00099999"):-algebraic_atom(195,1,0,set(none),ntSpd("Slow"),"0.00099999").
+algebraic_atom(200,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(200,0,0,set(none),ntSpd("OK"),"0.5").
+problem3:-algebraic_atom(206,0,0,set(none),problem3,"0.0"),body_15728(15727,problem3).
+algebraic_atom(202,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(202,0,0,set(none),ntSpd("OK"),"0.5").
+ntSpd("Slow"):-algebraic_atom(198,1,0,set(none),ntSpd("Slow"),"0.5"),\+algebraic_atom(198,0,0,set(none),ntSpd("OK"),"0.5"),body_15639(15638,multi).
+ntSpd("Slow"):-algebraic_atom(201,1,0,set(none),ntSpd("Slow"),"0.5"),\+algebraic_atom(201,0,0,set(none),ntSpd("OK"),"0.5"),body_15678(15677,multi).
+ntSpd("OK"):-algebraic_atom(200,0,0,set(none),ntSpd("OK"),"0.5"),body_15665(15664,multi).
+algebraic_atom(202,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(202,1,0,set(none),ntSpd("Slow"),"0.5").
+problem3:-algebraic_atom(205,0,0,set(none),problem3,"0.0"),body_15720(15719,problem3).
+problem3:-algebraic_atom(203,0,0,set(none),problem3,"0.0"),body_15704(15703,problem3).
+algebraic_atom(201,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(201,0,0,set(none),ntSpd("OK"),"0.5").
+algebraic_atom(198,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(198,0,0,set(none),ntSpd("OK"),"0.5").
+ntSpd("OK"):-algebraic_atom(201,0,0,set(none),ntSpd("OK"),"0.5"),body_15678(15677,multi).
+problem3:-algebraic_atom(204,0,0,set(none),problem3,"0.0"),body_15712(15711,problem3).
+ntSpd("Slow"):-algebraic_atom(200,1,0,set(none),ntSpd("Slow"),"0.5"),\+algebraic_atom(200,0,0,set(none),ntSpd("OK"),"0.5"),body_15665(15664,multi).
+algebraic_atom(200,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(200,1,0,set(none),ntSpd("Slow"),"0.5").
+ntSpd("Slow"):-algebraic_atom(202,1,0,set(none),ntSpd("Slow"),"0.5"),\+algebraic_atom(202,0,0,set(none),ntSpd("OK"),"0.5"),body_15691(15690,multi).
+algebraic_atom(199,1,1,set(none),ntSpd("Slow"),"1.0"):-algebraic_atom(199,1,0,set(none),ntSpd("Slow"),"1.0").
+algebraic_atom(199,1,1,set(none),ntSpd("Slow"),"1.0"):-algebraic_atom(199,0,0,set(none),ntSpd("OK"),"0.0").
+ntSpd("OK"):-algebraic_atom(202,0,0,set(none),ntSpd("OK"),"0.5"),body_15691(15690,multi).
+algebraic_atom(201,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(201,1,0,set(none),ntSpd("Slow"),"0.5").
+algebraic_atom(198,1,1,set(none),ntSpd("Slow"),"0.5"):-algebraic_atom(198,1,0,set(none),ntSpd("Slow"),"0.5").
+ntSpd("OK"):-algebraic_atom(199,0,0,set(none),ntSpd("OK"),"0.0"),body_15652(15651,multi).
+ntSpd("Slow"):-algebraic_atom(199,1,0,set(none),ntSpd("Slow"),"1.0"),\+algebraic_atom(199,0,0,set(none),ntSpd("OK"),"0.0"),body_15652(15651,multi).
+body_1513(1505,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Correct").
+dS_NTOK:-algebraic_atom(154,0,0,set(none),dS_NTOK,"0.5"),body_15262(15261,dS_NTOK).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_15438(15437,lclGrbld):-body_2966(2959,lclGrbld).
+dS_NTOK:-algebraic_atom(153,0,0,set(none),dS_NTOK,"0.5"),body_15254(15253,dS_NTOK).
+dS_NTOK:-algebraic_atom(167,0,0,set(none),dS_NTOK,"0.5"),body_15366(15365,dS_NTOK).
+dS_NTOK:-algebraic_atom(165,0,0,set(none),dS_NTOK,"0.5"),body_15350(15349,dS_NTOK).
+dS_NTOK:-algebraic_atom(170,0,0,set(none),dS_NTOK,"0.5"),body_15390(15389,dS_NTOK).
+dS_NTOK:-algebraic_atom(161,0,0,set(none),dS_NTOK,"0.5"),body_15318(15317,dS_NTOK).
+dS_NTOK:-algebraic_atom(159,0,0,set(none),dS_NTOK,"0.2"),body_15302(15301,dS_NTOK).
+body_1528(1520,ntGrbld):-ntwrkCnfg("Correct"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Correct").
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_1644(1636,ntGrbld):-ntwrkCnfg("Correct"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+prtSpool("Enabled"):-algebraic_atom(499,0,0,set(none),prtSpool("Enabled"),"0.95"),body_18186(18185,prtSpool("Enabled")).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_14678(14677,ntGrbld):-body_1599(1592,ntGrbld).
+dS_NTOK:-algebraic_atom(169,0,0,set(none),dS_NTOK,"0.5"),body_15382(15381,dS_NTOK).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_2966(2959,lclGrbld):-cblPrtHrdwrOK("Operational"),prtMem("Less_than_2Mb"),prtDriver,appData("Correct").
+dS_NTOK:-algebraic_atom(152,0,0,set(none),dS_NTOK,"0.5"),body_15246(15245,dS_NTOK).
+body_14702(14701,ntGrbld):-body_1644(1636,ntGrbld).
+dS_NTOK:-algebraic_atom(157,0,0,set(none),dS_NTOK,"0.5"),body_15286(15285,dS_NTOK).
+prtQueue("Long"):-algebraic_atom(494,0,0,set(none),prtQueue("Long"),"0.01"),body_18138(18136,prtQueue("Long")).
+prtPath("Incorrect"):-algebraic_atom(498,0,0,set(none),prtPath("Incorrect"),"0.03"),body_18176(18174,prtPath("Incorrect")).
+body_1557(1550,ntGrbld):-ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Incorrect_or_corrupt").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_14654(14653,ntGrbld):-body_1557(1550,ntGrbld).
+pC2PRT:-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_14662(14661,ntGrbld):-body_1571(1564,ntGrbld).
+dS_NTOK:-algebraic_atom(168,0,0,set(none),dS_NTOK,"0.5"),body_15374(15373,dS_NTOK).
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_14646(14645,ntGrbld):-body_1543(1535,ntGrbld).
+body_14694(14693,ntGrbld):-body_1629(1621,ntGrbld).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_2952(2945,lclGrbld):-cblPrtHrdwrOK("Not_Operational"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Correct").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+drvOK("Corrupt"):-algebraic_atom(492,0,0,set(none),drvOK("Corrupt"),"0.01"),body_18119(18117,drvOK("Corrupt")).
+dS_NTOK:-algebraic_atom(151,0,0,set(none),dS_NTOK,"0.0"),body_15238(15237,dS_NTOK).
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_15430(15429,lclGrbld):-body_2952(2945,lclGrbld).
+dS_NTOK:-algebraic_atom(162,0,0,set(none),dS_NTOK,"0.5"),body_15326(15325,dS_NTOK).
+prtPath("Correct"):-algebraic_atom(497,0,0,set(none),prtPath("Correct"),"0.97"),body_18167(18166,prtPath("Correct")).
+dS_NTOK:-algebraic_atom(160,0,0,set(none),dS_NTOK,"0.5"),body_15310(15309,dS_NTOK).
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_14638(14637,ntGrbld):-body_1528(1520,ntGrbld).
+appOK("Correct"):-algebraic_atom(485,0,0,set(none),appOK("Correct"),"0.995"),body_18053(18052,appOK("Correct")).
+dS_NTOK:-algebraic_atom(156,0,0,set(none),dS_NTOK,"0.5"),body_15278(15277,dS_NTOK).
+dskLocal("Greater_than_2_Mb"):-algebraic_atom(483,0,0,set(none),dskLocal("Greater_than_2_Mb"),"0.97"),body_18034(18033,dskLocal("Greater_than_2_Mb")).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+drvOK("Reinstalled"):-algebraic_atom(491,0,0,set(none),drvOK("Reinstalled"),"0.99"),body_18110(18109,drvOK("Reinstalled")).
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+dataFile("Incorrect_Corrupt"):-algebraic_atom(496,0,0,set(none),dataFile("Incorrect_Corrupt"),"0.005"),body_18157(18155,dataFile("Incorrect_Corrupt")).
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_1659(1651,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_1599(1592,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Less_than_2Mb"),prtDriver,appData("Incorrect_or_corrupt").
+dS_NTOK:-algebraic_atom(166,0,0,set(none),dS_NTOK,"0.5"),body_15358(15357,dS_NTOK).
+pgOrnttnOK("Incorrect"):-algebraic_atom(482,0,0,set(none),pgOrnttnOK("Incorrect"),"0.05"),body_18024(18022,pgOrnttnOK("Incorrect")).
+dskLocal("Less_than_2_Mb"):-algebraic_atom(484,0,0,set(none),dskLocal("Less_than_2_Mb"),"0.03"),body_18043(18041,dskLocal("Less_than_2_Mb")).
+pC2PRT:-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_14670(14669,ntGrbld):-body_1585(1578,ntGrbld).
+dS_NTOK:-algebraic_atom(164,0,0,set(none),dS_NTOK,"0.5"),body_15342(15341,dS_NTOK).
+body_1614(1606,ntGrbld):-ntwrkCnfg("Correct"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+ntwrkCnfg("Incorrect"):-algebraic_atom(488,0,0,set(none),ntwrkCnfg("Incorrect"),"0.02"),body_18081(18079,ntwrkCnfg("Incorrect")).
+prtQueue("Short"):-algebraic_atom(493,0,0,set(none),prtQueue("Short"),"0.99"),body_18129(18128,prtQueue("Short")).
+appOK("Incorrect_Corrupt"):-algebraic_atom(486,0,0,set(none),appOK("Incorrect_Corrupt"),"0.005"),body_18062(18060,appOK("Incorrect_Corrupt")).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_14630(14629,ntGrbld):-body_1513(1505,ntGrbld).
+dataFile("Correct"):-algebraic_atom(495,0,0,set(none),dataFile("Correct"),"0.995"),body_18148(18147,dataFile("Correct")).
+body_1571(1564,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Incorrect_or_corrupt").
+body_1543(1535,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Less_than_2Mb"),\+prtDriver,appData("Correct").
+ntwrkCnfg("Correct"):-algebraic_atom(487,0,0,set(none),ntwrkCnfg("Correct"),"0.98"),body_18072(18071,ntwrkCnfg("Correct")).
+body_14710(14709,ntGrbld):-body_1659(1651,ntGrbld).
+fntInstlltn("Verified"):-algebraic_atom(489,0,0,set(none),fntInstlltn("Verified"),"0.98"),body_18091(18090,fntInstlltn("Verified")).
+pC2PRT:-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+lclGrbld:-cblPrtHrdwrOK("Operational"),prtMem("Greater_than_2_Mb"),prtDriver,appData("Correct").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_14686(14685,ntGrbld):-body_1614(1606,ntGrbld).
+body_1629(1621,ntGrbld):-ntwrkCnfg("Incorrect"),prtMem("Greater_than_2_Mb"),\+prtDriver,appData("Incorrect_or_corrupt").
+dS_NTOK:-algebraic_atom(158,0,0,set(none),dS_NTOK,"0.5"),body_15294(15293,dS_NTOK).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("No__Local_printer_").
+dS_NTOK:-algebraic_atom(163,0,0,set(none),dS_NTOK,"0.5"),body_15334(15333,dS_NTOK).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_1585(1578,ntGrbld):-ntwrkCnfg("Correct"),prtMem("Less_than_2Mb"),prtDriver,appData("Incorrect_or_corrupt").
+pgOrnttnOK("Correct"):-algebraic_atom(481,0,0,set(none),pgOrnttnOK("Correct"),"0.95"),body_18015(18014,pgOrnttnOK("Correct")).
+body_14622(14621,ntGrbld):-body_1498(1490,ntGrbld).
+dSApplctn("Windows"):-algebraic_atom(480,0,0,set(none),dSApplctn("Windows"),"0.85"),body_18005(18003,dSApplctn("Windows")).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+dS_NTOK:-algebraic_atom(155,0,0,set(none),dS_NTOK,"0.5"),body_15270(15269,dS_NTOK).
+fntInstlltn("Faulty"):-algebraic_atom(490,0,0,set(none),fntInstlltn("Faulty"),"0.02"),body_18100(18098,fntInstlltn("Faulty")).
+body_18053(18052,appOK("Correct")):-dec_19.
+body_14196(14195,lclOK):-body_925(919,lclOK).
+body_18062(18060,appOK("Incorrect_Corrupt")):-\+dec_19.
+body_2577(2568,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Correct").
+body_15414(15413,dS_NTOK):-body_2913(2904,dS_NTOK).
+body_18091(18090,fntInstlltn("Verified")):-dec_21.
+body_2897(2888,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_15254(15253,dS_NTOK):-body_2593(2584,dS_NTOK).
+body_2881(2872,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_2641(2632,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Correct").
+body_962(956,lclOK):-cblPrtHrdwrOK("Operational"),\+prtPort,prtCbl("Loose").
+body_975(969,lclOK):-cblPrtHrdwrOK("Not_Operational"),\+prtPort,prtCbl("Loose").
+body_18214(18212,prtThread("Corrupt_Buggy")):-\+dec_27.
+body_18309(18307,drvSet("Incorrect")):-\+dec_32.
+body_15190(15189,dS_NTOK):-body_2465(2456,dS_NTOK).
+body_2609(2600,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Correct").
+body_18148(18147,dataFile("Correct")):-dec_24.
+body_14204(14203,lclOK):-body_937(932,lclOK).
+body_949(944,lclOK):-cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Loose").
+body_15270(15269,dS_NTOK):-body_2625(2616,dS_NTOK).
+body_18319(18318,prtTimeOut("Long_Enough")):-dec_33.
+body_912(906,lclOK):-cblPrtHrdwrOK("Operational"),\+prtPort,prtCbl("Connected").
+body_15222(15221,dS_NTOK):-body_2529(2520,dS_NTOK).
+body_14220(14219,lclOK):-body_962(956,lclOK).
+body_18186(18185,prtSpool("Enabled")):-dec_26.
+body_2513(2504,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Correct").
+body_2561(2552,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Correct").
+body_15246(15245,dS_NTOK):-body_2577(2568,dS_NTOK).
+body_18081(18079,ntwrkCnfg("Incorrect")):-\+dec_20.
+body_899(894,lclOK):-cblPrtHrdwrOK("Not_Operational"),prtPort,prtCbl("Connected").
+body_18138(18136,prtQueue("Long")):-\+dec_23.
+body_18205(18204,prtThread("OK")):-dec_27.
+body_14180(14179,lclOK):-body_899(894,lclOK).
+body_18271(18269,fllCrrptdBffr("Full_or_Corrupt")):-\+dec_30.
+body_15262(15261,dS_NTOK):-body_2609(2600,dS_NTOK).
+body_18290(18288,prtMpTPth("Incorrect")):-\+dec_31.
+body_2625(2616,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Correct").
+body_2497(2488,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Correct").
+body_937(932,lclOK):-cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Loose").
+body_18195(18193,prtSpool("Disabled")):-\+dec_26.
+body_2432(2423,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Correct"),appData("Correct").
+body_18072(18071,ntwrkCnfg("Correct")):-dec_20.
+body_15206(15205,dS_NTOK):-body_2497(2488,dS_NTOK).
+body_18129(18128,prtQueue("Short")):-dec_23.
+body_18176(18174,prtPath("Incorrect")):-\+dec_25.
+body_18281(18280,prtMpTPth("Correct")):-dec_31.
+body_2593(2584,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Correct").
+body_18252(18250,prntngArOK("Incorrect")):-\+dec_29.
+body_14188(14187,lclOK):-body_912(906,lclOK).
+body_18110(18109,drvOK("Reinstalled")):-dec_22.
+body_15182(15181,dS_NTOK):-body_2449(2440,dS_NTOK).
+body_18100(18098,fntInstlltn("Faulty")):-\+dec_21.
+body_15230(15229,dS_NTOK):-body_2545(2536,dS_NTOK).
+body_2929(2920,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_18157(18155,dataFile("Incorrect_Corrupt")):-\+dec_24.
+body_2465(2456,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Correct"),appData("Correct").
+body_15398(15397,dS_NTOK):-body_2881(2872,dS_NTOK).
+body_15238(15237,dS_NTOK):-body_2561(2552,dS_NTOK).
+body_14212(14211,lclOK):-body_949(944,lclOK).
+body_2068(2060,dS_LCLOK):-cblPrtHrdwrOK("Not_Operational"),\+prtPort,prtCbl("Loose"),appData("Incorrect_or_corrupt").
+body_14918(14917,dS_LCLOK):-body_2053(2045,dS_LCLOK).
+body_2865(2856,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_18224(18223,tnrSpply("Adequate")):-dec_28.
+body_2481(2472,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Correct"),appData("Correct").
+body_14926(14925,dS_LCLOK):-body_2068(2060,dS_LCLOK).
+body_18119(18117,drvOK("Corrupt")):-\+dec_22.
+body_15198(15197,dS_NTOK):-body_2481(2472,dS_NTOK).
+body_14172(14171,lclOK):-body_886(881,lclOK).
+body_2913(2904,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_18243(18242,prntngArOK("Correct")):-dec_29.
+body_925(919,lclOK):-cblPrtHrdwrOK("Not_Operational"),\+prtPort,prtCbl("Connected").
+body_15214(15213,dS_NTOK):-body_2513(2504,dS_NTOK).
+body_18300(18299,drvSet("Correct")):-dec_32.
+body_15390(15389,dS_NTOK):-body_2865(2856,dS_NTOK).
+body_886(881,lclOK):-cblPrtHrdwrOK("Operational"),prtPort,prtCbl("Connected").
+body_2545(2536,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Correct").
+body_15422(15421,dS_NTOK):-body_2929(2920,dS_NTOK).
+body_18167(18166,prtPath("Correct")):-dec_25.
+body_15406(15405,dS_NTOK):-body_2897(2888,dS_NTOK).
+body_18262(18261,fllCrrptdBffr("Intact__not_Corrupt_")):-dec_30.
+body_2449(2440,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Correct"),appData("Correct").
+body_15174(15173,dS_NTOK):-body_2432(2423,dS_NTOK).
+body_18233(18231,tnrSpply("Low")):-\+dec_28.
+body_2529(2520,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Correct").
+body_598(595,multi):-dataFile("Correct"),appOK("Correct").
+body_8306(8292,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_13966(13965,multi):-body_598(595,multi).
+body_8180(8166,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_18043(18041,dskLocal("Less_than_2_Mb")):-\+dec_18.
+body_17891(17889,netPrint("Yes__Network_printer_")):-\+dec_10.
+body_17320(17319,prtData):-body_8159(8145,prtData).
+body_17344(17343,prtData):-body_8222(8208,prtData).
+body_17376(17375,prtData):-body_8306(8292,prtData).
+body_8117(8103,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17328(17327,prtData):-body_8180(8166,prtData).
+body_8222(8208,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_8243(8229,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17872(17870,cblPrtHrdwrOK("Not_Operational")):-\+dec_9.
+body_13992(13991,multi):-body_629(626,multi).
+body_17368(17367,prtData):-body_8285(8271,prtData).
+body_8096(8082,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17384(17383,prtData):-body_8327(8313,prtData).
+body_8369(8355,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17939(17938,pTROFFLINE("Online")):-dec_13.
+body_17392(17391,prtData):-body_8348(8334,prtData).
+body_13979(13978,multi):-body_614(611,multi).
+body_629(626,multi):-dataFile("Correct"),appOK("Incorrect_Corrupt").
+body_17863(17862,cblPrtHrdwrOK("Operational")):-dec_9.
+body_17929(17927,ePSGrphc("Yes____EPS_")):-\+dec_12.
+body_17948(17946,pTROFFLINE("Offline")):-\+dec_13.
+body_17352(17351,prtData):-body_8243(8229,prtData).
+body_18024(18022,pgOrnttnOK("Incorrect")):-\+dec_17.
+body_17920(17919,ePSGrphc("No____TIF___WMF___BMP_")):-dec_12.
+body_17336(17335,prtData):-body_8201(8187,prtData).
+body_614(611,multi):-dataFile("Incorrect_Corrupt"),appOK("Correct").
+body_17882(17881,netPrint("No__Local_printer_")):-dec_10.
+body_8159(8145,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17901(17900,prtMem("Greater_than_2_Mb")):-dec_11.
+body_17958(17957,grphcsRltdDrvrSttngs("Correct")):-dec_14.
+body_17288(17287,prtData):-body_8075(8061,prtData).
+body_8348(8334,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17853(17851,prtPaper("No_Paper")):-\+dec_8.
+body_8327(8313,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17910(17908,prtMem("Less_than_2Mb")):-\+dec_11.
+body_17296(17295,prtData):-body_8096(8082,prtData).
+body_18015(18014,pgOrnttnOK("Correct")):-dec_17.
+body_17986(17984,prtCbl("Loose")):-\+dec_15.
+body_17360(17359,prtData):-body_8264(8250,prtData).
+body_8285(8271,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_8201(8187,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Too_Short"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17967(17965,grphcsRltdDrvrSttngs("Incorrect")):-\+dec_14.
+body_17312(17311,prtData):-body_8138(8124,prtData).
+body_17844(17843,prtPaper("Has_Paper")):-dec_8.
+body_17996(17995,dSApplctn("DOS")):-dec_16.
+body_18005(18003,dSApplctn("Windows")):-\+dec_16.
+body_8138(8124,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_18034(18033,dskLocal("Greater_than_2_Mb")):-dec_18.
+body_8264(8250,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Less_than_2Mb"),pC2PRT,prtPaper("Has_Paper"),\+prtOn.
+body_17977(17976,prtCbl("Connected")):-dec_15.
+body_17304(17303,prtData):-body_8117(8103,prtData).
+body_14742(14741,eMFOK):-body_1708(1703,eMFOK).
+body_15928(15927,gDIOUT):-body_3836(3827,gDIOUT).
+body_14116(14115,netOK):-body_802(797,netOK).
+dS_NTOK:-algebraic_atom(150,0,0,set(none),dS_NTOK,"0.5"),body_15230(15229,dS_NTOK).
+body_1684(1679,eMFOK):-prtThread("Corrupt_Buggy"),dskLocal("Greater_than_2_Mb"),appData("Correct").
+body_16560(16559,pC2PRT):-body_6032(6016,pC2PRT).
+body_1696(1691,eMFOK):-prtThread("OK"),dskLocal("Less_than_2_Mb"),appData("Correct").
+body_3568(3563,gDIIN):-eMFOK,prtSpool("Enabled"),appData("Incorrect_or_corrupt").
+body_3606(3600,gDIIN):-\+eMFOK,prtSpool("Disabled"),appData("Incorrect_or_corrupt").
+body_14718(14717,eMFOK):-body_1671(1666,eMFOK).
+body_6032(6016,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+algebraic_atom(142,1,1,set(none),pSERRMEM("Low_Memory"),"0.0"):-algebraic_atom(142,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
+body_1732(1727,eMFOK):-prtThread("Corrupt_Buggy"),dskLocal("Greater_than_2_Mb"),appData("Incorrect_or_corrupt").
+body_15856(15855,gDIOUT):-body_3700(3693,gDIOUT).
+body_16544(16543,pC2PRT):-body_5986(5971,pC2PRT).
+dS_NTOK:-algebraic_atom(149,0,0,set(none),dS_NTOK,"0.5"),body_15222(15221,dS_NTOK).
+body_15896(15895,gDIOUT):-body_3775(3767,gDIOUT).
+body_14124(14123,netOK):-body_814(809,netOK).
+body_14228(14227,lclOK):-body_975(969,lclOK).
+body_14156(14155,netOK):-body_862(857,netOK).
+body_15792(15791,gDIIN):-body_3593(3588,gDIIN).
+body_5986(5971,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_16456(16455,pC2PRT):-body_5520(5505,pC2PRT).
+body_16536(16535,pC2PRT):-body_5964(5947,pC2PRT).
+body_1671(1666,eMFOK):-prtThread("OK"),dskLocal("Greater_than_2_Mb"),appData("Correct").
+gDIIN:-\+eMFOK,prtSpool("Disabled"),appData("Correct").
+body_3657(3650,gDIOUT):-drvOK("Reinstalled"),drvSet("Correct"),gDIIN,prtDriver.
+body_14734(14733,eMFOK):-body_1696(1691,eMFOK).
+body_15784(15783,gDIIN):-body_3581(3575,gDIIN).
+body_3730(3722,gDIOUT):-drvOK("Corrupt"),drvSet("Correct"),\+gDIIN,prtDriver.
+body_5861(5846,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_3543(3537,gDIIN):-\+eMFOK,prtSpool("Enabled"),appData("Correct").
+body_16472(16471,pC2PRT):-body_5656(5640,pC2PRT).
+dS_NTOK:-algebraic_atom(144,0,0,set(none),dS_NTOK,"0.0"),body_15182(15181,dS_NTOK).
+body_15920(15919,gDIOUT):-body_3820(3812,gDIOUT).
+body_5884(5868,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_814(809,netOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtPath("Correct").
+body_3836(3827,gDIOUT):-drvOK("Reinstalled"),drvSet("Correct"),\+gDIIN,\+prtDriver.
+body_16552(16551,pC2PRT):-body_6009(5993,pC2PRT).
+body_14726(14725,eMFOK):-body_1684(1679,eMFOK).
+body_3593(3588,gDIIN):-eMFOK,prtSpool("Disabled"),appData("Incorrect_or_corrupt").
+body_3790(3782,gDIOUT):-drvOK("Corrupt"),drvSet("Correct"),gDIIN,\+prtDriver.
+body_16448(16447,pC2PRT):-body_5498(5484,pC2PRT).
+pSERRMEM("No_Error"):-algebraic_atom(140,0,0,set(none),pSERRMEM("No_Error"),"0.05"),body_15135(15134,multi).
+body_874(869,netOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtPath("Incorrect").
+dS_NTOK:-algebraic_atom(148,0,0,set(none),dS_NTOK,"0.5"),body_15214(15213,dS_NTOK).
+body_15840(15839,gDIOUT):-body_3672(3665,gDIOUT).
+body_15832(15831,gDIOUT):-body_3657(3650,gDIOUT).
+body_16496(16495,pC2PRT):-body_5817(5803,pC2PRT).
+algebraic_atom(139,1,1,set(none),pSERRMEM("Low_Memory"),"0.0"):-algebraic_atom(139,0,0,set(none),pSERRMEM("No_Error"),"1.0").
+body_3745(3737,gDIOUT):-drvOK("Reinstalled"),drvSet("Incorrect"),\+gDIIN,prtDriver.
+algebraic_atom(140,1,1,set(none),pSERRMEM("Low_Memory"),"0.95"):-algebraic_atom(140,0,0,set(none),pSERRMEM("No_Error"),"0.05").
+body_3820(3812,gDIOUT):-drvOK("Corrupt"),drvSet("Incorrect"),gDIIN,\+prtDriver.
+body_6009(5993,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+dS_NTOK:-algebraic_atom(146,0,0,set(none),dS_NTOK,"0.5"),body_15198(15197,dS_NTOK).
+body_14140(14139,netOK):-body_838(833,netOK).
+body_838(833,netOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtPath("Incorrect").
+body_1720(1715,eMFOK):-prtThread("OK"),dskLocal("Greater_than_2_Mb"),appData("Incorrect_or_corrupt").
+body_3775(3767,gDIOUT):-drvOK("Reinstalled"),drvSet("Correct"),gDIIN,\+prtDriver.
+body_16520(16519,pC2PRT):-body_5884(5868,pC2PRT).
+body_14774(14773,eMFOK):-body_1756(1751,eMFOK).
+body_16488(16487,pC2PRT):-body_5796(5780,pC2PRT).
+algebraic_atom(141,1,1,set(none),pSERRMEM("Low_Memory"),"0.0"):-algebraic_atom(141,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
+body_3700(3693,gDIOUT):-drvOK("Corrupt"),drvSet("Incorrect"),gDIIN,prtDriver.
+dS_NTOK:-algebraic_atom(147,0,0,set(none),dS_NTOK,"0.0"),body_15206(15205,dS_NTOK).
+body_14758(14757,eMFOK):-body_1732(1727,eMFOK).
+body_3805(3797,gDIOUT):-drvOK("Reinstalled"),drvSet("Incorrect"),gDIIN,\+prtDriver.
+body_5633(5618,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_15768(15767,gDIIN):-body_3543(3537,gDIIN).
+body_15912(15911,gDIOUT):-body_3805(3797,gDIOUT).
+body_15904(15903,gDIOUT):-body_3790(3782,gDIOUT).
+body_5817(5803,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+algebraic_atom(142,1,1,set(none),pSERRMEM("Low_Memory"),"0.0"):-algebraic_atom(142,0,0,set(none),pSERRMEM("No_Error"),"1.0").
+body_14164(14163,netOK):-body_874(869,netOK).
+body_15880(15879,gDIOUT):-body_3745(3737,gDIOUT).
+body_5520(5505,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_850(845,netOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtPath("Incorrect").
+body_3672(3665,gDIOUT):-drvOK("Corrupt"),drvSet("Correct"),gDIIN,prtDriver.
+body_16512(16511,pC2PRT):-body_5861(5846,pC2PRT).
+pSERRMEM("Low_Memory"):-algebraic_atom(141,1,0,set(none),pSERRMEM("Low_Memory"),"0.0"),\+algebraic_atom(141,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15148(15147,multi).
+body_15776(15775,gDIIN):-body_3568(3563,gDIIN).
+dS_NTOK:-algebraic_atom(145,0,0,set(none),dS_NTOK,"0.1"),body_15190(15189,dS_NTOK).
+body_3581(3575,gDIIN):-\+eMFOK,prtSpool("Enabled"),appData("Incorrect_or_corrupt").
+body_15864(15863,gDIOUT):-body_3715(3707,gDIOUT).
+body_5796(5780,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+gDIIN:-eMFOK,prtSpool("Enabled"),appData("Correct").
+body_14108(14107,netOK):-body_789(784,netOK).
+body_14766(14765,eMFOK):-body_1744(1739,eMFOK).
+body_16528(16527,pC2PRT):-body_5940(5924,pC2PRT).
+algebraic_atom(140,1,1,set(none),pSERRMEM("Low_Memory"),"0.95"):-algebraic_atom(140,1,0,set(none),pSERRMEM("Low_Memory"),"0.95").
+body_5964(5947,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_826(821,netOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtPath("Correct").
+body_1744(1739,eMFOK):-prtThread("OK"),dskLocal("Less_than_2_Mb"),appData("Incorrect_or_corrupt").
+body_5940(5924,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_1756(1751,eMFOK):-prtThread("Corrupt_Buggy"),dskLocal("Less_than_2_Mb"),appData("Incorrect_or_corrupt").
+algebraic_atom(141,1,1,set(none),pSERRMEM("Low_Memory"),"0.0"):-algebraic_atom(141,0,0,set(none),pSERRMEM("No_Error"),"1.0").
+body_15872(15871,gDIOUT):-body_3730(3722,gDIOUT).
+body_5839(5824,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+dS_NTOK:-algebraic_atom(143,0,0,set(none),dS_NTOK,"0.99"),body_15174(15173,dS_NTOK).
+body_3686(3679,gDIOUT):-drvOK("Reinstalled"),drvSet("Incorrect"),gDIIN,prtDriver.
+body_3715(3707,gDIOUT):-drvOK("Reinstalled"),drvSet("Correct"),\+gDIIN,prtDriver.
+pSERRMEM("Low_Memory"):-algebraic_atom(139,1,0,set(none),pSERRMEM("Low_Memory"),"0.0"),\+algebraic_atom(139,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15122(15121,multi).
+body_14132(14131,netOK):-body_826(821,netOK).
+body_15800(15799,gDIIN):-body_3606(3600,gDIIN).
+body_1708(1703,eMFOK):-prtThread("Corrupt_Buggy"),dskLocal("Less_than_2_Mb"),appData("Correct").
+pSERRMEM("No_Error"):-algebraic_atom(141,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15148(15147,multi).
+body_14750(14749,eMFOK):-body_1720(1715,eMFOK).
+algebraic_atom(139,1,1,set(none),pSERRMEM("Low_Memory"),"0.0"):-algebraic_atom(139,1,0,set(none),pSERRMEM("Low_Memory"),"0.0").
+body_3760(3752,gDIOUT):-drvOK("Corrupt"),drvSet("Incorrect"),\+gDIIN,prtDriver.
+body_802(797,netOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtPath("Correct").
+body_15888(15887,gDIOUT):-body_3760(3752,gDIOUT).
+body_789(784,netOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtPath("Correct").
+body_16480(16479,pC2PRT):-body_5773(5758,pC2PRT).
+body_14148(14147,netOK):-body_850(845,netOK).
+body_862(857,netOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtPath("Incorrect").
+pSERRMEM("No_Error"):-algebraic_atom(142,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15161(15160,multi).
+body_16464(16463,pC2PRT):-body_5633(5618,pC2PRT).
+pSERRMEM("Low_Memory"):-algebraic_atom(140,1,0,set(none),pSERRMEM("Low_Memory"),"0.95"),\+algebraic_atom(140,0,0,set(none),pSERRMEM("No_Error"),"0.05"),body_15135(15134,multi).
+gDIIN:-eMFOK,prtSpool("Disabled"),appData("Correct").
+body_16504(16503,pC2PRT):-body_5839(5824,pC2PRT).
+pSERRMEM("Low_Memory"):-algebraic_atom(142,1,0,set(none),pSERRMEM("Low_Memory"),"0.0"),\+algebraic_atom(142,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15161(15160,multi).
+body_5773(5758,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_15848(15847,gDIOUT):-body_3686(3679,gDIOUT).
+body_5656(5640,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("Yes__Network_printer_").
+algebraic_atom(123,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.00099999"):-algebraic_atom(123,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.00099999").
+lclGrbld:-algebraic_atom(178,0,0,set(none),lclGrbld,"0.4"),body_15454(15453,lclGrbld).
+dS_LCLOK:-algebraic_atom(112,0,0,set(none),dS_LCLOK,"0.5"),body_14846(14845,dS_LCLOK).
+tstpsTxt("x_1_Mb_Available_VM2"):-algebraic_atom(123,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.00099999"),\+algebraic_atom(123,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.99900001"),body_14934(14933,multi).
+lclGrbld:-algebraic_atom(176,0,0,set(none),lclGrbld,"0.2"),body_15438(15437,lclGrbld).
+lclGrbld:-algebraic_atom(181,0,0,set(none),lclGrbld,"0.5"),body_15478(15477,lclGrbld).
+dS_LCLOK:-algebraic_atom(111,0,0,set(none),dS_LCLOK,"0.0"),body_14838(14837,dS_LCLOK).
+lclGrbld:-algebraic_atom(185,0,0,set(none),lclGrbld,"0.5"),body_15510(15509,lclGrbld).
+algebraic_atom(123,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.00099999"):-algebraic_atom(123,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.99900001").
+lclGrbld:-algebraic_atom(189,0,0,set(none),lclGrbld,"0.5"),body_15542(15541,lclGrbld).
+incmpltPS:-algebraic_atom(190,0,0,set(none),incmpltPS,"0.3"),body_15550(15549,incmpltPS).
+dS_LCLOK:-algebraic_atom(110,0,0,set(none),dS_LCLOK,"0.5"),body_14830(14829,dS_LCLOK).
+dS_LCLOK:-algebraic_atom(113,0,0,set(none),dS_LCLOK,"0.5"),body_14854(14853,dS_LCLOK).
+lclGrbld:-algebraic_atom(187,0,0,set(none),lclGrbld,"0.5"),body_15526(15525,lclGrbld).
+dS_NTOK:-algebraic_atom(172,0,0,set(none),dS_NTOK,"0.5"),body_15406(15405,dS_NTOK).
+algebraic_atom(124,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.99900001"):-algebraic_atom(124,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.00099999").
+algebraic_atom(124,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.99900001"):-algebraic_atom(124,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.99900001").
+lclGrbld:-algebraic_atom(182,0,0,set(none),lclGrbld,"0.2"),body_15486(15485,lclGrbld).
+tstpsTxt("x_1_Mb_Available_VM"):-algebraic_atom(124,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.00099999"),body_14947(14946,multi).
+dS_LCLOK:-algebraic_atom(120,0,0,set(none),dS_LCLOK,"0.5"),body_14910(14909,dS_LCLOK).
+lclGrbld:-algebraic_atom(184,0,0,set(none),lclGrbld,"0.5"),body_15502(15501,lclGrbld).
+dS_LCLOK:-algebraic_atom(118,0,0,set(none),dS_LCLOK,"0.5"),body_14894(14893,dS_LCLOK).
+lclGrbld:-algebraic_atom(188,0,0,set(none),lclGrbld,"0.5"),body_15534(15533,lclGrbld).
+dS_NTOK:-algebraic_atom(171,0,0,set(none),dS_NTOK,"0.5"),body_15398(15397,dS_NTOK).
+dS_LCLOK:-algebraic_atom(119,0,0,set(none),dS_LCLOK,"0.5"),body_14902(14901,dS_LCLOK).
+dS_LCLOK:-algebraic_atom(122,0,0,set(none),dS_LCLOK,"0.5"),body_14926(14925,dS_LCLOK).
+lclGrbld:-algebraic_atom(186,0,0,set(none),lclGrbld,"0.5"),body_15518(15517,lclGrbld).
+lclGrbld:-algebraic_atom(179,0,0,set(none),lclGrbld,"0.5"),body_15462(15461,lclGrbld).
+tstpsTxt("x_1_Mb_Available_VM"):-algebraic_atom(123,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.99900001"),body_14934(14933,multi).
+dS_LCLOK:-algebraic_atom(114,0,0,set(none),dS_LCLOK,"0.5"),body_14862(14861,dS_LCLOK).
+dS_NTOK:-algebraic_atom(173,0,0,set(none),dS_NTOK,"0.5"),body_15414(15413,dS_NTOK).
+dS_LCLOK:-algebraic_atom(121,0,0,set(none),dS_LCLOK,"0.5"),body_14918(14917,dS_LCLOK).
+dS_NTOK:-algebraic_atom(174,0,0,set(none),dS_NTOK,"0.5"),body_15422(15421,dS_NTOK).
+dS_LCLOK:-algebraic_atom(116,0,0,set(none),dS_LCLOK,"0.5"),body_14878(14877,dS_LCLOK).
+lclGrbld:-algebraic_atom(183,0,0,set(none),lclGrbld,"0.5"),body_15494(15493,lclGrbld).
+lclGrbld:-algebraic_atom(177,0,0,set(none),lclGrbld,"0.5"),body_15446(15445,lclGrbld).
+dS_LCLOK:-algebraic_atom(115,0,0,set(none),dS_LCLOK,"0.1"),body_14870(14869,dS_LCLOK).
+dS_LCLOK:-algebraic_atom(117,0,0,set(none),dS_LCLOK,"0.5"),body_14886(14885,dS_LCLOK).
+lclGrbld:-algebraic_atom(175,0,0,set(none),lclGrbld,"0.1"),body_15430(15429,lclGrbld).
+lclGrbld:-algebraic_atom(180,0,0,set(none),lclGrbld,"0.5"),body_15470(15469,lclGrbld).
+body_4485(4470,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_15382(15381,dS_NTOK):-body_2849(2840,dS_NTOK).
+body_4448(4432,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_2849(2840,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_15366(15365,dS_NTOK):-body_2817(2808,dS_NTOK).
+body_16192(16191,pC2PRT):-body_4485(4470,pC2PRT).
+body_16216(16215,pC2PRT):-body_4668(4651,pC2PRT).
+prtTimeOut("Long_Enough"):-algebraic_atom(513,0,0,set(none),prtTimeOut("Long_Enough"),"0.94"),body_18319(18318,prtTimeOut("Long_Enough")).
+body_2657(2648,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Correct").
+body_16208(16207,pC2PRT):-body_4627(4611,pC2PRT).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_2785(2776,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+prtTimeOut("Too_Short"):-algebraic_atom(514,0,0,set(none),prtTimeOut("Too_Short"),"0.06"),body_18328(18326,prtTimeOut("Too_Short")).
+body_4668(4651,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_2673(2664,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Incorrect"),appData("Correct").
+body_4425(4410,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_4403(4388,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_16160(16159,pC2PRT):-body_4381(4367,pC2PRT).
+body_15310(15309,dS_NTOK):-body_2705(2696,dS_NTOK).
+body_16184(16183,pC2PRT):-body_4448(4432,pC2PRT).
+prtThread("Corrupt_Buggy"):-algebraic_atom(502,0,0,set(none),prtThread("Corrupt_Buggy"),"0.0001"),body_18214(18212,prtThread("Corrupt_Buggy")).
+body_4524(4508,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+tnrSpply("Adequate"):-algebraic_atom(503,0,0,set(none),tnrSpply("Adequate"),"0.995"),body_18224(18223,tnrSpply("Adequate")).
+body_2833(2824,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_15350(15349,dS_NTOK):-body_2785(2776,dS_NTOK).
+body_16200(16199,pC2PRT):-body_4524(4508,pC2PRT).
+body_15286(15285,dS_NTOK):-body_2657(2648,dS_NTOK).
+body_4627(4611,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_2737(2728,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+body_16176(16175,pC2PRT):-body_4425(4410,pC2PRT).
+body_15374(15373,dS_NTOK):-body_2833(2824,dS_NTOK).
+body_16152(16151,pC2PRT):-body_4360(4344,pC2PRT).
+prtMpTPth("Correct"):-algebraic_atom(509,0,0,set(none),prtMpTPth("Correct"),"0.8"),body_18281(18280,prtMpTPth("Correct")).
+body_16144(16143,pC2PRT):-body_4321(4306,pC2PRT).
+fllCrrptdBffr("Intact__not_Corrupt_"):-algebraic_atom(507,0,0,set(none),fllCrrptdBffr("Intact__not_Corrupt_"),"0.85"),body_18262(18261,fllCrrptdBffr("Intact__not_Corrupt_")).
+body_15342(15341,dS_NTOK):-body_2769(2760,dS_NTOK).
+fllCrrptdBffr("Full_or_Corrupt"):-algebraic_atom(508,0,0,set(none),fllCrrptdBffr("Full_or_Corrupt"),"0.15"),body_18271(18269,fllCrrptdBffr("Full_or_Corrupt")).
+body_15278(15277,dS_NTOK):-body_2641(2632,dS_NTOK).
+drvSet("Correct"):-algebraic_atom(511,0,0,set(none),drvSet("Correct"),"0.99"),body_18300(18299,drvSet("Correct")).
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_15358(15357,dS_NTOK):-body_2801(2792,dS_NTOK).
+body_2817(2808,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Incorrect"),appData("Incorrect_or_corrupt").
+body_16168(16167,pC2PRT):-body_4403(4388,pC2PRT).
+body_2801(2792,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Incorrect"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+body_16136(16135,pC2PRT):-body_4224(4209,pC2PRT).
+body_2753(2744,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+body_15294(15293,dS_NTOK):-body_2673(2664,dS_NTOK).
+body_15302(15301,dS_NTOK):-body_2689(2680,dS_NTOK).
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_4224(4209,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+tnrSpply("Low"):-algebraic_atom(504,0,0,set(none),tnrSpply("Low"),"0.005"),body_18233(18231,tnrSpply("Low")).
+body_2705(2696,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+body_4360(4344,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+drvSet("Incorrect"):-algebraic_atom(512,0,0,set(none),drvSet("Incorrect"),"0.01"),body_18309(18307,drvSet("Incorrect")).
+prtThread("OK"):-algebraic_atom(501,0,0,set(none),prtThread("OK"),"0.9999"),body_18205(18204,prtThread("OK")).
+prntngArOK("Correct"):-algebraic_atom(505,0,0,set(none),prntngArOK("Correct"),"0.98"),body_18243(18242,prntngArOK("Correct")).
+prtMpTPth("Incorrect"):-algebraic_atom(510,0,0,set(none),prtMpTPth("Incorrect"),"0.2"),body_18290(18288,prtMpTPth("Incorrect")).
+prntngArOK("Incorrect"):-algebraic_atom(506,0,0,set(none),prntngArOK("Incorrect"),"0.02"),body_18252(18250,prntngArOK("Incorrect")).
+prtSpool("Disabled"):-algebraic_atom(500,0,0,set(none),prtSpool("Disabled"),"0.05"),body_18195(18193,prtSpool("Disabled")).
+body_2721(2712,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Incorrect"),prtMpTPth("Correct"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+body_15334(15333,dS_NTOK):-body_2753(2744,dS_NTOK).
+body_2769(2760,dS_NTOK):-pTROFFLINE("Offline"),ntwrkCnfg("Correct"),prtMpTPth("Incorrect"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+body_4321(4306,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_15326(15325,dS_NTOK):-body_2737(2728,dS_NTOK).
+body_16128(16127,pC2PRT):-body_4187(4173,pC2PRT).
+body_4187(4173,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_15318(15317,dS_NTOK):-body_2721(2712,dS_NTOK).
+body_4381(4367,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_2689(2680,dS_NTOK):-pTROFFLINE("Online"),ntwrkCnfg("Correct"),prtMpTPth("Correct"),prtPath("Correct"),appData("Incorrect_or_corrupt").
+algebraic_atom(131,1,1,set(none),deskPrntSpd("Too_Slow"),"0.75"):-algebraic_atom(131,0,0,set(none),deskPrntSpd("OK"),"0.25").
+algebraic_atom(133,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(133,0,0,set(none),deskPrntSpd("OK"),"0.5").
+deskPrntSpd("Too_Slow"):-algebraic_atom(134,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5"),\+algebraic_atom(134,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15077(15076,multi).
+deskPrntSpd("Too_Slow"):-algebraic_atom(130,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5"),\+algebraic_atom(130,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15025(15024,multi).
+problem5:-algebraic_atom(136,0,0,set(none),problem5,"0.0"),body_15098(15097,problem5).
+pSERRMEM("No_Error"):-algebraic_atom(139,0,0,set(none),pSERRMEM("No_Error"),"1.0"),body_15122(15121,multi).
+algebraic_atom(132,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(132,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+problem5:-algebraic_atom(138,0,0,set(none),problem5,"0.0"),body_15114(15113,problem5).
+algebraic_atom(134,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(134,0,0,set(none),deskPrntSpd("OK"),"0.5").
+deskPrntSpd("OK"):-algebraic_atom(131,0,0,set(none),deskPrntSpd("OK"),"0.25"),body_15038(15037,multi).
+deskPrntSpd("OK"):-algebraic_atom(134,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15077(15076,multi).
+deskPrntSpd("Too_Slow"):-algebraic_atom(133,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5"),\+algebraic_atom(133,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15064(15063,multi).
+problem5:-algebraic_atom(137,0,0,set(none),problem5,"0.0"),body_15106(15105,problem5).
+deskPrntSpd("OK"):-algebraic_atom(132,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15051(15050,multi).
+problem5:-algebraic_atom(135,0,0,set(none),problem5,"0.0"),body_15090(15089,problem5).
+deskPrntSpd("Too_Slow"):-algebraic_atom(131,1,0,set(none),deskPrntSpd("Too_Slow"),"0.75"),\+algebraic_atom(131,0,0,set(none),deskPrntSpd("OK"),"0.25"),body_15038(15037,multi).
+deskPrntSpd("OK"):-algebraic_atom(133,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15064(15063,multi).
+algebraic_atom(134,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(134,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+algebraic_atom(132,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(132,0,0,set(none),deskPrntSpd("OK"),"0.5").
+deskPrntSpd("Too_Slow"):-algebraic_atom(132,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5"),\+algebraic_atom(132,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15051(15050,multi).
+algebraic_atom(131,1,1,set(none),deskPrntSpd("Too_Slow"),"0.75"):-algebraic_atom(131,1,0,set(none),deskPrntSpd("Too_Slow"),"0.75").
+algebraic_atom(133,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(133,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+ntGrbld:-algebraic_atom(84,0,0,set(none),ntGrbld,"0.4"),body_14622(14621,ntGrbld).
+ntGrbld:-algebraic_atom(85,0,0,set(none),ntGrbld,"0.5"),body_14630(14629,ntGrbld).
+problem1("Normal_Output"):-algebraic_atom(462,0,0,set(none),problem1("Normal_Output"),"0.0"),body_17821(17820,multi).
+problem1("Normal_Output"):-algebraic_atom(461,0,0,set(none),problem1("Normal_Output"),"1.0"),body_17808(17807,multi).
+prtStatPaper("Jam__Out__Bin_Full"):-algebraic_atom(79,1,0,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.00099999"),\+algebraic_atom(79,0,0,set(none),prtStatPaper("No_Error"),"0.99900001"),body_14572(14571,multi).
+problem1("No_Output"):-algebraic_atom(461,1,0,set(none),problem1("No_Output"),"0.0"),\+algebraic_atom(461,0,0,set(none),problem1("Normal_Output"),"1.0"),body_17808(17807,multi).
+prtStatOff("OFFLINE__OFF"):-algebraic_atom(78,1,0,set(none),prtStatOff("OFFLINE__OFF"),"0.99000001"),\+algebraic_atom(78,0,0,set(none),prtStatOff("No_Error"),"0.00999999"),body_14559(14558,multi).
+algebraic_atom(461,1,1,set(none),problem1("No_Output"),"0.0"):-algebraic_atom(461,0,0,set(none),problem1("Normal_Output"),"1.0").
+ntGrbld:-algebraic_atom(88,0,0,set(none),ntGrbld,"0.3"),body_14654(14653,ntGrbld).
+prtStatOff("OFFLINE__OFF"):-algebraic_atom(77,1,0,set(none),prtStatOff("OFFLINE__OFF"),"0.00999999"),\+algebraic_atom(77,0,0,set(none),prtStatOff("No_Error"),"0.99000001"),body_14546(14545,multi).
+prtData:-algebraic_atom(457,0,0,set(none),prtData,"0.5"),body_17776(17775,prtData).
+algebraic_atom(461,1,1,set(none),problem1("No_Output"),"0.0"):-algebraic_atom(461,1,0,set(none),problem1("No_Output"),"0.0").
+algebraic_atom(78,1,1,set(none),prtStatOff("OFFLINE__OFF"),"0.99000001"):-algebraic_atom(78,1,0,set(none),prtStatOff("OFFLINE__OFF"),"0.99000001").
+prtData:-algebraic_atom(455,0,0,set(none),prtData,"0.5"),body_17760(17759,prtData).
+prtStatPaper("Jam__Out__Bin_Full"):-algebraic_atom(80,1,0,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.99900001"),\+algebraic_atom(80,0,0,set(none),prtStatPaper("No_Error"),"0.00099999"),body_14585(14584,multi).
+ntGrbld:-algebraic_atom(86,0,0,set(none),ntGrbld,"0.5"),body_14638(14637,ntGrbld).
+prtData:-algebraic_atom(456,0,0,set(none),prtData,"0.5"),body_17768(17767,prtData).
+prtData:-algebraic_atom(459,0,0,set(none),prtData,"0.5"),body_17792(17791,prtData).
+ntGrbld:-algebraic_atom(87,0,0,set(none),ntGrbld,"0.5"),body_14646(14645,ntGrbld).
+ntGrbld:-algebraic_atom(82,0,0,set(none),ntGrbld,"0.2"),body_14606(14605,ntGrbld).
+algebraic_atom(80,1,1,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.99900001"):-algebraic_atom(80,0,0,set(none),prtStatPaper("No_Error"),"0.00099999").
+prtStatPaper("No_Error"):-algebraic_atom(80,0,0,set(none),prtStatPaper("No_Error"),"0.00099999"),body_14585(14584,multi).
+prtData:-algebraic_atom(450,0,0,set(none),prtData,"0.5"),body_17720(17719,prtData).
+prtData:-algebraic_atom(448,0,0,set(none),prtData,"0.5"),body_17704(17703,prtData).
+prtData:-algebraic_atom(460,0,0,set(none),prtData,"0.5"),body_17800(17799,prtData).
+prtData:-algebraic_atom(447,0,0,set(none),prtData,"0.5"),body_17696(17695,prtData).
+prtData:-algebraic_atom(449,0,0,set(none),prtData,"0.5"),body_17712(17711,prtData).
+algebraic_atom(80,1,1,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.99900001"):-algebraic_atom(80,1,0,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.99900001").
+ntGrbld:-algebraic_atom(83,0,0,set(none),ntGrbld,"0.5"),body_14614(14613,ntGrbld).
+prtStatOff("No_Error"):-algebraic_atom(78,0,0,set(none),prtStatOff("No_Error"),"0.00999999"),body_14559(14558,multi).
+prtData:-algebraic_atom(458,0,0,set(none),prtData,"0.5"),body_17784(17783,prtData).
+algebraic_atom(78,1,1,set(none),prtStatOff("OFFLINE__OFF"),"0.99000001"):-algebraic_atom(78,0,0,set(none),prtStatOff("No_Error"),"0.00999999").
+prtData:-algebraic_atom(453,0,0,set(none),prtData,"0.5"),body_17744(17743,prtData).
+prtData:-algebraic_atom(451,0,0,set(none),prtData,"0.5"),body_17728(17727,prtData).
+ntGrbld:-algebraic_atom(81,0,0,set(none),ntGrbld,"0.4"),body_14598(14597,ntGrbld).
+prtData:-algebraic_atom(452,0,0,set(none),prtData,"0.5"),body_17736(17735,prtData).
+prtStatPaper("No_Error"):-algebraic_atom(79,0,0,set(none),prtStatPaper("No_Error"),"0.99900001"),body_14572(14571,multi).
+prtData:-algebraic_atom(454,0,0,set(none),prtData,"0.5"),body_17752(17751,prtData).
+algebraic_atom(79,1,1,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.00099999"):-algebraic_atom(79,0,0,set(none),prtStatPaper("No_Error"),"0.99900001").
+prtData:-algebraic_atom(446,0,0,set(none),prtData,"0.5"),body_17688(17687,prtData).
+algebraic_atom(79,1,1,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.00099999"):-algebraic_atom(79,1,0,set(none),prtStatPaper("Jam__Out__Bin_Full"),"0.00099999").
+prtData:-algebraic_atom(445,0,0,set(none),prtData,"0.5"),body_17680(17679,prtData).
+prtData:-algebraic_atom(382,0,0,set(none),prtData,"0.5"),body_17176(17175,prtData).
+prtData:-algebraic_atom(385,0,0,set(none),prtData,"0.5"),body_17200(17199,prtData).
+prtData:-algebraic_atom(368,0,0,set(none),prtData,"0.5"),body_17064(17063,prtData).
+prtData:-algebraic_atom(384,0,0,set(none),prtData,"0.5"),body_17192(17191,prtData).
+prtData:-algebraic_atom(379,0,0,set(none),prtData,"0.5"),body_17152(17151,prtData).
+prtData:-algebraic_atom(369,0,0,set(none),prtData,"0.5"),body_17072(17071,prtData).
+prtData:-algebraic_atom(377,0,0,set(none),prtData,"0.5"),body_17136(17135,prtData).
+prtData:-algebraic_atom(383,0,0,set(none),prtData,"0.5"),body_17184(17183,prtData).
+prtData:-algebraic_atom(370,0,0,set(none),prtData,"0.5"),body_17080(17079,prtData).
+prtData:-algebraic_atom(376,0,0,set(none),prtData,"0.5"),body_17128(17127,prtData).
+prtData:-algebraic_atom(381,0,0,set(none),prtData,"0.5"),body_17168(17167,prtData).
+prtData:-algebraic_atom(374,0,0,set(none),prtData,"0.5"),body_17112(17111,prtData).
+prtData:-algebraic_atom(367,0,0,set(none),prtData,"0.5"),body_17056(17055,prtData).
+prtData:-algebraic_atom(378,0,0,set(none),prtData,"0.5"),body_17144(17143,prtData).
+prtData:-algebraic_atom(372,0,0,set(none),prtData,"0.5"),body_17096(17095,prtData).
+prtData:-algebraic_atom(380,0,0,set(none),prtData,"0.5"),body_17160(17159,prtData).
+prtData:-algebraic_atom(373,0,0,set(none),prtData,"0.5"),body_17104(17103,prtData).
+prtData:-algebraic_atom(371,0,0,set(none),prtData,"0.5"),body_17088(17087,prtData).
+prtData:-algebraic_atom(375,0,0,set(none),prtData,"0.5"),body_17120(17119,prtData).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_14304(14303,nnTTOK):-body_1068(1062,nnTTOK).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_6392(6375,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+prtStatMem("No_Error"):-algebraic_atom(49,0,0,set(none),prtStatMem("No_Error"),"0.99900001"),body_14262(14261,multi).
+body_6322(6307,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+prtStatMem("Out_of_Memory"):-algebraic_atom(49,1,0,set(none),prtStatMem("Out_of_Memory"),"0.00099999"),\+algebraic_atom(49,0,0,set(none),prtStatMem("No_Error"),"0.99900001"),body_14262(14261,multi).
+body_687(682,tTOK):-prntrAccptsTrtyp,fntInstlltn("Faulty"),prtMem("Greater_than_2_Mb").
+body_6132(6116,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_1131(1125,nnTTOK):-fntInstlltn("Faulty"),\+scrnFntNtPrntrFnt,prtMem("Less_than_2Mb").
+prtIcon("Normal"):-algebraic_atom(60,0,0,set(none),prtIcon("Normal"),"0.7"),body_14365(14364,multi).
+body_6345(6329,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+algebraic_atom(49,1,1,set(none),prtStatMem("Out_of_Memory"),"0.00099999"):-algebraic_atom(49,1,0,set(none),prtStatMem("Out_of_Memory"),"0.00099999").
+body_16672(16671,pC2PRT):-body_6448(6432,pC2PRT).
+prtStatMem("Out_of_Memory"):-algebraic_atom(50,1,0,set(none),prtStatMem("Out_of_Memory"),"0.8"),\+algebraic_atom(50,0,0,set(none),prtStatMem("No_Error"),"0.2"),body_14275(14274,multi).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+prtIcon("Grayed_Out"):-algebraic_atom(59,1,0,set(none),prtIcon("Grayed_Out"),"0.0001"),\+algebraic_atom(59,0,0,set(none),prtIcon("Normal"),"0.9999"),body_14352(14351,multi).
+pC2PRT:-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+nnTTOK:-algebraic_atom(58,0,0,set(none),nnTTOK,"0.5"),body_14344(14343,nnTTOK).
+body_6109(6094,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_16120(16119,prtDataOut):-body_4151(4146,prtDataOut).
+body_16664(16663,pC2PRT):-body_6392(6375,pC2PRT).
+body_675(669,tTOK):-\+prntrAccptsTrtyp,fntInstlltn("Verified"),prtMem("Greater_than_2_Mb").
+body_6368(6352,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+algebraic_atom(59,1,1,set(none),prtIcon("Grayed_Out"),"0.0001"):-algebraic_atom(59,0,0,set(none),prtIcon("Normal"),"0.9999").
+pC2PRT:-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_16584(16583,pC2PRT):-body_6132(6116,pC2PRT).
+body_14336(14335,nnTTOK):-body_1118(1112,nnTTOK).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_6448(6432,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_661(656,tTOK):-prntrAccptsTrtyp,fntInstlltn("Verified"),prtMem("Greater_than_2_Mb").
+body_3868(3859,gDIOUT):-drvOK("Reinstalled"),drvSet("Incorrect"),\+gDIIN,\+prtDriver.
+body_1081(1075,nnTTOK):-fntInstlltn("Faulty"),\+scrnFntNtPrntrFnt,prtMem("Greater_than_2_Mb").
+body_16648(16647,pC2PRT):-body_6345(6329,pC2PRT).
+body_1105(1100,nnTTOK):-fntInstlltn("Faulty"),scrnFntNtPrntrFnt,prtMem("Less_than_2Mb").
+nnTTOK:-algebraic_atom(56,0,0,set(none),nnTTOK,"0.5"),body_14328(14327,nnTTOK).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_1055(1050,nnTTOK):-fntInstlltn("Faulty"),scrnFntNtPrntrFnt,prtMem("Greater_than_2_Mb").
+avlblVrtlMmry("Inadequate____1_Mb_"):-algebraic_atom(48,1,0,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.0"),\+algebraic_atom(48,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"1.0"),body_14249(14248,multi).
+body_6220(6204,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_14288(14287,nnTTOK):-body_1042(1037,nnTTOK).
+body_15952(15951,gDIOUT):-body_3884(3875,gDIOUT).
+body_14026(14025,tTOK):-body_675(669,tTOK).
+body_16576(16575,pC2PRT):-body_6109(6094,pC2PRT).
+body_16624(16623,pC2PRT):-body_6276(6260,pC2PRT).
+body_2363(2360,multi):-avlblVrtlMmry("Adequate____1Mb_"),prtPScript.
+body_1093(1088,nnTTOK):-fntInstlltn("Verified"),scrnFntNtPrntrFnt,prtMem("Less_than_2Mb").
+algebraic_atom(50,1,1,set(none),prtStatMem("Out_of_Memory"),"0.8"):-algebraic_atom(50,1,0,set(none),prtStatMem("Out_of_Memory"),"0.8").
+algebraic_atom(49,1,1,set(none),prtStatMem("Out_of_Memory"),"0.00099999"):-algebraic_atom(49,0,0,set(none),prtStatMem("No_Error"),"0.99900001").
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+nnTTOK:-algebraic_atom(55,0,0,set(none),nnTTOK,"0.5"),body_14320(14319,nnTTOK).
+algebraic_atom(59,1,1,set(none),prtIcon("Grayed_Out"),"0.0001"):-algebraic_atom(59,1,0,set(none),prtIcon("Grayed_Out"),"0.0001").
+body_3884(3875,gDIOUT):-drvOK("Corrupt"),drvSet("Incorrect"),\+gDIIN,\+prtDriver.
+body_14328(14327,nnTTOK):-body_1105(1100,nnTTOK).
+body_16112(16111,prtDataOut):-body_4139(4135,prtDataOut).
+body_6197(6182,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+prtStatMem("No_Error"):-algebraic_atom(50,0,0,set(none),prtStatMem("No_Error"),"0.2"),body_14275(14274,multi).
+body_4139(4135,prtDataOut):-prtSel,\+gDIOUT.
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_16656(16655,pC2PRT):-body_6368(6352,pC2PRT).
+body_3852(3843,gDIOUT):-drvOK("Corrupt"),drvSet("Correct"),\+gDIIN,\+prtDriver.
+body_14320(14319,nnTTOK):-body_1093(1088,nnTTOK).
+nnTTOK:-algebraic_atom(57,0,0,set(none),nnTTOK,"0.5"),body_14336(14335,nnTTOK).
+body_6300(6283,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_15944(15943,gDIOUT):-body_3868(3859,gDIOUT).
+body_6175(6160,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_14344(14343,nnTTOK):-body_1131(1125,nnTTOK).
+prtIcon("Normal"):-algebraic_atom(59,0,0,set(none),prtIcon("Normal"),"0.9999"),body_14352(14351,multi).
+body_4128(4124,prtDataOut):-\+prtSel,gDIOUT.
+body_14296(14295,nnTTOK):-body_1055(1050,nnTTOK).
+body_15936(15935,gDIOUT):-body_3852(3843,gDIOUT).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_16568(16567,pC2PRT):-body_6056(6039,pC2PRT).
+body_15135(15134,multi):-body_2379(2376,multi).
+pC2PRT:-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+nnTTOK:-algebraic_atom(53,0,0,set(none),nnTTOK,"0.1"),body_14304(14303,nnTTOK).
+body_16600(16599,pC2PRT):-body_6175(6160,pC2PRT).
+body_1068(1062,nnTTOK):-fntInstlltn("Verified"),\+scrnFntNtPrntrFnt,prtMem("Greater_than_2_Mb").
+body_4151(4146,prtDataOut):-\+prtSel,\+gDIOUT.
+nnTTOK:-algebraic_atom(51,0,0,set(none),nnTTOK,"0.99000001"),body_14288(14287,nnTTOK).
+body_14312(14311,nnTTOK):-body_1081(1075,nnTTOK).
+body_6276(6260,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_1118(1112,nnTTOK):-fntInstlltn("Verified"),\+scrnFntNtPrntrFnt,prtMem("Less_than_2Mb").
+algebraic_atom(50,1,1,set(none),prtStatMem("Out_of_Memory"),"0.8"):-algebraic_atom(50,0,0,set(none),prtStatMem("No_Error"),"0.2").
+body_4116(4113,prtDataOut):-prtSel,gDIOUT.
+body_16608(16607,pC2PRT):-body_6197(6182,pC2PRT).
+body_15122(15121,multi):-body_2363(2360,multi).
+algebraic_atom(48,1,1,set(none),avlblVrtlMmry("Inadequate____1_Mb_"),"0.0"):-algebraic_atom(48,0,0,set(none),avlblVrtlMmry("Adequate____1Mb_"),"1.0").
+body_1042(1037,nnTTOK):-fntInstlltn("Verified"),scrnFntNtPrntrFnt,prtMem("Greater_than_2_Mb").
+body_16104(16103,prtDataOut):-body_4128(4124,prtDataOut).
+body_6056(6039,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("Yes__Network_printer_").
+body_16096(16095,prtDataOut):-body_4116(4113,prtDataOut).
+body_16592(16591,pC2PRT):-body_6153(6139,pC2PRT).
+body_16640(16639,pC2PRT):-body_6322(6307,pC2PRT).
+body_14018(14017,tTOK):-body_661(656,tTOK).
+body_16632(16631,pC2PRT):-body_6300(6283,pC2PRT).
+body_16616(16615,pC2PRT):-body_6220(6204,pC2PRT).
+nnTTOK:-algebraic_atom(54,0,0,set(none),nnTTOK,"0.5"),body_14312(14311,nnTTOK).
+pC2PRT:-dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,prtDataOut,netPrint("No__Local_printer_").
+body_6153(6139,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+nnTTOK:-algebraic_atom(52,0,0,set(none),nnTTOK,"0.1"),body_14296(14295,nnTTOK).
+prntPrcssTm("Too_Long"):-algebraic_atom(64,1,0,set(none),prntPrcssTm("Too_Long"),"0.0"),\+algebraic_atom(64,0,0,set(none),prntPrcssTm("Fast_Enough"),"1.0"),body_14417(14416,multi).
+body_16312(16311,pC2PRT):-body_5004(4987,pC2PRT).
+algebraic_atom(64,1,1,set(none),prntPrcssTm("Too_Long"),"0.0"):-algebraic_atom(64,1,0,set(none),prntPrcssTm("Too_Long"),"0.0").
+body_5026(5011,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+prtData:-algebraic_atom(432,0,0,set(none),prtData,"0.5"),body_17576(17575,prtData).
+body_16304(16303,pC2PRT):-body_4963(4947,pC2PRT).
+prtData:-algebraic_atom(430,0,0,set(none),prtData,"0.5"),body_17560(17559,prtData).
+dSApplctn("DOS"):-algebraic_atom(479,0,0,set(none),dSApplctn("DOS"),"0.15"),body_17996(17995,dSApplctn("DOS")).
+prtData:-algebraic_atom(435,0,0,set(none),prtData,"0.5"),body_17600(17599,prtData).
+body_16224(16223,pC2PRT):-body_4690(4675,pC2PRT).
+body_16336(16335,pC2PRT):-body_5072(5056,pC2PRT).
+prtData:-algebraic_atom(439,0,0,set(none),prtData,"0.5"),body_17632(17631,prtData).
+prtData:-algebraic_atom(443,0,0,set(none),prtData,"0.5"),body_17664(17663,prtData).
+algebraic_atom(64,1,1,set(none),prntPrcssTm("Too_Long"),"0.0"):-algebraic_atom(64,0,0,set(none),prntPrcssTm("Fast_Enough"),"1.0").
+prtData:-algebraic_atom(444,0,0,set(none),prtData,"0.5"),body_17672(17671,prtData).
+body_16256(16255,pC2PRT):-body_4797(4782,pC2PRT).
+rEPEAT("No__Different_Each_Time_"):-algebraic_atom(65,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.0"),\+algebraic_atom(65,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"1.0"),body_14430(14429,multi).
+body_16328(16327,pC2PRT):-body_5049(5033,pC2PRT).
+body_4736(4720,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_16272(16271,pC2PRT):-body_4857(4843,pC2PRT).
+prtData:-algebraic_atom(441,0,0,set(none),prtData,"0.5"),body_17648(17647,prtData).
+algebraic_atom(60,1,1,set(none),prtIcon("Grayed_Out"),"0.3"):-algebraic_atom(60,0,0,set(none),prtIcon("Normal"),"0.7").
+body_5072(5056,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+pTROFFLINE("Offline"):-algebraic_atom(474,0,0,set(none),pTROFFLINE("Offline"),"0.3"),body_17948(17946,pTROFFLINE("Offline")).
+prtData:-algebraic_atom(436,0,0,set(none),prtData,"0.5"),body_17608(17607,prtData).
+algebraic_atom(65,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.0"):-algebraic_atom(65,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"1.0").
+prtPaper("Has_Paper"):-algebraic_atom(463,0,0,set(none),prtPaper("Has_Paper"),"0.98"),body_17844(17843,prtPaper("Has_Paper")).
+cblPrtHrdwrOK("Not_Operational"):-algebraic_atom(466,0,0,set(none),cblPrtHrdwrOK("Not_Operational"),"0.01"),body_17872(17870,cblPrtHrdwrOK("Not_Operational")).
+body_16296(16295,pC2PRT):-body_4924(4908,pC2PRT).
+prtIcon("Grayed_Out"):-algebraic_atom(62,1,0,set(none),prtIcon("Grayed_Out"),"0.5"),\+algebraic_atom(62,0,0,set(none),prtIcon("Normal"),"0.5"),body_14391(14390,multi).
+prtData:-algebraic_atom(428,0,0,set(none),prtData,"0.5"),body_17544(17543,prtData).
+body_5004(4987,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+problem1("No_Output"):-algebraic_atom(462,1,0,set(none),problem1("No_Output"),"1.0"),\+algebraic_atom(462,0,0,set(none),problem1("Normal_Output"),"0.0"),body_17821(17820,multi).
+prtData:-algebraic_atom(427,0,0,set(none),prtData,"0.5"),body_17536(17535,prtData).
+prtCbl("Loose"):-algebraic_atom(478,0,0,set(none),prtCbl("Loose"),"0.02"),body_17986(17984,prtCbl("Loose")).
+body_4901(4886,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+rEPEAT("Yes__Always_the_Same_"):-algebraic_atom(65,0,0,set(none),rEPEAT("Yes__Always_the_Same_"),"1.0"),body_14430(14429,multi).
+prtData:-algebraic_atom(438,0,0,set(none),prtData,"0.5"),body_17624(17623,prtData).
+algebraic_atom(61,1,1,set(none),prtIcon("Grayed_Out"),"0.75"):-algebraic_atom(61,0,0,set(none),prtIcon("Normal"),"0.25").
+prtData:-algebraic_atom(442,0,0,set(none),prtData,"0.5"),body_17656(17655,prtData).
+algebraic_atom(462,1,1,set(none),problem1("No_Output"),"1.0"):-algebraic_atom(462,1,0,set(none),problem1("No_Output"),"1.0").
+body_16320(16319,pC2PRT):-body_5026(5011,pC2PRT).
+grphcsRltdDrvrSttngs("Incorrect"):-algebraic_atom(476,0,0,set(none),grphcsRltdDrvrSttngs("Incorrect"),"0.05"),body_17967(17965,grphcsRltdDrvrSttngs("Incorrect")).
+algebraic_atom(65,1,1,set(none),rEPEAT("No__Different_Each_Time_"),"0.0"):-algebraic_atom(65,1,0,set(none),rEPEAT("No__Different_Each_Time_"),"0.0").
+prtData:-algebraic_atom(429,0,0,set(none),prtData,"0.5"),body_17552(17551,prtData).
+ePSGrphc("No____TIF___WMF___BMP_"):-algebraic_atom(471,0,0,set(none),ePSGrphc("No____TIF___WMF___BMP_"),"0.99"),body_17920(17919,ePSGrphc("No____TIF___WMF___BMP_")).
+body_5049(5033,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+body_16264(16263,pC2PRT):-body_4836(4820,pC2PRT).
+prtData:-algebraic_atom(426,0,0,set(none),prtData,"0.5"),body_17528(17527,prtData).
+body_4713(4697,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+algebraic_atom(62,1,1,set(none),prtIcon("Grayed_Out"),"0.5"):-algebraic_atom(62,0,0,set(none),prtIcon("Normal"),"0.5").
+prntPrcssTm("Too_Long"):-algebraic_atom(63,1,0,set(none),prntPrcssTm("Too_Long"),"0.00999999"),\+algebraic_atom(63,0,0,set(none),prntPrcssTm("Fast_Enough"),"0.99000001"),body_14404(14403,multi).
+prtData:-algebraic_atom(440,0,0,set(none),prtData,"0.5"),body_17640(17639,prtData).
+prntPrcssTm("Fast_Enough"):-algebraic_atom(63,0,0,set(none),prntPrcssTm("Fast_Enough"),"0.99000001"),body_14404(14403,multi).
+body_4857(4843,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+prtCbl("Connected"):-algebraic_atom(477,0,0,set(none),prtCbl("Connected"),"0.98"),body_17977(17976,prtCbl("Connected")).
+prtMem("Greater_than_2_Mb"):-algebraic_atom(469,0,0,set(none),prtMem("Greater_than_2_Mb"),"0.95"),body_17901(17900,prtMem("Greater_than_2_Mb")).
+prtIcon("Grayed_Out"):-algebraic_atom(60,1,0,set(none),prtIcon("Grayed_Out"),"0.3"),\+algebraic_atom(60,0,0,set(none),prtIcon("Normal"),"0.7"),body_14365(14364,multi).
+body_4760(4743,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+body_4924(4908,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+netPrint("No__Local_printer_"):-algebraic_atom(467,0,0,set(none),netPrint("No__Local_printer_"),"0.8"),body_17882(17881,netPrint("No__Local_printer_")).
+prtData:-algebraic_atom(433,0,0,set(none),prtData,"0.5"),body_17584(17583,prtData).
+grphcsRltdDrvrSttngs("Correct"):-algebraic_atom(475,0,0,set(none),grphcsRltdDrvrSttngs("Correct"),"0.95"),body_17958(17957,grphcsRltdDrvrSttngs("Correct")).
+prntPrcssTm("Fast_Enough"):-algebraic_atom(64,0,0,set(none),prntPrcssTm("Fast_Enough"),"1.0"),body_14417(14416,multi).
+body_4963(4947,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),\+lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+algebraic_atom(63,1,1,set(none),prntPrcssTm("Too_Long"),"0.00999999"):-algebraic_atom(63,0,0,set(none),prntPrcssTm("Fast_Enough"),"0.99000001").
+body_16232(16231,pC2PRT):-body_4713(4697,pC2PRT).
+body_4797(4782,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+prtPaper("No_Paper"):-algebraic_atom(464,0,0,set(none),prtPaper("No_Paper"),"0.02"),body_17853(17851,prtPaper("No_Paper")).
+algebraic_atom(60,1,1,set(none),prtIcon("Grayed_Out"),"0.3"):-algebraic_atom(60,1,0,set(none),prtIcon("Grayed_Out"),"0.3").
+netPrint("Yes__Network_printer_"):-algebraic_atom(468,0,0,set(none),netPrint("Yes__Network_printer_"),"0.2"),body_17891(17889,netPrint("Yes__Network_printer_")).
+body_16248(16247,pC2PRT):-body_4760(4743,pC2PRT).
+prtIcon("Normal"):-algebraic_atom(61,0,0,set(none),prtIcon("Normal"),"0.25"),body_14378(14377,multi).
+pTROFFLINE("Online"):-algebraic_atom(473,0,0,set(none),pTROFFLINE("Online"),"0.7"),body_17939(17938,pTROFFLINE("Online")).
+prtIcon("Normal"):-algebraic_atom(62,0,0,set(none),prtIcon("Normal"),"0.5"),body_14391(14390,multi).
+algebraic_atom(63,1,1,set(none),prntPrcssTm("Too_Long"),"0.00999999"):-algebraic_atom(63,1,0,set(none),prntPrcssTm("Too_Long"),"0.00999999").
+prtData:-algebraic_atom(437,0,0,set(none),prtData,"0.5"),body_17616(17615,prtData).
+algebraic_atom(462,1,1,set(none),problem1("No_Output"),"1.0"):-algebraic_atom(462,0,0,set(none),problem1("Normal_Output"),"0.0").
+body_4879(4864,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+prtData:-algebraic_atom(431,0,0,set(none),prtData,"0.5"),body_17568(17567,prtData).
+prtIcon("Grayed_Out"):-algebraic_atom(61,1,0,set(none),prtIcon("Grayed_Out"),"0.75"),\+algebraic_atom(61,0,0,set(none),prtIcon("Normal"),"0.25"),body_14378(14377,multi).
+body_4836(4820,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,netOK,\+prtDataOut,netPrint("No__Local_printer_").
+prtMem("Less_than_2Mb"):-algebraic_atom(470,0,0,set(none),prtMem("Less_than_2Mb"),"0.05"),body_17910(17908,prtMem("Less_than_2Mb")).
+body_16280(16279,pC2PRT):-body_4879(4864,pC2PRT).
+algebraic_atom(62,1,1,set(none),prtIcon("Grayed_Out"),"0.5"):-algebraic_atom(62,1,0,set(none),prtIcon("Grayed_Out"),"0.5").
+prtData:-algebraic_atom(434,0,0,set(none),prtData,"0.5"),body_17592(17591,prtData).
+cblPrtHrdwrOK("Operational"):-algebraic_atom(465,0,0,set(none),cblPrtHrdwrOK("Operational"),"0.99"),body_17863(17862,cblPrtHrdwrOK("Operational")).
+body_16288(16287,pC2PRT):-body_4901(4886,pC2PRT).
+ePSGrphc("Yes____EPS_"):-algebraic_atom(472,0,0,set(none),ePSGrphc("Yes____EPS_"),"0.01"),body_17929(17927,ePSGrphc("Yes____EPS_")).
+body_4690(4675,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,prtDataOut,netPrint("No__Local_printer_").
+algebraic_atom(61,1,1,set(none),prtIcon("Grayed_Out"),"0.75"):-algebraic_atom(61,1,0,set(none),prtIcon("Grayed_Out"),"0.75").
+body_16240(16239,pC2PRT):-body_4736(4720,pC2PRT).
+algebraic_atom(127,1,1,set(none),deskPrntSpd("Too_Slow"),"0.00099999"):-algebraic_atom(127,0,0,set(none),deskPrntSpd("OK"),"0.99900001").
+algebraic_atom(130,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(130,0,0,set(none),deskPrntSpd("OK"),"0.5").
+algebraic_atom(129,1,1,set(none),deskPrntSpd("Too_Slow"),"0.99900001"):-algebraic_atom(129,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001").
+algebraic_atom(125,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0"):-algebraic_atom(125,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0").
+deskPrntSpd("OK"):-algebraic_atom(130,0,0,set(none),deskPrntSpd("OK"),"0.5"),body_15025(15024,multi).
+algebraic_atom(128,1,1,set(none),deskPrntSpd("Too_Slow"),"0.99900001"):-algebraic_atom(128,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001").
+algebraic_atom(130,1,1,set(none),deskPrntSpd("Too_Slow"),"0.5"):-algebraic_atom(130,1,0,set(none),deskPrntSpd("Too_Slow"),"0.5").
+algebraic_atom(128,1,1,set(none),deskPrntSpd("Too_Slow"),"0.99900001"):-algebraic_atom(128,0,0,set(none),deskPrntSpd("OK"),"0.00099999").
+deskPrntSpd("Too_Slow"):-algebraic_atom(128,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001"),\+algebraic_atom(128,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_14999(14998,multi).
+tstpsTxt("x_1_Mb_Available_VM"):-algebraic_atom(126,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0"),body_14973(14972,multi).
+algebraic_atom(125,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0"):-algebraic_atom(125,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0").
+deskPrntSpd("Too_Slow"):-algebraic_atom(129,1,0,set(none),deskPrntSpd("Too_Slow"),"0.99900001"),\+algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_15012(15011,multi).
+deskPrntSpd("OK"):-algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_15012(15011,multi).
+algebraic_atom(126,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0"):-algebraic_atom(126,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0").
+algebraic_atom(129,1,1,set(none),deskPrntSpd("Too_Slow"),"0.99900001"):-algebraic_atom(129,0,0,set(none),deskPrntSpd("OK"),"0.00099999").
+deskPrntSpd("Too_Slow"):-algebraic_atom(127,1,0,set(none),deskPrntSpd("Too_Slow"),"0.00099999"),\+algebraic_atom(127,0,0,set(none),deskPrntSpd("OK"),"0.99900001"),body_14986(14985,multi).
+deskPrntSpd("OK"):-algebraic_atom(127,0,0,set(none),deskPrntSpd("OK"),"0.99900001"),body_14986(14985,multi).
+tstpsTxt("x_1_Mb_Available_VM2"):-algebraic_atom(125,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0"),\+algebraic_atom(125,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0"),body_14960(14959,multi).
+tstpsTxt("x_1_Mb_Available_VM2"):-algebraic_atom(126,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0"),\+algebraic_atom(126,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0"),body_14973(14972,multi).
+deskPrntSpd("OK"):-algebraic_atom(128,0,0,set(none),deskPrntSpd("OK"),"0.00099999"),body_14999(14998,multi).
+tstpsTxt("x_1_Mb_Available_VM"):-algebraic_atom(125,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"1.0"),body_14960(14959,multi).
+algebraic_atom(126,1,1,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0"):-algebraic_atom(126,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.0").
+tstpsTxt("x_1_Mb_Available_VM2"):-algebraic_atom(124,1,0,set(none),tstpsTxt("x_1_Mb_Available_VM2"),"0.99900001"),\+algebraic_atom(124,0,0,set(none),tstpsTxt("x_1_Mb_Available_VM"),"0.00099999"),body_14947(14946,multi).
+algebraic_atom(127,1,1,set(none),deskPrntSpd("Too_Slow"),"0.00099999"):-algebraic_atom(127,1,0,set(none),deskPrntSpd("Too_Slow"),"0.00099999").
+body_1400(1398,multi):-\+prtOn.
+body_14806(14805,problem4):-body_1841(1833,problem4).
+prtData:-algebraic_atom(421,0,0,set(none),prtData,"0.5"),body_17488(17487,prtData).
+incmpltPS:-avlblVrtlMmry("Adequate____1Mb_"),cmpltPgPrntd.
+body_16680(16679,pC2PRT):-body_6472(6455,pC2PRT).
+body_14782(14781,problem4):-body_1776(1770,problem4).
+body_3931(3926,multi):-ntSpd("OK"),deskPrntSpd("Too_Slow"),netPrint("No__Local_printer_").
+body_6719(6702,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_16808(16807,prtData):-body_6843(6830,prtData).
+body_3896(3891,multi):-ntSpd("OK"),deskPrntSpd("OK"),netPrint("No__Local_printer_").
+prtData:-algebraic_atom(422,0,0,set(none),prtData,"0.5"),body_17496(17495,prtData).
+body_6843(6830,prtData):-tnrSpply("Low"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+prtData:-algebraic_atom(425,0,0,set(none),prtData,"0.5"),body_17520(17519,prtData).
+prtData:-algebraic_atom(342,0,0,set(none),prtData,"0.5"),body_16856(16855,prtData).
+body_6782(6769,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_16784(16783,prtData):-body_6782(6769,prtData).
+body_6695(6678,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_14506(14505,cmpltPgPrntd):-body_1329(1324,cmpltPgPrntd).
+body_15960(15959,multi):-body_3896(3891,multi).
+body_13836(13835,nnPSGrphc):-body_410(405,nnPSGrphc).
+prtData:-algebraic_atom(406,0,0,set(none),prtData,"0.5"),body_17368(17367,prtData).
+prtData:-algebraic_atom(334,0,0,set(none),prtData,"0.01"),body_16792(16791,prtData).
+body_16744(16743,pC2PRT):-body_6695(6678,pC2PRT).
+body_15973(15972,multi):-body_3914(3909,multi).
+pC2PRT:-algebraic_atom(329,0,0,set(none),pC2PRT,"0.0"),body_16752(16751,pC2PRT).
+body_14790(14789,problem4):-body_1812(1805,problem4).
+prtData:-algebraic_atom(424,0,0,set(none),prtData,"0.5"),body_17512(17511,prtData).
+body_470(465,nnPSGrphc):-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
+prtData:-algebraic_atom(345,0,0,set(none),prtData,"0.5"),body_16880(16879,prtData).
+body_446(441,nnPSGrphc):-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Less_than_2Mb").
+body_1377(1372,cmpltPgPrntd):-prntngArOK("Incorrect"),pgOrnttnOK("Incorrect"),prtMem("Less_than_2Mb").
+body_6803(6790,prtData):-tnrSpply("Low"),fllCrrptdBffr("Intact__not_Corrupt_"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_14514(14513,cmpltPgPrntd):-body_1341(1336,cmpltPgPrntd).
+prtFile:-algebraic_atom(332,0,0,set(none),prtFile,"0.2"),body_16776(16775,prtFile).
+prtData:-algebraic_atom(407,0,0,set(none),prtData,"0.5"),body_17376(17375,prtData).
+body_1427(1426,multi):-prtPaper("No_Paper").
+body_16752(16751,pC2PRT):-body_6719(6702,pC2PRT).
+body_14490(14489,cmpltPgPrntd):-body_1305(1300,cmpltPgPrntd).
+prtData:-algebraic_atom(339,0,0,set(none),prtData,"0.5"),body_16832(16831,prtData).
+prtData:-algebraic_atom(344,0,0,set(none),prtData,"0.5"),body_16872(16871,prtData).
+prtData:-algebraic_atom(417,0,0,set(none),prtData,"0.5"),body_17456(17455,prtData).
+body_15986(15985,multi):-body_3931(3926,multi).
+prtData:-algebraic_atom(423,0,0,set(none),prtData,"0.5"),body_17504(17503,prtData).
+body_16720(16719,pC2PRT):-body_6623(6606,pC2PRT).
+body_14482(14481,cmpltPgPrntd):-body_1292(1287,cmpltPgPrntd).
+body_1385(1384,multi):-prtOn.
+prtData:-algebraic_atom(415,0,0,set(none),prtData,"0.5"),body_17440(17439,prtData).
+body_1776(1770,problem4):-\+pSGRAPHIC,prtPScript,nnPSGrphc.
+body_1317(1312,cmpltPgPrntd):-prntngArOK("Correct"),pgOrnttnOK("Incorrect"),prtMem("Greater_than_2_Mb").
+body_6823(6810,prtData):-tnrSpply("Adequate"),fllCrrptdBffr("Full_or_Corrupt"),prtTimeOut("Long_Enough"),prtMem("Greater_than_2_Mb"),pC2PRT,prtPaper("Has_Paper"),prtOn.
+body_1841(1833,problem4):-\+pSGRAPHIC,\+prtPScript,\+nnPSGrphc.
+body_16800(16799,prtData):-body_6823(6810,prtData).
+body_458(453,nnPSGrphc):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Less_than_2Mb").
+body_16792(16791,prtData):-body_6803(6790,prtData).
+body_16760(16759,pC2PRT):-body_6744(6726,pC2PRT).
+prtData:-algebraic_atom(416,0,0,set(none),prtData,"0.5"),body_17448(17447,prtData).
+body_1365(1360,cmpltPgPrntd):-prntngArOK("Correct"),pgOrnttnOK("Incorrect"),prtMem("Less_than_2Mb").
+body_13876(13875,nnPSGrphc):-body_470(465,nnPSGrphc).
+prtData:-algebraic_atom(419,0,0,set(none),prtData,"0.5"),body_17472(17471,prtData).
+body_6648(6630,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_6623(6606,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_14538(14537,cmpltPgPrntd):-body_1377(1372,cmpltPgPrntd).
+prtData:-algebraic_atom(337,0,0,set(none),prtData,"0.0"),body_16816(16815,prtData).
+body_16728(16727,pC2PRT):-body_6648(6630,pC2PRT).
+body_14530(14529,cmpltPgPrntd):-body_1365(1360,cmpltPgPrntd).
+body_3914(3909,multi):-ntSpd("Slow"),deskPrntSpd("OK"),netPrint("No__Local_printer_").
+body_13860(13859,nnPSGrphc):-body_446(441,nnPSGrphc).
+prtData:-algebraic_atom(335,0,0,set(none),prtData,"0.02"),body_16800(16799,prtData).
+body_1341(1336,cmpltPgPrntd):-prntngArOK("Correct"),pgOrnttnOK("Correct"),prtMem("Less_than_2Mb").
+prtData:-algebraic_atom(343,0,0,set(none),prtData,"0.5"),body_16864(16863,prtData).
+body_422(417,nnPSGrphc):-ePSGrphc("Yes____EPS_"),grphcsRltdDrvrSttngs("Incorrect"),prtMem("Greater_than_2_Mb").
+prtData:-algebraic_atom(410,0,0,set(none),prtData,"0.5"),body_17400(17399,prtData).
+body_6472(6455,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("DOS"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_14559(14558,multi):-body_1400(1398,multi).
+pC2PRT:-algebraic_atom(327,0,0,set(none),pC2PRT,"0.0"),body_16736(16735,pC2PRT).
+body_13852(13851,nnPSGrphc):-body_434(429,nnPSGrphc).
+body_16736(16735,pC2PRT):-body_6671(6655,pC2PRT).
+prtFile:-algebraic_atom(331,0,0,set(none),prtFile,"0.8"),body_16768(16767,prtFile).
+prtData:-algebraic_atom(420,0,0,set(none),prtData,"0.5"),body_17480(17479,prtData).
+body_16712(16711,pC2PRT):-body_6564(6547,pC2PRT).
+body_1353(1348,cmpltPgPrntd):-prntngArOK("Incorrect"),pgOrnttnOK("Correct"),prtMem("Less_than_2Mb").
+prtData:-algebraic_atom(336,0,0,set(none),prtData,"0.5"),body_16808(16807,prtData).
+prtData:-algebraic_atom(341,0,0,set(none),prtData,"0.1"),body_16848(16847,prtData).
+pC2PRT:-algebraic_atom(330,0,0,set(none),pC2PRT,"0.0"),body_16760(16759,pC2PRT).
+body_6671(6655,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+prtData:-algebraic_atom(418,0,0,set(none),prtData,"0.5"),body_17464(17463,prtData).
+body_14798(14797,problem4):-body_1826(1819,problem4).
+body_16688(16687,pC2PRT):-body_6494(6479,pC2PRT).
+prtData:-algebraic_atom(413,0,0,set(none),prtData,"0.5"),body_17424(17423,prtData).
+body_14498(14497,cmpltPgPrntd):-body_1317(1312,cmpltPgPrntd).
+pC2PRT:-algebraic_atom(328,0,0,set(none),pC2PRT,"0.0"),body_16744(16743,pC2PRT).
+body_6540(6524,pC2PRT):-dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_434(429,nnPSGrphc):-ePSGrphc("No____TIF___WMF___BMP_"),grphcsRltdDrvrSttngs("Correct"),prtMem("Less_than_2Mb").
+prtData:-algebraic_atom(411,0,0,set(none),prtData,"0.5"),body_17408(17407,prtData).
+body_1826(1819,problem4):-pSGRAPHIC,\+prtPScript,\+nnPSGrphc.
+prtData:-algebraic_atom(338,0,0,set(none),prtData,"0.5"),body_16824(16823,prtData).
+body_6564(6547,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+prtData:-algebraic_atom(340,0,0,set(none),prtData,"0.5"),body_16840(16839,prtData).
+prtData:-algebraic_atom(412,0,0,set(none),prtData,"0.5"),body_17416(17415,prtData).
+body_6744(6726,pC2PRT):-\+dS_LCLOK,\+dS_NTOK,dSApplctn("Windows"),\+lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_1292(1287,cmpltPgPrntd):-prntngArOK("Correct"),pgOrnttnOK("Correct"),prtMem("Greater_than_2_Mb").
+body_13868(13867,nnPSGrphc):-body_458(453,nnPSGrphc).
+body_14522(14521,cmpltPgPrntd):-body_1353(1348,cmpltPgPrntd).
+prtData:-algebraic_atom(414,0,0,set(none),prtData,"0.5"),body_17432(17431,prtData).
+prtData:-algebraic_atom(409,0,0,set(none),prtData,"0.5"),body_17392(17391,prtData).
+body_16696(16695,pC2PRT):-body_6517(6501,pC2PRT).
+prtData:-algebraic_atom(408,0,0,set(none),prtData,"0.5"),body_17384(17383,prtData).
+body_1413(1412,multi):-prtPaper("Has_Paper").
+body_1329(1324,cmpltPgPrntd):-prntngArOK("Incorrect"),pgOrnttnOK("Incorrect"),prtMem("Greater_than_2_Mb").
+body_6517(6501,pC2PRT):-\+dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_14572(14571,multi):-body_1413(1412,multi).
+prtData:-algebraic_atom(333,0,0,set(none),prtData,"0.99"),body_16784(16783,prtData).
+body_14585(14584,multi):-body_1427(1426,multi).
+body_6494(6479,pC2PRT):-dS_LCLOK,dS_NTOK,dSApplctn("Windows"),lclOK,\+netOK,\+prtDataOut,netPrint("Yes__Network_printer_").
+body_16704(16703,pC2PRT):-body_6540(6524,pC2PRT).
+body_13844(13843,nnPSGrphc):-body_422(417,nnPSGrphc).
+body_1305(1300,cmpltPgPrntd):-prntngArOK("Incorrect"),pgOrnttnOK("Correct"),prtMem("Greater_than_2_Mb").

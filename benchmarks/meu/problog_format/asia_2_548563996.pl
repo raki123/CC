@@ -1,93 +1,101 @@
-body_5(4,lung) :- smoke.
-body_15(13,lung) :- \+smoke.
-body_23(22,tub) :- asia.
-body_33(31,tub) :- \+asia.
-body_41(40,bronc) :- smoke.
-body_51(49,bronc) :- \+smoke.
-either :- lung, tub.
-either :- lung, \+tub.
-either :- \+lung, tub.
-body_78(73,either) :- \+lung, \+tub.
-body_86(85,xray) :- either.
-body_96(94,xray) :- \+either.
-body_106(103,dysp) :- bronc, either.
-body_118(114,dysp) :- bronc, \+either.
-body_129(125,dysp) :- \+bronc, either.
-body_141(136,dysp) :- \+bronc, \+either.
-query(either).
-query(asia).
-query(tub).
-query(dysp).
-query(bronc).
-query(lung).
-query(xray).
-query(smoke).
-utility(util_node(0),-7).
-utility(\+(util_node(0)),-30).
-util_node(0) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, \+smoke.
-util_node(0) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, \+smoke.
-util_node(0) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, smoke.
-util_node(0) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(0) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-utility(util_node(1),46).
-utility(\+(util_node(1)),9).
-util_node(1) :- \+either, \+asia, \+tub, \+dysp, bronc, \+lung, \+xray, smoke.
-util_node(1) :- \+either, \+asia, \+tub, dysp, \+bronc, \+lung, \+xray, smoke.
-util_node(1) :- \+either, \+asia, \+tub, \+dysp, bronc, \+lung, \+xray, \+smoke.
-util_node(1) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(1) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, \+smoke.
-utility(util_node(2),12).
-utility(\+(util_node(2)),34).
-util_node(2) :- \+either, \+asia, \+tub, dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(2) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, smoke.
-util_node(2) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, smoke.
-util_node(2) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, \+smoke.
-util_node(2) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, smoke.
-utility(util_node(3),-14).
-utility(\+(util_node(3)),7).
-util_node(3) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, smoke.
-util_node(3) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(3) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(3) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, smoke.
-util_node(3) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, \+xray, smoke.
-utility(util_node(4),49).
-utility(\+(util_node(4)),6).
-util_node(4) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(4) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(4) :- \+either, \+asia, \+tub, dysp, bronc, \+lung, xray, smoke.
-util_node(4) :- \+either, \+asia, \+tub, \+dysp, \+bronc, \+lung, \+xray, \+smoke.
-util_node(4) :- either, asia, tub, dysp, \+bronc, \+lung, xray, \+smoke.
-body_665(664,lung) :- body_5(4,lung).
-body_673(672,lung) :- body_15(13,lung).
-body_681(680,tub) :- body_23(22,tub).
-body_689(688,tub) :- body_33(31,tub).
-body_697(696,bronc) :- body_41(40,bronc).
-body_705(704,bronc) :- body_51(49,bronc).
-body_713(712,either) :- body_78(73,either).
-body_721(720,xray) :- body_86(85,xray).
-body_729(728,xray) :- body_96(94,xray).
-body_737(736,dysp) :- body_106(103,dysp).
-body_745(744,dysp) :- body_118(114,dysp).
-body_753(752,dysp) :- body_129(125,dysp).
-body_761(760,dysp) :- body_141(136,dysp).
+?::dec_3.
+?::dec_2.
 ?::asia.
 ?::smoke.
-?::dec_2.
-body_773(772,tub) :- dec_2.
-?::dec_3.
-body_783(782,bronc) :- dec_3.
-0.1::lung :- body_665(664,lung).
-0.01::lung :- body_673(672,lung).
-0.05::tub :- body_681(680,tub).
-0.01::tub :- body_689(688,tub).
-0.6::bronc :- body_697(696,bronc).
-0.3::bronc :- body_705(704,bronc).
-0.0::either :- body_713(712,either).
-0.98::xray :- body_721(720,xray).
-0.05::xray :- body_729(728,xray).
-0.9::dysp :- body_737(736,dysp).
-0.8::dysp :- body_745(744,dysp).
-0.7::dysp :- body_753(752,dysp).
-0.1::dysp :- body_761(760,dysp).
-0.01::tub :- body_773(772,tub).
-0.6::bronc :- body_783(782,bronc).
+0.4::algebraic_atom(0,0,0,set(none),lung,"0.1").
+0.4::algebraic_atom(1,0,0,set(none),lung,"0.01").
+0.4::algebraic_atom(2,0,0,set(none),tub,"0.05").
+0.4::algebraic_atom(3,0,0,set(none),tub,"0.01").
+0.4::algebraic_atom(4,0,0,set(none),bronc,"0.6").
+0.4::algebraic_atom(5,0,0,set(none),bronc,"0.3").
+0.4::algebraic_atom(6,0,0,set(none),either,"0.0").
+0.4::algebraic_atom(7,0,0,set(none),xray,"0.98").
+0.4::algebraic_atom(8,0,0,set(none),xray,"0.05").
+0.4::algebraic_atom(9,0,0,set(none),dysp,"0.9").
+0.4::algebraic_atom(10,0,0,set(none),dysp,"0.8").
+0.4::algebraic_atom(11,0,0,set(none),dysp,"0.7").
+0.4::algebraic_atom(12,0,0,set(none),dysp,"0.1").
+0.4::algebraic_atom(13,0,0,set(none),tub,"0.01").
+0.4::algebraic_atom(14,0,0,set(none),bronc,"0.6").
+utility(util_node(0), -7).
+utility(\+util_node(0), -30).
+utility(util_node(1), 46).
+utility(\+util_node(1), 9).
+utility(util_node(2), 12).
+utility(\+util_node(2), 34).
+utility(util_node(3), -14).
+utility(\+util_node(3), 7).
+utility(util_node(4), 49).
+utility(\+util_node(4), 6).
+body_721(720,xray):-body_86(85,xray).
+util_node(2):-\+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+body_681(680,tub):-body_23(22,tub).
+body_673(672,lung):-body_15(13,lung).
+body_737(736,dysp):-body_106(103,dysp).
+util_node(0):-\+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+bronc:-algebraic_atom(4,0,0,set(none),bronc,"0.6"),body_697(696,bronc).
+xray:-algebraic_atom(8,0,0,set(none),xray,"0.05"),body_729(728,xray).
+body_23(22,tub):-asia.
+either:-\+tub,lung.
+util_node(3):-smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+body_86(85,xray):-either.
+util_node(2):-\+smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
+body_129(125,dysp):-either,\+bronc.
+body_773(772,tub):-dec_2.
+util_node(3):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+body_41(40,bronc):-smoke.
+body_761(760,dysp):-body_141(136,dysp).
+util_node(0):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+lung:-algebraic_atom(1,0,0,set(none),lung,"0.01"),body_673(672,lung).
+tub:-algebraic_atom(3,0,0,set(none),tub,"0.01"),body_689(688,tub).
+body_783(782,bronc):-dec_3.
+body_78(73,either):-\+tub,\+lung.
+body_141(136,dysp):-\+either,\+bronc.
+either:-tub,\+lung.
+util_node(4):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+bronc:-algebraic_atom(5,0,0,set(none),bronc,"0.3"),body_705(704,bronc).
+util_node(2):-smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+dysp:-algebraic_atom(9,0,0,set(none),dysp,"0.9"),body_737(736,dysp).
+body_689(688,tub):-body_33(31,tub).
+util_node(3):-smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+either:-algebraic_atom(6,0,0,set(none),either,"0.0"),body_713(712,either).
+dysp:-algebraic_atom(12,0,0,set(none),dysp,"0.1"),body_761(760,dysp).
+body_753(752,dysp):-body_129(125,dysp).
+util_node(0):-smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+body_51(49,bronc):-\+smoke.
+tub:-algebraic_atom(2,0,0,set(none),tub,"0.05"),body_681(680,tub).
+util_node(3):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+xray:-algebraic_atom(7,0,0,set(none),xray,"0.98"),body_721(720,xray).
+dysp:-algebraic_atom(10,0,0,set(none),dysp,"0.8"),body_745(744,dysp).
+body_713(712,either):-body_78(73,either).
+util_node(3):-smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+body_15(13,lung):-\+smoke.
+util_node(1):-smoke,\+xray,\+lung,\+bronc,dysp,\+tub,\+asia,\+either.
+body_96(94,xray):-\+either.
+lung:-algebraic_atom(0,0,0,set(none),lung,"0.1"),body_665(664,lung).
+true.
+util_node(1):-smoke,\+xray,\+lung,bronc,\+dysp,\+tub,\+asia,\+either.
+either:-tub,lung.
+util_node(1):-\+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+util_node(2):-smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+util_node(1):-\+smoke,\+xray,\+lung,bronc,\+dysp,\+tub,\+asia,\+either.
+bronc:-algebraic_atom(14,0,0,set(none),bronc,"0.6"),body_783(782,bronc).
+util_node(4):-\+smoke,xray,\+lung,\+bronc,dysp,tub,asia,either.
+body_33(31,tub):-\+asia.
+body_665(664,lung):-body_5(4,lung).
+body_118(114,dysp):-\+either,bronc.
+body_745(744,dysp):-body_118(114,dysp).
+dysp:-algebraic_atom(11,0,0,set(none),dysp,"0.7"),body_753(752,dysp).
+body_697(696,bronc):-body_41(40,bronc).
+body_729(728,xray):-body_96(94,xray).
+body_705(704,bronc):-body_51(49,bronc).
+util_node(1):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+util_node(4):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+util_node(2):-smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+util_node(0):-\+smoke,\+xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+body_5(4,lung):-smoke.
+util_node(4):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+util_node(0):-\+smoke,\+xray,\+lung,\+bronc,\+dysp,\+tub,\+asia,\+either.
+body_106(103,dysp):-either,bronc.
+util_node(4):-smoke,xray,\+lung,bronc,dysp,\+tub,\+asia,\+either.
+tub:-algebraic_atom(13,0,0,set(none),tub,"0.01"),body_773(772,tub).

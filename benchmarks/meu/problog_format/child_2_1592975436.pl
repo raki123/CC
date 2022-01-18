@@ -1,465 +1,1365 @@
-body_3(2,multi) :- birthAsphyxia.
-body_38(36,multi) :- \+birthAsphyxia.
-body_71(70,multi) :- disease("PFC").
-body_90(89,multi) :- disease("TGA").
-body_108(107,multi) :- disease("Fallot").
-body_126(125,multi) :- disease("PAIVS").
-body_144(143,multi) :- disease("TAPVD").
-body_162(161,multi) :- disease("Lung").
-body_180(179,lVH) :- disease("PFC").
-body_189(188,lVH) :- disease("TGA").
-body_197(196,lVH) :- disease("Fallot").
-body_205(204,lVH) :- disease("PAIVS").
-body_213(212,lVH) :- disease("TAPVD").
-body_221(220,lVH) :- disease("Lung").
-body_229(228,multi) :- disease("PFC").
-body_253(252,multi) :- disease("TGA").
-body_276(275,multi) :- disease("Fallot").
-body_299(298,multi) :- disease("PAIVS").
-body_322(321,multi) :- disease("TAPVD").
-body_345(344,multi) :- disease("Lung").
-body_368(367,sick) :- disease("PFC").
-body_377(376,sick) :- disease("TGA").
-body_385(384,sick) :- disease("Fallot").
-body_393(392,sick) :- disease("PAIVS").
-body_401(400,sick) :- disease("TAPVD").
-body_409(408,sick) :- disease("Lung").
-body_417(416,multi) :- disease("PFC").
-body_436(435,multi) :- disease("TGA").
-body_454(453,multi) :- disease("Fallot").
-body_472(471,multi) :- disease("PAIVS").
-body_490(489,multi) :- disease("TAPVD").
-body_508(507,multi) :- disease("Lung").
-body_526(525,multi) :- disease("PFC").
-body_545(544,multi) :- disease("TGA").
-body_563(562,multi) :- disease("Fallot").
-body_581(580,multi) :- disease("PAIVS").
-body_599(598,multi) :- disease("TAPVD").
-body_617(616,multi) :- disease("Lung").
-body_635(634,lVHreport) :- lVH.
-body_645(643,lVHreport) :- \+lVH.
-body_655(652,multi) :- disease("PFC"), sick.
-body_677(673,multi) :- disease("PFC"), \+sick.
-body_697(694,multi) :- disease("TGA"), sick.
-body_718(714,multi) :- disease("TGA"), \+sick.
-body_738(735,multi) :- disease("Fallot"), sick.
-body_759(755,multi) :- disease("Fallot"), \+sick.
-body_779(776,multi) :- disease("PAIVS"), sick.
-body_800(796,multi) :- disease("PAIVS"), \+sick.
-body_820(817,multi) :- disease("TAPVD"), sick.
-body_841(837,multi) :- disease("TAPVD"), \+sick.
-body_861(858,multi) :- disease("Lung"), sick.
-body_882(878,multi) :- disease("Lung"), \+sick.
-body_900(899,multi) :- lungParench("Normal").
-body_919(918,multi) :- lungParench("Congested").
-body_937(936,multi) :- lungParench("Abnormal").
-body_957(954,grunting) :- lungParench("Normal"), sick.
-body_969(965,grunting) :- lungParench("Normal"), \+sick.
-body_979(976,grunting) :- lungParench("Congested"), sick.
-body_990(986,grunting) :- lungParench("Congested"), \+sick.
-body_1000(997,grunting) :- lungParench("Abnormal"), sick.
-body_1011(1007,grunting) :- lungParench("Abnormal"), \+sick.
-body_1021(1018,multi) :- cardiacMixing("None"), lungParench("Normal").
-body_1042(1039,multi) :- cardiacMixing("None"), lungParench("Congested").
-body_1062(1059,multi) :- cardiacMixing("None"), lungParench("Abnormal").
-body_1082(1079,multi) :- cardiacMixing("Mild"), lungParench("Normal").
-body_1102(1099,multi) :- cardiacMixing("Mild"), lungParench("Congested").
-body_1122(1119,multi) :- cardiacMixing("Mild"), lungParench("Abnormal").
-body_1142(1139,multi) :- cardiacMixing("Complete"), lungParench("Normal").
-body_1162(1159,multi) :- cardiacMixing("Complete"), lungParench("Congested").
-body_1182(1179,multi) :- cardiacMixing("Complete"), lungParench("Abnormal").
-body_1202(1199,multi) :- cardiacMixing("Transp."), lungParench("Normal").
-body_1222(1219,multi) :- cardiacMixing("Transp."), lungParench("Congested").
-body_1242(1239,multi) :- cardiacMixing("Transp."), lungParench("Abnormal").
-body_1262(1259,multi) :- lungParench("Normal"), lungFlow("Normal").
-body_1293(1290,multi) :- lungParench("Normal"), lungFlow("Low").
-body_1323(1320,multi) :- lungParench("Normal"), lungFlow("High").
-body_1353(1350,multi) :- lungParench("Congested"), lungFlow("Normal").
-body_1383(1380,multi) :- lungParench("Congested"), lungFlow("Low").
-body_1413(1410,multi) :- lungParench("Congested"), lungFlow("High").
-body_1443(1440,multi) :- lungParench("Abnormal"), lungFlow("Normal").
-body_1473(1470,multi) :- lungParench("Abnormal"), lungFlow("Low").
-body_1503(1500,multi) :- lungParench("Abnormal"), lungFlow("High").
-body_1533(1530,multi) :- ductFlow("Lt_to_Rt"), cardiacMixing("None").
-body_1549(1546,multi) :- ductFlow("Lt_to_Rt"), cardiacMixing("Mild").
-body_1564(1561,multi) :- ductFlow("Lt_to_Rt"), cardiacMixing("Complete").
-body_1579(1576,multi) :- ductFlow("Lt_to_Rt"), cardiacMixing("Transp.").
-body_1594(1591,multi) :- ductFlow("None"), cardiacMixing("None").
-body_1609(1606,multi) :- ductFlow("None"), cardiacMixing("Mild").
-body_1624(1621,multi) :- ductFlow("None"), cardiacMixing("Complete").
-body_1639(1636,multi) :- ductFlow("None"), cardiacMixing("Transp.").
-body_1654(1651,multi) :- ductFlow("Rt_to_Lt"), cardiacMixing("None").
-body_1669(1666,multi) :- ductFlow("Rt_to_Lt"), cardiacMixing("Mild").
-body_1684(1681,multi) :- ductFlow("Rt_to_Lt"), cardiacMixing("Complete").
-body_1699(1696,multi) :- ductFlow("Rt_to_Lt"), cardiacMixing("Transp.").
-body_1712(1711,multi) :- chestXray("Normal").
-body_1741(1740,multi) :- chestXray("Oligaemic").
-body_1769(1768,multi) :- chestXray("Plethoric").
-body_1797(1796,multi) :- chestXray("Grd_Glass").
-body_1825(1824,multi) :- chestXray("Asy/Patch").
-body_1853(1852,gruntingReport) :- grunting.
-body_1863(1861,gruntingReport) :- \+grunting.
-body_1871(1870,multi) :- cO2("Normal").
-body_1885(1884,multi) :- cO2("Low").
-body_1898(1897,multi) :- cO2("High").
-body_1911(1910,multi) :- hypoxiaInO2("Mild").
-body_1930(1929,multi) :- hypoxiaInO2("Moderate").
-body_1948(1947,multi) :- hypoxiaInO2("Severe").
-body_1968(1965,multi) :- hypDistrib("Equal"), hypoxiaInO2("Mild").
-body_1989(1986,multi) :- hypDistrib("Equal"), hypoxiaInO2("Moderate").
-body_2009(2006,multi) :- hypDistrib("Equal"), hypoxiaInO2("Severe").
-body_2029(2026,multi) :- hypDistrib("Unequal"), hypoxiaInO2("Mild").
-body_2049(2046,multi) :- hypDistrib("Unequal"), hypoxiaInO2("Moderate").
-body_2069(2066,multi) :- hypDistrib("Unequal"), hypoxiaInO2("Severe").
-query(cardiacMixing("Mild")).
-query(chestXray("Plethoric")).
-query(disease("TAPVD")).
-query(disease("PFC")).
-query(birthAsphyxia).
-query(rUQO2("<5")).
-query(disease("Lung")).
-query(lungFlow("Normal")).
-query(ductFlow("Lt_to_Rt")).
-query(ductFlow("None")).
-query(gruntingReport).
-query(cardiacMixing("Complete")).
-query(cardiacMixing("None")).
-query(disease("Fallot")).
-query(lungFlow("High")).
-query(lungFlow("Low")).
-query(sick).
-query(rUQO2("12+")).
-query(lungParench("Normal")).
-query(hypoxiaInO2("Moderate")).
-query(xrayReport("Asy/Patchy")).
-query(lowerBodyO2("12+")).
-query(chestXray("Asy/Patch")).
-query(lVH).
-query(cO2Report("<7.5")).
-query(hypDistrib("Equal")).
-query(lowerBodyO2("5-12")).
-query(age("4-10_days")).
-query(cO2("Normal")).
-query(grunting).
-query(xrayReport("Normal")).
-query(cardiacMixing("Transp.")).
-query(lVHreport).
-query(disease("TGA")).
-query(age("11-30_days")).
-query(hypDistrib("Unequal")).
-query(chestXray("Normal")).
-query(disease("PAIVS")).
-query(cO2Report(">=7.5")).
-query(ductFlow("Rt_to_Lt")).
-query(rUQO2("5-12")).
-query(lungParench("Abnormal")).
-query(lungParench("Congested")).
-query(chestXray("Oligaemic")).
-query(hypoxiaInO2("Severe")).
-query(xrayReport("Oligaemic")).
-query(xrayReport("Plethoric")).
-query(xrayReport("Grd_Glass")).
-query(hypoxiaInO2("Mild")).
-query(chestXray("Grd_Glass")).
-query(cO2("Low")).
-query(lowerBodyO2("<5")).
-query(cO2("High")).
-query(age("0-3_days")).
-utility(util_node(0),-35).
-utility(\+(util_node(0)),15).
-util_node(0) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(0) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), disease("PFC"), birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), gruntingReport, \+cardiacMixing("Complete"), cardiacMixing("None"), \+disease("Fallot"), \+lungFlow("High"), \+lungFlow("Low"), \+sick, \+rUQO2("12+"), \+lungParench("Normal"), \+hypoxiaInO2("Moderate"), xrayReport("Asy/Patchy"), lowerBodyO2("12+"), chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), \+cO2("Normal"), grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), cO2("High"), age("0-3_days").
-util_node(0) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), \+lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), age("4-10_days"), \+cO2("Normal"), \+grunting, xrayReport("Normal"), \+cardiacMixing("Transp."), lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(0) :- \+cardiacMixing("Mild"), chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), sick, rUQO2("12+"), lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), cardiacMixing("Transp."), \+lVHreport, disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(0) :- \+cardiacMixing("Mild"), chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), cardiacMixing("Transp."), lVHreport, disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-utility(util_node(1),-18).
-utility(\+(util_node(1)),22).
-util_node(1) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), \+lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(1) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), lVH, \+cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), disease("PAIVS"), cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(1) :- cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), disease("Lung"), lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), ductFlow("None"), gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), \+lungFlow("High"), \+lungFlow("Low"), sick, \+rUQO2("12+"), \+lungParench("Normal"), \+hypoxiaInO2("Moderate"), xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), chestXray("Asy/Patch"), \+lVH, \+cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), \+cO2("Normal"), grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), cO2("High"), age("0-3_days").
-util_node(1) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), \+ductFlow("None"), gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), \+lungFlow("High"), \+lungFlow("Low"), sick, rUQO2("12+"), \+lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), age("4-10_days"), cO2("Normal"), grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(1) :- cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), disease("Lung"), lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), \+lungFlow("High"), \+lungFlow("Low"), sick, \+rUQO2("12+"), \+lungParench("Normal"), \+hypoxiaInO2("Moderate"), xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), chestXray("Asy/Patch"), \+lVH, \+cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), \+cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), cO2("High"), age("0-3_days").
-utility(util_node(2),-37).
-utility(\+(util_node(2)),-37).
-util_node(2) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(2) :- \+cardiacMixing("Mild"), chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), lVHreport, \+disease("TGA"), age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(2) :- cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), chestXray("Oligaemic"), hypoxiaInO2("Severe"), xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(2) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, \+cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), \+cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), cO2("High"), age("0-3_days").
-util_node(2) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), \+sick, \+rUQO2("12+"), \+lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, \+cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), \+cO2("Normal"), \+grunting, \+xrayReport("Normal"), cardiacMixing("Transp."), \+lVHreport, disease("TGA"), age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), cO2("High"), \+age("0-3_days").
-utility(util_node(3),49).
-utility(\+(util_node(3)),-3).
-util_node(3) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), lVH, \+cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, xrayReport("Normal"), \+cardiacMixing("Transp."), lVHreport, \+disease("TGA"), age("11-30_days"), \+hypDistrib("Unequal"), chestXray("Normal"), \+disease("PAIVS"), cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(3) :- cardiacMixing("Mild"), chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), \+sick, rUQO2("12+"), lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(3) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(3) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), disease("TAPVD"), \+disease("PFC"), birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), sick, \+rUQO2("12+"), \+lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(3) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), chestXray("Oligaemic"), hypoxiaInO2("Severe"), xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-utility(util_node(4),25).
-utility(\+(util_node(4)),4).
-util_node(4) :- \+cardiacMixing("Mild"), chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), \+hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), \+age("0-3_days").
-util_node(4) :- \+cardiacMixing("Mild"), \+chestXray("Plethoric"), disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), \+lungFlow("High"), lungFlow("Low"), sick, \+rUQO2("12+"), \+lungParench("Normal"), \+hypoxiaInO2("Moderate"), xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), chestXray("Asy/Patch"), \+lVH, \+cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), \+cO2("Normal"), grunting, \+xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), lowerBodyO2("<5"), cO2("High"), age("0-3_days").
-util_node(4) :- \+cardiacMixing("Mild"), chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, \+rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), lowerBodyO2("12+"), \+chestXray("Asy/Patch"), lVH, cO2Report("<7.5"), hypDistrib("Equal"), \+lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), cardiacMixing("Transp."), lVHreport, disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(4) :- \+cardiacMixing("Mild"), chestXray("Plethoric"), disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), ductFlow("Lt_to_Rt"), \+ductFlow("None"), \+gruntingReport, cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), sick, \+rUQO2("12+"), \+lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, xrayReport("Normal"), \+cardiacMixing("Transp."), \+lVHreport, \+disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), \+xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-util_node(4) :- \+cardiacMixing("Mild"), chestXray("Plethoric"), \+disease("TAPVD"), \+disease("PFC"), \+birthAsphyxia, rUQO2("<5"), \+disease("Lung"), \+lungFlow("Normal"), \+ductFlow("Lt_to_Rt"), ductFlow("None"), \+gruntingReport, \+cardiacMixing("Complete"), \+cardiacMixing("None"), \+disease("Fallot"), lungFlow("High"), \+lungFlow("Low"), \+sick, \+rUQO2("12+"), lungParench("Normal"), \+hypoxiaInO2("Moderate"), \+xrayReport("Asy/Patchy"), \+lowerBodyO2("12+"), \+chestXray("Asy/Patch"), \+lVH, cO2Report("<7.5"), hypDistrib("Equal"), lowerBodyO2("5-12"), \+age("4-10_days"), cO2("Normal"), \+grunting, \+xrayReport("Normal"), cardiacMixing("Transp."), \+lVHreport, disease("TGA"), \+age("11-30_days"), \+hypDistrib("Unequal"), \+chestXray("Normal"), \+disease("PAIVS"), \+cO2Report(">=7.5"), \+ductFlow("Rt_to_Lt"), \+rUQO2("5-12"), \+lungParench("Abnormal"), \+lungParench("Congested"), \+chestXray("Oligaemic"), hypoxiaInO2("Severe"), \+xrayReport("Oligaemic"), xrayReport("Plethoric"), \+xrayReport("Grd_Glass"), \+hypoxiaInO2("Mild"), \+chestXray("Grd_Glass"), \+cO2("Low"), \+lowerBodyO2("<5"), \+cO2("High"), age("0-3_days").
-body_4219(4218,multi) :- body_3(2,multi).
-body_4252(4251,multi) :- body_38(36,multi).
-body_4285(4284,multi) :- body_71(70,multi).
-body_4303(4302,multi) :- body_90(89,multi).
-body_4321(4320,multi) :- body_108(107,multi).
-body_4339(4338,multi) :- body_126(125,multi).
-body_4357(4356,multi) :- body_144(143,multi).
-body_4375(4374,multi) :- body_162(161,multi).
-body_4393(4392,lVH) :- body_180(179,lVH).
-body_4401(4400,lVH) :- body_189(188,lVH).
-body_4409(4408,lVH) :- body_197(196,lVH).
-body_4417(4416,lVH) :- body_205(204,lVH).
-body_4425(4424,lVH) :- body_213(212,lVH).
-body_4433(4432,lVH) :- body_221(220,lVH).
-body_4441(4440,multi) :- body_229(228,multi).
-body_4464(4463,multi) :- body_253(252,multi).
-body_4487(4486,multi) :- body_276(275,multi).
-body_4510(4509,multi) :- body_299(298,multi).
-body_4533(4532,multi) :- body_322(321,multi).
-body_4556(4555,multi) :- body_345(344,multi).
-body_4579(4578,sick) :- body_368(367,sick).
-body_4587(4586,sick) :- body_377(376,sick).
-body_4595(4594,sick) :- body_385(384,sick).
-body_4603(4602,sick) :- body_393(392,sick).
-body_4611(4610,sick) :- body_401(400,sick).
-body_4619(4618,sick) :- body_409(408,sick).
-body_4627(4626,multi) :- body_417(416,multi).
-body_4645(4644,multi) :- body_436(435,multi).
-body_4663(4662,multi) :- body_454(453,multi).
-body_4681(4680,multi) :- body_472(471,multi).
-body_4699(4698,multi) :- body_490(489,multi).
-body_4717(4716,multi) :- body_508(507,multi).
-body_4735(4734,multi) :- body_526(525,multi).
-body_4753(4752,multi) :- body_545(544,multi).
-body_4771(4770,multi) :- body_563(562,multi).
-body_4789(4788,multi) :- body_581(580,multi).
-body_4807(4806,multi) :- body_599(598,multi).
-body_4825(4824,multi) :- body_617(616,multi).
-body_4843(4842,lVHreport) :- body_635(634,lVHreport).
-body_4851(4850,lVHreport) :- body_645(643,lVHreport).
-body_4859(4858,multi) :- body_655(652,multi).
-body_4877(4876,multi) :- body_677(673,multi).
-body_4895(4894,multi) :- body_697(694,multi).
-body_4913(4912,multi) :- body_718(714,multi).
-body_4931(4930,multi) :- body_738(735,multi).
-body_4949(4948,multi) :- body_759(755,multi).
-body_4967(4966,multi) :- body_779(776,multi).
-body_4985(4984,multi) :- body_800(796,multi).
-body_5003(5002,multi) :- body_820(817,multi).
-body_5021(5020,multi) :- body_841(837,multi).
-body_5039(5038,multi) :- body_861(858,multi).
-body_5057(5056,multi) :- body_882(878,multi).
-body_5075(5074,multi) :- body_900(899,multi).
-body_5093(5092,multi) :- body_919(918,multi).
-body_5111(5110,multi) :- body_937(936,multi).
-body_5129(5128,grunting) :- body_957(954,grunting).
-body_5137(5136,grunting) :- body_969(965,grunting).
-body_5145(5144,grunting) :- body_979(976,grunting).
-body_5153(5152,grunting) :- body_990(986,grunting).
-body_5161(5160,grunting) :- body_1000(997,grunting).
-body_5169(5168,grunting) :- body_1011(1007,grunting).
-body_5177(5176,multi) :- body_1021(1018,multi).
-body_5195(5194,multi) :- body_1042(1039,multi).
-body_5213(5212,multi) :- body_1062(1059,multi).
-body_5231(5230,multi) :- body_1082(1079,multi).
-body_5249(5248,multi) :- body_1102(1099,multi).
-body_5267(5266,multi) :- body_1122(1119,multi).
-body_5285(5284,multi) :- body_1142(1139,multi).
-body_5303(5302,multi) :- body_1162(1159,multi).
-body_5321(5320,multi) :- body_1182(1179,multi).
-body_5339(5338,multi) :- body_1202(1199,multi).
-body_5357(5356,multi) :- body_1222(1219,multi).
-body_5375(5374,multi) :- body_1242(1239,multi).
-body_5393(5392,multi) :- body_1262(1259,multi).
-body_5421(5420,multi) :- body_1293(1290,multi).
-body_5449(5448,multi) :- body_1323(1320,multi).
-body_5477(5476,multi) :- body_1353(1350,multi).
-body_5505(5504,multi) :- body_1383(1380,multi).
-body_5533(5532,multi) :- body_1413(1410,multi).
-body_5561(5560,multi) :- body_1443(1440,multi).
-body_5589(5588,multi) :- body_1473(1470,multi).
-body_5617(5616,multi) :- body_1503(1500,multi).
-body_5645(5644,multi) :- body_1533(1530,multi).
-body_5658(5657,multi) :- body_1549(1546,multi).
-body_5671(5670,multi) :- body_1564(1561,multi).
-body_5684(5683,multi) :- body_1579(1576,multi).
-body_5697(5696,multi) :- body_1594(1591,multi).
-body_5710(5709,multi) :- body_1609(1606,multi).
-body_5723(5722,multi) :- body_1624(1621,multi).
-body_5736(5735,multi) :- body_1639(1636,multi).
-body_5749(5748,multi) :- body_1654(1651,multi).
-body_5762(5761,multi) :- body_1669(1666,multi).
-body_5775(5774,multi) :- body_1684(1681,multi).
-body_5788(5787,multi) :- body_1699(1696,multi).
-body_5801(5800,multi) :- body_1712(1711,multi).
-body_5829(5828,multi) :- body_1741(1740,multi).
-body_5857(5856,multi) :- body_1769(1768,multi).
-body_5885(5884,multi) :- body_1797(1796,multi).
-body_5913(5912,multi) :- body_1825(1824,multi).
-body_5941(5940,gruntingReport) :- body_1853(1852,gruntingReport).
-body_5949(5948,gruntingReport) :- body_1863(1861,gruntingReport).
-body_5957(5956,multi) :- body_1871(1870,multi).
-body_5970(5969,multi) :- body_1885(1884,multi).
-body_5983(5982,multi) :- body_1898(1897,multi).
-body_5996(5995,multi) :- body_1911(1910,multi).
-body_6014(6013,multi) :- body_1930(1929,multi).
-body_6032(6031,multi) :- body_1948(1947,multi).
-body_6050(6049,multi) :- body_1968(1965,multi).
-body_6068(6067,multi) :- body_1989(1986,multi).
-body_6086(6085,multi) :- body_2009(2006,multi).
-body_6104(6103,multi) :- body_2029(2026,multi).
-body_6122(6121,multi) :- body_2049(2046,multi).
-body_6140(6139,multi) :- body_2069(2066,multi).
-?::birthAsphyxia.
-?::dec_1.
-body_6161(6160,disease("PAIVS")) :- dec_1.
-?::dec_2.
-body_6171(6170,lungParench("Normal")) :- dec_2.
-?::dec_3.
-body_6181(6180,lVH) :- dec_3.
-?::dec_4.
-body_6191(6190,ductFlow("Rt_to_Lt")) :- dec_4.
-?::dec_5.
-body_6201(6200,hypoxiaInO2("Mild")) :- dec_5.
-?::dec_6.
-body_6211(6210,hypoxiaInO2("Severe")) :- dec_6.
-?::dec_7.
-body_6221(6220,hypoxiaInO2("Moderate")) :- dec_7.
-?::dec_8.
-body_6231(6230,hypDistrib("Unequal")) :- dec_8.
-?::dec_9.
-body_6241(6240,xrayReport("Grd_Glass")) :- dec_9.
-?::dec_10.
-body_6251(6250,lowerBodyO2("5-12")) :- dec_10.
-?::dec_11.
-body_6261(6260,lowerBodyO2("5-12")) :- dec_11.
 ?::dec_12.
-body_6271(6270,lowerBodyO2("5-12")) :- dec_12.
-0.2::disease("PFC"); 0.3::disease("TGA"); 0.25::disease("Fallot"); 0.15::disease("PAIVS"); 0.05::disease("TAPVD"); 0.05::disease("Lung") :- body_4219(4218,multi).
-0.03061224::disease("PFC"); 0.33673469::disease("TGA"); 0.29591837::disease("Fallot"); 0.23469388::disease("PAIVS"); 0.05102041::disease("TAPVD"); 0.05102041::disease("Lung") :- body_4252(4251,multi).
-0.6::lungParench("Normal"); 0.1::lungParench("Congested"); 0.3::lungParench("Abnormal") :- body_4285(4284,multi).
-0.8::lungParench("Normal"); 0.05::lungParench("Congested"); 0.15::lungParench("Abnormal") :- body_4303(4302,multi).
-0.8::lungParench("Normal"); 0.05::lungParench("Congested"); 0.15::lungParench("Abnormal") :- body_4321(4320,multi).
-0.8::lungParench("Normal"); 0.05::lungParench("Congested"); 0.15::lungParench("Abnormal") :- body_4339(4338,multi).
-0.1::lungParench("Normal"); 0.6::lungParench("Congested"); 0.3::lungParench("Abnormal") :- body_4357(4356,multi).
-0.03::lungParench("Normal"); 0.25::lungParench("Congested"); 0.72::lungParench("Abnormal") :- body_4375(4374,multi).
-0.1::lVH :- body_4393(4392,lVH).
-0.1::lVH :- body_4401(4400,lVH).
-0.1::lVH :- body_4409(4408,lVH).
-0.9::lVH :- body_4417(4416,lVH).
-0.05::lVH :- body_4425(4424,lVH).
-0.1::lVH :- body_4433(4432,lVH).
-0.4::cardiacMixing("None"); 0.43::cardiacMixing("Mild"); 0.15::cardiacMixing("Complete"); 0.02::cardiacMixing("Transp.") :- body_4441(4440,multi).
-0.02::cardiacMixing("None"); 0.09::cardiacMixing("Mild"); 0.09::cardiacMixing("Complete"); 0.8::cardiacMixing("Transp.") :- body_4464(4463,multi).
-0.02::cardiacMixing("None"); 0.16::cardiacMixing("Mild"); 0.8::cardiacMixing("Complete"); 0.02::cardiacMixing("Transp.") :- body_4487(4486,multi).
-0.01::cardiacMixing("None"); 0.02::cardiacMixing("Mild"); 0.95::cardiacMixing("Complete"); 0.02::cardiacMixing("Transp.") :- body_4510(4509,multi).
-0.01::cardiacMixing("None"); 0.03::cardiacMixing("Mild"); 0.95::cardiacMixing("Complete"); 0.01::cardiacMixing("Transp.") :- body_4533(4532,multi).
-0.4::cardiacMixing("None"); 0.53::cardiacMixing("Mild"); 0.05::cardiacMixing("Complete"); 0.02::cardiacMixing("Transp.") :- body_4556(4555,multi).
-0.4::sick :- body_4579(4578,sick).
-0.3::sick :- body_4587(4586,sick).
-0.2::sick :- body_4595(4594,sick).
-0.3::sick :- body_4603(4602,sick).
-0.7::sick :- body_4611(4610,sick).
-0.7::sick :- body_4619(4618,sick).
-0.3::lungFlow("Normal"); 0.65::lungFlow("Low"); 0.05::lungFlow("High") :- body_4627(4626,multi).
-0.2::lungFlow("Normal"); 0.05::lungFlow("Low"); 0.75::lungFlow("High") :- body_4645(4644,multi).
-0.15::lungFlow("Normal"); 0.8::lungFlow("Low"); 0.05::lungFlow("High") :- body_4663(4662,multi).
-0.1::lungFlow("Normal"); 0.85::lungFlow("Low"); 0.05::lungFlow("High") :- body_4681(4680,multi).
-0.3::lungFlow("Normal"); 0.1::lungFlow("Low"); 0.6::lungFlow("High") :- body_4699(4698,multi).
-0.7::lungFlow("Normal"); 0.1::lungFlow("Low"); 0.2::lungFlow("High") :- body_4717(4716,multi).
-0.15::ductFlow("Lt_to_Rt"); 0.05::ductFlow("None"); 0.8::ductFlow("Rt_to_Lt") :- body_4735(4734,multi).
-0.1::ductFlow("Lt_to_Rt"); 0.8::ductFlow("None"); 0.1::ductFlow("Rt_to_Lt") :- body_4753(4752,multi).
-0.8::ductFlow("Lt_to_Rt"); 0.2::ductFlow("None"); 0.0::ductFlow("Rt_to_Lt") :- body_4771(4770,multi).
-1.0::ductFlow("Lt_to_Rt"); 0.0::ductFlow("None"); 0.0::ductFlow("Rt_to_Lt") :- body_4789(4788,multi).
-0.33::ductFlow("Lt_to_Rt"); 0.33::ductFlow("None"); 0.34::ductFlow("Rt_to_Lt") :- body_4807(4806,multi).
-0.2::ductFlow("Lt_to_Rt"); 0.4::ductFlow("None"); 0.4::ductFlow("Rt_to_Lt") :- body_4825(4824,multi).
-0.9::lVHreport :- body_4843(4842,lVHreport).
-0.05::lVHreport :- body_4851(4850,lVHreport).
-0.95::age("0-3_days"); 0.03::age("4-10_days"); 0.02::age("11-30_days") :- body_4859(4858,multi).
-0.85::age("0-3_days"); 0.1::age("4-10_days"); 0.05::age("11-30_days") :- body_4877(4876,multi).
-0.8::age("0-3_days"); 0.15::age("4-10_days"); 0.05::age("11-30_days") :- body_4895(4894,multi).
-0.7::age("0-3_days"); 0.2::age("4-10_days"); 0.1::age("11-30_days") :- body_4913(4912,multi).
-0.7::age("0-3_days"); 0.15::age("4-10_days"); 0.15::age("11-30_days") :- body_4931(4930,multi).
-0.25::age("0-3_days"); 0.25::age("4-10_days"); 0.5::age("11-30_days") :- body_4949(4948,multi).
-0.8::age("0-3_days"); 0.15::age("4-10_days"); 0.05::age("11-30_days") :- body_4967(4966,multi).
-0.8::age("0-3_days"); 0.15::age("4-10_days"); 0.05::age("11-30_days") :- body_4985(4984,multi).
-0.8::age("0-3_days"); 0.15::age("4-10_days"); 0.05::age("11-30_days") :- body_5003(5002,multi).
-0.7::age("0-3_days"); 0.2::age("4-10_days"); 0.1::age("11-30_days") :- body_5021(5020,multi).
-0.9::age("0-3_days"); 0.08::age("4-10_days"); 0.02::age("11-30_days") :- body_5039(5038,multi).
-0.8::age("0-3_days"); 0.15::age("4-10_days"); 0.05::age("11-30_days") :- body_5057(5056,multi).
-0.8::cO2("Normal"); 0.1::cO2("Low"); 0.1::cO2("High") :- body_5075(5074,multi).
-0.65::cO2("Normal"); 0.05::cO2("Low"); 0.3::cO2("High") :- body_5093(5092,multi).
-0.45::cO2("Normal"); 0.05::cO2("Low"); 0.5::cO2("High") :- body_5111(5110,multi).
-0.2::grunting :- body_5129(5128,grunting).
-0.05::grunting :- body_5137(5136,grunting).
-0.4::grunting :- body_5145(5144,grunting).
-0.2::grunting :- body_5153(5152,grunting).
-0.8::grunting :- body_5161(5160,grunting).
-0.6::grunting :- body_5169(5168,grunting).
-0.93::hypoxiaInO2("Mild"); 0.05::hypoxiaInO2("Moderate"); 0.02::hypoxiaInO2("Severe") :- body_5177(5176,multi).
-0.15::hypoxiaInO2("Mild"); 0.8::hypoxiaInO2("Moderate"); 0.05::hypoxiaInO2("Severe") :- body_5195(5194,multi).
-0.7::hypoxiaInO2("Mild"); 0.2::hypoxiaInO2("Moderate"); 0.1::hypoxiaInO2("Severe") :- body_5213(5212,multi).
-0.1::hypoxiaInO2("Mild"); 0.8::hypoxiaInO2("Moderate"); 0.1::hypoxiaInO2("Severe") :- body_5231(5230,multi).
-0.1::hypoxiaInO2("Mild"); 0.75::hypoxiaInO2("Moderate"); 0.15::hypoxiaInO2("Severe") :- body_5249(5248,multi).
-0.1::hypoxiaInO2("Mild"); 0.65::hypoxiaInO2("Moderate"); 0.25::hypoxiaInO2("Severe") :- body_5267(5266,multi).
-0.1::hypoxiaInO2("Mild"); 0.7::hypoxiaInO2("Moderate"); 0.2::hypoxiaInO2("Severe") :- body_5285(5284,multi).
-0.05::hypoxiaInO2("Mild"); 0.65::hypoxiaInO2("Moderate"); 0.3::hypoxiaInO2("Severe") :- body_5303(5302,multi).
-0.1::hypoxiaInO2("Mild"); 0.5::hypoxiaInO2("Moderate"); 0.4::hypoxiaInO2("Severe") :- body_5321(5320,multi).
-0.02::hypoxiaInO2("Mild"); 0.18::hypoxiaInO2("Moderate"); 0.8::hypoxiaInO2("Severe") :- body_5339(5338,multi).
-0.1::hypoxiaInO2("Mild"); 0.3::hypoxiaInO2("Moderate"); 0.6::hypoxiaInO2("Severe") :- body_5357(5356,multi).
-0.02::hypoxiaInO2("Mild"); 0.18::hypoxiaInO2("Moderate"); 0.8::hypoxiaInO2("Severe") :- body_5375(5374,multi).
-0.9::chestXray("Normal"); 0.03::chestXray("Oligaemic"); 0.03::chestXray("Plethoric"); 0.01::chestXray("Grd_Glass"); 0.03::chestXray("Asy/Patch") :- body_5393(5392,multi).
-0.14::chestXray("Normal"); 0.8::chestXray("Oligaemic"); 0.02::chestXray("Plethoric"); 0.02::chestXray("Grd_Glass"); 0.02::chestXray("Asy/Patch") :- body_5421(5420,multi).
-0.15::chestXray("Normal"); 0.01::chestXray("Oligaemic"); 0.79::chestXray("Plethoric"); 0.04::chestXray("Grd_Glass"); 0.01::chestXray("Asy/Patch") :- body_5449(5448,multi).
-0.05::chestXray("Normal"); 0.02::chestXray("Oligaemic"); 0.15::chestXray("Plethoric"); 0.7::chestXray("Grd_Glass"); 0.08::chestXray("Asy/Patch") :- body_5477(5476,multi).
-0.05::chestXray("Normal"); 0.22::chestXray("Oligaemic"); 0.08::chestXray("Plethoric"); 0.5::chestXray("Grd_Glass"); 0.15::chestXray("Asy/Patch") :- body_5505(5504,multi).
-0.05::chestXray("Normal"); 0.02::chestXray("Oligaemic"); 0.4::chestXray("Plethoric"); 0.4::chestXray("Grd_Glass"); 0.13::chestXray("Asy/Patch") :- body_5533(5532,multi).
-0.05::chestXray("Normal"); 0.05::chestXray("Oligaemic"); 0.05::chestXray("Plethoric"); 0.05::chestXray("Grd_Glass"); 0.8::chestXray("Asy/Patch") :- body_5561(5560,multi).
-0.05::chestXray("Normal"); 0.15::chestXray("Oligaemic"); 0.05::chestXray("Plethoric"); 0.05::chestXray("Grd_Glass"); 0.7::chestXray("Asy/Patch") :- body_5589(5588,multi).
-0.24::chestXray("Normal"); 0.33::chestXray("Oligaemic"); 0.03::chestXray("Plethoric"); 0.34::chestXray("Grd_Glass"); 0.06::chestXray("Asy/Patch") :- body_5617(5616,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5645(5644,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5658(5657,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5671(5670,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5684(5683,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5697(5696,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5710(5709,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5723(5722,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5736(5735,multi).
-0.05::hypDistrib("Equal"); 0.95::hypDistrib("Unequal") :- body_5749(5748,multi).
-0.5::hypDistrib("Equal"); 0.5::hypDistrib("Unequal") :- body_5762(5761,multi).
-0.95::hypDistrib("Equal"); 0.05::hypDistrib("Unequal") :- body_5775(5774,multi).
-0.5::hypDistrib("Equal"); 0.5::hypDistrib("Unequal") :- body_5788(5787,multi).
-0.8::xrayReport("Normal"); 0.06::xrayReport("Oligaemic"); 0.06::xrayReport("Plethoric"); 0.02::xrayReport("Grd_Glass"); 0.06::xrayReport("Asy/Patchy") :- body_5801(5800,multi).
-0.1::xrayReport("Normal"); 0.8::xrayReport("Oligaemic"); 0.02::xrayReport("Plethoric"); 0.02::xrayReport("Grd_Glass"); 0.06::xrayReport("Asy/Patchy") :- body_5829(5828,multi).
-0.1::xrayReport("Normal"); 0.02::xrayReport("Oligaemic"); 0.8::xrayReport("Plethoric"); 0.02::xrayReport("Grd_Glass"); 0.06::xrayReport("Asy/Patchy") :- body_5857(5856,multi).
-0.08::xrayReport("Normal"); 0.02::xrayReport("Oligaemic"); 0.1::xrayReport("Plethoric"); 0.6::xrayReport("Grd_Glass"); 0.2::xrayReport("Asy/Patchy") :- body_5885(5884,multi).
-0.08::xrayReport("Normal"); 0.02::xrayReport("Oligaemic"); 0.1::xrayReport("Plethoric"); 0.1::xrayReport("Grd_Glass"); 0.7::xrayReport("Asy/Patchy") :- body_5913(5912,multi).
-0.8::gruntingReport :- body_5941(5940,gruntingReport).
-0.1::gruntingReport :- body_5949(5948,gruntingReport).
-0.9::cO2Report("<7.5"); 0.1::cO2Report(">=7.5") :- body_5957(5956,multi).
-0.9::cO2Report("<7.5"); 0.1::cO2Report(">=7.5") :- body_5970(5969,multi).
-0.1::cO2Report("<7.5"); 0.9::cO2Report(">=7.5") :- body_5983(5982,multi).
-0.1::rUQO2("<5"); 0.3::rUQO2("5-12"); 0.6::rUQO2("12+") :- body_5996(5995,multi).
-0.3::rUQO2("<5"); 0.6::rUQO2("5-12"); 0.1::rUQO2("12+") :- body_6014(6013,multi).
-0.5::rUQO2("<5"); 0.4::rUQO2("5-12"); 0.1::rUQO2("12+") :- body_6032(6031,multi).
-0.1::lowerBodyO2("<5"); 0.3::lowerBodyO2("5-12"); 0.6::lowerBodyO2("12+") :- body_6050(6049,multi).
-0.3::lowerBodyO2("<5"); 0.6::lowerBodyO2("5-12"); 0.1::lowerBodyO2("12+") :- body_6068(6067,multi).
-0.5::lowerBodyO2("<5"); 0.4::lowerBodyO2("5-12"); 0.1::lowerBodyO2("12+") :- body_6086(6085,multi).
-0.4::lowerBodyO2("<5"); 0.5::lowerBodyO2("5-12"); 0.1::lowerBodyO2("12+") :- body_6104(6103,multi).
-0.5::lowerBodyO2("<5"); 0.45::lowerBodyO2("5-12"); 0.05::lowerBodyO2("12+") :- body_6122(6121,multi).
-0.6::lowerBodyO2("<5"); 0.35::lowerBodyO2("5-12"); 0.05::lowerBodyO2("12+") :- body_6140(6139,multi).
-0.23469388::disease("PAIVS") :- body_6161(6160,disease("PAIVS")).
-0.8::lungParench("Normal") :- body_6171(6170,lungParench("Normal")).
-0.1::lVH :- body_6181(6180,lVH).
-0.0::ductFlow("Rt_to_Lt") :- body_6191(6190,ductFlow("Rt_to_Lt")).
-0.05::hypoxiaInO2("Mild") :- body_6201(6200,hypoxiaInO2("Mild")).
-0.4::hypoxiaInO2("Severe") :- body_6211(6210,hypoxiaInO2("Severe")).
-0.18::hypoxiaInO2("Moderate") :- body_6221(6220,hypoxiaInO2("Moderate")).
-0.05::hypDistrib("Unequal") :- body_6231(6230,hypDistrib("Unequal")).
-0.02::xrayReport("Grd_Glass") :- body_6241(6240,xrayReport("Grd_Glass")).
-0.3::lowerBodyO2("5-12") :- body_6251(6250,lowerBodyO2("5-12")).
-0.6::lowerBodyO2("5-12") :- body_6261(6260,lowerBodyO2("5-12")).
-0.5::lowerBodyO2("5-12") :- body_6271(6270,lowerBodyO2("5-12")).
+?::dec_11.
+?::dec_10.
+?::dec_9.
+?::dec_8.
+?::dec_7.
+?::dec_6.
+?::dec_5.
+?::dec_4.
+?::dec_3.
+?::dec_2.
+?::dec_1.
+?::birthAsphyxia.
+0.4::algebraic_atom(0,0,0,set(none),disease("PFC"),"0.2").
+0.4::algebraic_atom(0,1,0,set(none),disease("TGA"),"0.3").
+0.4::algebraic_atom(0,2,0,set(none),disease("Fallot"),"0.25").
+0.4::algebraic_atom(0,3,0,set(none),disease("PAIVS"),"0.15").
+0.4::algebraic_atom(0,4,0,set(none),disease("TAPVD"),"0.05").
+0.4::algebraic_atom(0,5,0,set(none),disease("Lung"),"0.05").
+0.4::algebraic_atom(1,0,0,set(none),disease("PFC"),"0.03061224").
+0.4::algebraic_atom(1,1,0,set(none),disease("TGA"),"0.33673469").
+0.4::algebraic_atom(1,2,0,set(none),disease("Fallot"),"0.29591837").
+0.4::algebraic_atom(1,3,0,set(none),disease("PAIVS"),"0.23469388").
+0.4::algebraic_atom(1,4,0,set(none),disease("TAPVD"),"0.05102041").
+0.4::algebraic_atom(1,5,0,set(none),disease("Lung"),"0.05102041").
+0.4::algebraic_atom(2,0,0,set(none),lungParench("Normal"),"0.6").
+0.4::algebraic_atom(2,1,0,set(none),lungParench("Congested"),"0.1").
+0.4::algebraic_atom(2,2,0,set(none),lungParench("Abnormal"),"0.3").
+0.4::algebraic_atom(3,0,0,set(none),lungParench("Normal"),"0.8").
+0.4::algebraic_atom(3,1,0,set(none),lungParench("Congested"),"0.05").
+0.4::algebraic_atom(3,2,0,set(none),lungParench("Abnormal"),"0.15").
+0.4::algebraic_atom(4,0,0,set(none),lungParench("Normal"),"0.8").
+0.4::algebraic_atom(4,1,0,set(none),lungParench("Congested"),"0.05").
+0.4::algebraic_atom(4,2,0,set(none),lungParench("Abnormal"),"0.15").
+0.4::algebraic_atom(5,0,0,set(none),lungParench("Normal"),"0.8").
+0.4::algebraic_atom(5,1,0,set(none),lungParench("Congested"),"0.05").
+0.4::algebraic_atom(5,2,0,set(none),lungParench("Abnormal"),"0.15").
+0.4::algebraic_atom(6,0,0,set(none),lungParench("Normal"),"0.1").
+0.4::algebraic_atom(6,1,0,set(none),lungParench("Congested"),"0.6").
+0.4::algebraic_atom(6,2,0,set(none),lungParench("Abnormal"),"0.3").
+0.4::algebraic_atom(7,0,0,set(none),lungParench("Normal"),"0.03").
+0.4::algebraic_atom(7,1,0,set(none),lungParench("Congested"),"0.25").
+0.4::algebraic_atom(7,2,0,set(none),lungParench("Abnormal"),"0.72").
+0.4::algebraic_atom(8,0,0,set(none),lVH,"0.1").
+0.4::algebraic_atom(9,0,0,set(none),lVH,"0.1").
+0.4::algebraic_atom(10,0,0,set(none),lVH,"0.1").
+0.4::algebraic_atom(11,0,0,set(none),lVH,"0.9").
+0.4::algebraic_atom(12,0,0,set(none),lVH,"0.05").
+0.4::algebraic_atom(13,0,0,set(none),lVH,"0.1").
+0.4::algebraic_atom(14,0,0,set(none),cardiacMixing("None"),"0.4").
+0.4::algebraic_atom(14,1,0,set(none),cardiacMixing("Mild"),"0.43").
+0.4::algebraic_atom(14,2,0,set(none),cardiacMixing("Complete"),"0.15").
+0.4::algebraic_atom(14,3,0,set(none),cardiacMixing("Transp."),"0.02").
+0.4::algebraic_atom(15,0,0,set(none),cardiacMixing("None"),"0.02").
+0.4::algebraic_atom(15,1,0,set(none),cardiacMixing("Mild"),"0.09").
+0.4::algebraic_atom(15,2,0,set(none),cardiacMixing("Complete"),"0.09").
+0.4::algebraic_atom(15,3,0,set(none),cardiacMixing("Transp."),"0.8").
+0.4::algebraic_atom(16,0,0,set(none),cardiacMixing("None"),"0.02").
+0.4::algebraic_atom(16,1,0,set(none),cardiacMixing("Mild"),"0.16").
+0.4::algebraic_atom(16,2,0,set(none),cardiacMixing("Complete"),"0.8").
+0.4::algebraic_atom(16,3,0,set(none),cardiacMixing("Transp."),"0.02").
+0.4::algebraic_atom(17,0,0,set(none),cardiacMixing("None"),"0.01").
+0.4::algebraic_atom(17,1,0,set(none),cardiacMixing("Mild"),"0.02").
+0.4::algebraic_atom(17,2,0,set(none),cardiacMixing("Complete"),"0.95").
+0.4::algebraic_atom(17,3,0,set(none),cardiacMixing("Transp."),"0.02").
+0.4::algebraic_atom(18,0,0,set(none),cardiacMixing("None"),"0.01").
+0.4::algebraic_atom(18,1,0,set(none),cardiacMixing("Mild"),"0.03").
+0.4::algebraic_atom(18,2,0,set(none),cardiacMixing("Complete"),"0.95").
+0.4::algebraic_atom(18,3,0,set(none),cardiacMixing("Transp."),"0.01").
+0.4::algebraic_atom(19,0,0,set(none),cardiacMixing("None"),"0.4").
+0.4::algebraic_atom(19,1,0,set(none),cardiacMixing("Mild"),"0.53").
+0.4::algebraic_atom(19,2,0,set(none),cardiacMixing("Complete"),"0.05").
+0.4::algebraic_atom(19,3,0,set(none),cardiacMixing("Transp."),"0.02").
+0.4::algebraic_atom(20,0,0,set(none),sick,"0.4").
+0.4::algebraic_atom(21,0,0,set(none),sick,"0.3").
+0.4::algebraic_atom(22,0,0,set(none),sick,"0.2").
+0.4::algebraic_atom(23,0,0,set(none),sick,"0.3").
+0.4::algebraic_atom(24,0,0,set(none),sick,"0.7").
+0.4::algebraic_atom(25,0,0,set(none),sick,"0.7").
+0.4::algebraic_atom(26,0,0,set(none),lungFlow("Normal"),"0.3").
+0.4::algebraic_atom(26,1,0,set(none),lungFlow("Low"),"0.65").
+0.4::algebraic_atom(26,2,0,set(none),lungFlow("High"),"0.05").
+0.4::algebraic_atom(27,0,0,set(none),lungFlow("Normal"),"0.2").
+0.4::algebraic_atom(27,1,0,set(none),lungFlow("Low"),"0.05").
+0.4::algebraic_atom(27,2,0,set(none),lungFlow("High"),"0.75").
+0.4::algebraic_atom(28,0,0,set(none),lungFlow("Normal"),"0.15").
+0.4::algebraic_atom(28,1,0,set(none),lungFlow("Low"),"0.8").
+0.4::algebraic_atom(28,2,0,set(none),lungFlow("High"),"0.05").
+0.4::algebraic_atom(29,0,0,set(none),lungFlow("Normal"),"0.1").
+0.4::algebraic_atom(29,1,0,set(none),lungFlow("Low"),"0.85").
+0.4::algebraic_atom(29,2,0,set(none),lungFlow("High"),"0.05").
+0.4::algebraic_atom(30,0,0,set(none),lungFlow("Normal"),"0.3").
+0.4::algebraic_atom(30,1,0,set(none),lungFlow("Low"),"0.1").
+0.4::algebraic_atom(30,2,0,set(none),lungFlow("High"),"0.6").
+0.4::algebraic_atom(31,0,0,set(none),lungFlow("Normal"),"0.7").
+0.4::algebraic_atom(31,1,0,set(none),lungFlow("Low"),"0.1").
+0.4::algebraic_atom(31,2,0,set(none),lungFlow("High"),"0.2").
+0.4::algebraic_atom(32,0,0,set(none),ductFlow("Lt_to_Rt"),"0.15").
+0.4::algebraic_atom(32,1,0,set(none),ductFlow("None"),"0.05").
+0.4::algebraic_atom(32,2,0,set(none),ductFlow("Rt_to_Lt"),"0.8").
+0.4::algebraic_atom(33,0,0,set(none),ductFlow("Lt_to_Rt"),"0.1").
+0.4::algebraic_atom(33,1,0,set(none),ductFlow("None"),"0.8").
+0.4::algebraic_atom(33,2,0,set(none),ductFlow("Rt_to_Lt"),"0.1").
+0.4::algebraic_atom(34,0,0,set(none),ductFlow("Lt_to_Rt"),"0.8").
+0.4::algebraic_atom(34,1,0,set(none),ductFlow("None"),"0.2").
+0.4::algebraic_atom(34,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
+0.4::algebraic_atom(35,0,0,set(none),ductFlow("Lt_to_Rt"),"1.0").
+0.4::algebraic_atom(35,1,0,set(none),ductFlow("None"),"0.0").
+0.4::algebraic_atom(35,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
+0.4::algebraic_atom(36,0,0,set(none),ductFlow("Lt_to_Rt"),"0.33").
+0.4::algebraic_atom(36,1,0,set(none),ductFlow("None"),"0.33").
+0.4::algebraic_atom(36,2,0,set(none),ductFlow("Rt_to_Lt"),"0.34").
+0.4::algebraic_atom(37,0,0,set(none),ductFlow("Lt_to_Rt"),"0.2").
+0.4::algebraic_atom(37,1,0,set(none),ductFlow("None"),"0.4").
+0.4::algebraic_atom(37,2,0,set(none),ductFlow("Rt_to_Lt"),"0.4").
+0.4::algebraic_atom(38,0,0,set(none),lVHreport,"0.9").
+0.4::algebraic_atom(39,0,0,set(none),lVHreport,"0.05").
+0.4::algebraic_atom(40,0,0,set(none),age("0-3_days"),"0.95").
+0.4::algebraic_atom(40,1,0,set(none),age("4-10_days"),"0.03").
+0.4::algebraic_atom(40,2,0,set(none),age("11-30_days"),"0.02").
+0.4::algebraic_atom(41,0,0,set(none),age("0-3_days"),"0.85").
+0.4::algebraic_atom(41,1,0,set(none),age("4-10_days"),"0.1").
+0.4::algebraic_atom(41,2,0,set(none),age("11-30_days"),"0.05").
+0.4::algebraic_atom(42,0,0,set(none),age("0-3_days"),"0.8").
+0.4::algebraic_atom(42,1,0,set(none),age("4-10_days"),"0.15").
+0.4::algebraic_atom(42,2,0,set(none),age("11-30_days"),"0.05").
+0.4::algebraic_atom(43,0,0,set(none),age("0-3_days"),"0.7").
+0.4::algebraic_atom(43,1,0,set(none),age("4-10_days"),"0.2").
+0.4::algebraic_atom(43,2,0,set(none),age("11-30_days"),"0.1").
+0.4::algebraic_atom(44,0,0,set(none),age("0-3_days"),"0.7").
+0.4::algebraic_atom(44,1,0,set(none),age("4-10_days"),"0.15").
+0.4::algebraic_atom(44,2,0,set(none),age("11-30_days"),"0.15").
+0.4::algebraic_atom(45,0,0,set(none),age("0-3_days"),"0.25").
+0.4::algebraic_atom(45,1,0,set(none),age("4-10_days"),"0.25").
+0.4::algebraic_atom(45,2,0,set(none),age("11-30_days"),"0.5").
+0.4::algebraic_atom(46,0,0,set(none),age("0-3_days"),"0.8").
+0.4::algebraic_atom(46,1,0,set(none),age("4-10_days"),"0.15").
+0.4::algebraic_atom(46,2,0,set(none),age("11-30_days"),"0.05").
+0.4::algebraic_atom(47,0,0,set(none),age("0-3_days"),"0.8").
+0.4::algebraic_atom(47,1,0,set(none),age("4-10_days"),"0.15").
+0.4::algebraic_atom(47,2,0,set(none),age("11-30_days"),"0.05").
+0.4::algebraic_atom(48,0,0,set(none),age("0-3_days"),"0.8").
+0.4::algebraic_atom(48,1,0,set(none),age("4-10_days"),"0.15").
+0.4::algebraic_atom(48,2,0,set(none),age("11-30_days"),"0.05").
+0.4::algebraic_atom(49,0,0,set(none),age("0-3_days"),"0.7").
+0.4::algebraic_atom(49,1,0,set(none),age("4-10_days"),"0.2").
+0.4::algebraic_atom(49,2,0,set(none),age("11-30_days"),"0.1").
+0.4::algebraic_atom(50,0,0,set(none),age("0-3_days"),"0.9").
+0.4::algebraic_atom(50,1,0,set(none),age("4-10_days"),"0.08").
+0.4::algebraic_atom(50,2,0,set(none),age("11-30_days"),"0.02").
+0.4::algebraic_atom(51,0,0,set(none),age("0-3_days"),"0.8").
+0.4::algebraic_atom(51,1,0,set(none),age("4-10_days"),"0.15").
+0.4::algebraic_atom(51,2,0,set(none),age("11-30_days"),"0.05").
+0.4::algebraic_atom(52,0,0,set(none),cO2("Normal"),"0.8").
+0.4::algebraic_atom(52,1,0,set(none),cO2("Low"),"0.1").
+0.4::algebraic_atom(52,2,0,set(none),cO2("High"),"0.1").
+0.4::algebraic_atom(53,0,0,set(none),cO2("Normal"),"0.65").
+0.4::algebraic_atom(53,1,0,set(none),cO2("Low"),"0.05").
+0.4::algebraic_atom(53,2,0,set(none),cO2("High"),"0.3").
+0.4::algebraic_atom(54,0,0,set(none),cO2("Normal"),"0.45").
+0.4::algebraic_atom(54,1,0,set(none),cO2("Low"),"0.05").
+0.4::algebraic_atom(54,2,0,set(none),cO2("High"),"0.5").
+0.4::algebraic_atom(55,0,0,set(none),grunting,"0.2").
+0.4::algebraic_atom(56,0,0,set(none),grunting,"0.05").
+0.4::algebraic_atom(57,0,0,set(none),grunting,"0.4").
+0.4::algebraic_atom(58,0,0,set(none),grunting,"0.2").
+0.4::algebraic_atom(59,0,0,set(none),grunting,"0.8").
+0.4::algebraic_atom(60,0,0,set(none),grunting,"0.6").
+0.4::algebraic_atom(61,0,0,set(none),hypoxiaInO2("Mild"),"0.93").
+0.4::algebraic_atom(61,1,0,set(none),hypoxiaInO2("Moderate"),"0.05").
+0.4::algebraic_atom(61,2,0,set(none),hypoxiaInO2("Severe"),"0.02").
+0.4::algebraic_atom(62,0,0,set(none),hypoxiaInO2("Mild"),"0.15").
+0.4::algebraic_atom(62,1,0,set(none),hypoxiaInO2("Moderate"),"0.8").
+0.4::algebraic_atom(62,2,0,set(none),hypoxiaInO2("Severe"),"0.05").
+0.4::algebraic_atom(63,0,0,set(none),hypoxiaInO2("Mild"),"0.7").
+0.4::algebraic_atom(63,1,0,set(none),hypoxiaInO2("Moderate"),"0.2").
+0.4::algebraic_atom(63,2,0,set(none),hypoxiaInO2("Severe"),"0.1").
+0.4::algebraic_atom(64,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+0.4::algebraic_atom(64,1,0,set(none),hypoxiaInO2("Moderate"),"0.8").
+0.4::algebraic_atom(64,2,0,set(none),hypoxiaInO2("Severe"),"0.1").
+0.4::algebraic_atom(65,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+0.4::algebraic_atom(65,1,0,set(none),hypoxiaInO2("Moderate"),"0.75").
+0.4::algebraic_atom(65,2,0,set(none),hypoxiaInO2("Severe"),"0.15").
+0.4::algebraic_atom(66,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+0.4::algebraic_atom(66,1,0,set(none),hypoxiaInO2("Moderate"),"0.65").
+0.4::algebraic_atom(66,2,0,set(none),hypoxiaInO2("Severe"),"0.25").
+0.4::algebraic_atom(67,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+0.4::algebraic_atom(67,1,0,set(none),hypoxiaInO2("Moderate"),"0.7").
+0.4::algebraic_atom(67,2,0,set(none),hypoxiaInO2("Severe"),"0.2").
+0.4::algebraic_atom(68,0,0,set(none),hypoxiaInO2("Mild"),"0.05").
+0.4::algebraic_atom(68,1,0,set(none),hypoxiaInO2("Moderate"),"0.65").
+0.4::algebraic_atom(68,2,0,set(none),hypoxiaInO2("Severe"),"0.3").
+0.4::algebraic_atom(69,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+0.4::algebraic_atom(69,1,0,set(none),hypoxiaInO2("Moderate"),"0.5").
+0.4::algebraic_atom(69,2,0,set(none),hypoxiaInO2("Severe"),"0.4").
+0.4::algebraic_atom(70,0,0,set(none),hypoxiaInO2("Mild"),"0.02").
+0.4::algebraic_atom(70,1,0,set(none),hypoxiaInO2("Moderate"),"0.18").
+0.4::algebraic_atom(70,2,0,set(none),hypoxiaInO2("Severe"),"0.8").
+0.4::algebraic_atom(71,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+0.4::algebraic_atom(71,1,0,set(none),hypoxiaInO2("Moderate"),"0.3").
+0.4::algebraic_atom(71,2,0,set(none),hypoxiaInO2("Severe"),"0.6").
+0.4::algebraic_atom(72,0,0,set(none),hypoxiaInO2("Mild"),"0.02").
+0.4::algebraic_atom(72,1,0,set(none),hypoxiaInO2("Moderate"),"0.18").
+0.4::algebraic_atom(72,2,0,set(none),hypoxiaInO2("Severe"),"0.8").
+0.4::algebraic_atom(73,0,0,set(none),chestXray("Normal"),"0.9").
+0.4::algebraic_atom(73,1,0,set(none),chestXray("Oligaemic"),"0.03").
+0.4::algebraic_atom(73,2,0,set(none),chestXray("Plethoric"),"0.03").
+0.4::algebraic_atom(73,3,0,set(none),chestXray("Grd_Glass"),"0.01").
+0.4::algebraic_atom(73,4,0,set(none),chestXray("Asy/Patch"),"0.03").
+0.4::algebraic_atom(74,0,0,set(none),chestXray("Normal"),"0.14").
+0.4::algebraic_atom(74,1,0,set(none),chestXray("Oligaemic"),"0.8").
+0.4::algebraic_atom(74,2,0,set(none),chestXray("Plethoric"),"0.02").
+0.4::algebraic_atom(74,3,0,set(none),chestXray("Grd_Glass"),"0.02").
+0.4::algebraic_atom(74,4,0,set(none),chestXray("Asy/Patch"),"0.02").
+0.4::algebraic_atom(75,0,0,set(none),chestXray("Normal"),"0.15").
+0.4::algebraic_atom(75,1,0,set(none),chestXray("Oligaemic"),"0.01").
+0.4::algebraic_atom(75,2,0,set(none),chestXray("Plethoric"),"0.79").
+0.4::algebraic_atom(75,3,0,set(none),chestXray("Grd_Glass"),"0.04").
+0.4::algebraic_atom(75,4,0,set(none),chestXray("Asy/Patch"),"0.01").
+0.4::algebraic_atom(76,0,0,set(none),chestXray("Normal"),"0.05").
+0.4::algebraic_atom(76,1,0,set(none),chestXray("Oligaemic"),"0.02").
+0.4::algebraic_atom(76,2,0,set(none),chestXray("Plethoric"),"0.15").
+0.4::algebraic_atom(76,3,0,set(none),chestXray("Grd_Glass"),"0.7").
+0.4::algebraic_atom(76,4,0,set(none),chestXray("Asy/Patch"),"0.08").
+0.4::algebraic_atom(77,0,0,set(none),chestXray("Normal"),"0.05").
+0.4::algebraic_atom(77,1,0,set(none),chestXray("Oligaemic"),"0.22").
+0.4::algebraic_atom(77,2,0,set(none),chestXray("Plethoric"),"0.08").
+0.4::algebraic_atom(77,3,0,set(none),chestXray("Grd_Glass"),"0.5").
+0.4::algebraic_atom(77,4,0,set(none),chestXray("Asy/Patch"),"0.15").
+0.4::algebraic_atom(78,0,0,set(none),chestXray("Normal"),"0.05").
+0.4::algebraic_atom(78,1,0,set(none),chestXray("Oligaemic"),"0.02").
+0.4::algebraic_atom(78,2,0,set(none),chestXray("Plethoric"),"0.4").
+0.4::algebraic_atom(78,3,0,set(none),chestXray("Grd_Glass"),"0.4").
+0.4::algebraic_atom(78,4,0,set(none),chestXray("Asy/Patch"),"0.13").
+0.4::algebraic_atom(79,0,0,set(none),chestXray("Normal"),"0.05").
+0.4::algebraic_atom(79,1,0,set(none),chestXray("Oligaemic"),"0.05").
+0.4::algebraic_atom(79,2,0,set(none),chestXray("Plethoric"),"0.05").
+0.4::algebraic_atom(79,3,0,set(none),chestXray("Grd_Glass"),"0.05").
+0.4::algebraic_atom(79,4,0,set(none),chestXray("Asy/Patch"),"0.8").
+0.4::algebraic_atom(80,0,0,set(none),chestXray("Normal"),"0.05").
+0.4::algebraic_atom(80,1,0,set(none),chestXray("Oligaemic"),"0.15").
+0.4::algebraic_atom(80,2,0,set(none),chestXray("Plethoric"),"0.05").
+0.4::algebraic_atom(80,3,0,set(none),chestXray("Grd_Glass"),"0.05").
+0.4::algebraic_atom(80,4,0,set(none),chestXray("Asy/Patch"),"0.7").
+0.4::algebraic_atom(81,0,0,set(none),chestXray("Normal"),"0.24").
+0.4::algebraic_atom(81,1,0,set(none),chestXray("Oligaemic"),"0.33").
+0.4::algebraic_atom(81,2,0,set(none),chestXray("Plethoric"),"0.03").
+0.4::algebraic_atom(81,3,0,set(none),chestXray("Grd_Glass"),"0.34").
+0.4::algebraic_atom(81,4,0,set(none),chestXray("Asy/Patch"),"0.06").
+0.4::algebraic_atom(82,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(82,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(83,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(83,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(84,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(84,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(85,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(85,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(86,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(86,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(87,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(87,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(88,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(88,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(89,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(89,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(90,0,0,set(none),hypDistrib("Equal"),"0.05").
+0.4::algebraic_atom(90,1,0,set(none),hypDistrib("Unequal"),"0.95").
+0.4::algebraic_atom(91,0,0,set(none),hypDistrib("Equal"),"0.5").
+0.4::algebraic_atom(91,1,0,set(none),hypDistrib("Unequal"),"0.5").
+0.4::algebraic_atom(92,0,0,set(none),hypDistrib("Equal"),"0.95").
+0.4::algebraic_atom(92,1,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(93,0,0,set(none),hypDistrib("Equal"),"0.5").
+0.4::algebraic_atom(93,1,0,set(none),hypDistrib("Unequal"),"0.5").
+0.4::algebraic_atom(94,0,0,set(none),xrayReport("Normal"),"0.8").
+0.4::algebraic_atom(94,1,0,set(none),xrayReport("Oligaemic"),"0.06").
+0.4::algebraic_atom(94,2,0,set(none),xrayReport("Plethoric"),"0.06").
+0.4::algebraic_atom(94,3,0,set(none),xrayReport("Grd_Glass"),"0.02").
+0.4::algebraic_atom(94,4,0,set(none),xrayReport("Asy/Patchy"),"0.06").
+0.4::algebraic_atom(95,0,0,set(none),xrayReport("Normal"),"0.1").
+0.4::algebraic_atom(95,1,0,set(none),xrayReport("Oligaemic"),"0.8").
+0.4::algebraic_atom(95,2,0,set(none),xrayReport("Plethoric"),"0.02").
+0.4::algebraic_atom(95,3,0,set(none),xrayReport("Grd_Glass"),"0.02").
+0.4::algebraic_atom(95,4,0,set(none),xrayReport("Asy/Patchy"),"0.06").
+0.4::algebraic_atom(96,0,0,set(none),xrayReport("Normal"),"0.1").
+0.4::algebraic_atom(96,1,0,set(none),xrayReport("Oligaemic"),"0.02").
+0.4::algebraic_atom(96,2,0,set(none),xrayReport("Plethoric"),"0.8").
+0.4::algebraic_atom(96,3,0,set(none),xrayReport("Grd_Glass"),"0.02").
+0.4::algebraic_atom(96,4,0,set(none),xrayReport("Asy/Patchy"),"0.06").
+0.4::algebraic_atom(97,0,0,set(none),xrayReport("Normal"),"0.08").
+0.4::algebraic_atom(97,1,0,set(none),xrayReport("Oligaemic"),"0.02").
+0.4::algebraic_atom(97,2,0,set(none),xrayReport("Plethoric"),"0.1").
+0.4::algebraic_atom(97,3,0,set(none),xrayReport("Grd_Glass"),"0.6").
+0.4::algebraic_atom(97,4,0,set(none),xrayReport("Asy/Patchy"),"0.2").
+0.4::algebraic_atom(98,0,0,set(none),xrayReport("Normal"),"0.08").
+0.4::algebraic_atom(98,1,0,set(none),xrayReport("Oligaemic"),"0.02").
+0.4::algebraic_atom(98,2,0,set(none),xrayReport("Plethoric"),"0.1").
+0.4::algebraic_atom(98,3,0,set(none),xrayReport("Grd_Glass"),"0.1").
+0.4::algebraic_atom(98,4,0,set(none),xrayReport("Asy/Patchy"),"0.7").
+0.4::algebraic_atom(99,0,0,set(none),gruntingReport,"0.8").
+0.4::algebraic_atom(100,0,0,set(none),gruntingReport,"0.1").
+0.4::algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9").
+0.4::algebraic_atom(101,1,0,set(none),cO2Report(">=7.5"),"0.1").
+0.4::algebraic_atom(102,0,0,set(none),cO2Report("<7.5"),"0.9").
+0.4::algebraic_atom(102,1,0,set(none),cO2Report(">=7.5"),"0.1").
+0.4::algebraic_atom(103,0,0,set(none),cO2Report("<7.5"),"0.1").
+0.4::algebraic_atom(103,1,0,set(none),cO2Report(">=7.5"),"0.9").
+0.4::algebraic_atom(104,0,0,set(none),rUQO2("<5"),"0.1").
+0.4::algebraic_atom(104,1,0,set(none),rUQO2("5-12"),"0.3").
+0.4::algebraic_atom(104,2,0,set(none),rUQO2("12+"),"0.6").
+0.4::algebraic_atom(105,0,0,set(none),rUQO2("<5"),"0.3").
+0.4::algebraic_atom(105,1,0,set(none),rUQO2("5-12"),"0.6").
+0.4::algebraic_atom(105,2,0,set(none),rUQO2("12+"),"0.1").
+0.4::algebraic_atom(106,0,0,set(none),rUQO2("<5"),"0.5").
+0.4::algebraic_atom(106,1,0,set(none),rUQO2("5-12"),"0.4").
+0.4::algebraic_atom(106,2,0,set(none),rUQO2("12+"),"0.1").
+0.4::algebraic_atom(107,0,0,set(none),lowerBodyO2("<5"),"0.1").
+0.4::algebraic_atom(107,1,0,set(none),lowerBodyO2("5-12"),"0.3").
+0.4::algebraic_atom(107,2,0,set(none),lowerBodyO2("12+"),"0.6").
+0.4::algebraic_atom(108,0,0,set(none),lowerBodyO2("<5"),"0.3").
+0.4::algebraic_atom(108,1,0,set(none),lowerBodyO2("5-12"),"0.6").
+0.4::algebraic_atom(108,2,0,set(none),lowerBodyO2("12+"),"0.1").
+0.4::algebraic_atom(109,0,0,set(none),lowerBodyO2("<5"),"0.5").
+0.4::algebraic_atom(109,1,0,set(none),lowerBodyO2("5-12"),"0.4").
+0.4::algebraic_atom(109,2,0,set(none),lowerBodyO2("12+"),"0.1").
+0.4::algebraic_atom(110,0,0,set(none),lowerBodyO2("<5"),"0.4").
+0.4::algebraic_atom(110,1,0,set(none),lowerBodyO2("5-12"),"0.5").
+0.4::algebraic_atom(110,2,0,set(none),lowerBodyO2("12+"),"0.1").
+0.4::algebraic_atom(111,0,0,set(none),lowerBodyO2("<5"),"0.5").
+0.4::algebraic_atom(111,1,0,set(none),lowerBodyO2("5-12"),"0.45").
+0.4::algebraic_atom(111,2,0,set(none),lowerBodyO2("12+"),"0.05").
+0.4::algebraic_atom(112,0,0,set(none),lowerBodyO2("<5"),"0.6").
+0.4::algebraic_atom(112,1,0,set(none),lowerBodyO2("5-12"),"0.35").
+0.4::algebraic_atom(112,2,0,set(none),lowerBodyO2("12+"),"0.05").
+0.4::algebraic_atom(113,0,0,set(none),disease("PAIVS"),"0.23469388").
+0.4::algebraic_atom(114,0,0,set(none),lungParench("Normal"),"0.8").
+0.4::algebraic_atom(115,0,0,set(none),lVH,"0.1").
+0.4::algebraic_atom(116,0,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
+0.4::algebraic_atom(117,0,0,set(none),hypoxiaInO2("Mild"),"0.05").
+0.4::algebraic_atom(118,0,0,set(none),hypoxiaInO2("Severe"),"0.4").
+0.4::algebraic_atom(119,0,0,set(none),hypoxiaInO2("Moderate"),"0.18").
+0.4::algebraic_atom(120,0,0,set(none),hypDistrib("Unequal"),"0.05").
+0.4::algebraic_atom(121,0,0,set(none),xrayReport("Grd_Glass"),"0.02").
+0.4::algebraic_atom(122,0,0,set(none),lowerBodyO2("5-12"),"0.3").
+0.4::algebraic_atom(123,0,0,set(none),lowerBodyO2("5-12"),"0.6").
+0.4::algebraic_atom(124,0,0,set(none),lowerBodyO2("5-12"),"0.5").
+utility(util_node(0), -35).
+utility(\+util_node(0), 15).
+utility(util_node(1), -18).
+utility(\+util_node(1), 22).
+utility(util_node(2), -37).
+utility(\+util_node(2), -37).
+utility(util_node(3), 49).
+utility(\+util_node(3), -3).
+utility(util_node(4), 25).
+utility(\+util_node(4), 4).
+algebraic_atom(83,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(83,0,0,set(none),hypDistrib("Equal"),"0.95").
+algebraic_atom(62,1,1,set(none),hypoxiaInO2("Moderate"),"0.8"):-algebraic_atom(62,1,0,set(none),hypoxiaInO2("Moderate"),"0.8").
+algebraic_atom(77,4,1,set(none),chestXray("Asy/Patch"),"0.15"):-algebraic_atom(77,3,1,set(none),chestXray("Grd_Glass"),"0.5").
+body_345(344,multi):-disease("Lung").
+algebraic_atom(63,2,1,set(none),hypoxiaInO2("Severe"),"0.1"):-algebraic_atom(63,2,0,set(none),hypoxiaInO2("Severe"),"0.1").
+body_1082(1079,multi):-lungParench("Normal"),cardiacMixing("Mild").
+algebraic_atom(53,2,1,set(none),cO2("High"),"0.3"):-algebraic_atom(53,1,1,set(none),cO2("Low"),"0.05").
+algebraic_atom(81,1,1,set(none),chestXray("Oligaemic"),"0.33"):-algebraic_atom(81,0,0,set(none),chestXray("Normal"),"0.24").
+cO2("High"):-algebraic_atom(54,2,0,set(none),cO2("High"),"0.5"),\+algebraic_atom(54,1,1,set(none),cO2("Low"),"0.05"),body_5111(5110,multi).
+body_5195(5194,multi):-body_1042(1039,multi).
+algebraic_atom(63,1,1,set(none),hypoxiaInO2("Moderate"),"0.2"):-algebraic_atom(63,1,0,set(none),hypoxiaInO2("Moderate"),"0.2").
+algebraic_atom(83,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(83,1,0,set(none),hypDistrib("Unequal"),"0.05").
+body_5321(5320,multi):-body_1182(1179,multi).
+algebraic_atom(77,4,1,set(none),chestXray("Asy/Patch"),"0.15"):-algebraic_atom(77,4,0,set(none),chestXray("Asy/Patch"),"0.15").
+hypoxiaInO2("Moderate"):-algebraic_atom(64,1,0,set(none),hypoxiaInO2("Moderate"),"0.8"),\+algebraic_atom(64,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5231(5230,multi).
+body_4556(4555,multi):-body_345(344,multi).
+algebraic_atom(64,1,1,set(none),hypoxiaInO2("Moderate"),"0.8"):-algebraic_atom(64,1,0,set(none),hypoxiaInO2("Moderate"),"0.8").
+algebraic_atom(81,4,1,set(none),chestXray("Asy/Patch"),"0.06"):-algebraic_atom(81,4,0,set(none),chestXray("Asy/Patch"),"0.06").
+body_1142(1139,multi):-lungParench("Normal"),cardiacMixing("Complete").
+cO2("Low"):-algebraic_atom(53,1,0,set(none),cO2("Low"),"0.05"),\+algebraic_atom(53,0,0,set(none),cO2("Normal"),"0.65"),body_5093(5092,multi).
+grunting:-algebraic_atom(59,0,0,set(none),grunting,"0.8"),body_5161(5160,grunting).
+chestXray("Grd_Glass"):-algebraic_atom(77,3,0,set(none),chestXray("Grd_Glass"),"0.5"),\+algebraic_atom(77,2,1,set(none),chestXray("Plethoric"),"0.08"),body_5505(5504,multi).
+algebraic_atom(61,1,1,set(none),hypoxiaInO2("Moderate"),"0.05"):-algebraic_atom(61,0,0,set(none),hypoxiaInO2("Mild"),"0.93").
+hypDistrib("Equal"):-algebraic_atom(83,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5658(5657,multi).
+algebraic_atom(64,1,1,set(none),hypoxiaInO2("Moderate"),"0.8"):-algebraic_atom(64,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+body_1122(1119,multi):-lungParench("Abnormal"),cardiacMixing("Mild").
+algebraic_atom(77,3,1,set(none),chestXray("Grd_Glass"),"0.5"):-algebraic_atom(77,3,0,set(none),chestXray("Grd_Glass"),"0.5").
+body_1182(1179,multi):-lungParench("Abnormal"),cardiacMixing("Complete").
+grunting:-algebraic_atom(57,0,0,set(none),grunting,"0.4"),body_5145(5144,grunting).
+chestXray("Asy/Patch"):-algebraic_atom(80,4,0,set(none),chestXray("Asy/Patch"),"0.7"),\+algebraic_atom(80,3,1,set(none),chestXray("Grd_Glass"),"0.05"),body_5589(5588,multi).
+algebraic_atom(53,2,1,set(none),cO2("High"),"0.3"):-algebraic_atom(53,2,0,set(none),cO2("High"),"0.3").
+hypoxiaInO2("Mild"):-algebraic_atom(64,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5231(5230,multi).
+hypDistrib("Unequal"):-algebraic_atom(82,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(82,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5645(5644,multi).
+grunting:-algebraic_atom(60,0,0,set(none),grunting,"0.6"),body_5169(5168,grunting).
+algebraic_atom(77,3,1,set(none),chestXray("Grd_Glass"),"0.5"):-algebraic_atom(77,2,1,set(none),chestXray("Plethoric"),"0.08").
+algebraic_atom(61,2,1,set(none),hypoxiaInO2("Severe"),"0.02"):-algebraic_atom(61,1,1,set(none),hypoxiaInO2("Moderate"),"0.05").
+hypoxiaInO2("Mild"):-algebraic_atom(61,0,0,set(none),hypoxiaInO2("Mild"),"0.93"),body_5177(5176,multi).
+algebraic_atom(61,2,1,set(none),hypoxiaInO2("Severe"),"0.02"):-algebraic_atom(61,2,0,set(none),hypoxiaInO2("Severe"),"0.02").
+chestXray("Normal"):-algebraic_atom(77,0,0,set(none),chestXray("Normal"),"0.05"),body_5505(5504,multi).
+algebraic_atom(63,1,1,set(none),hypoxiaInO2("Moderate"),"0.2"):-algebraic_atom(63,0,0,set(none),hypoxiaInO2("Mild"),"0.7").
+algebraic_atom(76,3,1,set(none),chestXray("Grd_Glass"),"0.7"):-algebraic_atom(76,2,1,set(none),chestXray("Plethoric"),"0.15").
+hypoxiaInO2("Severe"):-algebraic_atom(63,2,0,set(none),hypoxiaInO2("Severe"),"0.1"),\+algebraic_atom(63,1,1,set(none),hypoxiaInO2("Moderate"),"0.2"),body_5213(5212,multi).
+chestXray("Normal"):-algebraic_atom(81,0,0,set(none),chestXray("Normal"),"0.24"),body_5617(5616,multi).
+chestXray("Plethoric"):-algebraic_atom(77,2,0,set(none),chestXray("Plethoric"),"0.08"),\+algebraic_atom(77,1,1,set(none),chestXray("Oligaemic"),"0.22"),body_5505(5504,multi).
+grunting:-algebraic_atom(55,0,0,set(none),grunting,"0.2"),body_5129(5128,grunting).
+algebraic_atom(77,2,1,set(none),chestXray("Plethoric"),"0.08"):-algebraic_atom(77,2,0,set(none),chestXray("Plethoric"),"0.08").
+algebraic_atom(82,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(82,0,0,set(none),hypDistrib("Equal"),"0.95").
+body_1021(1018,multi):-lungParench("Normal"),cardiacMixing("None").
+hypoxiaInO2("Moderate"):-algebraic_atom(61,1,0,set(none),hypoxiaInO2("Moderate"),"0.05"),\+algebraic_atom(61,0,0,set(none),hypoxiaInO2("Mild"),"0.93"),body_5177(5176,multi).
+algebraic_atom(82,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(82,1,0,set(none),hypDistrib("Unequal"),"0.05").
+body_5303(5302,multi):-body_1162(1159,multi).
+algebraic_atom(77,2,1,set(none),chestXray("Plethoric"),"0.08"):-algebraic_atom(77,1,1,set(none),chestXray("Oligaemic"),"0.22").
+hypoxiaInO2("Moderate"):-algebraic_atom(63,1,0,set(none),hypoxiaInO2("Moderate"),"0.2"),\+algebraic_atom(63,0,0,set(none),hypoxiaInO2("Mild"),"0.7"),body_5213(5212,multi).
+algebraic_atom(51,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(51,2,0,set(none),age("11-30_days"),"0.05").
+body_5285(5284,multi):-body_1142(1139,multi).
+algebraic_atom(76,3,1,set(none),chestXray("Grd_Glass"),"0.7"):-algebraic_atom(76,3,0,set(none),chestXray("Grd_Glass"),"0.7").
+body_5177(5176,multi):-body_1021(1018,multi).
+algebraic_atom(63,2,1,set(none),hypoxiaInO2("Severe"),"0.1"):-algebraic_atom(63,1,1,set(none),hypoxiaInO2("Moderate"),"0.2").
+cO2("High"):-algebraic_atom(53,2,0,set(none),cO2("High"),"0.3"),\+algebraic_atom(53,1,1,set(none),cO2("Low"),"0.05"),body_5093(5092,multi).
+hypDistrib("Equal"):-algebraic_atom(82,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5645(5644,multi).
+chestXray("Oligaemic"):-algebraic_atom(77,1,0,set(none),chestXray("Oligaemic"),"0.22"),\+algebraic_atom(77,0,0,set(none),chestXray("Normal"),"0.05"),body_5505(5504,multi).
+hypoxiaInO2("Moderate"):-algebraic_atom(62,1,0,set(none),hypoxiaInO2("Moderate"),"0.8"),\+algebraic_atom(62,0,0,set(none),hypoxiaInO2("Mild"),"0.15"),body_5195(5194,multi).
+algebraic_atom(77,1,1,set(none),chestXray("Oligaemic"),"0.22"):-algebraic_atom(77,1,0,set(none),chestXray("Oligaemic"),"0.22").
+algebraic_atom(81,2,1,set(none),chestXray("Plethoric"),"0.03"):-algebraic_atom(81,1,1,set(none),chestXray("Oligaemic"),"0.33").
+body_5267(5266,multi):-body_1122(1119,multi).
+hypoxiaInO2("Severe"):-algebraic_atom(62,2,0,set(none),hypoxiaInO2("Severe"),"0.05"),\+algebraic_atom(62,1,1,set(none),hypoxiaInO2("Moderate"),"0.8"),body_5195(5194,multi).
+body_5213(5212,multi):-body_1062(1059,multi).
+grunting:-algebraic_atom(58,0,0,set(none),grunting,"0.2"),body_5153(5152,grunting).
+algebraic_atom(76,2,1,set(none),chestXray("Plethoric"),"0.15"):-algebraic_atom(76,2,0,set(none),chestXray("Plethoric"),"0.15").
+algebraic_atom(77,1,1,set(none),chestXray("Oligaemic"),"0.22"):-algebraic_atom(77,0,0,set(none),chestXray("Normal"),"0.05").
+chestXray("Asy/Patch"):-algebraic_atom(81,4,0,set(none),chestXray("Asy/Patch"),"0.06"),\+algebraic_atom(81,3,1,set(none),chestXray("Grd_Glass"),"0.34"),body_5617(5616,multi).
+body_1162(1159,multi):-lungParench("Congested"),cardiacMixing("Complete").
+algebraic_atom(54,2,1,set(none),cO2("High"),"0.5"):-algebraic_atom(54,2,0,set(none),cO2("High"),"0.5").
+algebraic_atom(81,4,1,set(none),chestXray("Asy/Patch"),"0.06"):-algebraic_atom(81,3,1,set(none),chestXray("Grd_Glass"),"0.34").
+chestXray("Plethoric"):-algebraic_atom(76,2,0,set(none),chestXray("Plethoric"),"0.15"),\+algebraic_atom(76,1,1,set(none),chestXray("Oligaemic"),"0.02"),body_5477(5476,multi).
+algebraic_atom(61,1,1,set(none),hypoxiaInO2("Moderate"),"0.05"):-algebraic_atom(61,1,0,set(none),hypoxiaInO2("Moderate"),"0.05").
+body_1102(1099,multi):-lungParench("Congested"),cardiacMixing("Mild").
+grunting:-algebraic_atom(56,0,0,set(none),grunting,"0.05"),body_5137(5136,grunting).
+algebraic_atom(54,1,1,set(none),cO2("Low"),"0.05"):-algebraic_atom(54,0,0,set(none),cO2("Normal"),"0.45").
+chestXray("Asy/Patch"):-algebraic_atom(76,4,0,set(none),chestXray("Asy/Patch"),"0.08"),\+algebraic_atom(76,3,1,set(none),chestXray("Grd_Glass"),"0.7"),body_5477(5476,multi).
+algebraic_atom(81,2,1,set(none),chestXray("Plethoric"),"0.03"):-algebraic_atom(81,2,0,set(none),chestXray("Plethoric"),"0.03").
+hypoxiaInO2("Severe"):-algebraic_atom(61,2,0,set(none),hypoxiaInO2("Severe"),"0.02"),\+algebraic_atom(61,1,1,set(none),hypoxiaInO2("Moderate"),"0.05"),body_5177(5176,multi).
+chestXray("Grd_Glass"):-algebraic_atom(81,3,0,set(none),chestXray("Grd_Glass"),"0.34"),\+algebraic_atom(81,2,1,set(none),chestXray("Plethoric"),"0.03"),body_5617(5616,multi).
+hypoxiaInO2("Mild"):-algebraic_atom(63,0,0,set(none),hypoxiaInO2("Mild"),"0.7"),body_5213(5212,multi).
+cO2("Low"):-algebraic_atom(54,1,0,set(none),cO2("Low"),"0.05"),\+algebraic_atom(54,0,0,set(none),cO2("Normal"),"0.45"),body_5111(5110,multi).
+algebraic_atom(62,1,1,set(none),hypoxiaInO2("Moderate"),"0.8"):-algebraic_atom(62,0,0,set(none),hypoxiaInO2("Mild"),"0.15").
+algebraic_atom(76,4,1,set(none),chestXray("Asy/Patch"),"0.08"):-algebraic_atom(76,3,1,set(none),chestXray("Grd_Glass"),"0.7").
+body_1042(1039,multi):-lungParench("Congested"),cardiacMixing("None").
+algebraic_atom(62,2,1,set(none),hypoxiaInO2("Severe"),"0.05"):-algebraic_atom(62,1,1,set(none),hypoxiaInO2("Moderate"),"0.8").
+algebraic_atom(76,4,1,set(none),chestXray("Asy/Patch"),"0.08"):-algebraic_atom(76,4,0,set(none),chestXray("Asy/Patch"),"0.08").
+algebraic_atom(81,3,1,set(none),chestXray("Grd_Glass"),"0.34"):-algebraic_atom(81,3,0,set(none),chestXray("Grd_Glass"),"0.34").
+body_1062(1059,multi):-lungParench("Abnormal"),cardiacMixing("None").
+algebraic_atom(81,3,1,set(none),chestXray("Grd_Glass"),"0.34"):-algebraic_atom(81,2,1,set(none),chestXray("Plethoric"),"0.03").
+body_5249(5248,multi):-body_1102(1099,multi).
+algebraic_atom(62,2,1,set(none),hypoxiaInO2("Severe"),"0.05"):-algebraic_atom(62,2,0,set(none),hypoxiaInO2("Severe"),"0.05").
+chestXray("Grd_Glass"):-algebraic_atom(76,3,0,set(none),chestXray("Grd_Glass"),"0.7"),\+algebraic_atom(76,2,1,set(none),chestXray("Plethoric"),"0.15"),body_5477(5476,multi).
+body_5231(5230,multi):-body_1082(1079,multi).
+chestXray("Oligaemic"):-algebraic_atom(81,1,0,set(none),chestXray("Oligaemic"),"0.33"),\+algebraic_atom(81,0,0,set(none),chestXray("Normal"),"0.24"),body_5617(5616,multi).
+body_4533(4532,multi):-body_322(321,multi).
+cO2("Normal"):-algebraic_atom(54,0,0,set(none),cO2("Normal"),"0.45"),body_5111(5110,multi).
+hypoxiaInO2("Mild"):-algebraic_atom(62,0,0,set(none),hypoxiaInO2("Mild"),"0.15"),body_5195(5194,multi).
+algebraic_atom(81,1,1,set(none),chestXray("Oligaemic"),"0.33"):-algebraic_atom(81,1,0,set(none),chestXray("Oligaemic"),"0.33").
+algebraic_atom(54,1,1,set(none),cO2("Low"),"0.05"):-algebraic_atom(54,1,0,set(none),cO2("Low"),"0.05").
+chestXray("Plethoric"):-algebraic_atom(81,2,0,set(none),chestXray("Plethoric"),"0.03"),\+algebraic_atom(81,1,1,set(none),chestXray("Oligaemic"),"0.33"),body_5617(5616,multi).
+body_322(321,multi):-disease("TAPVD").
+algebraic_atom(54,2,1,set(none),cO2("High"),"0.5"):-algebraic_atom(54,1,1,set(none),cO2("Low"),"0.05").
+hypoxiaInO2("Moderate"):-algebraic_atom(67,1,0,set(none),hypoxiaInO2("Moderate"),"0.7"),\+algebraic_atom(67,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5285(5284,multi).
+algebraic_atom(93,1,1,set(none),hypDistrib("Unequal"),"0.5"):-algebraic_atom(93,1,0,set(none),hypDistrib("Unequal"),"0.5").
+cardiacMixing("Mild"):-algebraic_atom(19,1,0,set(none),cardiacMixing("Mild"),"0.53"),\+algebraic_atom(19,0,0,set(none),cardiacMixing("None"),"0.4"),body_4556(4555,multi).
+hypoxiaInO2("Mild"):-algebraic_atom(66,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5267(5266,multi).
+body_1948(1947,multi):-hypoxiaInO2("Severe").
+algebraic_atom(19,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(19,2,1,set(none),cardiacMixing("Complete"),"0.05").
+algebraic_atom(92,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(92,1,0,set(none),hypDistrib("Unequal"),"0.05").
+body_1885(1884,multi):-cO2("Low").
+lungParench("Congested"):-algebraic_atom(5,1,0,set(none),lungParench("Congested"),"0.05"),\+algebraic_atom(5,0,0,set(none),lungParench("Normal"),"0.8"),body_4339(4338,multi).
+algebraic_atom(67,1,1,set(none),hypoxiaInO2("Moderate"),"0.7"):-algebraic_atom(67,1,0,set(none),hypoxiaInO2("Moderate"),"0.7").
+body_1898(1897,multi):-cO2("High").
+algebraic_atom(4,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(4,1,1,set(none),lungParench("Congested"),"0.05").
+algebraic_atom(67,1,1,set(none),hypoxiaInO2("Moderate"),"0.7"):-algebraic_atom(67,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+algebraic_atom(64,2,1,set(none),hypoxiaInO2("Severe"),"0.1"):-algebraic_atom(64,2,0,set(none),hypoxiaInO2("Severe"),"0.1").
+algebraic_atom(19,2,1,set(none),cardiacMixing("Complete"),"0.05"):-algebraic_atom(19,2,0,set(none),cardiacMixing("Complete"),"0.05").
+algebraic_atom(7,1,1,set(none),lungParench("Congested"),"0.25"):-algebraic_atom(7,0,0,set(none),lungParench("Normal"),"0.03").
+body_5983(5982,multi):-body_1898(1897,multi).
+lungParench("Normal"):-algebraic_atom(7,0,0,set(none),lungParench("Normal"),"0.03"),body_4375(4374,multi).
+lungFlow("High"):-algebraic_atom(26,2,0,set(none),lungFlow("High"),"0.05"),\+algebraic_atom(26,1,1,set(none),lungFlow("Low"),"0.65"),body_4627(4626,multi).
+body_5996(5995,multi):-body_1911(1910,multi).
+algebraic_atom(26,1,1,set(none),lungFlow("Low"),"0.65"):-algebraic_atom(26,1,0,set(none),lungFlow("Low"),"0.65").
+hypDistrib("Equal"):-algebraic_atom(93,0,0,set(none),hypDistrib("Equal"),"0.5"),body_5788(5787,multi).
+body_5111(5110,multi):-body_937(936,multi).
+hypoxiaInO2("Mild"):-algebraic_atom(67,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5285(5284,multi).
+body_6014(6013,multi):-body_1930(1929,multi).
+lungParench("Abnormal"):-algebraic_atom(6,2,0,set(none),lungParench("Abnormal"),"0.3"),\+algebraic_atom(6,1,1,set(none),lungParench("Congested"),"0.6"),body_4357(4356,multi).
+algebraic_atom(26,2,1,set(none),lungFlow("High"),"0.05"):-algebraic_atom(26,2,0,set(none),lungFlow("High"),"0.05").
+algebraic_atom(6,1,1,set(none),lungParench("Congested"),"0.6"):-algebraic_atom(6,1,0,set(none),lungParench("Congested"),"0.6").
+sick:-algebraic_atom(25,0,0,set(none),sick,"0.7"),body_4619(4618,sick).
+lungParench("Congested"):-algebraic_atom(4,1,0,set(none),lungParench("Congested"),"0.05"),\+algebraic_atom(4,0,0,set(none),lungParench("Normal"),"0.8"),body_4321(4320,multi).
+hypDistrib("Unequal"):-algebraic_atom(92,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(92,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5775(5774,multi).
+hypDistrib("Unequal"):-algebraic_atom(88,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(88,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5723(5722,multi).
+algebraic_atom(6,1,1,set(none),lungParench("Congested"),"0.6"):-algebraic_atom(6,0,0,set(none),lungParench("Normal"),"0.1").
+algebraic_atom(26,2,1,set(none),lungFlow("High"),"0.05"):-algebraic_atom(26,1,1,set(none),lungFlow("Low"),"0.65").
+body_919(918,multi):-lungParench("Congested").
+hypoxiaInO2("Severe"):-algebraic_atom(66,2,0,set(none),hypoxiaInO2("Severe"),"0.25"),\+algebraic_atom(66,1,1,set(none),hypoxiaInO2("Moderate"),"0.65"),body_5267(5266,multi).
+algebraic_atom(26,1,1,set(none),lungFlow("Low"),"0.65"):-algebraic_atom(26,0,0,set(none),lungFlow("Normal"),"0.3").
+algebraic_atom(91,1,1,set(none),hypDistrib("Unequal"),"0.5"):-algebraic_atom(91,0,0,set(none),hypDistrib("Equal"),"0.5").
+algebraic_atom(66,2,1,set(none),hypoxiaInO2("Severe"),"0.25"):-algebraic_atom(66,1,1,set(none),hypoxiaInO2("Moderate"),"0.65").
+algebraic_atom(92,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(92,0,0,set(none),hypDistrib("Equal"),"0.95").
+body_6086(6085,multi):-body_2009(2006,multi).
+algebraic_atom(89,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(89,0,0,set(none),hypDistrib("Equal"),"0.95").
+hypDistrib("Unequal"):-algebraic_atom(90,1,0,set(none),hypDistrib("Unequal"),"0.95"),\+algebraic_atom(90,0,0,set(none),hypDistrib("Equal"),"0.05"),body_5749(5748,multi).
+body_6104(6103,multi):-body_2029(2026,multi).
+algebraic_atom(66,2,1,set(none),hypoxiaInO2("Severe"),"0.25"):-algebraic_atom(66,2,0,set(none),hypoxiaInO2("Severe"),"0.25").
+algebraic_atom(89,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(89,1,0,set(none),hypDistrib("Unequal"),"0.05").
+body_2029(2026,multi):-hypoxiaInO2("Mild"),hypDistrib("Unequal").
+algebraic_atom(19,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(19,3,0,set(none),cardiacMixing("Transp."),"0.02").
+body_5093(5092,multi):-body_919(918,multi).
+algebraic_atom(19,2,1,set(none),cardiacMixing("Complete"),"0.05"):-algebraic_atom(19,1,1,set(none),cardiacMixing("Mild"),"0.53").
+hypDistrib("Equal"):-algebraic_atom(92,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5775(5774,multi).
+sick:-algebraic_atom(24,0,0,set(none),sick,"0.7"),body_4611(4610,sick).
+hypoxiaInO2("Moderate"):-algebraic_atom(66,1,0,set(none),hypoxiaInO2("Moderate"),"0.65"),\+algebraic_atom(66,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5267(5266,multi).
+algebraic_atom(90,1,1,set(none),hypDistrib("Unequal"),"0.95"):-algebraic_atom(90,1,0,set(none),hypDistrib("Unequal"),"0.95").
+lungFlow("Low"):-algebraic_atom(26,1,0,set(none),lungFlow("Low"),"0.65"),\+algebraic_atom(26,0,0,set(none),lungFlow("Normal"),"0.3"),body_4627(4626,multi).
+algebraic_atom(66,1,1,set(none),hypoxiaInO2("Moderate"),"0.65"):-algebraic_atom(66,1,0,set(none),hypoxiaInO2("Moderate"),"0.65").
+algebraic_atom(4,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(4,2,0,set(none),lungParench("Abnormal"),"0.15").
+lungParench("Normal"):-algebraic_atom(6,0,0,set(none),lungParench("Normal"),"0.1"),body_4357(4356,multi).
+cardiacMixing("Complete"):-algebraic_atom(19,2,0,set(none),cardiacMixing("Complete"),"0.05"),\+algebraic_atom(19,1,1,set(none),cardiacMixing("Mild"),"0.53"),body_4556(4555,multi).
+algebraic_atom(6,2,1,set(none),lungParench("Abnormal"),"0.3"):-algebraic_atom(6,2,0,set(none),lungParench("Abnormal"),"0.3").
+hypDistrib("Unequal"):-algebraic_atom(91,1,0,set(none),hypDistrib("Unequal"),"0.5"),\+algebraic_atom(91,0,0,set(none),hypDistrib("Equal"),"0.5"),body_5762(5761,multi).
+algebraic_atom(6,2,1,set(none),lungParench("Abnormal"),"0.3"):-algebraic_atom(6,1,1,set(none),lungParench("Congested"),"0.6").
+sick:-algebraic_atom(22,0,0,set(none),sick,"0.2"),body_4595(4594,sick).
+body_900(899,multi):-lungParench("Normal").
+algebraic_atom(66,1,1,set(none),hypoxiaInO2("Moderate"),"0.65"):-algebraic_atom(66,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+lungFlow("Normal"):-algebraic_atom(26,0,0,set(none),lungFlow("Normal"),"0.3"),body_4627(4626,multi).
+body_937(936,multi):-lungParench("Abnormal").
+sick:-algebraic_atom(21,0,0,set(none),sick,"0.3"),body_4587(4586,sick).
+algebraic_atom(91,1,1,set(none),hypDistrib("Unequal"),"0.5"):-algebraic_atom(91,1,0,set(none),hypDistrib("Unequal"),"0.5").
+algebraic_atom(65,1,1,set(none),hypoxiaInO2("Moderate"),"0.75"):-algebraic_atom(65,1,0,set(none),hypoxiaInO2("Moderate"),"0.75").
+body_1968(1965,multi):-hypoxiaInO2("Mild"),hypDistrib("Equal").
+hypoxiaInO2("Severe"):-algebraic_atom(65,2,0,set(none),hypoxiaInO2("Severe"),"0.15"),\+algebraic_atom(65,1,1,set(none),hypoxiaInO2("Moderate"),"0.75"),body_5249(5248,multi).
+lungParench("Normal"):-algebraic_atom(5,0,0,set(none),lungParench("Normal"),"0.8"),body_4339(4338,multi).
+hypDistrib("Equal"):-algebraic_atom(91,0,0,set(none),hypDistrib("Equal"),"0.5"),body_5762(5761,multi).
+lungParench("Congested"):-algebraic_atom(6,1,0,set(none),lungParench("Congested"),"0.6"),\+algebraic_atom(6,0,0,set(none),lungParench("Normal"),"0.1"),body_4357(4356,multi).
+algebraic_atom(64,2,1,set(none),hypoxiaInO2("Severe"),"0.1"):-algebraic_atom(64,1,1,set(none),hypoxiaInO2("Moderate"),"0.8").
+body_5075(5074,multi):-body_900(899,multi).
+algebraic_atom(5,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(5,0,0,set(none),lungParench("Normal"),"0.8").
+algebraic_atom(65,2,1,set(none),hypoxiaInO2("Severe"),"0.15"):-algebraic_atom(65,1,1,set(none),hypoxiaInO2("Moderate"),"0.75").
+body_2009(2006,multi):-hypoxiaInO2("Severe"),hypDistrib("Equal").
+algebraic_atom(65,2,1,set(none),hypoxiaInO2("Severe"),"0.15"):-algebraic_atom(65,2,0,set(none),hypoxiaInO2("Severe"),"0.15").
+algebraic_atom(90,1,1,set(none),hypDistrib("Unequal"),"0.95"):-algebraic_atom(90,0,0,set(none),hypDistrib("Equal"),"0.05").
+hypDistrib("Equal"):-algebraic_atom(89,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5736(5735,multi).
+body_1989(1986,multi):-hypoxiaInO2("Moderate"),hypDistrib("Equal").
+algebraic_atom(19,1,1,set(none),cardiacMixing("Mild"),"0.53"):-algebraic_atom(19,1,0,set(none),cardiacMixing("Mild"),"0.53").
+body_1911(1910,multi):-hypoxiaInO2("Mild").
+body_1930(1929,multi):-hypoxiaInO2("Moderate").
+hypoxiaInO2("Moderate"):-algebraic_atom(65,1,0,set(none),hypoxiaInO2("Moderate"),"0.75"),\+algebraic_atom(65,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5249(5248,multi).
+algebraic_atom(4,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(4,1,0,set(none),lungParench("Congested"),"0.05").
+sick:-algebraic_atom(20,0,0,set(none),sick,"0.4"),body_4579(4578,sick).
+hypoxiaInO2("Severe"):-algebraic_atom(64,2,0,set(none),hypoxiaInO2("Severe"),"0.1"),\+algebraic_atom(64,1,1,set(none),hypoxiaInO2("Moderate"),"0.8"),body_5231(5230,multi).
+body_6068(6067,multi):-body_1989(1986,multi).
+hypDistrib("Equal"):-algebraic_atom(90,0,0,set(none),hypDistrib("Equal"),"0.05"),body_5749(5748,multi).
+body_6032(6031,multi):-body_1948(1947,multi).
+lungParench("Abnormal"):-algebraic_atom(4,2,0,set(none),lungParench("Abnormal"),"0.15"),\+algebraic_atom(4,1,1,set(none),lungParench("Congested"),"0.05"),body_4321(4320,multi).
+sick:-algebraic_atom(23,0,0,set(none),sick,"0.3"),body_4603(4602,sick).
+body_6122(6121,multi):-body_2049(2046,multi).
+algebraic_atom(5,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(5,1,0,set(none),lungParench("Congested"),"0.05").
+algebraic_atom(5,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(5,1,1,set(none),lungParench("Congested"),"0.05").
+algebraic_atom(65,1,1,set(none),hypoxiaInO2("Moderate"),"0.75"):-algebraic_atom(65,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+hypDistrib("Unequal"):-algebraic_atom(89,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(89,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5736(5735,multi).
+body_6050(6049,multi):-body_1968(1965,multi).
+lungParench("Abnormal"):-algebraic_atom(5,2,0,set(none),lungParench("Abnormal"),"0.15"),\+algebraic_atom(5,1,1,set(none),lungParench("Congested"),"0.05"),body_4339(4338,multi).
+algebraic_atom(5,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(5,2,0,set(none),lungParench("Abnormal"),"0.15").
+hypoxiaInO2("Mild"):-algebraic_atom(65,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5249(5248,multi).
+algebraic_atom(4,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(4,0,0,set(none),lungParench("Normal"),"0.8").
+cardiacMixing("Transp."):-algebraic_atom(19,3,0,set(none),cardiacMixing("Transp."),"0.02"),\+algebraic_atom(19,2,1,set(none),cardiacMixing("Complete"),"0.05"),body_4556(4555,multi).
+algebraic_atom(2,1,1,set(none),lungParench("Congested"),"0.1"):-algebraic_atom(2,0,0,set(none),lungParench("Normal"),"0.6").
+algebraic_atom(84,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(84,1,0,set(none),hypDistrib("Unequal"),"0.05").
+body_697(694,multi):-sick,disease("TGA").
+algebraic_atom(3,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(3,1,1,set(none),lungParench("Congested"),"0.05").
+algebraic_atom(110,1,1,set(none),lowerBodyO2("5-12"),"0.5"):-algebraic_atom(110,1,0,set(none),lowerBodyO2("5-12"),"0.5").
+lungParench("Abnormal"):-algebraic_atom(2,2,0,set(none),lungParench("Abnormal"),"0.3"),\+algebraic_atom(2,1,1,set(none),lungParench("Congested"),"0.1"),body_4285(4284,multi).
+algebraic_atom(41,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(41,1,1,set(none),age("4-10_days"),"0.1").
+algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35"):-algebraic_atom(112,0,0,set(none),lowerBodyO2("<5"),"0.6").
+lungParench("Normal"):-algebraic_atom(4,0,0,set(none),lungParench("Normal"),"0.8"),body_4321(4320,multi).
+algebraic_atom(43,2,1,set(none),age("11-30_days"),"0.1"):-algebraic_atom(43,2,0,set(none),age("11-30_days"),"0.1").
+algebraic_atom(111,2,1,set(none),lowerBodyO2("12+"),"0.05"):-algebraic_atom(111,2,0,set(none),lowerBodyO2("12+"),"0.05").
+algebraic_atom(42,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(42,2,0,set(none),age("11-30_days"),"0.05").
+algebraic_atom(88,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(88,0,0,set(none),hypDistrib("Equal"),"0.95").
+algebraic_atom(109,2,1,set(none),lowerBodyO2("12+"),"0.1"):-algebraic_atom(109,1,1,set(none),lowerBodyO2("5-12"),"0.4").
+algebraic_atom(44,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(44,0,0,set(none),age("0-3_days"),"0.7").
+algebraic_atom(88,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(88,1,0,set(none),hypDistrib("Unequal"),"0.05").
+algebraic_atom(111,1,1,set(none),lowerBodyO2("5-12"),"0.45"):-algebraic_atom(111,1,0,set(none),lowerBodyO2("5-12"),"0.45").
+algebraic_atom(3,2,1,set(none),lungParench("Abnormal"),"0.15"):-algebraic_atom(3,2,0,set(none),lungParench("Abnormal"),"0.15").
+algebraic_atom(42,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(42,1,0,set(none),age("4-10_days"),"0.15").
+age("11-30_days"):-algebraic_atom(41,2,0,set(none),age("11-30_days"),"0.05"),\+algebraic_atom(41,1,1,set(none),age("4-10_days"),"0.1"),body_4877(4876,multi).
+algebraic_atom(41,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(41,2,0,set(none),age("11-30_days"),"0.05").
+body_738(735,multi):-sick,disease("Fallot").
+hypDistrib("Equal"):-algebraic_atom(88,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5723(5722,multi).
+lowerBodyO2("<5"):-algebraic_atom(112,0,0,set(none),lowerBodyO2("<5"),"0.6"),body_6140(6139,multi).
+age("0-3_days"):-algebraic_atom(44,0,0,set(none),age("0-3_days"),"0.7"),body_4931(4930,multi).
+algebraic_atom(41,1,1,set(none),age("4-10_days"),"0.1"):-algebraic_atom(41,1,0,set(none),age("4-10_days"),"0.1").
+age("0-3_days"):-algebraic_atom(42,0,0,set(none),age("0-3_days"),"0.8"),body_4895(4894,multi).
+body_4913(4912,multi):-body_718(714,multi).
+hypDistrib("Unequal"):-algebraic_atom(87,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(87,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5710(5709,multi).
+lowerBodyO2("12+"):-algebraic_atom(111,2,0,set(none),lowerBodyO2("12+"),"0.05"),\+algebraic_atom(111,1,1,set(none),lowerBodyO2("5-12"),"0.45"),body_6122(6121,multi).
+body_1712(1711,multi):-chestXray("Normal").
+algebraic_atom(1,5,1,set(none),disease("Lung"),"0.05102041"):-algebraic_atom(1,5,0,set(none),disease("Lung"),"0.05102041").
+algebraic_atom(110,2,1,set(none),lowerBodyO2("12+"),"0.1"):-algebraic_atom(110,2,0,set(none),lowerBodyO2("12+"),"0.1").
+body_841(837,multi):-\+sick,disease("TAPVD").
+age("11-30_days"):-algebraic_atom(43,2,0,set(none),age("11-30_days"),"0.1"),\+algebraic_atom(43,1,1,set(none),age("4-10_days"),"0.2"),body_4913(4912,multi).
+lungParench("Abnormal"):-algebraic_atom(3,2,0,set(none),lungParench("Abnormal"),"0.15"),\+algebraic_atom(3,1,1,set(none),lungParench("Congested"),"0.05"),body_4303(4302,multi).
+age("11-30_days"):-algebraic_atom(42,2,0,set(none),age("11-30_days"),"0.05"),\+algebraic_atom(42,1,1,set(none),age("4-10_days"),"0.15"),body_4895(4894,multi).
+algebraic_atom(110,1,1,set(none),lowerBodyO2("5-12"),"0.5"):-algebraic_atom(110,0,0,set(none),lowerBodyO2("<5"),"0.4").
+body_882(878,multi):-\+sick,disease("Lung").
+algebraic_atom(87,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(87,0,0,set(none),hypDistrib("Equal"),"0.95").
+algebraic_atom(1,5,1,set(none),disease("Lung"),"0.05102041"):-algebraic_atom(1,4,1,set(none),disease("TAPVD"),"0.05102041").
+algebraic_atom(111,2,1,set(none),lowerBodyO2("12+"),"0.05"):-algebraic_atom(111,1,1,set(none),lowerBodyO2("5-12"),"0.45").
+body_4931(4930,multi):-body_738(735,multi).
+algebraic_atom(87,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(87,1,0,set(none),hypDistrib("Unequal"),"0.05").
+body_718(714,multi):-\+sick,disease("TGA").
+algebraic_atom(2,2,1,set(none),lungParench("Abnormal"),"0.3"):-algebraic_atom(2,1,1,set(none),lungParench("Congested"),"0.1").
+disease("TAPVD"):-algebraic_atom(1,4,0,set(none),disease("TAPVD"),"0.05102041"),\+algebraic_atom(1,3,1,set(none),disease("PAIVS"),"0.23469388"),body_4252(4251,multi).
+algebraic_atom(42,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(42,1,1,set(none),age("4-10_days"),"0.15").
+hypDistrib("Equal"):-algebraic_atom(86,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5697(5696,multi).
+body_4949(4948,multi):-body_759(755,multi).
+lungParench("Congested"):-algebraic_atom(3,1,0,set(none),lungParench("Congested"),"0.05"),\+algebraic_atom(3,0,0,set(none),lungParench("Normal"),"0.8"),body_4303(4302,multi).
+algebraic_atom(43,1,1,set(none),age("4-10_days"),"0.2"):-algebraic_atom(43,0,0,set(none),age("0-3_days"),"0.7").
+body_800(796,multi):-\+sick,disease("PAIVS").
+lungParench("Congested"):-algebraic_atom(2,1,0,set(none),lungParench("Congested"),"0.1"),\+algebraic_atom(2,0,0,set(none),lungParench("Normal"),"0.6"),body_4285(4284,multi).
+hypDistrib("Equal"):-algebraic_atom(87,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5710(5709,multi).
+lowerBodyO2("12+"):-algebraic_atom(110,2,0,set(none),lowerBodyO2("12+"),"0.1"),\+algebraic_atom(110,1,1,set(none),lowerBodyO2("5-12"),"0.5"),body_6104(6103,multi).
+algebraic_atom(2,1,1,set(none),lungParench("Congested"),"0.1"):-algebraic_atom(2,1,0,set(none),lungParench("Congested"),"0.1").
+lowerBodyO2("5-12"):-algebraic_atom(111,1,0,set(none),lowerBodyO2("5-12"),"0.45"),\+algebraic_atom(111,0,0,set(none),lowerBodyO2("<5"),"0.5"),body_6122(6121,multi).
+body_820(817,multi):-sick,disease("TAPVD").
+algebraic_atom(43,2,1,set(none),age("11-30_days"),"0.1"):-algebraic_atom(43,1,1,set(none),age("4-10_days"),"0.2").
+body_5021(5020,multi):-body_841(837,multi).
+hypDistrib("Unequal"):-algebraic_atom(86,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(86,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5697(5696,multi).
+algebraic_atom(86,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(86,0,0,set(none),hypDistrib("Equal"),"0.95").
+hypDistrib("Equal"):-algebraic_atom(84,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5671(5670,multi).
+algebraic_atom(111,1,1,set(none),lowerBodyO2("5-12"),"0.45"):-algebraic_atom(111,0,0,set(none),lowerBodyO2("<5"),"0.5").
+age("4-10_days"):-algebraic_atom(43,1,0,set(none),age("4-10_days"),"0.2"),\+algebraic_atom(43,0,0,set(none),age("0-3_days"),"0.7"),body_4913(4912,multi).
+algebraic_atom(3,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(3,1,0,set(none),lungParench("Congested"),"0.05").
+algebraic_atom(86,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(86,1,0,set(none),hypDistrib("Unequal"),"0.05").
+algebraic_atom(43,1,1,set(none),age("4-10_days"),"0.2"):-algebraic_atom(43,1,0,set(none),age("4-10_days"),"0.2").
+algebraic_atom(109,2,1,set(none),lowerBodyO2("12+"),"0.1"):-algebraic_atom(109,2,0,set(none),lowerBodyO2("12+"),"0.1").
+lowerBodyO2("<5"):-algebraic_atom(111,0,0,set(none),lowerBodyO2("<5"),"0.5"),body_6122(6121,multi).
+body_759(755,multi):-\+sick,disease("Fallot").
+age("4-10_days"):-algebraic_atom(41,1,0,set(none),age("4-10_days"),"0.1"),\+algebraic_atom(41,0,0,set(none),age("0-3_days"),"0.85"),body_4877(4876,multi).
+body_5801(5800,multi):-body_1712(1711,multi).
+body_5057(5056,multi):-body_882(878,multi).
+age("0-3_days"):-algebraic_atom(43,0,0,set(none),age("0-3_days"),"0.7"),body_4913(4912,multi).
+algebraic_atom(3,1,1,set(none),lungParench("Congested"),"0.05"):-algebraic_atom(3,0,0,set(none),lungParench("Normal"),"0.8").
+hypDistrib("Unequal"):-algebraic_atom(85,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(85,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5684(5683,multi).
+algebraic_atom(110,2,1,set(none),lowerBodyO2("12+"),"0.1"):-algebraic_atom(110,1,1,set(none),lowerBodyO2("5-12"),"0.5").
+body_861(858,multi):-sick,disease("Lung").
+algebraic_atom(1,4,1,set(none),disease("TAPVD"),"0.05102041"):-algebraic_atom(1,4,0,set(none),disease("TAPVD"),"0.05102041").
+body_4967(4966,multi):-body_779(776,multi).
+algebraic_atom(2,2,1,set(none),lungParench("Abnormal"),"0.3"):-algebraic_atom(2,2,0,set(none),lungParench("Abnormal"),"0.3").
+algebraic_atom(85,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(85,0,0,set(none),hypDistrib("Equal"),"0.95").
+body_4985(4984,multi):-body_800(796,multi).
+lungParench("Normal"):-algebraic_atom(2,0,0,set(none),lungParench("Normal"),"0.6"),body_4285(4284,multi).
+lowerBodyO2("12+"):-algebraic_atom(109,2,0,set(none),lowerBodyO2("12+"),"0.1"),\+algebraic_atom(109,1,1,set(none),lowerBodyO2("5-12"),"0.4"),body_6086(6085,multi).
+algebraic_atom(1,4,1,set(none),disease("TAPVD"),"0.05102041"):-algebraic_atom(1,3,1,set(none),disease("PAIVS"),"0.23469388").
+algebraic_atom(85,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(85,1,0,set(none),hypDistrib("Unequal"),"0.05").
+body_5003(5002,multi):-body_820(817,multi).
+age("4-10_days"):-algebraic_atom(42,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(42,0,0,set(none),age("0-3_days"),"0.8"),body_4895(4894,multi).
+body_5039(5038,multi):-body_861(858,multi).
+algebraic_atom(42,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(42,0,0,set(none),age("0-3_days"),"0.8").
+lowerBodyO2("5-12"):-algebraic_atom(110,1,0,set(none),lowerBodyO2("5-12"),"0.5"),\+algebraic_atom(110,0,0,set(none),lowerBodyO2("<5"),"0.4"),body_6104(6103,multi).
+disease("Lung"):-algebraic_atom(1,5,0,set(none),disease("Lung"),"0.05102041"),\+algebraic_atom(1,4,1,set(none),disease("TAPVD"),"0.05102041"),body_4252(4251,multi).
+hypDistrib("Equal"):-algebraic_atom(85,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5684(5683,multi).
+lungParench("Normal"):-algebraic_atom(3,0,0,set(none),lungParench("Normal"),"0.8"),body_4303(4302,multi).
+lowerBodyO2("<5"):-algebraic_atom(110,0,0,set(none),lowerBodyO2("<5"),"0.4"),body_6104(6103,multi).
+hypDistrib("Unequal"):-algebraic_atom(83,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(83,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5658(5657,multi).
+algebraic_atom(84,1,1,set(none),hypDistrib("Unequal"),"0.05"):-algebraic_atom(84,0,0,set(none),hypDistrib("Equal"),"0.95").
+body_779(776,multi):-sick,disease("PAIVS").
+hypDistrib("Unequal"):-algebraic_atom(84,1,0,set(none),hypDistrib("Unequal"),"0.05"),\+algebraic_atom(84,0,0,set(none),hypDistrib("Equal"),"0.95"),body_5671(5670,multi).
+algebraic_atom(14,2,1,set(none),cardiacMixing("Complete"),"0.15"):-algebraic_atom(14,1,1,set(none),cardiacMixing("Mild"),"0.43").
+algebraic_atom(79,2,1,set(none),chestXray("Plethoric"),"0.05"):-algebraic_atom(79,1,1,set(none),chestXray("Oligaemic"),"0.05").
+algebraic_atom(0,3,1,set(none),disease("PAIVS"),"0.15"):-algebraic_atom(0,3,0,set(none),disease("PAIVS"),"0.15").
+body_5885(5884,multi):-body_1797(1796,multi).
+lVH:-algebraic_atom(10,0,0,set(none),lVH,"0.1"),body_4409(4408,lVH).
+algebraic_atom(47,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(47,1,0,set(none),age("4-10_days"),"0.15").
+body_5477(5476,multi):-body_1353(1350,multi).
+algebraic_atom(45,1,1,set(none),age("4-10_days"),"0.25"):-algebraic_atom(45,0,0,set(none),age("0-3_days"),"0.25").
+chestXray("Asy/Patch"):-algebraic_atom(77,4,0,set(none),chestXray("Asy/Patch"),"0.15"),\+algebraic_atom(77,3,1,set(none),chestXray("Grd_Glass"),"0.5"),body_5505(5504,multi).
+algebraic_atom(14,1,1,set(none),cardiacMixing("Mild"),"0.43"):-algebraic_atom(14,1,0,set(none),cardiacMixing("Mild"),"0.43").
+algebraic_atom(14,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(14,2,1,set(none),cardiacMixing("Complete"),"0.15").
+algebraic_atom(46,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(46,2,0,set(none),age("11-30_days"),"0.05").
+chestXray("Oligaemic"):-algebraic_atom(79,1,0,set(none),chestXray("Oligaemic"),"0.05"),\+algebraic_atom(79,0,0,set(none),chestXray("Normal"),"0.05"),body_5561(5560,multi).
+body_5829(5828,multi):-body_1741(1740,multi).
+algebraic_atom(0,5,1,set(none),disease("Lung"),"0.05"):-algebraic_atom(0,4,1,set(none),disease("TAPVD"),"0.05").
+algebraic_atom(44,2,1,set(none),age("11-30_days"),"0.15"):-algebraic_atom(44,1,1,set(none),age("4-10_days"),"0.15").
+body_6181(6180,lVH):-dec_3.
+algebraic_atom(46,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(46,1,0,set(none),age("4-10_days"),"0.15").
+body_5533(5532,multi):-body_1413(1410,multi).
+cardiacMixing("Complete"):-algebraic_atom(14,2,0,set(none),cardiacMixing("Complete"),"0.15"),\+algebraic_atom(14,1,1,set(none),cardiacMixing("Mild"),"0.43"),body_4441(4440,multi).
+age("0-3_days"):-algebraic_atom(47,0,0,set(none),age("0-3_days"),"0.8"),body_4985(4984,multi).
+body_1353(1350,multi):-lungFlow("Normal"),lungParench("Congested").
+disease("PAIVS"):-algebraic_atom(1,3,0,set(none),disease("PAIVS"),"0.23469388"),\+algebraic_atom(1,2,1,set(none),disease("Fallot"),"0.29591837"),body_4252(4251,multi).
+algebraic_atom(79,1,1,set(none),chestXray("Oligaemic"),"0.05"):-algebraic_atom(79,1,0,set(none),chestXray("Oligaemic"),"0.05").
+body_6201(6200,hypoxiaInO2("Mild")):-dec_5.
+body_1383(1380,multi):-lungFlow("Low"),lungParench("Congested").
+algebraic_atom(7,2,1,set(none),lungParench("Abnormal"),"0.72"):-algebraic_atom(7,2,0,set(none),lungParench("Abnormal"),"0.72").
+algebraic_atom(47,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(47,0,0,set(none),age("0-3_days"),"0.8").
+body_1797(1796,multi):-chestXray("Grd_Glass").
+body_6191(6190,ductFlow("Rt_to_Lt")):-dec_4.
+algebraic_atom(1,3,1,set(none),disease("PAIVS"),"0.23469388"):-algebraic_atom(1,2,1,set(none),disease("Fallot"),"0.29591837").
+body_6271(6270,lowerBodyO2("5-12")):-dec_12.
+algebraic_atom(1,2,1,set(none),disease("Fallot"),"0.29591837"):-algebraic_atom(1,1,1,set(none),disease("TGA"),"0.33673469").
+algebraic_atom(46,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(46,0,0,set(none),age("0-3_days"),"0.8").
+body_6211(6210,hypoxiaInO2("Severe")):-dec_6.
+chestXray("Grd_Glass"):-algebraic_atom(78,3,0,set(none),chestXray("Grd_Glass"),"0.4"),\+algebraic_atom(78,2,1,set(none),chestXray("Plethoric"),"0.4"),body_5533(5532,multi).
+body_5505(5504,multi):-body_1383(1380,multi).
+algebraic_atom(79,1,1,set(none),chestXray("Oligaemic"),"0.05"):-algebraic_atom(79,0,0,set(none),chestXray("Normal"),"0.05").
+body_1741(1740,multi):-chestXray("Oligaemic").
+algebraic_atom(1,3,1,set(none),disease("PAIVS"),"0.23469388"):-algebraic_atom(1,3,0,set(none),disease("PAIVS"),"0.23469388").
+body_1825(1824,multi):-chestXray("Asy/Patch").
+body_5449(5448,multi):-body_1323(1320,multi).
+disease("Lung"):-algebraic_atom(0,5,0,set(none),disease("Lung"),"0.05"),\+algebraic_atom(0,4,1,set(none),disease("TAPVD"),"0.05"),body_4219(4218,multi).
+body_1769(1768,multi):-chestXray("Plethoric").
+algebraic_atom(14,1,1,set(none),cardiacMixing("Mild"),"0.43"):-algebraic_atom(14,0,0,set(none),cardiacMixing("None"),"0.4").
+body_6241(6240,xrayReport("Grd_Glass")):-dec_9.
+algebraic_atom(14,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(14,3,0,set(none),cardiacMixing("Transp."),"0.02").
+algebraic_atom(78,3,1,set(none),chestXray("Grd_Glass"),"0.4"):-algebraic_atom(78,2,1,set(none),chestXray("Plethoric"),"0.4").
+chestXray("Normal"):-algebraic_atom(79,0,0,set(none),chestXray("Normal"),"0.05"),body_5561(5560,multi).
+lungParench("Congested"):-algebraic_atom(7,1,0,set(none),lungParench("Congested"),"0.25"),\+algebraic_atom(7,0,0,set(none),lungParench("Normal"),"0.03"),body_4375(4374,multi).
+body_5857(5856,multi):-body_1769(1768,multi).
+disease("PFC"):-algebraic_atom(1,0,0,set(none),disease("PFC"),"0.03061224"),body_4252(4251,multi).
+lungParench("Abnormal"):-algebraic_atom(7,2,0,set(none),lungParench("Abnormal"),"0.72"),\+algebraic_atom(7,1,1,set(none),lungParench("Congested"),"0.25"),body_4375(4374,multi).
+algebraic_atom(78,2,1,set(none),chestXray("Plethoric"),"0.4"):-algebraic_atom(78,2,0,set(none),chestXray("Plethoric"),"0.4").
+algebraic_atom(44,2,1,set(none),age("11-30_days"),"0.15"):-algebraic_atom(44,2,0,set(none),age("11-30_days"),"0.15").
+algebraic_atom(0,2,1,set(none),disease("Fallot"),"0.25"):-algebraic_atom(0,1,1,set(none),disease("TGA"),"0.3").
+algebraic_atom(7,1,1,set(none),lungParench("Congested"),"0.25"):-algebraic_atom(7,1,0,set(none),lungParench("Congested"),"0.25").
+algebraic_atom(78,1,1,set(none),chestXray("Oligaemic"),"0.02"):-algebraic_atom(78,1,0,set(none),chestXray("Oligaemic"),"0.02").
+body_1473(1470,multi):-lungFlow("Low"),lungParench("Abnormal").
+body_5617(5616,multi):-body_1503(1500,multi).
+age("11-30_days"):-algebraic_atom(46,2,0,set(none),age("11-30_days"),"0.05"),\+algebraic_atom(46,1,1,set(none),age("4-10_days"),"0.15"),body_4967(4966,multi).
+chestXray("Asy/Patch"):-algebraic_atom(78,4,0,set(none),chestXray("Asy/Patch"),"0.13"),\+algebraic_atom(78,3,1,set(none),chestXray("Grd_Glass"),"0.4"),body_5533(5532,multi).
+disease("Fallot"):-algebraic_atom(1,2,0,set(none),disease("Fallot"),"0.29591837"),\+algebraic_atom(1,1,1,set(none),disease("TGA"),"0.33673469"),body_4252(4251,multi).
+cardiacMixing("Mild"):-algebraic_atom(14,1,0,set(none),cardiacMixing("Mild"),"0.43"),\+algebraic_atom(14,0,0,set(none),cardiacMixing("None"),"0.4"),body_4441(4440,multi).
+age("11-30_days"):-algebraic_atom(44,2,0,set(none),age("11-30_days"),"0.15"),\+algebraic_atom(44,1,1,set(none),age("4-10_days"),"0.15"),body_4931(4930,multi).
+algebraic_atom(78,4,1,set(none),chestXray("Asy/Patch"),"0.13"):-algebraic_atom(78,3,1,set(none),chestXray("Grd_Glass"),"0.4").
+chestXray("Oligaemic"):-algebraic_atom(78,1,0,set(none),chestXray("Oligaemic"),"0.02"),\+algebraic_atom(78,0,0,set(none),chestXray("Normal"),"0.05"),body_5533(5532,multi).
+algebraic_atom(0,3,1,set(none),disease("PAIVS"),"0.15"):-algebraic_atom(0,2,1,set(none),disease("Fallot"),"0.25").
+algebraic_atom(14,2,1,set(none),cardiacMixing("Complete"),"0.15"):-algebraic_atom(14,2,0,set(none),cardiacMixing("Complete"),"0.15").
+algebraic_atom(45,2,1,set(none),age("11-30_days"),"0.5"):-algebraic_atom(45,1,1,set(none),age("4-10_days"),"0.25").
+age("4-10_days"):-algebraic_atom(44,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(44,0,0,set(none),age("0-3_days"),"0.7"),body_4931(4930,multi).
+rUQO2("<5"):-algebraic_atom(104,0,0,set(none),rUQO2("<5"),"0.1"),body_5996(5995,multi).
+disease("PAIVS"):-algebraic_atom(0,3,0,set(none),disease("PAIVS"),"0.15"),\+algebraic_atom(0,2,1,set(none),disease("Fallot"),"0.25"),body_4219(4218,multi).
+body_6231(6230,hypDistrib("Unequal")):-dec_8.
+disease("Fallot"):-algebraic_atom(0,2,0,set(none),disease("Fallot"),"0.25"),\+algebraic_atom(0,1,1,set(none),disease("TGA"),"0.3"),body_4219(4218,multi).
+age("4-10_days"):-algebraic_atom(45,1,0,set(none),age("4-10_days"),"0.25"),\+algebraic_atom(45,0,0,set(none),age("0-3_days"),"0.25"),body_4949(4948,multi).
+lVH:-algebraic_atom(13,0,0,set(none),lVH,"0.1"),body_4433(4432,lVH).
+age("4-10_days"):-algebraic_atom(46,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(46,0,0,set(none),age("0-3_days"),"0.8"),body_4967(4966,multi).
+algebraic_atom(78,4,1,set(none),chestXray("Asy/Patch"),"0.13"):-algebraic_atom(78,4,0,set(none),chestXray("Asy/Patch"),"0.13").
+algebraic_atom(1,2,1,set(none),disease("Fallot"),"0.29591837"):-algebraic_atom(1,2,0,set(none),disease("Fallot"),"0.29591837").
+lVH:-algebraic_atom(11,0,0,set(none),lVH,"0.9"),body_4417(4416,lVH).
+algebraic_atom(46,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(46,1,1,set(none),age("4-10_days"),"0.15").
+body_5913(5912,multi):-body_1825(1824,multi).
+algebraic_atom(0,5,1,set(none),disease("Lung"),"0.05"):-algebraic_atom(0,5,0,set(none),disease("Lung"),"0.05").
+algebraic_atom(45,1,1,set(none),age("4-10_days"),"0.25"):-algebraic_atom(45,1,0,set(none),age("4-10_days"),"0.25").
+algebraic_atom(78,3,1,set(none),chestXray("Grd_Glass"),"0.4"):-algebraic_atom(78,3,0,set(none),chestXray("Grd_Glass"),"0.4").
+body_6261(6260,lowerBodyO2("5-12")):-dec_11.
+algebraic_atom(1,1,1,set(none),disease("TGA"),"0.33673469"):-algebraic_atom(1,1,0,set(none),disease("TGA"),"0.33673469").
+body_6221(6220,hypoxiaInO2("Moderate")):-dec_7.
+disease("TGA"):-algebraic_atom(1,1,0,set(none),disease("TGA"),"0.33673469"),\+algebraic_atom(1,0,0,set(none),disease("PFC"),"0.03061224"),body_4252(4251,multi).
+algebraic_atom(7,2,1,set(none),lungParench("Abnormal"),"0.72"):-algebraic_atom(7,1,1,set(none),lungParench("Congested"),"0.25").
+body_1503(1500,multi):-lungFlow("High"),lungParench("Abnormal").
+algebraic_atom(78,1,1,set(none),chestXray("Oligaemic"),"0.02"):-algebraic_atom(78,0,0,set(none),chestXray("Normal"),"0.05").
+body_1443(1440,multi):-lungFlow("Normal"),lungParench("Abnormal").
+cardiacMixing("None"):-algebraic_atom(14,0,0,set(none),cardiacMixing("None"),"0.4"),body_4441(4440,multi).
+chestXray("Plethoric"):-algebraic_atom(78,2,0,set(none),chestXray("Plethoric"),"0.4"),\+algebraic_atom(78,1,1,set(none),chestXray("Oligaemic"),"0.02"),body_5533(5532,multi).
+algebraic_atom(104,2,1,set(none),rUQO2("12+"),"0.6"):-algebraic_atom(104,1,1,set(none),rUQO2("5-12"),"0.3").
+disease("TAPVD"):-algebraic_atom(0,4,0,set(none),disease("TAPVD"),"0.05"),\+algebraic_atom(0,3,1,set(none),disease("PAIVS"),"0.15"),body_4219(4218,multi).
+lVH:-algebraic_atom(9,0,0,set(none),lVH,"0.1"),body_4401(4400,lVH).
+body_6251(6250,lowerBodyO2("5-12")):-dec_10.
+algebraic_atom(109,1,1,set(none),lowerBodyO2("5-12"),"0.4"):-algebraic_atom(109,1,0,set(none),lowerBodyO2("5-12"),"0.4").
+body_1413(1410,multi):-lungFlow("High"),lungParench("Congested").
+age("0-3_days"):-algebraic_atom(46,0,0,set(none),age("0-3_days"),"0.8"),body_4967(4966,multi).
+algebraic_atom(104,1,1,set(none),rUQO2("5-12"),"0.3"):-algebraic_atom(104,0,0,set(none),rUQO2("<5"),"0.1").
+body_5561(5560,multi):-body_1443(1440,multi).
+lVH:-algebraic_atom(12,0,0,set(none),lVH,"0.05"),body_4425(4424,lVH).
+algebraic_atom(1,1,1,set(none),disease("TGA"),"0.33673469"):-algebraic_atom(1,0,0,set(none),disease("PFC"),"0.03061224").
+algebraic_atom(78,2,1,set(none),chestXray("Plethoric"),"0.4"):-algebraic_atom(78,1,1,set(none),chestXray("Oligaemic"),"0.02").
+algebraic_atom(45,2,1,set(none),age("11-30_days"),"0.5"):-algebraic_atom(45,2,0,set(none),age("11-30_days"),"0.5").
+age("0-3_days"):-algebraic_atom(45,0,0,set(none),age("0-3_days"),"0.25"),body_4949(4948,multi).
+body_5589(5588,multi):-body_1473(1470,multi).
+algebraic_atom(44,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(44,1,0,set(none),age("4-10_days"),"0.15").
+chestXray("Normal"):-algebraic_atom(78,0,0,set(none),chestXray("Normal"),"0.05"),body_5533(5532,multi).
+algebraic_atom(0,2,1,set(none),disease("Fallot"),"0.25"):-algebraic_atom(0,2,0,set(none),disease("Fallot"),"0.25").
+algebraic_atom(0,4,1,set(none),disease("TAPVD"),"0.05"):-algebraic_atom(0,3,1,set(none),disease("PAIVS"),"0.15").
+algebraic_atom(0,4,1,set(none),disease("TAPVD"),"0.05"):-algebraic_atom(0,4,0,set(none),disease("TAPVD"),"0.05").
+lVH:-algebraic_atom(8,0,0,set(none),lVH,"0.1"),body_4393(4392,lVH).
+age("11-30_days"):-algebraic_atom(45,2,0,set(none),age("11-30_days"),"0.5"),\+algebraic_atom(45,1,1,set(none),age("4-10_days"),"0.25"),body_4949(4948,multi).
+algebraic_atom(98,3,1,set(none),xrayReport("Grd_Glass"),"0.1"):-algebraic_atom(98,3,0,set(none),xrayReport("Grd_Glass"),"0.1").
+body_299(298,multi):-disease("PAIVS").
+algebraic_atom(80,4,1,set(none),chestXray("Asy/Patch"),"0.7"):-algebraic_atom(80,3,1,set(none),chestXray("Grd_Glass"),"0.05").
+algebraic_atom(94,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom(94,4,0,set(none),xrayReport("Asy/Patchy"),"0.06").
+body_4375(4374,multi):-body_162(161,multi).
+chestXray("Oligaemic"):-algebraic_atom(80,1,0,set(none),chestXray("Oligaemic"),"0.15"),\+algebraic_atom(80,0,0,set(none),chestXray("Normal"),"0.05"),body_5589(5588,multi).
+algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02"):-algebraic_atom(95,1,1,set(none),xrayReport("Oligaemic"),"0.8").
+algebraic_atom(98,3,1,set(none),xrayReport("Grd_Glass"),"0.1"):-algebraic_atom(98,2,1,set(none),xrayReport("Plethoric"),"0.1").
+body_38(36,multi):-\+birthAsphyxia.
+body_4464(4463,multi):-body_253(252,multi).
+algebraic_atom(80,4,1,set(none),chestXray("Asy/Patch"),"0.7"):-algebraic_atom(80,4,0,set(none),chestXray("Asy/Patch"),"0.7").
+body_229(228,multi):-disease("PFC").
+xrayReport("Oligaemic"):-algebraic_atom(95,1,0,set(none),xrayReport("Oligaemic"),"0.8"),\+algebraic_atom(95,0,0,set(none),xrayReport("Normal"),"0.1"),body_5829(5828,multi).
+algebraic_atom(80,1,1,set(none),chestXray("Oligaemic"),"0.15"):-algebraic_atom(80,0,0,set(none),chestXray("Normal"),"0.05").
+xrayReport("Plethoric"):-algebraic_atom(98,2,0,set(none),xrayReport("Plethoric"),"0.1"),\+algebraic_atom(98,1,1,set(none),xrayReport("Oligaemic"),"0.02"),body_5913(5912,multi).
+body_4510(4509,multi):-body_299(298,multi).
+algebraic_atom(98,2,1,set(none),xrayReport("Plethoric"),"0.1"):-algebraic_atom(98,2,0,set(none),xrayReport("Plethoric"),"0.1").
+algebraic_atom(97,1,1,set(none),xrayReport("Oligaemic"),"0.02"):-algebraic_atom(97,1,0,set(none),xrayReport("Oligaemic"),"0.02").
+chestXray("Grd_Glass"):-algebraic_atom(80,3,0,set(none),chestXray("Grd_Glass"),"0.05"),\+algebraic_atom(80,2,1,set(none),chestXray("Plethoric"),"0.05"),body_5589(5588,multi).
+algebraic_atom(97,4,1,set(none),xrayReport("Asy/Patchy"),"0.2"):-algebraic_atom(97,4,0,set(none),xrayReport("Asy/Patchy"),"0.2").
+algebraic_atom(95,1,1,set(none),xrayReport("Oligaemic"),"0.8"):-algebraic_atom(95,1,0,set(none),xrayReport("Oligaemic"),"0.8").
+lowerBodyO2("5-12"):-algebraic_atom(124,0,0,set(none),lowerBodyO2("5-12"),"0.5"),body_6271(6270,lowerBodyO2("5-12")).
+algebraic_atom(80,3,1,set(none),chestXray("Grd_Glass"),"0.05"):-algebraic_atom(80,3,0,set(none),chestXray("Grd_Glass"),"0.05").
+algebraic_atom(98,2,1,set(none),xrayReport("Plethoric"),"0.1"):-algebraic_atom(98,1,1,set(none),xrayReport("Oligaemic"),"0.02").
+algebraic_atom(95,1,1,set(none),xrayReport("Oligaemic"),"0.8"):-algebraic_atom(95,0,0,set(none),xrayReport("Normal"),"0.1").
+body_3(2,multi):-birthAsphyxia.
+hypoxiaInO2("Moderate"):-algebraic_atom(119,0,0,set(none),hypoxiaInO2("Moderate"),"0.18"),body_6221(6220,hypoxiaInO2("Moderate")).
+body_4441(4440,multi):-body_229(228,multi).
+body_4487(4486,multi):-body_276(275,multi).
+algebraic_atom(79,2,1,set(none),chestXray("Plethoric"),"0.05"):-algebraic_atom(79,2,0,set(none),chestXray("Plethoric"),"0.05").
+xrayReport("Oligaemic"):-algebraic_atom(97,1,0,set(none),xrayReport("Oligaemic"),"0.02"),\+algebraic_atom(97,0,0,set(none),xrayReport("Normal"),"0.08"),body_5885(5884,multi).
+body_6171(6170,lungParench("Normal")):-dec_2.
+algebraic_atom(107,2,1,set(none),lowerBodyO2("12+"),"0.6"):-algebraic_atom(107,2,0,set(none),lowerBodyO2("12+"),"0.6").
+body_4252(4251,multi):-body_38(36,multi).
+algebraic_atom(80,3,1,set(none),chestXray("Grd_Glass"),"0.05"):-algebraic_atom(80,2,1,set(none),chestXray("Plethoric"),"0.05").
+xrayReport("Normal"):-algebraic_atom(95,0,0,set(none),xrayReport("Normal"),"0.1"),body_5829(5828,multi).
+body_276(275,multi):-disease("Fallot").
+xrayReport("Oligaemic"):-algebraic_atom(98,1,0,set(none),xrayReport("Oligaemic"),"0.02"),\+algebraic_atom(98,0,0,set(none),xrayReport("Normal"),"0.08"),body_5913(5912,multi).
+lowerBodyO2("5-12"):-algebraic_atom(123,0,0,set(none),lowerBodyO2("5-12"),"0.6"),body_6261(6260,lowerBodyO2("5-12")).
+body_144(143,multi):-disease("TAPVD").
+algebraic_atom(97,1,1,set(none),xrayReport("Oligaemic"),"0.02"):-algebraic_atom(97,0,0,set(none),xrayReport("Normal"),"0.08").
+algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35"):-algebraic_atom(112,1,0,set(none),lowerBodyO2("5-12"),"0.35").
+body_253(252,multi):-disease("TGA").
+body_4339(4338,multi):-body_126(125,multi).
+chestXray("Plethoric"):-algebraic_atom(80,2,0,set(none),chestXray("Plethoric"),"0.05"),\+algebraic_atom(80,1,1,set(none),chestXray("Oligaemic"),"0.15"),body_5589(5588,multi).
+xrayReport("Asy/Patchy"):-algebraic_atom(94,4,0,set(none),xrayReport("Asy/Patchy"),"0.06"),\+algebraic_atom(94,3,1,set(none),xrayReport("Grd_Glass"),"0.02"),body_5801(5800,multi).
+xrayReport("Normal"):-algebraic_atom(97,0,0,set(none),xrayReport("Normal"),"0.08"),body_5885(5884,multi).
+algebraic_atom(98,1,1,set(none),xrayReport("Oligaemic"),"0.02"):-algebraic_atom(98,1,0,set(none),xrayReport("Oligaemic"),"0.02").
+lowerBodyO2("5-12"):-algebraic_atom(122,0,0,set(none),lowerBodyO2("5-12"),"0.3"),body_6251(6250,lowerBodyO2("5-12")).
+algebraic_atom(80,2,1,set(none),chestXray("Plethoric"),"0.05"):-algebraic_atom(80,2,0,set(none),chestXray("Plethoric"),"0.05").
+body_4303(4302,multi):-body_90(89,multi).
+algebraic_atom(98,1,1,set(none),xrayReport("Oligaemic"),"0.02"):-algebraic_atom(98,0,0,set(none),xrayReport("Normal"),"0.08").
+disease("PAIVS"):-algebraic_atom(113,0,0,set(none),disease("PAIVS"),"0.23469388"),body_6161(6160,disease("PAIVS")).
+algebraic_atom(94,2,1,set(none),xrayReport("Plethoric"),"0.06"):-algebraic_atom(94,2,0,set(none),xrayReport("Plethoric"),"0.06").
+algebraic_atom(80,2,1,set(none),chestXray("Plethoric"),"0.05"):-algebraic_atom(80,1,1,set(none),chestXray("Oligaemic"),"0.15").
+xrayReport("Grd_Glass"):-algebraic_atom(121,0,0,set(none),xrayReport("Grd_Glass"),"0.02"),body_6241(6240,xrayReport("Grd_Glass")).
+algebraic_atom(94,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom(94,3,1,set(none),xrayReport("Grd_Glass"),"0.02").
+body_162(161,multi):-disease("Lung").
+lVH:-algebraic_atom(115,0,0,set(none),lVH,"0.1"),body_6181(6180,lVH).
+body_4321(4320,multi):-body_108(107,multi).
+xrayReport("Normal"):-algebraic_atom(98,0,0,set(none),xrayReport("Normal"),"0.08"),body_5913(5912,multi).
+algebraic_atom(79,4,1,set(none),chestXray("Asy/Patch"),"0.8"):-algebraic_atom(79,3,1,set(none),chestXray("Grd_Glass"),"0.05").
+hypDistrib("Unequal"):-algebraic_atom(120,0,0,set(none),hypDistrib("Unequal"),"0.05"),body_6231(6230,hypDistrib("Unequal")).
+algebraic_atom(80,1,1,set(none),chestXray("Oligaemic"),"0.15"):-algebraic_atom(80,1,0,set(none),chestXray("Oligaemic"),"0.15").
+algebraic_atom(112,2,1,set(none),lowerBodyO2("12+"),"0.05"):-algebraic_atom(112,2,0,set(none),lowerBodyO2("12+"),"0.05").
+body_4219(4218,multi):-body_3(2,multi).
+xrayReport("Grd_Glass"):-algebraic_atom(94,3,0,set(none),xrayReport("Grd_Glass"),"0.02"),\+algebraic_atom(94,2,1,set(none),xrayReport("Plethoric"),"0.06"),body_5801(5800,multi).
+xrayReport("Asy/Patchy"):-algebraic_atom(97,4,0,set(none),xrayReport("Asy/Patchy"),"0.2"),\+algebraic_atom(97,3,1,set(none),xrayReport("Grd_Glass"),"0.6"),body_5885(5884,multi).
+algebraic_atom(94,1,1,set(none),xrayReport("Oligaemic"),"0.06"):-algebraic_atom(94,1,0,set(none),xrayReport("Oligaemic"),"0.06").
+body_6161(6160,disease("PAIVS")):-dec_1.
+algebraic_atom(97,4,1,set(none),xrayReport("Asy/Patchy"),"0.2"):-algebraic_atom(97,3,1,set(none),xrayReport("Grd_Glass"),"0.6").
+hypDistrib("Unequal"):-algebraic_atom(93,1,0,set(none),hypDistrib("Unequal"),"0.5"),\+algebraic_atom(93,0,0,set(none),hypDistrib("Equal"),"0.5"),body_5788(5787,multi).
+hypoxiaInO2("Severe"):-algebraic_atom(118,0,0,set(none),hypoxiaInO2("Severe"),"0.4"),body_6211(6210,hypoxiaInO2("Severe")).
+lowerBodyO2("12+"):-algebraic_atom(112,2,0,set(none),lowerBodyO2("12+"),"0.05"),\+algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35"),body_6140(6139,multi).
+algebraic_atom(94,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(94,3,0,set(none),xrayReport("Grd_Glass"),"0.02").
+xrayReport("Plethoric"):-algebraic_atom(97,2,0,set(none),xrayReport("Plethoric"),"0.1"),\+algebraic_atom(97,1,1,set(none),xrayReport("Oligaemic"),"0.02"),body_5885(5884,multi).
+algebraic_atom(94,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(94,2,1,set(none),xrayReport("Plethoric"),"0.06").
+chestXray("Normal"):-algebraic_atom(80,0,0,set(none),chestXray("Normal"),"0.05"),body_5589(5588,multi).
+algebraic_atom(97,2,1,set(none),xrayReport("Plethoric"),"0.1"):-algebraic_atom(97,2,0,set(none),xrayReport("Plethoric"),"0.1").
+hypoxiaInO2("Mild"):-algebraic_atom(117,0,0,set(none),hypoxiaInO2("Mild"),"0.05"),body_6201(6200,hypoxiaInO2("Mild")).
+body_90(89,multi):-disease("TGA").
+xrayReport("Normal"):-algebraic_atom(94,0,0,set(none),xrayReport("Normal"),"0.8"),body_5801(5800,multi).
+algebraic_atom(112,2,1,set(none),lowerBodyO2("12+"),"0.05"):-algebraic_atom(112,1,1,set(none),lowerBodyO2("5-12"),"0.35").
+chestXray("Asy/Patch"):-algebraic_atom(79,4,0,set(none),chestXray("Asy/Patch"),"0.8"),\+algebraic_atom(79,3,1,set(none),chestXray("Grd_Glass"),"0.05"),body_5561(5560,multi).
+ductFlow("Rt_to_Lt"):-algebraic_atom(116,0,0,set(none),ductFlow("Rt_to_Lt"),"0.0"),body_6191(6190,ductFlow("Rt_to_Lt")).
+xrayReport("Plethoric"):-algebraic_atom(94,2,0,set(none),xrayReport("Plethoric"),"0.06"),\+algebraic_atom(94,1,1,set(none),xrayReport("Oligaemic"),"0.06"),body_5801(5800,multi).
+xrayReport("Grd_Glass"):-algebraic_atom(97,3,0,set(none),xrayReport("Grd_Glass"),"0.6"),\+algebraic_atom(97,2,1,set(none),xrayReport("Plethoric"),"0.1"),body_5885(5884,multi).
+algebraic_atom(79,3,1,set(none),chestXray("Grd_Glass"),"0.05"):-algebraic_atom(79,2,1,set(none),chestXray("Plethoric"),"0.05").
+body_4285(4284,multi):-body_71(70,multi).
+chestXray("Plethoric"):-algebraic_atom(79,2,0,set(none),chestXray("Plethoric"),"0.05"),\+algebraic_atom(79,1,1,set(none),chestXray("Oligaemic"),"0.05"),body_5561(5560,multi).
+body_4357(4356,multi):-body_144(143,multi).
+algebraic_atom(97,2,1,set(none),xrayReport("Plethoric"),"0.1"):-algebraic_atom(97,1,1,set(none),xrayReport("Oligaemic"),"0.02").
+algebraic_atom(93,1,1,set(none),hypDistrib("Unequal"),"0.5"):-algebraic_atom(93,0,0,set(none),hypDistrib("Equal"),"0.5").
+lowerBodyO2("5-12"):-algebraic_atom(112,1,0,set(none),lowerBodyO2("5-12"),"0.35"),\+algebraic_atom(112,0,0,set(none),lowerBodyO2("<5"),"0.6"),body_6140(6139,multi).
+body_71(70,multi):-disease("PFC").
+algebraic_atom(79,4,1,set(none),chestXray("Asy/Patch"),"0.8"):-algebraic_atom(79,4,0,set(none),chestXray("Asy/Patch"),"0.8").
+algebraic_atom(94,2,1,set(none),xrayReport("Plethoric"),"0.06"):-algebraic_atom(94,1,1,set(none),xrayReport("Oligaemic"),"0.06").
+body_108(107,multi):-disease("Fallot").
+algebraic_atom(97,3,1,set(none),xrayReport("Grd_Glass"),"0.6"):-algebraic_atom(97,3,0,set(none),xrayReport("Grd_Glass"),"0.6").
+lungParench("Normal"):-algebraic_atom(114,0,0,set(none),lungParench("Normal"),"0.8"),body_6171(6170,lungParench("Normal")).
+algebraic_atom(79,3,1,set(none),chestXray("Grd_Glass"),"0.05"):-algebraic_atom(79,3,0,set(none),chestXray("Grd_Glass"),"0.05").
+algebraic_atom(97,3,1,set(none),xrayReport("Grd_Glass"),"0.6"):-algebraic_atom(97,2,1,set(none),xrayReport("Plethoric"),"0.1").
+algebraic_atom(94,1,1,set(none),xrayReport("Oligaemic"),"0.06"):-algebraic_atom(94,0,0,set(none),xrayReport("Normal"),"0.8").
+body_126(125,multi):-disease("PAIVS").
+chestXray("Grd_Glass"):-algebraic_atom(79,3,0,set(none),chestXray("Grd_Glass"),"0.05"),\+algebraic_atom(79,2,1,set(none),chestXray("Plethoric"),"0.05"),body_5561(5560,multi).
+xrayReport("Oligaemic"):-algebraic_atom(94,1,0,set(none),xrayReport("Oligaemic"),"0.06"),\+algebraic_atom(94,0,0,set(none),xrayReport("Normal"),"0.8"),body_5801(5800,multi).
+disease("TGA"):-algebraic_atom(0,1,0,set(none),disease("TGA"),"0.3"),\+algebraic_atom(0,0,0,set(none),disease("PFC"),"0.2"),body_4219(4218,multi).
+algebraic_atom(69,1,1,set(none),hypoxiaInO2("Moderate"),"0.5"):-algebraic_atom(69,1,0,set(none),hypoxiaInO2("Moderate"),"0.5").
+algebraic_atom(53,1,1,set(none),cO2("Low"),"0.05"):-algebraic_atom(53,1,0,set(none),cO2("Low"),"0.05").
+util_node(2):-\+age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),age("11-30_days"),\+disease("TGA"),lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),chestXray("Plethoric"),\+cardiacMixing("Mild").
+body_1323(1320,multi):-lungFlow("High"),lungParench("Normal").
+algebraic_atom(0,1,1,set(none),disease("TGA"),"0.3"):-algebraic_atom(0,1,0,set(none),disease("TGA"),"0.3").
+body_5421(5420,multi):-body_1293(1290,multi).
+util_node(0):-age("0-3_days"),cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),grunting,\+cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,chestXray("Asy/Patch"),lowerBodyO2("12+"),xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),\+sick,\+lungFlow("Low"),\+lungFlow("High"),\+disease("Fallot"),cardiacMixing("None"),\+cardiacMixing("Complete"),gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),birthAsphyxia,disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(15,3,1,set(none),cardiacMixing("Transp."),"0.8"):-algebraic_atom(15,2,1,set(none),cardiacMixing("Complete"),"0.09").
+algebraic_atom(70,1,1,set(none),hypoxiaInO2("Moderate"),"0.18"):-algebraic_atom(70,0,0,set(none),hypoxiaInO2("Mild"),"0.02").
+algebraic_atom(101,1,1,set(none),cO2Report(">=7.5"),"0.1"):-algebraic_atom(101,1,0,set(none),cO2Report(">=7.5"),"0.1").
+body_417(416,multi):-disease("PFC").
+algebraic_atom(33,2,1,set(none),ductFlow("Rt_to_Lt"),"0.1"):-algebraic_atom(33,2,0,set(none),ductFlow("Rt_to_Lt"),"0.1").
+algebraic_atom(52,2,1,set(none),cO2("High"),"0.1"):-algebraic_atom(52,2,0,set(none),cO2("High"),"0.1").
+body_6140(6139,multi):-body_2069(2066,multi).
+algebraic_atom(15,2,1,set(none),cardiacMixing("Complete"),"0.09"):-algebraic_atom(15,1,1,set(none),cardiacMixing("Mild"),"0.09").
+algebraic_atom(51,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(51,1,1,set(none),age("4-10_days"),"0.15").
+body_2049(2046,multi):-hypoxiaInO2("Moderate"),hypDistrib("Unequal").
+body_1262(1259,multi):-lungFlow("Normal"),lungParench("Normal").
+util_node(0):-\+age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),lVHreport,\+cardiacMixing("Transp."),xrayReport("Normal"),\+grunting,\+cO2("Normal"),age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(69,2,1,set(none),hypoxiaInO2("Severe"),"0.4"):-algebraic_atom(69,2,0,set(none),hypoxiaInO2("Severe"),"0.4").
+cO2Report(">=7.5"):-algebraic_atom(103,1,0,set(none),cO2Report(">=7.5"),"0.9"),\+algebraic_atom(103,0,0,set(none),cO2Report("<7.5"),"0.1"),body_5983(5982,multi).
+lowerBodyO2("5-12"):-algebraic_atom(109,1,0,set(none),lowerBodyO2("5-12"),"0.4"),\+algebraic_atom(109,0,0,set(none),lowerBodyO2("<5"),"0.5"),body_6086(6085,multi).
+cardiacMixing("None"):-algebraic_atom(17,0,0,set(none),cardiacMixing("None"),"0.01"),body_4510(4509,multi).
+algebraic_atom(52,1,1,set(none),cO2("Low"),"0.1"):-algebraic_atom(52,1,0,set(none),cO2("Low"),"0.1").
+algebraic_atom(106,2,1,set(none),rUQO2("12+"),"0.1"):-algebraic_atom(106,2,0,set(none),rUQO2("12+"),"0.1").
+body_2069(2066,multi):-hypoxiaInO2("Severe"),hypDistrib("Unequal").
+body_1293(1290,multi):-lungFlow("Low"),lungParench("Normal").
+cO2("Normal"):-algebraic_atom(53,0,0,set(none),cO2("Normal"),"0.65"),body_5093(5092,multi).
+body_490(489,multi):-disease("TAPVD").
+cardiacMixing("Transp."):-algebraic_atom(16,3,0,set(none),cardiacMixing("Transp."),"0.02"),\+algebraic_atom(16,2,1,set(none),cardiacMixing("Complete"),"0.8"),body_4487(4486,multi).
+ductFlow("Rt_to_Lt"):-algebraic_atom(32,2,0,set(none),ductFlow("Rt_to_Lt"),"0.8"),\+algebraic_atom(32,1,1,set(none),ductFlow("None"),"0.05"),body_4735(4734,multi).
+algebraic_atom(15,1,1,set(none),cardiacMixing("Mild"),"0.09"):-algebraic_atom(15,0,0,set(none),cardiacMixing("None"),"0.02").
+algebraic_atom(103,1,1,set(none),cO2Report(">=7.5"),"0.9"):-algebraic_atom(103,0,0,set(none),cO2Report("<7.5"),"0.1").
+algebraic_atom(53,1,1,set(none),cO2("Low"),"0.05"):-algebraic_atom(53,0,0,set(none),cO2("Normal"),"0.65").
+hypoxiaInO2("Mild"):-algebraic_atom(70,0,0,set(none),hypoxiaInO2("Mild"),"0.02"),body_5339(5338,multi).
+xrayReport("Grd_Glass"):-algebraic_atom(98,3,0,set(none),xrayReport("Grd_Glass"),"0.1"),\+algebraic_atom(98,2,1,set(none),xrayReport("Plethoric"),"0.1"),body_5913(5912,multi).
+algebraic_atom(16,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(16,2,1,set(none),cardiacMixing("Complete"),"0.8").
+algebraic_atom(33,1,1,set(none),ductFlow("None"),"0.8"):-algebraic_atom(33,1,0,set(none),ductFlow("None"),"0.8").
+algebraic_atom(16,2,1,set(none),cardiacMixing("Complete"),"0.8"):-algebraic_atom(16,1,1,set(none),cardiacMixing("Mild"),"0.16").
+algebraic_atom(109,1,1,set(none),lowerBodyO2("5-12"),"0.4"):-algebraic_atom(109,0,0,set(none),lowerBodyO2("<5"),"0.5").
+body_5788(5787,multi):-body_1699(1696,multi).
+disease("PFC"):-algebraic_atom(0,0,0,set(none),disease("PFC"),"0.2"),body_4219(4218,multi).
+cardiacMixing("None"):-algebraic_atom(15,0,0,set(none),cardiacMixing("None"),"0.02"),body_4464(4463,multi).
+util_node(0):-age("0-3_days"),\+cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),disease("TGA"),lVHreport,cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,ductFlow("None"),\+ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(50,2,1,set(none),age("11-30_days"),"0.02"):-algebraic_atom(50,1,1,set(none),age("4-10_days"),"0.08").
+util_node(3):-age("0-3_days"),\+cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),xrayReport("Oligaemic"),hypoxiaInO2("Severe"),chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(32,1,1,set(none),ductFlow("None"),"0.05"):-algebraic_atom(32,1,0,set(none),ductFlow("None"),"0.05").
+rUQO2("5-12"):-algebraic_atom(106,1,0,set(none),rUQO2("5-12"),"0.4"),\+algebraic_atom(106,0,0,set(none),rUQO2("<5"),"0.5"),body_6032(6031,multi).
+body_4681(4680,multi):-body_472(471,multi).
+ductFlow("None"):-algebraic_atom(33,1,0,set(none),ductFlow("None"),"0.8"),\+algebraic_atom(33,0,0,set(none),ductFlow("Lt_to_Rt"),"0.1"),body_4753(4752,multi).
+hypoxiaInO2("Severe"):-algebraic_atom(69,2,0,set(none),hypoxiaInO2("Severe"),"0.4"),\+algebraic_atom(69,1,1,set(none),hypoxiaInO2("Moderate"),"0.5"),body_5321(5320,multi).
+body_4717(4716,multi):-body_508(507,multi).
+algebraic_atom(103,1,1,set(none),cO2Report(">=7.5"),"0.9"):-algebraic_atom(103,1,0,set(none),cO2Report(">=7.5"),"0.9").
+algebraic_atom(106,1,1,set(none),rUQO2("5-12"),"0.4"):-algebraic_atom(106,1,0,set(none),rUQO2("5-12"),"0.4").
+body_4699(4698,multi):-body_490(489,multi).
+lowerBodyO2("<5"):-algebraic_atom(109,0,0,set(none),lowerBodyO2("<5"),"0.5"),body_6086(6085,multi).
+ductFlow("None"):-algebraic_atom(32,1,0,set(none),ductFlow("None"),"0.05"),\+algebraic_atom(32,0,0,set(none),ductFlow("Lt_to_Rt"),"0.15"),body_4735(4734,multi).
+algebraic_atom(108,1,1,set(none),lowerBodyO2("5-12"),"0.6"):-algebraic_atom(108,1,0,set(none),lowerBodyO2("5-12"),"0.6").
+body_1669(1666,multi):-cardiacMixing("Mild"),ductFlow("Rt_to_Lt").
+lowerBodyO2("12+"):-algebraic_atom(107,2,0,set(none),lowerBodyO2("12+"),"0.6"),\+algebraic_atom(107,1,1,set(none),lowerBodyO2("5-12"),"0.3"),body_6050(6049,multi).
+body_5671(5670,multi):-body_1564(1561,multi).
+algebraic_atom(30,2,1,set(none),lungFlow("High"),"0.6"):-algebraic_atom(30,2,0,set(none),lungFlow("High"),"0.6").
+cO2Report("<7.5"):-algebraic_atom(103,0,0,set(none),cO2Report("<7.5"),"0.1"),body_5983(5982,multi).
+algebraic_atom(16,1,1,set(none),cardiacMixing("Mild"),"0.16"):-algebraic_atom(16,0,0,set(none),cardiacMixing("None"),"0.02").
+algebraic_atom(106,1,1,set(none),rUQO2("5-12"),"0.4"):-algebraic_atom(106,0,0,set(none),rUQO2("<5"),"0.5").
+util_node(3):-age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,ductFlow("None"),\+ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),birthAsphyxia,\+disease("PFC"),disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+cardiacMixing("Complete"):-algebraic_atom(16,2,0,set(none),cardiacMixing("Complete"),"0.8"),\+algebraic_atom(16,1,1,set(none),cardiacMixing("Mild"),"0.16"),body_4487(4486,multi).
+age("0-3_days"):-algebraic_atom(51,0,0,set(none),age("0-3_days"),"0.8"),body_5057(5056,multi).
+util_node(3):-\+age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(67,2,1,set(none),hypoxiaInO2("Severe"),"0.2"):-algebraic_atom(67,2,0,set(none),hypoxiaInO2("Severe"),"0.2").
+lowerBodyO2("12+"):-algebraic_atom(108,2,0,set(none),lowerBodyO2("12+"),"0.1"),\+algebraic_atom(108,1,1,set(none),lowerBodyO2("5-12"),"0.6"),body_6068(6067,multi).
+cardiacMixing("Transp."):-algebraic_atom(14,3,0,set(none),cardiacMixing("Transp."),"0.02"),\+algebraic_atom(14,2,1,set(none),cardiacMixing("Complete"),"0.15"),body_4441(4440,multi).
+algebraic_atom(33,1,1,set(none),ductFlow("None"),"0.8"):-algebraic_atom(33,0,0,set(none),ductFlow("Lt_to_Rt"),"0.1").
+algebraic_atom(69,2,1,set(none),hypoxiaInO2("Severe"),"0.4"):-algebraic_atom(69,1,1,set(none),hypoxiaInO2("Moderate"),"0.5").
+algebraic_atom(50,2,1,set(none),age("11-30_days"),"0.02"):-algebraic_atom(50,2,0,set(none),age("11-30_days"),"0.02").
+cO2Report(">=7.5"):-algebraic_atom(101,1,0,set(none),cO2Report(">=7.5"),"0.1"),\+algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9"),body_5957(5956,multi).
+rUQO2("5-12"):-algebraic_atom(105,1,0,set(none),rUQO2("5-12"),"0.6"),\+algebraic_atom(105,0,0,set(none),rUQO2("<5"),"0.3"),body_6014(6013,multi).
+algebraic_atom(0,1,1,set(none),disease("TGA"),"0.3"):-algebraic_atom(0,0,0,set(none),disease("PFC"),"0.2").
+algebraic_atom(52,1,1,set(none),cO2("Low"),"0.1"):-algebraic_atom(52,0,0,set(none),cO2("Normal"),"0.8").
+cO2Report(">=7.5"):-algebraic_atom(102,1,0,set(none),cO2Report(">=7.5"),"0.1"),\+algebraic_atom(102,0,0,set(none),cO2Report("<7.5"),"0.9"),body_5970(5969,multi).
+body_5697(5696,multi):-body_1594(1591,multi).
+body_1011(1007,grunting):-\+sick,lungParench("Abnormal").
+lungFlow("Normal"):-algebraic_atom(31,0,0,set(none),lungFlow("Normal"),"0.7"),body_4717(4716,multi).
+util_node(4):-\+age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,\+lungFlow("Low"),lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),chestXray("Plethoric"),\+cardiacMixing("Mild").
+cO2("High"):-algebraic_atom(52,2,0,set(none),cO2("High"),"0.1"),\+algebraic_atom(52,1,1,set(none),cO2("Low"),"0.1"),body_5075(5074,multi).
+hypoxiaInO2("Severe"):-algebraic_atom(68,2,0,set(none),hypoxiaInO2("Severe"),"0.3"),\+algebraic_atom(68,1,1,set(none),hypoxiaInO2("Moderate"),"0.65"),body_5303(5302,multi).
+util_node(3):-age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),lungParench("Normal"),rUQO2("12+"),\+sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,ductFlow("None"),\+ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),chestXray("Plethoric"),cardiacMixing("Mild").
+algebraic_atom(102,1,1,set(none),cO2Report(">=7.5"),"0.1"):-algebraic_atom(102,0,0,set(none),cO2Report("<7.5"),"0.9").
+rUQO2("<5"):-algebraic_atom(106,0,0,set(none),rUQO2("<5"),"0.5"),body_6032(6031,multi).
+body_1594(1591,multi):-cardiacMixing("None"),ductFlow("None").
+body_5393(5392,multi):-body_1262(1259,multi).
+lungFlow("High"):-algebraic_atom(30,2,0,set(none),lungFlow("High"),"0.6"),\+algebraic_atom(30,1,1,set(none),lungFlow("Low"),"0.1"),body_4699(4698,multi).
+body_5749(5748,multi):-body_1654(1651,multi).
+cardiacMixing("Complete"):-algebraic_atom(15,2,0,set(none),cardiacMixing("Complete"),"0.09"),\+algebraic_atom(15,1,1,set(none),cardiacMixing("Mild"),"0.09"),body_4464(4463,multi).
+age("11-30_days"):-algebraic_atom(50,2,0,set(none),age("11-30_days"),"0.02"),\+algebraic_atom(50,1,1,set(none),age("4-10_days"),"0.08"),body_5039(5038,multi).
+body_5949(5948,gruntingReport):-body_1863(1861,gruntingReport).
+hypoxiaInO2("Moderate"):-algebraic_atom(69,1,0,set(none),hypoxiaInO2("Moderate"),"0.5"),\+algebraic_atom(69,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5321(5320,multi).
+body_1699(1696,multi):-cardiacMixing("Transp."),ductFlow("Rt_to_Lt").
+body_508(507,multi):-disease("Lung").
+age("4-10_days"):-algebraic_atom(50,1,0,set(none),age("4-10_days"),"0.08"),\+algebraic_atom(50,0,0,set(none),age("0-3_days"),"0.9"),body_5039(5038,multi).
+ductFlow("Lt_to_Rt"):-algebraic_atom(33,0,0,set(none),ductFlow("Lt_to_Rt"),"0.1"),body_4753(4752,multi).
+algebraic_atom(108,2,1,set(none),lowerBodyO2("12+"),"0.1"):-algebraic_atom(108,1,1,set(none),lowerBodyO2("5-12"),"0.6").
+body_5684(5683,multi):-body_1579(1576,multi).
+algebraic_atom(16,1,1,set(none),cardiacMixing("Mild"),"0.16"):-algebraic_atom(16,1,0,set(none),cardiacMixing("Mild"),"0.16").
+algebraic_atom(102,1,1,set(none),cO2Report(">=7.5"),"0.1"):-algebraic_atom(102,1,0,set(none),cO2Report(">=7.5"),"0.1").
+rUQO2("12+"):-algebraic_atom(105,2,0,set(none),rUQO2("12+"),"0.1"),\+algebraic_atom(105,1,1,set(none),rUQO2("5-12"),"0.6"),body_6014(6013,multi).
+algebraic_atom(108,2,1,set(none),lowerBodyO2("12+"),"0.1"):-algebraic_atom(108,2,0,set(none),lowerBodyO2("12+"),"0.1").
+body_5775(5774,multi):-body_1684(1681,multi).
+util_node(2):-age("0-3_days"),cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,\+cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),\+cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(16,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(16,3,0,set(none),cardiacMixing("Transp."),"0.02").
+util_node(0):-age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+ductFlow("Lt_to_Rt"):-algebraic_atom(32,0,0,set(none),ductFlow("Lt_to_Rt"),"0.15"),body_4735(4734,multi).
+cO2("Low"):-algebraic_atom(52,1,0,set(none),cO2("Low"),"0.1"),\+algebraic_atom(52,0,0,set(none),cO2("Normal"),"0.8"),body_5075(5074,multi).
+algebraic_atom(15,1,1,set(none),cardiacMixing("Mild"),"0.09"):-algebraic_atom(15,1,0,set(none),cardiacMixing("Mild"),"0.09").
+algebraic_atom(51,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(51,0,0,set(none),age("0-3_days"),"0.8").
+algebraic_atom(68,2,1,set(none),hypoxiaInO2("Severe"),"0.3"):-algebraic_atom(68,2,0,set(none),hypoxiaInO2("Severe"),"0.3").
+algebraic_atom(52,2,1,set(none),cO2("High"),"0.1"):-algebraic_atom(52,1,1,set(none),cO2("Low"),"0.1").
+algebraic_atom(69,1,1,set(none),hypoxiaInO2("Moderate"),"0.5"):-algebraic_atom(69,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+algebraic_atom(105,2,1,set(none),rUQO2("12+"),"0.1"):-algebraic_atom(105,1,1,set(none),rUQO2("5-12"),"0.6").
+body_1853(1852,gruntingReport):-grunting.
+algebraic_atom(32,2,1,set(none),ductFlow("Rt_to_Lt"),"0.8"):-algebraic_atom(32,1,1,set(none),ductFlow("None"),"0.05").
+cO2Report("<7.5"):-algebraic_atom(102,0,0,set(none),cO2Report("<7.5"),"0.9"),body_5970(5969,multi).
+body_5723(5722,multi):-body_1624(1621,multi).
+algebraic_atom(104,1,1,set(none),rUQO2("5-12"),"0.3"):-algebraic_atom(104,1,0,set(none),rUQO2("5-12"),"0.3").
+lowerBodyO2("5-12"):-algebraic_atom(108,1,0,set(none),lowerBodyO2("5-12"),"0.6"),\+algebraic_atom(108,0,0,set(none),lowerBodyO2("<5"),"0.3"),body_6068(6067,multi).
+body_5762(5761,multi):-body_1669(1666,multi).
+algebraic_atom(105,2,1,set(none),rUQO2("12+"),"0.1"):-algebraic_atom(105,2,0,set(none),rUQO2("12+"),"0.1").
+body_5710(5709,multi):-body_1609(1606,multi).
+age("11-30_days"):-algebraic_atom(51,2,0,set(none),age("11-30_days"),"0.05"),\+algebraic_atom(51,1,1,set(none),age("4-10_days"),"0.15"),body_5057(5056,multi).
+algebraic_atom(107,1,1,set(none),lowerBodyO2("5-12"),"0.3"):-algebraic_atom(107,1,0,set(none),lowerBodyO2("5-12"),"0.3").
+age("4-10_days"):-algebraic_atom(51,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(51,0,0,set(none),age("0-3_days"),"0.8"),body_5057(5056,multi).
+cardiacMixing("Mild"):-algebraic_atom(16,1,0,set(none),cardiacMixing("Mild"),"0.16"),\+algebraic_atom(16,0,0,set(none),cardiacMixing("None"),"0.02"),body_4487(4486,multi).
+hypoxiaInO2("Mild"):-algebraic_atom(69,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5321(5320,multi).
+algebraic_atom(101,1,1,set(none),cO2Report(">=7.5"),"0.1"):-algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9").
+algebraic_atom(108,1,1,set(none),lowerBodyO2("5-12"),"0.6"):-algebraic_atom(108,0,0,set(none),lowerBodyO2("<5"),"0.3").
+util_node(0):-age("0-3_days"),\+cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),disease("TGA"),\+lVHreport,cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),lungParench("Normal"),rUQO2("12+"),sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),\+ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(15,2,1,set(none),cardiacMixing("Complete"),"0.09"):-algebraic_atom(15,2,0,set(none),cardiacMixing("Complete"),"0.09").
+algebraic_atom(16,2,1,set(none),cardiacMixing("Complete"),"0.8"):-algebraic_atom(16,2,0,set(none),cardiacMixing("Complete"),"0.8").
+xrayReport("Asy/Patchy"):-algebraic_atom(98,4,0,set(none),xrayReport("Asy/Patchy"),"0.7"),\+algebraic_atom(98,3,1,set(none),xrayReport("Grd_Glass"),"0.1"),body_5913(5912,multi).
+hypoxiaInO2("Mild"):-algebraic_atom(68,0,0,set(none),hypoxiaInO2("Mild"),"0.05"),body_5303(5302,multi).
+body_1639(1636,multi):-cardiacMixing("Transp."),ductFlow("None").
+algebraic_atom(31,2,1,set(none),lungFlow("High"),"0.2"):-algebraic_atom(31,1,1,set(none),lungFlow("Low"),"0.1").
+algebraic_atom(67,2,1,set(none),hypoxiaInO2("Severe"),"0.2"):-algebraic_atom(67,1,1,set(none),hypoxiaInO2("Moderate"),"0.7").
+algebraic_atom(98,4,1,set(none),xrayReport("Asy/Patchy"),"0.7"):-algebraic_atom(98,3,1,set(none),xrayReport("Grd_Glass"),"0.1").
+algebraic_atom(105,1,1,set(none),rUQO2("5-12"),"0.6"):-algebraic_atom(105,1,0,set(none),rUQO2("5-12"),"0.6").
+lowerBodyO2("<5"):-algebraic_atom(108,0,0,set(none),lowerBodyO2("<5"),"0.3"),body_6068(6067,multi).
+algebraic_atom(50,1,1,set(none),age("4-10_days"),"0.08"):-algebraic_atom(50,1,0,set(none),age("4-10_days"),"0.08").
+cardiacMixing("Transp."):-algebraic_atom(15,3,0,set(none),cardiacMixing("Transp."),"0.8"),\+algebraic_atom(15,2,1,set(none),cardiacMixing("Complete"),"0.09"),body_4464(4463,multi).
+algebraic_atom(105,1,1,set(none),rUQO2("5-12"),"0.6"):-algebraic_atom(105,0,0,set(none),rUQO2("<5"),"0.3").
+body_1000(997,grunting):-sick,lungParench("Abnormal").
+algebraic_atom(68,2,1,set(none),hypoxiaInO2("Severe"),"0.3"):-algebraic_atom(68,1,1,set(none),hypoxiaInO2("Moderate"),"0.65").
+algebraic_atom(107,1,1,set(none),lowerBodyO2("5-12"),"0.3"):-algebraic_atom(107,0,0,set(none),lowerBodyO2("<5"),"0.1").
+body_1684(1681,multi):-cardiacMixing("Complete"),ductFlow("Rt_to_Lt").
+body_5169(5168,grunting):-body_1011(1007,grunting).
+util_node(2):-\+age("0-3_days"),\+cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),xrayReport("Oligaemic"),hypoxiaInO2("Severe"),chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),cardiacMixing("Mild").
+algebraic_atom(32,2,1,set(none),ductFlow("Rt_to_Lt"),"0.8"):-algebraic_atom(32,2,0,set(none),ductFlow("Rt_to_Lt"),"0.8").
+cO2Report("<7.5"):-algebraic_atom(101,0,0,set(none),cO2Report("<7.5"),"0.9"),body_5957(5956,multi).
+util_node(1):-age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),cO2Report(">=7.5"),disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),\+cO2Report("<7.5"),lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(51,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(51,1,0,set(none),age("4-10_days"),"0.15").
+body_1863(1861,gruntingReport):-\+grunting.
+util_node(1):-age("0-3_days"),\+cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+body_5941(5940,gruntingReport):-body_1853(1852,gruntingReport).
+algebraic_atom(31,1,1,set(none),lungFlow("Low"),"0.1"):-algebraic_atom(31,0,0,set(none),lungFlow("Normal"),"0.7").
+cO2("Normal"):-algebraic_atom(52,0,0,set(none),cO2("Normal"),"0.8"),body_5075(5074,multi).
+rUQO2("<5"):-algebraic_atom(105,0,0,set(none),rUQO2("<5"),"0.3"),body_6014(6013,multi).
+util_node(1):-age("0-3_days"),cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,\+cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),\+cO2Report("<7.5"),\+lVH,chestXray("Asy/Patch"),\+lowerBodyO2("12+"),xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),sick,\+lungFlow("Low"),\+lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,ductFlow("None"),\+ductFlow("Lt_to_Rt"),lungFlow("Normal"),disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),cardiacMixing("Mild").
+body_4663(4662,multi):-body_454(453,multi).
+algebraic_atom(107,2,1,set(none),lowerBodyO2("12+"),"0.6"):-algebraic_atom(107,1,1,set(none),lowerBodyO2("5-12"),"0.3").
+body_1609(1606,multi):-cardiacMixing("Mild"),ductFlow("None").
+body_472(471,multi):-disease("PAIVS").
+algebraic_atom(31,1,1,set(none),lungFlow("Low"),"0.1"):-algebraic_atom(31,1,0,set(none),lungFlow("Low"),"0.1").
+body_1624(1621,multi):-cardiacMixing("Complete"),ductFlow("None").
+algebraic_atom(31,2,1,set(none),lungFlow("High"),"0.2"):-algebraic_atom(31,2,0,set(none),lungFlow("High"),"0.2").
+hypoxiaInO2("Moderate"):-algebraic_atom(68,1,0,set(none),hypoxiaInO2("Moderate"),"0.65"),\+algebraic_atom(68,0,0,set(none),hypoxiaInO2("Mild"),"0.05"),body_5303(5302,multi).
+util_node(2):-\+age("0-3_days"),cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),age("11-30_days"),disease("TGA"),\+lVHreport,cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,\+cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),\+cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),\+sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(98,4,1,set(none),xrayReport("Asy/Patchy"),"0.7"):-algebraic_atom(98,4,0,set(none),xrayReport("Asy/Patchy"),"0.7").
+gruntingReport:-algebraic_atom(100,0,0,set(none),gruntingReport,"0.1"),body_5949(5948,gruntingReport).
+body_1654(1651,multi):-cardiacMixing("None"),ductFlow("Rt_to_Lt").
+body_436(435,multi):-disease("TGA").
+util_node(1):-\+age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),grunting,cO2("Normal"),age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),\+lungParench("Normal"),rUQO2("12+"),sick,\+lungFlow("Low"),\+lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),gruntingReport,\+ductFlow("None"),\+ductFlow("Lt_to_Rt"),lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(32,1,1,set(none),ductFlow("None"),"0.05"):-algebraic_atom(32,0,0,set(none),ductFlow("Lt_to_Rt"),"0.15").
+rUQO2("12+"):-algebraic_atom(104,2,0,set(none),rUQO2("12+"),"0.6"),\+algebraic_atom(104,1,1,set(none),rUQO2("5-12"),"0.3"),body_5996(5995,multi).
+body_1579(1576,multi):-cardiacMixing("Transp."),ductFlow("Lt_to_Rt").
+body_5161(5160,grunting):-body_1000(997,grunting).
+util_node(2):-\+age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(15,3,1,set(none),cardiacMixing("Transp."),"0.8"):-algebraic_atom(15,3,0,set(none),cardiacMixing("Transp."),"0.8").
+cardiacMixing("None"):-algebraic_atom(16,0,0,set(none),cardiacMixing("None"),"0.02"),body_4487(4486,multi).
+algebraic_atom(30,2,1,set(none),lungFlow("High"),"0.6"):-algebraic_atom(30,1,1,set(none),lungFlow("Low"),"0.1").
+body_5736(5735,multi):-body_1639(1636,multi).
+body_4645(4644,multi):-body_436(435,multi).
+util_node(3):-\+age("0-3_days"),\+cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),\+hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),cO2Report(">=7.5"),\+disease("PAIVS"),chestXray("Normal"),\+hypDistrib("Unequal"),age("11-30_days"),\+disease("TGA"),lVHreport,\+cardiacMixing("Transp."),xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),\+cO2Report("<7.5"),lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,lungFlow("Low"),\+lungFlow("High"),disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+util_node(1):-age("0-3_days"),cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),grunting,\+cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),\+cO2Report("<7.5"),\+lVH,chestXray("Asy/Patch"),\+lowerBodyO2("12+"),xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),sick,\+lungFlow("Low"),\+lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),gruntingReport,ductFlow("None"),\+ductFlow("Lt_to_Rt"),lungFlow("Normal"),disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),\+chestXray("Plethoric"),cardiacMixing("Mild").
+lungFlow("Low"):-algebraic_atom(31,1,0,set(none),lungFlow("Low"),"0.1"),\+algebraic_atom(31,0,0,set(none),lungFlow("Normal"),"0.7"),body_4717(4716,multi).
+hypoxiaInO2("Severe"):-algebraic_atom(67,2,0,set(none),hypoxiaInO2("Severe"),"0.2"),\+algebraic_atom(67,1,1,set(none),hypoxiaInO2("Moderate"),"0.7"),body_5285(5284,multi).
+body_4627(4626,multi):-body_417(416,multi).
+cardiacMixing("Mild"):-algebraic_atom(15,1,0,set(none),cardiacMixing("Mild"),"0.09"),\+algebraic_atom(15,0,0,set(none),cardiacMixing("None"),"0.02"),body_4464(4463,multi).
+algebraic_atom(68,1,1,set(none),hypoxiaInO2("Moderate"),"0.65"):-algebraic_atom(68,0,0,set(none),hypoxiaInO2("Mild"),"0.05").
+body_454(453,multi):-disease("Fallot").
+rUQO2("5-12"):-algebraic_atom(104,1,0,set(none),rUQO2("5-12"),"0.3"),\+algebraic_atom(104,0,0,set(none),rUQO2("<5"),"0.1"),body_5996(5995,multi).
+algebraic_atom(104,2,1,set(none),rUQO2("12+"),"0.6"):-algebraic_atom(104,2,0,set(none),rUQO2("12+"),"0.6").
+lungFlow("High"):-algebraic_atom(31,2,0,set(none),lungFlow("High"),"0.2"),\+algebraic_atom(31,1,1,set(none),lungFlow("Low"),"0.1"),body_4717(4716,multi).
+rUQO2("12+"):-algebraic_atom(106,2,0,set(none),rUQO2("12+"),"0.1"),\+algebraic_atom(106,1,1,set(none),rUQO2("5-12"),"0.4"),body_6032(6031,multi).
+lowerBodyO2("<5"):-algebraic_atom(107,0,0,set(none),lowerBodyO2("<5"),"0.1"),body_6050(6049,multi).
+algebraic_atom(29,1,1,set(none),lungFlow("Low"),"0.85"):-algebraic_atom(29,1,0,set(none),lungFlow("Low"),"0.85").
+ductFlow("Rt_to_Lt"):-algebraic_atom(35,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0"),\+algebraic_atom(35,1,1,set(none),ductFlow("None"),"0.0"),body_4789(4788,multi).
+algebraic_atom(75,4,1,set(none),chestXray("Asy/Patch"),"0.01"):-algebraic_atom(75,4,0,set(none),chestXray("Asy/Patch"),"0.01").
+ductFlow("None"):-algebraic_atom(36,1,0,set(none),ductFlow("None"),"0.33"),\+algebraic_atom(36,0,0,set(none),ductFlow("Lt_to_Rt"),"0.33"),body_4807(4806,multi).
+algebraic_atom(76,2,1,set(none),chestXray("Plethoric"),"0.15"):-algebraic_atom(76,1,1,set(none),chestXray("Oligaemic"),"0.02").
+chestXray("Normal"):-algebraic_atom(73,0,0,set(none),chestXray("Normal"),"0.9"),body_5393(5392,multi).
+lungFlow("Normal"):-algebraic_atom(27,0,0,set(none),lungFlow("Normal"),"0.2"),body_4645(4644,multi).
+algebraic_atom(74,1,1,set(none),chestXray("Oligaemic"),"0.8"):-algebraic_atom(74,1,0,set(none),chestXray("Oligaemic"),"0.8").
+algebraic_atom(75,2,1,set(none),chestXray("Plethoric"),"0.79"):-algebraic_atom(75,2,0,set(none),chestXray("Plethoric"),"0.79").
+lungFlow("Low"):-algebraic_atom(27,1,0,set(none),lungFlow("Low"),"0.05"),\+algebraic_atom(27,0,0,set(none),lungFlow("Normal"),"0.2"),body_4645(4644,multi).
+ductFlow("Rt_to_Lt"):-algebraic_atom(33,2,0,set(none),ductFlow("Rt_to_Lt"),"0.1"),\+algebraic_atom(33,1,1,set(none),ductFlow("None"),"0.8"),body_4753(4752,multi).
+hypoxiaInO2("Severe"):-algebraic_atom(72,2,0,set(none),hypoxiaInO2("Severe"),"0.8"),\+algebraic_atom(72,1,1,set(none),hypoxiaInO2("Moderate"),"0.18"),body_5375(5374,multi).
+chestXray("Oligaemic"):-algebraic_atom(76,1,0,set(none),chestXray("Oligaemic"),"0.02"),\+algebraic_atom(76,0,0,set(none),chestXray("Normal"),"0.05"),body_5477(5476,multi).
+lungFlow("Low"):-algebraic_atom(29,1,0,set(none),lungFlow("Low"),"0.85"),\+algebraic_atom(29,0,0,set(none),lungFlow("Normal"),"0.1"),body_4681(4680,multi).
+algebraic_atom(75,1,1,set(none),chestXray("Oligaemic"),"0.01"):-algebraic_atom(75,0,0,set(none),chestXray("Normal"),"0.15").
+chestXray("Plethoric"):-algebraic_atom(74,2,0,set(none),chestXray("Plethoric"),"0.02"),\+algebraic_atom(74,1,1,set(none),chestXray("Oligaemic"),"0.8"),body_5421(5420,multi).
+algebraic_atom(76,1,1,set(none),chestXray("Oligaemic"),"0.02"):-algebraic_atom(76,1,0,set(none),chestXray("Oligaemic"),"0.02").
+algebraic_atom(74,2,1,set(none),chestXray("Plethoric"),"0.02"):-algebraic_atom(74,2,0,set(none),chestXray("Plethoric"),"0.02").
+algebraic_atom(72,2,1,set(none),hypoxiaInO2("Severe"),"0.8"):-algebraic_atom(72,1,1,set(none),hypoxiaInO2("Moderate"),"0.18").
+algebraic_atom(73,1,1,set(none),chestXray("Oligaemic"),"0.03"):-algebraic_atom(73,0,0,set(none),chestXray("Normal"),"0.9").
+algebraic_atom(76,1,1,set(none),chestXray("Oligaemic"),"0.02"):-algebraic_atom(76,0,0,set(none),chestXray("Normal"),"0.05").
+algebraic_atom(33,2,1,set(none),ductFlow("Rt_to_Lt"),"0.1"):-algebraic_atom(33,1,1,set(none),ductFlow("None"),"0.8").
+algebraic_atom(73,3,1,set(none),chestXray("Grd_Glass"),"0.01"):-algebraic_atom(73,3,0,set(none),chestXray("Grd_Glass"),"0.01").
+algebraic_atom(28,1,1,set(none),lungFlow("Low"),"0.8"):-algebraic_atom(28,0,0,set(none),lungFlow("Normal"),"0.15").
+hypoxiaInO2("Severe"):-algebraic_atom(70,2,0,set(none),hypoxiaInO2("Severe"),"0.8"),\+algebraic_atom(70,1,1,set(none),hypoxiaInO2("Moderate"),"0.18"),body_5339(5338,multi).
+algebraic_atom(74,4,1,set(none),chestXray("Asy/Patch"),"0.02"):-algebraic_atom(74,4,0,set(none),chestXray("Asy/Patch"),"0.02").
+algebraic_atom(35,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0"):-algebraic_atom(35,1,1,set(none),ductFlow("None"),"0.0").
+algebraic_atom(36,1,1,set(none),ductFlow("None"),"0.33"):-algebraic_atom(36,1,0,set(none),ductFlow("None"),"0.33").
+algebraic_atom(68,1,1,set(none),hypoxiaInO2("Moderate"),"0.65"):-algebraic_atom(68,1,0,set(none),hypoxiaInO2("Moderate"),"0.65").
+algebraic_atom(74,2,1,set(none),chestXray("Plethoric"),"0.02"):-algebraic_atom(74,1,1,set(none),chestXray("Oligaemic"),"0.8").
+algebraic_atom(29,1,1,set(none),lungFlow("Low"),"0.85"):-algebraic_atom(29,0,0,set(none),lungFlow("Normal"),"0.1").
+lungFlow("High"):-algebraic_atom(29,2,0,set(none),lungFlow("High"),"0.05"),\+algebraic_atom(29,1,1,set(none),lungFlow("Low"),"0.85"),body_4681(4680,multi).
+algebraic_atom(36,1,1,set(none),ductFlow("None"),"0.33"):-algebraic_atom(36,0,0,set(none),ductFlow("Lt_to_Rt"),"0.33").
+algebraic_atom(71,1,1,set(none),hypoxiaInO2("Moderate"),"0.3"):-algebraic_atom(71,1,0,set(none),hypoxiaInO2("Moderate"),"0.3").
+chestXray("Normal"):-algebraic_atom(76,0,0,set(none),chestXray("Normal"),"0.05"),body_5477(5476,multi).
+algebraic_atom(29,2,1,set(none),lungFlow("High"),"0.05"):-algebraic_atom(29,1,1,set(none),lungFlow("Low"),"0.85").
+algebraic_atom(72,2,1,set(none),hypoxiaInO2("Severe"),"0.8"):-algebraic_atom(72,2,0,set(none),hypoxiaInO2("Severe"),"0.8").
+algebraic_atom(27,1,1,set(none),lungFlow("Low"),"0.05"):-algebraic_atom(27,1,0,set(none),lungFlow("Low"),"0.05").
+algebraic_atom(27,2,1,set(none),lungFlow("High"),"0.75"):-algebraic_atom(27,1,1,set(none),lungFlow("Low"),"0.05").
+algebraic_atom(35,1,1,set(none),ductFlow("None"),"0.0"):-algebraic_atom(35,1,0,set(none),ductFlow("None"),"0.0").
+chestXray("Asy/Patch"):-algebraic_atom(73,4,0,set(none),chestXray("Asy/Patch"),"0.03"),\+algebraic_atom(73,3,1,set(none),chestXray("Grd_Glass"),"0.01"),body_5393(5392,multi).
+ductFlow("Lt_to_Rt"):-algebraic_atom(36,0,0,set(none),ductFlow("Lt_to_Rt"),"0.33"),body_4807(4806,multi).
+hypoxiaInO2("Severe"):-algebraic_atom(71,2,0,set(none),hypoxiaInO2("Severe"),"0.6"),\+algebraic_atom(71,1,1,set(none),hypoxiaInO2("Moderate"),"0.3"),body_5357(5356,multi).
+chestXray("Oligaemic"):-algebraic_atom(74,1,0,set(none),chestXray("Oligaemic"),"0.8"),\+algebraic_atom(74,0,0,set(none),chestXray("Normal"),"0.14"),body_5421(5420,multi).
+ductFlow("Lt_to_Rt"):-algebraic_atom(35,0,0,set(none),ductFlow("Lt_to_Rt"),"1.0"),body_4789(4788,multi).
+hypoxiaInO2("Moderate"):-algebraic_atom(72,1,0,set(none),hypoxiaInO2("Moderate"),"0.18"),\+algebraic_atom(72,0,0,set(none),hypoxiaInO2("Mild"),"0.02"),body_5375(5374,multi).
+chestXray("Asy/Patch"):-algebraic_atom(75,4,0,set(none),chestXray("Asy/Patch"),"0.01"),\+algebraic_atom(75,3,1,set(none),chestXray("Grd_Glass"),"0.04"),body_5449(5448,multi).
+algebraic_atom(73,4,1,set(none),chestXray("Asy/Patch"),"0.03"):-algebraic_atom(73,4,0,set(none),chestXray("Asy/Patch"),"0.03").
+algebraic_atom(72,1,1,set(none),hypoxiaInO2("Moderate"),"0.18"):-algebraic_atom(72,1,0,set(none),hypoxiaInO2("Moderate"),"0.18").
+algebraic_atom(29,2,1,set(none),lungFlow("High"),"0.05"):-algebraic_atom(29,2,0,set(none),lungFlow("High"),"0.05").
+algebraic_atom(34,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0"):-algebraic_atom(34,1,1,set(none),ductFlow("None"),"0.2").
+algebraic_atom(71,2,1,set(none),hypoxiaInO2("Severe"),"0.6"):-algebraic_atom(71,2,0,set(none),hypoxiaInO2("Severe"),"0.6").
+algebraic_atom(75,4,1,set(none),chestXray("Asy/Patch"),"0.01"):-algebraic_atom(75,3,1,set(none),chestXray("Grd_Glass"),"0.04").
+chestXray("Asy/Patch"):-algebraic_atom(74,4,0,set(none),chestXray("Asy/Patch"),"0.02"),\+algebraic_atom(74,3,1,set(none),chestXray("Grd_Glass"),"0.02"),body_5421(5420,multi).
+algebraic_atom(74,1,1,set(none),chestXray("Oligaemic"),"0.8"):-algebraic_atom(74,0,0,set(none),chestXray("Normal"),"0.14").
+algebraic_atom(72,1,1,set(none),hypoxiaInO2("Moderate"),"0.18"):-algebraic_atom(72,0,0,set(none),hypoxiaInO2("Mild"),"0.02").
+lungFlow("High"):-algebraic_atom(28,2,0,set(none),lungFlow("High"),"0.05"),\+algebraic_atom(28,1,1,set(none),lungFlow("Low"),"0.8"),body_4663(4662,multi).
+lungFlow("Low"):-algebraic_atom(28,1,0,set(none),lungFlow("Low"),"0.8"),\+algebraic_atom(28,0,0,set(none),lungFlow("Normal"),"0.15"),body_4663(4662,multi).
+chestXray("Grd_Glass"):-algebraic_atom(75,3,0,set(none),chestXray("Grd_Glass"),"0.04"),\+algebraic_atom(75,2,1,set(none),chestXray("Plethoric"),"0.79"),body_5449(5448,multi).
+chestXray("Normal"):-algebraic_atom(74,0,0,set(none),chestXray("Normal"),"0.14"),body_5421(5420,multi).
+algebraic_atom(74,3,1,set(none),chestXray("Grd_Glass"),"0.02"):-algebraic_atom(74,3,0,set(none),chestXray("Grd_Glass"),"0.02").
+hypoxiaInO2("Mild"):-algebraic_atom(72,0,0,set(none),hypoxiaInO2("Mild"),"0.02"),body_5375(5374,multi).
+algebraic_atom(75,3,1,set(none),chestXray("Grd_Glass"),"0.04"):-algebraic_atom(75,3,0,set(none),chestXray("Grd_Glass"),"0.04").
+algebraic_atom(70,2,1,set(none),hypoxiaInO2("Severe"),"0.8"):-algebraic_atom(70,1,1,set(none),hypoxiaInO2("Moderate"),"0.18").
+algebraic_atom(75,3,1,set(none),chestXray("Grd_Glass"),"0.04"):-algebraic_atom(75,2,1,set(none),chestXray("Plethoric"),"0.79").
+ductFlow("Lt_to_Rt"):-algebraic_atom(34,0,0,set(none),ductFlow("Lt_to_Rt"),"0.8"),body_4771(4770,multi).
+algebraic_atom(73,4,1,set(none),chestXray("Asy/Patch"),"0.03"):-algebraic_atom(73,3,1,set(none),chestXray("Grd_Glass"),"0.01").
+ductFlow("Rt_to_Lt"):-algebraic_atom(34,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0"),\+algebraic_atom(34,1,1,set(none),ductFlow("None"),"0.2"),body_4771(4770,multi).
+chestXray("Grd_Glass"):-algebraic_atom(74,3,0,set(none),chestXray("Grd_Glass"),"0.02"),\+algebraic_atom(74,2,1,set(none),chestXray("Plethoric"),"0.02"),body_5421(5420,multi).
+algebraic_atom(27,2,1,set(none),lungFlow("High"),"0.75"):-algebraic_atom(27,2,0,set(none),lungFlow("High"),"0.75").
+algebraic_atom(35,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0"):-algebraic_atom(35,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
+algebraic_atom(71,2,1,set(none),hypoxiaInO2("Severe"),"0.6"):-algebraic_atom(71,1,1,set(none),hypoxiaInO2("Moderate"),"0.3").
+algebraic_atom(28,1,1,set(none),lungFlow("Low"),"0.8"):-algebraic_atom(28,1,0,set(none),lungFlow("Low"),"0.8").
+chestXray("Oligaemic"):-algebraic_atom(73,1,0,set(none),chestXray("Oligaemic"),"0.03"),\+algebraic_atom(73,0,0,set(none),chestXray("Normal"),"0.9"),body_5393(5392,multi).
+chestXray("Plethoric"):-algebraic_atom(75,2,0,set(none),chestXray("Plethoric"),"0.79"),\+algebraic_atom(75,1,1,set(none),chestXray("Oligaemic"),"0.01"),body_5449(5448,multi).
+lungFlow("Normal"):-algebraic_atom(29,0,0,set(none),lungFlow("Normal"),"0.1"),body_4681(4680,multi).
+hypoxiaInO2("Moderate"):-algebraic_atom(70,1,0,set(none),hypoxiaInO2("Moderate"),"0.18"),\+algebraic_atom(70,0,0,set(none),hypoxiaInO2("Mild"),"0.02"),body_5339(5338,multi).
+chestXray("Grd_Glass"):-algebraic_atom(73,3,0,set(none),chestXray("Grd_Glass"),"0.01"),\+algebraic_atom(73,2,1,set(none),chestXray("Plethoric"),"0.03"),body_5393(5392,multi).
+algebraic_atom(34,2,1,set(none),ductFlow("Rt_to_Lt"),"0.0"):-algebraic_atom(34,2,0,set(none),ductFlow("Rt_to_Lt"),"0.0").
+chestXray("Normal"):-algebraic_atom(75,0,0,set(none),chestXray("Normal"),"0.15"),body_5449(5448,multi).
+hypoxiaInO2("Moderate"):-algebraic_atom(71,1,0,set(none),hypoxiaInO2("Moderate"),"0.3"),\+algebraic_atom(71,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5357(5356,multi).
+algebraic_atom(27,1,1,set(none),lungFlow("Low"),"0.05"):-algebraic_atom(27,0,0,set(none),lungFlow("Normal"),"0.2").
+algebraic_atom(35,1,1,set(none),ductFlow("None"),"0.0"):-algebraic_atom(35,0,0,set(none),ductFlow("Lt_to_Rt"),"1.0").
+algebraic_atom(75,2,1,set(none),chestXray("Plethoric"),"0.79"):-algebraic_atom(75,1,1,set(none),chestXray("Oligaemic"),"0.01").
+algebraic_atom(70,2,1,set(none),hypoxiaInO2("Severe"),"0.8"):-algebraic_atom(70,2,0,set(none),hypoxiaInO2("Severe"),"0.8").
+algebraic_atom(28,2,1,set(none),lungFlow("High"),"0.05"):-algebraic_atom(28,2,0,set(none),lungFlow("High"),"0.05").
+algebraic_atom(34,1,1,set(none),ductFlow("None"),"0.2"):-algebraic_atom(34,1,0,set(none),ductFlow("None"),"0.2").
+ductFlow("None"):-algebraic_atom(35,1,0,set(none),ductFlow("None"),"0.0"),\+algebraic_atom(35,0,0,set(none),ductFlow("Lt_to_Rt"),"1.0"),body_4789(4788,multi).
+algebraic_atom(71,1,1,set(none),hypoxiaInO2("Moderate"),"0.3"):-algebraic_atom(71,0,0,set(none),hypoxiaInO2("Mild"),"0.1").
+algebraic_atom(73,3,1,set(none),chestXray("Grd_Glass"),"0.01"):-algebraic_atom(73,2,1,set(none),chestXray("Plethoric"),"0.03").
+algebraic_atom(74,3,1,set(none),chestXray("Grd_Glass"),"0.02"):-algebraic_atom(74,2,1,set(none),chestXray("Plethoric"),"0.02").
+algebraic_atom(34,1,1,set(none),ductFlow("None"),"0.2"):-algebraic_atom(34,0,0,set(none),ductFlow("Lt_to_Rt"),"0.8").
+algebraic_atom(73,1,1,set(none),chestXray("Oligaemic"),"0.03"):-algebraic_atom(73,1,0,set(none),chestXray("Oligaemic"),"0.03").
+chestXray("Oligaemic"):-algebraic_atom(75,1,0,set(none),chestXray("Oligaemic"),"0.01"),\+algebraic_atom(75,0,0,set(none),chestXray("Normal"),"0.15"),body_5449(5448,multi).
+lungFlow("Normal"):-algebraic_atom(28,0,0,set(none),lungFlow("Normal"),"0.15"),body_4663(4662,multi).
+lungFlow("High"):-algebraic_atom(27,2,0,set(none),lungFlow("High"),"0.75"),\+algebraic_atom(27,1,1,set(none),lungFlow("Low"),"0.05"),body_4645(4644,multi).
+ductFlow("None"):-algebraic_atom(34,1,0,set(none),ductFlow("None"),"0.2"),\+algebraic_atom(34,0,0,set(none),ductFlow("Lt_to_Rt"),"0.8"),body_4771(4770,multi).
+algebraic_atom(70,1,1,set(none),hypoxiaInO2("Moderate"),"0.18"):-algebraic_atom(70,1,0,set(none),hypoxiaInO2("Moderate"),"0.18").
+algebraic_atom(75,1,1,set(none),chestXray("Oligaemic"),"0.01"):-algebraic_atom(75,1,0,set(none),chestXray("Oligaemic"),"0.01").
+chestXray("Plethoric"):-algebraic_atom(73,2,0,set(none),chestXray("Plethoric"),"0.03"),\+algebraic_atom(73,1,1,set(none),chestXray("Oligaemic"),"0.03"),body_5393(5392,multi).
+hypoxiaInO2("Mild"):-algebraic_atom(71,0,0,set(none),hypoxiaInO2("Mild"),"0.1"),body_5357(5356,multi).
+algebraic_atom(73,2,1,set(none),chestXray("Plethoric"),"0.03"):-algebraic_atom(73,2,0,set(none),chestXray("Plethoric"),"0.03").
+algebraic_atom(74,4,1,set(none),chestXray("Asy/Patch"),"0.02"):-algebraic_atom(74,3,1,set(none),chestXray("Grd_Glass"),"0.02").
+algebraic_atom(73,2,1,set(none),chestXray("Plethoric"),"0.03"):-algebraic_atom(73,1,1,set(none),chestXray("Oligaemic"),"0.03").
+algebraic_atom(28,2,1,set(none),lungFlow("High"),"0.05"):-algebraic_atom(28,1,1,set(none),lungFlow("Low"),"0.8").
+body_4825(4824,multi):-body_617(616,multi).
+ductFlow("Lt_to_Rt"):-algebraic_atom(37,0,0,set(none),ductFlow("Lt_to_Rt"),"0.2"),body_4825(4824,multi).
+algebraic_atom(36,2,1,set(none),ductFlow("Rt_to_Lt"),"0.34"):-algebraic_atom(36,2,0,set(none),ductFlow("Rt_to_Lt"),"0.34").
+age("11-30_days"):-algebraic_atom(47,2,0,set(none),age("11-30_days"),"0.05"),\+algebraic_atom(47,1,1,set(none),age("4-10_days"),"0.15"),body_4985(4984,multi).
+xrayReport("Plethoric"):-algebraic_atom(96,2,0,set(none),xrayReport("Plethoric"),"0.8"),\+algebraic_atom(96,1,1,set(none),xrayReport("Oligaemic"),"0.02"),body_5857(5856,multi).
+body_5645(5644,multi):-body_1533(1530,multi).
+algebraic_atom(18,3,1,set(none),cardiacMixing("Transp."),"0.01"):-algebraic_atom(18,3,0,set(none),cardiacMixing("Transp."),"0.01").
+algebraic_atom(49,2,1,set(none),age("11-30_days"),"0.1"):-algebraic_atom(49,2,0,set(none),age("11-30_days"),"0.1").
+body_4877(4876,multi):-body_677(673,multi).
+xrayReport("Asy/Patchy"):-algebraic_atom(96,4,0,set(none),xrayReport("Asy/Patchy"),"0.06"),\+algebraic_atom(96,3,1,set(none),xrayReport("Grd_Glass"),"0.02"),body_5857(5856,multi).
+body_1564(1561,multi):-cardiacMixing("Complete"),ductFlow("Lt_to_Rt").
+body_368(367,sick):-disease("PFC").
+body_205(204,lVH):-disease("PAIVS").
+cardiacMixing("Complete"):-algebraic_atom(18,2,0,set(none),cardiacMixing("Complete"),"0.95"),\+algebraic_atom(18,1,1,set(none),cardiacMixing("Mild"),"0.03"),body_4533(4532,multi).
+algebraic_atom(30,1,1,set(none),lungFlow("Low"),"0.1"):-algebraic_atom(30,1,0,set(none),lungFlow("Low"),"0.1").
+algebraic_atom(41,1,1,set(none),age("4-10_days"),"0.1"):-algebraic_atom(41,0,0,set(none),age("0-3_days"),"0.85").
+algebraic_atom(19,1,1,set(none),cardiacMixing("Mild"),"0.53"):-algebraic_atom(19,0,0,set(none),cardiacMixing("None"),"0.4").
+algebraic_atom(48,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(48,1,1,set(none),age("4-10_days"),"0.15").
+algebraic_atom(49,2,1,set(none),age("11-30_days"),"0.1"):-algebraic_atom(49,1,1,set(none),age("4-10_days"),"0.2").
+util_node(4):-age("0-3_days"),cO2("High"),lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),\+xrayReport("Normal"),grunting,\+cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),\+cO2Report("<7.5"),\+lVH,chestXray("Asy/Patch"),\+lowerBodyO2("12+"),xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),sick,lungFlow("Low"),\+lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),disease("TAPVD"),\+chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(96,2,1,set(none),xrayReport("Plethoric"),"0.8"):-algebraic_atom(96,1,1,set(none),xrayReport("Oligaemic"),"0.02").
+body_5357(5356,multi):-body_1222(1219,multi).
+body_545(544,multi):-disease("TGA").
+age("0-3_days"):-algebraic_atom(41,0,0,set(none),age("0-3_days"),"0.85"),body_4877(4876,multi).
+body_5339(5338,multi):-body_1202(1199,multi).
+body_5153(5152,grunting):-body_990(986,grunting).
+body_4409(4408,lVH):-body_197(196,lVH).
+body_677(673,multi):-\+sick,disease("PFC").
+algebraic_atom(18,3,1,set(none),cardiacMixing("Transp."),"0.01"):-algebraic_atom(18,2,1,set(none),cardiacMixing("Complete"),"0.95").
+algebraic_atom(36,2,1,set(none),ductFlow("Rt_to_Lt"),"0.34"):-algebraic_atom(36,1,1,set(none),ductFlow("None"),"0.33").
+age("4-10_days"):-algebraic_atom(48,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(48,0,0,set(none),age("0-3_days"),"0.8"),body_5003(5002,multi).
+algebraic_atom(96,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom(96,3,1,set(none),xrayReport("Grd_Glass"),"0.02").
+algebraic_atom(40,1,1,set(none),age("4-10_days"),"0.03"):-algebraic_atom(40,0,0,set(none),age("0-3_days"),"0.95").
+algebraic_atom(96,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom(96,4,0,set(none),xrayReport("Asy/Patchy"),"0.06").
+body_4595(4594,sick):-body_385(384,sick).
+util_node(4):-age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),disease("TGA"),lVHreport,cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),\+lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),lVH,\+chestXray("Asy/Patch"),lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,ductFlow("None"),\+ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),\+rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),chestXray("Plethoric"),\+cardiacMixing("Mild").
+cardiacMixing("None"):-algebraic_atom(19,0,0,set(none),cardiacMixing("None"),"0.4"),body_4556(4555,multi).
+algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02"):-algebraic_atom(95,2,0,set(none),xrayReport("Plethoric"),"0.02").
+body_5957(5956,multi):-body_1871(1870,multi).
+algebraic_atom(50,1,1,set(none),age("4-10_days"),"0.08"):-algebraic_atom(50,0,0,set(none),age("0-3_days"),"0.9").
+body_526(525,multi):-disease("PFC").
+body_655(652,multi):-sick,disease("PFC").
+body_4393(4392,lVH):-body_180(179,lVH).
+util_node(4):-age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),\+lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),disease("TGA"),\+lVHreport,cardiacMixing("Transp."),\+xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),lungParench("Normal"),\+rUQO2("12+"),\+sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),\+cardiacMixing("Complete"),\+gruntingReport,ductFlow("None"),\+ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),\+disease("TAPVD"),chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(47,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(47,2,0,set(none),age("11-30_days"),"0.05").
+xrayReport("Grd_Glass"):-algebraic_atom(96,3,0,set(none),xrayReport("Grd_Glass"),"0.02"),\+algebraic_atom(96,2,1,set(none),xrayReport("Plethoric"),"0.8"),body_5857(5856,multi).
+body_990(986,grunting):-\+sick,lungParench("Congested").
+algebraic_atom(96,1,1,set(none),xrayReport("Oligaemic"),"0.02"):-algebraic_atom(96,1,0,set(none),xrayReport("Oligaemic"),"0.02").
+body_1871(1870,multi):-cO2("Normal").
+body_385(384,sick):-disease("Fallot").
+algebraic_atom(95,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom(95,4,0,set(none),xrayReport("Asy/Patchy"),"0.06").
+body_5145(5144,grunting):-body_979(976,grunting).
+util_node(4):-age("0-3_days"),\+cO2("High"),\+lowerBodyO2("<5"),\+cO2("Low"),\+chestXray("Grd_Glass"),\+hypoxiaInO2("Mild"),\+xrayReport("Grd_Glass"),\+xrayReport("Plethoric"),\+xrayReport("Oligaemic"),hypoxiaInO2("Severe"),\+chestXray("Oligaemic"),lungParench("Congested"),\+lungParench("Abnormal"),\+rUQO2("5-12"),\+ductFlow("Rt_to_Lt"),\+cO2Report(">=7.5"),\+disease("PAIVS"),\+chestXray("Normal"),\+hypDistrib("Unequal"),\+age("11-30_days"),\+disease("TGA"),\+lVHreport,\+cardiacMixing("Transp."),xrayReport("Normal"),\+grunting,cO2("Normal"),\+age("4-10_days"),lowerBodyO2("5-12"),hypDistrib("Equal"),cO2Report("<7.5"),\+lVH,\+chestXray("Asy/Patch"),\+lowerBodyO2("12+"),\+xrayReport("Asy/Patchy"),\+hypoxiaInO2("Moderate"),\+lungParench("Normal"),\+rUQO2("12+"),sick,\+lungFlow("Low"),lungFlow("High"),\+disease("Fallot"),\+cardiacMixing("None"),cardiacMixing("Complete"),\+gruntingReport,\+ductFlow("None"),ductFlow("Lt_to_Rt"),\+lungFlow("Normal"),\+disease("Lung"),rUQO2("<5"),\+birthAsphyxia,\+disease("PFC"),disease("TAPVD"),chestXray("Plethoric"),\+cardiacMixing("Mild").
+algebraic_atom(18,2,1,set(none),cardiacMixing("Complete"),"0.95"):-algebraic_atom(18,2,0,set(none),cardiacMixing("Complete"),"0.95").
+body_5658(5657,multi):-body_1549(1546,multi).
+body_957(954,grunting):-sick,lungParench("Normal").
+body_1202(1199,multi):-lungParench("Normal"),cardiacMixing("Transp.").
+body_4579(4578,sick):-body_368(367,sick).
+body_4843(4842,lVHreport):-body_635(634,lVHreport).
+body_1242(1239,multi):-lungParench("Abnormal"),cardiacMixing("Transp.").
+cardiacMixing("Transp."):-algebraic_atom(18,3,0,set(none),cardiacMixing("Transp."),"0.01"),\+algebraic_atom(18,2,1,set(none),cardiacMixing("Complete"),"0.95"),body_4533(4532,multi).
+algebraic_atom(96,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(96,3,0,set(none),xrayReport("Grd_Glass"),"0.02").
+body_1549(1546,multi):-cardiacMixing("Mild"),ductFlow("Lt_to_Rt").
+age("11-30_days"):-algebraic_atom(40,2,0,set(none),age("11-30_days"),"0.02"),\+algebraic_atom(40,1,1,set(none),age("4-10_days"),"0.03"),body_4859(4858,multi).
+age("11-30_days"):-algebraic_atom(49,2,0,set(none),age("11-30_days"),"0.1"),\+algebraic_atom(49,1,1,set(none),age("4-10_days"),"0.2"),body_5021(5020,multi).
+cardiacMixing("Complete"):-algebraic_atom(17,2,0,set(none),cardiacMixing("Complete"),"0.95"),\+algebraic_atom(17,1,1,set(none),cardiacMixing("Mild"),"0.02"),body_4510(4509,multi).
+gruntingReport:-algebraic_atom(99,0,0,set(none),gruntingReport,"0.8"),body_5941(5940,gruntingReport).
+age("0-3_days"):-algebraic_atom(50,0,0,set(none),age("0-3_days"),"0.9"),body_5039(5038,multi).
+algebraic_atom(96,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(96,2,1,set(none),xrayReport("Plethoric"),"0.8").
+body_4417(4416,lVH):-body_205(204,lVH).
+body_1533(1530,multi):-cardiacMixing("None"),ductFlow("Lt_to_Rt").
+cardiacMixing("None"):-algebraic_atom(18,0,0,set(none),cardiacMixing("None"),"0.01"),body_4533(4532,multi).
+algebraic_atom(30,1,1,set(none),lungFlow("Low"),"0.1"):-algebraic_atom(30,0,0,set(none),lungFlow("Normal"),"0.3").
+age("11-30_days"):-algebraic_atom(48,2,0,set(none),age("11-30_days"),"0.05"),\+algebraic_atom(48,1,1,set(none),age("4-10_days"),"0.15"),body_5003(5002,multi).
+age("0-3_days"):-algebraic_atom(40,0,0,set(none),age("0-3_days"),"0.95"),body_4859(4858,multi).
+algebraic_atom(49,1,1,set(none),age("4-10_days"),"0.2"):-algebraic_atom(49,1,0,set(none),age("4-10_days"),"0.2").
+body_409(408,sick):-disease("Lung").
+algebraic_atom(17,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(17,2,1,set(none),cardiacMixing("Complete"),"0.95").
+algebraic_atom(40,2,1,set(none),age("11-30_days"),"0.02"):-algebraic_atom(40,1,1,set(none),age("4-10_days"),"0.03").
+body_4611(4610,sick):-body_401(400,sick).
+algebraic_atom(96,2,1,set(none),xrayReport("Plethoric"),"0.8"):-algebraic_atom(96,2,0,set(none),xrayReport("Plethoric"),"0.8").
+ductFlow("Rt_to_Lt"):-algebraic_atom(36,2,0,set(none),ductFlow("Rt_to_Lt"),"0.34"),\+algebraic_atom(36,1,1,set(none),ductFlow("None"),"0.33"),body_4807(4806,multi).
+body_4753(4752,multi):-body_545(544,multi).
+age("4-10_days"):-algebraic_atom(40,1,0,set(none),age("4-10_days"),"0.03"),\+algebraic_atom(40,0,0,set(none),age("0-3_days"),"0.95"),body_4859(4858,multi).
+lVHreport:-algebraic_atom(38,0,0,set(none),lVHreport,"0.9"),body_4843(4842,lVHreport).
+algebraic_atom(106,2,1,set(none),rUQO2("12+"),"0.1"):-algebraic_atom(106,1,1,set(none),rUQO2("5-12"),"0.4").
+body_979(976,grunting):-sick,lungParench("Congested").
+body_180(179,lVH):-disease("PFC").
+xrayReport("Asy/Patchy"):-algebraic_atom(95,4,0,set(none),xrayReport("Asy/Patchy"),"0.06"),\+algebraic_atom(95,3,1,set(none),xrayReport("Grd_Glass"),"0.02"),body_5829(5828,multi).
+age("4-10_days"):-algebraic_atom(47,1,0,set(none),age("4-10_days"),"0.15"),\+algebraic_atom(47,0,0,set(none),age("0-3_days"),"0.8"),body_4985(4984,multi).
+body_4859(4858,multi):-body_655(652,multi).
+age("0-3_days"):-algebraic_atom(48,0,0,set(none),age("0-3_days"),"0.8"),body_5003(5002,multi).
+algebraic_atom(95,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(95,3,0,set(none),xrayReport("Grd_Glass"),"0.02").
+algebraic_atom(37,2,1,set(none),ductFlow("Rt_to_Lt"),"0.4"):-algebraic_atom(37,1,1,set(none),ductFlow("None"),"0.4").
+body_213(212,lVH):-disease("TAPVD").
+algebraic_atom(40,1,1,set(none),age("4-10_days"),"0.03"):-algebraic_atom(40,1,0,set(none),age("4-10_days"),"0.03").
+body_4851(4850,lVHreport):-body_645(643,lVHreport).
+body_5970(5969,multi):-body_1885(1884,multi).
+body_635(634,lVHreport):-lVH.
+ductFlow("None"):-algebraic_atom(37,1,0,set(none),ductFlow("None"),"0.4"),\+algebraic_atom(37,0,0,set(none),ductFlow("Lt_to_Rt"),"0.2"),body_4825(4824,multi).
+body_645(643,lVHreport):-\+lVH.
+algebraic_atom(40,2,1,set(none),age("11-30_days"),"0.02"):-algebraic_atom(40,2,0,set(none),age("11-30_days"),"0.02").
+xrayReport("Oligaemic"):-algebraic_atom(96,1,0,set(none),xrayReport("Oligaemic"),"0.02"),\+algebraic_atom(96,0,0,set(none),xrayReport("Normal"),"0.1"),body_5857(5856,multi).
+body_401(400,sick):-disease("TAPVD").
+body_5137(5136,grunting):-body_969(965,grunting).
+age("4-10_days"):-algebraic_atom(49,1,0,set(none),age("4-10_days"),"0.2"),\+algebraic_atom(49,0,0,set(none),age("0-3_days"),"0.7"),body_5021(5020,multi).
+body_221(220,lVH):-disease("Lung").
+cardiacMixing("Mild"):-algebraic_atom(17,1,0,set(none),cardiacMixing("Mild"),"0.02"),\+algebraic_atom(17,0,0,set(none),cardiacMixing("None"),"0.01"),body_4510(4509,multi).
+body_5129(5128,grunting):-body_957(954,grunting).
+body_197(196,lVH):-disease("Fallot").
+algebraic_atom(37,2,1,set(none),ductFlow("Rt_to_Lt"),"0.4"):-algebraic_atom(37,2,0,set(none),ductFlow("Rt_to_Lt"),"0.4").
+body_563(562,multi):-disease("Fallot").
+algebraic_atom(49,1,1,set(none),age("4-10_days"),"0.2"):-algebraic_atom(49,0,0,set(none),age("0-3_days"),"0.7").
+body_4807(4806,multi):-body_599(598,multi).
+body_617(616,multi):-disease("Lung").
+body_4433(4432,lVH):-body_221(220,lVH).
+cardiacMixing("Transp."):-algebraic_atom(17,3,0,set(none),cardiacMixing("Transp."),"0.02"),\+algebraic_atom(17,2,1,set(none),cardiacMixing("Complete"),"0.95"),body_4510(4509,multi).
+body_599(598,multi):-disease("TAPVD").
+body_4603(4602,sick):-body_393(392,sick).
+body_4401(4400,lVH):-body_189(188,lVH).
+body_1222(1219,multi):-lungParench("Congested"),cardiacMixing("Transp.").
+body_4425(4424,lVH):-body_213(212,lVH).
+algebraic_atom(18,2,1,set(none),cardiacMixing("Complete"),"0.95"):-algebraic_atom(18,1,1,set(none),cardiacMixing("Mild"),"0.03").
+algebraic_atom(96,1,1,set(none),xrayReport("Oligaemic"),"0.02"):-algebraic_atom(96,0,0,set(none),xrayReport("Normal"),"0.1").
+body_581(580,multi):-disease("PAIVS").
+body_4619(4618,sick):-body_409(408,sick).
+body_189(188,lVH):-disease("TGA").
+algebraic_atom(17,1,1,set(none),cardiacMixing("Mild"),"0.02"):-algebraic_atom(17,0,0,set(none),cardiacMixing("None"),"0.01").
+true.
+xrayReport("Normal"):-algebraic_atom(96,0,0,set(none),xrayReport("Normal"),"0.1"),body_5857(5856,multi).
+body_4789(4788,multi):-body_581(580,multi).
+body_377(376,sick):-disease("TGA").
+algebraic_atom(17,1,1,set(none),cardiacMixing("Mild"),"0.02"):-algebraic_atom(17,1,0,set(none),cardiacMixing("Mild"),"0.02").
+body_4735(4734,multi):-body_526(525,multi).
+body_969(965,grunting):-\+sick,lungParench("Normal").
+body_4771(4770,multi):-body_563(562,multi).
+algebraic_atom(18,1,1,set(none),cardiacMixing("Mild"),"0.03"):-algebraic_atom(18,0,0,set(none),cardiacMixing("None"),"0.01").
+algebraic_atom(37,1,1,set(none),ductFlow("None"),"0.4"):-algebraic_atom(37,0,0,set(none),ductFlow("Lt_to_Rt"),"0.2").
+lowerBodyO2("5-12"):-algebraic_atom(107,1,0,set(none),lowerBodyO2("5-12"),"0.3"),\+algebraic_atom(107,0,0,set(none),lowerBodyO2("<5"),"0.1"),body_6050(6049,multi).
+body_4895(4894,multi):-body_697(694,multi).
+algebraic_atom(18,1,1,set(none),cardiacMixing("Mild"),"0.03"):-algebraic_atom(18,1,0,set(none),cardiacMixing("Mild"),"0.03").
+algebraic_atom(48,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(48,1,0,set(none),age("4-10_days"),"0.15").
+algebraic_atom(95,4,1,set(none),xrayReport("Asy/Patchy"),"0.06"):-algebraic_atom(95,3,1,set(none),xrayReport("Grd_Glass"),"0.02").
+body_393(392,sick):-disease("PAIVS").
+algebraic_atom(17,2,1,set(none),cardiacMixing("Complete"),"0.95"):-algebraic_atom(17,2,0,set(none),cardiacMixing("Complete"),"0.95").
+lVHreport:-algebraic_atom(39,0,0,set(none),lVHreport,"0.05"),body_4851(4850,lVHreport).
+cardiacMixing("Mild"):-algebraic_atom(18,1,0,set(none),cardiacMixing("Mild"),"0.03"),\+algebraic_atom(18,0,0,set(none),cardiacMixing("None"),"0.01"),body_4533(4532,multi).
+algebraic_atom(95,3,1,set(none),xrayReport("Grd_Glass"),"0.02"):-algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02").
+xrayReport("Grd_Glass"):-algebraic_atom(95,3,0,set(none),xrayReport("Grd_Glass"),"0.02"),\+algebraic_atom(95,2,1,set(none),xrayReport("Plethoric"),"0.02"),body_5829(5828,multi).
+body_4587(4586,sick):-body_377(376,sick).
+algebraic_atom(47,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(47,1,1,set(none),age("4-10_days"),"0.15").
+age("0-3_days"):-algebraic_atom(49,0,0,set(none),age("0-3_days"),"0.7"),body_5021(5020,multi).
+body_5375(5374,multi):-body_1242(1239,multi).
+algebraic_atom(17,2,1,set(none),cardiacMixing("Complete"),"0.95"):-algebraic_atom(17,1,1,set(none),cardiacMixing("Mild"),"0.02").
+lungFlow("Normal"):-algebraic_atom(30,0,0,set(none),lungFlow("Normal"),"0.3"),body_4699(4698,multi).
+lungFlow("Low"):-algebraic_atom(30,1,0,set(none),lungFlow("Low"),"0.1"),\+algebraic_atom(30,0,0,set(none),lungFlow("Normal"),"0.3"),body_4699(4698,multi).
+algebraic_atom(37,1,1,set(none),ductFlow("None"),"0.4"):-algebraic_atom(37,1,0,set(none),ductFlow("None"),"0.4").
+xrayReport("Plethoric"):-algebraic_atom(95,2,0,set(none),xrayReport("Plethoric"),"0.02"),\+algebraic_atom(95,1,1,set(none),xrayReport("Oligaemic"),"0.8"),body_5829(5828,multi).
+algebraic_atom(17,3,1,set(none),cardiacMixing("Transp."),"0.02"):-algebraic_atom(17,3,0,set(none),cardiacMixing("Transp."),"0.02").
+ductFlow("Rt_to_Lt"):-algebraic_atom(37,2,0,set(none),ductFlow("Rt_to_Lt"),"0.4"),\+algebraic_atom(37,1,1,set(none),ductFlow("None"),"0.4"),body_4825(4824,multi).
+algebraic_atom(48,2,1,set(none),age("11-30_days"),"0.05"):-algebraic_atom(48,2,0,set(none),age("11-30_days"),"0.05").
+algebraic_atom(48,1,1,set(none),age("4-10_days"),"0.15"):-algebraic_atom(48,0,0,set(none),age("0-3_days"),"0.8").

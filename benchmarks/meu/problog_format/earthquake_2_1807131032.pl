@@ -1,69 +1,74 @@
-body_7(4,alarm) :- burglary, earthquake.
-body_19(15,alarm) :- burglary, \+earthquake.
-body_30(26,alarm) :- \+burglary, earthquake.
-body_42(37,alarm) :- \+burglary, \+earthquake.
-body_50(49,maryCalls) :- alarm.
-body_60(58,maryCalls) :- \+alarm.
-body_68(67,johnCalls) :- alarm.
-body_78(76,johnCalls) :- \+alarm.
-query(johnCalls).
-query(maryCalls).
-query(earthquake).
-query(alarm).
-query(burglary).
-utility(util_node(0),-42).
-utility(\+(util_node(0)),25).
-util_node(0) :- \+johnCalls, \+maryCalls, earthquake, \+alarm, \+burglary.
-util_node(0) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(0) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(0) :- johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(0) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-utility(util_node(1),45).
-utility(\+(util_node(1)),-28).
-util_node(1) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(1) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(1) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(1) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(1) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-utility(util_node(2),-33).
-utility(\+(util_node(2)),-1).
-util_node(2) :- johnCalls, maryCalls, \+earthquake, alarm, burglary.
-util_node(2) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(2) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(2) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(2) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-utility(util_node(3),-48).
-utility(\+(util_node(3)),-16).
-util_node(3) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(3) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(3) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(3) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(3) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-utility(util_node(4),38).
-utility(\+(util_node(4)),42).
-util_node(4) :- johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(4) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(4) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(4) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-util_node(4) :- \+johnCalls, \+maryCalls, \+earthquake, \+alarm, \+burglary.
-body_430(429,alarm) :- body_7(4,alarm).
-body_438(437,alarm) :- body_19(15,alarm).
-body_446(445,alarm) :- body_30(26,alarm).
-body_454(453,alarm) :- body_42(37,alarm).
-body_462(461,maryCalls) :- body_50(49,maryCalls).
-body_470(469,maryCalls) :- body_60(58,maryCalls).
-body_478(477,johnCalls) :- body_68(67,johnCalls).
-body_486(485,johnCalls) :- body_78(76,johnCalls).
+0.4::algebraic_atom(2,0,0,set(none),alarm,"0.29").
+0.4::algebraic_atom(3,0,0,set(none),alarm,"0.001").
+?::dec_2.
+0.4::algebraic_atom(4,0,0,set(none),maryCalls,"0.7").
 ?::earthquake.
 ?::burglary.
-?::dec_2.
-body_498(497,maryCalls) :- dec_2.
-0.95::alarm :- body_430(429,alarm).
-0.94::alarm :- body_438(437,alarm).
-0.29::alarm :- body_446(445,alarm).
-0.001::alarm :- body_454(453,alarm).
-0.7::maryCalls :- body_462(461,maryCalls).
-0.01::maryCalls :- body_470(469,maryCalls).
-0.9::johnCalls :- body_478(477,johnCalls).
-0.05::johnCalls :- body_486(485,johnCalls).
-0.01::maryCalls :- body_498(497,maryCalls).
+0.4::algebraic_atom(5,0,0,set(none),maryCalls,"0.01").
+0.4::algebraic_atom(6,0,0,set(none),johnCalls,"0.9").
+0.4::algebraic_atom(7,0,0,set(none),johnCalls,"0.05").
+0.4::algebraic_atom(8,0,0,set(none),maryCalls,"0.01").
+0.4::algebraic_atom(0,0,0,set(none),alarm,"0.95").
+0.4::algebraic_atom(1,0,0,set(none),alarm,"0.94").
+utility(util_node(0), -42).
+utility(\+util_node(0), 25).
+utility(util_node(1), 45).
+utility(\+util_node(1), -28).
+utility(util_node(2), -33).
+utility(\+util_node(2), -1).
+utility(util_node(3), -48).
+utility(\+util_node(3), -16).
+utility(util_node(4), 38).
+utility(\+util_node(4), 42).
+util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+body_470(469,maryCalls):-body_60(58,maryCalls).
+maryCalls:-algebraic_atom(5,0,0,set(none),maryCalls,"0.01"),body_470(469,maryCalls).
+body_478(477,johnCalls):-body_68(67,johnCalls).
+util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+body_78(76,johnCalls):-\+alarm.
+body_68(67,johnCalls):-alarm.
+alarm:-algebraic_atom(0,0,0,set(none),alarm,"0.95"),body_430(429,alarm).
+util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+johnCalls:-algebraic_atom(7,0,0,set(none),johnCalls,"0.05"),body_486(485,johnCalls).
+util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+alarm:-algebraic_atom(2,0,0,set(none),alarm,"0.29"),body_446(445,alarm).
+body_7(4,alarm):-earthquake,burglary.
+util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+johnCalls:-algebraic_atom(6,0,0,set(none),johnCalls,"0.9"),body_478(477,johnCalls).
+util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(0):-\+burglary,\+alarm,earthquake,\+maryCalls,\+johnCalls.
+body_42(37,alarm):-\+earthquake,\+burglary.
+body_60(58,maryCalls):-\+alarm.
+maryCalls:-algebraic_atom(4,0,0,set(none),maryCalls,"0.7"),body_462(461,maryCalls).
+body_462(461,maryCalls):-body_50(49,maryCalls).
+maryCalls:-algebraic_atom(8,0,0,set(none),maryCalls,"0.01"),body_498(497,maryCalls).
+util_node(0):-\+burglary,\+alarm,\+earthquake,\+maryCalls,johnCalls.
+util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(4):-\+burglary,\+alarm,\+earthquake,\+maryCalls,johnCalls.
+body_438(437,alarm):-body_19(15,alarm).
+body_30(26,alarm):-earthquake,\+burglary.
+util_node(0):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+true.
+util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+body_19(15,alarm):-\+earthquake,burglary.
+body_454(453,alarm):-body_42(37,alarm).
+alarm:-algebraic_atom(1,0,0,set(none),alarm,"0.94"),body_438(437,alarm).
+body_486(485,johnCalls):-body_78(76,johnCalls).
+body_50(49,maryCalls):-alarm.
+util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(0):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(2):-burglary,alarm,\+earthquake,maryCalls,johnCalls.
+body_498(497,maryCalls):-dec_2.
+util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+alarm:-algebraic_atom(3,0,0,set(none),alarm,"0.001"),body_454(453,alarm).
+util_node(0):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(3):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+body_446(445,alarm):-body_30(26,alarm).
+util_node(2):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+util_node(1):-\+burglary,\+alarm,\+earthquake,\+maryCalls,\+johnCalls.
+body_430(429,alarm):-body_7(4,alarm).

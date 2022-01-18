@@ -1,102 +1,187 @@
-body_1(0,multi) :- true.
-body_36(33,multi) :- a("young"), s("M").
-body_52(49,multi) :- a("young"), s("F").
-body_67(64,multi) :- a("adult"), s("M").
-body_82(79,multi) :- a("adult"), s("F").
-body_97(94,multi) :- a("old"), s("M").
-body_112(109,multi) :- a("old"), s("F").
-body_125(124,multi) :- e("high").
-body_139(138,multi) :- e("uni").
-body_152(151,multi) :- e("high").
-body_166(165,multi) :- e("uni").
-body_181(178,multi) :- o("emp"), r("small").
-body_202(199,multi) :- o("emp"), r("big").
-body_222(219,multi) :- o("self"), r("small").
-body_242(239,multi) :- o("self"), r("big").
-query(r("small")).
-query(t("other")).
-query(a("old")).
-query(t("train")).
-query(a("young")).
-query(r("big")).
-query(e("high")).
-query(e("uni")).
-query(t("car")).
-query(o("emp")).
-query(o("self")).
-query(s("M")).
-query(s("F")).
-query(a("adult")).
-utility(util_node(0),-20).
-utility(\+(util_node(0)),4).
-util_node(0) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), \+e("high"), e("uni"), t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), a("adult").
-util_node(0) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), a("adult").
-util_node(0) :- r("small"), \+t("other"), a("old"), \+t("train"), \+a("young"), \+r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), \+a("adult").
-util_node(0) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), \+e("high"), e("uni"), t("car"), \+o("emp"), o("self"), s("M"), \+s("F"), a("adult").
-util_node(0) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), a("young"), r("big"), \+e("high"), e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-utility(util_node(1),50).
-utility(\+(util_node(1)),-28).
-util_node(1) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(1) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), a("adult").
-util_node(1) :- \+r("small"), t("other"), a("old"), \+t("train"), \+a("young"), r("big"), e("high"), \+e("uni"), \+t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(1) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(1) :- r("small"), \+t("other"), \+a("old"), t("train"), \+a("young"), \+r("big"), e("high"), \+e("uni"), \+t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), a("adult").
-utility(util_node(2),-3).
-utility(\+(util_node(2)),-15).
-util_node(2) :- r("small"), \+t("other"), a("old"), \+t("train"), \+a("young"), \+r("big"), \+e("high"), e("uni"), t("car"), \+o("emp"), o("self"), \+s("M"), s("F"), \+a("adult").
-util_node(2) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), \+e("high"), e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), a("adult").
-util_node(2) :- \+r("small"), t("other"), \+a("old"), \+t("train"), a("young"), r("big"), \+e("high"), e("uni"), \+t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(2) :- \+r("small"), t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), \+e("high"), e("uni"), \+t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), a("adult").
-util_node(2) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), \+e("high"), e("uni"), t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), a("adult").
-utility(util_node(3),18).
-utility(\+(util_node(3)),29).
-util_node(3) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), a("adult").
-util_node(3) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(3) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), a("young"), r("big"), \+e("high"), e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(3) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), a("adult").
-util_node(3) :- \+r("small"), \+t("other"), \+a("old"), t("train"), \+a("young"), r("big"), e("high"), \+e("uni"), \+t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), a("adult").
-utility(util_node(4),20).
-utility(\+(util_node(4)),-25).
-util_node(4) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), a("young"), r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), \+a("adult").
-util_node(4) :- r("small"), \+t("other"), \+a("old"), \+t("train"), a("young"), \+r("big"), \+e("high"), e("uni"), t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(4) :- \+r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), r("big"), e("high"), \+e("uni"), t("car"), \+o("emp"), o("self"), s("M"), \+s("F"), a("adult").
-util_node(4) :- \+r("small"), \+t("other"), \+a("old"), t("train"), a("young"), r("big"), e("high"), \+e("uni"), \+t("car"), o("emp"), \+o("self"), s("M"), \+s("F"), \+a("adult").
-util_node(4) :- r("small"), \+t("other"), \+a("old"), \+t("train"), \+a("young"), \+r("big"), e("high"), \+e("uni"), t("car"), o("emp"), \+o("self"), \+s("M"), s("F"), a("adult").
-body_999(998,multi) :- body_1(0,multi).
-body_1017(1016,multi) :- body_36(33,multi).
-body_1030(1029,multi) :- body_52(49,multi).
-body_1043(1042,multi) :- body_67(64,multi).
-body_1056(1055,multi) :- body_82(79,multi).
-body_1069(1068,multi) :- body_97(94,multi).
-body_1082(1081,multi) :- body_112(109,multi).
-body_1095(1094,multi) :- body_125(124,multi).
-body_1108(1107,multi) :- body_139(138,multi).
-body_1121(1120,multi) :- body_152(151,multi).
-body_1134(1133,multi) :- body_166(165,multi).
-body_1147(1146,multi) :- body_181(178,multi).
-body_1165(1164,multi) :- body_202(199,multi).
-body_1183(1182,multi) :- body_222(219,multi).
-body_1201(1200,multi) :- body_242(239,multi).
-?::dec_0.
-body_1221(1220,s("M")) :- dec_0.
-body_1230(1228,s("F")) :- \+dec_0.
 ?::dec_1.
-body_1240(1239,o("self")) :- dec_1.
-0.3::a("young"); 0.5::a("adult"); 0.2::a("old") :- body_999(998,multi).
-0.75::e("high"); 0.25::e("uni") :- body_1017(1016,multi).
-0.64::e("high"); 0.36::e("uni") :- body_1030(1029,multi).
-0.72::e("high"); 0.28::e("uni") :- body_1043(1042,multi).
-0.7::e("high"); 0.3::e("uni") :- body_1056(1055,multi).
-0.88::e("high"); 0.12::e("uni") :- body_1069(1068,multi).
-0.9::e("high"); 0.1::e("uni") :- body_1082(1081,multi).
-0.96::o("emp"); 0.04::o("self") :- body_1095(1094,multi).
-0.92::o("emp"); 0.08::o("self") :- body_1108(1107,multi).
-0.25::r("small"); 0.75::r("big") :- body_1121(1120,multi).
-0.2::r("small"); 0.8::r("big") :- body_1134(1133,multi).
-0.48::t("car"); 0.42::t("train"); 0.1::t("other") :- body_1147(1146,multi).
-0.58::t("car"); 0.24::t("train"); 0.18::t("other") :- body_1165(1164,multi).
-0.56::t("car"); 0.36::t("train"); 0.08::t("other") :- body_1183(1182,multi).
-0.7::t("car"); 0.21::t("train"); 0.09::t("other") :- body_1201(1200,multi).
-0.6::s("M") :- body_1221(1220,s("M")).
-0.4::s("F") :- body_1230(1228,s("F")).
-0.08::o("self") :- body_1240(1239,o("self")).
+?::dec_0.
+0.4::algebraic_atom(0,0,0,set(none),a("young"),"0.3").
+0.4::algebraic_atom(0,1,0,set(none),a("adult"),"0.5").
+0.4::algebraic_atom(0,2,0,set(none),a("old"),"0.2").
+0.4::algebraic_atom(1,0,0,set(none),e("high"),"0.75").
+0.4::algebraic_atom(1,1,0,set(none),e("uni"),"0.25").
+0.4::algebraic_atom(2,0,0,set(none),e("high"),"0.64").
+0.4::algebraic_atom(2,1,0,set(none),e("uni"),"0.36").
+0.4::algebraic_atom(3,0,0,set(none),e("high"),"0.72").
+0.4::algebraic_atom(3,1,0,set(none),e("uni"),"0.28").
+0.4::algebraic_atom(4,0,0,set(none),e("high"),"0.7").
+0.4::algebraic_atom(4,1,0,set(none),e("uni"),"0.3").
+0.4::algebraic_atom(5,0,0,set(none),e("high"),"0.88").
+0.4::algebraic_atom(5,1,0,set(none),e("uni"),"0.12").
+0.4::algebraic_atom(6,0,0,set(none),e("high"),"0.9").
+0.4::algebraic_atom(6,1,0,set(none),e("uni"),"0.1").
+0.4::algebraic_atom(7,0,0,set(none),o("emp"),"0.96").
+0.4::algebraic_atom(7,1,0,set(none),o("self"),"0.04").
+0.4::algebraic_atom(8,0,0,set(none),o("emp"),"0.92").
+0.4::algebraic_atom(8,1,0,set(none),o("self"),"0.08").
+0.4::algebraic_atom(9,0,0,set(none),r("small"),"0.25").
+0.4::algebraic_atom(9,1,0,set(none),r("big"),"0.75").
+0.4::algebraic_atom(10,0,0,set(none),r("small"),"0.2").
+0.4::algebraic_atom(10,1,0,set(none),r("big"),"0.8").
+0.4::algebraic_atom(11,0,0,set(none),t("car"),"0.48").
+0.4::algebraic_atom(11,1,0,set(none),t("train"),"0.42").
+0.4::algebraic_atom(11,2,0,set(none),t("other"),"0.1").
+0.4::algebraic_atom(12,0,0,set(none),t("car"),"0.58").
+0.4::algebraic_atom(12,1,0,set(none),t("train"),"0.24").
+0.4::algebraic_atom(12,2,0,set(none),t("other"),"0.18").
+0.4::algebraic_atom(13,0,0,set(none),t("car"),"0.56").
+0.4::algebraic_atom(13,1,0,set(none),t("train"),"0.36").
+0.4::algebraic_atom(13,2,0,set(none),t("other"),"0.08").
+0.4::algebraic_atom(14,0,0,set(none),t("car"),"0.7").
+0.4::algebraic_atom(14,1,0,set(none),t("train"),"0.21").
+0.4::algebraic_atom(14,2,0,set(none),t("other"),"0.09").
+0.4::algebraic_atom(15,0,0,set(none),s("M"),"0.6").
+0.4::algebraic_atom(16,0,0,set(none),s("F"),"0.4").
+0.4::algebraic_atom(17,0,0,set(none),o("self"),"0.08").
+utility(util_node(0), -20).
+utility(\+util_node(0), 4).
+utility(util_node(1), 50).
+utility(\+util_node(1), -28).
+utility(util_node(2), -3).
+utility(\+util_node(2), -15).
+utility(util_node(3), 18).
+utility(\+util_node(3), 29).
+utility(util_node(4), 20).
+utility(\+util_node(4), -25).
+r("small"):-algebraic_atom(10,0,0,set(none),r("small"),"0.2"),body_1134(1133,multi).
+body_67(64,multi):-s("M"),a("adult").
+r("small"):-algebraic_atom(9,0,0,set(none),r("small"),"0.25"),body_1121(1120,multi).
+body_1069(1068,multi):-body_97(94,multi).
+algebraic_atom(0,2,1,set(none),a("old"),"0.2"):-algebraic_atom(0,1,1,set(none),a("adult"),"0.5").
+t("car"):-algebraic_atom(11,0,0,set(none),t("car"),"0.48"),body_1147(1146,multi).
+algebraic_atom(10,1,1,set(none),r("big"),"0.8"):-algebraic_atom(10,1,0,set(none),r("big"),"0.8").
+algebraic_atom(12,1,1,set(none),t("train"),"0.24"):-algebraic_atom(12,1,0,set(none),t("train"),"0.24").
+body_1095(1094,multi):-body_125(124,multi).
+body_1043(1042,multi):-body_67(64,multi).
+util_node(0):-a("adult"),\+s("F"),s("M"),o("self"),\+o("emp"),t("car"),e("uni"),\+e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+body_52(49,multi):-s("F"),a("young").
+algebraic_atom(2,1,1,set(none),e("uni"),"0.36"):-algebraic_atom(2,1,0,set(none),e("uni"),"0.36").
+body_166(165,multi):-e("uni").
+r("big"):-algebraic_atom(10,1,0,set(none),r("big"),"0.8"),\+algebraic_atom(10,0,0,set(none),r("small"),"0.2"),body_1134(1133,multi).
+r("big"):-algebraic_atom(9,1,0,set(none),r("big"),"0.75"),\+algebraic_atom(9,0,0,set(none),r("small"),"0.25"),body_1121(1120,multi).
+algebraic_atom(3,1,1,set(none),e("uni"),"0.28"):-algebraic_atom(3,0,0,set(none),e("high"),"0.72").
+e("high"):-algebraic_atom(4,0,0,set(none),e("high"),"0.7"),body_1056(1055,multi).
+algebraic_atom(9,1,1,set(none),r("big"),"0.75"):-algebraic_atom(9,0,0,set(none),r("small"),"0.25").
+algebraic_atom(1,1,1,set(none),e("uni"),"0.25"):-algebraic_atom(1,1,0,set(none),e("uni"),"0.25").
+body_1030(1029,multi):-body_52(49,multi).
+t("other"):-algebraic_atom(11,2,0,set(none),t("other"),"0.1"),\+algebraic_atom(11,1,1,set(none),t("train"),"0.42"),body_1147(1146,multi).
+body_112(109,multi):-s("F"),a("old").
+util_node(0):-\+a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),\+r("big"),\+a("young"),\+t("train"),a("old"),\+t("other"),r("small").
+body_1108(1107,multi):-body_139(138,multi).
+algebraic_atom(1,1,1,set(none),e("uni"),"0.25"):-algebraic_atom(1,0,0,set(none),e("high"),"0.75").
+algebraic_atom(11,2,1,set(none),t("other"),"0.1"):-algebraic_atom(11,1,1,set(none),t("train"),"0.42").
+algebraic_atom(3,1,1,set(none),e("uni"),"0.28"):-algebraic_atom(3,1,0,set(none),e("uni"),"0.28").
+body_1082(1081,multi):-body_112(109,multi).
+body_1201(1200,multi):-body_242(239,multi).
+algebraic_atom(0,2,1,set(none),a("old"),"0.2"):-algebraic_atom(0,2,0,set(none),a("old"),"0.2").
+o("self"):-algebraic_atom(8,1,0,set(none),o("self"),"0.08"),\+algebraic_atom(8,0,0,set(none),o("emp"),"0.92"),body_1108(1107,multi).
+util_node(0):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),e("uni"),\+e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+e("high"):-algebraic_atom(3,0,0,set(none),e("high"),"0.72"),body_1043(1042,multi).
+util_node(0):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+e("high"):-algebraic_atom(1,0,0,set(none),e("high"),"0.75"),body_1017(1016,multi).
+body_125(124,multi):-e("high").
+algebraic_atom(0,1,1,set(none),a("adult"),"0.5"):-algebraic_atom(0,0,0,set(none),a("young"),"0.3").
+algebraic_atom(12,2,1,set(none),t("other"),"0.18"):-algebraic_atom(12,1,1,set(none),t("train"),"0.24").
+a("old"):-algebraic_atom(0,2,0,set(none),a("old"),"0.2"),\+algebraic_atom(0,1,1,set(none),a("adult"),"0.5").
+algebraic_atom(11,1,1,set(none),t("train"),"0.42"):-algebraic_atom(11,0,0,set(none),t("car"),"0.48").
+algebraic_atom(2,1,1,set(none),e("uni"),"0.36"):-algebraic_atom(2,0,0,set(none),e("high"),"0.64").
+t("other"):-algebraic_atom(12,2,0,set(none),t("other"),"0.18"),\+algebraic_atom(12,1,1,set(none),t("train"),"0.24"),body_1165(1164,multi).
+algebraic_atom(8,1,1,set(none),o("self"),"0.08"):-algebraic_atom(8,0,0,set(none),o("emp"),"0.92").
+body_1121(1120,multi):-body_152(151,multi).
+e("uni"):-algebraic_atom(3,1,0,set(none),e("uni"),"0.28"),\+algebraic_atom(3,0,0,set(none),e("high"),"0.72"),body_1043(1042,multi).
+e("high"):-algebraic_atom(2,0,0,set(none),e("high"),"0.64"),body_1030(1029,multi).
+algebraic_atom(9,1,1,set(none),r("big"),"0.75"):-algebraic_atom(9,1,0,set(none),r("big"),"0.75").
+body_97(94,multi):-s("M"),a("old").
+algebraic_atom(12,1,1,set(none),t("train"),"0.24"):-algebraic_atom(12,0,0,set(none),t("car"),"0.58").
+e("uni"):-algebraic_atom(2,1,0,set(none),e("uni"),"0.36"),\+algebraic_atom(2,0,0,set(none),e("high"),"0.64"),body_1030(1029,multi).
+body_1134(1133,multi):-body_166(165,multi).
+a("adult"):-algebraic_atom(0,1,0,set(none),a("adult"),"0.5"),\+algebraic_atom(0,0,0,set(none),a("young"),"0.3").
+body_242(239,multi):-r("big"),o("self").
+algebraic_atom(12,2,1,set(none),t("other"),"0.18"):-algebraic_atom(12,2,0,set(none),t("other"),"0.18").
+algebraic_atom(4,1,1,set(none),e("uni"),"0.3"):-algebraic_atom(4,1,0,set(none),e("uni"),"0.3").
+t("train"):-algebraic_atom(11,1,0,set(none),t("train"),"0.42"),\+algebraic_atom(11,0,0,set(none),t("car"),"0.48"),body_1147(1146,multi).
+algebraic_atom(0,1,1,set(none),a("adult"),"0.5"):-algebraic_atom(0,1,0,set(none),a("adult"),"0.5").
+body_152(151,multi):-e("high").
+body_82(79,multi):-s("F"),a("adult").
+body_139(138,multi):-e("uni").
+algebraic_atom(11,2,1,set(none),t("other"),"0.1"):-algebraic_atom(11,2,0,set(none),t("other"),"0.1").
+body_1017(1016,multi):-body_36(33,multi).
+e("uni"):-algebraic_atom(1,1,0,set(none),e("uni"),"0.25"),\+algebraic_atom(1,0,0,set(none),e("high"),"0.75"),body_1017(1016,multi).
+t("car"):-algebraic_atom(12,0,0,set(none),t("car"),"0.58"),body_1165(1164,multi).
+algebraic_atom(13,1,1,set(none),t("train"),"0.36"):-algebraic_atom(13,1,0,set(none),t("train"),"0.36").
+t("train"):-algebraic_atom(12,1,0,set(none),t("train"),"0.24"),\+algebraic_atom(12,0,0,set(none),t("car"),"0.58"),body_1165(1164,multi).
+algebraic_atom(11,1,1,set(none),t("train"),"0.42"):-algebraic_atom(11,1,0,set(none),t("train"),"0.42").
+body_1056(1055,multi):-body_82(79,multi).
+algebraic_atom(10,1,1,set(none),r("big"),"0.8"):-algebraic_atom(10,0,0,set(none),r("small"),"0.2").
+a("young"):-algebraic_atom(0,0,0,set(none),a("young"),"0.3").
+algebraic_atom(14,2,1,set(none),t("other"),"0.09"):-algebraic_atom(14,2,0,set(none),t("other"),"0.09").
+util_node(1):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),\+t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),\+t("train"),a("old"),t("other"),\+r("small").
+algebraic_atom(5,1,1,set(none),e("uni"),"0.12"):-algebraic_atom(5,0,0,set(none),e("high"),"0.88").
+o("self"):-algebraic_atom(17,0,0,set(none),o("self"),"0.08"),body_1240(1239,o("self")).
+algebraic_atom(6,1,1,set(none),e("uni"),"0.1"):-algebraic_atom(6,0,0,set(none),e("high"),"0.9").
+algebraic_atom(6,1,1,set(none),e("uni"),"0.1"):-algebraic_atom(6,1,0,set(none),e("uni"),"0.1").
+util_node(3):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+util_node(1):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+util_node(3):-a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),\+t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),t("train"),\+a("old"),\+t("other"),\+r("small").
+o("emp"):-algebraic_atom(8,0,0,set(none),o("emp"),"0.92"),body_1108(1107,multi).
+t("car"):-algebraic_atom(14,0,0,set(none),t("car"),"0.7"),body_1201(1200,multi).
+o("self"):-algebraic_atom(7,1,0,set(none),o("self"),"0.04"),\+algebraic_atom(7,0,0,set(none),o("emp"),"0.96"),body_1095(1094,multi).
+algebraic_atom(4,1,1,set(none),e("uni"),"0.3"):-algebraic_atom(4,0,0,set(none),e("high"),"0.7").
+algebraic_atom(13,2,1,set(none),t("other"),"0.08"):-algebraic_atom(13,1,1,set(none),t("train"),"0.36").
+t("car"):-algebraic_atom(13,0,0,set(none),t("car"),"0.56"),body_1183(1182,multi).
+util_node(2):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),e("uni"),\+e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+e("uni"):-algebraic_atom(5,1,0,set(none),e("uni"),"0.12"),\+algebraic_atom(5,0,0,set(none),e("high"),"0.88"),body_1069(1068,multi).
+util_node(2):-a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),e("uni"),\+e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+util_node(3):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+algebraic_atom(7,1,1,set(none),o("self"),"0.04"):-algebraic_atom(7,0,0,set(none),o("emp"),"0.96").
+s("F"):-algebraic_atom(16,0,0,set(none),s("F"),"0.4"),body_1230(1228,s("F")).
+util_node(1):-a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+util_node(3):-a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+body_1147(1146,multi):-body_181(178,multi).
+e("uni"):-algebraic_atom(4,1,0,set(none),e("uni"),"0.3"),\+algebraic_atom(4,0,0,set(none),e("high"),"0.7"),body_1056(1055,multi).
+algebraic_atom(14,1,1,set(none),t("train"),"0.21"):-algebraic_atom(14,1,0,set(none),t("train"),"0.21").
+util_node(2):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),\+t("car"),e("uni"),\+e("high"),r("big"),a("young"),\+t("train"),\+a("old"),t("other"),\+r("small").
+algebraic_atom(13,1,1,set(none),t("train"),"0.36"):-algebraic_atom(13,0,0,set(none),t("car"),"0.56").
+e("high"):-algebraic_atom(5,0,0,set(none),e("high"),"0.88"),body_1069(1068,multi).
+t("train"):-algebraic_atom(13,1,0,set(none),t("train"),"0.36"),\+algebraic_atom(13,0,0,set(none),t("car"),"0.56"),body_1183(1182,multi).
+body_1183(1182,multi):-body_222(219,multi).
+util_node(4):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),\+r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),r("small").
+true.
+util_node(2):-a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),\+t("car"),e("uni"),\+e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),t("other"),\+r("small").
+e("high"):-algebraic_atom(6,0,0,set(none),e("high"),"0.9"),body_1082(1081,multi).
+body_1240(1239,o("self")):-dec_1.
+body_222(219,multi):-r("small"),o("self").
+body_36(33,multi):-s("M"),a("young").
+e("uni"):-algebraic_atom(6,1,0,set(none),e("uni"),"0.1"),\+algebraic_atom(6,0,0,set(none),e("high"),"0.9"),body_1082(1081,multi).
+body_999(998,multi).
+util_node(4):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),e("uni"),\+e("high"),\+r("big"),a("young"),\+t("train"),\+a("old"),\+t("other"),r("small").
+t("other"):-algebraic_atom(13,2,0,set(none),t("other"),"0.08"),\+algebraic_atom(13,1,1,set(none),t("train"),"0.36"),body_1183(1182,multi).
+body_1230(1228,s("F")):-\+dec_0.
+body_202(199,multi):-r("big"),o("emp").
+algebraic_atom(14,2,1,set(none),t("other"),"0.09"):-algebraic_atom(14,1,1,set(none),t("train"),"0.21").
+util_node(4):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),\+t("car"),\+e("uni"),e("high"),r("big"),a("young"),t("train"),\+a("old"),\+t("other"),\+r("small").
+util_node(4):-\+a("adult"),s("F"),\+s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+algebraic_atom(13,2,1,set(none),t("other"),"0.08"):-algebraic_atom(13,2,0,set(none),t("other"),"0.08").
+body_181(178,multi):-r("small"),o("emp").
+algebraic_atom(14,1,1,set(none),t("train"),"0.21"):-algebraic_atom(14,0,0,set(none),t("car"),"0.7").
+util_node(3):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),e("uni"),\+e("high"),r("big"),a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+algebraic_atom(5,1,1,set(none),e("uni"),"0.12"):-algebraic_atom(5,1,0,set(none),e("uni"),"0.12").
+o("emp"):-algebraic_atom(7,0,0,set(none),o("emp"),"0.96"),body_1095(1094,multi).
+body_1221(1220,s("M")):-dec_0.
+body_1165(1164,multi):-body_202(199,multi).
+util_node(4):-a("adult"),\+s("F"),s("M"),o("self"),\+o("emp"),t("car"),\+e("uni"),e("high"),r("big"),\+a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+util_node(1):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),\+e("uni"),e("high"),r("big"),a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+algebraic_atom(8,1,1,set(none),o("self"),"0.08"):-algebraic_atom(8,1,0,set(none),o("self"),"0.08").
+s("M"):-algebraic_atom(15,0,0,set(none),s("M"),"0.6"),body_1221(1220,s("M")).
+t("train"):-algebraic_atom(14,1,0,set(none),t("train"),"0.21"),\+algebraic_atom(14,0,0,set(none),t("car"),"0.7"),body_1201(1200,multi).
+algebraic_atom(7,1,1,set(none),o("self"),"0.04"):-algebraic_atom(7,1,0,set(none),o("self"),"0.04").
+t("other"):-algebraic_atom(14,2,0,set(none),t("other"),"0.09"),\+algebraic_atom(14,1,1,set(none),t("train"),"0.21"),body_1201(1200,multi).
+util_node(0):-\+a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),t("car"),e("uni"),\+e("high"),r("big"),a("young"),\+t("train"),\+a("old"),\+t("other"),\+r("small").
+body_1(0,multi).
+util_node(1):-a("adult"),\+s("F"),s("M"),\+o("self"),o("emp"),\+t("car"),\+e("uni"),e("high"),\+r("big"),\+a("young"),t("train"),\+a("old"),\+t("other"),r("small").
+util_node(2):-\+a("adult"),s("F"),\+s("M"),o("self"),\+o("emp"),t("car"),e("uni"),\+e("high"),\+r("big"),\+a("young"),\+t("train"),a("old"),\+t("other"),r("small").
