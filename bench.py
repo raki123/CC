@@ -8,7 +8,7 @@ import aspmc.semirings.probabilistic as probabilistic
 from aspmc.config import config
 
 import logging
-logging.disable()
+#logging.disable()
 
 from os import listdir
 from os.path import isfile, join, dirname, basename
@@ -42,6 +42,7 @@ MAP = False
 MEU = False
 SMPROBLOG = False
 PROBLOG = False
+CONCOM = True
 
 WIDTH_BENCH = False
 
@@ -641,6 +642,129 @@ def smproblog_bench_clingo(csv_writer):
                 print("Killed")
             ctr += 1
 
+# CONCOM
+
+@memory()
+def concom_instance_aspmc(benchmark, constrained):
+    config["constrained"] = constrained
+    benchmark.compile()
+
+def concom_bench_aspmc(csv_writer, constrained):
+    csv_writer.writerow(["benchmark", "total_time", "solved"])
+    ctr = 0
+    # MAP
+    benchmark_paths = [ "./benchmarks/map/gh/problog_format/",  "./benchmarks/map/gnb/problog_format/", "./benchmarks/map/blood/problog_format/", "./benchmarks/map/graphs/problog_format/"]
+    for benchmark_path in benchmark_paths:
+        onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
+        for benchmark in onlyfiles:
+            if ctr >= LIMIT:
+                break
+            print(benchmark)
+            try:
+                program = MAPProblogProgram("true.", [benchmark])
+                cb(program)
+                cnf = program.get_cnf()
+                p = multiprocessing.Process(target=concom_instance_aspmc,args=(cnf,constrained))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([benchmark, end - start, False])
+                else:
+                    csv_writer.writerow([benchmark, end - start, True])
+            except MemoryError:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                print("Killed")
+            except:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                print("Error")
+            ctr += 1
+    # MEU
+    ctr = 0
+    benchmark_paths = [ "./benchmarks/meu/problog_format/" ]
+    for benchmark_path in benchmark_paths:
+        onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
+        for benchmark in onlyfiles:
+            if ctr >= LIMIT:
+                break
+            print(benchmark)
+            try:
+                program = MEUProblogProgram("true.", [benchmark])
+                cb(program)
+                cnf = program.get_cnf()
+                p = multiprocessing.Process(target=concom_instance_aspmc,args=(cnf,constrained))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([benchmark, end - start, False])
+                else:
+                    csv_writer.writerow([benchmark, end - start, True])
+            except MemoryError:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                print("Killed")
+            except:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                print("Error")
+            ctr += 1
+    ctr = 0
+    benchmark_path = "./benchmarks/smproblog/smokers"
+    base = join(benchmark_path, "smokers.pl")
+    for x in range(3, 8):
+        db = join(benchmark_path, f"pfacts/db{x}.pl")
+        for y in range(1, 11):    
+            if ctr >= LIMIT:
+                return
+            network = join(benchmark_path, f"randomgraphs/network-{x}-{2*x}-{y}.pl")
+            try:
+                print(x,y)
+                program = SMProblogProgram("", [base, db, network])
+                cb(program)
+                cnf = program.get_cnf()
+                p = multiprocessing.Process(target=concom_instance_aspmc,args=(cnf,constrained))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([f"{x}.{y}", end - start, False])
+                else:
+                    csv_writer.writerow([f"{x}.{y}", end - start, True])
+            except MemoryError:
+                csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                print("Killed")
+            except:
+                csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
+                print("Error")
+            ctr += 1
+
+
 import csv
 
 
@@ -719,7 +843,6 @@ if EFFICIENCY_BENCH:
             meu_bench_pita(csv_writer, "./benchmarks/meu/viral/pita_format/")
 
 
-
     if MAP:
         # MAP
         with open("results/map/clingo/results.csv", 'w') as results:
@@ -737,6 +860,15 @@ if EFFICIENCY_BENCH:
         with open("results/map/pita/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
             map_bench_pita(csv_writer) 
+
+    if CONCOM:
+        with open("results/concom/X/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            concom_bench_aspmc(csv_writer,"X") 
+        
+        with open("results/concom/XD/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            concom_bench_aspmc(csv_writer, "XD") 
 
 from aspmc.compile.constrained_compile import compute_separator
 import aspmc.graph.treedecomposition as treedecomposition
