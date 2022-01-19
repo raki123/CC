@@ -261,7 +261,7 @@ algebraic_atom(17,6,1,set(none),a6,"0.0999999999"):-algebraic_atom(17,5,1,set(no
 algebraic_atom(19,8,1,set(none),a8,"0.0909090908264"):-algebraic_atom(19,8,0,set(none),a8,"0.0909090908264").
 algebraic_atom(17,6,1,set(none),a6,"0.0999999999"):-algebraic_atom(17,6,0,set(none),a6,"0.0999999999").
 algebraic_atom(7,4,1,set(none),a4,"0.1999999996"):-algebraic_atom(7,4,0,set(none),a4,"0.1999999996").
-true.
+
 query(algebraic_atom(0,0,0,set(none),a1,"0.5")).
 query(algebraic_atom(13,0,0,set(none),a0,"0.124999999844")).
 query(algebraic_atom(15,4,0,set(none),a4,"0.111111110988")).

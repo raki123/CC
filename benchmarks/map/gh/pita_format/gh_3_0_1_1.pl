@@ -10,7 +10,7 @@ a0:-a1.
 algebraic_atom(1,1,1,set(none),a1,"0.4999999975"):-algebraic_atom(1,0,0,set(none),a0,"0.4999999975").
 a1:-algebraic_atom(0,0,0,set(none),a1,"0.5").
 a1:-algebraic_atom(1,1,0,set(none),a1,"0.4999999975"),\+ algebraic_atom(1,0,0,set(none),a0,"0.4999999975"),a2.
-true.
+
 algebraic_atom(1,1,1,set(none),a1,"0.4999999975"):-algebraic_atom(1,1,0,set(none),a1,"0.4999999975").
 a0:-algebraic_atom(1,0,0,set(none),a0,"0.4999999975"),a2.
 :- end_lpad.

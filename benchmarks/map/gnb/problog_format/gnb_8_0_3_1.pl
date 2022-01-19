@@ -48,7 +48,7 @@ a0:-algebraic_atom(0,0,0,set(none),a0,"0.5"),a1.
 a2:-algebraic_atom(15,0,0,set(none),a2,"0.5"),a5,\+ a4,\+ a3.
 a0:-algebraic_atom(3,0,0,set(none),a0,"0.5"),a4,\+ a3,\+ a2,\+ a1.
 a2:-algebraic_atom(17,0,0,set(none),a2,"0.5"),a7,\+ a6,\+ a5,\+ a4,\+ a3.
-true.
+
 a1:-algebraic_atom(11,0,0,set(none),a1,"0.5"),a6,\+ a5,\+ a4,\+ a3,\+ a2.
 a4:-algebraic_atom(23,0,0,set(none),a4,"0.5"),a6,\+ a5.
 a3:-algebraic_atom(21,0,0,set(none),a3,"0.5"),a7,\+ a6,\+ a5,\+ a4.

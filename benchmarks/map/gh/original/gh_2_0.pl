@@ -7,7 +7,7 @@
 % CP-theory for size 2
 
 a0 :- a1.
-map_query 0.5::a1 :- true.
+map_query 0.5::a1 :- 
 ev :- a0.
 
 :- end_lpad.

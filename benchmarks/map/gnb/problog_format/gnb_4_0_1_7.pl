@@ -12,7 +12,7 @@ a0:-algebraic_atom(0,0,0,set(none),a0,"0.5"),a1.
 a1:-algebraic_atom(4,0,0,set(none),a1,"0.5"),a3,\+ a2.
 a2:-algebraic_atom(5,0,0,set(none),a2,"0.5"),a3.
 a0:-algebraic_atom(1,0,0,set(none),a0,"0.5"),a2,\+ a1.
-true.
+
 query(a3).
 query(algebraic_atom(4,0,0,set(none),a1,"0.5")).
 query(algebraic_atom(1,0,0,set(none),a0,"0.5")).

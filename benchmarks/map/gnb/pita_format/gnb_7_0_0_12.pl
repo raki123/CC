@@ -26,7 +26,7 @@ map_query 0.9::algebraic_atom(19,0,0,set(none),a4,"0.5").
 ev :- a0.
 a2:-algebraic_atom(14,0,0,set(none),a2,"0.5"),a6,\+ a5,\+ a4,\+ a3.
 a0:-algebraic_atom(0,0,0,set(none),a0,"0.5"),a1.
-true.
+
 a2:-algebraic_atom(11,0,0,set(none),a2,"0.5"),a3.
 a0:-algebraic_atom(5,0,0,set(none),a0,"0.5"),a6,\+ a5,\+ a4,\+ a3,\+ a2,\+ a1.
 a1:-algebraic_atom(10,0,0,set(none),a1,"0.5"),a6,\+ a5,\+ a4,\+ a3,\+ a2.

@@ -490,7 +490,7 @@ path(71,71).
 path(23,24):-edge(23,24).
 path(1,49):-edge(9,49),path(1,9).
 path(492,492).
-true.
+
 path(12,40):-edge(12,40).
 path(1,21):-edge(5,21),path(1,5).
 path(11,48):-edge(11,48).

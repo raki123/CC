@@ -20,7 +20,7 @@ map_query 0.4::algebraic_atom(8,0,0,set(none),a1,"0.5").
 ev :- a0.
 a2:-algebraic_atom(9,0,0,set(none),a2,"0.5"),a3.
 a0:-algebraic_atom(3,0,0,set(none),a0,"0.5"),a4,\+ a3,\+ a2,\+ a1.
-true.
+
 a4:-algebraic_atom(14,0,0,set(none),a4,"0.5"),a5.
 a3:-algebraic_atom(12,0,0,set(none),a3,"0.5"),a4.
 a2:-algebraic_atom(11,0,0,set(none),a2,"0.5"),a5,\+ a4,\+ a3.

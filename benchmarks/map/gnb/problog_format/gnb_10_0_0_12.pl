@@ -89,7 +89,7 @@ a0:-algebraic_atom(5,0,0,set(none),a0,"0.5"),a6,\+ a5,\+ a4,\+ a3,\+ a2,\+ a1.
 a4:-algebraic_atom(34,0,0,set(none),a4,"0.5"),a9,\+ a8,\+ a7,\+ a6,\+ a5.
 a0:-algebraic_atom(6,0,0,set(none),a0,"0.5"),a7,\+ a6,\+ a5,\+ a4,\+ a3,\+ a2,\+ a1.
 a7:-algebraic_atom(43,0,0,set(none),a7,"0.5"),a9,\+ a8.
-true.
+
 a1:-algebraic_atom(15,0,0,set(none),a1,"0.5"),a8,\+ a7,\+ a6,\+ a5,\+ a4,\+ a3,\+ a2.
 query(algebraic_atom(33,0,0,set(none),a4,"0.5")).
 query(algebraic_atom(9,0,0,set(none),a1,"0.5")).
