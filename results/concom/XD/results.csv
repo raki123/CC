@@ -1,0 +1,4 @@
+benchmark,total_time,solved
+./benchmarks/map/gh/problog_format/gh_11_0_6_33.pl,20,False
+./benchmarks/meu/problog_format/earthquake_2_1400227407.pl,20,False
+3.1,20,False
