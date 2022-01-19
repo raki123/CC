@@ -378,7 +378,7 @@ def map_bench_mapproblog(csv_writer):
 def map_instance_pita(benchmark):
     base = basename(benchmark)
     dir = dirname(benchmark)
-    p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE, stdout=subprocess.PIPE)#, stderr=subprocess.PIPE)
+    p = subprocess.Popen(["swipl"], cwd = dir, stdin=subprocess.PIPE)#, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     p.communicate(f"[{base[:-3]}].\nmap(ev,P,Exp).\n\nhalt.\n".encode())
     p.wait()
 
@@ -674,6 +674,7 @@ if EFFICIENCY_BENCH:
             csv_writer = csv.writer(results)
             problog_bench_problog(csv_writer)
 
+
     if MEU:
         # MEU
         with open("results/meu/clingo/results.csv", 'w') as results:
@@ -682,11 +683,11 @@ if EFFICIENCY_BENCH:
 
         with open("results/meu/aspmc/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            meu_bench_aspmc(csv_writer, "./benchmarks/meu")
+            meu_bench_aspmc(csv_writer, "./benchmarks/meu/problog_format")
 
         with open("results/meu/meup/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            meu_bench_meuproblog(csv_writer, "./benchmarks/meu")
+            meu_bench_meuproblog(csv_writer, "./benchmarks/meu/problog_format")
 
         with open("results/meu/pita/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
@@ -719,30 +720,23 @@ if EFFICIENCY_BENCH:
 
 
 
-        
-
     if MAP:
         # MAP
         with open("results/map/clingo/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
             map_bench_clingo(csv_writer)
+        
+        with open("results/map/mapp/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            map_bench_mapproblog(csv_writer)
 
         with open("results/map/aspmc/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            map_bench_aspmc(csv_writer)    
-        
+            map_bench_aspmc(csv_writer) 
+            
         with open("results/map/pita/results.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            map_bench_pita(csv_writer)
-
-    with open("results/map/mapp/results.csv", 'w') as results:
-        csv_writer = csv.writer(results)
-        map_bench_mapproblog(csv_writer)
-
-    
-
-
-
+            map_bench_pita(csv_writer) 
 
 from aspmc.compile.constrained_compile import compute_separator
 import aspmc.graph.treedecomposition as treedecomposition

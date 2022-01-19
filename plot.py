@@ -9,7 +9,8 @@ def csv2rec(filename):
 
 EFFICIENCY = True
 PROBLOG = False
-MEU = True
+MEU = False
+MAP = True
 WIDTHS = False
 
 if EFFICIENCY:
@@ -42,26 +43,22 @@ if EFFICIENCY:
         plt.legend(loc="upper left")
         plt.show()
 
-    if MEU:
-        ava = csv2rec(open("results/meu/aspmc/results.csv"))
+    if MAP:
+        ava = csv2rec(open("results/map/aspmc/results.csv"))
         ava['total_time'].sort()
         plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc")
 
-        ava = csv2rec(open("results/meu/meup/results.csv"))
+        ava = csv2rec(open("results/map/pita/results.csv"))
         ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="meuproblog")
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="pita")
+        
+        ava = csv2rec(open("results/map/mapp/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="problog")
 
-        ava = csv2rec(open("results/meu/clingo/results.csv"))
+        ava = csv2rec(open("results/map/clingo/results.csv"))
         ava['total_time'].sort()
         plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="clingo")
-
-        ava = csv2rec(open("results/meu/pita/results.csv"))
-        ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-m", label="pita")
-
-        ava = csv2rec(open("results/meu/pita_nz/results.csv"))
-        ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="pita_nz")
 
         plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
         plt.ylabel('total time')
@@ -71,6 +68,109 @@ if EFFICIENCY:
         axes.set_ylim([0,TIMEOUT])
         axes.xaxis.set_major_locator(MaxNLocator(integer=True))
         plt.legend(loc="upper left")
+        plt.show()
+
+        for i, s in enumerate(["gh", "gnb", "blood", "graphs"]):
+            plt.subplot(1,4,i+1)
+            ava = csv2rec(open("results/map/aspmc/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc")
+
+            ava = csv2rec(open("results/map/pita/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="pita")
+            
+            ava = csv2rec(open("results/map/mapp/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="problog")
+
+            ava = csv2rec(open("results/map/clingo/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="clingo")
+
+            plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
+            plt.ylabel('total time')
+            plt.xlabel('solved instances')
+            axes = plt.gca()
+            axes.set_xlim([0,len(ava['total_time'])])
+            axes.set_ylim([0,TIMEOUT])
+            plt.title(s)
+        handles, labels = plt.gca().get_legend_handles_labels()
+        plt.legend(handles, labels, loc='upper center')
+        plt.show()
+
+    if MEU:
+        ava = csv2rec(open("results/meu/aspmc/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc")
+        
+        ava = csv2rec(open("results/meu/meup/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="problog")
+
+        ava = csv2rec(open("results/meu/clingo/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="clingo")
+
+        ava = csv2rec(open("results/meu/pita/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-m", label="pita")
+
+
+        plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
+        plt.ylabel('total time')
+        plt.xlabel('solved instances')
+        axes = plt.gca()
+        axes.set_xlim([0,len(ava['total_time'])])
+        axes.set_ylim([0,TIMEOUT])
+        axes.xaxis.set_major_locator(MaxNLocator(integer=True))
+        plt.legend(loc="upper left")
+        plt.show()
+
+
+        for i, s in enumerate(["asia", "survey", "earthquake", "child", "sachs", "win95pts", "viral"]):
+            plt.subplot(2,4,i+1)
+            ava = csv2rec(open("results/meu/aspmc/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc")
+
+            ava = csv2rec(open("results/meu/pita/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="pita")
+            
+            ava = csv2rec(open("results/meu/meup/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="problog")
+
+            ava = csv2rec(open("results/meu/clingo/results.csv"))
+            take = [ i for i in range(len(ava)) if s in ava['benchmark'][i]]
+            ava = ava[take]
+            ava['total_time'].sort()
+            plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="clingo")
+
+            plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
+            plt.ylabel('total time')
+            plt.xlabel('solved instances')
+            axes = plt.gca()
+            axes.set_xlim([0,len(ava['total_time'])])
+            axes.set_ylim([0,TIMEOUT])
+            plt.title(s)
+        handles, labels = plt.gca().get_legend_handles_labels()
+        plt.legend(handles, labels, loc='upper center')
         plt.show()
 
 if WIDTHS:
