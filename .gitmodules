@@ -7,3 +7,6 @@
 	path = MEUProblog
 	url = git@github.com:VincentDerk/Paper-AC-Decisions-Learning.git
 	update = rebase
+[submodule "smProblog"]
+	path = smProblog
+	url = https://github.com/PietroTotis/smProblog.git
