@@ -8,10 +8,11 @@ def csv2rec(filename):
     return np.recfromtxt(filename, dtype=None, delimiter=',', names=True, encoding='utf-8')
 
 EFFICIENCY = True
-PROBLOG = True
-SMPROBLOG = True
+PROBLOG = False
+SMPROBLOG = False
 MEU = False
 MAP = False
+CONCOM = True
 WIDTHS = False
 
 if EFFICIENCY:
@@ -195,6 +196,65 @@ if EFFICIENCY:
             plt.title(s)
         handles, labels = plt.gca().get_legend_handles_labels()
         plt.legend(handles, labels, loc='upper center')
+        plt.show()
+
+    if CONCOM:
+        ava = csv2rec(open("results/concom/X/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc(X)")
+        
+        ava = csv2rec(open("results/concom/XD/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="aspmc(X/D)")
+
+        plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
+        plt.ylabel('total time')
+        plt.xlabel('solved instances')
+        axes = plt.gca()
+        axes.set_xlim([0,len(ava['total_time'])])
+        axes.set_ylim([0,TIMEOUT])
+        axes.xaxis.set_major_locator(MaxNLocator(integer=True))
+        plt.legend(loc="upper left")
+        plt.show()
+
+        ava = csv2rec(open("results/concom/X/results_graph.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc(X)")
+        
+        ava = csv2rec(open("results/concom/XD/results_graph.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="aspmc(X/D)")
+
+        plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
+        plt.ylabel('total time')
+        plt.xlabel('solved instances')
+        axes = plt.gca()
+        axes.set_xlim([0,len(ava['total_time'])])
+        axes.set_ylim([0,TIMEOUT])
+        axes.xaxis.set_major_locator(MaxNLocator(integer=True))
+        plt.legend(loc="upper left")
+        plt.show()
+
+        ava = csv2rec(open("results/concom/X/results_grid.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="c2d(X)")
+        
+        ava = csv2rec(open("results/concom/XD/results_grid.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="c2d(X/D)")
+
+        ava = csv2rec(open("results/concom/XD/results_grid_mini.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="miniC2D(X/D)")
+
+        plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
+        plt.ylabel('total time')
+        plt.xlabel('solved instances')
+        axes = plt.gca()
+        axes.set_xlim([0,len(ava['total_time'])])
+        axes.set_ylim([0,TIMEOUT])
+        axes.xaxis.set_major_locator(MaxNLocator(integer=True))
+        plt.legend(loc="upper left")
         plt.show()
 
 if WIDTHS:
