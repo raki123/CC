@@ -32,7 +32,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_3_4_1_12.pl,10.285672995029017,True
 ./benchmarks/concom/grids/problog_format/grid_7_6_6_101.pl,6.906012504012324,True
 ./benchmarks/concom/grids/problog_format/grid_8_6_7_117.pl,7.426315650984179,True
-./benchmarks/concom/grids/problog_format/grid_9_8_6_147.pl,106.84475426800782,True
+./benchmarks/concom/grids/problog_format/grid_9_8_6_147.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_8_9_8_183.pl,13.554148042981979,True
 ./benchmarks/concom/grids/problog_format/grid_5_10_4_65.pl,12.76980517996708,True
 ./benchmarks/concom/grids/problog_format/grid_7_8_6_133.pl,14.680813066021074,True
@@ -43,7 +43,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_2_2_1_5.pl,5.1469433209858835,True
 ./benchmarks/concom/grids/problog_format/grid_6_6_1_12.pl,11.324524250987452,True
 ./benchmarks/concom/grids/problog_format/grid_10_9_3_48.pl,23.657569725997746,True
-./benchmarks/concom/grids/problog_format/grid_10_7_5_108.pl,100.16483551001875,True
+./benchmarks/concom/grids/problog_format/grid_10_7_5_108.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_7_3_1_12.pl,10.554048997000791,True
 ./benchmarks/concom/grids/problog_format/grid_4_5_4_43.pl,5.518371137033682,True
 ./benchmarks/concom/grids/problog_format/grid_6_10_4_75.pl,102.3317131989752,True
@@ -84,7 +84,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_6_5_1_12.pl,10.915271354024298,True
 ./benchmarks/concom/grids/problog_format/grid_10_4_3_40.pl,11.46218058600789,True
 ./benchmarks/concom/grids/problog_format/grid_3_9_0_3.pl,5.688893965969328,True
-./benchmarks/concom/grids/problog_format/grid_7_8_5_108.pl,105.9318275009864,True
+./benchmarks/concom/grids/problog_format/grid_7_8_5_108.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_3_3_1_12.pl,10.281618979992345,True
 ./benchmarks/concom/grids/problog_format/grid_9_3_8_58.pl,5.689853972988203,True
 ./benchmarks/concom/grids/problog_format/grid_2_9_5_24.pl,10.393790767993778,True
@@ -97,7 +97,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_2_7_0_3.pl,5.243158802972175,True
 ./benchmarks/concom/grids/problog_format/grid_4_2_1_8.pl,10.203007761971094,True
 ./benchmarks/concom/grids/problog_format/grid_4_10_1_12.pl,11.506772672000807,True
-./benchmarks/concom/grids/problog_format/grid_8_10_5_108.pl,294.31849219597643,True
+./benchmarks/concom/grids/problog_format/grid_8_10_5_108.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_5_7_1_12.pl,11.255784087989014,True
 ./benchmarks/concom/grids/problog_format/grid_4_3_1_12.pl,10.282356181007344,True
 ./benchmarks/concom/grids/problog_format/grid_5_3_0_3.pl,5.322003593028057,True
@@ -135,7 +135,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_9_6_1_12.pl,12.933664907002822,True
 ./benchmarks/concom/grids/problog_format/grid_2_10_0_3.pl,5.362644253997132,True
 ./benchmarks/concom/grids/problog_format/grid_2_6_1_8.pl,10.21771285001887,True
-./benchmarks/concom/grids/problog_format/grid_8_7_5_108.pl,296.5636331929709,True
+./benchmarks/concom/grids/problog_format/grid_8_7_5_108.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_5_7_2_27.pl,11.43719746201532,True
 ./benchmarks/concom/grids/problog_format/grid_10_6_8_144.pl,14.804911432031076,True
 ./benchmarks/concom/grids/problog_format/grid_10_10_4_75.pl,140.07804024399957,True
@@ -156,7 +156,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_5_9_6_91.pl,12.176923774997704,True
 ./benchmarks/concom/grids/problog_format/grid_10_3_4_35.pl,10.864170336979441,True
 ./benchmarks/concom/grids/problog_format/grid_4_9_1_12.pl,11.268899367016274,True
-./benchmarks/concom/grids/problog_format/grid_8_10_6_147.pl,180.57803683396196,True
+./benchmarks/concom/grids/problog_format/grid_8_10_6_147.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_9_6_3_48.pl,16.830131639027968,True
 ./benchmarks/concom/grids/problog_format/grid_10_3_8_63.pl,10.818434553977568,True
 ./benchmarks/concom/grids/problog_format/grid_3_9_3_28.pl,10.717136899998877,True
@@ -165,11 +165,11 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_9_8_7_176.pl,25.490838448982686,True
 ./benchmarks/concom/grids/problog_format/grid_9_4_6_70.pl,11.289901910990011,True
 ./benchmarks/concom/grids/problog_format/grid_6_9_4_75.pl,77.68531722098123,True
-./benchmarks/concom/grids/problog_format/grid_8_9_6_147.pl,288.5420913239941,True
+./benchmarks/concom/grids/problog_format/grid_8_9_6_147.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_10_8_1_12.pl,18.396169736981392,True
 ./benchmarks/concom/grids/problog_format/grid_2_6_0_3.pl,5.224245204008184,True
 ./benchmarks/concom/grids/problog_format/grid_4_10_7_80.pl,11.569027817982715,True
-./benchmarks/concom/grids/problog_format/grid_9_10_7_192.pl,141.65129010903183,True
+./benchmarks/concom/grids/problog_format/grid_9_10_7_192.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_8_9_2_27.pl,17.359300573996734,True
 ./benchmarks/concom/grids/problog_format/grid_7_9_4_75.pl,112.62015210400568,True
 ./benchmarks/concom/grids/problog_format/grid_5_10_6_91.pl,12.516912774997763,True
@@ -191,9 +191,9 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_10_7_6_133.pl,16.41859530500369,True
 ./benchmarks/concom/grids/problog_format/grid_2_10_9_37.pl,5.376275725953747,True
 ./benchmarks/concom/grids/problog_format/grid_4_9_6_70.pl,11.262772223970387,True
-./benchmarks/concom/grids/problog_format/grid_10_10_8_243.pl,275.52051046700217,True
+./benchmarks/concom/grids/problog_format/grid_10_10_8_243.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_7_7_3_48.pl,16.779250991006847,True
-./benchmarks/concom/grids/problog_format/grid_10_8_6_147.pl,129.52111753594363,True
+./benchmarks/concom/grids/problog_format/grid_10_8_6_147.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_3_8_7_51.pl,5.564840049017221,True
 ./benchmarks/concom/grids/problog_format/grid_8_5_7_95.pl,6.538416319992393,True
 ./benchmarks/concom/grids/problog_format/grid_4_6_1_12.pl,10.648423106002156,True
@@ -207,7 +207,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_8_5_3_48.pl,18.822098038974218,True
 ./benchmarks/concom/grids/problog_format/grid_9_10_0_3.pl,19.680213230021764,True
 ./benchmarks/concom/grids/problog_format/grid_2_10_3_16.pl,10.419502222037409,True
-./benchmarks/concom/grids/problog_format/grid_7_7_5_108.pl,103.7788381149876,True
+./benchmarks/concom/grids/problog_format/grid_7_7_5_108.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_9_9_0_3.pl,13.843439140997361,True
 ./benchmarks/concom/grids/problog_format/grid_6_2_3_16.pl,10.224232129985467,True
 ./benchmarks/concom/grids/problog_format/grid_2_9_4_20.pl,10.333264377957676,True
@@ -261,7 +261,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_9_7_2_27.pl,14.277093982964288,True
 ./benchmarks/concom/grids/problog_format/grid_2_10_5_24.pl,10.420629076019395,True
 ./benchmarks/concom/grids/problog_format/grid_7_5_5_78.pl,11.484539858996868,True
-./benchmarks/concom/grids/problog_format/grid_8_8_5_108.pl,122.4311708380119,True
+./benchmarks/concom/grids/problog_format/grid_8_8_5_108.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_10_2_4_20.pl,10.404886183037888,True
 ./benchmarks/concom/grids/problog_format/grid_2_8_6_28.pl,10.360233512998093,True
 ./benchmarks/concom/grids/problog_format/grid_8_2_7_29.pl,5.292645405977964,True
@@ -340,7 +340,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_6_2_5_21.pl,5.219248879002407,True
 ./benchmarks/concom/grids/problog_format/grid_8_3_4_35.pl,10.606307129957713,True
 ./benchmarks/concom/grids/problog_format/grid_6_6_0_3.pl,6.255753826990258,True
-./benchmarks/concom/grids/problog_format/grid_9_9_6_147.pl,121.79520387400407,True
+./benchmarks/concom/grids/problog_format/grid_9_9_6_147.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_8_2_6_28.pl,10.325098520028405,True
 ./benchmarks/concom/grids/problog_format/grid_10_5_6_91.pl,12.543030995002482,True
 ./benchmarks/concom/grids/problog_format/grid_9_6_2_27.pl,13.234340884024277,True
@@ -368,8 +368,8 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_7_9_6_133.pl,17.831864871957805,True
 ./benchmarks/concom/grids/problog_format/grid_9_10_6_147.pl,300.1015664309962,False
 ./benchmarks/concom/grids/problog_format/grid_3_9_6_49.pl,10.741090196999721,True
-./benchmarks/concom/grids/problog_format/grid_10_9_6_147.pl,138.5909651129623,True
-./benchmarks/concom/grids/problog_format/grid_10_9_7_192.pl,151.64206495397957,True
+./benchmarks/concom/grids/problog_format/grid_10_9_6_147.pl,300,True
+./benchmarks/concom/grids/problog_format/grid_10_9_7_192.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_7_3_5_42.pl,10.474686602014117,True
 ./benchmarks/concom/grids/problog_format/grid_8_3_5_42.pl,10.619266633002553,True
 ./benchmarks/concom/grids/problog_format/grid_10_7_0_3.pl,10.158162095001899,True
@@ -391,7 +391,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_4_8_2_27.pl,11.197912314033601,True
 ./benchmarks/concom/grids/problog_format/grid_10_5_3_48.pl,14.61033789999783,True
 ./benchmarks/concom/grids/problog_format/grid_3_3_0_3.pl,5.18903713603504,True
-./benchmarks/concom/grids/problog_format/grid_8_9_5_108.pl,176.014165984001,True
+./benchmarks/concom/grids/problog_format/grid_8_9_5_108.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_10_5_9_121.pl,7.481142984004691,True
 ./benchmarks/concom/grids/problog_format/grid_9_3_0_3.pl,5.710949675005395,True
 ./benchmarks/concom/grids/problog_format/grid_9_6_5_96.pl,13.216742115968373,True
@@ -472,7 +472,7 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_9_2_2_12.pl,10.36866071500117,True
 ./benchmarks/concom/grids/problog_format/grid_3_10_3_28.pl,10.839142826967873,True
 ./benchmarks/concom/grids/problog_format/grid_6_4_5_53.pl,5.6422106309910305,True
-./benchmarks/concom/grids/problog_format/grid_9_9_7_192.pl,191.10218704899307,True
+./benchmarks/concom/grids/problog_format/grid_9_9_7_192.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_2_6_3_16.pl,10.300640523026232,True
 ./benchmarks/concom/grids/problog_format/grid_7_2_5_24.pl,10.27768646099139,True
 ./benchmarks/concom/grids/problog_format/grid_5_6_5_69.pl,5.952369480975904,True
@@ -516,13 +516,13 @@ benchmark,total_time,solved
 ./benchmarks/concom/grids/problog_format/grid_10_4_4_50.pl,11.533460702979937,True
 ./benchmarks/concom/grids/problog_format/grid_2_7_2_12.pl,10.270919850037899,True
 ./benchmarks/concom/grids/problog_format/grid_5_10_3_48.pl,19.235330110008363,True
-./benchmarks/concom/grids/problog_format/grid_10_10_6_147.pl,254.55908528296277,True
+./benchmarks/concom/grids/problog_format/grid_10_10_6_147.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_2_5_4_17.pl,5.236660922004376,True
 ./benchmarks/concom/grids/problog_format/grid_2_10_8_36.pl,10.429127840034198,True
 ./benchmarks/concom/grids/problog_format/grid_3_8_4_35.pl,10.58281293802429,True
 ./benchmarks/concom/grids/problog_format/grid_9_5_1_12.pl,12.081423177034594,True
 ./benchmarks/concom/grids/problog_format/grid_7_4_0_3.pl,5.748889226990286,True
-./benchmarks/concom/grids/problog_format/grid_10_10_7_192.pl,283.8540936660138,True
+./benchmarks/concom/grids/problog_format/grid_10_10_7_192.pl,300,True
 ./benchmarks/concom/grids/problog_format/grid_8_6_2_27.pl,12.716743464989122,True
 ./benchmarks/concom/grids/problog_format/grid_3_4_3_23.pl,5.254068201989867,True
 ./benchmarks/concom/grids/problog_format/grid_8_2_0_3.pl,5.290254999010358,True
