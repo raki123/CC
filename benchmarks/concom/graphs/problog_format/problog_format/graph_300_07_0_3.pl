@@ -1,0 +1,14 @@
+0.2::edge(0,7).
+0.4::edge(7,10).
+0.9::edge(0,10).
+0.2::edge(10,299).
+0.8::edge(0,299).
+evidence(path(0,299)).
+path(0,299):-edge(0,299).
+path(0,10):-edge(0,10).
+path(0,10):-edge(7,10),path(0,7).
+path(0,7):-edge(0,7).
+path(0,299):-edge(10,299),path(0,10).
+query(edge(0,299)).
+query(edge(0,7)).
+query(edge(0,10)).
