@@ -6681,17 +6681,731 @@ Evaluation:             9.06
 Evaluation:             300.10
 
 Killed
+[INFO] aspmc: Tree Decomposition #bags: 323 treewidth: 10 #vertices: 336
+./benchmarks/concom/grids/problog_format/grid_8_7_6_133.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 22 treewidth: 136 #vertices: 378
+[INFO] aspmc: Dtree time:               5.091755628585815
+[INFO] aspmc: Compilation time:         44.80019927024841
+[INFO] aspmc: Preparation time:         0.00045609474182128906
+[INFO] aspmc: Counting time:            81.71925234794617
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 368 treewidth: 10 #vertices: 381
+Evaluation:             131.68
+
+./benchmarks/concom/grids/problog_format/grid_7_9_5_108.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 26 treewidth: 112 #vertices: 429
+[INFO] aspmc: Dtree time:               5.092348098754883
+[INFO] aspmc: Compilation time:         61.47604584693909
+[INFO] aspmc: Preparation time:         0.00054931640625
+[INFO] aspmc: Counting time:            36.23817849159241
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 424 treewidth: 11 #vertices: 440
+Evaluation:             102.85
+
+./benchmarks/concom/grids/problog_format/grid_9_8_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 132 treewidth: 13 #vertices: 496
+[INFO] aspmc: Dtree time:               5.128736972808838
+[INFO] aspmc: Compilation time:         0.5656874179840088
+[INFO] aspmc: Preparation time:         0.0009720325469970703
+[INFO] aspmc: Counting time:            0.7908470630645752
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 272 treewidth: 9 #vertices: 284
+Evaluation:             6.51
+
+./benchmarks/concom/grids/problog_format/grid_6_8_3_48.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 38 treewidth: 51 #vertices: 319
+[INFO] aspmc: Dtree time:               5.06611704826355
+[INFO] aspmc: Compilation time:         0.9102280139923096
+[INFO] aspmc: Preparation time:         0.0005095005035400391
+[INFO] aspmc: Counting time:            1.1183888912200928
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 286 treewidth: 7 #vertices: 294
+Evaluation:             7.12
+
+./benchmarks/concom/grids/problog_format/grid_10_5_8_117.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 21 treewidth: 120 #vertices: 330
+[INFO] aspmc: Dtree time:               5.0806379318237305
+[INFO] aspmc: Compilation time:         4.775458574295044
+[INFO] aspmc: Preparation time:         0.0004878044128417969
+[INFO] aspmc: Counting time:            9.190812587738037
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 108 treewidth: 4 #vertices: 111
+Evaluation:             19.07
+
+./benchmarks/concom/grids/problog_format/grid_3_7_2_21.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 22 #vertices: 123
+[INFO] aspmc: Dtree time:               5.036573886871338
+[INFO] aspmc: Compilation time:         0.02703070640563965
+[INFO] aspmc: Preparation time:         0.00025534629821777344
+[INFO] aspmc: Counting time:            0.04394841194152832
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 368 treewidth: 10 #vertices: 381
+Evaluation:             5.13
+
+./benchmarks/concom/grids/problog_format/grid_7_9_2_27.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 390 treewidth: 30 #vertices: 429
+[INFO] aspmc: Dtree time:               5.10226035118103
+[INFO] aspmc: Compilation time:         0.813950777053833
+[INFO] aspmc: Preparation time:         0.0006134510040283203
+[INFO] aspmc: Counting time:            1.8414051532745361
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 362 treewidth: 10 #vertices: 381
+Evaluation:             7.78
+
+./benchmarks/concom/grids/problog_format/grid_7_9_3_48.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 41 treewidth: 52 #vertices: 429
+[INFO] aspmc: Dtree time:               5.081673622131348
+[INFO] aspmc: Compilation time:         4.045881032943726
+[INFO] aspmc: Preparation time:         0.0007345676422119141
+[INFO] aspmc: Counting time:            7.070356607437134
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 367 treewidth: 10 #vertices: 381
+Evaluation:             16.22
+
+./benchmarks/concom/grids/problog_format/grid_9_7_7_152.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 24 treewidth: 155 #vertices: 429
+[INFO] aspmc: Dtree time:               5.10739278793335
+[INFO] aspmc: Compilation time:         3.2040350437164307
+[INFO] aspmc: Preparation time:         0.0008759498596191406
+[INFO] aspmc: Counting time:            4.58156681060791
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 200 treewidth: 7 #vertices: 208
+Evaluation:             12.92
+
+./benchmarks/concom/grids/problog_format/grid_6_6_2_27.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 30 treewidth: 29 #vertices: 233
+[INFO] aspmc: Dtree time:               5.052011251449585
+[INFO] aspmc: Compilation time:         0.1471576690673828
+[INFO] aspmc: Preparation time:         0.0005583763122558594
+[INFO] aspmc: Counting time:            0.22993779182434082
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 152 treewidth: 5 #vertices: 156
+Evaluation:             5.45
+
+./benchmarks/concom/grids/problog_format/grid_4_7_4_50.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 25 treewidth: 52 #vertices: 174
+[INFO] aspmc: Dtree time:               5.046441555023193
+[INFO] aspmc: Compilation time:         0.23652315139770508
+[INFO] aspmc: Preparation time:         0.0004699230194091797
+[INFO] aspmc: Counting time:            0.5713481903076172
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 91 treewidth: 4 #vertices: 94
+Evaluation:             5.88
+
+./benchmarks/concom/grids/problog_format/grid_6_3_3_28.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 19 treewidth: 30 #vertices: 104
+[INFO] aspmc: Dtree time:               5.041512966156006
+[INFO] aspmc: Compilation time:         0.041605472564697266
+[INFO] aspmc: Preparation time:         0.00029158592224121094
+[INFO] aspmc: Counting time:            0.08812403678894043
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 285 treewidth: 7 #vertices: 294
+Evaluation:             5.19
+
+./benchmarks/concom/grids/problog_format/grid_5_10_8_117.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 26 treewidth: 119 #vertices: 330
+[INFO] aspmc: Dtree time:               5.080840587615967
+[INFO] aspmc: Compilation time:         21.22403621673584
+[INFO] aspmc: Preparation time:         0.0006668567657470703
+[INFO] aspmc: Counting time:            39.130776166915894
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 200 treewidth: 5 #vertices: 204
+Evaluation:             65.48
+
+./benchmarks/concom/grids/problog_format/grid_9_4_4_50.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 22 treewidth: 52 #vertices: 228
+[INFO] aspmc: Dtree time:               5.053604602813721
+[INFO] aspmc: Compilation time:         0.19464325904846191
+[INFO] aspmc: Preparation time:         0.00035762786865234375
+[INFO] aspmc: Counting time:            0.40937042236328125
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 74 treewidth: 4 #vertices: 77
+Evaluation:             5.68
+
+./benchmarks/concom/grids/problog_format/grid_5_3_3_28.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 18 treewidth: 29 #vertices: 85
+[INFO] aspmc: Dtree time:               5.031938552856445
+[INFO] aspmc: Compilation time:         0.0397183895111084
+[INFO] aspmc: Preparation time:         0.00023126602172851562
+[INFO] aspmc: Counting time:            0.0850074291229248
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 254 treewidth: 7 #vertices: 263
+Evaluation:             5.17
+
+./benchmarks/concom/grids/problog_format/grid_5_9_3_48.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 39 treewidth: 51 #vertices: 295
+[INFO] aspmc: Dtree time:               5.061840534210205
+[INFO] aspmc: Compilation time:         1.283534049987793
+[INFO] aspmc: Preparation time:         0.0006921291351318359
+[INFO] aspmc: Counting time:            1.9334063529968262
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 253 treewidth: 8 #vertices: 263
+Evaluation:             8.30
+
+./benchmarks/concom/grids/problog_format/grid_5_9_5_78.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 35 treewidth: 80 #vertices: 295
+[INFO] aspmc: Dtree time:               5.066593408584595
+[INFO] aspmc: Compilation time:         0.8404264450073242
+[INFO] aspmc: Preparation time:         0.0006747245788574219
+[INFO] aspmc: Counting time:            1.7958621978759766
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 225 treewidth: 7 #vertices: 232
+Evaluation:             7.73
+
+./benchmarks/concom/grids/problog_format/grid_8_5_5_78.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 29 treewidth: 81 #vertices: 260
+[INFO] aspmc: Dtree time:               5.061753511428833
+[INFO] aspmc: Compilation time:         1.3402905464172363
+[INFO] aspmc: Preparation time:         0.00043201446533203125
+[INFO] aspmc: Counting time:            2.7446467876434326
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 598 treewidth: 15 #vertices: 624
+Evaluation:             9.17
+
+./benchmarks/concom/grids/problog_format/grid_10_10_9_261.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 409 treewidth: 273 #vertices: 705
+[INFO] aspmc: Dtree time:               5.245193004608154
+[INFO] aspmc: Tree Decomposition #bags: 225 treewidth: 7 #vertices: 232
+Evaluation:             300.09
+
+Killed
 ./benchmarks/concom/grids/problog_format/grid_5_8_5_78.pl
 [INFO] aspmc:    Stats Compilation
 [INFO] aspmc: ------------------------------------------------------------
-Process Process-565:
-Traceback (most recent call last):
-  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
-    self.run()
-  File "/home/rafael/miniconda3/lib/python3.8/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "bench.py", line 72, in wrapper
-    function(*args, **kwargs)
-  File "bench.py", line 650, in concom_instance_aspmc
-    benchmark.compile()
-  File "/home/rafael/projects/benchmarking/as
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 24 treewidth: 81 #vertices: 260
+[INFO] aspmc: Dtree time:               5.07320499420166
+[INFO] aspmc: Compilation time:         2.3147027492523193
+[INFO] aspmc: Preparation time:         0.0005424022674560547
+[INFO] aspmc: Counting time:            4.9646594524383545
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 159 treewidth: 4 #vertices: 162
+Evaluation:             12.38
+
+./benchmarks/concom/grids/problog_format/grid_3_10_2_21.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 39 treewidth: 22 #vertices: 180
+[INFO] aspmc: Dtree time:               5.044338703155518
+[INFO] aspmc: Compilation time:         0.16214275360107422
+[INFO] aspmc: Preparation time:         0.0004489421844482422
+[INFO] aspmc: Counting time:            0.3747081756591797
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 165 treewidth: 6 #vertices: 170
+Evaluation:             5.60
+
+./benchmarks/concom/grids/problog_format/grid_5_6_3_48.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 25 treewidth: 51 #vertices: 190
+[INFO] aspmc: Dtree time:               5.049030303955078
+[INFO] aspmc: Compilation time:         0.6702859401702881
+[INFO] aspmc: Preparation time:         0.0005102157592773438
+[INFO] aspmc: Counting time:            0.7647688388824463
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 256 treewidth: 7 #vertices: 263
+Evaluation:             6.51
+
+./benchmarks/concom/grids/problog_format/grid_9_5_7_104.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 24 treewidth: 106 #vertices: 295
+[INFO] aspmc: Dtree time:               5.103342533111572
+[INFO] aspmc: Compilation time:         10.887250423431396
+[INFO] aspmc: Preparation time:         0.000476837158203125
+[INFO] aspmc: Counting time:            21.781144857406616
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 533 treewidth: 13 #vertices: 558
+Evaluation:             37.80
+
+./benchmarks/concom/grids/problog_format/grid_10_9_4_75.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 57 treewidth: 80 #vertices: 630
+[INFO] aspmc: Dtree time:               5.11497950553894
+[INFO] aspmc: Compilation time:         13.706891298294067
+[INFO] aspmc: Preparation time:         0.0007638931274414062
+[INFO] aspmc: Counting time:            9.6019606590271
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 411 treewidth: 10 #vertices: 426
+Evaluation:             28.46
+
+./benchmarks/concom/grids/problog_format/grid_7_10_6_133.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 31 treewidth: 137 #vertices: 480
+[INFO] aspmc: Dtree time:               5.147085189819336
+[INFO] aspmc: Compilation time:         27.800661087036133
+[INFO] aspmc: Preparation time:         0.0008790493011474609
+[INFO] aspmc: Counting time:            41.55994534492493
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 272 treewidth: 9 #vertices: 284
+Evaluation:             74.55
+
+./benchmarks/concom/grids/problog_format/grid_6_8_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 306 treewidth: 9 #vertices: 319
+[INFO] aspmc: Dtree time:               5.081056356430054
+[INFO] aspmc: Compilation time:         0.0706942081451416
+[INFO] aspmc: Preparation time:         0.0005056858062744141
+[INFO] aspmc: Counting time:            0.08976483345031738
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 64 treewidth: 3 #vertices: 66
+Evaluation:             5.26
+
+./benchmarks/concom/grids/problog_format/grid_2_7_4_20.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 51 treewidth: 21 #vertices: 72
+[INFO] aspmc: Dtree time:               5.030910491943359
+[INFO] aspmc: Compilation time:         0.017705440521240234
+[INFO] aspmc: Preparation time:         0.0002205371856689453
+[INFO] aspmc: Counting time:            0.014661312103271484
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 108 treewidth: 4 #vertices: 111
+Evaluation:             5.08
+
+./benchmarks/concom/grids/problog_format/grid_3_7_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 116 treewidth: 5 #vertices: 123
+[INFO] aspmc: Dtree time:               5.037785768508911
+[INFO] aspmc: Compilation time:         0.018738746643066406
+[INFO] aspmc: Preparation time:         0.00027751922607421875
+[INFO] aspmc: Counting time:            0.00847172737121582
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 194 treewidth: 7 #vertices: 201
+Evaluation:             5.09
+
+./benchmarks/concom/grids/problog_format/grid_5_7_6_82.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 20 treewidth: 85 #vertices: 225
+[INFO] aspmc: Dtree time:               5.059141397476196
+[INFO] aspmc: Compilation time:         0.5535681247711182
+[INFO] aspmc: Preparation time:         0.0005238056182861328
+[INFO] aspmc: Counting time:            1.2251005172729492
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 407 treewidth: 11 #vertices: 426
+Evaluation:             6.86
+
+./benchmarks/concom/grids/problog_format/grid_7_10_7_152.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 27 treewidth: 156 #vertices: 480
+[INFO] aspmc: Dtree time:               5.115492820739746
+[INFO] aspmc: Compilation time:         73.48895478248596
+[INFO] aspmc: Preparation time:         0.0009829998016357422
+[INFO] aspmc: Counting time:            103.24938082695007
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 225 treewidth: 7 #vertices: 232
+Evaluation:             181.92
+
+./benchmarks/concom/grids/problog_format/grid_8_5_2_27.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 51 treewidth: 29 #vertices: 260
+[INFO] aspmc: Dtree time:               5.055685043334961
+[INFO] aspmc: Compilation time:         0.5794885158538818
+[INFO] aspmc: Preparation time:         0.00041484832763671875
+[INFO] aspmc: Counting time:            1.2235114574432373
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 84 treewidth: 3 #vertices: 86
+Evaluation:             6.88
+
+./benchmarks/concom/grids/problog_format/grid_9_2_7_32.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 19 treewidth: 33 #vertices: 94
+[INFO] aspmc: Dtree time:               5.029543161392212
+[INFO] aspmc: Compilation time:         0.036704063415527344
+[INFO] aspmc: Preparation time:         0.0002465248107910156
+[INFO] aspmc: Counting time:            0.07791566848754883
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 200 treewidth: 5 #vertices: 204
+Evaluation:             5.16
+
+./benchmarks/concom/grids/problog_format/grid_4_9_3_40.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 29 treewidth: 42 #vertices: 228
+[INFO] aspmc: Dtree time:               5.052550315856934
+[INFO] aspmc: Compilation time:         0.23561716079711914
+[INFO] aspmc: Preparation time:         0.0004436969757080078
+[INFO] aspmc: Counting time:            0.5447516441345215
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 142 treewidth: 4 #vertices: 145
+Evaluation:             5.85
+
+./benchmarks/concom/grids/problog_format/grid_3_9_1_12.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 52 treewidth: 13 #vertices: 161
+[INFO] aspmc: Dtree time:               5.040682554244995
+[INFO] aspmc: Compilation time:         0.03408002853393555
+[INFO] aspmc: Preparation time:         0.0002963542938232422
+[INFO] aspmc: Counting time:            0.06923913955688477
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 74 treewidth: 4 #vertices: 77
+Evaluation:             5.16
+
+./benchmarks/concom/grids/problog_format/grid_3_5_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 78 treewidth: 5 #vertices: 85
+[INFO] aspmc: Dtree time:               5.030676364898682
+[INFO] aspmc: Compilation time:         0.016422033309936523
+[INFO] aspmc: Preparation time:         0.000247955322265625
+[INFO] aspmc: Counting time:            0.006168842315673828
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 411 treewidth: 11 #vertices: 426
+Evaluation:             5.07
+
+./benchmarks/concom/grids/problog_format/grid_10_7_7_152.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 26 treewidth: 155 #vertices: 480
+[INFO] aspmc: Dtree time:               5.115049123764038
+[INFO] aspmc: Compilation time:         176.69655847549438
+[INFO] aspmc: Preparation time:         0.0006463527679443359
+[INFO] aspmc: Tree Decomposition #bags: 108 treewidth: 4 #vertices: 111
+Evaluation:             300.06
+
+Killed
+./benchmarks/concom/grids/problog_format/grid_7_3_4_35.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 21 treewidth: 36 #vertices: 123
+[INFO] aspmc: Dtree time:               5.0480287075042725
+[INFO] aspmc: Compilation time:         0.04000091552734375
+[INFO] aspmc: Preparation time:         0.00027298927307128906
+[INFO] aspmc: Counting time:            0.0704336166381836
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 94 treewidth: 3 #vertices: 96
+Evaluation:             5.18
+
+./benchmarks/concom/grids/problog_format/grid_10_2_3_16.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 82 treewidth: 17 #vertices: 105
+[INFO] aspmc: Dtree time:               5.035036563873291
+[INFO] aspmc: Compilation time:         0.01739192008972168
+[INFO] aspmc: Preparation time:         0.00025916099548339844
+[INFO] aspmc: Counting time:            0.011449813842773438
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 15 treewidth: 2 #vertices: 16
+Evaluation:             5.08
+
+./benchmarks/concom/grids/problog_format/grid_2_2_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 14 treewidth: 4 #vertices: 17
+[INFO] aspmc: Dtree time:               5.0210771560668945
+[INFO] aspmc: Compilation time:         0.013657808303833008
+[INFO] aspmc: Preparation time:         0.00010180473327636719
+[INFO] aspmc: Counting time:            0.001999378204345703
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 310 treewidth: 9 #vertices: 322
+Evaluation:             5.05
+
+./benchmarks/concom/grids/problog_format/grid_6_9_8_133.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 23 treewidth: 136 #vertices: 362
+[INFO] aspmc: Dtree time:               5.091866731643677
+[INFO] aspmc: Compilation time:         6.492178678512573
+[INFO] aspmc: Preparation time:         0.0007264614105224609
+[INFO] aspmc: Counting time:            11.417141199111938
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 194 treewidth: 7 #vertices: 201
+Evaluation:             23.03
+
+./benchmarks/concom/grids/problog_format/grid_7_5_3_48.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 29 treewidth: 51 #vertices: 225
+[INFO] aspmc: Dtree time:               5.053196907043457
+[INFO] aspmc: Compilation time:         0.416229248046875
+[INFO] aspmc: Preparation time:         0.0005369186401367188
+[INFO] aspmc: Counting time:            0.6450903415679932
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 236 treewidth: 8 #vertices: 246
+Evaluation:             6.14
+
+./benchmarks/concom/grids/problog_format/grid_6_7_2_27.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 48 treewidth: 29 #vertices: 276
+[INFO] aspmc: Dtree time:               5.05810284614563
+[INFO] aspmc: Compilation time:         0.15140509605407715
+[INFO] aspmc: Preparation time:         0.0006258487701416016
+[INFO] aspmc: Counting time:            0.20998430252075195
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 597 treewidth: 15 #vertices: 624
+Evaluation:             5.44
+
+./benchmarks/concom/grids/problog_format/grid_10_10_5_108.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 36 treewidth: 112 #vertices: 705
+[INFO] aspmc: Dtree time:               5.139315843582153
+[INFO] aspmc: Compilation time:         149.1505482196808
+[INFO] aspmc: Preparation time:         0.0008485317230224609
+[INFO] aspmc: Counting time:            67.3964774608612
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 200 treewidth: 5 #vertices: 204
+Evaluation:             221.75
+
+./benchmarks/concom/grids/problog_format/grid_4_9_8_83.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 22 treewidth: 85 #vertices: 228
+[INFO] aspmc: Dtree time:               5.059679985046387
+[INFO] aspmc: Compilation time:         2.3226845264434814
+[INFO] aspmc: Preparation time:         0.0005648136138916016
+[INFO] aspmc: Counting time:            5.327112436294556
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 224 treewidth: 5 #vertices: 228
+Evaluation:             12.73
+
+./benchmarks/concom/grids/problog_format/grid_10_4_6_70.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 72 #vertices: 255
+[INFO] aspmc: Dtree time:               5.060939311981201
+[INFO] aspmc: Compilation time:         1.8871815204620361
+[INFO] aspmc: Preparation time:         0.0006105899810791016
+[INFO] aspmc: Counting time:            4.047455787658691
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 128 treewidth: 5 #vertices: 132
+Evaluation:             11.02
+
+./benchmarks/concom/grids/problog_format/grid_4_6_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 138 treewidth: 6 #vertices: 147
+[INFO] aspmc: Dtree time:               5.043564796447754
+[INFO] aspmc: Compilation time:         0.022742033004760742
+[INFO] aspmc: Preparation time:         0.0004107952117919922
+[INFO] aspmc: Counting time:            0.017596960067749023
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 346 treewidth: 9 #vertices: 360
+Evaluation:             5.11
+
+./benchmarks/concom/grids/problog_format/grid_6_10_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 391 treewidth: 9 #vertices: 405
+[INFO] aspmc: Dtree time:               5.095065355300903
+[INFO] aspmc: Compilation time:         0.10062980651855469
+[INFO] aspmc: Preparation time:         0.0008475780487060547
+[INFO] aspmc: Counting time:            0.12309455871582031
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 224 treewidth: 7 #vertices: 232
+Evaluation:             5.34
+
+./benchmarks/concom/grids/problog_format/grid_5_8_2_27.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 29 #vertices: 260
+[INFO] aspmc: Dtree time:               5.054366827011108
+[INFO] aspmc: Compilation time:         0.1489429473876953
+[INFO] aspmc: Preparation time:         0.0004410743713378906
+[INFO] aspmc: Counting time:            0.21557974815368652
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 74 treewidth: 3 #vertices: 76
+Evaluation:             5.44
+
+./benchmarks/concom/grids/problog_format/grid_8_2_3_16.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 63 treewidth: 17 #vertices: 83
+[INFO] aspmc: Dtree time:               5.031120538711548
+[INFO] aspmc: Compilation time:         0.016546249389648438
+[INFO] aspmc: Preparation time:         0.00021195411682128906
+[INFO] aspmc: Counting time:            0.01049184799194336
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 225 treewidth: 7 #vertices: 232
+Evaluation:             5.08
+
+./benchmarks/concom/grids/problog_format/grid_8_5_1_12.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 241 treewidth: 13 #vertices: 260
+[INFO] aspmc: Dtree time:               5.065356731414795
+[INFO] aspmc: Compilation time:         0.06717061996459961
+[INFO] aspmc: Preparation time:         0.0006251335144042969
+[INFO] aspmc: Counting time:            0.0983736515045166
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 165 treewidth: 6 #vertices: 170
+Evaluation:             5.25
+
+./benchmarks/concom/grids/problog_format/grid_5_6_2_27.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 35 treewidth: 29 #vertices: 190
+[INFO] aspmc: Dtree time:               5.046458959579468
+[INFO] aspmc: Compilation time:         0.09975218772888184
+[INFO] aspmc: Preparation time:         0.00036978721618652344
+[INFO] aspmc: Counting time:            0.11941242218017578
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 176 treewidth: 5 #vertices: 180
+Evaluation:             5.29
+
+./benchmarks/concom/grids/problog_format/grid_4_8_3_40.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 29 treewidth: 41 #vertices: 201
+[INFO] aspmc: Dtree time:               5.045950889587402
+[INFO] aspmc: Compilation time:         0.08779644966125488
+[INFO] aspmc: Preparation time:         0.00035834312438964844
+[INFO] aspmc: Counting time:            0.17567181587219238
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 238 treewidth: 8 #vertices: 246
+Evaluation:             5.33
+
+./benchmarks/concom/grids/problog_format/grid_6_7_6_101.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 21 treewidth: 104 #vertices: 276
+[INFO] aspmc: Dtree time:               5.069518327713013
+[INFO] aspmc: Compilation time:         1.7351105213165283
+[INFO] aspmc: Preparation time:         0.00054168701171875
+[INFO] aspmc: Counting time:            3.8579657077789307
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 348 treewidth: 9 #vertices: 360
+Evaluation:             10.69
+
+./benchmarks/concom/grids/problog_format/grid_10_6_9_149.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 24 treewidth: 152 #vertices: 405
+[INFO] aspmc: Dtree time:               5.163069009780884
+[INFO] aspmc: Compilation time:         15.098253011703491
+[INFO] aspmc: Preparation time:         0.0006785392761230469
+[INFO] aspmc: Counting time:            26.64543318748474
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 420 treewidth: 11 #vertices: 440
+Evaluation:             46.94
+
+./benchmarks/concom/grids/problog_format/grid_9_8_5_108.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 25 treewidth: 112 #vertices: 496
+[INFO] aspmc: Dtree time:               5.101906061172485
+[INFO] aspmc: Compilation time:         76.78263068199158
+[INFO] aspmc: Preparation time:         0.0007085800170898438
+[INFO] aspmc: Counting time:            72.81653165817261
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 142 treewidth: 4 #vertices: 145
+Evaluation:             154.76
+
+./benchmarks/concom/grids/problog_format/grid_3_9_2_21.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 32 treewidth: 22 #vertices: 161
+[INFO] aspmc: Dtree time:               5.042328596115112
+[INFO] aspmc: Compilation time:         0.033830881118774414
+[INFO] aspmc: Preparation time:         0.0003421306610107422
+[INFO] aspmc: Counting time:            0.05344867706298828
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 84 treewidth: 3 #vertices: 86
+Evaluation:             5.15
+
+./benchmarks/concom/grids/problog_format/grid_9_2_4_20.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 68 treewidth: 21 #vertices: 94
+[INFO] aspmc: Dtree time:               5.034408330917358
+[INFO] aspmc: Compilation time:         0.021628618240356445
+[INFO] aspmc: Preparation time:         0.0002391338348388672
+[INFO] aspmc: Counting time:            0.03354644775390625
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 104 treewidth: 5 #vertices: 108
+Evaluation:             5.11
+
+./benchmarks/concom/grids/problog_format/grid_5_4_0_3.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 112 treewidth: 6 #vertices: 120
+[INFO] aspmc: Dtree time:               5.0374977588653564
+[INFO] aspmc: Compilation time:         0.020563602447509766
+[INFO] aspmc: Preparation time:         0.0003151893615722656
+[INFO] aspmc: Counting time:            0.010574579238891602
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 202 treewidth: 7 #vertices: 208
+Evaluation:             5.09
+
+./benchmarks/concom/grids/problog_format/grid_6_6_4_75.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 20 treewidth: 78 #vertices: 233
+[INFO] aspmc: Dtree time:               5.059379816055298
+[INFO] aspmc: Compilation time:         8.971127033233643
+[INFO] aspmc: Preparation time:         0.00047779083251953125
+[INFO] aspmc: Counting time:            10.706973314285278
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 176 treewidth: 5 #vertices: 180
+Evaluation:             24.76
+
+./benchmarks/concom/grids/problog_format/grid_4_8_7_73.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 23 treewidth: 75 #vertices: 201
+[INFO] aspmc: Dtree time:               5.054109573364258
+[INFO] aspmc: Compilation time:         0.36516857147216797
+[INFO] aspmc: Preparation time:         0.0005373954772949219
+[INFO] aspmc: Counting time:            0.8469197750091553
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 44 treewidth: 3 #vertices: 46
+Evaluation:             6.29
+
+./benchmarks/concom/grids/problog_format/grid_5_2_2_12.pl
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 37 treewidth: 13 #vertices: 50
+[INFO] aspmc: Dtree time:               5.026708126068115
+[INFO] aspmc: Compilation time:         0.016890764236450195
+[INFO] aspmc: Preparation time:         0.00017595291137695312
+[INFO] aspmc: Counting time:            0.01164102554321289
+[INFO] aspmc: ------------------------------------------------------------
+Evaluation:             5.07
+
