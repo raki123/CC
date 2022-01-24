@@ -199,14 +199,22 @@ if EFFICIENCY:
         plt.show()
 
     if CONCOM:
+        ava = csv2rec(open("results/concom/X/results_mini.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="miniC2D(X)")
+
+        ava = csv2rec(open("results/concom/XD/results_mini.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="miniC2D(X/D)")
+        
         ava = csv2rec(open("results/concom/X/results.csv"))
         ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc(X)")
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="c2d(X)")
         
         ava = csv2rec(open("results/concom/XD/results.csv"))
         ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="aspmc(X/D)")
-
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="c2d(X/D)")
+        
         plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
         plt.ylabel('total time')
         plt.xlabel('solved instances')
@@ -243,9 +251,13 @@ if EFFICIENCY:
         ava['total_time'].sort()
         plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="c2d(X/D)")
 
+        ava = csv2rec(open("results/concom/X/results_grid_mini.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="miniC2D(X)")
+
         ava = csv2rec(open("results/concom/XD/results_grid_mini.csv"))
         ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="miniC2D(X/D)")
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="miniC2D(X/D)")
 
         plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
         plt.ylabel('total time')
