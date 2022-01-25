@@ -1,0 +1,1873 @@
+Compilation: 0.013s
+Process Process-5:1:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.139152'.
+Evaluation 3,1:    0.12
+Compilation: 0.008s
+Process Process-5:2:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15259199999999995'.
+Evaluation 3,2:    0.10
+Compilation: 0.007s
+Process Process-5:3:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.13915200000000003'.
+Evaluation 3,3:    0.10
+Compilation: 0.007s
+Process Process-5:4:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.13915200000000003'.
+Evaluation 3,4:    0.10
+Compilation: 0.007s
+Process Process-5:5:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.13915200000000003'.
+Evaluation 3,5:    0.10
+Compilation: 0.006s
+Process Process-5:6:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 3,6:    0.08
+Compilation: 0.008s
+Process Process-5:7:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15259199999999995'.
+Evaluation 3,7:    0.10
+Compilation: 0.007s
+Process Process-5:8:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.13915200000000005'.
+Evaluation 3,8:    0.10
+Compilation: 0.006s
+Process Process-5:9:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 3,9:    0.08
+Compilation: 0.008s
+Process Process-5:10:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15259199999999995'.
+Evaluation 3,10:    0.10
+Compilation: 0.012s
+Process Process-5:11:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.157474752'.
+Evaluation 4,1:    0.16
+Compilation: 0.085s
+Process Process-5:12:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15871660800000004'.
+Evaluation 4,2:    0.31
+Compilation: 0.008s
+Process Process-5:13:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.13948127999999996'.
+Evaluation 4,3:    0.13
+Compilation: 0.012s
+Process Process-5:14:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.157474752'.
+Evaluation 4,4:    0.16
+Compilation: 0.009s
+Process Process-5:15:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.14136288000000002'.
+Evaluation 4,5:    0.13
+Compilation: 0.011s
+Process Process-5:16:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15871660800000004'.
+Evaluation 4,6:    0.15
+Compilation: 0.012s
+Process Process-5:17:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.157474752'.
+Evaluation 4,7:    0.16
+Compilation: 0.007s
+Process Process-5:18:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 4,8:    0.11
+Compilation: 0.007s
+Process Process-5:19:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 4,9:    0.11
+Compilation: 0.006s
+Process Process-5:20:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 4,10:    0.10
+Compilation: 0.058s
+Process Process-5:21:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.163523757312'.
+Evaluation 5,1:    0.30
+Compilation: 0.453s
+Process Process-5:22:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.16102664832'.
+Evaluation 5,2:    1.08
+Compilation: 0.026s
+Process Process-5:23:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15955824768000007'.
+Evaluation 5,3:    0.21
+Compilation: 0.087s
+Process Process-5:24:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.16169890636800002'.
+Evaluation 5,4:    0.36
+Compilation: 0.02s
+Process Process-5:25:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15955824768'.
+Evaluation 5,5:    0.20
+Compilation: 0.078s
+Process Process-5:26:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 5,6:    0.31
+Compilation: 0.007s
+Process Process-5:27:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 5,7:    0.13
+Compilation: 0.011s
+Process Process-5:28:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 5,8:    0.17
+Compilation: 0.019s
+Process Process-5:29:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 5,9:    0.21
+Compilation: 0.028s
+Process Process-5:30:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15955824768'.
+Evaluation 5,10:    0.22
+Compilation: 0.122s
+Process Process-5:31:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.13983413644799997'.
+Evaluation 6,1:    0.42
+Compilation: 0.023s
+Process Process-5:32:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 6,2:    0.20
+Compilation: 0.468s
+Process Process-5:33:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 6,3:    1.15
+Compilation: 0.02s
+Process Process-5:34:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 6,4:    0.20
+Compilation: 0.008s
+Process Process-5:35:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 6,5:    0.16
+Compilation: 0.023s
+Process Process-5:36:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 6,6:    0.21
+Compilation: 0.054s
+Process Process-5:37:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.16011441477119995'.
+Evaluation 6,7:    0.31
+Compilation: 0.034s
+Process Process-5:38:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 6,8:    0.23
+Compilation: 0.021s
+Process Process-5:39:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 6,9:    0.23
+Compilation: 0.343s
+Process Process-5:40:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.1598499370752'.
+Evaluation 6,10:    0.86
+Compilation: 12.025s
+Process Process-5:41:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 7,1:    23.40
+Compilation: 59.647s
+Process Process-5:42:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 7,2:    104.02
+Compilation: 0.645s
+Process Process-5:43:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 7,3:    1.50
+Evaluation 7,4:    300.10
+Timeout 7,4
+Evaluation 7,5:    300.10
+Timeout 7,5
+Compilation: 0.029s
+Process Process-5:46:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 7,6:    0.28
+Compilation: 12.87s
+Process Process-5:47:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.18583862899043943'.
+Evaluation 7,7:    24.23
+Compilation: 0.045s
+Process Process-5:48:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 7,8:    0.31
+Compilation: 0.222s
+Process Process-5:49:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 7,9:    0.66
+Compilation: 18.775s
+Process Process-5:50:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.15989077359052803'.
+Evaluation 7,10:    32.85
+Evaluation 8,1:    300.08
+Timeout 8,1
+Compilation: 0.445s
+Process Process-5:52:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 8,2:    1.12
+Compilation: 78.517s
+Process Process-5:53:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.16182930797509631'.
+Evaluation 8,3:    133.80
+Compilation: 131.368s
+Process Process-5:54:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.18694631562759173'.
+Evaluation 8,4:    220.45
+Compilation: 61.31s
+Process Process-5:55:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 8,5:    113.17
+Evaluation 8,6:    300.10
+Timeout 8,6
+Evaluation 8,7:    300.10
+Timeout 8,7
+Compilation: 57.481s
+Process Process-5:58:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 8,8:    102.53
+Evaluation 8,9:    300.10
+Timeout 8,9
+Compilation: 0.42s
+Process Process-5:60:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 8,10:    1.07
+Compilation: 18.107s
+Process Process-5:61:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 9,1:    34.46
+Compilation: 19.979s
+Process Process-5:62:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.13679999999999998'.
+Evaluation 9,2:    36.18
+Evaluation 9,3:    300.05
+Timeout 9,3
+Evaluation 9,4:    300.02
+Timeout 9,4
+Evaluation 9,5:    300.10
+Timeout 9,5
+Evaluation 9,6:    300.10
+Timeout 9,6
+Compilation: 28.302s
+Process Process-5:67:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 9,7:    49.58
+Compilation: 70.031s
+Process Process-5:68:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 9,8:    116.20
+Evaluation 9,9:    300.10
+Timeout 9,9
+Evaluation 9,10:    300.02
+Timeout 9,10
+Evaluation 10,1:    300.10
+Timeout 10,1
+Evaluation 10,2:    300.10
+Timeout 10,2
+Evaluation 10,3:    300.10
+Timeout 10,3
+Evaluation 10,4:    300.09
+Timeout 10,4
+Compilation: 20.515s
+Process Process-5:75:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 10,5:    35.96
+Evaluation 10,6:    300.10
+Timeout 10,6
+Evaluation 10,7:    300.10
+Timeout 10,7
+Evaluation 10,8:    300.06
+Timeout 10,8
+Evaluation 10,9:    300.02
+Timeout 10,9
+Evaluation 10,10:    300.10
+Timeout 10,10
+Evaluation 11,1:    300.00
+Timeout 11,1
+Evaluation 11,2:    300.02
+Timeout 11,2
+Compilation: 29.348s
+Process Process-5:83:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 11,3:    52.10
+Evaluation 11,4:    300.10
+Timeout 11,4
+Evaluation 11,5:    300.10
+Timeout 11,5
+Evaluation 11,6:    300.08
+Timeout 11,6
+Evaluation 11,7:    300.10
+Timeout 11,7
+Evaluation 11,8:    300.10
+Timeout 11,8
+Compilation: 3.29s
+Process Process-5:89:
+Traceback (most recent call last):
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+  File "/home/pietro/pyenv/versions/3.8.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "bench.py", line 616, in smproblog_instance_smproblog
+    knowledge.create_from(p_string, **kwdargs).evaluate(**kwdargs)
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 585, in evaluate
+    w = evaluator.query(node)
+  File "/home/pietro/CC/smProblog/problog/ddnnf_formula.py", line 211, in query
+    false_weight = self.semiring.negate(self.semiring.plus(inconsistent_weight,true_weight))
+  File "/home/pietro/CC/smProblog/problog/evaluator.py", line 259, in negate
+    raise InvalidValue("Not a valid value for this semiring: '%s'" % a)
+smProblog.problog.errors.InvalidValue: Not a valid value for this semiring: '0.12000000000000001'.
+Evaluation 11,9:    6.48
+Evaluation 11,10:    300.10
+Timeout 11,10
+Evaluation 12,1:    300.10
+Timeout 12,1
+Evaluation 12,2:    300.10
+Timeout 12,2
+Evaluation 12,3:    300.10
+Timeout 12,3
+Evaluation 12,4:    300.10
+Timeout 12,4
+Evaluation 12,5:    300.07
+Timeout 12,5
+Evaluation 12,6:    300.10
+Timeout 12,6
+Evaluation 12,7:    300.10
+Timeout 12,7
+Evaluation 12,8:    300.10
+Timeout 12,8
+Evaluation 12,9:    300.10
+Timeout 12,9
+Evaluation 12,10:    300.02
+Timeout 12,10
+Evaluation 13,1:    300.10
+Timeout 13,1
+Evaluation 13,2:    300.07
+Timeout 13,2
+Evaluation 13,3:    300.10
+Timeout 13,3
+Evaluation 13,4:    300.10
+Timeout 13,4
+Evaluation 13,5:    300.04
+Timeout 13,5
+Evaluation 13,6:    300.10
+Timeout 13,6
+Evaluation 13,7:    300.10
+Timeout 13,7
+Evaluation 13,8:    300.10
+Timeout 13,8
+Evaluation 13,9:    300.10
+Timeout 13,9
+Evaluation 13,10:    300.10
+Timeout 13,10
+Evaluation 14,1:    300.10
+Timeout 14,1
+Evaluation 14,2:    300.06
+Timeout 14,2
+Evaluation 14,3:    300.10
+Timeout 14,3
+Evaluation 14,4:    300.04
+Timeout 14,4
+Evaluation 14,5:    300.10
+Timeout 14,5
+Evaluation 14,6:    300.10
+Timeout 14,6
+Evaluation 14,7:    300.04
+Timeout 14,7
+Evaluation 14,8:    300.10
+Timeout 14,8
+Evaluation 14,9:    300.02
+Timeout 14,9
+Evaluation 14,10:    300.10
+Timeout 14,10
+Evaluation 15,1:    300.04
+Timeout 15,1
+Evaluation 15,2:    300.01
+Timeout 15,2
+Evaluation 15,3:    300.10
+Timeout 15,3
+Evaluation 15,4:    300.09
+Timeout 15,4
+Evaluation 15,5:    300.10
+Timeout 15,5
+Evaluation 15,6:    300.09
+Timeout 15,6
+Evaluation 15,7:    300.02
+Timeout 15,7
+Evaluation 15,8:    300.10
+Timeout 15,8
+Evaluation 15,9:    300.00
+Timeout 15,9
+Evaluation 15,10:    300.05
+Timeout 15,10
+Evaluation 16,1:    300.10
+Timeout 16,1
+Evaluation 16,2:    300.10
+Timeout 16,2
+Evaluation 16,3:    300.05
+Timeout 16,3
+Evaluation 16,4:    300.08
+Timeout 16,4
+Evaluation 16,5:    300.03
+Timeout 16,5
+Evaluation 16,6:    300.10
+Timeout 16,6
+Evaluation 16,7:    300.03
+Timeout 16,7
+Evaluation 16,8:    300.06
+Timeout 16,8
+Evaluation 16,9:    300.10
+Timeout 16,9
+Evaluation 16,10:    300.10
+Timeout 16,10
+Evaluation 17,1:    300.10
+Timeout 17,1
+Evaluation 17,2:    300.10
+Timeout 17,2
+Evaluation 17,3:    300.02
+Timeout 17,3
+Evaluation 17,4:    300.05
+Timeout 17,4
+Evaluation 17,5:    300.03
+Timeout 17,5
+Evaluation 17,6:    300.10
+Timeout 17,6
+Evaluation 17,7:    300.03
+Timeout 17,7
+Evaluation 17,8:    300.10
+Timeout 17,8
+Evaluation 17,9:    300.10
+Timeout 17,9
+Evaluation 17,10:    300.10
+Timeout 17,10
+Evaluation 18,1:    300.02
+Timeout 18,1
+Evaluation 18,2:    300.06
+Timeout 18,2
+Evaluation 18,3:    300.10
+Timeout 18,3
+Evaluation 18,4:    300.10
+Timeout 18,4
+Evaluation 18,5:    300.10
+Timeout 18,5
+Evaluation 18,6:    300.10
+Timeout 18,6
+Evaluation 18,7:    300.10
+Timeout 18,7
+Evaluation 18,8:    300.10
+Timeout 18,8
+Evaluation 18,9:    300.10
+Timeout 18,9
+Evaluation 18,10:    300.10
+Timeout 18,10
+Evaluation 19,1:    300.10
+Timeout 19,1
+Evaluation 19,2:    300.10
+Timeout 19,2
+Evaluation 19,3:    300.10
+Timeout 19,3
+Evaluation 19,4:    300.10
+Timeout 19,4
+Evaluation 19,5:    300.10
+Timeout 19,5
+Evaluation 19,6:    300.10
+Timeout 19,6
+Evaluation 19,7:    300.10
+Timeout 19,7
+Evaluation 19,8:    300.10
+Timeout 19,8
+Evaluation 19,9:    300.08
+Timeout 19,9
+Evaluation 19,10:    300.10
+Timeout 19,10
+Evaluation 20,1:    300.10
+Timeout 20,1
+Evaluation 20,2:    300.10
+Timeout 20,2
+Evaluation 20,3:    300.07
+Timeout 20,3
+Evaluation 20,4:    300.10
+Timeout 20,4
+Evaluation 20,5:    300.10
+Timeout 20,5
+Evaluation 20,6:    300.10
+Timeout 20,6
+Evaluation 20,7:    300.09
+Timeout 20,7
+Evaluation 20,8:    300.10
+Timeout 20,8
+Evaluation 20,9:    300.07
+Timeout 20,9
+Evaluation 20,10:    300.10
+Timeout 20,10
+Evaluation 21,1:    300.10
+Timeout 21,1
+Evaluation 21,2:    300.10
+Timeout 21,2
+Evaluation 21,3:    300.10
+Timeout 21,3
+Evaluation 21,4:    300.10
+Timeout 21,4
+Evaluation 21,5:    300.01
+Timeout 21,5
+Evaluation 21,6:    300.08
+Timeout 21,6
+Evaluation 21,7:    300.10
+Timeout 21,7
+Evaluation 21,8:    300.04
+Timeout 21,8
+Evaluation 21,9:    300.10
+Timeout 21,9
+Evaluation 21,10:    300.10
+Timeout 21,10
+Evaluation 22,1:    300.02
+Timeout 22,1
+Evaluation 22,2:    300.10
+Timeout 22,2
+Evaluation 22,3:    300.10
+Timeout 22,3
+Evaluation 22,4:    300.01
+Timeout 22,4
+Evaluation 22,5:    300.10
+Timeout 22,5
+Evaluation 22,6:    300.10
+Timeout 22,6
+Evaluation 22,7:    300.03
+Timeout 22,7
+Evaluation 22,8:    300.10
+Timeout 22,8
+Evaluation 22,9:    300.09
+Timeout 22,9
+Evaluation 22,10:    300.10
+Timeout 22,10
+Evaluation 23,1:    300.10
+Timeout 23,1
+Evaluation 23,2:    300.02
+Timeout 23,2
+Evaluation 23,3:    300.10
+Timeout 23,3
+Evaluation 23,4:    300.10
+Timeout 23,4
+Evaluation 23,5:    300.04
+Timeout 23,5
+Evaluation 23,6:    300.10
+Timeout 23,6
+Evaluation 23,7:    300.10
+Timeout 23,7
+Evaluation 23,8:    300.09
+Timeout 23,8
+Evaluation 23,9:    300.08
+Timeout 23,9
+Evaluation 23,10:    300.10
+Timeout 23,10
+Evaluation 24,1:    300.04
+Timeout 24,1
+Evaluation 24,2:    300.10
+Timeout 24,2
+Evaluation 24,3:    300.08
+Timeout 24,3
+Evaluation 24,4:    300.10
+Timeout 24,4
+Evaluation 24,5:    300.10
+Timeout 24,5
+Evaluation 24,6:    300.10
+Timeout 24,6
+Evaluation 24,7:    300.10
+Timeout 24,7
+Evaluation 24,8:    300.10
+Timeout 24,8
+Evaluation 24,9:    300.10
+Timeout 24,9
+Evaluation 24,10:    300.09
+Timeout 24,10
+Evaluation 25,1:    300.10
+Timeout 25,1
+Evaluation 25,2:    300.10
+Timeout 25,2
+Evaluation 25,3:    300.10
+Timeout 25,3
+Evaluation 25,4:    300.02
+Timeout 25,4
+Evaluation 25,5:    300.07
+Timeout 25,5
+Evaluation 25,6:    300.10
+Timeout 25,6
+Evaluation 25,7:    300.10
+Timeout 25,7
+Evaluation 25,8:    300.10
+Timeout 25,8
+Evaluation 25,9:    300.10
+Timeout 25,9
+Evaluation 25,10:    300.10
+Timeout 25,10
+Evaluation 26,1:    300.10
+Timeout 26,1
+Evaluation 26,2:    300.10
+Timeout 26,2
+Evaluation 26,3:    300.06
+Timeout 26,3
+Evaluation 26,4:    300.05
+Timeout 26,4
+Evaluation 26,5:    300.07
+Timeout 26,5
+Evaluation 26,6:    300.10
+Timeout 26,6
+Evaluation 26,7:    300.10
+Timeout 26,7
+Evaluation 26,8:    300.10
+Timeout 26,8
+Evaluation 26,9:    300.04
+Timeout 26,9
+Evaluation 26,10:    300.10
+Timeout 26,10
+Evaluation 27,1:    300.10
+Timeout 27,1
+Evaluation 27,2:    300.10
+Timeout 27,2
+Evaluation 27,3:    300.10
+Timeout 27,3
+Evaluation 27,4:    300.10
+Timeout 27,4
+Evaluation 27,5:    300.10
+Timeout 27,5
+Evaluation 27,6:    300.10
+Timeout 27,6
+Evaluation 27,7:    300.09
+Timeout 27,7
+Evaluation 27,8:    300.02
+Timeout 27,8
+Evaluation 27,9:    300.08
+Timeout 27,9
+Evaluation 27,10:    300.10
+Timeout 27,10
+Evaluation 28,1:    300.08
+Timeout 28,1
+Evaluation 28,2:    300.10
+Timeout 28,2
+Evaluation 28,3:    300.10
+Timeout 28,3
+Evaluation 28,4:    300.06
+Timeout 28,4
+Evaluation 28,5:    300.05
+Timeout 28,5
+Evaluation 28,6:    300.10
+Timeout 28,6
+Evaluation 28,7:    300.10
+Timeout 28,7
+Evaluation 28,8:    300.10
+Timeout 28,8
+Evaluation 28,9:    300.08
+Timeout 28,9
+Evaluation 28,10:    300.10
+Timeout 28,10
+Evaluation 29,1:    300.10
+Timeout 29,1
+Evaluation 29,2:    300.10
+Timeout 29,2
+Evaluation 29,3:    300.10
+Timeout 29,3
+Evaluation 29,4:    300.05
+Timeout 29,4
+Evaluation 29,5:    300.10
+Timeout 29,5
+Evaluation 29,6:    300.10
+Timeout 29,6
+Evaluation 29,7:    300.00
+Timeout 29,7
+Evaluation 29,8:    300.03
+Timeout 29,8
+Evaluation 29,9:    300.10
+Timeout 29,9
+Evaluation 29,10:    300.01
+Timeout 29,10
+Evaluation 30,1:    300.02
+Timeout 30,1
+Evaluation 30,2:    300.10
+Timeout 30,2
+Evaluation 30,3:    300.10
+Timeout 30,3
+Evaluation 30,4:    300.03
+Timeout 30,4
+Evaluation 30,5:    300.05
+Timeout 30,5
+Evaluation 30,6:    300.10
+Timeout 30,6
+Evaluation 30,7:    300.10
+Timeout 30,7
+Evaluation 30,8:    300.10
+Timeout 30,8
+Evaluation 30,9:    300.10
+Timeout 30,9
+Evaluation 30,10:    300.01
+Timeout 30,10
+Evaluation 31,1:    300.10
+Timeout 31,1
+Evaluation 31,2:    300.08
+Timeout 31,2
+Evaluation 31,3:    300.10
+Timeout 31,3
+Evaluation 31,4:    300.10
+Timeout 31,4
+Evaluation 31,5:    300.10
+Timeout 31,5
+Evaluation 31,6:    300.10
+Timeout 31,6
+Evaluation 31,7:    300.10
+Timeout 31,7
+Evaluation 31,8:    300.10
+Timeout 31,8
+Evaluation 31,9:    300.08
+Timeout 31,9
+Evaluation 31,10:    300.10
+Timeout 31,10
+Evaluation 32,1:    300.06
+Timeout 32,1
+Evaluation 32,2:    300.10
+Timeout 32,2
+Evaluation 32,3:    300.10
+Timeout 32,3
+Evaluation 32,4:    300.01
+Timeout 32,4
+Evaluation 32,5:    300.10
+Timeout 32,5
+Evaluation 32,6:    300.10
+Timeout 32,6
+Evaluation 32,7:    300.02
+Timeout 32,7
+Evaluation 32,8:    300.00
+Timeout 32,8
+Evaluation 32,9:    300.10
+Timeout 32,9
+Evaluation 32,10:    300.10
+Timeout 32,10
+Evaluation 33,1:    300.08
+Timeout 33,1
+Evaluation 33,2:    300.09
+Timeout 33,2
+Evaluation 33,3:    300.02
+Timeout 33,3
+Evaluation 33,4:    300.10
+Timeout 33,4
+Evaluation 33,5:    300.10
+Timeout 33,5
+Evaluation 33,6:    300.10
+Timeout 33,6
+Evaluation 33,7:    300.10
+Timeout 33,7
+Evaluation 33,8:    300.01
+Timeout 33,8
+Evaluation 33,9:    300.07
+Timeout 33,9
+Evaluation 33,10:    300.04
+Timeout 33,10
+Evaluation 34,1:    300.10
+Timeout 34,1
+Evaluation 34,2:    300.01
+Timeout 34,2
+Evaluation 34,3:    300.10
+Timeout 34,3
+Evaluation 34,4:    300.10
+Timeout 34,4
+Evaluation 34,5:    300.10
+Timeout 34,5
+Evaluation 34,6:    300.05
+Timeout 34,6
+Evaluation 34,7:    300.02
+Timeout 34,7
+Evaluation 34,8:    300.10
+Timeout 34,8
+Evaluation 34,9:    300.10
+Timeout 34,9
+Evaluation 34,10:    300.10
+Timeout 34,10
+Evaluation 35,1:    300.10
+Timeout 35,1
+Evaluation 35,2:    300.10
+Timeout 35,2
+Evaluation 35,3:    300.05
+Timeout 35,3
+Evaluation 35,4:    300.08
+Timeout 35,4
+Evaluation 35,5:    300.10
+Timeout 35,5
+Evaluation 35,6:    300.10
+Timeout 35,6
+Evaluation 35,7:    300.01
+Timeout 35,7
+Evaluation 35,8:    300.10
+Timeout 35,8
+Evaluation 35,9:    300.10
+Timeout 35,9
+Evaluation 35,10:    300.04
+Timeout 35,10
+Evaluation 36,1:    300.10
+Timeout 36,1
+Evaluation 36,2:    300.10
+Timeout 36,2
+Evaluation 36,3:    300.08
+Timeout 36,3
+Evaluation 36,4:    300.10
+Timeout 36,4
+Evaluation 36,5:    300.05
+Timeout 36,5
+Evaluation 36,6:    300.10
+Timeout 36,6
+Evaluation 36,7:    300.08
+Timeout 36,7
+Evaluation 36,8:    300.10
+Timeout 36,8
+Evaluation 36,9:    300.10
+Timeout 36,9
+Evaluation 36,10:    300.05
+Timeout 36,10
+Evaluation 37,1:    300.10
+Timeout 37,1
+Evaluation 37,2:    300.10
+Timeout 37,2
+Evaluation 37,3:    300.10
+Timeout 37,3
+Evaluation 37,4:    300.07
+Timeout 37,4
+Evaluation 37,5:    300.03
+Timeout 37,5
+Evaluation 37,6:    300.10
+Timeout 37,6
+Evaluation 37,7:    300.07
+Timeout 37,7
+Evaluation 37,8:    300.10
+Timeout 37,8
+Evaluation 37,9:    300.10
+Timeout 37,9
+Evaluation 37,10:    300.00
+Timeout 37,10
+Evaluation 38,1:    300.04
+Timeout 38,1
+Evaluation 38,2:    300.10
+Timeout 38,2
+Evaluation 38,3:    300.10
+Timeout 38,3
+Evaluation 38,4:    300.10
+Timeout 38,4
+Evaluation 38,5:    300.10
+Timeout 38,5
+Evaluation 38,6:    300.10
+Timeout 38,6
+Evaluation 38,7:    300.10
+Timeout 38,7
+Evaluation 38,8:    300.10
+Timeout 38,8
+Evaluation 38,9:    300.02
+Timeout 38,9
+Evaluation 38,10:    300.10
+Timeout 38,10
+Evaluation 39,1:    300.10
+Timeout 39,1
+Evaluation 39,2:    300.08
+Timeout 39,2
+Evaluation 39,3:    300.05
+Timeout 39,3
+Evaluation 39,4:    300.03
+Timeout 39,4
+Evaluation 39,5:    300.10
+Timeout 39,5
+Evaluation 39,6:    300.03
+Timeout 39,6
+Evaluation 39,7:    300.10
+Timeout 39,7
+Evaluation 39,8:    300.10
+Timeout 39,8
+Evaluation 39,9:    300.10
+Timeout 39,9
+Evaluation 39,10:    300.10
+Timeout 39,10
+Evaluation 40,1:    300.02
+Timeout 40,1
+Evaluation 40,2:    300.10
+Timeout 40,2
+Evaluation 40,3:    300.10
+Timeout 40,3
+Evaluation 40,4:    300.10
+Timeout 40,4
+Evaluation 40,5:    300.08
+Timeout 40,5
+Evaluation 40,6:    300.09
+Timeout 40,6
+Evaluation 40,7:    300.05
+Timeout 40,7
+Evaluation 40,8:    300.10
+Timeout 40,8
+Evaluation 40,9:    300.10
+Timeout 40,9
+Evaluation 40,10:    300.10
+Timeout 40,10
+Evaluation 41,1:    300.10
+Timeout 41,1
+Evaluation 41,2:    300.10
+Timeout 41,2
+Evaluation 41,3:    300.10
+Timeout 41,3
+Evaluation 41,4:    300.10
+Timeout 41,4
+Evaluation 41,5:    300.07
+Timeout 41,5
+Evaluation 41,6:    300.01
+Timeout 41,6
+Evaluation 41,7:    300.03
+Timeout 41,7
+Evaluation 41,8:    300.10
+Timeout 41,8
+Evaluation 41,9:    300.10
+Timeout 41,9
+Evaluation 41,10:    300.10
+Timeout 41,10
+Evaluation 42,1:    300.10
+Timeout 42,1
+Evaluation 42,2:    300.10
+Timeout 42,2
+Evaluation 42,3:    300.10
+Timeout 42,3
+Evaluation 42,4:    300.10
+Timeout 42,4
+Evaluation 42,5:    300.09
+Timeout 42,5
+Evaluation 42,6:    300.04
+Timeout 42,6
+Evaluation 42,7:    300.10
+Timeout 42,7
+Evaluation 42,8:    300.10
+Timeout 42,8
+Evaluation 42,9:    300.10
+Timeout 42,9
+Evaluation 42,10:    300.02
+Timeout 42,10
+Evaluation 43,1:    300.01
+Timeout 43,1
+Evaluation 43,2:    300.10
+Timeout 43,2
+Evaluation 43,3:    300.10
+Timeout 43,3
+Evaluation 43,4:    300.10
+Timeout 43,4
+Evaluation 43,5:    300.10
+Timeout 43,5
+Evaluation 43,6:    300.10
+Timeout 43,6
+Evaluation 43,7:    300.03
+Timeout 43,7
+Evaluation 43,8:    300.10
+Timeout 43,8
+Evaluation 43,9:    300.10
+Timeout 43,9
+Evaluation 43,10:    300.00
+Timeout 43,10
+Evaluation 44,1:    300.04
+Timeout 44,1
+Evaluation 44,2:    300.02
+Timeout 44,2
+Evaluation 44,3:    300.09
+Timeout 44,3
+Evaluation 44,4:    300.10
+Timeout 44,4
+Evaluation 44,5:    300.10
+Timeout 44,5
+Evaluation 44,6:    300.10
+Timeout 44,6
+Evaluation 44,7:    300.10
+Timeout 44,7
+Evaluation 44,8:    300.10
+Timeout 44,8
+Evaluation 44,9:    300.04
+Timeout 44,9
+Evaluation 44,10:    300.10
+Timeout 44,10
+Evaluation 45,1:    300.10
+Timeout 45,1
+Evaluation 45,2:    300.05
+Timeout 45,2
+Evaluation 45,3:    300.10
+Timeout 45,3
+Evaluation 45,4:    300.10
+Timeout 45,4
+Evaluation 45,5:    300.02
+Timeout 45,5
+Evaluation 45,6:    300.10
+Timeout 45,6
+Evaluation 45,7:    300.05
+Timeout 45,7
+Evaluation 45,8:    300.10
+Timeout 45,8
+Evaluation 45,9:    300.10
+Timeout 45,9
+Evaluation 45,10:    300.10
+Timeout 45,10
+Evaluation 46,1:    300.08
+Timeout 46,1
+Evaluation 46,2:    300.10
+Timeout 46,2
+Evaluation 46,3:    300.03
+Timeout 46,3
+Evaluation 46,4:    300.10
+Timeout 46,4
+Evaluation 46,5:    300.10
+Timeout 46,5
+Evaluation 46,6:    300.09
+Timeout 46,6
+Evaluation 46,7:    300.10
+Timeout 46,7
+Evaluation 46,8:    300.10
+Timeout 46,8
+Evaluation 46,9:    300.09
+Timeout 46,9
+Evaluation 46,10:    300.02
+Timeout 46,10
+Evaluation 47,1:    300.10
+Timeout 47,1
+Evaluation 47,2:    300.04
+Timeout 47,2
+Evaluation 47,3:    300.10
+Timeout 47,3
+Evaluation 47,4:    300.10
+Timeout 47,4
+Evaluation 47,5:    300.10
+Timeout 47,5
+Evaluation 47,6:    300.10
+Timeout 47,6
+Evaluation 47,7:    300.02
+Timeout 47,7
+Evaluation 47,8:    300.10
+Timeout 47,8
+Evaluation 47,9:    300.10
+Timeout 47,9
+Evaluation 47,10:    300.10
+Timeout 47,10
+Evaluation 48,1:    300.10
+Timeout 48,1
+Evaluation 48,2:    300.06
+Timeout 48,2
+Evaluation 48,3:    300.01
+Timeout 48,3
+Evaluation 48,4:    300.04
+Timeout 48,4
+Evaluation 48,5:    300.10
+Timeout 48,5
+Evaluation 48,6:    300.10
+Timeout 48,6
+Evaluation 48,7:    300.06
+Timeout 48,7
+Evaluation 48,8:    300.04
+Timeout 48,8
+Evaluation 48,9:    300.05
+Timeout 48,9
+Evaluation 48,10:    300.10
+Timeout 48,10
+Evaluation 49,1:    300.10
+Timeout 49,1
+Evaluation 49,2:    300.09
+Timeout 49,2
+Evaluation 49,3:    300.10
+Timeout 49,3
+Evaluation 49,4:    300.10
+Timeout 49,4
+Evaluation 49,5:    300.10
+Timeout 49,5
+Evaluation 49,6:    300.01
+Timeout 49,6
+Evaluation 49,7:    300.10
+Timeout 49,7
+Evaluation 49,8:    300.07
+Timeout 49,8
+Evaluation 49,9:    300.10
+Timeout 49,9
+Evaluation 49,10:    300.01
+Timeout 49,10
+Evaluation 50,1:    300.10
+Timeout 50,1
+Evaluation 50,2:    300.10
+Timeout 50,2
+Evaluation 50,3:    300.02
+Timeout 50,3
+Evaluation 50,4:    300.03
+Timeout 50,4
+Evaluation 50,5:    300.05
+Timeout 50,5
+Evaluation 50,6:    300.10
+Timeout 50,6
+Evaluation 50,7:    300.10
+Timeout 50,7
+Evaluation 50,8:    300.10
+Timeout 50,8
+Evaluation 50,9:    300.01
+Timeout 50,9
