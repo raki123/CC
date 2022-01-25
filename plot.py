@@ -8,11 +8,11 @@ def csv2rec(filename):
     return np.recfromtxt(filename, dtype=None, delimiter=',', names=True, encoding='utf-8')
 
 EFFICIENCY = True
-PROBLOG = False
-SMPROBLOG = False
+PROBLOG = True
+SMPROBLOG = True
 MEU = False
 MAP = False
-CONCOM = True
+CONCOM = False
 WIDTHS = False
 
 if EFFICIENCY:
@@ -31,9 +31,13 @@ if EFFICIENCY:
         ava['total_time'].sort()
         plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-g", label="clingo")
 
-        #ava = csv2rec(open("results/problog/problog/results.csv"))
-        #ava['total_time'].sort()
-        #plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-m", label="problog")
+        ava = csv2rec(open("results/problog/problog/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-m", label="problog")
+
+        ava = csv2rec(open("results/problog/smproblog/results.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="smproblog")
 
         plt.plot(range(0, len(ava['total_time']) + 1), [TIMEOUT]*(len(ava['total_time']) + 1), "-k")
         plt.ylabel('total time')
@@ -50,9 +54,17 @@ if EFFICIENCY:
         ava['total_time'].sort()
         plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-b", label="aspmc")
 
-        ava = csv2rec(open("results/smproblog/smproblog/results.csv"))
+        ava = csv2rec(open("results/smproblog/smproblog/results_sddx.csv"))
         ava['total_time'].sort()
-        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="smproblog")
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-r", label="smproblog(sddx)")
+
+        ava = csv2rec(open("results/smproblog/smproblog/results_ddnnf.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-y", label="smproblog(ddnnf)")
+
+        ava = csv2rec(open("results/smproblog/smproblog/results_sddxd.csv"))
+        ava['total_time'].sort()
+        plt.plot(range(1, len(ava['total_time']) + 1), ava["total_time"], "-m", label="smproblog(sddxd)")
 
         ava = csv2rec(open("results/problog/clingo/results.csv"))
         ava['total_time'].sort()
@@ -62,10 +74,10 @@ if EFFICIENCY:
         plt.ylabel('total time')
         plt.xlabel('solved instances')
         axes = plt.gca()
-        axes.set_xlim([0,len(ava['total_time'])])
+        axes.set_xlim([0,50])#len(ava['total_time'])])
         axes.set_ylim([0,TIMEOUT])
         axes.xaxis.set_major_locator(MaxNLocator(integer=True))
-        plt.legend(loc="upper left")
+        plt.legend(loc="upper right")
         plt.show()
 
     if MAP:
