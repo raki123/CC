@@ -649,7 +649,8 @@ def concom_instance_aspmc(benchmark, constrained):
     config["constrained"] = constrained
     benchmark.compile()
 
-def concom_bench_aspmc(csv_writer, constrained):
+def concom_bench_aspmc(csv_writer, constrained, solver):
+    config["knowledge_compiler"] = solver
     csv_writer.writerow(["benchmark", "total_time", "solved"])
     ctr = 0
     # MAP
@@ -676,6 +677,8 @@ def concom_bench_aspmc(csv_writer, constrained):
                     p.join()
                     print("Killed")
                     csv_writer.writerow([benchmark, end - start, False])
+                elif p.exitcode != 0:
+                    csv_writer.writerow([benchmark, TIMEOUT, False])
                 else:
                     csv_writer.writerow([benchmark, end - start, True])
             except MemoryError:
@@ -713,6 +716,8 @@ def concom_bench_aspmc(csv_writer, constrained):
                     p.join()
                     print("Killed")
                     csv_writer.writerow([benchmark, end - start, False])
+                elif p.exitcode != 0:
+                    csv_writer.writerow([benchmark, TIMEOUT, False])
                 else:
                     csv_writer.writerow([benchmark, end - start, True])
             except MemoryError:
@@ -751,6 +756,8 @@ def concom_bench_aspmc(csv_writer, constrained):
                     p.join()
                     print("Killed")
                     csv_writer.writerow([f"{x}.{y}", end - start, False])
+                elif p.exitcode != 0:
+                    csv_writer.writerow([f"{x}.{y}", TIMEOUT, False])
                 else:
                     csv_writer.writerow([f"{x}.{y}", end - start, True])
             except MemoryError:
@@ -764,6 +771,48 @@ def concom_bench_aspmc(csv_writer, constrained):
                 print("Error")
             ctr += 1
 
+
+def graph_bench_aspmc(csv_writer, constrained, solver):
+    config["knowledge_compiler"] = solver
+    csv_writer.writerow(["benchmark", "total_time", "solved"])
+    ctr = 0
+    # MAP
+    benchmark_paths = [ "./benchmarks/concom/grids/problog_format/"]
+    for benchmark_path in benchmark_paths:
+        onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
+        print(onlyfiles)
+        for benchmark in onlyfiles:
+            if ctr >= LIMIT:
+                break
+            print(benchmark)
+            try:
+                program = MAPProblogProgram("true.", [benchmark])
+                cb(program)
+                cnf = program.get_cnf()
+                p = multiprocessing.Process(target=concom_instance_aspmc,args=(cnf,constrained))
+                start = time.perf_counter()
+                p.start()
+                p.join(TIMEOUT)
+                end = time.perf_counter()
+                print(f"Evaluation:             {'%.2f' % (end - start)}")
+                print()
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                    print("Killed")
+                    csv_writer.writerow([benchmark, end - start, False])
+                else:
+                    csv_writer.writerow([benchmark, end - start, True])
+            except MemoryError:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                if p.is_alive():
+                    killtree(p.pid)
+                    p.join()
+                print("Killed")
+            except:
+                csv_writer.writerow([benchmark, TIMEOUT, False])
+                print("Error")
+            ctr += 1
 
 import csv
 
@@ -862,13 +911,35 @@ if EFFICIENCY_BENCH:
             map_bench_pita(csv_writer) 
 
     if CONCOM:
-        with open("results/concom/X/results.csv", 'w') as results:
-            csv_writer = csv.writer(results)
-            concom_bench_aspmc(csv_writer,"X") 
+        #with open("results/concom/X/results_mini.csv", 'w') as results:
+        #    csv_writer = csv.writer(results)
+        #    concom_bench_aspmc(csv_writer,"X", "miniC2D") 
         
-        with open("results/concom/XD/results.csv", 'w') as results:
+        #with open("results/concom/XD/results_mini.csv", 'w') as results:
+        #    csv_writer = csv.writer(results)
+        #    concom_bench_aspmc(csv_writer,"XD", "miniC2D") 
+
+        with open("results/concom/X/results_free.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            concom_bench_aspmc(csv_writer, "XD") 
+            concom_bench_aspmc(csv_writer,"X", "c2d") 
+        
+        #with open("results/concom/XD/results.csv", 'w') as results:
+        #    csv_writer = csv.writer(results)
+        #    concom_bench_aspmc(csv_writer,"XD", "c2d") 
+
+        
+        #with open("results/concom/XD/results.csv", 'w') as results:
+        #    csv_writer = csv.writer(results)
+        #    concom_bench_aspmc(csv_writer, "XD") 
+
+        
+        #with open("results/concom/XD/results_grid_mini.csv", 'a') as results:
+        #    csv_writer = csv.writer(results)
+        #    graph_bench_aspmc(csv_writer, "XD") 
+
+        #with open("results/concom/X/results_grid.csv", 'w') as results:
+        #    csv_writer = csv.writer(results)
+        #    graph_bench_aspmc(csv_writer, "X") 
 
 from aspmc.compile.constrained_compile import compute_separator
 import aspmc.graph.treedecomposition as treedecomposition
