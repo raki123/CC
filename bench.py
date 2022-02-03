@@ -586,7 +586,7 @@ def problog_bench_problog(csv_writer, log, id):
             ctr += 1
 
 def problog_bench_smproblog(csv_writer, log, id):
-    smproblog_bench(csv_writer, log, "problog", 51, id, "ddnnf")
+    smproblog_bench(csv_writer, log, "problog", 22, id, "sddxd")
 
 # SMPROBLOG
 
@@ -671,10 +671,13 @@ def smproblog_bench(csv_writer, log, problog, x_range, pos, sk):
             ctr += 1
 
 def smproblog_bench_ddnnf(csv_writer, log, id):
-    smproblog_bench(csv_writer, log, "smproblog", 8, id, "ddnnf")
+    smproblog_bench(csv_writer, log, "smproblog", 5, id, "ddnnf")
 
 def smproblog_bench_sddxd(csv_writer, log, id):
-    smproblog_bench(csv_writer, log, "smproblog", 8, id, "sddxd")
+    smproblog_bench(csv_writer, log, "smproblog", 5, id, "sddxd")
+
+def smproblog_bench_sddx(csv_writer, log, id):
+    smproblog_bench(csv_writer, log, "smproblog", 5, id, "sddx")
 
 def smproblog_bench_aspmc(csv_writer, log, id):
     csv_writer.writerow(["benchmark", "total_time", "solved"])
@@ -683,7 +686,7 @@ def smproblog_bench_aspmc(csv_writer, log, id):
     std_out = sys.stdout  
     std_err = sys.stderr
     ctr = 0
-    for x in tqdm(range(3, 8), desc = "aspmc", position = id):
+    for x in tqdm(range(3, 5), desc = "aspmc", position = id):
         db = join(benchmark_path, f"pfacts/db{x}.pl")
         for y in tqdm(range(1, 11), desc = f"aspmc {x} loop", leave=False, position = id+1):    
             if ctr >= LIMIT:
@@ -905,21 +908,21 @@ if EFFICIENCY_BENCH:
     if SMPROBLOG:
         
         q1 = open("results/smproblog/smproblogd_dnnf.log", 'w')
-        q2 = open("results/smproblog/aspmc.log", 'w')
-        q3 = open("results/smproblog/clingo.log", 'w')
-        q4 = open("results/smproblog/smproblog_sddxd.log", 'w')
+        #q2 = open("results/smproblog/aspmc.log", 'w')
+        #q3 = open("results/smproblog/clingo.log", 'w')
+        q4 = open("results/smproblog/smproblog_sddx.log", 'w')
         p1 = multiprocessing.Process(target=launch,args=("results/smproblog/smproblog/results_ddnnf.csv", smproblog_bench_ddnnf, q1, 0))
-        p2 = multiprocessing.Process(target=launch,args=("results/smproblog/aspmc/results.csv", smproblog_bench_aspmc, q2, 2))
-        p3 = multiprocessing.Process(target=launch,args=("results/smproblog/clingo/results.csv", smproblog_bench_clingo, q3, 4))
-        p4 = multiprocessing.Process(target=launch,args=("results/smproblog/smproblog/results_sddxd.csv", smproblog_bench_sddxd, q4, 6))
+        #p2 = multiprocessing.Process(target=launch,args=("results/smproblog/aspmc/results.csv", smproblog_bench_aspmc, q2, 2))
+        #p3 = multiprocessing.Process(target=launch,args=("results/smproblog/clingo/results.csv", smproblog_bench_clingo, q3, 4))
+        p4 = multiprocessing.Process(target=launch,args=("results/smproblog/smproblog/results_sddx.csv", smproblog_bench_sddx, q4, 6))
 
         p1.start()
-        p2.start()
-        p3.start()
+        #p2.start()
+        #p3.start()
         p4.start()
         p1.join()
-        p2.join()
-        p3.join()
+        #p2.join()
+        #p3.join()
         p4.join()
 
         # SMPROBLOG
@@ -941,25 +944,25 @@ if EFFICIENCY_BENCH:
 
     if PROBLOG:
 
-        q1 = open("results/problog/aspmc_al.log", 'w')
-        q2 = open("results/problog/aspmc_sm.log", 'w')
-        q3 = open("results/problog/clingo.log", 'w')
-        q4 = open("results/problog/problog.log", 'w')
-        q5 = open("results/problog/smproblog.log", 'w')
-        p1 = multiprocessing.Process(target=launch,args=("results/problog/aspmc_problog/results.csv", problog_bench_aspmc, q1, 0, AlgebraicProgram))
-        p2 = multiprocessing.Process(target=launch,args=("results/problog/aspmc_smproblog/results.csv", problog_bench_aspmc, q2, 2,  SMProblogProgram))
-        p3 = multiprocessing.Process(target=launch,args=("results/problog/clingo/results.csv", problog_bench_clingo, q3, 4))
-        p4 = multiprocessing.Process(target=launch,args=("results/problog/problog/results.csv", problog_bench_problog, q4, 6))
-        p5 = multiprocessing.Process(target=launch,args=("results/problog/smproblog/results.csv", problog_bench_smproblog, q5, 8))
+        #q1 = open("results/problog/aspmc_al.log", 'w')
+        #q2 = open("results/problog/aspmc_sm.log", 'w')
+        #q3 = open("results/problog/clingo.log", 'w')
+        #q4 = open("results/problog/problog.log", 'w')
+        q5 = open("results/problog/smproblog_sddxd.log", 'w')
+        #p1 = multiprocessing.Process(target=launch,args=("results/problog/aspmc_problog/results.csv", problog_bench_aspmc, q1, 0, AlgebraicProgram))
+        #p2 = multiprocessing.Process(target=launch,args=("results/problog/aspmc_smproblog/results.csv", problog_bench_aspmc, q2, 2,  SMProblogProgram))
+        #p3 = multiprocessing.Process(target=launch,args=("results/problog/clingo/results.csv", problog_bench_clingo, q3, 4))
+        #p4 = multiprocessing.Process(target=launch,args=("results/problog/problog/results.csv", problog_bench_problog, q4, 6))
+        p5 = multiprocessing.Process(target=launch,args=("results/problog/smproblog/results_sddxd.csv", problog_bench_smproblog, q5, 8))
 
-        p1.start()
-        p2.start()
-        p3.start()
-        p4.start()
-        p1.join()
-        p2.join()
-        p3.join()
-        p4.join()
+        #p1.start()
+        #p2.start()
+        #p3.start()
+        #p4.start()
+        #p1.join()
+        #p2.join()
+        #p3.join()
+        #p4.join()
 
         p5.start()
         p5.join()

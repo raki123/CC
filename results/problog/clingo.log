@@ -1,60 +1,958 @@
 32768
-Evaluation 3,1:    0.07
+Evaluation 3,1:    0.09
 32768
-Evaluation 3,2:    0.07
+Evaluation 3,2:    0.09
 32768
-Evaluation 3,3:    0.06
+Evaluation 3,3:    0.09
 32768
-Evaluation 3,4:    0.06
+Evaluation 3,4:    0.09
 32768
-Evaluation 3,5:    0.07
+Evaluation 3,5:    0.09
 32768
-Evaluation 3,6:    0.06
+Evaluation 3,6:    0.09
 32768
-Evaluation 3,7:    0.06
+Evaluation 3,7:    0.09
 32768
-Evaluation 3,8:    0.06
+Evaluation 3,8:    0.09
 32768
-Evaluation 3,9:    0.06
+Evaluation 3,9:    0.09
 32768
-Evaluation 3,10:    0.06
+Evaluation 3,10:    0.09
 16777216
-Evaluation 4,1:    33.36
-Process Process-3:12:
-Traceback (most recent call last):
-  File "/usr/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
-    self.run()
-  File "/usr/lib/python3.8/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "bench.py", line 80, in wrapper
-    function(*args, **kwargs)
-  File "bench.py", line 144, in instance_clingo
-    ctl.solve(on_model=on_model)
-  File "/home/pietro/pyenv8/lib/python3.8/site-packages/clingo/control.py", line 572, in solve
-    _c_call('clingo_solve_handle_t*', _lib.clingo_control_solve,
-  File "/home/pietro/pyenv8/lib/python3.8/site-packages/clingo/_internal.py", line 41, in _c_call
-    _handle_error(c_fun(*args, p_ret), handler)
-  File "/home/pietro/pyenv8/lib/python3.8/site-packages/clingo/_internal.py", line 61, in _handle_error
-    raise handler.error[0](handler.error[1]).with_traceback(handler.error[2])
-  File "/home/pietro/pyenv8/lib/python3.8/site-packages/clingo/control.py", line 73, in _pyclingo_solve_event_callback
-    @_ffi.def_extern(onerror=_cb_error_handler('data'), name='pyclingo_solve_event_callback')
-KeyboardInterrupt
-Process Process-3:
-Traceback (most recent call last):
-  File "/usr/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
-    self.run()
-  File "/usr/lib/python3.8/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "bench.py", line 900, in launch
-    f(csv_writer, log, id)
-  File "bench.py", line 511, in problog_bench_clingo
-    p.join(TIMEOUT)
-  File "/usr/lib/python3.8/multiprocessing/process.py", line 149, in join
-    res = self._popen.wait(timeout)
-  File "/usr/lib/python3.8/multiprocessing/popen_fork.py", line 44, in wait
-    if not wait([self.sentinel], timeout):
-  File "/usr/lib/python3.8/multiprocessing/connection.py", line 931, in wait
-    ready = selector.select(timeout)
-  File "/usr/lib/python3.8/selectors.py", line 415, in select
-    fd_event_list = self._selector.poll(timeout)
-KeyboardInterrupt
+Evaluation 4,1:    44.37
+16777216
+Evaluation 4,2:    44.39
+16777216
+Evaluation 4,3:    44.66
+16777216
+Evaluation 4,4:    44.69
+16777216
+Evaluation 4,5:    44.65
+16777216
+Evaluation 4,6:    44.24
+16777216
+Evaluation 4,7:    44.29
+16777216
+Evaluation 4,8:    44.01
+16777216
+Evaluation 4,9:    43.84
+16777216
+Evaluation 4,10:    44.06
+Evaluation 5,1:    300.10
+Timeout 5,1
+Evaluation 5,2:    300.10
+Timeout 5,2
+Evaluation 5,3:    300.10
+Timeout 5,3
+Evaluation 5,4:    300.10
+Timeout 5,4
+Evaluation 5,5:    300.10
+Timeout 5,5
+Evaluation 5,6:    300.10
+Timeout 5,6
+Evaluation 5,7:    300.10
+Timeout 5,7
+Evaluation 5,8:    300.10
+Timeout 5,8
+Evaluation 5,9:    300.10
+Timeout 5,9
+Evaluation 5,10:    300.10
+Timeout 5,10
+Evaluation 6,1:    300.10
+Timeout 6,1
+Evaluation 6,2:    300.10
+Timeout 6,2
+Evaluation 6,3:    300.10
+Timeout 6,3
+Evaluation 6,4:    300.10
+Timeout 6,4
+Evaluation 6,5:    300.10
+Timeout 6,5
+Evaluation 6,6:    300.10
+Timeout 6,6
+Evaluation 6,7:    300.10
+Timeout 6,7
+Evaluation 6,8:    300.10
+Timeout 6,8
+Evaluation 6,9:    300.10
+Timeout 6,9
+Evaluation 6,10:    300.10
+Timeout 6,10
+Evaluation 7,1:    300.10
+Timeout 7,1
+Evaluation 7,2:    300.10
+Timeout 7,2
+Evaluation 7,3:    300.10
+Timeout 7,3
+Evaluation 7,4:    300.10
+Timeout 7,4
+Evaluation 7,5:    300.10
+Timeout 7,5
+Evaluation 7,6:    300.10
+Timeout 7,6
+Evaluation 7,7:    300.10
+Timeout 7,7
+Evaluation 7,8:    300.10
+Timeout 7,8
+Evaluation 7,9:    300.10
+Timeout 7,9
+Evaluation 7,10:    300.10
+Timeout 7,10
+Evaluation 8,1:    300.10
+Timeout 8,1
+Evaluation 8,2:    300.10
+Timeout 8,2
+Evaluation 8,3:    300.10
+Timeout 8,3
+Evaluation 8,4:    300.10
+Timeout 8,4
+Evaluation 8,5:    300.10
+Timeout 8,5
+Evaluation 8,6:    300.10
+Timeout 8,6
+Evaluation 8,7:    300.10
+Timeout 8,7
+Evaluation 8,8:    300.10
+Timeout 8,8
+Evaluation 8,9:    300.10
+Timeout 8,9
+Evaluation 8,10:    300.10
+Timeout 8,10
+Evaluation 9,1:    300.10
+Timeout 9,1
+Evaluation 9,2:    300.10
+Timeout 9,2
+Evaluation 9,3:    300.10
+Timeout 9,3
+Evaluation 9,4:    300.10
+Timeout 9,4
+Evaluation 9,5:    300.10
+Timeout 9,5
+Evaluation 9,6:    300.10
+Timeout 9,6
+Evaluation 9,7:    300.10
+Timeout 9,7
+Evaluation 9,8:    300.10
+Timeout 9,8
+Evaluation 9,9:    300.10
+Timeout 9,9
+Evaluation 9,10:    300.10
+Timeout 9,10
+Evaluation 10,1:    300.10
+Timeout 10,1
+Evaluation 10,2:    300.10
+Timeout 10,2
+Evaluation 10,3:    300.10
+Timeout 10,3
+Evaluation 10,4:    300.10
+Timeout 10,4
+Evaluation 10,5:    300.10
+Timeout 10,5
+Evaluation 10,6:    300.10
+Timeout 10,6
+Evaluation 10,7:    300.10
+Timeout 10,7
+Evaluation 10,8:    300.10
+Timeout 10,8
+Evaluation 10,9:    300.10
+Timeout 10,9
+Evaluation 10,10:    300.10
+Timeout 10,10
+Evaluation 11,1:    300.10
+Timeout 11,1
+Evaluation 11,2:    300.10
+Timeout 11,2
+Evaluation 11,3:    300.10
+Timeout 11,3
+Evaluation 11,4:    300.10
+Timeout 11,4
+Evaluation 11,5:    300.10
+Timeout 11,5
+Evaluation 11,6:    300.10
+Timeout 11,6
+Evaluation 11,7:    300.10
+Timeout 11,7
+Evaluation 11,8:    300.10
+Timeout 11,8
+Evaluation 11,9:    300.10
+Timeout 11,9
+Evaluation 11,10:    300.10
+Timeout 11,10
+Evaluation 12,1:    300.10
+Timeout 12,1
+Evaluation 12,2:    300.10
+Timeout 12,2
+Evaluation 12,3:    300.10
+Timeout 12,3
+Evaluation 12,4:    300.10
+Timeout 12,4
+Evaluation 12,5:    300.10
+Timeout 12,5
+Evaluation 12,6:    300.10
+Timeout 12,6
+Evaluation 12,7:    300.10
+Timeout 12,7
+Evaluation 12,8:    300.10
+Timeout 12,8
+Evaluation 12,9:    300.10
+Timeout 12,9
+Evaluation 12,10:    300.10
+Timeout 12,10
+Evaluation 13,1:    300.10
+Timeout 13,1
+Evaluation 13,2:    300.10
+Timeout 13,2
+Evaluation 13,3:    300.10
+Timeout 13,3
+Evaluation 13,4:    300.10
+Timeout 13,4
+Evaluation 13,5:    300.10
+Timeout 13,5
+Evaluation 13,6:    300.10
+Timeout 13,6
+Evaluation 13,7:    300.10
+Timeout 13,7
+Evaluation 13,8:    300.10
+Timeout 13,8
+Evaluation 13,9:    300.10
+Timeout 13,9
+Evaluation 13,10:    300.10
+Timeout 13,10
+Evaluation 14,1:    300.10
+Timeout 14,1
+Evaluation 14,2:    300.10
+Timeout 14,2
+Evaluation 14,3:    300.10
+Timeout 14,3
+Evaluation 14,4:    300.10
+Timeout 14,4
+Evaluation 14,5:    300.10
+Timeout 14,5
+Evaluation 14,6:    300.10
+Timeout 14,6
+Evaluation 14,7:    300.10
+Timeout 14,7
+Evaluation 14,8:    300.10
+Timeout 14,8
+Evaluation 14,9:    300.10
+Timeout 14,9
+Evaluation 14,10:    300.10
+Timeout 14,10
+Evaluation 15,1:    300.10
+Timeout 15,1
+Evaluation 15,2:    300.10
+Timeout 15,2
+Evaluation 15,3:    300.10
+Timeout 15,3
+Evaluation 15,4:    300.10
+Timeout 15,4
+Evaluation 15,5:    300.10
+Timeout 15,5
+Evaluation 15,6:    300.10
+Timeout 15,6
+Evaluation 15,7:    300.10
+Timeout 15,7
+Evaluation 15,8:    300.10
+Timeout 15,8
+Evaluation 15,9:    300.10
+Timeout 15,9
+Evaluation 15,10:    300.10
+Timeout 15,10
+Evaluation 16,1:    300.10
+Timeout 16,1
+Evaluation 16,2:    300.10
+Timeout 16,2
+Evaluation 16,3:    300.10
+Timeout 16,3
+Evaluation 16,4:    300.10
+Timeout 16,4
+Evaluation 16,5:    300.10
+Timeout 16,5
+Evaluation 16,6:    300.10
+Timeout 16,6
+Evaluation 16,7:    300.10
+Timeout 16,7
+Evaluation 16,8:    300.10
+Timeout 16,8
+Evaluation 16,9:    300.10
+Timeout 16,9
+Evaluation 16,10:    300.10
+Timeout 16,10
+Evaluation 17,1:    300.10
+Timeout 17,1
+Evaluation 17,2:    300.10
+Timeout 17,2
+Evaluation 17,3:    300.10
+Timeout 17,3
+Evaluation 17,4:    300.10
+Timeout 17,4
+Evaluation 17,5:    300.10
+Timeout 17,5
+Evaluation 17,6:    300.10
+Timeout 17,6
+Evaluation 17,7:    300.10
+Timeout 17,7
+Evaluation 17,8:    300.10
+Timeout 17,8
+Evaluation 17,9:    300.10
+Timeout 17,9
+Evaluation 17,10:    300.10
+Timeout 17,10
+Evaluation 18,1:    300.10
+Timeout 18,1
+Evaluation 18,2:    300.10
+Timeout 18,2
+Evaluation 18,3:    300.10
+Timeout 18,3
+Evaluation 18,4:    300.10
+Timeout 18,4
+Evaluation 18,5:    300.10
+Timeout 18,5
+Evaluation 18,6:    300.10
+Timeout 18,6
+Evaluation 18,7:    300.10
+Timeout 18,7
+Evaluation 18,8:    300.10
+Timeout 18,8
+Evaluation 18,9:    300.10
+Timeout 18,9
+Evaluation 18,10:    300.10
+Timeout 18,10
+Evaluation 19,1:    300.10
+Timeout 19,1
+Evaluation 19,2:    300.10
+Timeout 19,2
+Evaluation 19,3:    300.10
+Timeout 19,3
+Evaluation 19,4:    300.10
+Timeout 19,4
+Evaluation 19,5:    300.10
+Timeout 19,5
+Evaluation 19,6:    300.10
+Timeout 19,6
+Evaluation 19,7:    300.10
+Timeout 19,7
+Evaluation 19,8:    300.10
+Timeout 19,8
+Evaluation 19,9:    300.10
+Timeout 19,9
+Evaluation 19,10:    300.10
+Timeout 19,10
+Evaluation 20,1:    300.10
+Timeout 20,1
+Evaluation 20,2:    300.10
+Timeout 20,2
+Evaluation 20,3:    300.10
+Timeout 20,3
+Evaluation 20,4:    300.10
+Timeout 20,4
+Evaluation 20,5:    300.10
+Timeout 20,5
+Evaluation 20,6:    300.10
+Timeout 20,6
+Evaluation 20,7:    300.10
+Timeout 20,7
+Evaluation 20,8:    300.10
+Timeout 20,8
+Evaluation 20,9:    300.10
+Timeout 20,9
+Evaluation 20,10:    300.10
+Timeout 20,10
+Evaluation 21,1:    300.10
+Timeout 21,1
+Evaluation 21,2:    300.10
+Timeout 21,2
+Evaluation 21,3:    300.10
+Timeout 21,3
+Evaluation 21,4:    300.10
+Timeout 21,4
+Evaluation 21,5:    300.10
+Timeout 21,5
+Evaluation 21,6:    300.10
+Timeout 21,6
+Evaluation 21,7:    300.10
+Timeout 21,7
+Evaluation 21,8:    300.10
+Timeout 21,8
+Evaluation 21,9:    300.10
+Timeout 21,9
+Evaluation 21,10:    300.10
+Timeout 21,10
+Evaluation 22,1:    300.10
+Timeout 22,1
+Evaluation 22,2:    300.10
+Timeout 22,2
+Evaluation 22,3:    300.10
+Timeout 22,3
+Evaluation 22,4:    300.10
+Timeout 22,4
+Evaluation 22,5:    300.10
+Timeout 22,5
+Evaluation 22,6:    300.10
+Timeout 22,6
+Evaluation 22,7:    300.10
+Timeout 22,7
+Evaluation 22,8:    300.10
+Timeout 22,8
+Evaluation 22,9:    300.10
+Timeout 22,9
+Evaluation 22,10:    300.10
+Timeout 22,10
+Evaluation 23,1:    300.10
+Timeout 23,1
+Evaluation 23,2:    300.10
+Timeout 23,2
+Evaluation 23,3:    300.10
+Timeout 23,3
+Evaluation 23,4:    300.10
+Timeout 23,4
+Evaluation 23,5:    300.10
+Timeout 23,5
+Evaluation 23,6:    300.10
+Timeout 23,6
+Evaluation 23,7:    300.10
+Timeout 23,7
+Evaluation 23,8:    300.10
+Timeout 23,8
+Evaluation 23,9:    300.10
+Timeout 23,9
+Evaluation 23,10:    300.10
+Timeout 23,10
+Evaluation 24,1:    300.10
+Timeout 24,1
+Evaluation 24,2:    300.10
+Timeout 24,2
+Evaluation 24,3:    300.10
+Timeout 24,3
+Evaluation 24,4:    300.10
+Timeout 24,4
+Evaluation 24,5:    300.10
+Timeout 24,5
+Evaluation 24,6:    300.10
+Timeout 24,6
+Evaluation 24,7:    300.10
+Timeout 24,7
+Evaluation 24,8:    300.10
+Timeout 24,8
+Evaluation 24,9:    300.10
+Timeout 24,9
+Evaluation 24,10:    300.10
+Timeout 24,10
+Evaluation 25,1:    300.10
+Timeout 25,1
+Evaluation 25,2:    300.10
+Timeout 25,2
+Evaluation 25,3:    300.10
+Timeout 25,3
+Evaluation 25,4:    300.10
+Timeout 25,4
+Evaluation 25,5:    300.10
+Timeout 25,5
+Evaluation 25,6:    300.10
+Timeout 25,6
+Evaluation 25,7:    300.10
+Timeout 25,7
+Evaluation 25,8:    300.10
+Timeout 25,8
+Evaluation 25,9:    300.10
+Timeout 25,9
+Evaluation 25,10:    300.10
+Timeout 25,10
+Evaluation 26,1:    300.10
+Timeout 26,1
+Evaluation 26,2:    300.10
+Timeout 26,2
+Evaluation 26,3:    300.10
+Timeout 26,3
+Evaluation 26,4:    300.10
+Timeout 26,4
+Evaluation 26,5:    300.10
+Timeout 26,5
+Evaluation 26,6:    300.10
+Timeout 26,6
+Evaluation 26,7:    300.02
+Timeout 26,7
+Evaluation 26,8:    300.10
+Timeout 26,8
+Evaluation 26,9:    300.10
+Timeout 26,9
+Evaluation 26,10:    300.10
+Timeout 26,10
+Evaluation 27,1:    300.10
+Timeout 27,1
+Evaluation 27,2:    300.10
+Timeout 27,2
+Evaluation 27,3:    300.10
+Timeout 27,3
+Evaluation 27,4:    300.02
+Timeout 27,4
+Evaluation 27,5:    300.09
+Timeout 27,5
+Evaluation 27,6:    300.09
+Timeout 27,6
+Evaluation 27,7:    300.10
+Timeout 27,7
+Evaluation 27,8:    300.01
+Timeout 27,8
+Evaluation 27,9:    300.10
+Timeout 27,9
+Evaluation 27,10:    300.10
+Timeout 27,10
+Evaluation 28,1:    300.10
+Timeout 28,1
+Evaluation 28,2:    300.09
+Timeout 28,2
+Evaluation 28,3:    300.10
+Timeout 28,3
+Evaluation 28,4:    300.10
+Timeout 28,4
+Evaluation 28,5:    300.04
+Timeout 28,5
+Evaluation 28,6:    300.10
+Timeout 28,6
+Evaluation 28,7:    300.10
+Timeout 28,7
+Evaluation 28,8:    300.10
+Timeout 28,8
+Evaluation 28,9:    300.10
+Timeout 28,9
+Evaluation 28,10:    300.10
+Timeout 28,10
+Evaluation 29,1:    300.10
+Timeout 29,1
+Evaluation 29,2:    300.01
+Timeout 29,2
+Evaluation 29,3:    300.10
+Timeout 29,3
+Evaluation 29,4:    300.10
+Timeout 29,4
+Evaluation 29,5:    300.04
+Timeout 29,5
+Evaluation 29,6:    300.01
+Timeout 29,6
+Evaluation 29,7:    300.10
+Timeout 29,7
+Evaluation 29,8:    300.10
+Timeout 29,8
+Evaluation 29,9:    300.05
+Timeout 29,9
+Evaluation 29,10:    300.10
+Timeout 29,10
+Evaluation 30,1:    300.10
+Timeout 30,1
+Evaluation 30,2:    300.10
+Timeout 30,2
+Evaluation 30,3:    300.05
+Timeout 30,3
+Evaluation 30,4:    300.10
+Timeout 30,4
+Evaluation 30,5:    300.10
+Timeout 30,5
+Evaluation 30,6:    300.10
+Timeout 30,6
+Evaluation 30,7:    300.10
+Timeout 30,7
+Evaluation 30,8:    300.10
+Timeout 30,8
+Evaluation 30,9:    300.06
+Timeout 30,9
+Evaluation 30,10:    300.10
+Timeout 30,10
+Evaluation 31,1:    300.10
+Timeout 31,1
+Evaluation 31,2:    300.10
+Timeout 31,2
+Evaluation 31,3:    300.10
+Timeout 31,3
+Evaluation 31,4:    300.04
+Timeout 31,4
+Evaluation 31,5:    300.10
+Timeout 31,5
+Evaluation 31,6:    300.10
+Timeout 31,6
+Evaluation 31,7:    300.10
+Timeout 31,7
+Evaluation 31,8:    300.10
+Timeout 31,8
+Evaluation 31,9:    300.10
+Timeout 31,9
+Evaluation 31,10:    300.10
+Timeout 31,10
+Evaluation 32,1:    300.10
+Timeout 32,1
+Evaluation 32,2:    300.10
+Timeout 32,2
+Evaluation 32,3:    300.05
+Timeout 32,3
+Evaluation 32,4:    300.10
+Timeout 32,4
+Evaluation 32,5:    300.10
+Timeout 32,5
+Evaluation 32,6:    300.04
+Timeout 32,6
+Evaluation 32,7:    300.10
+Timeout 32,7
+Evaluation 32,8:    300.10
+Timeout 32,8
+Evaluation 32,9:    300.10
+Timeout 32,9
+Evaluation 32,10:    300.03
+Timeout 32,10
+Evaluation 33,1:    300.10
+Timeout 33,1
+Evaluation 33,2:    300.10
+Timeout 33,2
+Evaluation 33,3:    300.10
+Timeout 33,3
+Evaluation 33,4:    300.10
+Timeout 33,4
+Evaluation 33,5:    300.10
+Timeout 33,5
+Evaluation 33,6:    300.10
+Timeout 33,6
+Evaluation 33,7:    300.10
+Timeout 33,7
+Evaluation 33,8:    300.10
+Timeout 33,8
+Evaluation 33,9:    300.10
+Timeout 33,9
+Evaluation 33,10:    300.10
+Timeout 33,10
+Evaluation 34,1:    300.10
+Timeout 34,1
+Evaluation 34,2:    300.10
+Timeout 34,2
+Evaluation 34,3:    300.10
+Timeout 34,3
+Evaluation 34,4:    300.02
+Timeout 34,4
+Evaluation 34,5:    300.10
+Timeout 34,5
+Evaluation 34,6:    300.10
+Timeout 34,6
+Evaluation 34,7:    300.10
+Timeout 34,7
+Evaluation 34,8:    300.10
+Timeout 34,8
+Evaluation 34,9:    300.10
+Timeout 34,9
+Evaluation 34,10:    300.10
+Timeout 34,10
+Evaluation 35,1:    300.10
+Timeout 35,1
+Evaluation 35,2:    300.10
+Timeout 35,2
+Evaluation 35,3:    300.10
+Timeout 35,3
+Evaluation 35,4:    300.09
+Timeout 35,4
+Evaluation 35,5:    300.09
+Timeout 35,5
+Evaluation 35,6:    300.10
+Timeout 35,6
+Evaluation 35,7:    300.10
+Timeout 35,7
+Evaluation 35,8:    300.10
+Timeout 35,8
+Evaluation 35,9:    300.10
+Timeout 35,9
+Evaluation 35,10:    300.10
+Timeout 35,10
+Evaluation 36,1:    300.10
+Timeout 36,1
+Evaluation 36,2:    300.10
+Timeout 36,2
+Evaluation 36,3:    300.10
+Timeout 36,3
+Evaluation 36,4:    300.09
+Timeout 36,4
+Evaluation 36,5:    300.10
+Timeout 36,5
+Evaluation 36,6:    300.10
+Timeout 36,6
+Evaluation 36,7:    300.10
+Timeout 36,7
+Evaluation 36,8:    300.05
+Timeout 36,8
+Evaluation 36,9:    300.10
+Timeout 36,9
+Evaluation 36,10:    300.10
+Timeout 36,10
+Evaluation 37,1:    300.10
+Timeout 37,1
+Evaluation 37,2:    300.10
+Timeout 37,2
+Evaluation 37,3:    300.10
+Timeout 37,3
+Evaluation 37,4:    300.10
+Timeout 37,4
+Evaluation 37,5:    300.10
+Timeout 37,5
+Evaluation 37,6:    300.08
+Timeout 37,6
+Evaluation 37,7:    300.10
+Timeout 37,7
+Evaluation 37,8:    300.10
+Timeout 37,8
+Evaluation 37,9:    300.03
+Timeout 37,9
+Evaluation 37,10:    300.10
+Timeout 37,10
+Evaluation 38,1:    300.04
+Timeout 38,1
+Evaluation 38,2:    300.06
+Timeout 38,2
+Evaluation 38,3:    300.10
+Timeout 38,3
+Evaluation 38,4:    300.07
+Timeout 38,4
+Evaluation 38,5:    300.10
+Timeout 38,5
+Evaluation 38,6:    300.10
+Timeout 38,6
+Evaluation 38,7:    300.06
+Timeout 38,7
+Evaluation 38,8:    300.10
+Timeout 38,8
+Evaluation 38,9:    300.10
+Timeout 38,9
+Evaluation 38,10:    300.10
+Timeout 38,10
+Evaluation 39,1:    300.10
+Timeout 39,1
+Evaluation 39,2:    300.10
+Timeout 39,2
+Evaluation 39,3:    300.10
+Timeout 39,3
+Evaluation 39,4:    300.08
+Timeout 39,4
+Evaluation 39,5:    300.00
+Timeout 39,5
+Evaluation 39,6:    300.10
+Timeout 39,6
+Evaluation 39,7:    300.10
+Timeout 39,7
+Evaluation 39,8:    300.08
+Timeout 39,8
+Evaluation 39,9:    300.07
+Timeout 39,9
+Evaluation 39,10:    300.09
+Timeout 39,10
+Evaluation 40,1:    300.06
+Timeout 40,1
+Evaluation 40,2:    300.03
+Timeout 40,2
+Evaluation 40,3:    300.04
+Timeout 40,3
+Evaluation 40,4:    300.10
+Timeout 40,4
+Evaluation 40,5:    300.10
+Timeout 40,5
+Evaluation 40,6:    300.04
+Timeout 40,6
+Evaluation 40,7:    300.10
+Timeout 40,7
+Evaluation 40,8:    300.01
+Timeout 40,8
+Evaluation 40,9:    300.00
+Timeout 40,9
+Evaluation 40,10:    300.02
+Timeout 40,10
+Evaluation 41,1:    300.10
+Timeout 41,1
+Evaluation 41,2:    300.10
+Timeout 41,2
+Evaluation 41,3:    300.10
+Timeout 41,3
+Evaluation 41,4:    300.10
+Timeout 41,4
+Evaluation 41,5:    300.10
+Timeout 41,5
+Evaluation 41,6:    300.10
+Timeout 41,6
+Evaluation 41,7:    300.10
+Timeout 41,7
+Evaluation 41,8:    300.10
+Timeout 41,8
+Evaluation 41,9:    300.07
+Timeout 41,9
+Evaluation 41,10:    300.09
+Timeout 41,10
+Evaluation 42,1:    300.07
+Timeout 42,1
+Evaluation 42,2:    300.09
+Timeout 42,2
+Evaluation 42,3:    300.10
+Timeout 42,3
+Evaluation 42,4:    300.10
+Timeout 42,4
+Evaluation 42,5:    300.02
+Timeout 42,5
+Evaluation 42,6:    300.07
+Timeout 42,6
+Evaluation 42,7:    300.10
+Timeout 42,7
+Evaluation 42,8:    300.03
+Timeout 42,8
+Evaluation 42,9:    300.10
+Timeout 42,9
+Evaluation 42,10:    300.10
+Timeout 42,10
+Evaluation 43,1:    300.10
+Timeout 43,1
+Evaluation 43,2:    300.10
+Timeout 43,2
+Evaluation 43,3:    300.10
+Timeout 43,3
+Evaluation 43,4:    300.10
+Timeout 43,4
+Evaluation 43,5:    300.10
+Timeout 43,5
+Evaluation 43,6:    300.05
+Timeout 43,6
+Evaluation 43,7:    300.10
+Timeout 43,7
+Evaluation 43,8:    300.05
+Timeout 43,8
+Evaluation 43,9:    300.10
+Timeout 43,9
+Evaluation 43,10:    300.10
+Timeout 43,10
+Evaluation 44,1:    300.08
+Timeout 44,1
+Evaluation 44,2:    300.10
+Timeout 44,2
+Evaluation 44,3:    300.10
+Timeout 44,3
+Evaluation 44,4:    300.10
+Timeout 44,4
+Evaluation 44,5:    300.10
+Timeout 44,5
+Evaluation 44,6:    300.10
+Timeout 44,6
+Evaluation 44,7:    300.02
+Timeout 44,7
+Evaluation 44,8:    300.05
+Timeout 44,8
+Evaluation 44,9:    300.10
+Timeout 44,9
+Evaluation 44,10:    300.10
+Timeout 44,10
+Evaluation 45,1:    300.10
+Timeout 45,1
+Evaluation 45,2:    300.10
+Timeout 45,2
+Evaluation 45,3:    300.10
+Timeout 45,3
+Evaluation 45,4:    300.03
+Timeout 45,4
+Evaluation 45,5:    300.08
+Timeout 45,5
+Evaluation 45,6:    300.05
+Timeout 45,6
+Evaluation 45,7:    300.10
+Timeout 45,7
+Evaluation 45,8:    300.10
+Timeout 45,8
+Evaluation 45,9:    300.06
+Timeout 45,9
+Evaluation 45,10:    300.10
+Timeout 45,10
+Evaluation 46,1:    300.10
+Timeout 46,1
+Evaluation 46,2:    300.03
+Timeout 46,2
+Evaluation 46,3:    300.10
+Timeout 46,3
+Evaluation 46,4:    300.10
+Timeout 46,4
+Evaluation 46,5:    300.10
+Timeout 46,5
+Evaluation 46,6:    300.04
+Timeout 46,6
+Evaluation 46,7:    300.10
+Timeout 46,7
+Evaluation 46,8:    300.10
+Timeout 46,8
+Evaluation 46,9:    300.10
+Timeout 46,9
+Evaluation 46,10:    300.06
+Timeout 46,10
+Evaluation 47,1:    300.05
+Timeout 47,1
+Evaluation 47,2:    300.10
+Timeout 47,2
+Evaluation 47,3:    300.03
+Timeout 47,3
+Evaluation 47,4:    300.10
+Timeout 47,4
+Evaluation 47,5:    300.10
+Timeout 47,5
+Evaluation 47,6:    300.10
+Timeout 47,6
+Evaluation 47,7:    300.10
+Timeout 47,7
+Evaluation 47,8:    300.07
+Timeout 47,8
+Evaluation 47,9:    300.10
+Timeout 47,9
+Evaluation 47,10:    300.10
+Timeout 47,10
+Evaluation 48,1:    300.10
+Timeout 48,1
+Evaluation 48,2:    300.10
+Timeout 48,2
+Evaluation 48,3:    300.01
+Timeout 48,3
+Evaluation 48,4:    300.05
+Timeout 48,4
+Evaluation 48,5:    300.00
+Timeout 48,5
+Evaluation 48,6:    300.10
+Timeout 48,6
+Evaluation 48,7:    300.03
+Timeout 48,7
+Evaluation 48,8:    300.01
+Timeout 48,8
+Evaluation 48,9:    300.09
+Timeout 48,9
+Evaluation 48,10:    300.10
+Timeout 48,10
+Evaluation 49,1:    300.10
+Timeout 49,1
+Evaluation 49,2:    300.10
+Timeout 49,2
+Evaluation 49,3:    300.09
+Timeout 49,3
+Evaluation 49,4:    300.05
+Timeout 49,4
+Evaluation 49,5:    300.10
+Timeout 49,5
+Evaluation 49,6:    300.10
+Timeout 49,6
+Evaluation 49,7:    300.06
+Timeout 49,7
+Evaluation 49,8:    300.10
+Timeout 49,8
+Evaluation 49,9:    300.08
+Timeout 49,9
+Evaluation 49,10:    300.10
+Timeout 49,10
+Evaluation 50,1:    300.10
+Timeout 50,1
+Evaluation 50,2:    300.10
+Timeout 50,2
+Evaluation 50,3:    300.01
+Timeout 50,3
+Evaluation 50,4:    300.10
+Timeout 50,4
+Evaluation 50,5:    300.05
+Timeout 50,5
+Evaluation 50,6:    300.10
+Timeout 50,6
+Evaluation 50,7:    300.10
+Timeout 50,7
+Evaluation 50,8:    300.04
+Timeout 50,8
+Evaluation 50,9:    300.01
+Timeout 50,9
