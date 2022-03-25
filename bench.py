@@ -911,35 +911,39 @@ if EFFICIENCY_BENCH:
             map_bench_pita(csv_writer) 
 
     if CONCOM:
-        #with open("results/concom/X/results_mini.csv", 'w') as results:
-        #    csv_writer = csv.writer(results)
-        #    concom_bench_aspmc(csv_writer,"X", "miniC2D") 
-        
-        #with open("results/concom/XD/results_mini.csv", 'w') as results:
-        #    csv_writer = csv.writer(results)
-        #    concom_bench_aspmc(csv_writer,"XD", "miniC2D") 
-
-        with open("results/concom/X/results_free.csv", 'w') as results:
+        #rest
+        with open("results/concom/X/results_mini.csv", 'w') as results:
             csv_writer = csv.writer(results)
-            concom_bench_aspmc(csv_writer,"X", "c2d") 
+            concom_bench_aspmc(csv_writer,"X", "miniC2D") 
         
-        #with open("results/concom/XD/results.csv", 'w') as results:
-        #    csv_writer = csv.writer(results)
-        #    concom_bench_aspmc(csv_writer,"XD", "c2d") 
-
+        with open("results/concom/XD/results_mini.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            concom_bench_aspmc(csv_writer,"XD", "miniC2D") 
         
-        #with open("results/concom/XD/results.csv", 'w') as results:
-        #    csv_writer = csv.writer(results)
-        #    concom_bench_aspmc(csv_writer, "XD") 
-
+        with open("results/concom/XD/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            concom_bench_aspmc(csv_writer,"XD", "c2d") 
         
-        #with open("results/concom/XD/results_grid_mini.csv", 'a') as results:
-        #    csv_writer = csv.writer(results)
-        #    graph_bench_aspmc(csv_writer, "XD") 
+        with open("results/concom/X/results.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            concom_bench_aspmc(csv_writer, "X", "c2d") 
+        
+        # grids
+        with open("results/concom/XD/results_grid_mini.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            graph_bench_aspmc(csv_writer, "XD", "miniC2D") 
+            
+        with open("results/concom/X/results_grid_mini.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            graph_bench_aspmc(csv_writer, "X", "miniC2D") 
 
-        #with open("results/concom/X/results_grid.csv", 'w') as results:
-        #    csv_writer = csv.writer(results)
-        #    graph_bench_aspmc(csv_writer, "X") 
+        with open("results/concom/XD/results_grid.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            graph_bench_aspmc(csv_writer, "XD", "c2d") 
+            
+        with open("results/concom/X/results_grid.csv", 'w') as results:
+            csv_writer = csv.writer(results)
+            graph_bench_aspmc(csv_writer, "X", "c2d") 
 
 from aspmc.compile.constrained_compile import compute_separator
 import aspmc.graph.treedecomposition as treedecomposition
@@ -1005,9 +1009,7 @@ def get_width_actual(cnf, definedness):
         return max(l_td.width, r_td.width)
 
     
-def width_bench_meu(csv_writer):
-    csv_writer.writerow(["benchmark", "width", "Xwidth", "XDwidth"])
-    benchmark_path = "./benchmarks/meu"
+def width_bench_meu(csv_writer, benchmark_path):
     onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
     ctr = 0
     for benchmark in onlyfiles:
@@ -1114,7 +1116,9 @@ def width_bench_problog(csv_writer):
 if WIDTH_BENCH:
     with open("results/widths/meu/results.csv", 'w') as results:
         csv_writer = csv.writer(results)
-        width_bench_meu(csv_writer)
+        csv_writer.writerow(["benchmark", "width", "Xwidth", "XDwidth"])
+        width_bench_meu(csv_writer, "./benchmarks/meu")
+        width_bench_meu(csv_writer, "./benchmarks/meu/viral")
     print("MEU WIDTH DONE")
 
     with open("results/widths/map/results.csv", 'w') as results:
