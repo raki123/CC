@@ -21,7 +21,7 @@ import os
 real_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, join(real_path, "MEUProblog"))
 
-# import maxeu
+import maxeu
 from script_learning import Printer
 from problog.program import PrologFile
 from problog.engine import DefaultEngine
@@ -908,7 +908,6 @@ def graph_bench_aspmc(csv_writer, constrained, solver):
     benchmark_paths = [ "./benchmarks/concom/grids/problog_format/"]
     for benchmark_path in benchmark_paths:
         onlyfiles = [join(benchmark_path, f) for f in listdir(benchmark_path) if isfile(join(benchmark_path, f))]
-        print(onlyfiles)
         for benchmark in onlyfiles:
             if ctr >= LIMIT:
                 break
