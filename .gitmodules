@@ -1,8 +1,3 @@
-[submodule "aspmc-dev"]
-	path = aspmc-dev
-	url = git@github.com:raki123/aspmc-dev.git
-	branch = main
-	update = rebase
 [submodule "MEUProblog"]
 	path = MEUProblog
 	url = git@github.com:VincentDerk/Paper-AC-Decisions-Learning.git
