@@ -4,6 +4,12 @@ bash setup.sh
 cd ..
 pip install psutil
 pip install tqdm
-ln -s aspmc-dev/aspmc aspmc
+if [ ! -L aspmc ];
+then
+	ln -s aspmc-dev/aspmc aspmc
+fi
 cd smProblog/problog
-ln -s ../../aspmc-dev aspmc
+if [ ! -L aspmc ];
+then
+	ln -s ../../aspmc-dev aspmc
+fi
