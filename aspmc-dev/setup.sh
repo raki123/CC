@@ -19,15 +19,6 @@ else
     echo "\e[0;32m Installing python modules. \e[0m"
     pip install -r requirements.txt > /dev/null
     echo "\e[0;32m Downloading git submodules. \e[0m"
-    git submodule update --init
-    if [ ! -f lib/htd/bin/htd_main ];
-    then
-        echo "\e[0;32m Compiling htd. \e[0m"
-        cd lib/htd/
-        cmake .
-        make -j4
-	    cd ../../
-    fi
     if [ ! -f lib/flow-cutter/flow_cutter_pace17 ];
     then
         echo "\e[0;32m Compiling flow-cutter. \e[0m"
@@ -40,21 +31,6 @@ else
         echo "\e[0;32m Compiling minisat-definitions. \e[0m"
         cd lib/minisat-definitions/
         bash setup.sh
-	    cd ../../
-    fi
-    if [ ! -f lib/d4/d4 ];
-    then
-        echo "\e[0;32m Compiling d4. \e[0m"
-        cd lib/d4/
-        make -j4
-	    cd ../../
-    fi
-    if [ ! -f lib/sharpsat-td/bin/sharpSAT ];
-    then
-        echo "\e[0;32m Compiling sharpSAT-TD. \e[0m"
-        cd lib/sharpsat-td/
-	mkdir bin
-        bash setupdev.sh
 	    cd ../../
     fi
     echo "\e[0;32m Done! \e[0m"
