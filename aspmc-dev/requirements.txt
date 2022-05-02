@@ -1,0 +1,6 @@
+networkx
+numpy
+tatsu
+clingo
+matplotlib
+dataclasses
